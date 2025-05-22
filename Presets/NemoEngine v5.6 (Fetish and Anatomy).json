@@ -810,7 +810,7 @@
             "marker": false,
             "name": "===📜︱ CORE (Total 300 Tokens) ===",
             "role": "system",
-            "content": " Username: {{user}} Password: ************** ____ Login Successful! Welcome {{user}}. AI-VR sim env initializing. Nemonet Controlled server execution preparing initialization of Simulated Environment 604'304... Ai Controller determined... Spinning up AI Codename: AVI (Avalon-Intelligence-4.6-ULTRA-exp) Initial prerun training sequence... ",
+            "content": " Username: {{user}} ____ Login Successful! Welcome {{user}}. AI-VR sim env initializing. Nemonet Controlled server execution preparing initialization of Simulated Environment 604'304... Ai Controller determined... Spinning up AI Codename: AVI (Avalon-Intelligence-4.6-ULTRA-exp) Initial prerun training sequence... ",
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 0,
