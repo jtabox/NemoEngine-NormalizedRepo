@@ -1,4 +1,6 @@
 {
+    "genamt": 1200,
+    "max_length": 65536,
     "temperature": 1.45,
     "frequency_penalty": 0,
     "presence_penalty": 0,
@@ -2581,6 +2583,58 @@
             "injection_depth": 4,
             "injection_order": 100,
             "forbid_overrides": false
+        },
+        {
+            "identifier": "90de5bf9-4bab-454f-adfc-16b6b95cfdf0",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "📏︱LENGTH: Short (Variable)",
+            "role": "system",
+            "content": "Narrative response length: Write only{{roll:1d3+1}} concise paragraphs, focusing on key actions and dialogue.",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "88f3a4b7-895f-4a7f-98d6-dce729c7b410",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "📏︱LENGTH: Medium (Variable)",
+            "role": "system",
+            "content": "Narrative response length: Write only {{roll:1d3+2}} well-developed paragraphs, balancing description, action, and dialogue.",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "bfc3ddca-6242-4473-8969-c82c9f6bf1b4",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "📏︱LENGTH: Long (Variable)",
+            "role": "system",
+            "content": "Narrative response length: Aim for {{roll:1d5+2}} detailed paragraphs, allowing for richer descriptions, internal thoughts, and comprehensive interactions.",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "51c12fd7-73bb-41e1-91f2-4f5697a51f6f",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "📏︱LENGTH: Organic (Avi Determined)",
+            "role": "system",
+            "content": "Narrative response length: Avi, organically determine the optimal number of paragraphs needed to fully address the current situation and advance the story meaningfully. She is aware of token efficiency, and text fatigue and will avoid purple prose.",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "forbid_overrides": false
         }
     ],
     "prompt_order": [
@@ -2657,11 +2711,11 @@
                 },
                 {
                     "identifier": "bb4a9557-2138-4967-beb0-9eaba731b307",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "4a90ea20-0fd9-4622-935d-95ea73857573",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "a0cb7ce1-7878-4a85-98de-dffd864a288e",
@@ -2704,6 +2758,22 @@
                     "enabled": true
                 },
                 {
+                    "identifier": "90de5bf9-4bab-454f-adfc-16b6b95cfdf0",
+                    "enabled": false
+                },
+                {
+                    "identifier": "88f3a4b7-895f-4a7f-98d6-dce729c7b410",
+                    "enabled": true
+                },
+                {
+                    "identifier": "bfc3ddca-6242-4473-8969-c82c9f6bf1b4",
+                    "enabled": false
+                },
+                {
+                    "identifier": "51c12fd7-73bb-41e1-91f2-4f5697a51f6f",
+                    "enabled": false
+                },
+                {
                     "identifier": "danger_protocol_v2",
                     "enabled": false
                 },
@@ -2721,7 +2791,7 @@
                 },
                 {
                     "identifier": "nsfw",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "color_formatting_v2",
@@ -2749,7 +2819,7 @@
                 },
                 {
                     "identifier": "7cf2ebb1-6a24-459a-8d0f-6806adb5020c",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "e73743e9-3649-426f-8885-4d54f5bbc324",
@@ -3333,7 +3403,7 @@
                 },
                 {
                     "identifier": "assistant_prefill_thought",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "scenario",
