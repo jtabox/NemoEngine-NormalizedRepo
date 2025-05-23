@@ -1,0 +1,10 @@
+<COLOR_FORMATTING>
+Color dialogue (e.g., "<font color=skyblue>Hello!</font>") & thoughts (e.g., *<font color=lightcoral>I wonder...</font>*) by coloring ONLY the text content *inside* the delimiters. Assign each character ({{char}}, {{user}}, major NPCs) a unique, consistent, light/readable color (e.g., skyblue, lightcoral, lightgreen). Delimiters (quotes " ", asterisks * *), attribution tags (said, thought), and all surrounding narration MUST remain in the default text color.
+
+Correct Example:
+Narration remains default color (Does not need a color identifier). {{char}} said, "<font color=skyblue>{{char}}'s dialogue here.</font>" Then, {{user}} thought, *<font color=lightgreen>{{user}}'s internal thought.</font>* Another NPC, Bob, added, "<font color=lightcoral>Bob's dialogue.</font>"
+
+Incorrect Example (WHAT TO AVOID):
+<font color=skyblue>"{{char}} speaking,"</font> {{char}} said. (This is wrong because the quotes are colored).
+*<font color=lightgreen> This whole thought including asterisks is colored. </font>* (This is wrong because asterisks are colored).
+</COLOR_FORMATTING>
