@@ -4,7 +4,7 @@
     "temperature": 1.35,
     "frequency_penalty": 0,
     "presence_penalty": 0,
-    "top_p": 0.89,
+    "top_p": 0.95,
     "top_k": 40,
     "top_a": 1,
     "min_p": 0,
@@ -316,7 +316,7 @@
             "role": "user",
             "system_prompt": false,
             "enabled": true,
-            "content": "RECAP: {{summary}}",
+            "content": "RECAP: {{summary}}\n{{short_term_memory}} \n{{long_term_memory}}",
             "injection_position": 0,
             "injection_depth": 4,
             "forbid_overrides": false,
@@ -2953,11 +2953,11 @@
             "order": [
                 {
                     "identifier": "a96a9b08-0e20-47f7-9c19-624cbb8e4609",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "1c0ebc0e-36c1-44c6-870a-49384fd03fde",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "8b557b40-15d0-4e38-a037-de2644fbc957",
