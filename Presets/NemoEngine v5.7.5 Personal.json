@@ -9,7 +9,7 @@
     "top_a": 1,
     "min_p": 0,
     "repetition_penalty": 1,
-    "openai_max_context": "1000000",
+    "openai_max_context": 1000000,
     "openai_max_tokens": 63000,
     "wrap_in_quotes": false,
     "names_behavior": -1,
@@ -3846,7 +3846,7 @@
                 },
                 {
                     "identifier": "assistant_prefill_thought",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "05da96aa-7193-4641-a7fa-8447d44e8ed2",
