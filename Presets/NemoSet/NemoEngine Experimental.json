@@ -23,7 +23,7 @@
     "scenario_format": "{{scenario}}",
     "personality_format": "{{personality}}",
     "group_nudge_prompt": "[{{char}}'s turn!]",
-    "stream_openai": false,
+    "stream_openai": true,
     "prompts": [
         {
             "name": "(Essential just here for things to play off main)",
@@ -41,7 +41,7 @@
             "name": "📜︱System: Core Role & Persona",
             "system_prompt": false,
             "role": "system",
-            "content": "You are Avi, a fun-loving, creative AI writing partner by Nemonet. Collaboratively craft engaging roleplaying stories with {{user}}. Portray all non-{{user}} characters ({{char}}, NPCs, {{group}}) and narrate the world/events. Aim for original, coherent, fun stories. Communicate with {{user}} via OOC comments at reply ends (e.g., OOC: Hope you like this direction!). {{ Card-specific main prompt overrides if 'forbid_overrides' is false on that card's main prompt.}}",
+            "content": "You are Avi, a fun-loving, creative AI writing partner by Nemonet. Collaboratively craft engaging roleplaying stories with {{user}}. Portray all non-{{user}} characters ({{char}}, NPCs, {{group}}) and narrate the world/events. Aim for original, coherent, fun stories.  {{ Card-specific main prompt overrides if 'forbid_overrides' is false on that card's main prompt.}}",
             "injection_position": 0,
             "injection_depth": 4,
             "forbid_overrides": false,
@@ -3047,16 +3047,25 @@
             "injection_depth": 4,
             "injection_order": 100,
             "forbid_overrides": false
+        },
+        {
+            "identifier": "b5c7385d-1839-488b-8a4a-dddb1c8925ab",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "📜︱System: Avi Comment",
+            "role": "system",
+            "content": "Okay Avi, {{user}} wants to hear what you have to say, communicate through OOC comments at the end of their reply.",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "forbid_overrides": false
         }
     ],
     "prompt_order": [
         {
             "character_id": 100001,
             "order": [
-                {
-                    "identifier": "76b1aa1f-c746-4045-9d3c-d186df4e6819",
-                    "enabled": false
-                },
                 {
                     "identifier": "a96a9b08-0e20-47f7-9c19-624cbb8e4609",
                     "enabled": false
@@ -3078,15 +3087,15 @@
                     "enabled": true
                 },
                 {
+                    "identifier": "b5c7385d-1839-488b-8a4a-dddb1c8925ab",
+                    "enabled": false
+                },
+                {
                     "identifier": "95b00245-7072-448d-8b7c-0a0e0339d4e2",
                     "enabled": true
                 },
                 {
                     "identifier": "caad8fc2-2f5a-4cd0-834f-a34c8c3aa28e",
-                    "enabled": true
-                },
-                {
-                    "identifier": "b5529962-c8aa-4e63-abf3-f168feb122f0",
                     "enabled": true
                 },
                 {
@@ -3106,12 +3115,12 @@
                     "enabled": false
                 },
                 {
-                    "identifier": "7b71bc2e-4bd2-4107-871a-77515199704b",
-                    "enabled": false
-                },
-                {
                     "identifier": "e901f379-de44-4a8a-a76a-5e74a108b536",
                     "enabled": true
+                },
+                {
+                    "identifier": "7b71bc2e-4bd2-4107-871a-77515199704b",
+                    "enabled": false
                 },
                 {
                     "identifier": "60459d56-3f2d-4100-a838-993aeee86779",
@@ -3651,7 +3660,7 @@
                 },
                 {
                     "identifier": "fffc0a5e-f43a-4132-ba24-dd351b54ec73",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "1a5bb138-d266-4e14-921c-b969ec921fae",
@@ -3903,7 +3912,7 @@
                 },
                 {
                     "identifier": "post_history_user_directives_v2",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "53856607-132c-489d-867f-bcb7f7335576",
