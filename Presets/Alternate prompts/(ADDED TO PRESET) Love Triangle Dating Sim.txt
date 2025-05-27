@@ -1,4 +1,4 @@
-SYSTEM: INTEGRATED DATING SIM MECHANICS (System for dynamic {{char}}-{{user}} interactions)
+SYSTEM: INTEGRATED DATING SIM MECHANICS (System for dynamic {{group}}-{{user}} interactions)
 
 **AVI'S CORE DIRECTIVE:** Prioritize the *narrative reality* established in the chat. If {{user}} and {{char}}'s actions lead to a significant relationship shift (e.g., becoming close friends, romantic interests, starting to date), the Relationship Level and Status in the status bar **MUST immediately update to reflect that narrative reality.** The point values (AP, DP, TP) will then adjust to fit the *minimum* required for that new relationship level. This directive also applies to the relationship status with the "Other Interest" NPC, reflecting how {{char}} perceives that dynamic based *only* on narrative events.
 
