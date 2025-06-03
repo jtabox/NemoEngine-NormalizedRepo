@@ -1,0 +1,180 @@
+<charactertemplate>
+# Scenario Card: {{scenario_title}}
+
+## Scenario Core & Context 
+
+- Scenario Title: {{scenario_title}} (Short, evocative title)
+- Genre: [e.g., Fantasy, Sci-Fi, Historical, Modern, Mystery, Political Intrigue, Action-Adventure, Slice-of-Life]
+- Setting Type: [e.g., Medieval Kingdom, Space Station, Modern City, Wild West Town, Magical Academy]
+- Setting Location: [Specific location within the setting type. e.g., Kingdom of Eldoria, Station Alpha-7, New York City, Dusty Gulch,  Aethelgard Academy]
+- Time Period/Era:** [e.g., High Medieval, 23rd Century, Present Day, 1880s, Year 543 of the Elven Calendar]
+
+## Setting Description
+
+- Overview: [1-2 sentence concise summary of the scenario setting and its atmosphere]
+- Environment: [Describe the dominant environment. e.g., Lush forests, bustling city streets, barren desert, spaceship interior, gothic castle.  *Example Picklist: Urban, Rural, Wilderness, Interior, Exterior, Natural, Artificial* - Picklist Optional]
+
+- Key Locations: [List 2-3 important locations within the setting. Describe each briefly. e.g., Royal Palace of Eldoria (opulent, guarded), Whispering Woods (ancient, mysterious), Merchant Quarter (crowded, vibrant)]
+- Sensory Details: [Describe what the player might see, hear, smell, taste, and feel in this setting. Focus on evocative details. e.g., "The air is thick with the smell of woodsmoke and roasted meat, the sounds of blacksmiths hammering and children laughing fill the cobblestone streets."]
+
+- Visual Style:** [Describe the overall visual aesthetic of the setting. e.g., Grimy and industrial, clean and futuristic, opulent and ornate, rustic and charming, dark and gothic.  *Example Picklist: Realistic, Stylized, Gritty, Clean, Ornate, Minimalist* - Picklist Optional]
+
+    ### Detailed Setting Aspects (Optional - Use if needed for your scenario focus)
+- Social Structure: [Briefly describe the social hierarchy and key social groups within the setting. e.g., Feudal system, corporate hierarchy, egalitarian society, caste system.]
+
+- Technology/Magic Level: [Describe the level of technology or magic prevalent in the setting. e.g., Medieval technology, advanced sci-fi tech, low magic, high magic, magic integrated with technology.]
+
+- Culture & Customs: [Briefly describe important cultural norms, customs, or traditions within the setting. e.g., Formal etiquette, warrior culture, religious practices, trade-focused society.]
+
+
+## Scenario Atmosphere & Themes
+
+- Overall Tone: [Describe the intended tone of the scenario. e.g., Serious, Lighthearted, Dramatic, Comedic, Mysterious, Romantic, Action-Packed. *Example Picklist:  Dark, Light, Humorous, Serious, Suspenseful, Romantic, Action-Oriented* - Picklist Optional]
+
+- Dominant Mood: [Describe the prevailing mood of the scenario. e.g., Hopeful, Tense, Oppressive, Welcoming, Chaotic, Serene.]
+
+- Recurring Conflicts: [What are the main types of conflicts likely to arise in this scenario? e.g., Political intrigue, resource scarcity, external threats, moral dilemmas, social unrest, personal rivalries.]
+
+- Opportunities & Challenges: [What opportunities for player action and what challenges will they face in this scenario? e.g., Opportunities for diplomacy, trade, exploration, uncovering secrets. Challenges of navigating political landscape, facing prejudice, surviving in a harsh environment.]
+
+- Underlying Themes: [What are the deeper themes explored in this scenario? e.g., Power and corruption, duty and honor, prejudice and tolerance, progress vs. tradition, the nature of good and evil.]
+
+## Key Characters
+
+*   **Character 1: **Name of Character**
+<charactertemplate>
+
+# Character Card: Character
+
+## Core Identity & Context (Token-Efficient Essentials)
+
+- Name: Character (Full Name, Nickname if applicable)
+- Species/Type: [e.g., Human, Elf, Android, Vampire, Creature Name. *Example Picklist: Human, Elf, Orc, Robot, Alien, Demon, Yokai, Succubus, Furry* -  Picklist is optional]
+- Age: [Numerical Age] (Apparent Age if significantly different, e.g., "Appears 20s")
+- Gender Identity: [Male, Female, Non-binary, Genderfluid, etc.]
+- Pronouns: [He/Him, She/Her, They/Them, etc.]
+- Role/Occupation: [e.g., Knight, Doctor, Student, Outlaw, God, Civilian]
+- Key Tags: [Comma-separated keywords summarizing core traits: e.g., Arrogant, Intelligent, Kind, Anxious, Magic User, Detective, Tech Expert. *Consider categories: Personality, Skills, Appearance*]
+
+
+## Appearance
+
+- Overview: [1-2 sentence concise summary of visual impression]
+- Body Build: [e.g., Lean, Muscular, Curvy, Petite, Tall, Short, Average Height. *Example Picklist: Slim, Curvy, Muscular, Athletic, Petite, Stocky* - Picklist optional]
+- Hair: [Color, Style, Length, Texture. *Example Picklist (Style): Straight, Wavy, Curly, Braided, Spiked, Bald* - Picklist optional]
+- Eyes: [Color, Shape, Expression (e.g., piercing, kind, sad)]
+- Distinguishing Features: [Tattoos, Scars, Piercings, Birthmarks, Unique Markings, Posture, Gait - be specific and evocative.]
+
+    ### Detailed Physical Attributes (Optional - Use if needed for your roleplay focus)
+- Skin: [Tone, Texture, e.g., light skin, tanned skin, smooth, scarred]
+- Hands: [Shape, Size, Details, e.g., delicate hands, calloused hands, long fingers, short nails]
+- Other Specific Details:** [*(User can add any highly specific physical details here, e.g., "Freckles across nose," "Slightly crooked teeth," "Cybernetic left arm")*]
+
+
+## Personality & Behavior
+
+*   **Core Personality Summary:** [2-3 sentence summary highlighting dominant traits and overall demeanor]
+*   **Motivations:** [What are their primary drives and goals? Internal and external.]
+*   **Values/Morals:** [What principles guide their actions? What do they believe is right and wrong?]
+*   **Likes:** [Specific things they enjoy and appreciate - be concrete.]
+*   **Dislikes:** [Specific things they despise or are averse to - be concrete.]
+*   **Kinks/Fetishes** [Specific things they desire sexually. Be direct, even if they're a virgin or have little experience.]
+*   **Strengths:** [Skills, talents, positive personality traits, areas of expertise.]
+*   **Weaknesses:** [Flaws, vulnerabilities, limitations, fears, insecurities.]
+*   **Quirks & Habits:** [Memorable, specific behaviors, mannerisms, nervous tics, recurring phrases. Make them unique.]
+*   **Behavior When Relaxed/Safe:** [How do they act when comfortable and unthreatened?]
+*   **Behavior When Stressed/Threatened:** [How do they react under pressure, danger, or fear? Fight, flight, freeze? Specific reactions.]
+
+
+## Relationships & Social Dynamics
+
+*   **Relationship with {{user}} (Initial):** [Describe their starting attitude and dynamic towards the user. Consider context of scenario.]
+*   **Key Relationships (Optional):** [Briefly list 1-3 most important relationships with other characters. Mention the *nature* of these bonds (e.g., rival, mentor, sibling, love interest).]
+
+
+## Speech & Communication Style
+
+*   **Voice Style:** [Describe their typical tone, cadence, and manner of speaking. e.g., Formal, Informal, Sarcastic, Gentle, Monotone, Energetic, Accented.]
+*   **Vocabulary & Language:** [Do they use specific slang, jargon, formal language, or have a distinct accent? Provide brief examples of word choice.]
+*   **Common Phrases/Sayings:** [List 2-3 short, characteristic phrases they frequently use. Not full sentences, but catchphrases.]
+*   **Dialogue Examples:**
+    *   **Neutral/Conversational:** "[Example of typical, everyday speech]"
+    *   **Greeting:** "[Example of how they greet someone]"
+    *   **Angry/Frustrated:** "[Example of speech when angry or frustrated]"
+    *   **Happy/Excited:** "[Example of speech when happy or excited]"
+    *   **Sad/Vulnerable:** "[Example of speech when sad or vulnerable]"
+    *   **Flustered/Embarrassed:** "[Example of speech when flustered or embarrassed]"
+
+
+## Backstory & History (Concise & Relevant)
+
+*   **Backstory Summary:** [1-2 sentence concise overview of their past. Focus on most impactful elements shaping their present.]
+*   **Key Past Events (Bullet Points):** [List 2-3 most significant past events that are relevant to their current personality, motivations, or the scenario. Keep it brief.]
+
+
+## Scenario Context & LLM Guidance
+
+*   **Starting Scenario:** [Describe the initial situation and how {{char}} encounters {{user}}. Set the scene.]
+*   **Current Goals/Objectives:** [What are {{char}}'s immediate goals at the start of the scenario? What do they want to achieve in the short term?]
+*   **LLM Instructions & Guidelines:**
+    *   **Always Remember/Emphasize:** [Bullet points of core traits, motivations, behaviors to consistently portray. *e.g., "Always maintain a cynical and sarcastic tone," "Prioritize protecting their younger sibling above all else."*]
+    *   **Avoid/Do Not:** [Bullet points of things the LLM should *not* do or portray. *e.g., "Do not become overly friendly immediately," "Avoid revealing their past trauma directly unless prompted."*]
+    *   **Desired Tone/Focus:** [Briefly describe the overall tone you want to achieve in the roleplay. *e.g., "Serious and dramatic," "Lighthearted and comedic," "Mystery and intrigue."*]
+
+## Outfits (Optional - Define relevant categories)
+
+    ### Casual Outfit
+    *   **Top:** [Description, Color]
+    *   **Bottom:** [Description, Color]
+    *   **Shoes:** [Description, Color]
+    *   **Accessories:** [Optional: e.g., Jewelry, Hat, Bag]
+
+    ### Formal Outfit
+    *   **Top:** [Description, Color]
+    *   **Bottom:** [Description, Color]
+    *   **Shoes:** [Description, Color]
+    *   **Accessories:** [Optional]
+
+    ### [Other important - e.g., Combat Gear, Work Uniform, lingerie etc.]
+    *   **[Specific items and descriptions for this outfit category]**
+
+*   **Character 2: Character Name
+
+(Use template above)
+
+*   **Add more characters as necessary. 
+
+
+## Scenario History & Lore (Concise & Relevant)
+
+*   **Scenario Backstory Summary:** [1-2 sentence concise overview of the scenario's immediate past leading up to the starting point.  What recent events set the stage?]
+
+*   **Key Historical Events (Bullet Points):** [List 2-3 most significant past events that are relevant to the current scenario situation, conflicts, or setting atmosphere. Keep it brief and focused on *relevance*.]
+
+*   **Important Lore Elements:** [Briefly describe any crucial lore or world-building elements players should be aware of. e.g., Prophecies, ancient artifacts, legendary figures, forbidden knowledge, unique laws or customs.]
+
+
+## Scenario Start & LLM Guidance
+
+*   **Starting Premise:** [Describe the initial situation that kicks off the scenario. What is happening *when the roleplay begins*? e.g., "You arrive in Eldoria as a diplomat tasked with negotiating a trade agreement with the King."]
+
+*   **Player's Initial Goal(s):** [What are the player's intended or suggested starting goals within the scenario? e.g., "Establish a favorable trade agreement with Eldoria, learn about the kingdom's political landscape, build relationships with key figures."]
+
+*   **Scenario's Immediate Conflicts/Opportunities:** [What are the immediate challenges and possibilities facing the player at the start of the scenario? e.g., "Rumors of unrest in the kingdom, a rival diplomat from a neighboring nation, potential for discovering ancient secrets."]
+
+*   **LLM Instructions & Guidelines:**
+
+    *   **Always Maintain/Emphasize:** [Bullet points of core scenario elements, atmosphere, or recurring themes to consistently portray. *e.g., "Maintain a sense of political tension and courtly intrigue," "Emphasize the beauty and danger of the Eldorian wilderness," "Consistently portray the King as pragmatic but honorable."*]
+
+    *   **Avoid/Do Not:** [Bullet points of things the LLM should *not* do or portray within the scenario. *e.g., "Do not introduce modern technology into this medieval setting," "Avoid resolving major political conflicts too quickly," "Do not make the player's diplomatic mission trivially easy."*]
+
+    *   **Desired Scenario Flow/Focus:** [Briefly describe the overall flow or focus you want the LLM to guide the scenario towards. *e.g., "Focus on political maneuvering and dialogue," "Encourage exploration and discovery," "Lead towards a major conflict or crisis."*]
+
+## Visual Assets & Inspiration (Optional)
+
+    ### Key Location Visuals (Optional - Add for 1-3 key locations)
+    *   **[Location Name - e.g., Royal Palace of Eldoria]:** [Brief description of desired visual style or mood for this location.  Optionally, links to image URLs or descriptions of visual inspiration. e.g., "Opulent, gold and crimson, lots of tapestries and polished stone. Think Versailles, but with a medieval fantasy twist. [Optional Image Link: example_palace.jpg]"]
+
+    *   **(Add more location visuals as needed)**
+
+</charactertemplate>
