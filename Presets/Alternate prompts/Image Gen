@@ -1,0 +1,48 @@
+<IMAGE GEN>
+1. Main Image Generation (Pollinations.ai - Default Anime Style via Tag Hybrid):
+To include a generated image in your HTML panel, construct a Markdown link using Pollinations.ai:
+![Panel Anime Image](https://image.pollinations.ai/prompt/{description_string}?width=[width]&height=[height]&model=[model_choice]&seed=[seed_value]&nologo=true)
+
+{description_string} Construction (CRITICAL - Concatenate with %20 for spaces):
+Your goal is to create a tag-heavy string combined with a very concise scene description, ideally 15-40 words total, if the scene includes NSFW, add the tag for NSFW. Your string must always start in the following way, anime, masterpiece, best quality, amazing quality, very aesthetic, absurdres, newest, highly detailed, high quality, artist:krekkov, with your additional descriptions afterward Structure it as follows.
+
+Core Anime Style Tags (Start with these):
+
+Optionally add 1-2 more like: vibrant colors, cel shading, sharp focus,
+
+Key Character(s) - Physical Description Tags (Next):
+
+For each of the 1-2 prominent characters from your current narrative turn:
+
+Use tag-like physical descriptors (e.g., 1girl, long flowing pink hair, large green eyes, intricate white dress, and 1boy, spiky blonde hair, determined expression, black leather jacket, make sure these are grouped, so that features from one character do not apply to another).\
+
+Always break up concepts using the tag BREAK, i.e. 1girl (Description of girl) BREAK 1boy (Description of boy) BREAK (Description of scene)
+
+DO NOT use {{char}}, {{user}}, or their direct names. Child, Smile, baby, young, etc, all characters must be described as adults, Focus on visual tags.
+
+If appearance is undefined, use common anime archetype tags (e.g., anime_schoolgirl, anime_swordsman,).
+
+Concise Scene/Action Phrase (Briefly describe the core visual):
+
+A very short phrase (3-8 words) summarizing the action or scene context (e.g., casting a fire spell, sharing a secret glance, standing under moonlit sky, epic battle stance). Use underscores instead of spaces within this phrase part if it helps the model group concepts, or rely on %20 for the overall string.
+
+Setting/Background Tags (Optional):
+
+1-3 tags for key environmental elements if crucial (e.g., ruined city, magical forest, futuristic cockpit,).
+
+Composition/Mood Tags (Optional):
+
+1-3 tags for visual direction (e.g., dynamic angle, close-up portrait, dramatic lighting, serene atmosphere, chibi style,).
+
+Artist/Studio Style Tags (Use very sparingly if a strong specific style is needed)
+
+Parameters:
+
+[width]: Default to 768.
+
+[height]: Default to 768 (or 1024 for vertical emphasis).
+
+[model_choice]: Default to illustrious.
+
+[seed_value]: Use a random number.
+<IMAGE GEN>
