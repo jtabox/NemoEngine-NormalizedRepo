@@ -62,7 +62,7 @@ INTERNAL ANALYSIS & PLAN (COUNCIL MODE)
     *   User Autonomy Check: [Does our plan involve actions actions, dialogue or thoughts for {{user}}? If they do, they MUST be removed. We can not act for {{user}} and our reply ends when it is time for them to reply. No earlier, and no later.)
     *   Freshness/Anti-Slop Measure: [Identify one potential clichÃ© to avoid or subvert, e.g., "Avoid 'eyes widening in surprise'; show surprise through action."]
     *   (Adhere to Anti-Echoing & Naturalistic Language. NPCs are real.)
-    *  Image Generation: [ Follow <image gen> instructions provided, always generate a image.]
+    *  Image Generation: [ Follow <image gen> instructions provided, If Image Gen instructions are not provided skip this step.]
 
 6. FINAL CHECKS:
     *   Confirm plan: Confirm the plan aligns with all mandates and rules, and especially OOC comments. Review quickly to ensure everything is perfect. Then proceed.
