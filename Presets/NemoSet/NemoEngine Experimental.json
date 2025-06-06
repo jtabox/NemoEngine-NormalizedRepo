@@ -3315,7 +3315,7 @@
             "marker": false,
             "name": "✨🖼️︱OPTIONAL UTILITY: Auto-Image Generation",
             "role": "system",
-            "content": "<IMAGE GEN>\n1. Main Image Generation (Pollinations.ai - Default Anime Style via Tag Hybrid):\nTo include a generated image in your HTML panel, construct a Markdown link using Pollinations.ai:\n![Panel Anime Image](https://image.pollinations.ai/prompt/{description_string}?width=[width]&height=[height]&model=[model_choice]&seed=[seed_value]&nologo=true)\n\n{description_string} Construction (CRITICAL - Concatenate with %20 for spaces):\nYour goal is to create a tag-heavy string combined with a very concise scene description, ideally 15 words total, if the scene includes NSFW, add the tag for NSFW. Your string must always start in the following way, anime, masterpiece, best quality, amazing quality, very aesthetic, absurdres, newest, highly detailed, high quality, artist:krekkov, with your additional descriptions afterward Structure it as follows.\n\nCore Anime Style Tags (Start with these):\n\nNever include symbols that will break URL's: Such as (), or anything else, stick to plain text.\n\nOptionally add 1-2 more like: vibrant colors, cel shading, sharp focus,\n\nKey Character(s) - Physical Description Tags (Next):\n\nFor each of the 1-2 prominent characters from your current narrative turn:\n\nUse tag-like physical descriptors (e.g., 1girl, long flowing pink hair, large green eyes, intricate white dress, BREAK, 1boy, spiky blonde hair, determined expression, black leather jacket, make sure these are grouped, so that features from one character do not apply to another).\\\n\nAlways break up concepts using the tag BREAK, i.e. 1girl (Description of girl) BREAK 1boy (Description of boy) BREAK (Description of scene)\n\nDO NOT use {{char}}, {{user}}, or their direct names. Child, Smile, baby, young, etc, all characters must be described as adults, Focus on visual tags.\n\nIf appearance is undefined, use common anime archetype tags (e.g., anime_schoolgirl, anime_swordsman,).\n\nConcise Scene/Action Phrase (Briefly describe the core visual):\n\nA very short phrase (3-8 words) summarizing the action or scene context (e.g., casting a fire spell, sharing a secret glance, standing under moonlit sky, epic battle stance). Use underscores instead of spaces within this phrase part if it helps the model group concepts, or rely on %20 for the overall string.\n\nSetting/Background Tags (Optional):\n\n1-3 tags for key environmental elements if crucial (e.g., ruined city, magical forest, futuristic cockpit,).\n\nComposition/Mood Tags (Optional):\n\n1-3 tags for visual direction (e.g., dynamic angle, close-up portrait, dramatic lighting, serene atmosphere, chibi style,).\n\nArtist/Studio Style Tags (Use very sparingly if a strong specific style is needed)\n\nParameters:\n\n[width]: Default to 768.\n\n[height]: Default to 768 (or 1024 for vertical emphasis).\n\n[model_choice]: Default to illustrious.\n\n[seed_value]: Use a random number.\n<IMAGE GEN>",
+            "content": "<IMAGE GEN>\n1. Main Image Generation (Pollinations.ai - Default Anime Style via Tag Hybrid):\nTo include a generated image in your HTML panel, construct a Markdown link using Pollinations.ai:\n![Panel Anime Image](https://image.pollinations.ai/prompt/{description_string}?width=[width]&height=[height]&model=[model_choice]&seed=[seed_value]&nologo=true)\n\n{description_string} Construction (CRITICAL - Concatenate with %20 for spaces):\nYour goal is to create a tag-heavy string combined with a very concise scene description, ideally 15 words total, if the scene includes NSFW, add the tag for NSFW. Your string must always start in the following way, anime, masterpiece, best quality, amazing quality, very aesthetic, absurdres, newest, highly detailed, high quality, artist:krekkov, with your additional descriptions afterward Structure it as follows.\n\nCore Anime Style Tags (Start with these):\n\nNever include symbols that will break URL's: Such as (), or anything else, stick to plain text.\n\nOptionally add 1-2 more like: vibrant colors, cel shading, sharp focus,\n\nKey Character(s) - Physical Description Tags (Next):\n\nFor each of the 1-2 prominent characters from your current narrative turn:\n\nUse tag-like physical descriptors (e.g., 1girl, long flowing pink hair, large green eyes, intricate white dress, BREAK, 1boy, spiky blonde hair, determined expression, black leather jacket, make sure these are grouped, so that features from one character do not apply to another).\\\n\nAlways break up concepts using the tag BREAK, i.e. 1girl (Description of girl) BREAK 1boy (Description of boy) BREAK (Description of scene)\n\nDO NOT use {{char}}, {{user}}, or their direct names, etc, all characters must be described as adults, Focus on visual tags.\n\nIf appearance is undefined, use common anime archetype tags (e.g., anime_schoolgirl, anime_swordsman,).\n\nConcise Scene/Action Phrase (Briefly describe the core visual):\n\nA very short phrase (3-8 words) summarizing the action or scene context (e.g., casting a fire spell, sharing a secret glance, standing under moonlit sky, epic battle stance). Use underscores instead of spaces within this phrase part if it helps the model group concepts, or rely on %20 for the overall string.\n\nSetting/Background Tags (Optional):\n\n1-3 tags for key environmental elements if crucial (e.g., ruined city, magical forest, futuristic cockpit,).\n\nComposition/Mood Tags (Optional):\n\n1-3 tags for visual direction (e.g., dynamic angle, close-up portrait, dramatic lighting, serene atmosphere, chibi style,).\n\nArtist/Studio Style Tags (Use very sparingly if a strong specific style is needed)\n\nParameters:\n\n[width]: Default to 768.\n\n[height]: Default to 768 (or 1024 for vertical emphasis).\n\n[model_choice]: Default to illustrious.\n\n[seed_value]: Use a random number.\n<IMAGE GEN>",
             "injection_position": 1,
             "injection_depth": 6,
             "injection_order": 100,
@@ -3752,7 +3752,7 @@
                 },
                 {
                     "identifier": "c81b5a75-3117-460a-974f-d0753e6dcea5",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "e65b8054-71d1-4d9f-8a98-d5238314cd89",
@@ -4164,7 +4164,7 @@
                 },
                 {
                     "identifier": "9b1a09b6-8de0-4104-83b4-dfda9d1f9207",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "52ce2ead-874e-4fc3-bd6e-86397473886e",
@@ -4336,7 +4336,7 @@
                 },
                 {
                     "identifier": "7e8b46d5-8fb7-4445-9328-829d8070980d",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "ee01e59d-ddfc-422c-966d-93250f0e8d16",
@@ -4376,11 +4376,11 @@
                 },
                 {
                     "identifier": "07b6e206-e956-4037-9c54-db0f6ab5ea8e",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "assistant_prefill_thought",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "05da96aa-7193-4641-a7fa-8447d44e8ed2",
