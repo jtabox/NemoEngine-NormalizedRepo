@@ -2735,7 +2735,7 @@ The current version's prompts are in `../Prompts/`.
   - `c8ba98a7-f199-4ea1-a5ba-4549061553b4` — ︱Experimental CoT
 
 ## 9.3.2 (CURRENT) (current)
-- added: 9, changed: 182, removed: 0
+- added: 9, changed: 186, removed: 0
 - **added**:
   - `nemo-status-board-9-3-2` — 📊 Status Board
   - `nemo-location-board-9-3-2` — 🧭 Location Board
@@ -2926,6 +2926,10 @@ The current version's prompts are in `../Prompts/`.
   - `e399d4e1-7608-49d4-aa9e-2a863a1f7f82` — 🎭 Visual Novel Theme
   - `1770095491838-tzqljonp` — 🛡️ RPG Dashboard
   - `1770095491838-bxxnfri2` — 🔀 CYOA
+  - `1770095491839-npsjusbc` — 💖 Dating Sim
+  - `1770095491839-m9rg73a5` — 📣 Fandom Reaction
+  - `1770095491839-c6om818e` — 🎰 Gacha System
   - `1770095491839-bhuvuw8l` — 🗺️ Quest Journal
+  - `1770095491839-jckggy3a` — 📰 Scroll News Lore
   - `main` — Main Prompt
   - `f21f6d62-7d63-41a8-b8e3-compact-regex-trackers` — 🧩 Regex Render

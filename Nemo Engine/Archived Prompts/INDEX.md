@@ -694,7 +694,7 @@ Use this to trace a prompt's evolution across the archive.
 | `c11f0a2a-d08c-4d0a-8306-d38e7ba69795` | 🎯\|Fantasy RPG | 8.0 Exp |
 | `3f7e0c1d-2069-416e-b09f-0d14a6bc40fe` | 🎯\|Fast and Snappy | 8.0 Exp |
 | `a7ca4da0-d1e1-4a83-83fb-321d218473bc` | 🎯\|Slice of Life | 8.0 Exp |
-| `1770095491839-c6om818e` | 🎰 Gacha System | 9.3.1 |
+| `1770095491839-c6om818e` | 🎰 Gacha System | 9.3.1, 9.3.2 (CURRENT) |
 | `0c6658e7-c03f-4f6a-8248-761ff23cc4f7` | 🐐 \| Corruption (Fefnik) | 7.0 Official |
 | `1762115256435-glj7h9thg` | 🐐 \| Corruption (Fefnik) | 8.0 Exp |
 | `85d199f8-bcb3-4304-87c9-b266a4feb9f2` | 🐐 \| Dating Sim (Quantum) | 7.0 Official, 7.1 Official (Gilgamesh and Other tweaks) |
@@ -717,7 +717,7 @@ Use this to trace a prompt's evolution across the archive.
 | `33f10cec-36c2-49ac-a840-90320e6e64cf` | 💀🥀 \| The Corpse Narrator Vex | 8.0 Exp |
 | `1754958885559-2uinr1sg9` | 💊Healing Genre | 7.0 Official |
 | `1754958892983-v0cu6m06e` | 💔Angst Genre | 7.0 Official |
-| `1770095491839-npsjusbc` | 💖 Dating Sim | 9.3.1 |
+| `1770095491839-npsjusbc` | 💖 Dating Sim | 9.3.1, 9.3.2 (CURRENT) |
 | `082cbf4c-4e5c-4cf8-9af6-33aae3404d5d` | 💖💾︱  Dating Sim Love Triangle | 5.5 (Reddit Update), 5.7.5 Personal, 5.8.9 (Revealing Vex!) (Deepseek), 5.8.9.1E, 5.9 Deepseek, 7.0 Official, 7.1 Official (Gilgamesh and Other tweaks) |
 | `218939b8-92da-4852-a2e6-48b099770d80` | 💖💾︱Dating Sim | 5.4 Tutorial, 5.7.5 Personal, 5.8 (Experimental) (Deepseek) V3, 5.8.9 (Revealing Vex!) (Deepseek), 5.8.9.1E, 6.0 (Official), 7.0 Official, 7.1 Official (Gilgamesh and Other tweaks), 7.3 |
 | `1762115260414-i7n4iix3z` | 💖💾︱Dating Sim | 8.0 Exp |
@@ -790,11 +790,11 @@ Use this to trace a prompt's evolution across the archive.
 | `jailbreak_unrestricted` | 📜︱System: Unrestricted Content Generation | 5.4 Tutorial, 5.8 (Experimental) (Deepseek) V3, 5.8 (Personal) (The Community Update), 5.8.9 (Revealing Vex!) (Deepseek), 7.0 Official |
 | `5e32c61f-c1af-449f-88a9-f0693461e8d3` | 📜︱System: Unrestricted Content Generation | 8.0 Exp |
 | `1770095491838-tdl85l34` | 📟 ASCII Render | 9.3.1, 9.3.2 (CURRENT) |
-| `1770095491839-m9rg73a5` | 📣 Fandom Reaction | 9.3.1 |
+| `1770095491839-m9rg73a5` | 📣 Fandom Reaction | 9.3.1, 9.3.2 (CURRENT) |
 | `b5c7385d-1839-488b-8a4a-dddb1c8925ab` | 📣︱Vex Comment | 5.8 (Experimental) (Deepseek) V3, 5.8.9 (Revealing Vex!) (Deepseek), 5.9 Deepseek, 6.0 (Official), 7.0 Official |
 | `1770095491834-1h31rrcp` | 📦 Standard Core Pack | 9.3.1, 9.3.2 (CURRENT) |
 | `0ced8cc6-85df-4dbe-a6c2-b7d90533a5e7` | 📰 Newsprint Theme | 9.3.1, 9.3.2 (CURRENT) |
-| `1770095491839-jckggy3a` | 📰 Scroll News Lore | 9.3.1 |
+| `1770095491839-jckggy3a` | 📰 Scroll News Lore | 9.3.1, 9.3.2 (CURRENT) |
 | `65df6f0a-9851-4c89-81c6-cf85d1d7f2b4` | 📱 Cell Phone Theme | 9.3.1, 9.3.2 (CURRENT) |
 | `1770095491838-bxxnfri2` | 🔀 CYOA | 9.3.1, 9.3.2 (CURRENT) |
 | `3e009f3e-a6a6-4886-b76f-d755434c2951` | 🔄 \| Parelle storylines | 7.0 Official, 7.1 Official (Gilgamesh and Other tweaks) |
