@@ -2735,13 +2735,17 @@ The current version's prompts are in `../Prompts/`.
   - `c8ba98a7-f199-4ea1-a5ba-4549061553b4` — ︱Experimental CoT
 
 ## 9.3.2 (CURRENT) (current)
-- added: 5, changed: 180, removed: 0
+- added: 9, changed: 182, removed: 0
 - **added**:
   - `nemo-status-board-9-3-2` — 📊 Status Board
   - `nemo-location-board-9-3-2` — 🧭 Location Board
   - `nemo-auto-imagegen-9-3-2` — 🖼️ Auto Image Gen
   - `nemo-sudo-prefill-assistant-9-3-2` — 🪞 Sudo-Prefill (Assistant)
   - `nemo-sudo-prefill-user-9-3-2` — 🪞 Sudo-Prefill (User)
+  - `nemo-char-knowledge-log-9-3-2` — 🧠 Char's Knowledge Log
+  - `nemo-vex-planning-9-3-2` — 📖 Vex Planning Quarters
+  - `nemo-manga-panels-9-3-2` — 📖 Manga / Comic Panels
+  - `nemo-webtoon-panels-9-3-2` — 📜 Vertical Webtoon Panels
 - **changed**:
   - `1770095491833-qo0t290u` — 📁 Settings Reminder
   - `1770095491833-esf8iriq` — 📁 Variable Init
@@ -2920,6 +2924,8 @@ The current version's prompts are in `../Prompts/`.
   - `9e63d716-e7b5-47e2-841c-8a021d2ff2ec` — 🌃 Cyberpunk AR Theme
   - `3f91deac-e569-4a1b-aea9-84b30e7519f0` — 🧾 Dossier Theme
   - `e399d4e1-7608-49d4-aa9e-2a863a1f7f82` — 🎭 Visual Novel Theme
+  - `1770095491838-tzqljonp` — 🛡️ RPG Dashboard
   - `1770095491838-bxxnfri2` — 🔀 CYOA
+  - `1770095491839-bhuvuw8l` — 🗺️ Quest Journal
   - `main` — Main Prompt
   - `f21f6d62-7d63-41a8-b8e3-compact-regex-trackers` — 🧩 Regex Render

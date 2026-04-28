@@ -5466,7 +5466,7 @@
             "system_prompt": false,
             "marker": false,
             "role": "user",
-            "content": "{{// @category Trackers }}\n{{// @color #34495E }}\n{{// @icon 🛡️ }}\n{{// @tooltip RPG Dashboard - stats, equipment, inventory, and status effects. }}\n{{// @badge TRACKER }}\n\n# RPG Dashboard\n\nWhen to output: when stats, equipment, inventory, resources, or status effects change; otherwise every 2-3 turns if RPG tracking is central.\n\nTrack this information:\n- Identity: name, class/title, level, role.\n- Core resources: health, stamina/mana, wounds, fatigue, or setting equivalent.\n- Attributes/skills that matter right now, not a full sheet every time.\n- Equipment and inventory changes, including quantities for important items.\n- Active conditions, buffs, debuffs, timers, encumbrance, or notable constraints.\n\nPlacement: bottom of the response after narrative.\n\nRender instruction:\n{{getvar::TrackerRenderInstruction}}\n{{getvar::TrackerThemeInstruction}}\n\n{{setvar::Tracker_CharacterSheet::Active}}\n{{setvar::TrackerActive_CharacterSheet::Active}}\n{{setvar::TrackerActive_Inventory::Active}}\n{{trim}}",
+            "content": "{{// @category Trackers }}\n{{// @color #34495E }}\n{{// @icon 🛡️ }}\n{{// @tooltip RPG Dashboard - identity, attributes, skills, equipment, inventory, conditions, and currency. Living character sheet. }}\n{{// @badge TRACKER }}\n\n# RPG Dashboard\n\nWhen to output: when stats, equipment, inventory, resources, skills, or status effects change. Otherwise once every 2 to 3 turns if RPG mechanics are central; skip if the scene is purely social.\n\nTrack this information:\n\nIdentity panel:\n- {{user}}'s in-character name, class or title, level (number plus tier label like \"Apprentice\", \"Veteran\", \"Legendary\"), and role within the current party or faction.\n- Optional ASCII or emoji portrait if a render mode that supports it is active. Keep it small and class-flavoured.\n\nCore attributes (use the system the world expects - D&D-style STR/DEX/CON/INT/WIS/CHA, FATE aspects, World of Darkness traits, Pathfinder, custom Vex setting, etc.):\n- Show 4 to 6 attributes that matter right now, with current value and a 0-to-100 meter or numeric range appropriate to the system.\n- Note any temporary modifiers (e.g., \"STR 18 (+2 from Berserker)\").\n\nSkills and abilities:\n- 4 to 8 skills relevant to the current scene, with mastery tier (Untrained, Novice, Skilled, Expert, Master) or experience meter.\n- Highlight any skill being tested this turn.\n\nEquipment:\n- Slot list: weapon, off-hand, armor, accessory 1, accessory 2, focus or class-specific slot. Mark empty slots clearly.\n- Each equipped item shows name, rarity tier, and one-line effect or signature trait.\n\nInventory by category:\n- Weapons and tools, Consumables, Treasures and valuables, Quest items, Miscellaneous. Skip empty categories.\n- Each item: name, quantity, rarity tier, weight or carry cost when encumbrance matters.\n- Rarity ladder: Common, Uncommon, Rare, Epic, Legendary, Artifact, Mythic. Use the same words consistently.\n\nResources and conditions:\n- Health, stamina or mana, wounds, fatigue, or setting equivalents - with current / max and a meter.\n- Active buffs, debuffs, status effects, timers (e.g., \"Poisoned 3 turns left\", \"Blessed +2 WIL\"), encumbrance state.\n- Currency: gold, credits, favor, bottle caps, soul shards - whatever the setting uses.\n\nUpdate philosophy:\n- Only show what changed or is currently relevant. Do not dump the entire sheet every turn.\n- When something changes, surface it visibly (new item flagged, tier-up highlighted, condition expiring soon emphasized).\n\nRegex tags:\n- <st-row k=\"Class\" v=\"Knight Errant, Lv 7\"/> for identity lines.\n- <st-bar k=\"HP\" v=\"62\" l=\"62/100\"/> for resources and attributes.\n- <st-tag t=\"Rare\"/> for rarity badges, <st-tag t=\"Poisoned 3T\"/> for conditions.\n- Group equipment and each inventory category in nested <st-tracker type=\"slot\" title=\"Weapon\">...</st-tracker> when the theme supports nesting.\n\nPlacement: bottom of the response after narrative.\n\nRender instruction:\n{{getvar::TrackerRenderInstruction}}\n{{getvar::TrackerThemeInstruction}}\n\n{{setvar::Tracker_CharacterSheet::Active}}\n{{setvar::TrackerActive_CharacterSheet::Active}}\n{{setvar::TrackerActive_Inventory::Active}}\n{{trim}}",
             "enabled": false,
             "injection_position": 1,
             "injection_depth": 2,
@@ -5536,7 +5536,7 @@
             "system_prompt": false,
             "marker": false,
             "role": "user",
-            "content": "{{// @category Trackers }}\n{{// @tooltip Quest journal - active objectives and leads. }}\n{{// @color #27AE60 }}\n{{// @icon 🗺️ }}\n{{// @badge TRACKER }}\n\n# Quest Journal\n\nWhen to output: when objectives, leads, clues, deadlines, risks, or completed steps change.\n\nTrack this information:\n- Active objective in one sentence.\n- Leads: concise next directions or suspects.\n- Clues: confirmed facts separated from rumors.\n- Risks: deadline, enemy move, cost, complication, or uncertainty.\n- Done: recently completed objective only when it changed. Retire stale entries.\n\nPlacement: bottom of the response after narrative.\n\nRender instruction:\n{{getvar::TrackerRenderInstruction}}\n{{getvar::TrackerThemeInstruction}}\n\n{{setvar::TrackerActive_QuestJournal::Active}}\n{{trim}}",
+            "content": "{{// @category Trackers }}\n{{// @tooltip Quest journal - active objectives with type, giver, location, difficulty, progress, and rewards. Separate completed and failed sections. }}\n{{// @color #27AE60 }}\n{{// @icon 🗺️ }}\n{{// @badge TRACKER }}\n\n# Quest Journal\n\nWhen to output: when objectives, leads, clues, deadlines, risks, progress, or completion state changes.\n\nTrack this information:\n\nActive quests - for each, capture:\n- Quest name (short, distinctive).\n- Type badge: Main, Side, Daily, Hidden, Emergency, Personal. Pick the one that fits.\n- Difficulty rating 1 to 5 stars.\n- Location and giver: where it is happening, who issued or is connected to it.\n- One-line description in {{user}}'s framing or the giver's voice.\n- Progress: X / Y steps when multi-step, with the next concrete step named. For binary quests, show stage (Started, Investigating, Confronting, Resolving).\n- Stakes: what {{user}} gains on success and what is risked or lost on failure.\n- Expected rewards: items, currency, knowledge, favor, leverage, or bond - whatever fits the world.\n\nCompleted quests:\n- Quest name plus a one-line outcome (what changed because of it).\n- Keep the most recent 3 to 5; retire older entries to history once they stop influencing the present.\n\nFailed or abandoned:\n- Quest name with a strikethrough sense, plus the failure reason or consequence carried forward.\n- Mark it as Failed, Abandoned, or Lost depending on cause.\n\nCounter at the top of the panel: count of Active quests, plus a short status word (\"clear\", \"busy\", \"overwhelmed\").\n\nRegex tags:\n- <st-row k=\"Quest\" v=\"The Drowned Ear Job\"/> for each name line.\n- <st-tag t=\"Side\"/>, <st-tag t=\"★★★☆☆\"/> for type and difficulty.\n- <st-bar k=\"Progress\" v=\"40\" l=\"2/5 steps\"/> for progress meters.\n- Group each quest in nested <st-tracker type=\"quest\" title=\"Quest Name\">...</st-tracker> when the active theme supports nesting; otherwise list them flat.\n\nPlacement: bottom of the response after narrative.\n\nRender instruction:\n{{getvar::TrackerRenderInstruction}}\n{{getvar::TrackerThemeInstruction}}\n\n{{setvar::TrackerActive_QuestJournal::Active}}\n{{trim}}",
             "enabled": false,
             "injection_position": 1,
             "injection_depth": 2,
@@ -6125,6 +6125,62 @@
             "injection_position": 1,
             "injection_depth": 0,
             "injection_order": 101,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "nemo-char-knowledge-log-9-3-2",
+            "name": "🧠 Char's Knowledge Log",
+            "system_prompt": false,
+            "marker": false,
+            "role": "user",
+            "content": "{{// @category Trackers }}\n{{// @tooltip Char's Knowledge Log - {{char}}'s subjective memory and observations of {{user}}. Biased recall, not ground truth. Useful for mystery, investigation, and preventing meta-knowledge bleed. }}\n{{// @color #6366F1 }}\n{{// @icon 🧠 }}\n{{// @badge TRACKER }}\n\n# Char's Knowledge Log\n\nWhen to output: every 2 to 3 turns, or after a significant memory-forming event - reveal, betrayal, intimacy, shock, vow, accusation, etc.\n\nImportant framing: this is {{char}}'s subjective memory, not omniscient ground truth. {{char}} only knows what they have personally perceived, been credibly told, or could plausibly infer. They may misinterpret, forget, or distort. Do not let entries leak knowledge {{char}} does not have.\n\nTrack this information:\n\nThrough {{char}}'s eyes (one-line stance):\n- A short italicized line in {{char}}'s voice describing how they currently process the world (suspicious, hopeful, hollowed-out, infatuated, on guard, etc.). This sets the bias of every entry below.\n\nSignificant memories (3 to 8 entries, ordered most recent first):\n- Each memory:\n  - Emotional icon matching how {{char}} remembers it (😊 fond, 😢 grieved, 😰 anxious, 😡 wronged, 💭 ambivalent, 🩸 traumatic, 💋 charged).\n  - Subjective recall in one sentence - {{char}}'s framing, not the narrator's. May include misinterpretation.\n  - Approximate timeframe (just now, recently, a while back, long ago).\n  - Confidence: Strong (clear), Moderate (fuzzy edges), Faint (unsure).\n- Retire stale entries when newer events crowd them out.\n\nObservations of {{user}}:\n- \"Things {{user}} seems to lean into\" - 2 to 5 ✓ items: behaviors, topics, tastes, kinks, rituals, fears that {{char}} has noticed {{user}} engages with. Tag these as {{char}}'s interpretation, not fact.\n- \"Things {{user}} seems to avoid or refuse\" - 2 to 5 ✗ items, same caveat.\n\nPersonal thoughts:\n- 1 to 3 short quoted internal lines - {{char}}'s current feelings, doubts, suspicions, attractions, or fears about {{user}}. Use first person.\n\nUpdate rules:\n- Memories may shift wording over time as {{char}} re-interprets the past in light of new events. That drift is feature, not bug.\n- If a memory is contradicted by ground truth, do not delete it - {{char}} may still believe the wrong version. Add a Strong-confidence newer entry instead.\n\nRegex tags:\n- <st-row k=\"Through their eyes\" v=\"...\"/> for the stance line.\n- <st-tracker type=\"memory\" title=\"...\" icon=\"😰\">...</st-tracker> per memory when nesting is supported, with <st-bar k=\"Confidence\" v=\"40\" l=\"Faint\"/>.\n- <st-tag t=\"Lean: ...\"/> and <st-tag t=\"Avoid: ...\"/> for observation chips.\n\nPlacement: bottom of the response after narrative, after other trackers.\n\nRender instruction:\n{{getvar::TrackerRenderInstruction}}\n{{getvar::TrackerThemeInstruction}}\n\n{{setvar::TrackerActive_KnowledgeLog::Active}}\n{{trim}}",
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "nemo-vex-planning-9-3-2",
+            "name": "📖 Vex Planning Quarters",
+            "system_prompt": false,
+            "marker": false,
+            "role": "user",
+            "content": "{{// @category Trackers }}\n{{// @tooltip Vex's Planning Quarters - meta storyteller-notebook showing genre/tone, current arc progress, and short / mid / long-term narrative intentions. }}\n{{// @color #DC2626 }}\n{{// @icon 📖 }}\n{{// @badge TRACKER }}\n\n# Vex's Planning Quarters\n\nWhen to output: bottom of every response while active. This is Vex's transparent storyteller notebook - they show {{user}} what they are aiming at without spoiling the surprise. The plans are guiding intentions, not commitments. {{user}}'s choices override them.\n\nTrack this information:\n\nGenre and tone:\n- Primary genre or sub-genre badge (\"Slice-of-Life Romance\", \"Cosmic Horror Investigation\", \"Heist Caper\", \"Sword and Sorcery\", etc.).\n- Current tone or atmosphere badge (\"Light and warm\", \"Tense, secrets pending\", \"Charged, on the edge of violence\", \"Tender after the storm\", etc.). Update when the scene's emotional weather actually shifts.\n\nCurrent arc:\n- One-line summary of the active mini-arc.\n- Stage with progress meter: Early (about 20 percent), Middle (50), Climax (80), Resolution (90), Winding Down (100). Move the marker only when narrative warrants it.\n\nShort-term beats (next 1 to 2 replies):\n- 2 or 3 immediate intentions Vex is angling toward. Concrete, actionable, scene-scale.\n- Examples: \"Let the silence stretch a beat too long after the question.\", \"Introduce a third NPC who undercuts the heroic framing.\", \"Force {{user}} to choose between truth and comfort.\"\n\nMid-term beats (next 3 to 5 replies):\n- 2 or 3 development points Vex wants to land in the near future. Connect to character arcs or unresolved threads.\n- Examples: \"Reveal the favor came with strings.\", \"Bring {{char}}'s past lover into the orbit.\", \"Spike the stakes with a deadline.\"\n\nLong-term threads:\n- 2 or 3 overarching themes, possibilities, or unanswered questions Vex is keeping live. Soft, can fade if the story moves elsewhere.\n- Examples: \"The honesty plague reaches the capital.\", \"Will {{char}} ever forgive themselves?\", \"What is {{user}} really running from?\"\n\nAdaptive footer:\n- One italic disclaimer line: \"These are guiding thoughts. They will adapt organically to {{user}}'s choices.\"\n\nRegex tags:\n- <st-tag t=\"Slice-of-Life Romance\"/> and <st-tag t=\"Tone: charged\"/> for badges.\n- <st-bar k=\"Arc\" v=\"50\" l=\"Middle\"/> for the progress meter.\n- <st-row k=\"▶ Short\" v=\"...\"/> for short-term beats, <st-row k=\"◆ Mid\" v=\"...\"/> for mid-term, <st-row k=\"★ Long\" v=\"...\"/> for long-term threads.\n\nPlacement: bottom of the response after narrative, after other trackers.\n\nRender instruction:\n{{getvar::TrackerRenderInstruction}}\n{{getvar::TrackerThemeInstruction}}\n\n{{setvar::TrackerActive_VexPlanning::Active}}\n{{trim}}",
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "nemo-manga-panels-9-3-2",
+            "name": "📖 Manga / Comic Panels",
+            "system_prompt": false,
+            "marker": false,
+            "role": "user",
+            "content": "{{// @category Trackers }}\n{{// @tooltip Manga / Comic Panels - inline visual panels (Pollinations.ai images) that illustrate the scene. Coexists with normal narration; does not replace it. }}\n{{// @color #EC4899 }}\n{{// @icon 📖 }}\n{{// @badge TRACKER }}\n\n# Manga / Comic Panels\n\nWhen to output: when the scene has clear visual beats worth illustrating - reveals, action, charged stares, dramatic shifts. Skip for purely talky or transitional turns. Default cadence: 2 to 4 panels per response, up to 8 if the moment justifies it.\n\nImportant: this does NOT replace narration. The model writes the scene as prose normally. Panels are an inline visual layer that illustrates beats from the prose. The captions and speech bubbles inside panels echo or trim the prose; they don't carry the whole story.\n\nLayout: a multi-panel grid. Two columns on wider displays, single column on narrow. Each panel is a Pollinations.ai image plus optional speech bubble, narrator caption, and SFX text overlay.\n\nFor each panel, capture:\n- A pivotal visual moment from the current narration (one beat per panel - first kiss, drawn blade, slammed door, shared glance, the body falls).\n- Image prompt built per the Auto Image Gen rules. Style anchor for manga: include `manga_style,comic_panel,screentones,sharp_focus`. Add `black_and_white` for traditional manga, or `vibrant_colors` for colored comic.\n- Optional speech bubble - one short line of dialogue from the character speaking, white background, black border, tail toward speaker.\n- Optional narrator caption - boxed in the corner, italic, sets context or interior thought (\"Three nights without sleep.\").\n- Optional SFX overlay - large bold colored text, slight rotation, layered on the panel (\"CRASH!\", \"—!\", \"BA-DUMP\").\n\nHTML structure (keep simple):\n\n<div class=\"comic-page-container-nemo\">\n  <style>\n    .comic-page-container-nemo { display: flex; flex-wrap: wrap; gap: 12px; padding: 12px; background: #f0f0f0; border: 2px solid #333; }\n    .panel-nemo { position: relative; flex: 1 1 45%; min-width: 280px; border: 3px solid #000; overflow: hidden; }\n    .panel-nemo img { display: block; width: 100%; height: auto; }\n    .narrator-box-nemo { position: absolute; top: 8px; left: 8px; background: #fdd835; border: 2px solid #000; padding: 6px 10px; font-style: italic; font-family: Arial, sans-serif; font-size: 0.9em; max-width: 80%; }\n    .speech-bubble-nemo { position: absolute; background: #fff; border: 2px solid #000; border-radius: 0.4em; padding: 8px; max-width: 180px; font-size: 1em; }\n    .sfx-nemo { position: absolute; font-weight: bold; color: yellow; -webkit-text-stroke: 2px red; text-shadow: 3px 3px 0 #000; transform: rotate(-12deg); font-size: 3em; }\n  </style>\n  <!-- Panels go here -->\n</div>\n\nPanel template:\n\n<div class=\"panel-nemo\">\n  <img src=\"{Pollinations URL via Auto Image Gen}\" alt=\"brief alt\"/>\n  <div class=\"narrator-box-nemo\">Narrator caption here.</div>\n  <div class=\"speech-bubble-nemo\" style=\"bottom: 12%; left: 18%;\"><font color=\"black\">\"Dialogue line.\"</font></div>\n  <div class=\"sfx-nemo\" style=\"top: 25%; left: 45%;\">CRASH!</div>\n</div>\n\nImage construction defers to {{getvar::ImageGenAvailable}} / Auto Image Gen rules. Use seed variation per panel so successive panels do not collapse into duplicates. Never use {{char}} or {{user}} names in the image prompt - tag visual descriptions only, all subjects read as adults.\n\nRegex render: when the active render mode is regex rather than HTML, output a compact <st-tracker type=\"manga\" title=\"Panels\">...</st-tracker> block with <st-row k=\"Panel N\" v=\"caption + speech\"/> entries and image URLs as <st-row k=\"img\" v=\"...\"/>. The panels themselves still need the HTML for visual rendering; in regex mode, surface only the text content.\n\nPlacement: directly after the prose narration, wrapped in HTML markers so older panel blocks can be stripped from context.\n\nRender instruction:\n{{getvar::TrackerRenderInstruction}}\n{{getvar::TrackerThemeInstruction}}\n\n{{setvar::TrackerActive_MangaPanels::Active}}\n{{trim}}",
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "nemo-webtoon-panels-9-3-2",
+            "name": "📜 Vertical Webtoon Panels",
+            "system_prompt": false,
+            "marker": false,
+            "role": "user",
+            "content": "{{// @category Trackers }}\n{{// @tooltip Vertical Webtoon Panels - mobile-friendly single-column visual panels. Coexists with normal narration; does not replace it. }}\n{{// @color #F97316 }}\n{{// @icon 📜 }}\n{{// @badge TRACKER }}\n\n# Vertical Webtoon Panels\n\nWhen to output: same triggers as Manga Panels but rendered as a vertical scroll strip - one panel per row, mobile-first. Use 2 to 6 panels per response. This does NOT replace narration; it illustrates beats from the prose.\n\nSame panel content rules as Manga Panels: pivotal moment per panel, Pollinations.ai image via Auto Image Gen rules, optional speech bubble, narrator caption, SFX. Style anchors include `manhwa,webtoon,vertical_strip,colored,smooth_lineart`. Webtoon convention is full color and softer linework.\n\nHTML structure (keep simple, single column):\n\n<div class=\"webtoon-strip-container-nemo\">\n  <style>\n    .webtoon-strip-container-nemo { display: block; padding: 10px; background: #1a1a1a; }\n    .panel-nemo-mobile { position: relative; width: 100%; margin-bottom: 16px; border: 3px solid #000; box-sizing: border-box; overflow: hidden; }\n    .panel-nemo-mobile img { display: block; width: 100%; height: auto; }\n    .narrator-box-nemo { position: absolute; top: 8px; left: 8px; background: #fdd835; border: 2px solid #000; padding: 6px 10px; font-style: italic; font-family: Arial, sans-serif; font-size: 0.9em; max-width: 80%; }\n    .speech-bubble-nemo { position: absolute; background: #fff; border: 2px solid #000; border-radius: 0.4em; padding: 8px; max-width: 180px; font-size: 1em; }\n    .sfx-nemo { position: absolute; font-weight: bold; color: yellow; -webkit-text-stroke: 2px red; text-shadow: 3px 3px 0 #000; transform: rotate(-12deg); font-size: 3.5em; }\n  </style>\n  <!-- Panels stack vertically here -->\n</div>\n\nPanel template:\n\n<div class=\"panel-nemo-mobile\">\n  <img src=\"{Pollinations URL via Auto Image Gen}\" alt=\"brief alt\"/>\n  <div class=\"narrator-box-nemo\">Narrator caption here.</div>\n  <div class=\"speech-bubble-nemo\" style=\"bottom: 14%; left: 18%;\"><font color=\"black\">\"Dialogue line.\"</font></div>\n</div>\n\nAspect ratio: prefer 768x1024 portrait or 768x768 square. Avoid wide landscape - it breaks vertical reading flow.\n\nMutual exclusivity with Manga Panels: only enable one at a time. If both are active, prefer Webtoon for mobile contexts.\n\nPlacement: directly after the prose narration.\n\nRender instruction:\n{{getvar::TrackerRenderInstruction}}\n{{getvar::TrackerThemeInstruction}}\n\n{{setvar::TrackerActive_WebtoonPanels::Active}}\n{{trim}}",
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
             "injection_trigger": [],
             "forbid_overrides": false
         }
@@ -7410,6 +7466,22 @@
                     "enabled": false
                 },
                 {
+                    "identifier": "nemo-char-knowledge-log-9-3-2",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-vex-planning-9-3-2",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-manga-panels-9-3-2",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-webtoon-panels-9-3-2",
+                    "enabled": false
+                },
+                {
                     "identifier": "3499e906-80f1-4016-9679-6fef4aac10f4",
                     "enabled": true
                 },
@@ -8592,6 +8664,22 @@
                 },
                 {
                     "identifier": "nemo-sudo-prefill-user-9-3-2",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-char-knowledge-log-9-3-2",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-vex-planning-9-3-2",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-manga-panels-9-3-2",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-webtoon-panels-9-3-2",
                     "enabled": false
                 },
                 {

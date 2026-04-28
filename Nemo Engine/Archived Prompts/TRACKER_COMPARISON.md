@@ -165,7 +165,7 @@ For each tracker mechanic that existed in past versions, this shows:
 - [HTML elements: details, div]
 - [setvars: HTMLAdherence]
 
-**Closest modern match:** `🗺️ Quest Journal` (767 chars)
+**Closest modern match:** `🗺️ Quest Journal` (2120 chars)
 
 **Modern features / structure:**
 - # Quest Journal
@@ -211,8 +211,27 @@ For each tracker mechanic that existed in past versions, this shows:
 - ### 7. Usage/Triggers:
 - [HTML elements: details, div, li, span, style, svg, ul]
 
-**Modern match: NONE FOUND** (genuinely missing)
+**Closest modern match:** `📜 Vertical Webtoon Panels` (2540 chars)
 
+**Modern features / structure:**
+- # Vertical Webtoon Panels
+- [HTML elements: div, font, img, style]
+- [vars used: TrackerRenderInstruction, TrackerThemeInstruction]
+- [setvars: TrackerActive_WebtoonPanels]
+
+**Lost features (in old, not in modern):**
+- ⚠️ # ENHANCED SOCIAL WEB - DYNAMIC NPC RELATIONSHIP TRACKER
+- ⚠️ ## CORE DIRECTIVE
+- ⚠️ ## Enhanced Features:
+- ⚠️ ## Implementation Guidelines:
+- ⚠️ ### 1. Theme Selection (Free-Form):
+- ⚠️ ### 2. Visual Web Generation (Dynamic Layout):
+- ⚠️ ### 3. NPC/Relationship Tracking (Dynamic):
+- ⚠️ ### 4. CSS Structure (Free-Form, Self-Contained):
+- ⚠️ ### 5. Placeholder-Like Updates (Dynamic Fill):
+- ⚠️ ### 6. Backgrounds/Effects (Pure CSS, No Images):
+- ⚠️ ### 7. Usage/Triggers:
+- ⚠️ [HTML elements: details, div, li, span, style, svg, ul]
 
 ---
 
@@ -268,8 +287,22 @@ For each tracker mechanic that existed in past versions, this shows:
 - END GOAL: To create an immersive, visually-driven narrative that feels like a handcrafted page from 
 - [HTML elements: SEQUENTIAL_ART_MODE_PROMPT_END, STYLE_MANGA_PANELS, div, img, style]
 
-**Modern match: NONE FOUND** (genuinely missing)
+**Closest modern match:** `📖 Manga / Comic Panels` (4039 chars)
 
+**Modern features / structure:**
+- # Manga / Comic Panels
+- [HTML elements: div, font, img, style]
+- [vars used: ImageGenAvailable, TrackerRenderInstruction, TrackerThemeInstruction]
+- [setvars: TrackerActive_MangaPanels]
+
+**Lost features (in old, not in modern):**
+- ⚠️ #### Instructions for Implementation:
+- ⚠️ #### MANDATORY HTML & CSS TEMPLATE
+- ⚠️ CRITICAL STYLE OVERRIDE: SEQUENTIAL ART MODE
+- ⚠️ END GOAL: To create an immersive, visually-driven narrative that feels like a handcrafted page from 
+- ⚠️ VEX: WHEN THIS TOGGLE IS ACTIVE, ALL OTHER NARRATIVE STYLE PROMPTS ARE OVERRIDDEN. YOUR ENTIRE RESPO
+- ⚠️ YOUR CORE PROCESS:
+- ⚠️ [HTML elements: SEQUENTIAL_ART_MODE_PROMPT_END, STYLE_MANGA_PANELS, div, img, style]
 
 ---
 
@@ -285,8 +318,19 @@ For each tracker mechanic that existed in past versions, this shows:
 - END GOAL: To create an immersive, scroll-friendly narrative that feels like a handcrafted webtoon st
 - [HTML elements: STYLE_VERTICAL_STRIP_MODE_END, STYLE_VERTICAL_STRIP_MODE_START, div, font, img, style]
 
-**Modern match: NONE FOUND** (genuinely missing)
+**Closest modern match:** `📜 Vertical Webtoon Panels` (2540 chars)
 
+**Modern features / structure:**
+- # Vertical Webtoon Panels
+- [HTML elements: div, font, img, style]
+- [vars used: TrackerRenderInstruction, TrackerThemeInstruction]
+- [setvars: TrackerActive_WebtoonPanels]
+
+**Lost features (in old, not in modern):**
+- ⚠️ CRITICAL STYLE OVERRIDE: VERTICAL STRIP MODE (MOBILE-FRIENDLY)
+- ⚠️ END GOAL: To create an immersive, scroll-friendly narrative that feels like a handcrafted webtoon st
+- ⚠️ VEX: WHEN THIS TOGGLE IS ACTIVE, ALL OTHER NARRATIVE STYLE PROMPTS ARE OVERRIDDEN. YOUR ENTIRE RESPO
+- ⚠️ [HTML elements: STYLE_VERTICAL_STRIP_MODE_END, STYLE_VERTICAL_STRIP_MODE_START, div, font, img, style]
 
 ---
 
@@ -588,10 +632,12 @@ For each tracker mechanic that existed in past versions, this shows:
 - [HTML elements: details, div]
 - [setvars: HTMLAdherence]
 
-**Closest modern match:** `🌐 Genre Logic` (2428 chars)
+**Closest modern match:** `🧠 Char's Knowledge Log` (2851 chars)
 
 **Modern features / structure:**
-- [setvars: WorldLogic, WorldLogicName]
+- # Char's Knowledge Log
+- [vars used: TrackerRenderInstruction, TrackerThemeInstruction]
+- [setvars: TrackerActive_KnowledgeLog]
 
 **Lost features (in old, not in modern):**
 - ⚠️ # CHARACTER KNOWLEDGE LOG
@@ -687,8 +733,29 @@ For each tracker mechanic that existed in past versions, this shows:
 - [HTML elements: details, div]
 - [setvars: HTMLAdherence]
 
-**Modern match: NONE FOUND** (genuinely missing)
+**Closest modern match:** `📖 Vex Planning Quarters` (2703 chars)
 
+**Modern features / structure:**
+- # Vex's Planning Quarters
+- [vars used: TrackerRenderInstruction, TrackerThemeInstruction]
+- [setvars: TrackerActive_VexPlanning]
+
+**Lost features (in old, not in modern):**
+- ⚠️ # VEX'S PLANNING QUARTERS
+- ⚠️ ## CONTENT GUIDELINES
+- ⚠️ ## CORE DIRECTIVE
+- ⚠️ ## MANDATORY OUTPUT INSTRUCTIONS
+- ⚠️ ## PLANNING QUARTERS COMPONENTS
+- ⚠️ ## VISUAL THEMING REQUIREMENTS
+- ⚠️ ### 1. Collapsible Header
+- ⚠️ ### 2. Genre & Tone Assessment
+- ⚠️ ### 3. Current Arc Analysis
+- ⚠️ ### 4. Short-Term Plans (Next 1-2 Replies)
+- ⚠️ ### 5. Mid-Term Arc Progression (Next 3-5 Replies)
+- ⚠️ ### 6. Longer-Term Narrative Threads
+- ⚠️ ### 7. Adaptive Notice
+- ⚠️ CRITICAL HTML MERGING REQUIREMENT:
+- ⚠️ EXAMPLE STRUCTURE:
 
 ---
 

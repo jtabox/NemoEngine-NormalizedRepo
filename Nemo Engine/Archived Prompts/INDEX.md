@@ -769,6 +769,8 @@ Use this to trace a prompt's evolution across the archive.
 | `90de5bf9-4bab-454f-adfc-16b6b95cfdf0` | 📏︱Short Reply | 5.6 (Fetish and Anatomy), 5.8.9 (Revealing Vex!) (Deepseek), 5.9 Deepseek, 6.0 (Official), 7.0 Official, 7.3 |
 | `1762115166323-1nwam7i39` | 📏︱Short Reply | 8.0 Exp |
 | `literary_archetypes_engine` | 📖 Literary Archetypes Engine | 9.3.1, 9.3.2 (CURRENT) |
+| `nemo-manga-panels-9-3-2` | 📖 Manga / Comic Panels | 9.3.2 (CURRENT) |
+| `nemo-vex-planning-9-3-2` | 📖 Vex Planning Quarters | 9.3.2 (CURRENT) |
 | `1762114735846-3ye4zwl86` | 📖︱Fast Paced | 8.0 Exp, 8.01 Exp, 8.2 |
 | `1762114755893-ibkm5sbod` | 📖︱Foundational World Physics | 8.0 Exp, 8.01 Exp, 8.2 |
 | `05fbb6bd-aed6-49bd-abca-ee3b54102432` | 📖︱Narrative dynamics | 6.0 (Official) |
@@ -776,6 +778,7 @@ Use this to trace a prompt's evolution across the archive.
 | `caad8fc2-2f5a-4cd0-834f-a34c8c3aa28e` | 📚︱ANTI-OMNISCIENT | 5.7.5 Personal, 5.8.9 (Revealing Vex!) (Deepseek), 6.0 (Official), 7.0 Official |
 | `1770095491850-aqupr9vk` | 📜 Language Configuration | 9.3.1 |
 | `9fbaf3a2-15cd-42ff-8dce-4c5a6d3a8c11` | 📜 Parchment Theme | 9.3.1, 9.3.2 (CURRENT) |
+| `nemo-webtoon-panels-9-3-2` | 📜 Vertical Webtoon Panels | 9.3.2 (CURRENT) |
 | `714378a5-923e-4c14-968b-3c6ce521fa1a` | 📜\| Narrative | 6.0 (Official), 7.0 Official |
 | `7d2c04de-f0b3-48dc-af46-d900a44c23d5` | 📜\| Realism Overall | 6.0 (Official), 7.0 Official |
 | `1762119208008-x5qmzafsz` | 📜\| Realism Overall | 8.0 Exp, 8.01 Exp |
@@ -849,7 +852,7 @@ Use this to trace a prompt's evolution across the archive.
 | `9155a99c-13de-414d-b5d9-8bcedda4e1ec` | 🗣️︱Naturalistic Dialogue & Speech | 6.0 (Official), 7.0 Official |
 | `2a26431f-6dd6-4d88-974d-1f9670169043` | 🗣️︱Social & Consequence Realism | 6.0 (Official), 7.0 Official |
 | `1762119215975-m131iul40` | 🗣️︱Social & Consequence Realism | 8.0 Exp, 8.01 Exp |
-| `1770095491839-bhuvuw8l` | 🗺️ Quest Journal | 9.3.1 |
+| `1770095491839-bhuvuw8l` | 🗺️ Quest Journal | 9.3.1, 9.3.2 (CURRENT) |
 | `6d45c74f-72b5-4ba9-8f01-35ececd14827` | 🗺️🔎 \| Interactive Map | 6.0 (Official), 7.0 Official, 7.1 Official (Gilgamesh and Other tweaks), 7.3 |
 | `6949e22c-04d1-44ba-8bec-2454840d8e7d` | 😱︱MANIPULATION | 5.9 Deepseek, 6.0 (Official), 7.0 Official |
 | `1762119219740-110z6b3e6` | 😱︱MANIPULATION | 8.0 Exp, 8.01 Exp |
@@ -864,7 +867,7 @@ Use this to trace a prompt's evolution across the archive.
 | `1770095491850-dgw5icz3` | 🛠️ NPC Naming | 9.3.1 |
 | `1770095491849-eqccpxn4` | 🛠️ Parallel Storylines | 9.3.1 |
 | `1770095491851-fatj4aer` | 🛠️ Proactive NPCs | 9.3.1 |
-| `1770095491838-tzqljonp` | 🛡️ RPG Dashboard | 9.3.1 |
+| `1770095491838-tzqljonp` | 🛡️ RPG Dashboard | 9.3.1, 9.3.2 (CURRENT) |
 | `agency_decentered_protagonist` | 🛰️ Decentered Protagonist | 9.3.1 |
 | `26cdc93b-fff4-4537-b097-b2aa55702e34` | 🤖\| Anti Robot (Gilgamesh) | 6.0 (Official), 7.0 Official, 7.2 Official (Gilgamesh) |
 | `77a4d57c-d0c6-47dd-8dee-0e62bef5d4fb` | 🤝︱Rules of Engagement & Interaction | 5.8.9.1E, 5.9 Deepseek, 6.0 (Official), 7.1 Official (Gilgamesh and Other tweaks) |
@@ -872,6 +875,7 @@ Use this to trace a prompt's evolution across the archive.
 | `6456bf15-3804-4ed2-86a0-9e9e22501f41` | 🤫🌸 \| The Whispering Petal Vex | 8.0 Exp |
 | `62a8df55-2262-4098-962e-fa479634700c` | 🧊👁️ \| The Glacial Observer Vex | 6.0 (Official), 7.0 Official, 7.1 Official (Gilgamesh and Other tweaks) |
 | `ea6c7ee5-e16f-4243-84b1-f23c79a67942` | 🧊👁️ \| The Glacial Observer Vex | 8.0 Exp |
+| `nemo-char-knowledge-log-9-3-2` | 🧠 Char's Knowledge Log | 9.3.2 (CURRENT) |
 | `cot_step_charstate` | 🧠 CoT: Character State | 9.3.1 |
 | `cot_step_coursecorrect` | 🧠 CoT: Course Correction | 9.3.1 |
 | `cot_step_emotionalmatrix` | 🧠 CoT: Emotional Matrix | 9.3.1 |
