@@ -750,6 +750,7 @@ Use this to trace a prompt's evolution across the archive.
 | `style_web_novel` | 📄 Web Novel | 9.3.1, 9.3.2 (CURRENT) |
 | `ce5fd744-c498-43ac-9a8e-a549e4d78613` | 📄\| Swipe Enhancer | 6.0 (Official), 7.0 Official |
 | `1762115242080-zr2hj7tne` | 📄\| Swipe Enhancer | 8.0 Exp |
+| `nemo-status-board-9-3-2` | 📊 Status Board | 9.3.2 (CURRENT) |
 | `default_core` | 📋 Default: Core | 9.3.1, 9.3.2 (CURRENT) |
 | `default_genre_style` | 📋 Default: Genre & Style | 9.3.1 |
 | `default_narrative` | 📋 Default: Narrative | 9.3.1 |
@@ -792,7 +793,7 @@ Use this to trace a prompt's evolution across the archive.
 | `0ced8cc6-85df-4dbe-a6c2-b7d90533a5e7` | 📰 Newsprint Theme | 9.3.1, 9.3.2 (CURRENT) |
 | `1770095491839-jckggy3a` | 📰 Scroll News Lore | 9.3.1 |
 | `65df6f0a-9851-4c89-81c6-cf85d1d7f2b4` | 📱 Cell Phone Theme | 9.3.1, 9.3.2 (CURRENT) |
-| `1770095491838-bxxnfri2` | 🔀 CYOA | 9.3.1 |
+| `1770095491838-bxxnfri2` | 🔀 CYOA | 9.3.1, 9.3.2 (CURRENT) |
 | `3e009f3e-a6a6-4886-b76f-d755434c2951` | 🔄 \| Parelle storylines | 7.0 Official, 7.1 Official (Gilgamesh and Other tweaks) |
 | `1762114749703-qyn178qfr` | 🔄 \| Parelle storylines | 8.0 Exp, 8.01 Exp, 8.2 |
 | `unrestricted_assistant` | 🔓 Consent: Acknowledged | 9.3.1 |
@@ -842,6 +843,7 @@ Use this to trace a prompt's evolution across the archive.
 | `f7b7c4db-75d2-4bdb-98b8-5d8a759c0f7e` | 🖥️ HTML/CSS Render | 9.3.1, 9.3.2 (CURRENT) |
 | `immersive_world_html` | 🖥️ Immersive World HTML | 9.3.1 |
 | `b215ff02-9c4f-48c1-9fd0-3fd1f1ab3a27` | 🖥️ Terminal Theme | 9.3.1, 9.3.2 (CURRENT) |
+| `nemo-auto-imagegen-9-3-2` | 🖼️ Auto Image Gen | 9.3.2 (CURRENT) |
 | `3e8babef-6f4f-4844-97fc-ab9e81158e12` | 🗣️\| Reactive & User-Led Pacing | 6.0 (Official), 7.0 Official |
 | `1762114741106-ns5aa2dcc` | 🗣️\| Sandbox Mode | 8.0 Exp, 8.01 Exp, 8.2 |
 | `9155a99c-13de-414d-b5d9-8bcedda4e1ec` | 🗣️︱Naturalistic Dialogue & Speech | 6.0 (Official), 7.0 Official |
@@ -910,5 +912,8 @@ Use this to trace a prompt's evolution across the archive.
 | `f21f6d62-7d63-41a8-b8e3-compact-regex-trackers` | 🧩 Regex Render | 9.3.1, 9.3.2 (CURRENT) |
 | `38f52f6f-9b85-49c8-b1a3-92edec7c9750` | 🧩︱System: Anti-Trope & Originality Protocol | 5.5 (Reddit Update), 5.8.9 (Revealing Vex!) (Deepseek), 6.0 (Official), 7.0 Official |
 | `481c09b7-3580-4280-b75c-53250378b431` | 🧭 ASCII Minimap | 9.3.1 |
+| `nemo-location-board-9-3-2` | 🧭 Location Board | 9.3.2 (CURRENT) |
 | `3f91deac-e569-4a1b-aea9-84b30e7519f0` | 🧾 Dossier Theme | 9.3.1, 9.3.2 (CURRENT) |
 | `realism_archetypes_engine` | 🩸 Realism Archetypes Engine | 9.3.1, 9.3.2 (CURRENT) |
+| `nemo-sudo-prefill-assistant-9-3-2` | 🪞 Sudo-Prefill (Assistant) | 9.3.2 (CURRENT) |
+| `nemo-sudo-prefill-user-9-3-2` | 🪞 Sudo-Prefill (User) | 9.3.2 (CURRENT) |
