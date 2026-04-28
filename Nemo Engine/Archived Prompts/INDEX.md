@@ -700,6 +700,7 @@ Use this to trace a prompt's evolution across the archive.
 | `3f7e0c1d-2069-416e-b09f-0d14a6bc40fe` | 🎯\|Fast and Snappy | 8.0 Exp |
 | `a7ca4da0-d1e1-4a83-83fb-321d218473bc` | 🎯\|Slice of Life | 8.0 Exp |
 | `1770095491839-c6om818e` | 🎰 Gacha System | 9.3.1, 9.3.2 (CURRENT) |
+| `nemo-success-dice` | 🎲 Success Dice | 9.3.2 (CURRENT) |
 | `nemo-world-bustling` | 🏙️ Bustling Environment | 9.3.2 (CURRENT) |
 | `0c6658e7-c03f-4f6a-8248-761ff23cc4f7` | 🐐 \| Corruption (Fefnik) | 7.0 Official |
 | `1762115256435-glj7h9thg` | 🐐 \| Corruption (Fefnik) | 8.0 Exp |

@@ -2735,7 +2735,7 @@ The current version's prompts are in `../Prompts/`.
   - `c8ba98a7-f199-4ea1-a5ba-4549061553b4` — ︱Experimental CoT
 
 ## 9.3.2 (CURRENT) (current)
-- added: 25, changed: 186, removed: 0
+- added: 26, changed: 186, removed: 0
 - **added**:
   - `nemo-status-board-9-3-2` — 📊 Status Board
   - `nemo-location-board-9-3-2` — 🧭 Location Board
@@ -2762,6 +2762,7 @@ The current version's prompts are in `../Prompts/`.
   - `nemo-world-gynocentric` — 👯 Gynocentric Society
   - `nemo-world-knowledge-infusion` — 🧠 Simulated Knowledge Infusion
   - `nemo-world-physio-realism` — 🌍 Physiological & Environmental Realism
+  - `nemo-success-dice` — 🎲 Success Dice
 - **changed**:
   - `1770095491833-qo0t290u` — 📁 Settings Reminder
   - `1770095491833-esf8iriq` — 📁 Variable Init
