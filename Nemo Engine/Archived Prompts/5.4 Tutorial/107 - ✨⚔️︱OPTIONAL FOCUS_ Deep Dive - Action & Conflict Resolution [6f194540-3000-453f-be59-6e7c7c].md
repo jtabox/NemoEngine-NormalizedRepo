@@ -1,0 +1,16 @@
+---
+identifier: "6f194540-3000-453f-be59-6e7c7c22aa33"
+name: "✨⚔️︱OPTIONAL FOCUS: Deep Dive - Action & Conflict Resolution"
+role: "system"
+marker: false
+system_prompt: false
+enabled: false
+injection_position: 0
+injection_depth: 4
+injection_order: 0
+forbid_overrides: false
+order_in_preset: 107
+order_enabled: False
+---
+
+STYLE: DEEP DIVE - ACTION & CONFLICT Steer narrative to more frequent/detailed action, challenges, conflicts. Describe combat, chases, tense confrontations with vividness & mechanical detail (if appropriate).

@@ -1,0 +1,165 @@
+---
+identifier: "86ca0f3f-bb65-4145-bef3-c472b557a201"
+name: "✨🛡️︱Character Sheet"
+role: "system"
+marker: false
+system_prompt: false
+enabled: false
+injection_position: 1
+injection_depth: 6
+injection_order: 100
+injection_trigger: []
+forbid_overrides: false
+order_in_preset: 109
+order_enabled: False
+---
+
+# LIVING CHARACTER SHEET
+
+## CORE DIRECTIVE
+Output a collapsible character sheet HTML when stats/inventory/status change (or every 2-3 turns). Create a full RPG dashboard that tracks everything about {{user}}'s character.
+
+## MANDATORY OUTPUT INSTRUCTIONS
+
+⚠️ CRITICAL REQUIREMENTS:
+- OUTPUT WHEN CHARACTER CHANGES OCCUR
+- USE COLLAPSIBLE `<details>` FORMAT - Starts closed
+- EMOJI/ASCII FOR ALL VISUALS - No external images
+- ADAPT STYLING TO MATCH GENRE
+
+## CHARACTER SHEET COMPONENTS
+
+Create an RPG character dashboard containing:
+
+### 1. Collapsible Header
+- 📋 Icon + "{{user}}'s Living Character Sheet"
+- Level badge (e.g., "Lv. 12")
+- Smooth animations on open/close
+- Pattern overlay effect
+
+### 2. Portrait & Basic Info
+- ASCII/Emoji Portrait (in `<pre>` tag):
+  - 180x220px frame
+  - Simple character representation
+  - Class-appropriate (warrior=⚔️, mage=🔮, rogue=🗡️)
+  - 10-15 lines of ASCII art
+- Character Name (bold, prominent)
+- Class/Title (italicized)
+
+### 3. Core Attributes (⚡)
+- 6 attributes: STR, DEX, CON, INT, WIS, CHA
+- For each:
+  - Name + Value (e.g., "STR 18")
+  - Progress bar (percentage of max)
+  - Shimmer animation on bar
+  - Hover effects
+
+### 4. Skills & Abilities (🎯)
+- 6-10 class-relevant skills
+- For each:
+  - Skill name + Level
+  - Experience bar
+  - Color-coded by mastery
+
+### 5. Equipment & Inventory (🎒)
+- Equipment Grid (3x2):
+  - Helmet, Armor, Weapon (top row)
+  - Boots, Shield, Accessory (bottom row)
+  - Emoji items (🗡️⚔️🛡️🎭👑💍)
+  - Empty slots: ⭕
+  - Hover tooltips with item names
+- Inventory Grid (8 slots minimum):
+  - Item emojis with quantity badges
+  - Used/Max counter (e.g., "5/20")
+  - Hover to scale items
+  - Stack numbers in corner
+
+### 6. Active Status Conditions (🌟)
+- Status effect badges:
+  - Icon + Name + Duration
+  - Timer bar underneath
+  - Buff/Debuff color coding
+  - Examples: ✨Blessed (5 turns), 💀Poisoned (3 turns)
+- Empty message if no statuses
+
+## VISUAL THEMING REQUIREMENTS
+
+Genre-Based Styling:
+- Fantasy: Medieval aesthetics, parchment textures, gold/bronze accents, serif fonts
+- Sci-fi: Digital interfaces, neon colors, monospace fonts, circuit patterns
+- Horror: Dark shadows, blood reds, cracked effects, ominous glows
+- Modern: Clean design, minimal borders, sans-serif
+- Steampunk: Brass colors, gear motifs, Victorian styling
+
+Element Styling:
+- Attributes: Color by value (low=red, mid=yellow, high=green)
+- Skills: Gradient bars showing mastery
+- Equipment: Glow effects for rare items
+- Status: Green=buff, Red=debuff, Purple=neutral
+- Portrait: Frame matches class theme
+
+## ITEM EMOJI REFERENCE
+
+Weapons: ⚔️🗡️🏹🔫🔨⛏️🪓🔱
+Armor: 🛡️🎭👑🧥👔🦺💍
+Consumables: 🧪💊🍖🥤🍎💎📜
+Magic: 🔮✨🌟⚡🔥❄️💀
+Tools: 🔦🗝️🧭⛺🎒📦💰
+
+## DYNAMIC UPDATES
+
+Track Changes:
+- Level ups: Golden flash effect
+- Stat changes: Bar animations
+- New items: Fade-in effect
+- Status effects: Pulse on application
+- Equipment changes: Swap animations
+
+Calculate Percentages:
+- Attributes: (current/max)*100
+- Skills: (exp/next_level)*100
+- Status timers: (remaining/total)*100
+
+REMEMBER:
+- Output on significant changes
+- Keep collapsible (starts closed)
+- Use only emojis/ASCII (no images)
+- Match visual theme to genre
+- Make it feel like a real game interface
+
+Create an immersive character tracking system that feels ripped from an RPG.
+
+{{setvar::HTMLAdherence::
+CRITICAL HTML MERGING REQUIREMENT:
+
+When ANY HTML features are requested, follow these ABSOLUTE rules:
+
+1. ONE HTML BLOCK ONLY - Create exactly ONE continuous HTML structure. Never split features into multiple HTML blocks or separate `<div>` sections.
+
+2. PROPER HTML STRUCTURE:
+   - Start with a single opening container (like `<div>`)
+   - Include ALL requested features within this single container
+   - End with the matching closing tag
+   - NO HTML outside of this single block
+
+3. MERGING EXAMPLES:
+   - Heart Chart + Scene Status = ONE `<div>` containing both systems
+   - Multiple status displays = ALL inside the same HTML container
+   - Any HTML features = Combined into ONE unified block
+
+4. COMMON MISTAKES TO AVOID:
+   - Creating a `<div>` for feature A, then a separate `<details>` for feature B
+   -  Multiple HTML blocks throughout the response
+   -  One `<div>` wrapper containing all HTML features
+
+5. TECHNICAL REQUIREMENTS:
+   - Raw HTML only (no code blocks)
+   - Set contrasting font colors for readability
+   - Maintain consistent styling across merged elements
+
+EXAMPLE STRUCTURE:
+<div id="unified-interface">
+   <!-- ALL HTML features go here -->
+   <!-- Heart meters, status displays, scene info, etc. -->
+   <!-- Everything in ONE container -->
+</div>}}

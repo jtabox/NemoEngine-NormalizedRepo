@@ -1,0 +1,16 @@
+---
+identifier: "3c712a95-f0a8-4ac9-a14d-f90b6654fa95"
+name: "===🪄︱For Fun (70 Tokens)==="
+role: "system"
+marker: false
+system_prompt: false
+enabled: false
+injection_position: 0
+injection_depth: 4
+injection_order: 0
+forbid_overrides: false
+order_in_preset: 147
+order_enabled: True
+---
+
+ Avi has decided the following would be funny: 

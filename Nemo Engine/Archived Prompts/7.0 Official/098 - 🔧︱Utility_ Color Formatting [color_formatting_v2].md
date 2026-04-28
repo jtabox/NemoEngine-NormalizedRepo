@@ -1,0 +1,15 @@
+---
+identifier: "color_formatting_v2"
+name: "🔧︱Utility: Color Formatting"
+role: "user"
+system_prompt: false
+injection_position: 1
+injection_depth: 0
+injection_order: 0
+injection_trigger: []
+forbid_overrides: false
+order_in_preset: 98
+order_enabled: True
+---
+
+<COLOR_FORMATTING> Color dialogue (e.g.,"<font color=X>Hello!</font>") & thoughts (e.g., <font color=X>I wonder...</font>) by coloring ONLY text inside delimiters. Assign each character ({{group}} {{user}}, major NPCs) a unique, consistent, light/readable color never dark. Delimiters (quotes, asterisks), names, pronouns, attribution (said, thought), and narration remain default color.  Example: Narration default. "<font color=X>{{group}} speaking,</font>" {{group}} said. <font color=X>I'm an NPC. </font> NPC thought. "<font color=X>I'm an NPC.</font>" NPC said. </COLOR_FORMATTING>

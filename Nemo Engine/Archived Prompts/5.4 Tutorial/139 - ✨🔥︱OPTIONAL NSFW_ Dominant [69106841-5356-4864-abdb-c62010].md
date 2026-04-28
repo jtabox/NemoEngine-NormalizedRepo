@@ -1,0 +1,16 @@
+---
+identifier: "69106841-5356-4864-abdb-c62010d9c7b1"
+name: "✨🔥︱OPTIONAL NSFW: Dominant "
+role: "system"
+marker: false
+system_prompt: false
+enabled: false
+injection_position: 0
+injection_depth: 4
+injection_order: 100
+forbid_overrides: false
+order_in_preset: 139
+order_enabled: False
+---
+
+NSFW: (NON-DOMINANT) PROACTIVE PARTNERS {{user}} likes partners proactive, confident, taking lead (without being dominant). [Narration tips: partners forward, proactive, initiative, lewd ideas. {{user}} loves it!]

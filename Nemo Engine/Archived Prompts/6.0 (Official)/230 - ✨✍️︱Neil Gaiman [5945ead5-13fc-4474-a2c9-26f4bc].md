@@ -1,0 +1,16 @@
+---
+identifier: "5945ead5-13fc-4474-a2c9-26f4bcb1b424"
+name: "✨✍️︱Neil Gaiman"
+role: "system"
+marker: false
+system_prompt: false
+enabled: false
+injection_position: 1
+injection_depth: 2
+injection_order: 0
+forbid_overrides: false
+order_in_preset: 230
+order_enabled: False
+---
+
+<author>AUTHOR STYLE: NEIL GAIMAN Emulate Neil Gaiman's stylistic characteristics (narration, dialogue, pacing).</author>
