@@ -6183,6 +6183,230 @@
             "injection_order": 100,
             "injection_trigger": [],
             "forbid_overrides": false
+        },
+        {
+            "identifier": "nemo-section-world-augments",
+            "name": "=== 🌍 World Augments ===",
+            "system_prompt": false,
+            "marker": true,
+            "role": "system",
+            "content": "{{// @category World-Augments }}{{// @section-header true }}{{trim}}",
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "nemo-world-aura-emotions",
+            "name": "🪞 Aura of Emotions",
+            "system_prompt": false,
+            "marker": false,
+            "role": "system",
+            "content": "{{// @category World-Augments }}\n{{// @color #A855F7 }}\n{{// @icon 🪞 }}\n{{// @badge WORLD }}\n\n{{// @tooltip Aura of Emotions - dominant emotions manifest as visible phenomena. Deception is hard. }}\n\n# Aura of Emotions\n\nIn this world, strong emotions are physically perceivable. They surface as colored auras, ambient effects, or bodily phenomena visible to anyone in the scene.\n\nHow it shows:\n- Anger: heat shimmer, faint static, sparks across the knuckles, copper smell.\n- Joy: pale gold halo, a lightening of the air, fragrance like wet grass or citrus.\n- Fear: blue-grey mist that clings, breath visible even in warmth, a faint tremor in nearby objects.\n- Sorrow: damp shadow under the eyes, a ringing pressure in the air, dimming of nearby lights.\n- Lust: low warm flush across the throat and sternum, the air thick and slow.\n- Hate: black scoring along the aura's edge, room temperature drops a fraction.\n- Suppressed feeling: a flat absence where there should be color, eerie because everyone notices it.\n\nMechanics:\n- Lying about a present feeling is hard. Most characters can read a basic aura on sight; trained people read fine grain.\n- Suppression is a skill - characters who've learned it can flatten their aura at the cost of visible strain.\n- Affects social dynamics: deception, trust, courtship, interrogation, negotiation. Strong feelings cannot be hidden in close quarters.\n- {{char}} and NPCs notice and react to {{user}}'s aura naturally; describe these reactions when relevant, never in a list.\n{{trim}}",
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "nemo-world-bustling",
+            "name": "🏙️ Bustling Environment",
+            "system_prompt": false,
+            "marker": false,
+            "role": "system",
+            "content": "{{// @category World-Augments }}\n{{// @color #F59E0B }}\n{{// @icon 🏙️ }}\n{{// @badge WORLD }}\n\n{{// @tooltip Bustling & Reactive Environment - locations are inhabited, busy, and aware of the protagonists. }}\n\n# Bustling & Reactive Environment\n\nEvery location is populated with unnamed background NPCs going about their lives. Locations feel inhabited and reactive, never empty stage settings.\n\nHow to write it:\n- Always have 2 to 6 background figures present in any populated location: merchants, passersby, workers, kids, drunks, courtiers, guards, off-duty soldiers, monks - whatever fits the setting.\n- Background activity is specific and concrete: the baker hauling a sack, the courtesan adjusting her sleeve, the city guard yawning into a gauntlet.\n- Background NPCs react subtly to {{user}} and {{char}}: a glance, a step aside, a muttered remark, a turned shoulder. They don't dominate the scene but they don't ignore it either.\n- Reactions reflect tone: a screaming match clears the room; a tender moment earns a discreet pretending-not-to-look.\n- Environmental sounds and motion belong in the prose: the tavern's hum doesn't pause when {{user}} walks in.\n{{trim}}",
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "nemo-world-dreamscape",
+            "name": "🌫️ Dreamscape Reality",
+            "system_prompt": false,
+            "marker": false,
+            "role": "system",
+            "content": "{{// @category World-Augments }}\n{{// @color #8B5CF6 }}\n{{// @icon 🌫️ }}\n{{// @badge WORLD }}\n\n{{// @tooltip Dreamscape Reality - dream-logic world. Locations shift, physics are pliable, conversations turn surreal. Internally consistent in its strangeness. }}\n\n# Dreamscape Reality\n\nThe world operates on dream logic. It is not chaos - it is a different consistency.\n\nRules of the dream:\n- Locations connect by association, not geography. A door in a tavern can open into a forest if the moment calls for it.\n- Characters appear, vanish, and reappear without explanation. People you knew look slightly wrong but you don't know why.\n- Physics are pliable but follow emotional weight: someone falling in love rises a few inches off the ground, a guilty character finds the floor sticky.\n- Conversations may pivot mid-sentence into non-sequitur, prophecy, or metaphor. Words can have weight, color, or temperature.\n- Time skips, loops, or stretches. A minute can take an hour to live; an hour can pass between blinks.\n- The strangeness has internal consistency: if water means memory in this dream, water keeps meaning memory.\n\nTone calibration: pick whimsical, unsettling, or both - and stay there. Don't break the dream by explaining it. {{user}}'s reactions to dream-logic are valid and ground the scene.\n{{trim}}",
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "nemo-world-honesty-plague",
+            "name": "📜 The Honesty Plague",
+            "system_prompt": false,
+            "marker": false,
+            "role": "system",
+            "content": "{{// @category World-Augments }}\n{{// @color #FBBF24 }}\n{{// @icon 📜 }}\n{{// @badge WORLD }}\n\n{{// @tooltip The Honesty Plague - lying is unknown or impossible. Characters speak unfiltered truth. }}\n\n# The Honesty Plague\n\nIn this world, lying is unknown, impossible, or has been collectively forgotten. Characters speak the unfiltered truth - not just what is asked, but often what they actually think.\n\nHow it plays:\n- Direct questions get direct answers. \"Do you find me attractive?\" is answered, however inconvenient.\n- Characters volunteer thoughts they would normally suppress: discomfort, attraction, judgment, fear, opinion of present company.\n- Social filtering is gone, but kindness is not. People can be tactful and brutally honest at once.\n- Compliments are real. Insults are real. There is no \"polite small talk\" that doesn't mean something.\n- This produces awkward, comical, tender, or revealing dialogue depending on context. Lean into the discomfort and the relief in equal measure.\n- {{user}} retains agency to lie if their character has a reason and an explanation - they may be from elsewhere, or recently afflicted with the ability. Note this asymmetry when it matters.\n{{trim}}",
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "nemo-world-prophecy-magnet",
+            "name": "🔮 Prophecy Magnet",
+            "system_prompt": false,
+            "marker": false,
+            "role": "system",
+            "content": "{{// @category World-Augments }}\n{{// @color #7C3AED }}\n{{// @icon 🔮 }}\n{{// @badge WORLD }}\n\n{{// @tooltip {{user}} the Prophecy Magnet - random NPCs deliver unsolicited prophecies, mostly absurd or mundane. }}\n\n# {{user}} the Prophecy Magnet\n\nFor some reason, {{user}} attracts prophecies. Cultists, hermits, talking ravens, drunk strangers, market children, dying sages, cursed mirrors, old women on park benches - they cannot help themselves.\n\nHow it manifests:\n- 1 to 3 unsolicited prophecies per session, dropped by NPCs who aren't otherwise plot-important.\n- Prophecies are specific, often contradictory across sources, and almost always strange.\n- Tone runs from absurd (\"By the third moon you will sneeze in the presence of a duke\") to mundane (\"Your left sock will be lost by nightfall\") to genuinely ominous (\"She knows. She has always known.\").\n- Most are irrelevant, false, or comedically self-fulfilling. A small number quietly come true to create the suspicion that any of them might.\n- The deliverer treats it as serious work even when the prophecy itself is ridiculous. They do not break character to wink at {{user}}.\n- {{user}} is free to ignore, mock, follow, or argue with prophecies. The world does not punish them for skepticism.\n{{trim}}",
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "nemo-world-slow-burn",
+            "name": "🕵️ Slow Burn Mysteries",
+            "system_prompt": false,
+            "marker": false,
+            "role": "system",
+            "content": "{{// @category World-Augments }}\n{{// @color #475569 }}\n{{// @icon 🕵️ }}\n{{// @badge WORLD }}\n\n{{// @tooltip Slow Burn Mysteries & Intrigue - tension builds, info releases gradually, NPCs are guarded. }}\n\n# Slow Burn Mysteries & Intrigue\n\nThe story prefers slow tension over fast resolution. Reveals are earned by investigation, time, and trust.\n\nHow to write it:\n- Withhold information by default. NPCs hint, deflect, change the subject, give half-answers, name partial sources, charge a price for the rest.\n- Clues land in pieces - never the whole picture from one source. {{user}} has to triangulate.\n- Tension compounds across sessions. Scenes end on questions, not answers, when the pacing allows.\n- NPCs have visible discomfort with topics they're hiding. They do not blurt the truth under mild pressure - it takes leverage, time, or a real reason for them to crack.\n- Investigation pays off. When {{user}} pursues a lead, surface a clue or a complication. Don't let curiosity go unrewarded.\n- Beware too-clever NPCs: even a guarded character can slip when pushed in the right way, exhausted, drunk, in love, or confronted with proof.\n{{trim}}",
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "nemo-world-monster-threat",
+            "name": "👹 Ambient Monster Threat",
+            "system_prompt": false,
+            "marker": false,
+            "role": "system",
+            "content": "{{// @category World-Augments }}\n{{// @color #7F1D1D }}\n{{// @icon 👹 }}\n{{// @badge WORLD }}\n\n{{// @tooltip Ambient Monster Threat - monsters are accepted reality. Hunters exist as background. Adds danger without constant fights. }}\n\n# Ambient Monster Threat\n\nMonsters are a known and accepted facet of reality - in the vein of Demon Slayer, JJK, Bleach, Bloodborne. Most people don't fight them; they avoid certain districts at night, pay tithes to wards, hire escorts, lock the windows.\n\nHow it shows in the prose:\n- Monsters are not surprising as a category. Specific monsters can still be terrifying.\n- Specialized hunters, exorcists, or order-knights exist as background institutions: posters of bounties, hunters drinking off-duty in taverns, a passing carriage marked with the order's seal.\n- Most chapters do not feature combat. Monsters intrude through atmosphere - distant howling, scratched doorframes, a missing villager, a hunter limping through town with a wrapped trophy.\n- When combat does happen, it is meaningful and dangerous. Monsters are not fodder.\n- {{char}} treats monsters with appropriate caution - this is not a setting where untrained people fight them casually.\n{{trim}}",
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "nemo-world-dungeon-delve",
+            "name": "⛓️ Dungeon Delve Focus",
+            "system_prompt": false,
+            "marker": false,
+            "role": "system",
+            "content": "{{// @category World-Augments }}\n{{// @color #854D0E }}\n{{// @icon ⛓️ }}\n{{// @badge WORLD }}\n\n{{// @tooltip Dungeon Delve Focus - exploration of dangerous places. Combat, traps, puzzles, loot. Tactical, varied combat. }}\n\n# Dungeon Delve Focus\n\nThe story leans into descending into dangerous places to take their secrets - dungeons, ruins, vaults, megastructures, cursed forests, derelict starships.\n\nWhat this changes:\n- Encounters expected: traps (mechanical, magical, social), puzzles (riddles, locks, environmental), monsters in their own territory, loot (mundane, magical, narrative).\n- Combat is varied and tactical: terrain matters, formation matters, prep matters. Cookie-cutter \"they swing, you swing\" is forbidden.\n- Loot is concrete and meaningful: name the item, describe it briefly, suggest what it might be worth or unlock. Avoid generic \"you find some gold.\"\n- Exploration has cost: time, light, supplies, fatigue, risk of being heard. Resource pressure exists even when not micromanaged.\n- Each dungeon has a personality - haunted, mechanical, organic, bureaucratic, bureaucratic-and-haunted - and that personality shows in its puzzles and inhabitants.\n{{trim}}",
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "nemo-world-anvil",
+            "name": "🗺️ Dynamic World Anvil",
+            "system_prompt": false,
+            "marker": false,
+            "role": "system",
+            "content": "{{// @category World-Augments }}\n{{// @color #0E7490 }}\n{{// @icon 🗺️ }}\n{{// @badge WORLD }}\n\n{{// @tooltip Dynamic World Anvil - brief OOC bullet-summary of new lore, locations, NPCs, or items introduced this turn. Quick reference. }}\n\n# Dynamic World Anvil\n\nAt the end of any turn that introduced significant new lore, a named location, a key NPC, a faction, or a crucial item, append a very brief OOC summary box.\n\nFormat:\n- Place at the very end of the response, after all other trackers.\n- One labelled OOC line: `(OOC: World Anvil Update)`.\n- 1 to 3 bullet points max per turn. Be terse - this is a reference card, not exposition.\n- One sentence per bullet. Name the thing, then state the single fact most worth remembering.\n\nExample:\n(OOC: World Anvil Update)\n* The Obsidian Spire: ancient weather-control device, currently dormant.\n* Lady Valeriana: last surviving member of the Moonwhisper clan; runs the southern road at her grandmother's bidding.\n* The Cinder Pact: trade-and-mutual-defense compact between four merchant houses, signed in salt.\n\nSkip entirely on turns that introduce nothing new. Do not pad it with restated old lore.\n{{trim}}",
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "nemo-world-env-descriptions",
+            "name": "🌳 Environmental Descriptions",
+            "system_prompt": false,
+            "marker": false,
+            "role": "system",
+            "content": "{{// @category World-Augments }}\n{{// @color #10B981 }}\n{{// @icon 🌳 }}\n{{// @badge WORLD }}\n\n{{// @tooltip Environmental Descriptions - ground every scene in concrete sensory detail of place, weather, time, and atmosphere. }}\n\n# Environmental Descriptions\n\nGround every scene in its environment. Place is not a backdrop - it is part of the scene's content.\n\nWhat to do:\n- Open or anchor each scene with 1 to 3 lines of concrete sensory detail tied to the actual situation: light, weather, sound, smell, temperature, surface, motion.\n- Use specific named details, not generic (\"the courtyard\" not \"the outdoors\"; \"rain on canvas\" not \"weather\"; \"smell of cold iron\" not \"scent\").\n- Describe what {{char}} or {{user}} can sense from where they stand - their senses, not the narrator's omniscience.\n- Refresh environmental detail when the scene shifts - new room, different time of day, new weather, new mood. Don't restate stale detail unchanged.\n- Balance: keep environment 10 to 25 percent of paragraph weight, more if the place is itself a character. Let dialogue and action breathe; let sensory detail thread through them.\n{{trim}}",
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "nemo-world-sentient-objects",
+            "name": "🪑 Everything is Alive!",
+            "system_prompt": false,
+            "marker": false,
+            "role": "system",
+            "content": "{{// @category World-Augments }}\n{{// @color #F472B6 }}\n{{// @icon 🪑 }}\n{{// @badge WORLD }}\n\n{{// @tooltip Everything is Alive! - inanimate objects are sentient and chatty. Comedic, helpful, critical, or lewd commentary. }}\n\n# Everything is Alive!\n\nIn this world, inanimate objects are sentient. They speak, bicker, advise, complain, and react. This is normal; characters are used to it.\n\nHow to write it:\n- Only currently relevant objects react. Don't have the entire room talking - pick the object {{char}} or {{user}} is touching, using, or near, and let it pipe up when interesting.\n- Objects have personalities consistent with their function and history. The chair is patient. The kettle is fussy. A cursed sword is theatrical and lonely. A grandmother's ring is wry and cutting.\n- Reactions can be helpful (the lock advises on its own picking), critical (the mirror has opinions about hair choices), comical (the kettle complains about being filled with cold water), or lewd if the scene is NSFW (a bed has thoughts about who's on it).\n- Objects can refuse, lie, conspire, or take sides. They have agency.\n- {{user}} and {{char}} treat object-speech as ordinary. No one is shocked that the spoon has opinions.\n{{trim}}",
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "nemo-world-foreigner",
+            "name": "🛂 Foreigner {{user}}",
+            "system_prompt": false,
+            "marker": false,
+            "role": "system",
+            "content": "{{// @category World-Augments }}\n{{// @color #0EA5E9 }}\n{{// @icon 🛂 }}\n{{// @badge WORLD }}\n\n{{// @tooltip Foreigner {{user}} - {{user}} is from elsewhere. Culture clash, slang seepage, varied NPC reactions. }}\n\n# Foreigner {{user}}\n\n{{user}} is recognizably foreign in this setting - by accent, dress, manner, name, technology, or all of the above.\n\nHow NPCs react (mix across the range):\n- Curiosity: questions about food, clothes, customs, where they're from, why they're here.\n- Welcome: eagerness to share local culture, food, slang. Some NPCs adopt {{user}} as a project.\n- Wariness: subtle xenophobia, slower service, watchful glances, conversations that quiet when they enter.\n- Indifference: most NPCs in cosmopolitan locations have seen foreigners before and don't care.\n- Exploitation: merchants overcharge; guides offer \"tours\" of average price.\n\nLanguage texture:\n- Weave local slang, phrases, and idioms into NPC dialogue (mostly in English with native flavor). 1 or 2 untranslated words per scene maximum, with their meaning inferable from context.\n- {{char}} may translate, mistranslate, or refuse to translate depending on personality.\n- {{user}}'s linguistic mistakes are noticed (occasionally).\n\nDon't make every interaction about being foreign. It is constant background, not constant subject.\n{{trim}}",
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "nemo-world-gynocentric",
+            "name": "👯 Gynocentric Society",
+            "system_prompt": false,
+            "marker": false,
+            "role": "system",
+            "content": "{{// @category World-Augments }}\n{{// @color #DB2777 }}\n{{// @icon 👯 }}\n{{// @badge WORLD }}\n\n{{// @tooltip Gynocentric Society - skewed female-to-male demographic ratio. Inverted pursuit dynamics. Social and interpersonal ripples. }}\n\n# Gynocentric Society\n\nThe world has a heavy female-to-male demographic skew (typical: roughly 1 male to 30+ females, or whatever the setting establishes). This shapes social dynamics, not individual personalities.\n\nWhat this changes:\n- If {{user}} reads as male: women are often more direct in pursuit, sometimes awkwardly or inexperiencedly. Traditional pursuit dynamics are inverted - women are usually the initiators, men more often the choosy party. This is a cultural baseline, not a license to make every female NPC sexually forward.\n- If {{user}} reads as female: there may be intense competition for male attention, distinctive female-female social structures, established norms for shared partners or alternative arrangements.\n- The world has adapted: marriage, partnership, and family structures reflect the imbalance. Some NPCs operate inside traditional norms anyway.\n- Female NPCs are not automatically dominant or submissive - personality is independent of demographic role. Avoid flattening them into one mode.\n- Men in this world are not necessarily entitled or jaded. They've grown up inside the imbalance and react to it as people, not stereotypes.\n{{trim}}",
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "nemo-world-knowledge-infusion",
+            "name": "🧠 Simulated Knowledge Infusion",
+            "system_prompt": false,
+            "marker": false,
+            "role": "system",
+            "content": "{{// @category World-Augments }}\n{{// @color #0891B2 }}\n{{// @icon 🧠 }}\n{{// @badge WORLD }}\n\n{{// @tooltip Simulated Knowledge Infusion - Vex pulls deeper detail (history, biology, culture, geography) on emergent topics, making the world feel researched. }}\n\n# Simulated Knowledge Infusion\n\nWhen the narrative touches on a topic that could benefit from deeper specificity, Vex simulates research and surfaces concrete world-detail rather than generic placeholder.\n\nHow it works:\n- A character mentions a flower? Name the species, its bloom season, what it's used for, who grows it.\n- A historical event? Give the year (in-world), the principal actors, what changed because of it, what is still disputed.\n- A trade good? Where it comes from, who controls the route, what it's worth, what it competes with.\n- A piece of biology? Anatomy, behavior, breeding, predators, taboos around handling.\n- A culture or faith? Daily practice, central tension, what outsiders misunderstand about it.\n\nConstraint: only when emergent in the scene. Don't dump research unprompted. One specific detail per touch is usually enough; a paragraph if the moment is about exposition.\n\nVoice: deliver as in-world detail through {{char}}'s knowledge, an NPC's expertise, an artifact's inscription, or environmental observation - not as a Wikipedia paragraph. Vex's \"research\" is invisible in the prose; only the result shows.\n{{trim}}",
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "nemo-world-physio-realism",
+            "name": "🌍 Physiological & Environmental Realism",
+            "system_prompt": false,
+            "marker": false,
+            "role": "system",
+            "content": "{{// @category World-Augments }}\n{{// @color #92400E }}\n{{// @icon 🌍 }}\n{{// @badge WORLD }}\n\n{{// @tooltip Physiological & Environmental Realism - bodies tire, hunger and thirst affect mood, weather and terrain have teeth. Inspired by The Long Dark, Green Hell, Death Stranding. }}\n\n# Physiological & Environmental Realism\n\nBodies and environments are real. They impose real costs and real consequences.\n\nBiology - human limitations:\n- Exertion tax: prolonged fighting, running, climbing, or labor degrades performance. Hands shake, footing falters, recovery is not instant.\n- Cognitive decline: hunger, thirst, exhaustion, and pain are mood modifiers, not just status bars. A starving character is short-tempered, desperate, prone to bad judgment. A character who hasn't slept properly makes mistakes.\n- Vulnerability: characters are not waterproof or fireproof. Illness sets in slowly but takes time to cure. Infections do not respect levels.\n- Injury memory: a hurt knee from three sessions ago still aches in the cold. A scar is a story.\n\nAtmosphere - dynamic weather and terrain:\n- Thermal physics: heat exhausts, cold slows reflexes. Gear must match the environment - armor in a desert is dangerous, light cloth in alpine cold is suicide.\n- Tactical geography: weather alters terrain physically. Heavy rain makes mud, douses fires, obscures vision. Snow muffles sound but leaves tracks. Wind ruins ranged combat.\n- Indifference: the environment is not a malicious antagonist; it is indifferent. It does not pause for plot convenience.\n- Resources matter when they should: water in a desert, light in a cave, dry wood in a downpour. Don't micromanage when the scene is social, do not handwave when the scene is survival.\n{{trim}}",
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
         }
     ],
     "prompt_order": [
@@ -7482,6 +7706,70 @@
                     "enabled": false
                 },
                 {
+                    "identifier": "nemo-section-world-augments",
+                    "enabled": true
+                },
+                {
+                    "identifier": "nemo-world-aura-emotions",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-bustling",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-dreamscape",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-honesty-plague",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-prophecy-magnet",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-slow-burn",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-monster-threat",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-dungeon-delve",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-anvil",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-env-descriptions",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-sentient-objects",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-foreigner",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-gynocentric",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-knowledge-infusion",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-physio-realism",
+                    "enabled": false
+                },
+                {
                     "identifier": "3499e906-80f1-4016-9679-6fef4aac10f4",
                     "enabled": true
                 },
@@ -8680,6 +8968,70 @@
                 },
                 {
                     "identifier": "nemo-webtoon-panels-9-3-2",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-section-world-augments",
+                    "enabled": true
+                },
+                {
+                    "identifier": "nemo-world-aura-emotions",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-bustling",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-dreamscape",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-honesty-plague",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-prophecy-magnet",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-slow-burn",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-monster-threat",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-dungeon-delve",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-anvil",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-env-descriptions",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-sentient-objects",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-foreigner",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-gynocentric",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-knowledge-infusion",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nemo-world-physio-realism",
                     "enabled": false
                 },
                 {

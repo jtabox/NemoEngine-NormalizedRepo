@@ -58,6 +58,7 @@ Use this to trace a prompt's evolution across the archive.
 | `f4806205-4539-4ab5-bdd8-af08c2375292` | === Themes === | 7.0 Official |
 | `1770095491852-xaivbsx2` | === ⏱️ Plot Pacing === | 9.3.1 |
 | `1770095491852-dplzxppa` | === ⚙️ System === | 9.3.1 |
+| `nemo-section-world-augments` | === 🌍 World Augments === | 9.3.2 (CURRENT) |
 | `header_language_control` | === 🌐 Language Control === | 9.3.1 |
 | `worldlogic_section_header` | === 🌐 World Logic === | 9.3.1 |
 | `1770095491852-zbyjkp37` | === 🎀 Fetish === | 9.3.1 |
@@ -215,6 +216,7 @@ Use this to trace a prompt's evolution across the archive.
 | `extreme_content` | ⚠️ Extreme Content | 9.3.1 |
 | `bb4a9557-2138-4967-beb0-9eaba731b307` | ⚠️Critical! Enable this if using Vex personality preset⚠️ | 5.4 Tutorial, 5.8.9 (Revealing Vex!) (Deepseek), 5.8.9.1E, 7.0 Official |
 | `bbd8883c-e441-4efc-ad86-54104b27ed51` | ⚡\| Anti-Melodrama | 6.0 (Official), 7.0 Official |
+| `nemo-world-dungeon-delve` | ⛓️ Dungeon Delve Focus | 9.3.2 (CURRENT) |
 | `db575303-8ee3-4ac3-8af9-4c57d54d8030` | ⛓️🔪 \| The Iron Sculptor Vex | 6.0 (Official), 7.0 Official, 7.1 Official (Gilgamesh and Other tweaks) |
 | `d76edfc0-e1f1-44c7-b075-27a5f453144e` | ⛓️🔪 \| The Iron Sculptor Vex | 8.0 Exp |
 | `style_akira_denpa` | ✍️ Akira (Denpa Style) | 9.3.1, 9.3.2 (CURRENT) |
@@ -595,6 +597,7 @@ Use this to trace a prompt's evolution across the archive.
 | `think_lang_english` | 🇺🇸 Think: English | 9.3.1, 9.3.2 (CURRENT) |
 | `9e63d716-e7b5-47e2-841c-8a021d2ff2ec` | 🌃 Cyberpunk AR Theme | 9.3.1, 9.3.2 (CURRENT) |
 | `grounded_archetypes_engine` | 🌍 Grounded Archetypes Engine | 9.3.1, 9.3.2 (CURRENT) |
+| `nemo-world-physio-realism` | 🌍 Physiological & Environmental Realism | 9.3.2 (CURRENT) |
 | `85655ae0-516a-43f7-b70b-a1e4ba4ef0f2` | 🌍︱Narration, Consistency, & Style | 5.8.9.1E, 5.9 Deepseek, 6.0 (Official), 7.0 Official |
 | `37497a71-3db6-47ac-9644-e8f4f7c079c9` | 🌍︱Physiological & Environmental Realism | 6.0 (Official), 7.0 Official |
 | `1762119218093-unf2mwzuq` | 🌍︱Physiological & Environmental Realism | 8.0 Exp, 8.01 Exp |
@@ -610,7 +613,9 @@ Use this to trace a prompt's evolution across the archive.
 | `1770095491850-pccbrvb7` | 🌐 Video Game: TTRPG | 9.3.1 |
 | `e93f818a-59fb-401d-bea8-a0a02b33f235` | 🌠🤔 \| The Existential Curator Vex | 6.0 (Official), 7.0 Official, 7.1 Official (Gilgamesh and Other tweaks) |
 | `7345bc2c-fc8e-48a9-bfc3-0ba1f52e2b5d` | 🌠🤔 \| The Existential Curator Vex | 8.0 Exp |
+| `nemo-world-dreamscape` | 🌫️ Dreamscape Reality | 9.3.2 (CURRENT) |
 | `character_development_principles` | 🌱︱Character Development & Evolution | 5.4 Tutorial, 5.8.9 (Revealing Vex!) (Deepseek), 6.0 (Official), 7.0 Official |
+| `nemo-world-env-descriptions` | 🌳 Environmental Descriptions | 9.3.2 (CURRENT) |
 | `anime_archetypes_engine` | 🌸 Anime Archetypes Engine | 9.3.1, 9.3.2 (CURRENT) |
 | `1770095491844-7903vcgd` | 🎀 CBT | 9.3.1 |
 | `1770095491844-moej8dfi` | 🎀 Femdom | 9.3.1 |
@@ -695,6 +700,7 @@ Use this to trace a prompt's evolution across the archive.
 | `3f7e0c1d-2069-416e-b09f-0d14a6bc40fe` | 🎯\|Fast and Snappy | 8.0 Exp |
 | `a7ca4da0-d1e1-4a83-83fb-321d218473bc` | 🎯\|Slice of Life | 8.0 Exp |
 | `1770095491839-c6om818e` | 🎰 Gacha System | 9.3.1, 9.3.2 (CURRENT) |
+| `nemo-world-bustling` | 🏙️ Bustling Environment | 9.3.2 (CURRENT) |
 | `0c6658e7-c03f-4f6a-8248-761ff23cc4f7` | 🐐 \| Corruption (Fefnik) | 7.0 Official |
 | `1762115256435-glj7h9thg` | 🐐 \| Corruption (Fefnik) | 8.0 Exp |
 | `85d199f8-bcb3-4304-87c9-b266a4feb9f2` | 🐐 \| Dating Sim (Quantum) | 7.0 Official, 7.1 Official (Gilgamesh and Other tweaks) |
@@ -713,6 +719,8 @@ Use this to trace a prompt's evolution across the archive.
 | `1754550794332-lads6rb1i` | 👑︱Vex Identity | 7.0 Official |
 | `82e4481d-8a16-4757-a186-f710908928ec` | 👑︱Vex Identity | 7.0 Official |
 | `6034c814-37f8-4e94-b370-6244bdc52d66` | 👤︱Character Agency & Voice | 5.8.9.1E, 5.9 Deepseek, 5.9 Gemini, 5.9.1 Chimera, 5.9.1 Gemini, 5.9.1 R1, 6.0 (Official) |
+| `nemo-world-gynocentric` | 👯 Gynocentric Society | 9.3.2 (CURRENT) |
+| `nemo-world-monster-threat` | 👹 Ambient Monster Threat | 9.3.2 (CURRENT) |
 | `74d8b4c2-8bfd-4203-a3bf-cc9d57b8444e` | 💀🥀 \| The Corpse Narrator Vex | 6.0 (Official), 7.0 Official, 7.1 Official (Gilgamesh and Other tweaks) |
 | `33f10cec-36c2-49ac-a840-90320e6e64cf` | 💀🥀 \| The Corpse Narrator Vex | 8.0 Exp |
 | `1754958885559-2uinr1sg9` | 💊Healing Genre | 7.0 Official |
@@ -778,6 +786,7 @@ Use this to trace a prompt's evolution across the archive.
 | `caad8fc2-2f5a-4cd0-834f-a34c8c3aa28e` | 📚︱ANTI-OMNISCIENT | 5.7.5 Personal, 5.8.9 (Revealing Vex!) (Deepseek), 6.0 (Official), 7.0 Official |
 | `1770095491850-aqupr9vk` | 📜 Language Configuration | 9.3.1 |
 | `9fbaf3a2-15cd-42ff-8dce-4c5a6d3a8c11` | 📜 Parchment Theme | 9.3.1, 9.3.2 (CURRENT) |
+| `nemo-world-honesty-plague` | 📜 The Honesty Plague | 9.3.2 (CURRENT) |
 | `nemo-webtoon-panels-9-3-2` | 📜 Vertical Webtoon Panels | 9.3.2 (CURRENT) |
 | `714378a5-923e-4c14-968b-3c6ce521fa1a` | 📜\| Narrative | 6.0 (Official), 7.0 Official |
 | `7d2c04de-f0b3-48dc-af46-d900a44c23d5` | 📜\| Realism Overall | 6.0 (Official), 7.0 Official |
@@ -840,7 +849,9 @@ Use this to trace a prompt's evolution across the archive.
 | `danger_protocol_v2` | 🔧︱Utility: Danger Protocol | 5.4 Tutorial, 5.9 Deepseek, 6.0 (Official) |
 | `1762115236741-tbm2df58d` | 🔧︱Utility: Danger Protocol | 8.0 Exp |
 | `19c6e102-ef1e-4e1f-8798-b5cbfd42d0f2` | 🔮 Occult Grimoire Theme | 9.3.1, 9.3.2 (CURRENT) |
+| `nemo-world-prophecy-magnet` | 🔮 Prophecy Magnet | 9.3.2 (CURRENT) |
 | `2857fc16-22dd-4c4a-9b4c-e8e49fa5ef31` | 🕵️ Noir Casefile Theme | 9.3.1, 9.3.2 (CURRENT) |
+| `nemo-world-slow-burn` | 🕵️ Slow Burn Mysteries | 9.3.2 (CURRENT) |
 | `f446eba9-e919-4289-bf55-b0c9fdbdabad` | 🖋️︱Broken Text | 6.0 (Official), 7.0 Official |
 | `1762115284764-wlsogjq3y` | 🖋️︱Broken Text | 8.0 Exp |
 | `f7b7c4db-75d2-4bdb-98b8-5d8a759c0f7e` | 🖥️ HTML/CSS Render | 9.3.1, 9.3.2 (CURRENT) |
@@ -852,6 +863,7 @@ Use this to trace a prompt's evolution across the archive.
 | `9155a99c-13de-414d-b5d9-8bcedda4e1ec` | 🗣️︱Naturalistic Dialogue & Speech | 6.0 (Official), 7.0 Official |
 | `2a26431f-6dd6-4d88-974d-1f9670169043` | 🗣️︱Social & Consequence Realism | 6.0 (Official), 7.0 Official |
 | `1762119215975-m131iul40` | 🗣️︱Social & Consequence Realism | 8.0 Exp, 8.01 Exp |
+| `nemo-world-anvil` | 🗺️ Dynamic World Anvil | 9.3.2 (CURRENT) |
 | `1770095491839-bhuvuw8l` | 🗺️ Quest Journal | 9.3.1, 9.3.2 (CURRENT) |
 | `6d45c74f-72b5-4ba9-8f01-35ececd14827` | 🗺️🔎 \| Interactive Map | 6.0 (Official), 7.0 Official, 7.1 Official (Gilgamesh and Other tweaks), 7.3 |
 | `6949e22c-04d1-44ba-8bec-2454840d8e7d` | 😱︱MANIPULATION | 5.9 Deepseek, 6.0 (Official), 7.0 Official |
@@ -861,6 +873,7 @@ Use this to trace a prompt's evolution across the archive.
 | `a96a9b08-0e20-47f7-9c19-624cbb8e4609` | 🚫Leave Active for First generation🚫 | 5.4 Tutorial, 5.6.4 (The bug fix edition), 5.7.3 (Sauce Update), 5.8 (Experimental) (Deepseek) V3, 5.8 (Personal) (The Community Update), 5.8 (Tutorial)(The Community Update), 5.8.9 (Revealing Vex!) (Deepseek), 5.8.9.1E, 5.9 Gemini, 5.9.1 Chimera, 5.9.1 Gemini, 5.9.1 R1 |
 | `1657136f-71bd-446b-ae0b-a8b48f088caa` | 🚫Leave Active for First generation🚫 | 6.0 (Official) |
 | `ee6f8495-afa6-42f8-8ad8-cd60c305202d` | 🚫︱Prohibition on Slop | 5.8.9 (Revealing Vex!) (Deepseek), 5.9 Deepseek, 5.9 Gemini, 5.9.1 Chimera, 5.9.1 Gemini, 5.9.1 R1, 6.0 (Official) |
+| `nemo-world-foreigner` | 🛂 Foreigner {{user}} | 9.3.2 (CURRENT) |
 | `1770095491850-3ji9iek5` | 🛠️ Danger Protocol | 9.3.1 |
 | `1770095491851-89hzv6n8` | 🛠️ Literary Chameleon | 9.3.1 |
 | `1770095491850-ml16r5s8` | 🛠️ More Dialogue | 9.3.1 |
@@ -896,6 +909,7 @@ Use this to trace a prompt's evolution across the archive.
 | `1770095491833-8jtqr5y4` | 🧠 Fast | 9.3.1, 9.3.2 (CURRENT) |
 | `1770095491833-6qezelnl` | 🧠 Loose | 9.3.1, 9.3.2 (CURRENT) |
 | `1770095491833-adrmydb8` | 🧠 Main | 9.3.1, 9.3.2 (CURRENT) |
+| `nemo-world-knowledge-infusion` | 🧠 Simulated Knowledge Infusion | 9.3.2 (CURRENT) |
 | `ad237b85-1261-4214-b60b-1908728e1b09` | 🧠︱Big Experimental | 7.0 Official, 7.1 Official (Gilgamesh and Other tweaks) |
 | `56e98705-6b8b-492d-af94-aa89515fb40b` | 🧠︱Char's Knowledge Log | 5.4 Tutorial, 5.8 (Experimental) (Deepseek) V3, 5.8.9 (Revealing Vex!) (Deepseek), 5.8.9.1E, 7.0 Official, 7.1 Official (Gilgamesh and Other tweaks), 7.3 |
 | `1762115277250-m4t4rgjdq` | 🧠︱Char's Knowledge Log | 8.0 Exp |
@@ -919,5 +933,7 @@ Use this to trace a prompt's evolution across the archive.
 | `nemo-location-board-9-3-2` | 🧭 Location Board | 9.3.2 (CURRENT) |
 | `3f91deac-e569-4a1b-aea9-84b30e7519f0` | 🧾 Dossier Theme | 9.3.1, 9.3.2 (CURRENT) |
 | `realism_archetypes_engine` | 🩸 Realism Archetypes Engine | 9.3.1, 9.3.2 (CURRENT) |
+| `nemo-world-sentient-objects` | 🪑 Everything is Alive! | 9.3.2 (CURRENT) |
+| `nemo-world-aura-emotions` | 🪞 Aura of Emotions | 9.3.2 (CURRENT) |
 | `nemo-sudo-prefill-assistant-9-3-2` | 🪞 Sudo-Prefill (Assistant) | 9.3.2 (CURRENT) |
 | `nemo-sudo-prefill-user-9-3-2` | 🪞 Sudo-Prefill (User) | 9.3.2 (CURRENT) |

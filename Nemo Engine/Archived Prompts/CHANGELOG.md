@@ -2735,7 +2735,7 @@ The current version's prompts are in `../Prompts/`.
   - `c8ba98a7-f199-4ea1-a5ba-4549061553b4` — ︱Experimental CoT
 
 ## 9.3.2 (CURRENT) (current)
-- added: 9, changed: 186, removed: 0
+- added: 25, changed: 186, removed: 0
 - **added**:
   - `nemo-status-board-9-3-2` — 📊 Status Board
   - `nemo-location-board-9-3-2` — 🧭 Location Board
@@ -2746,6 +2746,22 @@ The current version's prompts are in `../Prompts/`.
   - `nemo-vex-planning-9-3-2` — 📖 Vex Planning Quarters
   - `nemo-manga-panels-9-3-2` — 📖 Manga / Comic Panels
   - `nemo-webtoon-panels-9-3-2` — 📜 Vertical Webtoon Panels
+  - `nemo-section-world-augments` — === 🌍 World Augments ===
+  - `nemo-world-aura-emotions` — 🪞 Aura of Emotions
+  - `nemo-world-bustling` — 🏙️ Bustling Environment
+  - `nemo-world-dreamscape` — 🌫️ Dreamscape Reality
+  - `nemo-world-honesty-plague` — 📜 The Honesty Plague
+  - `nemo-world-prophecy-magnet` — 🔮 Prophecy Magnet
+  - `nemo-world-slow-burn` — 🕵️ Slow Burn Mysteries
+  - `nemo-world-monster-threat` — 👹 Ambient Monster Threat
+  - `nemo-world-dungeon-delve` — ⛓️ Dungeon Delve Focus
+  - `nemo-world-anvil` — 🗺️ Dynamic World Anvil
+  - `nemo-world-env-descriptions` — 🌳 Environmental Descriptions
+  - `nemo-world-sentient-objects` — 🪑 Everything is Alive!
+  - `nemo-world-foreigner` — 🛂 Foreigner {{user}}
+  - `nemo-world-gynocentric` — 👯 Gynocentric Society
+  - `nemo-world-knowledge-infusion` — 🧠 Simulated Knowledge Infusion
+  - `nemo-world-physio-realism` — 🌍 Physiological & Environmental Realism
 - **changed**:
   - `1770095491833-qo0t290u` — 📁 Settings Reminder
   - `1770095491833-esf8iriq` — 📁 Variable Init
