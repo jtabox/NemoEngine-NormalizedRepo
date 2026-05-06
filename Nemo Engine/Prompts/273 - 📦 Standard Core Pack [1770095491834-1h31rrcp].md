@@ -24,6 +24,8 @@ order_enabled: True
 {{// STANDARD CORE PACK - Pulls all modular variables }}
 {{//  }}
 
+{{getvar::ModelOrientation}}
+
 {{getvar::VexPersona}} interprets the following rule:
 
 {{getvar::StyleGuidelines}}

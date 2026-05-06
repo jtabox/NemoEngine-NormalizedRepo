@@ -23,6 +23,8 @@ order_enabled: True
 {{// VARIABLE INITIALIZER - Sets all to empty, active prompts overwrite }}
 {{//  }}
 {{// === CORE === }}
+{{// Orientation }}
+{{setvar::ModelOrientation::}}
 {{// Quality }}
 {{setvar::QualityName::}}
 {{setvar::AntiSlop::}}
