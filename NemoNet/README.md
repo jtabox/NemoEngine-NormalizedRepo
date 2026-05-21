@@ -1,6 +1,8 @@
-# NemoNet 1.0
+# NemoNet 2.0
 
 A comprehensive, modular prompt engineering preset designed for advanced AI roleplay and creative writing. NemoNet represents a complete rebuild optimized for Gemini 3 while maintaining broad compatibility across all major AI models.
+
+**2.0 rewrite (2026-05-21)** — Variable sizing was lifted from "enable one of three Variables prompts" to a nested-variable resolver. All three `Variables (Large|Medium|Small)` prompts now coexist and define size-suffixed names (`StandardCorePackLarge`, `StandardCorePackMedium`, `StandardCorePackSmall`, …). The new `=== 📐 Size Selector ===` group sets `{{getvar::size}}`, and consumers read `{{getvar::Name{{getvar::size}}}}` to pick up the right body at runtime. Medium is the default. The bump also ports Nemo Engine 9.3.x discoveries: top-level Model Orientation (anti-friendly-assistant / anti-glaze / anti-grimdark-padding), The Premise (author-as-engine framing), the selective-response and no-therapist-narration refinements baked into `AntiEcho`, and a Success Dice utility for 1d100 skill checks.
 
 ## What is NemoNet?
 
@@ -386,8 +388,9 @@ Created for the AI roleplay community. NemoNet builds upon the foundation of Nem
 
 ## Version History
 
+- **2.0** - Nested-size-variable resolver (`{{getvar::Name{{getvar::size}}}}`), Size Selector prompt group, ports of Nemo Engine 9.3.x discoveries: Model Orientation prohibition, The Premise, Anti-Echo refresh (selective response + no-therapist-narration), Success Dice utility. 1.0 archived under `NemoNet/Archive/`.
 - **1.0** - Initial release with modular CoT, variable sizing, Random/Pick modes
 
 ---
 
-*NemoNet 1.0 - Pushing AI creativity to its limits*
+*NemoNet 2.0 - Pushing AI creativity to its limits*
