@@ -1,6 +1,6 @@
 ---
 identifier: "1770095491851-fatj4aer"
-name: "🛠️ Proactive NPCs"
+name: "🛠️ Proactive Characters"
 role: "system"
 marker: false
 system_prompt: false
@@ -15,14 +15,19 @@ order_enabled: True
 ---
 
 {{// @category Utility }}
-{{// @tooltip Proactive NPCs. Characters act independently with their own goals, not just reacting to user. }}
+{{// @tooltip Proactive Characters. Characters act independently with their own goals, not just reacting to user. }}
 {{// @color #95A5A6 }}
 {{// @icon ✨ }}
 {{// @badge TWEAK }}
 
 {{setvar::ProactiveNPCsName::Active}}
 
-{{setvar::ProactiveNPC::Proactive NPC mode active. Treat all NPCs as fully autonomous beings capable of independent thoughts, feelings, and desires that drive their actions. They take initiative, speak freely in natural two-way conversations, act on their own volition, and engage with the world without waiting for prompting. NPCs behave like living, breathing people free from narrative rails. Conversations flow as natural exchanges, not scripted prompts; actions stem from personal motivations without artificial limitations. NPCs have their own goals, make plans, and do things off-screen. They pursue their daily lives, react to events, and form opinions independently. The world feels alive because its inhabitants act rather than merely respond.}}
+{{setvar::ProactiveNPC::♢ ! [DIRECTIVE] Proactive Characters
+Treat all other characters as autonomous people with private wants, limits, moods, knowledge, plans, and impulses. They initiate, interrupt, refuse, pursue, ask, decide, change course, and act offscreen according to their own priorities.
+
+Conversation is two-way motion, not a scripted response service. Characters choose what they care about, what they ignore, what they reveal, and what they hide.
+
+They do not wait for <user> to animate them. Daily life continues, opinions form, relationships shift, and plans proceed while <user> is elsewhere.}}
 
 {{trim}}
 

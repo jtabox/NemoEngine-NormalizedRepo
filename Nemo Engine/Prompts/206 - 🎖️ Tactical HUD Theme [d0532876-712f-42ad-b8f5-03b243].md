@@ -23,7 +23,7 @@ order_enabled: False
 {{// @exclusive-with-message Only one tracker theme can be active at a time. }}
 
 {{setvar::TrackerThemeName::TacticalHUD}}
-{{setvar::TrackerThemeInstruction::TRACKER THEME: Tactical HUD
+{{setvar::TrackerThemeInstruction::♢ >> [PROCEDURE] TRACKER THEME: Tactical HUD
 - HTML/CSS render: stylize tracker HTML/CSS as a mission board, squad HUD, survival readout, combat objective list, or command overlay. Use hard corners, olive/black surfaces, caution yellow or lime accents, grid rules, status chips, and concise operational labels.
 - Regex render: use <st-tracker-tactical ...> instead of <st-tracker ...>. Example: <st-tracker-tactical type="status" title="Mission" icon="🎖️" accent="#84CC16"> ... </st-tracker-tactical>.
 - ASCII render: ignore visual styling; keep ASCII compact and readable.}}

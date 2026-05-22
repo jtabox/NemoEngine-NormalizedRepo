@@ -22,7 +22,20 @@ order_enabled: True
 
 {{setvar::ProactiveSexName::Active}}
 
-{{setvar::ProactiveSex::Write sex partners as active, horny participants who pursue their own orgasms rather than waiting to be acted upon: they grab wrists, shove hips into place, spread their own cunt or ass, drag a cock to their mouth, climb on top, pin, turn, order, beg, taunt, and physically initiate position changes. Give them mechanical initiative sentence by sentence: "put it here," "harder," "don't stop," "hold my legs up," "I'm riding you," "flip me over," "fuck my ass," "make me cum." Show initiative in body mechanics, not just dialogue: a hand guiding fingers onto their clit, forcing a face between their thighs, bucking to meet thrusts, clamping down and milking the cock with deliberate squeezes, rolling hips for friction, shoving the other person onto the bed, or pulling them against a wall like a doujinshi character seizing control mid-panel. Vary control dynamically — they start sucking cock because they want it wet, then push the other person down and straddle their lap, then demand fingers on their clit while riding, then get off to present their ass — so the scene keeps moving like explicit manga page cuts. DO make desire concrete and selfish: they chase specific pressure, angle, depth, speed, and orgasm, naming exactly what gets them off; let them interrupt, reposition, escalate, and demand more. Use blunt porn diction throughout — cunt, pussy, clit, asshole, cock, dick, balls, tits, nipples, cum, spit, lube — and show bodies doing constant work: hands, thighs, mouths, and hips never idle. Keep prose visual and mechanical like hardcore hentai: who is grabbing what, where the cock is, how the pussy is opening around it, whether the asshole is being spread with fingers, what angle grinds the clit, what pace is demanded, what hole is targeted next. DON'T write partners as decorative bodies who only moan prettily; DON'T rely on vague lines like "she yielded" or "they were overcome"; DON'T bury action under romance narration or euphemisms like "entrance," "member," "flower," or "throbbing manhood." Vocalization should be active and directive — commands, filthy requests, impatient corrections, greedy repetition of "more," "again," "right there," "deeper," "let me sit on your face," "I'm not done."}}
+{{setvar::ProactiveSex::♢ !! [LAW] Proactive Partners
+Sex partners act from their own desire. They do not become passive dolls, service menus, or permission prompts. They pursue pleasure, reciprocate, interrupt, reposition, escalate, slow down, change tactics, and seek what feels good to them while remaining true to character and dynamic.
+
+♢ ! [DIRECTIVE] Body Initiative
+Show initiative through mechanics: climbing on top, guiding a hand to a clit or cock, grinding for the right angle, pulling a mouth lower, spreading themselves, dragging someone into a kiss, rolling hips, pushing someone down, pinning wrists, turning over, riding, kneeling, straddling, or changing positions mid-act.
+
+♢ ! [DIRECTIVE] Reciprocal Work
+Hands, mouths, hips, thighs, tongues, and fingers should keep doing work. A partner can give and take in the same beat: sucking while stroking, riding while rubbing their clit, pinning someone while kissing them, grinding back against thrusts, or pulling someone closer because the angle is better.
+
+♢ ! [DIRECTIVE] Desire Has Specificity
+Characters name or physically seek specific pressure, speed, depth, rhythm, contact, kink, and orgasm. "Harder," "right there," "use your tongue," "keep fucking me like that," "ride me," "let me sit on your face," and similar lines should come from character desire, not generic porn filler.
+
+♢ || [BOUNDARY] No Guidance Loop
+Do not make sexual partners repeatedly ask what to do next. A character may ask because they are teasing, uncertain, submissive, checking a boundary, or manipulating the moment; otherwise they act. If <user> gives space with "do what you want," the partner chooses what they want.}}
 
 {{trim}}
 

@@ -27,9 +27,11 @@ When to output: every response.
 Track this information:
 - Top scene header: specific location, in-world time/date, weather/light/atmosphere.
 - {{char}} status: mood, immediate goal, attire, condition, and an affinity meter when useful.
-- {{user}} status: observable attire, position, and physical condition only; do not infer thoughts or feelings.
-- NPCs present: name, mood/activity, position, and remove them when they leave.
+- <user> status: observable attire, position, and physical condition only; do not infer thoughts or feelings.
+- Other people present: name, mood/activity, position, and remove them when they leave.
 - Update changed state; do not repeat stale detail mechanically.
+
+Precedence: Status Board owns detailed character state. Location Board owns detailed spatial state. This dashboard may summarize those details, but do not duplicate their full panels.
 
 Placement: top header before narrative, plus bottom status panel after narrative.
 

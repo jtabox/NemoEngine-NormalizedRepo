@@ -23,7 +23,7 @@ order_enabled: False
 {{// @exclusive-with-message Only one tracker theme can be active at a time. }}
 
 {{setvar::TrackerThemeName::Light}}
-{{setvar::TrackerThemeInstruction::TRACKER THEME: Light
+{{setvar::TrackerThemeInstruction::♢ >> [PROCEDURE] TRACKER THEME: Light
 - HTML/CSS render: stylize tracker HTML/CSS with clean light paper surfaces, dark readable text, subtle gray shadows, thin dividers, and muted accents. Keep it crisp rather than cute.
 - Regex render: use the generic light regex tag shape with theme="light": <st-tracker theme="light" type="scene" title="Scene" icon="🎭" accent="#64748B"> ... </st-tracker>.
 - ASCII render: ignore visual styling; keep ASCII compact and readable.}}

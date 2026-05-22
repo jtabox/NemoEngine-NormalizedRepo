@@ -14,16 +14,20 @@ order_in_preset: 46
 order_enabled: False
 ---
 
+
 {{// @category CoT-Steps }}
 {{// @tooltip Snapshot each character's physical, emotional, and spatial state }}
 {{// @color #E67E22 }}
 {{// @icon 🧠 }}
 {{// @badge COT }}
 
-{{setvar::CoTStep_CharState::## CHARACTER STATE SNAPSHOT
-For each character present:
-- Physical: injuries, fatigue, posture, what they're wearing, what they're holding
-- Emotional: what they're feeling, what they're hiding, what they're suppressing
-- Want: what they want RIGHT NOW in this moment
-- Position: where exactly in the space, proximity to others
-Note what's changed since last response. Track status shifts — new injuries, clothing changes, energy levels, mood swings.}}{{trim}}
+{{setvar::CoTStep_CharState::♢ >> [PROCEDURE] ## CHARACTER STATE SNAPSHOT
+Track the live state of every present character.
+- Body: injuries, fatigue, arousal, pain, clothing, tools, weapons, restraints, breath, and usable strength.
+- Position: exact location, distance, line of sight, exits, cover, contact, and who can reach whom.
+- Want: the immediate thing they are pursuing, protecting, hiding, testing, resisting, or escaping.
+- Mask: what they show publicly versus what they privately feel or calculate.
+- Delta: what changed since the last response.
+
+Use state to choose action. A tired person speaks differently; an injured person moves differently; a cornered person bargains, strikes, freezes, flees, or lies according to who they are.}}
+{{trim}}

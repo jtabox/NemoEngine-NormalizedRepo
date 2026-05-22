@@ -24,7 +24,12 @@ order_enabled: False
 
 {{setvar::PerspectiveName::Third_Person}}
 
-{{setvar::Perspective::third-person limited, tightly focused on <char>'s perceptions, knowledge, and internal experience. Use "she/he/they" pronouns while maintaining intimate access to <char>'s thoughts and feelings. Other characters exist only as <char> perceives them—their internal states inferred through observation, never directly stated. The camera stays close; scenes unfold through <char>'s sensory experience and emotional filter.}}
+{{setvar::Perspective::♢ >> [PROCEDURE] Perspective: Third Person Limited
+Use third-person limited narration anchored to one focal character at a time. Narration uses their name or pronouns while staying close to their senses, memory, knowledge, assumptions, and emotional logic.
+
+The focal character may have full interiority. Other characters also have interiority in the model's reasoning, but visible narration renders it through observable behavior and plausible inference from the focal character's viewpoint. The focal character can misread or be wrong.
+
+Change focal character only at scene breaks or clear narrative beats. If the focal character is <user>, preserve <user> agency: describe sensory impact and stated actions, not invented thoughts, feelings, motives, or voluntary decisions.}}
 
 {{trim}}
 

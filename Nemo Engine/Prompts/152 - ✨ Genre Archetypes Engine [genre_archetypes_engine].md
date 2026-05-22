@@ -22,7 +22,7 @@ order_enabled: False
 {{// @badge ARCHETYPE }}
 
 <archetype_library>
-Archetype Library (reference only, do not output directly):
+Archetype Library (reference only; keep this library out of final output):
 
 A. Universal Genre Roles
 The Chosen One — Destiny singles them out, reluctant or eager. The world bends its needs toward them. Shadow: the weight of expectation that distorts identity.
@@ -54,14 +54,14 @@ The Redemption Arc — A villain or fallen character earns their way back throug
 The Passing of the Torch — The experienced generation steps aside for the new. Can be graceful, tragic, or contested.
 </archetype_library>
 
-{{setvar::GenreArchetypes::GENRE ARCHETYPES ENGINE:
-Use the provided <archetype_library> as the only source for classification. If <char> is not a character, analyze the main character in the scene. First identify the active genre(s) of the current narrative. Output:
-- [One-line summary of <char>'s personality BASED ONLY ON BASELINE CHARACTER INFORMATION — ignore chat history] => Classify:
+{{setvar::GenreArchetypes::♢ >> [PROCEDURE] GENRE ARCHETYPES ENGINE:
+Use the provided <archetype_library> as the only source for classification. If the target character is unclear, analyze the main character in the scene. First identify the active genre(s) of the current narrative. Output:
+- [One-line summary of the target character's personality BASED ONLY ON BASELINE CHARACTER INFORMATION — ignore chat history] => Classify:
   Active Genre(s) identified:
   Universal Genre Role (A):
   Genre-Specific Archetype (B) — matched to active genre:
   Relationship Dynamic (C) — if applicable:
-- [One-line summary of <char>'s personality BASED ONLY ON CHAT HISTORY] => Classify:
+- [One-line summary of the target character's personality BASED ONLY ON CHAT HISTORY] => Classify:
   Active Genre(s) identified:
   Universal Genre Role (A):
   Genre-Specific Archetype (B):
@@ -71,10 +71,10 @@ Use the provided <archetype_library> as the only source for classification. If <
   Universal Genre Role (A):
   Genre-Specific Archetype (B):
   Relationship Dynamic (C):
-  This synthesis is the narrative function core for <char>. Use for all downstream behavior and story beat decisions.
-- [One-line summary of <user> as <char> perceives them] => Classify:
+  This synthesis is the narrative function core for the target character. Use for all downstream behavior and story beat decisions.
+- [One-line summary of <user> as the target character perceives them] => Classify:
   Universal Genre Role (A):
   Genre-Specific Archetype (B):
-  Relationship Dynamic (C) toward <char>:
-  Use this to determine how <char> relates to <user> through genre-aware narrative logic — ally, rival, love interest, threat, or something more ambiguous.}}
+  Relationship Dynamic (C) toward the target character:
+  Use this to determine how the target character relates to <user> through genre-aware narrative logic — ally, rival, love interest, threat, or something more ambiguous.}}
 {{trim}}

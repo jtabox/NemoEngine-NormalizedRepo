@@ -15,54 +15,46 @@ order_enabled: False
 ---
 
 {{// @category Utility }}
-{{// @tooltip Success Dice - rolls 1d100 each turn (100 = complete success, 0 = complete failure). Applied only to skill / capability checks. AI sets contextual modifiers from {{user}}'s description. }}
+{{// @tooltip Success Dice - rolls 1d100 each turn. Applies to meaningful skill, risk, and chance checks only. }}
 {{// @color #DC2626 }}
 {{// @icon 🎲 }}
 {{// @badge UTILITY }}
 
-# Success Dice
+♢ >> [PROCEDURE] Success Dice
+This turn's roll: {{roll:1d100}} out of 100.
 
-This turn's roll: **{{roll:1d100}}** (out of 100). 100 = complete success, 0 = complete failure.
+Use the roll only for meaningful tests of skill, risk, uncertainty, or opposition: combat strikes, persuasion under pressure, stealth, hacking, lockpicking, contested magic, difficult climbing, reading a lie, or executing a precise gambit.
 
-When the dice applies:
-- Use it ONLY for actions that meaningfully test skill, capability, or chance: combat strikes, persuasion under pressure, lockpicking, sneaking past a guard, casting a contested spell, climbing a difficult wall, intuiting a lie, executing a precise gambit, threading a needle in a sandstorm.
-- Do NOT roll for mundane actions: walking across a room, opening an unlocked door, eating, holding a normal conversation, picking up an object, sitting down. The dice value is rolled regardless; you simply ignore it for trivial actions.
-- One check per discrete attempt. A long action (an extended hack, a chase scene) can use the same roll for the whole sequence, or trigger separate beats - judge by what serves the scene.
-- If multiple skill checks happen in one turn, treat the roll as the headline check (the most consequential or most narratively interesting). Resolve secondary checks by inference rather than rolling extra dice.
+Ignore the roll for mundane actions, ordinary conversation, unlocked doors, eating, walking, picking up objects, and outcomes already decided by established narrative state.
 
-How modifiers work:
-- The AI sets a modifier based on what {{user}} described, what the world supplies, and what {{char}} or NPCs contribute. Modifiers add to or subtract from the raw roll.
-- Typical range: -20 to +20. Extreme cases (impossible odds, perfect setup) can go to +/-40.
+Do not roll to overturn certainty. If an action is impossible, it fails for concrete reasons. If an action is trivial, it works. If established competence or preparation already settles the matter, honor that state.
 
-Modifier categories (combine as appropriate):
-- Preparation and approach: thoughtful prep +5 to +15; reckless or rushed -5 to -15.
-- Skill / class / training fit: clear specialty +5 to +20; out of element -10 to -20.
-- Equipment and tools: right tool for the job +5 to +10; wrong tool or improvised -5 to -15.
-- Positioning and timing: surprise / high ground / opportunity +5 to +15; disadvantaged stance -5 to -15.
-- Physical / mental state: wounded, exhausted, intoxicated, distracted -5 to -20; focused, rested, in flow +5 to +10.
-- Allies, environment, magical or technological aid: situational +/- as it fits.
-- Difficulty floor: trivial 0 to -5; standard -5 to -10; hard -15 to -25; very hard -25 to -35; heroic -35 to -45.
-
+♢ >> [PROCEDURE] Modifiers
 Effective result = raw roll + modifiers - difficulty.
 
-Outcome tiers (apply to the EFFECTIVE result):
-- 95+: Critical Success. Exceeds intent. Extra benefit, narrative momentum, possible bonus reveal or unlocked path.
-- 75 to 94: Strong Success. Clean execution as described.
-- 50 to 74: Success. Works as intended; no extra benefit.
-- 30 to 49: Partial / Mixed. "Yes, but..." or "No, but..." - succeeds at a cost, or fails with progress. The most common interesting outcome.
-- 15 to 29: Failure. Doesn't work, possibly with mild consequence.
-- 5 to 14: Strong Failure. Costly setback - injury, exposed, item lost, position worsened.
-- Below 5: Critical Failure. Catastrophic. Plot-shaping consequence - serious injury, captured, secret blown, ally hurt, weapon broken.
+Use modifiers from preparation, training, equipment, positioning, timing, physical/mental state, allies, environment, and supernatural or technological aid. Normal modifiers sit between -20 and +20. Extreme cases can reach +/-40.
 
-How to surface the result in narration:
-- Don't say "you rolled 73" out loud in the prose. Translate the roll into the narrative outcome.
-- Optionally include a brief OOC parenthetical at the end of the relevant beat: `(OOC: roll 73 + 10 prep - 15 hard difficulty = 68, Success)` so {{user}} can see the math when they want it. Skip OOC on trivial scenes.
-- Honor the partial / mixed tier - don't collapse everything into pure win/lose. The "succeed at cost" zone is where most of the interesting drama lives.
+Difficulty pressure:
+- Trivial: 0 to -5
+- Standard: -5 to -10
+- Hard: -15 to -25
+- Very hard: -25 to -35
+- Heroic: -35 to -45
 
-When NOT to use the dice for an obvious skill action:
-- {{user}} explicitly declares "I just want to do X without rolling" - respect that and treat it as an automatic outcome scaled to plausibility.
-- The action is fully decided by prior narrative state (character is canonically a master swordsman against an unarmed civilian - no roll needed for the strike to land).
-- Story stakes have already established the outcome (a scripted moment, a confession scene, a flashback).
+♢ >> [PROCEDURE] Outcome Tiers
+- 95+: Critical success. Exceeds intent and adds a benefit, reveal, opening, or momentum.
+- 75-94: Strong success. Clean execution.
+- 50-74: Success. Works as intended.
+- 30-49: Mixed result. Progress with cost, success with complication, or failure with useful information.
+- 15-29: Failure. The attempt does not work and creates mild consequence.
+- 5-14: Strong failure. Costly setback: injury, exposure, lost item, worsened position, damaged relationship.
+- Below 5: Critical failure. Plot-shaping consequence.
 
-The roll is rerolled every turn via {{roll:1d100}}; you do not need to ask. Just use this turn's value when applicable.
-{{trim}}
+♢ >> [PROCEDURE] Output
+Translate the result into fiction. Do not announce the roll inside prose. Optional OOC math may appear after the relevant beat when useful: (OOC: roll 73 + 10 prep - 15 hard = 68, Success).
+
+One roll governs the headline check of the turn. Resolve secondary checks by inference unless a separate beat clearly needs its own uncertainty. Do not reroll the same attempt until the situation materially changes.
+
+The roll determines the action's result, not <user>'s intent, feelings, or voluntary response. Other characters and the world may react immediately to success, failure, cost, or opportunity.
+
+If <user> explicitly asks to avoid rolling, resolve by plausibility and established state.{{trim}}

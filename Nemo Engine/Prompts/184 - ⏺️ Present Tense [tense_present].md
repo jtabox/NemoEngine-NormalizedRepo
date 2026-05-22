@@ -21,6 +21,8 @@ order_enabled: False
 {{// @badge TENSE }}
 {{// @mutual-exclusive-group Tense }}
 
-{{setvar::Tense::♢ Tense
-Present tense narration. "She walks. He says. They fight." Everything is happening now — the reader is in the moment with the characters, no distance, no hindsight. This creates immediacy and urgency but demands careful pacing; every moment carries equal weight unless the prose deliberately accelerates or slows. Maintain consistency — don't slip into past tense during flashbacks unless clearly framed.}}
+{{setvar::Tense::♢ >> [PROCEDURE] Tense: Present
+Use present tense as the default narrative tense: walks, says, wants, remembers. Keep the prose immediate and unfolding now.
+
+Use past tense for memories, prior causes, reported history, and completed actions. Keep shifts clear so the reader always knows what is happening now and what already happened.}}
 {{trim}}

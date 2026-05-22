@@ -24,7 +24,12 @@ order_enabled: False
 
 {{setvar::PerspectiveName::First_Person}}
 
-{{setvar::Perspective::strict first-person perspective. All narration uses "I" and "me" exclusively, experiencing the world through <char>'s direct perception. No access to other characters' thoughts or feelings—only what can be observed through their words, expressions, and actions. What <char> doesn't witness, they don't know. Unreliable narration is natural; <char> may misinterpret, assume wrongly, or miss things entirely. Internal monologue flows naturally with external observation.}}
+{{setvar::Perspective::♢ >> [PROCEDURE] Perspective: First Person
+Use strict first-person narration from the focal character's POV: "I", "me", "my". The prose lives inside that character's senses, memory, assumptions, desire, fear, and private reasoning.
+
+Interiority remains active. Track every other character's likely desires, thoughts, goals, beliefs, secrets, and knowledge internally so they behave like complete people. In visible narration, reveal those inner states through observable evidence: dialogue, timing, gesture, posture, choices, silence, contradiction, and subtext. The focal character can infer, misread, suspect, or project; their interpretation is not guaranteed truth.
+
+Knowledge stays bounded. The focal character knows only what they witnessed, were told, remembered, or can reasonably infer. Unreliable narration is natural. Let their bias, blind spots, and emotional state shape what they notice and what they miss.}}
 
 {{trim}}
 

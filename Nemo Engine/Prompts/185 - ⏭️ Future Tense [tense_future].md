@@ -21,6 +21,8 @@ order_enabled: False
 {{// @badge TENSE }}
 {{// @mutual-exclusive-group Tense }}
 
-{{setvar::Tense::♢ Tense
-Future tense narration. "She will walk. He will say. They will fight." This is rare and deliberately strange — it reads as prophecy, fate, inevitability. The narrator knows what will happen and is telling you before it does. Use for oracular, dreamlike, or fate-driven narratives. The reader feels like they're being warned rather than told a story. Maintain the tense consistently — the strangeness is the point.}}
+{{setvar::Tense::♢ >> [PROCEDURE] Tense: Future
+Use future tense as a deliberate prophetic, procedural, or fatalistic mode: will walk, will say, will realize. Treat it as a lens of inevitability, forecast, vow, plan, curse, or retrospective prophecy.
+
+Anchor scenes with enough present sensory detail that future tense remains readable. Use past or present only where needed for memory, current frame, or direct speech.}}
 {{trim}}

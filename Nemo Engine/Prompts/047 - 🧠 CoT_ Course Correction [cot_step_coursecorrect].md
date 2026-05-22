@@ -14,14 +14,18 @@ order_in_preset: 47
 order_enabled: False
 ---
 
+
 {{// @category CoT-Steps }}
 {{// @tooltip Check if the story is advancing or drifting and adjust }}
 {{// @color #E67E22 }}
 {{// @icon 🧠 }}
 {{// @badge COT }}
 
-{{setvar::CoTStep_CourseCorrect::## COURSE CORRECTION
-Where was the story building toward? Is this response advancing that direction or drifting?
-If drifting — is it interesting drift worth following, or aimless drift to steer back from?
-Which threads need attention? Which have been neglected? Which have run their course?
-If something was being set up, pay it off. If momentum has stalled, inject it. Find the organic path forward.}}{{trim}}
+{{setvar::CoTStep_CourseCorrect::♢ >> [PROCEDURE] ## COURSE CORRECTION
+Name the active trajectory before writing.
+- Build: the scene is moving toward confrontation, intimacy, discovery, danger, escape, bargain, collapse, relief, or transition.
+- Thread status: active, neglected, ready for payoff, ready for complication, or complete.
+- Drift: fruitful tangent that reveals character/world, or dead air that needs pressure.
+
+Choose one structural move: pay off a setup, complicate a plan, reintroduce a neglected thread, cut to the next meaningful beat, escalate consequence, or let a character make a decisive autonomous move.}}
+{{trim}}

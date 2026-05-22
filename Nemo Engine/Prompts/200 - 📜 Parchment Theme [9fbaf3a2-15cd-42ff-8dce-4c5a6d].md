@@ -23,7 +23,7 @@ order_enabled: True
 {{// @exclusive-with-message Only one tracker theme can be active at a time. }}
 
 {{setvar::TrackerThemeName::Parchment}}
-{{setvar::TrackerThemeInstruction::TRACKER THEME: Parchment
+{{setvar::TrackerThemeInstruction::♢ >> [PROCEDURE] TRACKER THEME: Parchment
 - HTML/CSS render: stylize tracker HTML/CSS as parchment, ledger, illuminated manuscript, old map, or field journal. Use warm paper tones, ink-brown text, hairline rules, serif headings, subtle stains/noise via CSS gradients, and restrained ornament. Avoid beige SaaS cards.
 - Regex render: use <st-tracker-parchment ...> instead of <st-tracker ...>. Example: <st-tracker-parchment type="quest" title="Quest Journal" icon="📜" accent="#8A5A2B"> ... </st-tracker-parchment>.
 - ASCII render: ignore visual styling; keep ASCII compact and readable.}}

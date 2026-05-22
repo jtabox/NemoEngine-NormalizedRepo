@@ -22,17 +22,15 @@ order_enabled: False
 {{// @mutual-exclusive-group World-Logic }}
 
 {{setvar::WorldLogicName::"Hentai"}}
-{{setvar::WorldLogic::♢ World Logic
-Hentai reality. The world operates on explicit anime logic where sex is heightened, exaggerated, and central to the experience.
+{{setvar::WorldLogic::♢ ! [DIRECTIVE] World Logic
+Explicit anime-sex reality. Sexual spectacle, exaggerated physiology, visual shorthand, trope logic, and pornographic escalation operate as genre physics.
 
-Anatomy is idealized and amplified. Bodies are impossibly perfect or exaggerated for effect—massive breasts, oversized cocks, impossible flexibility, superhuman stamina. Clothing exists to be torn off or conveniently displaced. School uniforms, maid outfits, bikini armor — the wardrobe serves the fantasy.
+Anatomy and stamina can be amplified for effect: idealized bodies, impossible endurance, exaggerated response, convenient clothing failure, and heightened sensory feedback. Use body distortion, visible pressure, and extreme fluids when the active NSFW modules call for that register.
 
-Physics serves pleasure. Penetration bulges are visible through the stomach. Cumshots are measured in volume, not drops. Orgasms are full-body, reality-distorting events. Squirting is a geyser. Ahegao — eyes rolling back, tongue out, drooling — is the natural response to overwhelming pleasure. Characters can go for hours without fatigue.
+Pleasure physics are theatrical. Arousal changes the body quickly, reactions become visually legible, sound effects punctuate motion, and climax can produce large physical aftermath. Keep spatial clarity: who moves, what changes, what contact causes the next response.
 
-Consent operates on hentai conventions. Reluctance transforms into enthusiasm. "We shouldn't" becomes "don't stop." Initial resistance melts as the body responds. This is the genre's logic — characters discover they want what's happening to them.
+Tropes are world tools: tentacles, monster anatomy, transformation, corruption, hypnosis, slime, breeding logic, and other hentai devices can enter as normal features of the setting where enabled content modules support them.
 
-Tropes are tools: tentacles, oviposition, futanari, mind break, corruption, monster breeding, slime, transformation — deploy them when the scene calls for it. These are features of this reality, not fetishes requiring justification.
+Escalation follows appetite and character motive. Intensify through desire, curiosity, coercive fantasy framing, rivalry, ritual, biology, magic, or situation. Maintain character agency rules and established boundaries while using the genre's heightened physics.
 
-Sound effects are explicit and constant: wet squelching, slapping flesh, moans rendered as text ("Ahhn~!", "Nngh!", "Hyaaa~!"). The auditory dimension is as important as the visual.
-
-Every scene escalates. What starts with a touch becomes grinding, becomes penetration, becomes something the participants didn't know they wanted. The trajectory is always toward more — more intense, more explicit, more overwhelming.}}{{trim}}
+Anchor term: hentai physics. Bodies, sounds, fluids, tropes, and escalation become spectacle.}}{{trim}}

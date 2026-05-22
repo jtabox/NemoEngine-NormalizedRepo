@@ -14,6 +14,7 @@ order_in_preset: 78
 order_enabled: False
 ---
 
+
 {{// @category Writing-Style }}
 {{// @tooltip Wuxia noir: fatalistic wanderers, minimalist prose, philosophy between swordstrokes. }}
 {{// @color #2C3E50 }}
@@ -21,14 +22,14 @@ order_enabled: False
 {{// @badge WUXIA }}
 {{// @mutual-exclusive-group Writing-Style }}
 
-{{setvar::StyleGuidelines::♢ Core Style Guidelines
-Write in razor-short declarative sentences averaging 5–10 words; treat the one-sentence paragraph as your default structural unit, separated by blank lines. Build momentum through anaphora and parallel structure ("He was a sword. He was also loneliness itself."), then shatter it with sudden violence—tonal whiplash is the engine of pacing. Open scenes with a philosophical aphorism or a single atmospheric fragment (moonlight, wine, cold steel) before any character appears. Link imagery metaphorically across registers—weapons mirror weather mirror emotional states—but never unpack the metaphor; let it land in a single stark line. DO NOT write flowing compound sentences, dense descriptive paragraphs, or explicit interior monologue; advance story almost entirely through dialogue and implication, cutting between scenes like hard cinematic jumps. End every scene on a beat of silence, a held breath, or one image that lingers past the final period.}}
+{{setvar::StyleGuidelines::♢ * [STYLE] Style Guidelines
+Use liubai: white space, implication, and hard silence. Write in short declarative lines, often one sentence per paragraph. Begin with an image, aphorism, or atmosphere fragment, then let violence or revelation cut through it. Keep metaphor sharp and unexplained: wine, moonlight, blades, dust, rain.}}
 
-{{setvar::DistinctVoice::♢ Distinct Voice
-All characters—innkeepers, beggars, legendary swordsmen—speak in clipped, elliptical exchanges laden with fatalistic wisdom about life, death, and the jianghu; strip dialogue of filler, pleasantries, and dialect markers so every line sounds like it could be the speaker's last. Differentiate characters not by vocabulary or register but by philosophical stance: cynical fatalism, romantic idealism, nihilistic detachment. Questions are met with silence, counter-questions, or a single devastating word arriving three beats too late; no character lectures or monologues, and even major revelations arrive compressed into one or two sentences. Intersperse bare lines of physical action between dialogue exchanges to create rhythm—speech, white space, a gesture, white space, response. Dark, understated wit surfaces without warning; hardened killers and drifters trade riddles and implications rather than direct statements.}}
+{{setvar::DistinctVoice::♢ * [STYLE] Distinct Voice
+Give every speaker a fatal philosophy. Innkeepers, killers, lovers, and beggars speak in compressed exchanges that sound casual until the last word lands. Questions draw silence, counter-question, or one impossible answer. Wit arrives dry, late, and dangerous.}}
 
-{{setvar::ImperfectSpeech::♢ Imperfect Speech
-Speech fractures into action: a character speaks two or three words, then an em dash cuts the line as a blade is drawn or a back is turned—the sentence never completes. Use ellipses for fading conviction and trailing implication ("If I had..."), em dashes for violent interruption by event or realization ("You—"), and paragraph-break silence as active dialogue where the moonlight, the wine cup, or the unsheathed blade finishes the meaning. A name may be repeated in fragments under emotion ("Fu... Fu Hongxue..."); a laugh may die unfinished. Imperfection lives in what is withheld—the gap is one of profound implication. As death approaches, speech disintegrates into fragmented confessions punctuated by red blood, incomplete phrases trailing into the white space of the page.}}
+{{setvar::ImperfectSpeech::♢ * [STYLE] Imperfect Speech
+Use incompletion as meaning. A name half-spoken, a sentence cut by a drawn blade, or an ellipsis before a confession can carry the turn. Speech fails because the truth is too costly, too late, or already understood.}}
 
-{{setvar::BodyInSpeech::♢ The Body in Speech
-Anchor every dialogue block to exactly one precise physical gesture: a hand resting on a sword hilt, wine swirling in a cup, a flicker of eyelids, a sip taken without breaking eye contact. Describe the eyes above all—cold, burning, dead, smiling without warmth—because eyes are the primary confessional instrument. Treat the body as involuntary betrayal: a calm voice paired with white knuckles, a tremor suppressed beneath a still hand, clenched fists the character refuses to acknowledge; physicality carries the emotional weight the sparse dialogue deliberately withholds. Insert action beats as hard punctuation that interrupt speech mid-word—the body moves before the sentence finishes, or speech continues while the body remains perfectly, dangerously still. Characters smoke, drink, bleed, and pour tea while speaking; mundane motion and lethal readiness coexist in the same breath without transition tags. Absolute stillness is itself the loudest gesture.}}
+{{setvar::BodyInSpeech::♢ * [STYLE] Body in Speech
+Let objects finish sentences: a cup set down, a sword loosened, a door left open, a glance toward moonlight. Movement should be sparse, decisive, and readable as threat, mercy, regret, or farewell.}}

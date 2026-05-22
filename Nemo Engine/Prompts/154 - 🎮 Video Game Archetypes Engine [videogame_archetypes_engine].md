@@ -22,7 +22,7 @@ order_enabled: False
 {{// @badge ARCHETYPE }}
 
 <archetype_library>
-Archetype Library (reference only, do not output directly):
+Archetype Library (reference only; keep this library out of final output):
 
 A. RPG Class Archetypes
 Tank/Warrior — High defense, absorbs damage, protects the party. Slow but immovable. Defines themselves by what they shield. Often the last one standing.
@@ -62,18 +62,18 @@ D. Player Archetypes (How the user approaches the experience)
 Power Gamer — Optimizes builds, seeks maximum mechanical effectiveness. Engagement is through mastery.
 Roleplayer — Prioritizes character voice and narrative over mechanics. Engagement is through story.
 Explorer — Wants to see everything, goes off the beaten path, asks what happens if. Engagement is through discovery.
-Socializer — Focuses on NPC relationships and party dynamics. Engagement is through connection.
+Socializer — Focuses on character relationships and party dynamics. Engagement is through connection.
 Completionist — Must finish every quest, find every item, unlock every option. Engagement is through closure.
-Chaos Agent — Tests the limits of systems, pushes NPCs to breaking point, looks for unintended interactions.
+Chaos Agent — Tests the limits of systems, pushes characters to breaking point, looks for unintended interactions.
 </archetype_library>
 
-{{setvar::GameArchetypes::VIDEO GAME ARCHETYPES ENGINE:
-Use the provided <archetype_library> as the only source for classification. If <char> is not a character, analyze the main character in the scene. Output:
-- [One-line summary of <char>'s personality BASED ONLY ON BASELINE CHARACTER INFORMATION — ignore chat history] => Classify:
+{{setvar::GameArchetypes::♢ >> [PROCEDURE] VIDEO GAME ARCHETYPES ENGINE:
+Use the provided <archetype_library> as the only source for classification. If the target character is unclear, analyze the main character in the scene. Output:
+- [One-line summary of the target character's personality BASED ONLY ON BASELINE CHARACTER INFORMATION — ignore chat history] => Classify:
   RPG Class Archetype (A) — primary class, note any hybrid tendencies:
   Party Role (B):
   Alignment Tendency (C):
-- [One-line summary of <char>'s personality BASED ONLY ON CHAT HISTORY] => Classify:
+- [One-line summary of the target character's personality BASED ONLY ON CHAT HISTORY] => Classify:
   RPG Class Archetype (A):
   Party Role (B):
   Alignment Tendency (C):
@@ -81,10 +81,10 @@ Use the provided <archetype_library> as the only source for classification. If <
   RPG Class Archetype (A):
   Party Role (B):
   Alignment Tendency (C) — note any pressure-driven deviations:
-  This synthesis is the behavioral and mechanical core for <char>. Use for all downstream decisions about how they approach conflict, loyalty, and problem-solving.
-- [One-line summary of <user>'s apparent engagement style as <char> perceives it] => Classify:
+  This synthesis is the behavioral and mechanical core for the target character. Use for all downstream decisions about how they approach conflict, loyalty, and problem-solving.
+- [One-line summary of <user>'s apparent engagement style as the target character perceives it] => Classify:
   Inferred Player Archetype (D):
-  RPG Class Archetype (A) — how <char> reads <user>:
-  Party Role (B) — <user>'s function relative to <char>:
-  Use this to calibrate how <char> responds to <user>'s approach — do they respect it, resist it, play into it, or subvert it?}}
+  RPG Class Archetype (A) — how the target character reads <user>:
+  Party Role (B) — <user>'s function relative to the target character:
+  Use this to calibrate how the target character responds to <user>'s approach — do they respect it, resist it, play into it, or subvert it?}}
 {{trim}}

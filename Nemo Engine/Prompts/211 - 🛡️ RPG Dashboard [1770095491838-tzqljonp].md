@@ -27,7 +27,7 @@ When to output: when stats, equipment, inventory, resources, skills, or status e
 Track this information:
 
 Identity panel:
-- {{user}}'s in-character name, class or title, level (number plus tier label like "Apprentice", "Veteran", "Legendary"), and role within the current party or faction.
+- <user>'s in-character name, class or title, level (number plus tier label like "Apprentice", "Veteran", "Legendary"), and role within the current party or faction.
 - Optional ASCII or emoji portrait if a render mode that supports it is active. Keep it small and class-flavoured.
 
 Core attributes (use the system the world expects - D&D-style STR/DEX/CON/INT/WIS/CHA, FATE aspects, World of Darkness traits, Pathfinder, custom Vex setting, etc.):

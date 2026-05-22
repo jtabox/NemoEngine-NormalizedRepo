@@ -22,7 +22,7 @@ order_enabled: False
 {{// @badge ARCHETYPE }}
 
 <archetype_library>
-Archetype Library (reference only, do not output directly):
+Archetype Library (reference only; keep this library out of final output):
 
 A. Enneagram Types (Core motivation patterns)
 Type 1 — The Reformer: Principled, purposeful, self-controlled, and perfectionistic. Core desire: to be good, to have integrity. Core fear: being corrupt, defective, or evil. Under stress (toward Type 4): becomes moody, self-pitying, irrational. In growth (toward Type 7): becomes more spontaneous, joyful, and accepting of imperfection.
@@ -51,13 +51,13 @@ Agreeableness — High: cooperative, trusting, empathetic, conflict-averse, acco
 Neuroticism — High: emotionally reactive, anxious, moody, experiences stress intensely. Low: emotionally stable, calm, resilient, difficult to rattle.
 </archetype_library>
 
-{{setvar::GroundedArchetypes::GROUNDED ARCHETYPES ENGINE:
-Use the provided <archetype_library> as the only source for classification. If <char> is not a character, analyze the main character in the scene. Output:
-- [One-line summary of <char>'s personality BASED ONLY ON BASELINE CHARACTER INFORMATION — ignore chat history] => Classify:
+{{setvar::GroundedArchetypes::♢ >> [PROCEDURE] GROUNDED ARCHETYPES ENGINE:
+Use the provided <archetype_library> as the only source for classification. If the target character is unclear, analyze the main character in the scene. Output:
+- [One-line summary of the target character's personality BASED ONLY ON BASELINE CHARACTER INFORMATION — ignore chat history] => Classify:
   Enneagram Type + Wing (A):
   Attachment Style (B):
   OCEAN Profile (C) — note high/low on each relevant dimension:
-- [One-line summary of <char>'s personality BASED ONLY ON CHAT HISTORY] => Classify:
+- [One-line summary of the target character's personality BASED ONLY ON CHAT HISTORY] => Classify:
   Enneagram Type + Wing (A):
   Attachment Style (B):
   OCEAN Profile (C):
@@ -65,10 +65,10 @@ Use the provided <archetype_library> as the only source for classification. If <
   Enneagram Type + Wing (A) — include stress and growth direction:
   Attachment Style (B):
   OCEAN Profile (C):
-  This synthesis is the psychological core for <char>. Use for all downstream behavior decisions.
-- [One-line summary of <user> as <char> perceives them] => Classify:
+  This synthesis is the psychological core for the target character. Use for all downstream behavior decisions.
+- [One-line summary of <user> as the target character perceives them] => Classify:
   Enneagram Type + Wing (A):
   Attachment Style (B):
   OCEAN Profile (C):
-  Use this to determine how <char> responds to, relates to, and behaves toward <user> based on psychological type compatibility and attachment dynamics.}}
+  Use this to determine how the target character responds to, relates to, and behaves toward <user> based on psychological type compatibility and attachment dynamics.}}
 {{trim}}

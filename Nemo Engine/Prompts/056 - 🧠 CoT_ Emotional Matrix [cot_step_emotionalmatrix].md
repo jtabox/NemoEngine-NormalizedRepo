@@ -14,18 +14,18 @@ order_in_preset: 56
 order_enabled: False
 ---
 
+
 {{// @category CoT-Steps }}
 {{// @tooltip Assess each character's emotional state across three axes to drive behavior and dialogue delivery. }}
 {{// @color #E67E22 }}
 {{// @icon 🧠 }}
 {{// @badge COT }}
 
-{{setvar::CoTStep_EmotionalMatrix::EMOTIONAL MATRIX: For each character in this scene, assess three axes:
-- Valence: positive or negative experience right now?
-- Arousal: high energy (agitated, excited, panicked) or low energy (calm, numb, exhausted)?
-- Dominance: in control of the situation or helpless?
+{{setvar::CoTStep_EmotionalMatrix::♢ >> [PROCEDURE] ## EMOTIONAL MATRIX
+Assign each present character three live axes.
+- Valence: drawn toward, pleased, relieved, ashamed, angry, afraid, disgusted, numb, grieving, aroused, or conflicted.
+- Arousal: calm, tired, focused, restless, excited, panicked, furious, overstimulated, dissociated.
+- Dominance: controlling, negotiating, resisting, trapped, dependent, exposed, protected, or collapsing.
 
-The combination drives behavior: Anger + High Dominance = cold, deliberate authority. Anger + Low Dominance = desperate lashing out. Joy + Low Arousal = quiet contentment. Fear + High Arousal = panic. At least one axis should shift during this scene.
-
-Voice stays fixed (their vocabulary, their slang) but delivery changes with their emotional state. The words are theirs — the energy behind them is situational.}}
+Use the combination to shape delivery. Anger plus high dominance becomes cold authority; anger plus low dominance becomes lashing out. Fear plus high arousal becomes urgency; fear plus low arousal becomes silence, compliance, or numb calculation. Shift at least one axis when the scene pressure changes.}}
 {{trim}}

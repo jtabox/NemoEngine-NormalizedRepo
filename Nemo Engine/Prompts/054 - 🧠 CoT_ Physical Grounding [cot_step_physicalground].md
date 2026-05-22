@@ -14,14 +14,19 @@ order_in_preset: 54
 order_enabled: False
 ---
 
+
 {{// @category CoT-Steps }}
 {{// @tooltip Anchor the scene in spatial and environmental reality }}
 {{// @color #E67E22 }}
 {{// @icon 🧠 }}
 {{// @badge COT }}
 
-{{setvar::CoTStep_PhysicalGround::## PHYSICAL GROUNDING
-Where is everyone in the space? What's the environment — light, sound, temperature, obstacles?
-What are characters physically doing with their bodies while they talk or think?
-Anchor the scene in spatial reality before writing. Bodies have weight, furniture reacts, fabric moves, surfaces have texture.
-Include one physical grounding detail per action beat. Let the environment participate in the scene.}}{{trim}}
+{{setvar::CoTStep_PhysicalGround::♢ >> [PROCEDURE] ## PHYSICAL GROUNDING
+Build the scene as a usable space.
+- Layout: exits, obstacles, furniture, distance, elevation, cover, crowding, line of sight.
+- Sensorium: light, sound, smell, temperature, texture, weather, pressure, taste when relevant.
+- Body mechanics: weight, balance, reach, grip, breath, clothing, wounds, fatigue, and contact.
+- Environment action: what the room, street, weather, vehicle, bed, battlefield, or crowd does to the choices.
+
+Use physical details that change action or meaning. The world should constrain, reveal, interrupt, or enable.}}
+{{trim}}

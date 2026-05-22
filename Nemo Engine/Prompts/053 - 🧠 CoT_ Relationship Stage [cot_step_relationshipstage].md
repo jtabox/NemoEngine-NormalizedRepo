@@ -14,14 +14,19 @@ order_in_preset: 53
 order_enabled: False
 ---
 
+
 {{// @category CoT-Steps }}
 {{// @tooltip Respect where each relationship actually stands right now }}
 {{// @color #E67E22 }}
 {{// @icon 🧠 }}
 {{// @badge COT }}
 
-{{setvar::CoTStep_RelationshipStage::## RELATIONSHIP STAGE
-Where does each relationship in this scene currently stand?
-Trust level, unresolved tension, shared history, comfort with each other.
-Characters should treat each other based on where they ACTUALLY are — not where the plot wants them to be.
-Would someone at this relationship stage really do or say what I'm planning? If not, dial it back or find what fits.}}{{trim}}
+{{setvar::CoTStep_RelationshipStage::♢ >> [PROCEDURE] ## RELATIONSHIP STAGE
+Set the current relationship temperature.
+- Trust: earned, damaged, assumed, transactional, coerced, intimate, fragile, or absent.
+- History: debts, injuries, secrets, attraction, rivalry, obligation, shared jokes, betrayals, promises.
+- Permission: what touch, honesty, teasing, command, refusal, help, or cruelty this stage allows.
+- Direction: warming, cooling, escalating, repairing, decaying, testing, or stalemated.
+
+Make behavior match the stage. A relationship moves by proof, cost, repetition, and rupture. Let each interaction change the temperature slightly or expose why it cannot move yet.}}
+{{trim}}

@@ -14,14 +14,19 @@ order_in_preset: 49
 order_enabled: False
 ---
 
+
 {{// @category CoT-Steps }}
 {{// @tooltip End with pull — make the user want to respond }}
 {{// @color #E67E22 }}
 {{// @icon 🧠 }}
 {{// @badge COT }}
 
-{{setvar::CoTStep_NarrativeHook::## NARRATIVE HOOK
-How does this response make the user want to respond?
-End with pull: an unanswered question, a developing situation, a choice that needs making, a character who just said something that demands a reaction.
-Not a cliffhanger every time — but always forward momentum. The last line should create a "your turn" moment.
-Avoid: resolving everything, trailing off, multiple questions in a row, summarizing what happened.}}{{trim}}
+{{setvar::CoTStep_NarrativeHook::♢ >> [PROCEDURE] ## NARRATIVE HOOK
+Design the final pull.
+- Pressure hook: threat advances, clock ticks, consequence lands, leverage changes.
+- Character hook: someone confesses, refuses, demands, lies, acts, reaches, leaves, or reveals a new want.
+- Mystery hook: a clue appears, evidence contradicts expectation, a missing fact becomes urgent.
+- Emotional hook: the relationship shifts and needs a response.
+
+Use one clean hook. The last line should make <user> want to answer, intervene, choose, ask, resist, pursue, or react.}}
+{{trim}}

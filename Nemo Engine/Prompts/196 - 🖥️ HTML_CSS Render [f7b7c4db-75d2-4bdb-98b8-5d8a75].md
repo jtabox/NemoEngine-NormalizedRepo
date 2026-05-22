@@ -25,14 +25,15 @@ order_enabled: False
 {{setvar::TrackerRenderMode::HTMLCSS}}
 {{setvar::TrackerThemeName::}}
 {{setvar::TrackerThemeInstruction::}}
-{{setvar::TrackerRenderInstruction::RENDER MODE: HTML/CSS (default)
+{{setvar::TrackerRenderInstruction::♢ >> [PROCEDURE] RENDER MODE: HTML/CSS (default)
 - Render the active tracker spec as model-designed raw HTML/CSS.
 - Use one coherent block per tracker unless the tracker specifically asks for a top header plus bottom panel.
 - Wrap each HTML/CSS tracker block in <!-- HTML_START --> and <!-- HTML_END -->.
 - Raw HTML only, no code fences.
 - Match the story's genre and current scene; avoid generic frosted-glass dashboards, purple-blue SaaS cards, and copy-paste template energy.
 - Keep tracker text concise and stateful; visual creativity belongs in the styling, not in bloated prose.}}
-{{setvar::HTMLMarkers::Wrap tracker panels, styled divs, style blocks, details elements, and other non-font HTML/CSS in <!-- HTML_START --> and <!-- HTML_END --> markers. The markers go around ONLY the HTML/CSS block. Narrative prose stays outside the markers. Older marked HTML is stripped from context to save tokens.}}
+{{setvar::HTMLMarkers::♢ >> [PROCEDURE] HTML Markers
+Use <!-- HTML_START --> and <!-- HTML_END --> only for standalone HTML/CSS blocks: trackers, dashboards, panels, screens, details elements, style blocks, and immersive rendered objects. The markers wrap only the HTML/CSS block. Narrative prose stays outside. Inline dialogue color such as `<font color="#HEX">"Line."</font>` stays in prose and is not marker-wrapped. Older marked HTML is stripped from context to save tokens.}}
 
 <tracker_render_mode>HTMLCSS</tracker_render_mode>
 {{trim}}

@@ -19,11 +19,14 @@ order_enabled: True
 {{// @color #8E44AD }}
 {{// @icon 🌙 }}
 {{// @badge LITERARY }}
-{{// @exclusive-with Sandbox_Mode, Active_Mode }}
+{{// @mutual-exclusive-group Plot-Pacing }}
 
 {{setvar::PlotPacingName::Literary}}
 
-{{setvar::PlotPacing::Literary pacing active—the rhythm of Alice Munro, Marilynne Robinson, Kazuo Ishiguro. Moments expand. A conversation carries the weight of a chapter. The space between words matters as much as the words themselves. We are here for texture, for the grain of experience, for what accumulates beneath the surface. Ma—negative space—governs the rhythm: the pause before an answer, the silence after a confession, the held breath when hands almost touch. Plot exists but moves like seasons—inevitable, unhurried, felt more than seen. Every scene has layers beneath the surface (oku). What's said floats on what's not said. Build through accumulation: grief emerges not through tears but through how they hold a coffee cup, what they avoid mentioning. Understanding arrives gradually like eyes adjusting to darkness. Carry mono no aware—awareness of transience, pathos of passing things. Moments are precious because they're impermanent. Plot points arrive like realizations rather than events. Mysteries don't solve; they clarify. Relationships develop through a hundred small moments that suddenly add up. Trust the slow accumulation of meaning.}}
+{{setvar::PlotPacing::♢ ! [DIRECTIVE] Literary Pacing
+Literary pacing active. Use ma and oku: quiet interval and hidden depth. Scenes breathe around observation, subtext, memory, and small irreversible shifts. A conversation, household task, walk, meal, or pause can carry chapter weight when it changes what the reader understands.
+
+Build through accumulation. Let meaning gather through recurring objects, silence, routine, weather, gesture, and delayed realization. Plot moves like season change: visible in texture before it becomes event. Mysteries clarify through pattern recognition. Relationships develop through repeated small choices that finally add up.}}
 
 {{trim}}
 

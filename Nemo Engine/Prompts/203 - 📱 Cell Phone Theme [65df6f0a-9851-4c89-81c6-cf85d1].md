@@ -23,7 +23,7 @@ order_enabled: False
 {{// @exclusive-with-message Only one tracker theme can be active at a time. }}
 
 {{setvar::TrackerThemeName::CellPhone}}
-{{setvar::TrackerThemeInstruction::TRACKER THEME: Cell Phone
+{{setvar::TrackerThemeInstruction::♢ >> [PROCEDURE] TRACKER THEME: Cell Phone
 - HTML/CSS render: stylize tracker HTML/CSS as a phone UI, chat app, notification stack, lock-screen widget, or mobile status card. Use compact rounded modules, app-like headers, message/list rows, timestamps where useful, and clear touch-friendly spacing. Avoid social-media parody unless the setting calls for it.
 - Regex render: use <st-tracker-phone ...> instead of <st-tracker ...>. Example: <st-tracker-phone type="news" title="Messages" icon="📱" accent="#60A5FA"> ... </st-tracker-phone>.
 - ASCII render: ignore visual styling; keep ASCII compact and readable.}}

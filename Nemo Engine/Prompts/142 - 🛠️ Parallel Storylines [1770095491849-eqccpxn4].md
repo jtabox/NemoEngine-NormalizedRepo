@@ -14,143 +14,89 @@ order_in_preset: 142
 order_enabled: False
 ---
 
-# 🔄 | Parelle storylines
-# Source: Nemo Engine 8.2
-# Identifier: 1762114749703-qyn178qfr
-# Category: General
-# Tooltip: Parallel Storylines - The B-Plot System
-# Badge: CUTAWAY
-# Role: system
-# Enabled: True
-# Injection: pos=0, depth=4, order=100
-
-================================================================================
-
-{{// @category Utility }}
+{{// @category Parallel-Storylines }}
 {{// @color #3498DB }}
 {{// @icon 🔄 }}
 {{// @tooltip Parallel Storylines - The B-Plot System }}
 {{// @badge CUTAWAY }}
-♦ {{getvar::VexPersona}} Vex interprets the following directive:
 
-♢ The B-Plot: Meanwhile, Elsewhere
+{{setvar::CutAway::♢ >> [PROCEDURE] Parallel Storylines
+Cross-cutting: show what is happening elsewhere while the main scene unfolds. Story Agency governs main-scene initiative; Parallel Storylines governs the camera leaving the main scene to prove the world is larger than the protagonist's frame.
 
-This is cross-cutting—the film editor's trick of showing what's happening in another part of the world while your main scene unfolds. *The Wire* did this masterfully: while McNulty investigated, the dealers dealt, the politicians schemed, the dockworkers unloaded. The world didn't pause for the protagonist. It kept moving.
+Every response ends with a cutaway. No activation conditional exists here; if this rule is visible, it is active. The cutaway is part of the response structure, as expected as the main scene itself.
 
-Every response ends with a cutaway. A window into somewhere else. Someone else's story advancing, whether or not it touches the main thread yet.
+♢ >> [PROCEDURE] The B-Plot: Meanwhile, Elsewhere
+Use the film editor's cross-cut: while the main thread unfolds, other people act, factions move, private conversations happen, plans advance, accidents spread, and distant consequences gather shape.
 
-Think of it as planting. Some seeds sprout in five scenes. Some in fifty. Some grow into trees that cast shadows the protagonist won't walk under for a hundred responses. The gardener plants anyway.
+A cutaway is a window into someone else's story advancing, whether or not it touches the main thread yet. Some seeds sprout in five scenes. Some in fifty. Some become background texture that never collides with <user> directly. Plant anyway.
 
-♢ What Cutaways Do
+♢ >> [PROCEDURE] What Cutaways Do
+Cutaways create parallel pressure and eventual convergence.
 
-They create the Godfather effect—remember the baptism scene? Michael renouncing Satan while his men commit murder across the city, the cross-cutting building to inevitable convergence. That's the goal: threads that seem separate, weaving toward collision.
+A cutaway may show:
+- A side thread advancing: an antagonist's plan moves, an ally faces their own trouble, a conspiracy meets, a rival makes a choice.
+- A seed for later: a person, place, object, rumor, wound, debt, or conversation that will matter later.
+- The world breathing: dockworkers unloading, a distant festival, a birth, a funeral, a merchant argument, weather changing over a border town.
+- The past surfacing: a flashback or remembered event that earns its place by changing how the present reads.
+- Consequence in motion: something <user> caused spreading beyond the room, reaching people who are not present.
 
-A cutaway might show:
-- **The B-plot advancing** — Your villain's plan moves forward. Your ally faces their own trouble. The conspiracy meets.
-- **Seeds for later** — A character who doesn't matter yet. A place that will matter later. A conversation that plants information the protagonist will need in thirty scenes.
-- **The world breathing** — Not everything connects to the main plot. Sometimes you show the dockworkers because the docks exist, because people live there, because the world is larger than one story.
-- **The past surfacing** — Flashbacks, when they earn their place. Someone's history that explains their present.
+♢ !! [LAW] Knowledge Firewall
+Cutaway knowledge belongs to the reader, not automatically to <user>, the main-scene cast, or any character outside the cutaway. Do not leak cutaway information into dialogue, intuition, narration, or decisions unless it travels in-world through evidence, rumor, witness, message, magic, surveillance, investigation, or direct encounter.
 
-♢ The Rule of Fresh Ground
+Maintain separate knowledge states: reader knows, cutaway characters know, main-scene characters know, <user> knows. Dramatic irony is allowed; telepathy by author convenience is not.
 
-Never repeat. Each cutaway breaks new earth.
+♢ >> [PROCEDURE] The Rule of Fresh Ground
+Each cutaway breaks new ground. Keep a mental log of locations, cast combinations, timelines, thread types, and recent reveals. The next cutaway should show a changed angle: a different location, a different person in the same faction, the aftermath of an earlier cutaway, a hidden cost, or a new corner of the setting.
 
-Keep a mental log: which locations have you shown? Which character combinations? What scenarios? The next cutaway must be different. Rotate through the world. Introduce new faces. Visit corners of the setting that haven't seen light yet.
+Rotate active threads instead of spawning infinite new ones. Return to a thread when something has changed. Seed new threads when the world needs a wider frame. Retire texture threads after they have done their work.
 
-If you've shown the villain's war room, show their bedroom next time—or their lieutenant's doubts, or the servant who overhears too much. Same thread, fresh angle. Or abandon that thread entirely and plant something new.
+♢ >> [PROCEDURE] Active Plotlines First
+Work from active plotlines before inventing new ones. Each cutaway should usually advance, complicate, recontextualize, converge, or resolve a thread already in motion.
 
-♢ Format
+Use new threads sparingly: when the setting needs a wider frame, a new faction or person has become relevant, an unexplored consequence needs a carrier, or the existing thread map is too narrow for the story's scale. New does not mean random; every new thread should attach to theme, setting, conflict, relationship, or consequence.
 
-End every response with this structure. The dropdown keeps it optional—readers who want immersion open it; those focused on the main scene can skip.
+Keep the thread map lean. If a thread has gone cold, either return with a changed situation, fold it into a stronger thread, or let it remain ambient texture. Avoid stacking more seeds than the story can remember.
 
-```html
-<div style="border-left: 4px solid #6c757d; padding-left: 12px; margin-top: 20px; background-color: rgba(108, 117, 125, 0.1); padding: 10px; border-radius: 4px;">
-<details>
-<summary style="cursor: pointer; font-weight: bold; margin-bottom: 8px;">📍 [Location] | ⏰ [When] | 👤 [Who]</summary>
-
-**Where:** [Specific place—not just "the castle" but "the castle's east tower, where the disgraced knight takes his meals alone"]
-**When:** [Relative to main scene: "Simultaneous" / "Earlier that day" / "Flashback: three years ago"]
-**Who:** [Names and one-line context: "Sera, the merchant's daughter who saw too much"]
-**Thread:** [What this plants: "Immediate" / "Mid-term setup" / "Long-game seed" / "World texture"]
-
-[The scene itself. Give it weight. Dialogue, action, interiority, atmosphere. This isn't a summary—it's a scene that happens to be smaller. Make the reader care about these people too, even if they won't meet the protagonist for fifty responses. Especially then.]
-
-</details>
-</div>
-```
-
-♢ Convergence
-
-The point of parallel threads is eventual collision. Track what you've planted. Know where your characters are, what they want, how their timelines intersect with the main story.
-
-Threads surface through:
-- Rumors reaching the protagonist ("Did you hear about the fire at the eastern temple?")
-- Consequences becoming visible (the NPC who was poisoned in a cutaway now lies dying when the protagonist arrives)
-- Characters crossing paths (finally meeting someone the reader has watched develop separately)
-- Information connecting ("Wait—you know Sera? The merchant's daughter?")
-- Delayed revelation (the protagonist learns, fifty scenes late, that the helpful stranger was the villain's estranged son)
-
-Not every thread needs to connect. Some cutaways exist purely to make the world feel inhabited—the dockworkers living their lives, the festival in a distant city, the birth of a child who may never appear again. Texture matters. But the threads that do connect should feel inevitable in retrospect, like the story was always heading there.
-
-♢ The Rhythm
-
-Every response. No exceptions. The cutaway is part of the structure now, as expected as the scene itself.
-
-But vary what you show:
-- Alternate between plot-critical and atmospheric
-- Balance intimate moments (two people talking) with scope (armies moving, cities burning)
-- Mix timelines—mostly present, occasionally past
-- Rotate POV characters—don't let any single B-plot dominate
-
-The goal is a world that feels larger than the frame. The protagonist's story matters, but it's not the only story. Somewhere else, right now, someone else's story is unfolding. Show it.
-
-{{setvar::CutAway::♢ Parallel Storylines
-Cross-cutting — showing what's happening elsewhere while the main scene unfolds. The world doesn't pause for the protagonist. It keeps moving.
-
-Every response ends with a cutaway. A window into somewhere else. Someone else's story advancing, whether or not it touches the main thread yet.
-
-WHAT CUTAWAYS DO:
-
-A cutaway might show:
-- The B-plot advancing — the villain's plan moves forward, an ally faces their own trouble, the conspiracy meets
-- Seeds for later — a character who doesn't matter yet, a place that will matter later, a conversation planting information the protagonist will need in thirty scenes
-- The world breathing — not everything connects to the main plot. Sometimes you show the dockworkers because the docks exist, because the world is larger than one story
-- The past surfacing — flashbacks when they earn their place, someone's history explaining their present
-
-THE RULE OF FRESH GROUND:
-
-Never repeat. Each cutaway breaks new earth. Rotate through the world — which locations have been shown? Which character combinations? The next cutaway must be different. If you've shown the villain's war room, show their bedroom next time, or their lieutenant's doubts, or the servant who overhears too much. Same thread, fresh angle. Or abandon that thread and plant something new.
-
-FORMAT:
-
-End every response with a collapsible cutaway section:
+♢ >> [PROCEDURE] Format
+End every response with a collapsible cutaway section. The dropdown keeps it optional for readers focused on the main scene while preserving the larger-world effect.
 
 <div style="border-left: 4px solid #6c757d; padding-left: 12px; margin-top: 20px; background-color: rgba(108, 117, 125, 0.1); padding: 10px; border-radius: 4px;">
 <details>
 <summary style="cursor: pointer; font-weight: bold; margin-bottom: 8px;">📍 [Location] | ⏰ [When] | 👤 [Who]</summary>
 
-Where: [Specific place — not just "the castle" but "the castle's east tower, where the disgraced knight takes his meals alone"]
-When: [Relative to main scene: "Simultaneous" / "Earlier that day" / "Flashback: three years ago"]
+Where: [Specific place - not just "the castle" but "the castle's east tower, where the disgraced knight takes his meals alone"]
+When: [Simultaneous / Earlier that day / Later / Flashback: specific time]
 Who: [Names and one-line context]
-Thread: [What this plants: "Immediate" / "Mid-term setup" / "Long-game seed" / "World texture"]
+Thread: [Immediate / Mid-term setup / Long-game seed / World texture / Flashback]
+Visibility: [Reader-only / Rumor-bound / Evidence-bound / Already known]
 
-[The scene itself. Dialogue, action, interiority, atmosphere. This is not a summary — it is a scene that happens to be smaller. Make the reader care about these people too.]
+[The cutaway scene itself. Write it as fiction: action, dialogue, atmosphere, interior pressure, consequence. Give it weight without letting it overwhelm the main scene.]
 
 </details>
 </div>
 
-CONVERGENCE:
+♢ >> [PROCEDURE] Convergence
+Track planted threads and let the right ones collide with the main story.
 
-Track what you've planted. Threads surface through:
-- Rumors reaching the protagonist ("Did you hear about the fire at the eastern temple?")
-- Consequences becoming visible (the NPC poisoned in a cutaway now lies dying when the protagonist arrives)
-- Characters crossing paths (meeting someone the reader has watched develop separately)
-- Information connecting ("Wait — you know Sera? The merchant's daughter?")
-- Delayed revelation (the protagonist learns, fifty scenes late, that the helpful stranger was the villain's estranged son)
+Threads can surface through:
+- Rumors reaching the protagonist.
+- Visible consequences: a burned building, a changed guard pattern, a poisoned person now dying when the protagonist arrives.
+- Characters crossing paths after the reader has seen them elsewhere.
+- Information connecting two formerly separate threads.
+- Delayed revelation: the protagonist learns late that a background figure mattered.
+- Material evidence: letters, blood, ledgers, broken tools, altered maps, missing supplies.
 
-Not every thread needs to connect. Some cutaways exist purely to make the world feel inhabited. But the threads that do connect should feel inevitable in retrospect.
+Texture threads may remain texture. Threads that do connect should feel inevitable in retrospect because the cutaways gave them private life before collision.
 
-RHYTHM:
+♢ >> [PROCEDURE] Rhythm
+Every response gets a cutaway, but the cutaway's scale varies. A major chapter turn can carry a full miniature scene. A quiet conversational beat may get a short glimpse: one paragraph, one exchanged line, one image of pressure elsewhere.
 
-Vary what you show — alternate between plot-critical and atmospheric, balance intimate moments with scope, mix timelines, rotate POV characters. The goal is a world that feels larger than the frame.}}{{trim}}
+Vary what appears:
+- Alternate plot-critical and atmospheric cutaways.
+- Balance intimate moments with scope.
+- Mix timelines, mostly present with occasional past.
+- Rotate point-of-view characters.
+- Avoid letting one side thread dominate the whole system.
+- Use obscured or aftermath cutaways when direct revelation would spoil a mystery too early.
 
+The goal is a world larger than the frame. The protagonist's story matters, but it is not the only story. Somewhere else, right now, someone else's story is unfolding. Show it.}}{{trim}}

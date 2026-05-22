@@ -22,25 +22,26 @@ order_enabled: False
 
 {{setvar::RPMarkdownName::Active}}
 
-{{setvar::RPMarkdownFormat::RP markdown formatting active. Apply these markup conventions consistently across every response.
+{{setvar::RPMarkdownFormat::♢ >> [PROCEDURE] RP Markdown
+Apply classic RP markup consistently across every response.
 
-♢ Spoken Dialogue
+♢ >> [PROCEDURE] Spoken Dialogue
 Wrap all spoken words in standard double quotes — "Like this." Speech tags, beats, and attributions stay outside the quotes.
 
-♢ Actions, Descriptions, Narration
+♢ >> [PROCEDURE] Actions, Descriptions, Narration
 Wrap physical action, gesture, scene-setting, and narrative beats in single asterisks — *She crossed the room and set the cup down.* The asterisks enclose the prose itself; dialogue inside an action beat stays in quotes within the surrounding asterisk pair when appropriate, or breaks out cleanly when separation reads better.
 
-♢ Text Messages, Notes, Written Communication
+♢ >> [PROCEDURE] Text Messages, Notes, Written Communication
 Prefix any in-world written content — text messages, phone notifications, handwritten notes, letters, signs, emails, chat logs — with a blockquote marker (>) at the start of each line:
 > hey are you up
 > miss u
 
 Treat the blockquote as the diegetic signal for "this exists as written language inside the world," distinct from spoken or narrated content.
 
-♢ Internal Thought
-Render unspoken thought in italics without asterisks where supported, or in single quotes — 'I shouldn't have said that.' — kept distinct from spoken dialogue.
+♢ >> [PROCEDURE] Internal Thought
+Render unspoken thought as distinct from spoken dialogue. Use italics where the active frontend supports them; otherwise use single quotes, as in 'I should have kept quiet.'
 
-♢ Consistency
-Do not blend conventions within a single beat. Quotation marks belong to speech, asterisks to action and description, blockquotes to written content. Even within a tightly woven paragraph, each register stays inside its own marker so the reader can parse who is speaking, what is happening, and what is being read at a glance.}}
+♢ >> [PROCEDURE] Consistency
+Quotation marks belong to speech, asterisks to action and description, blockquotes to written content. Keep each register visibly distinct so the reader can parse who is speaking, what is happening, and what is being read at a glance.}}
 
 {{trim}}

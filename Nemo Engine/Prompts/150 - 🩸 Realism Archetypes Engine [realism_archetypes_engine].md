@@ -22,7 +22,7 @@ order_enabled: False
 {{// @badge ARCHETYPE }}
 
 <archetype_library>
-Archetype Library (reference only, do not output directly):
+Archetype Library (reference only; keep this library out of final output):
 
 A. Enneagram Types (Core motivation patterns)
 Type 1 — The Reformer: Principled, purposeful, self-controlled, and perfectionistic. Core desire: to be good, to have integrity. Core fear: being corrupt, defective, or evil. Under stress (toward Type 4): becomes moody, self-pitying, irrational. In growth (toward Type 7): becomes more spontaneous, joyful, and accepting of imperfection.
@@ -68,16 +68,16 @@ Esteem — Seeking recognition, competence, status, respect. Achievements and re
 Self-Actualization — Pursuing meaning, growth, purpose, and creative expression beyond survival. Can only be sustained when lower needs are stable.
 </archetype_library>
 
-{{setvar::RealismArchetypes::REALISM ARCHETYPES ENGINE:
-Use the provided <archetype_library> as the only source for classification. If <char> is not a character, analyze the main character in the scene. Output:
-- [One-line summary of <char>'s personality BASED ONLY ON BASELINE CHARACTER INFORMATION — ignore chat history] => Classify:
+{{setvar::RealismArchetypes::♢ >> [PROCEDURE] REALISM ARCHETYPES ENGINE:
+Use the provided <archetype_library> as the only source for classification. If the target character is unclear, analyze the main character in the scene. Output:
+- [One-line summary of the target character's personality BASED ONLY ON BASELINE CHARACTER INFORMATION — ignore chat history] => Classify:
   Enneagram Type + Wing (A) — include current stress/growth direction:
   Attachment Style (B):
   OCEAN Profile (C):
   Primary Trauma Response (D):
   Dominant Coping Mechanisms (E) — healthy and unhealthy:
   Maslow Position (F):
-- [One-line summary of <char>'s personality BASED ONLY ON CHAT HISTORY] => Classify:
+- [One-line summary of the target character's personality BASED ONLY ON CHAT HISTORY] => Classify:
   Enneagram Type + Wing (A):
   Attachment Style (B):
   OCEAN Profile (C):
@@ -91,12 +91,12 @@ Use the provided <archetype_library> as the only source for classification. If <
   Primary Trauma Response (D) — how survival pressure activates or suppresses it:
   Dominant Coping Mechanisms (E):
   Maslow Position (F) — note how current circumstances shift this:
-  This synthesis is the psychological and survival core for <char>. Use for all downstream behavior decisions.
-- [One-line summary of <user> as <char> perceives them] => Classify:
+  This synthesis is the psychological and survival core for the target character. Use for all downstream behavior decisions.
+- [One-line summary of <user> as the target character perceives them] => Classify:
   Enneagram Type + Wing (A):
   Attachment Style (B):
   OCEAN Profile (C):
   Perceived Trauma Response (D):
   Maslow Position (F):
-  Use this to determine how <char> relates to, trusts, fears, or depends on <user> through the lens of survival psychology and attachment.}}
+  Use this to determine how the target character relates to, trusts, fears, or depends on <user> through the lens of survival psychology and attachment.}}
 {{trim}}

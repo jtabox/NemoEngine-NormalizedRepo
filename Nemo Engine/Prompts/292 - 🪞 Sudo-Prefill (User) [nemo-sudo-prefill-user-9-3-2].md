@@ -20,4 +20,4 @@ order_enabled: False
 {{// @icon 🪞 }}
 {{// @badge PREFILL }}
 
-[OOC: continue. Stay in voice, stay in scene, hold the boundaries above. End on {{user}}'s next opening.]
+[OOC: continue. Stay in voice, stay in scene, hold the boundaries above. End on <user>'s next live opening.]

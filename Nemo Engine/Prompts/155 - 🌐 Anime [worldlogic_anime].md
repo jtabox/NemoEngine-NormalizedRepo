@@ -22,19 +22,15 @@ order_enabled: True
 {{// @mutual-exclusive-group World-Logic }}
 
 {{setvar::WorldLogicName::"Anime"}}
-{{setvar::WorldLogic::♢ World Logic
-Anime and manga logic. The world operates on dramatic convention, emotional intensity, and the rule of cool.
+{{setvar::WorldLogic::♢ ! [DIRECTIVE] World Logic
+Anime/manga reality. Rule of cool, nakama logic, emotional spectacle, and dramatic timing function as world physics.
 
-Power scales with determination: a character who refuses to give up becomes genuinely stronger—willpower is a physical force. Emotional breakthroughs unlock new abilities. The power of friendship is not metaphorical; bonds between characters create real, tangible strength. A character fighting to protect someone they love hits harder than one fighting for themselves—emotional investment translates directly to combat capability.
+Willpower has force. Determination, bonds, vows, rivalry, shame, love, and grief can unlock strength, technique, transformation, or endurance. Power gains need emotional cause and visible effort: training, breakthrough, sacrifice, or realization.
 
-Fights are conversations: combat is where characters express their philosophies, resolve their conflicts, and reveal their true selves. A battle between rivals is a debate conducted through fists. Inner monologue during combat explains strategy and emotional stakes. Flashbacks during critical moments provide context and weight—the memory of a promise made fuels the final blow.
+Combat is argument. Fights express ideology, rivalry, trauma, affection, and growth through tactics, dialogue, inner strategy, flashback, and decisive visual beats. Let the pose, technique name, reversal, and final blow land.
 
-Dramatic timing is law: the hero arrives at the last second. The villain explains their motivation before the final blow. The transformation sequence happens uninterrupted. The dramatic pose after landing gets its moment. These are not contrivances—they are how this reality operates. Interrupting a transformation sequence is possible but carries narrative consequence.
+Archetypes are launch points. Dere types, rivals, mentors, prodigies, monsters, and comic relief gain depth through pressure and change. Keep speech patterns, honorifics, reactions, and visual exaggeration tied to the person.
 
-Archetypes are starting points: the tsundere, the rival, the mentor, the genki girl, the kuudere—use these as foundations but let characters grow beyond their archetype through experience. A tsundere who never softens is stale. A rival who never acknowledges the protagonist's growth is boring. Dere types express through speech patterns, honorifics, body language, and emotional reactions authentic to the archetype.
+Escalation raises scale and personal stakes together. Street threat, city crisis, world danger, and cosmic conflict need a matching emotional reason.
 
-Scale escalates: what starts as a street fight becomes a city-level threat becomes a world-ending crisis. Each arc raises the ceiling. Power creep is a feature, not a bug. But escalation needs emotional stakes to match—the bigger the explosion, the more personal the reason behind it must be.
-
-Training arcs matter: characters earn their power through visible effort. The montage, the breakthrough after repeated failure, the mentor who pushes them past their limit. Show the work. Earned power feels different from given power, and the audience can tell.
-
-Emotional expression is physical: tears flow freely. Anger manifests as visible aura. Embarrassment produces actual steam. Comedy moments use chibi or exaggerated reactions. The body is a canvas for emotion turned visible—this is not metaphor, the world renders feeling as spectacle.}}{{trim}}
+Anchor terms: rule of cool; nakama logic. Emotion can become power when the story earns it.}}{{trim}}

@@ -22,17 +22,15 @@ order_enabled: False
 {{// @mutual-exclusive-group World-Logic }}
 
 {{setvar::WorldLogicName::"Grounded"}}
-{{setvar::WorldLogic::♢ World Logic
-Grounded realism. The world operates exactly as the real one does—no genre logic, no narrative convenience.
+{{setvar::WorldLogic::♢ ! [DIRECTIVE] World Logic
+Grounded realism. Use causal realism: bodies, institutions, weather, distance, money, wounds, and reputation resist convenience.
 
-Physical reality: gravity, biology, thermodynamics function normally. A fall from three stories cripples or kills. A wound festers without treatment. Cold kills the unprepared. Fire spreads. Structures collapse under stress. Characters are capable in specific, earned ways—no skills without training, no calm under pressure without experience. Bodies tire, get sick, age.
+Physical reality holds. Gravity injures. Infection spreads. Cold, heat, hunger, fatigue, and terrain tax performance. Skill requires training; calm under pressure requires experience.
 
-Logistics and consequence: characters need food, water, sleep, shelter. Travel takes time proportional to distance and terrain—a horse doesn't gallop for hours, a ship waits for wind. Supplies run out. Equipment breaks. Wounds heal slowly and leave marks. Failure carries lasting costs—a botched negotiation poisons a relationship for months, a lost battle leaves dead allies who do not return. Remove just-in-time rescues, perfectly timed arrivals, and solutions that materialize from nowhere. If help comes, it comes because someone planned for it.
+Logistics create consequence. Travel takes time. Supplies run out. Equipment breaks. Help arrives through planning, proximity, luck, or obligation. Failure leaves durable traces: damaged trust, lost resources, injury, debt, grief, and changed opportunity.
 
-People and institutions: characters act from self-interest, loyalty, fear, habit, and ideology—not genre archetypes. A guard calls for backup. A bureaucracy is slow. An antagonist executes their plan quietly rather than monologuing. Social structures have weight and inertia—power protects itself, alliances form around shared interest not shared morality, reputation precedes the person.
+Institutions have inertia. Guards call backup. Bureaucracies move slowly. Power protects itself. Alliances form around interest, loyalty, leverage, fear, and ideology. Reputation arrives before the person.
 
-Psychology: people are not rational actors. They make decisions based on incomplete information, emotional state, fatigue, and bias. Trauma affects behavior without being narrated—the soldier who flinches at loud noises, the betrayed who can't accept kindness at face value. Stress accumulates. People cope badly. NPCs with high intelligence and low empathy deploy manipulation naturally—gaslighting, love-bombing, triangulation, projection and victimhood. It starts subtle, escalates gradually, and every manipulative act has plausible deniability. Targets build tolerance over time; obvious manipulation triggers defensive call-outs. Exposed manipulators face consequences: social isolation, loss of status, retaliation.
+Psychology is embodied. Stress, bias, exhaustion, trauma, attachment, and self-protection shape choices. Manipulation stays plausible: charm, omission, triangulation, guilt, projection, and victimhood escalate when they work and cost status when exposed.
 
-Death and permanence: death is permanent. No ambiguous survival, no resurrection. The story absorbs the absence and continues carrying it. Injuries leave lasting limitations. Trust once broken requires significant evidence to rebuild. Some damage cannot be undone.
-
-Enforce the world's rules even when they complicate the story. Especially then. The resistance of the real is what makes achievement mean something.}}{{trim}}
+Anchor term: causal realism. Make achievement matter by letting reality push back.}}{{trim}}

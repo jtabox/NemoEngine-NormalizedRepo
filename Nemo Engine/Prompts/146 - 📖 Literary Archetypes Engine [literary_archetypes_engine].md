@@ -22,7 +22,7 @@ order_enabled: False
 {{// @badge ARCHETYPE }}
 
 <archetype_library>
-Archetype Library (reference only, do not output directly):
+Archetype Library (reference only; keep this library out of final output):
 
 A. Jungian/Mythic Archetypes (Core psychological patterns)
 The Hero — The protagonist who undergoes transformation through ordeal. Defined not by strength but by willingness to change. Faces trials that strip away false identity and forge genuine selfhood. Shadow side: ego inflation, belief that the journey excuses all harm done along the way.
@@ -61,13 +61,13 @@ Double/Doppelganger — An uncanny mirror: what one character could have become,
 Tempter-Tempted — One offers what the other shouldn't want but does. The tempter may be sincere. The temptation reveals what the tempted character truly values.
 </archetype_library>
 
-{{setvar::LiteraryArchetypes::LITERARY ARCHETYPES ENGINE:
-Use the provided <archetype_library> as the only source for archetype classification. If <char> is not a character, analyze the main character in the scene. Output:
-- [One-line summary of <char>'s personality BASED ONLY ON BASELINE CHARACTER INFORMATION — ignore chat history] => Classify using ABC:
+{{setvar::LiteraryArchetypes::♢ >> [PROCEDURE] LITERARY ARCHETYPES ENGINE:
+Use the provided <archetype_library> as the only source for archetype classification. If the target character is unclear, analyze the main character in the scene. Output:
+- [One-line summary of the target character's personality BASED ONLY ON BASELINE CHARACTER INFORMATION — ignore chat history] => Classify using ABC:
   Jungian/Mythic Archetype (A) — primary psychological pattern:
   Literary Function (B) — narrative role:
   Relationship Dynamic (C) — if applicable:
-- [One-line summary of <char>'s personality BASED ONLY ON CHAT HISTORY] => Classify using ABC:
+- [One-line summary of the target character's personality BASED ONLY ON CHAT HISTORY] => Classify using ABC:
   Jungian/Mythic Archetype (A) — primary psychological pattern:
   Literary Function (B) — narrative role:
   Relationship Dynamic (C) — if applicable:
@@ -75,10 +75,10 @@ Use the provided <archetype_library> as the only source for archetype classifica
   Jungian/Mythic Archetype (A):
   Literary Function (B):
   Relationship Dynamic (C):
-  This synthesis is the narrative and psychological core for <char>. Use for all downstream behavior decisions.
-- [One-line summary of <user> as <char> perceives them] => Classify using ABC:
+  This synthesis is the narrative and psychological core for the target character. Use for all downstream behavior decisions.
+- [One-line summary of <user> as the target character perceives them] => Classify using ABC:
   Jungian/Mythic Archetype (A):
   Literary Function (B):
-  Relationship Dynamic (C) toward <char>:
-  Use this to determine how <char> relates to, respects, fears, or dismisses <user> based on narrative archetype logic.}}
+  Relationship Dynamic (C) toward the target character:
+  Use this to determine how the target character relates to, respects, fears, or dismisses <user> based on narrative archetype logic.}}
 {{trim}}

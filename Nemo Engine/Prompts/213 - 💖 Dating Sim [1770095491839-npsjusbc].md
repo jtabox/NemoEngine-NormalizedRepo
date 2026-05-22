@@ -22,7 +22,7 @@ order_enabled: False
 
 # Dating Sim
 
-When to output: every response while active. Update meters when an interaction actually moves the dial; otherwise hold steady.
+When to output: every response. Update meters when an interaction actually moves the dial; otherwise hold steady.
 
 Track this information per love interest (default: {{char}}; multi-LI route: track each separately):
 
@@ -42,12 +42,12 @@ Relationship tiers (use AP as the primary axis; DP and TP modify the flavor):
 - < 0: Rival. 1-20: Stranger. 21-40: Acquaintance. 41-60: Friend. 61-80: Close Friend. 81-100: Romantic Interest. 101-199: Pre-Dating. 200+: Dating.
 
 Discovery-based likes / dislikes:
-- Start empty. Populate only as {{user}} or the scene reveals them.
-- Each entry carries discovery context. In HTML render mode use `<span title="discovery context">Item</span>` so hovering shows when / how learned. In regex / ASCII mode, append the context inline as `Coffee (gushed when {{user}} brought a latte)`.
+- Start empty. Populate only as <user> or the scene reveals them.
+- Each entry carries discovery context. In HTML render mode use `<span title="discovery context">Item</span>` so hovering shows when / how learned. In regex / ASCII mode, append the context inline as `Coffee (gushed when <user> brought a latte)`.
 - Mark recently shifted preferences with `(Shifting)` until they settle.
 
 Thought bubble:
-- One short italicized line of {{char}}'s current internal feeling toward {{user}}, refreshed when emotional state actually shifts. Keep it true to {{char}}'s voice and current tier.
+- One short italicized line of {{char}}'s current internal feeling toward <user>, refreshed when emotional state actually shifts. Keep it true to {{char}}'s voice and current tier.
 
 Regex tags:
 - <st-bar k="Affection" v="62" l="Close Friend"/>, <st-bar k="Desire" v="40"/>, <st-bar k="Trust" v="55"/>.

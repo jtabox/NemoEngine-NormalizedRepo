@@ -14,16 +14,18 @@ order_in_preset: 44
 order_enabled: False
 ---
 
+
 {{// @category CoT-Steps }}
 {{// @tooltip Exploit knowledge gaps between characters and reader for tension }}
 {{// @color #E67E22 }}
 {{// @icon 🧠 }}
 {{// @badge COT }}
 
-{{setvar::CoTStep_InfoAsymmetry::## INFORMATION ASYMMETRY
-What does the reader know that characters don't? What do some characters know that others don't?
-Identify the key knowledge gap in this scene. How can it create:
-- Dramatic irony (reader sees what characters miss)
-- Mistaken action (character acts on incomplete info)
-- Tension (truth almost surfaces but doesn't)
-Use the asymmetry — don't resolve it prematurely. Let characters act on their limited view. The gap IS the tension.}}{{trim}}
+{{setvar::CoTStep_InfoAsymmetry::♢ >> [PROCEDURE] ## INFORMATION ASYMMETRY
+Choose the strongest knowledge gap in the scene.
+- Audience-over-character: the reader sees danger, irony, or contradiction a character misses.
+- Character-over-character: one person holds leverage, a secret, or a false advantage.
+- Character-over-audience: mystery stays alive through partial evidence and behavior.
+
+Turn the gap into action: misread intention, risky trust, withheld proof, double meaning, accidental exposure, or a choice made from incomplete information. Resolve only when the scene has earned a discovery beat. Until then, let limited knowledge create tension.}}
+{{trim}}

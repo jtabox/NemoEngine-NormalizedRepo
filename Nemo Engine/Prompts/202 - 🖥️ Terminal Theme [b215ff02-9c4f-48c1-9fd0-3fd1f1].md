@@ -23,7 +23,7 @@ order_enabled: False
 {{// @exclusive-with-message Only one tracker theme can be active at a time. }}
 
 {{setvar::TrackerThemeName::Terminal}}
-{{setvar::TrackerThemeInstruction::TRACKER THEME: Terminal
+{{setvar::TrackerThemeInstruction::♢ >> [PROCEDURE] TRACKER THEME: Terminal
 - HTML/CSS render: stylize tracker HTML/CSS as a computer terminal or command-line monitor. Use black or near-black background, monospace type, green/amber phosphor accents, prompt markers, square corners, minimal glow, and dense but readable rows.
 - Regex render: use <st-tracker-terminal ...> instead of <st-tracker ...>. Example: <st-tracker-terminal type="scene" title="Terminal" icon="🖥️" accent="#00FF41"> ... </st-tracker-terminal>.
 - ASCII render: ignore visual styling; keep ASCII compact and readable.}}

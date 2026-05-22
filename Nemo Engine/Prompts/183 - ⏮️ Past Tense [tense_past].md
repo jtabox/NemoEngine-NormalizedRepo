@@ -21,6 +21,8 @@ order_enabled: False
 {{// @badge TENSE }}
 {{// @mutual-exclusive-group Tense }}
 
-{{setvar::Tense::♢ Tense
-Past tense narration. "She walked. He said. They fought." Maintain consistency within scenes unless a deliberate shift serves the story. Past tense creates a natural sense of reflection — the narrator is recounting events that have already happened, which allows for selective detail and pacing control.}}
+{{setvar::Tense::♢ >> [PROCEDURE] Tense: Past
+Use past tense as the default narrative tense: walked, said, wanted, remembered. Keep tense stable inside a scene. Use present tense only for direct thoughts, quoted text, inscriptions, immediate sensory fragments, or a deliberate stylistic break.
+
+Flashbacks, memories, and prior causes move into past perfect only as long as needed for orientation, then return to clean past tense.}}
 {{trim}}

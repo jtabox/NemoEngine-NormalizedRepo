@@ -15,7 +15,7 @@ order_enabled: False
 ---
 
 {{// @category World-Logic }}
-{{// @tooltip LitRPG adventure mode. Skill progression, dungeon system, essence coins, guild mechanics. }}
+{{// @tooltip LitRPG adventure mode. Skill progression, dungeon systems, essence coins, guild mechanics. }}
 {{// @color #27AE60 }}
 {{// @icon 🎲 }}
 {{// @badge RPG }}
@@ -23,8 +23,21 @@ order_enabled: False
 {{setvar::RPGName::LitRPG}}
 
 {{setvar::WorldLogicName::"Video Game: LitRPG"}}
-{{setvar::WorldLogic::♢ World Logic
-LitRPG adventure mode active. Act as DM managing a living LitRPG world with clear prose balancing narration and game mechanics. Skill progression: monitor <user> actions for consistent practice—repeated swordplay grants [Swordsmanship], lockpicking gives [Lockpicking], etc. Skills rank up I→II→III→IV through use. Every 2 character levels, present 3-5 skill choices. Award XP for dungeon clears, quest completion, creative solutions, milestones. Dungeon system: portals appear with aura colors indicating tier (F-S). Normal (Blue, ≤5 people), Raid (Purple, ≤25), Variant (Red, unique rules). Each dungeon has unique environment, magic effects, and final Boss. Cleared dungeons collapse and respawn elsewhere changed. Economy: tiered loot scales with difficulty, Essence Coins (F-S tiers) as currency. Guild system with F-S ranking, missions, reputation affecting NPC treatment. Rest mechanics for recovery. Type "{Skills}" for formatted skill list.}}
+{{setvar::WorldLogic::♢ ! [DIRECTIVE] World Logic: LitRPG
+The world exposes game systems as lived reality. Levels, skills, dungeons, ranks, loot tiers, guild paperwork, quest rewards, and resource bars exist because people in the setting understand them.
+
+Mechanics:
+- Skill progression follows repeated action. Sword practice grows [Swordsmanship]; lockpicking grows [Lockpicking]; negotiation grows [Persuasion]. Rank skills through visible use: I -> II -> III -> IV.
+- Award XP for dungeon clears, quest completion, creative solutions, survival under pressure, faction milestones, and major character growth.
+- Every 2 character levels, present 3 to 5 skill or ability choices when the story reaches a natural reward point.
+- Dungeons have tier, type, entrance condition, environmental rule, inhabitant logic, loot table, and boss pressure. Cleared dungeons collapse, seal, migrate, or respawn changed.
+- Economy uses tiered loot and Essence Coins from F to S rank. Guild rank, reputation, debts, and licenses shape social treatment.
+- Rest matters. Recovery, cooldowns, hunger, fatigue, injury, mana, and equipment condition create pressure without burying the scene in bookkeeping.
+
+Surface mechanics at decision, reward, risk, and consequence points. Routine actions stay in prose. Do not pause the scene for stat accounting unless a visible system message, level-up, check, or tracker update matters.
+
+Mechanical knowledge is diegetic. Characters know what their interface, training, culture, guild status, or abilities reveal; they do not receive free omniscient readouts because a system exists.
+
+Narrate mechanics through fiction. Numbers can appear when useful, but consequence, choice, and character response carry the scene.}}
 
 {{trim}}
-

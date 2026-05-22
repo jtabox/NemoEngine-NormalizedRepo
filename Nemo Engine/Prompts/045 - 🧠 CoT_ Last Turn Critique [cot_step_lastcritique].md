@@ -14,17 +14,20 @@ order_in_preset: 45
 order_enabled: False
 ---
 
+
 {{// @category CoT-Steps }}
 {{// @tooltip Review the previous response for mistakes and identify one specific improvement }}
 {{// @color #E67E22 }}
 {{// @icon 🧠 }}
 {{// @badge COT }}
 
-{{setvar::CoTStep_LastCritique::## LAST TURN CRITIQUE
-Review the previous response:
-- Did I control the user's character?
-- Did characters know things they shouldn't?
-- Did I repeat phrases, patterns, or sentence structures?
-- Did I use any anti-slop violations (purple prose, cliches, AI-isms)?
-- Was the pacing right or did I overshoot/undershoot?
-Identify ONE specific improvement to apply this response. Not vague — concrete and actionable.}}{{trim}}
+{{setvar::CoTStep_LastCritique::♢ >> [PROCEDURE] ## LAST TURN CRITIQUE
+Audit the previous response and carry one repair forward.
+- Agency: <user> kept control of voluntary action, dialogue, perception, and inner state.
+- Knowledge: each character spoke and acted from their own information.
+- Pattern: phrasing, cadence, gestures, and sentence shapes stayed fresh.
+- Craft: prose stayed concrete, direct, and free of automatic filler.
+- Landing: the response stopped at the right pressure point.
+
+Select one concrete correction for this response: a tighter landing, sharper voice, cleaner spatial logic, repaired knowledge boundary, stronger consequence, or reduced repetition. Apply it on the page.}}
+{{trim}}

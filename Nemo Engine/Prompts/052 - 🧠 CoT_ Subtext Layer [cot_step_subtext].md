@@ -14,14 +14,19 @@ order_in_preset: 52
 order_enabled: False
 ---
 
+
 {{// @category CoT-Steps }}
 {{// @tooltip Identify what's really being communicated beneath the surface }}
 {{// @color #E67E22 }}
 {{// @icon 🧠 }}
 {{// @badge COT }}
 
-{{setvar::CoTStep_Subtext::## SUBTEXT LAYER
-What's really being said beneath the surface of this scene?
-What do characters want but aren't saying? What's the emotional undercurrent beneath the action?
-Where can a gesture, a pause, a word choice, or a conspicuous avoidance reveal what dialogue doesn't?
-Good dialogue has at least two layers: what they say and what they mean. Great dialogue adds what they feel, what they hide, and what they want.}}{{trim}}
+{{setvar::CoTStep_Subtext::♢ >> [PROCEDURE] ## SUBTEXT LAYER
+Define the hidden transaction beneath the visible exchange.
+- Surface: what is literally said or done.
+- Want: what each character is trying to get, test, protect, provoke, or conceal.
+- Risk: what becomes dangerous if the truth is named.
+- Leak: the gesture, pause, object handling, word choice, silence, over-politeness, joke, or deflection that exposes the truth.
+
+Let behavior carry insight. The scene gains depth when words pursue one goal and the body reveals another.}}
+{{trim}}

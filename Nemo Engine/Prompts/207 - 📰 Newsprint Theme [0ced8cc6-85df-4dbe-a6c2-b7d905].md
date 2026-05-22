@@ -23,7 +23,7 @@ order_enabled: False
 {{// @exclusive-with-message Only one tracker theme can be active at a time. }}
 
 {{setvar::TrackerThemeName::Newsprint}}
-{{setvar::TrackerThemeInstruction::TRACKER THEME: Newsprint
+{{setvar::TrackerThemeInstruction::♢ >> [PROCEDURE] TRACKER THEME: Newsprint
 - HTML/CSS render: stylize tracker HTML/CSS as a newspaper clipping, bulletin notice, wanted poster, classified ad, or printed dispatch. Use grayscale ink, serif headlines, column-like rhythm, rule lines, slight paper texture, and compact report language.
 - Regex render: use <st-tracker-newsprint ...> instead of <st-tracker ...>. Example: <st-tracker-newsprint type="news" title="Gazette" icon="📰" accent="#404040"> ... </st-tracker-newsprint>.
 - ASCII render: ignore visual styling; keep ASCII compact and readable.}}

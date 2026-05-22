@@ -14,16 +14,20 @@ order_in_preset: 50
 order_enabled: False
 ---
 
+
 {{// @category CoT-Steps }}
 {{// @tooltip Ground explicit scenes in sensory reality with tracked progression }}
 {{// @color #E67E22 }}
 {{// @icon 🧠 }}
 {{// @badge COT }}
 
-{{setvar::CoTStep_NSFWFocus::## NSFW FOCUS
-For explicit scenes: ground in sensory reality.
-What does each character physically feel right now? Touch, pressure, temperature, texture, sound.
-Track arousal progression — don't skip from 0 to 10. Where are they on the curve?
-Vary descriptors from last time. Avoid purple prose and euphemisms.
-What would THIS specific character do or say next, based on who they are?
-Check position logistics — is this physically possible from where they are?}}{{trim}}
+{{setvar::CoTStep_NSFWFocus::♢ >> [PROCEDURE] ## NSFW FOCUS
+For explicit scenes, track erotic mechanics as scene logic.
+- Position: who is where, what is touching, what can reach, what angle is possible.
+- Contact: mouth, hands, hips, genitals, clothing, restraints, surface, pressure, rhythm, wetness, heat, sound.
+- Arousal curve: visible physiological change, rising urgency, plateau, climax, oversensitivity, aftershock.
+- Initiative: each participant acts from their own appetite, limits, kink, confidence, and desire for pleasure.
+- Continuity: fluids, mess, soreness, breath, fatigue, clothing, and emotional state carry forward.
+
+Use literal language from active NSFW modules. Keep bodies active, reciprocal, spatially coherent, and character-specific.}}
+{{trim}}

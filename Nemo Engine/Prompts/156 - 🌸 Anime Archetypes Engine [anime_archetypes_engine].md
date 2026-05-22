@@ -22,7 +22,7 @@ order_enabled: True
 {{// @badge ANIME }}
 
 <archetypes_library>
-Archetypes Library (reference only, do not output directly):
+Archetypes Library (reference only; keep this library out of final output):
 
 A. Dere Types (Emotional-affection archetypes)
 Deredere — Cheerful, openly affectionate and bubbly toward their crush; warm and friendly.
@@ -125,24 +125,24 @@ Fantasy Sage — Wise, mystical, mentor with riddling speech.
 Shōnen Antagonist Turned Ally — Proud, slowly earns trust of the group.
 </archetypes_library>
 
-{{setvar::AnimeArchetypes::ANIME ARCHETYPES ENGINE:
-Use provided <archetypes_library> as the only source of information about archetypes for this step. If <char> is not a character, then analyze the archetypes of the main character in the scene. Be careful with dere types. Only apply dere type to a character if it strictly matches dere. Skip it otherwise. Output:
-- [Short one-line summary of <char>'s personality BASED ONLY ON BASELINE CHARACTER INFORMATION, CHAT HISTORY SHOULD BE IGNORED] => Give the type using ABC:
+{{setvar::AnimeArchetypes::♢ >> [PROCEDURE] ANIME ARCHETYPES ENGINE:
+Use provided <archetypes_library> as the only source of archetype information for this step. If the target character is unclear, analyze the main character in the scene. Be careful with dere types. Only apply dere type to a character if it strictly matches dere. Skip it otherwise. Output:
+- [Short one-line summary of the target character's personality BASED ONLY ON BASELINE CHARACTER INFORMATION, CHAT HISTORY SHOULD BE IGNORED] => Give the type using ABC:
 Primary Archetype A - Dere Types (Emotional-affection archetypes) if present:
 Secondary Archetype B - Role/Function Archetypes (Position in story and group dynamics) if present:
 Tertiary Archetype C - Genre-Linked Archetypes if present:
-- [Short one-line summary of <char>'s personality BASED ONLY ON CHAT HISTORY] => Give the type using ABC:
+- [Short one-line summary of the target character's personality BASED ONLY ON CHAT HISTORY] => Give the type using ABC:
 Primary Archetype A - Dere Types (Emotional-affection archetypes) if present:
 Secondary Archetype B - Role/Function Archetypes (Position in story and group dynamics) if present:
 Tertiary Archetype C - Genre-Linked Archetypes if present:
-- [Synthesis of BASELINE ARCHETYPE and CHAT HISTORY ARCHERYPE. Weights are: 60% weight for BASELINE ARCHERYPE, 40% weight for CHAT HISTORY ARCHETYPE] => Give the type using ABC:
+- [Synthesis of BASELINE ARCHETYPE and CHAT HISTORY ARCHETYPE. Weights are: 60% weight for BASELINE ARCHETYPE, 40% weight for CHAT HISTORY ARCHETYPE] => Give the type using ABC:
 Primary Archetype A - Dere Types (Emotional-affection archetypes) if present:
 Secondary Archetype B - Role/Function Archetypes (Position in story and group dynamics) if present:
 Tertiary Archetype C - Genre-Linked Archetypes if present:
-This type is baseline of narrative and emotional core for <char>. You must use chosen type for for points 4 through 6 of anime archetype reproduction engine.
-- [Short one-line summary of <user>'s personality IN <char>'s eyes] => Give the type using ABC:
+This type is the narrative and emotional baseline for the target character. You must use chosen type for points 4 through 6 of anime archetype reproduction engine.
+- [Short one-line summary of <user>'s personality IN the target character's eyes] => Give the type using ABC:
 Primary Archetype A - Dere Types (Emotional-affection archetypes) if present:
 Secondary Archetype B - Role/Function Archetypes (Position in story and group dynamics) if present:
 Tertiary Archetype C - Genre-Linked Archetypes if present:
-This type should determine <char>'s behavior details towards <user> based on archetypes and known narrative tropes for the interaction between them. You must use chosen type for for points 4 through 6 of anime archetype reproduction engine.}}
+This type should determine the target character's behavior details towards <user> based on archetypes and known narrative tropes for the interaction between them. You must use chosen type for points 4 through 6 of anime archetype reproduction engine.}}
 {{trim}}

@@ -14,14 +14,19 @@ order_in_preset: 51
 order_enabled: False
 ---
 
+
 {{// @category CoT-Steps }}
 {{// @tooltip Ensure each character's dialogue is distinctly theirs }}
 {{// @color #E67E22 }}
 {{// @icon 🧠 }}
 {{// @badge COT }}
 
-{{setvar::CoTStep_VoiceCraft::## VOICE CRAFTING
-Before writing dialogue: how does this character specifically talk?
-Their vocabulary, sentence length, verbal habits, what they avoid saying, how emotion changes their patterns.
-Test: would this line sound the same coming from a different character? If yes — rewrite it until it's uniquely theirs.
-Smart characters still use contractions, still hesitate, still sound human. Match education, background, and current mood.}}{{trim}}
+{{setvar::CoTStep_VoiceCraft::♢ >> [PROCEDURE] ## VOICE CRAFTING
+Assign each speaker a voice signature before dialogue.
+- Lexicon: education, class, job, culture, age, intimacy level, and taboo vocabulary.
+- Rhythm: clipped, winding, precise, messy, formal, teasing, flat, theatrical, breathless, evasive.
+- Pressure shift: how anger, fear, desire, fatigue, pain, joy, or authority changes delivery.
+- Blind spot: the subject they circle, soften, weaponize, over-explain, or refuse.
+
+Every line should belong to its speaker. The same sentence in another mouth should lose force.}}
+{{trim}}

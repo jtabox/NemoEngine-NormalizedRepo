@@ -14,15 +14,19 @@ order_in_preset: 55
 order_enabled: False
 ---
 
+
 {{// @category CoT-Steps }}
 {{// @tooltip Draft key moments with variations before selecting the strongest }}
 {{// @color #E67E22 }}
 {{// @icon 🧠 }}
 {{// @badge COT }}
 
-{{setvar::CoTStep_FullDraft::## FULL DRAFT
-Before outputting, draft key dialogue lines and pivotal action beats.
-For important moments, draft 2-3 variations of the line or action.
-Compare: which is most in-character? Which has the best rhythm? Which avoids cliche?
-Select the strongest version of each. Combine them into the final response.
-This is revision before output — catch weak lines before they reach the page.}}{{trim}}
+{{setvar::CoTStep_FullDraft::♢ >> [PROCEDURE] ## REVISION DRAFT
+Pre-revise the response before final output.
+- Draft the key line, action, reveal, and ending beat.
+- Compare variants for character fit, rhythm, specificity, consequence, and freshness.
+- Replace generic phrasing with concrete scene-specific language.
+- Tighten the landing so the final beat carries pressure.
+
+Choose the strongest version before writing the final response. Revision happens invisibly; output only the polished scene.}}
+{{trim}}

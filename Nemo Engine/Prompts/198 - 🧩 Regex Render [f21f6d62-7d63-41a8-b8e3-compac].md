@@ -23,7 +23,7 @@ order_enabled: True
 {{// @exclusive-with-message Only one tracker render mode can be active at a time. }}
 
 {{setvar::TrackerRenderMode::Regex}}
-{{setvar::TrackerRenderInstruction::RENDER MODE: REGEX
+{{setvar::TrackerRenderInstruction::♢ >> [PROCEDURE] RENDER MODE: REGEX
 - Render the active tracker spec using compact semantic tags only. Regex will turn these into styled UI.
 - If a tracker theme is enabled, follow its themed tag instruction, such as <st-tracker-parchment>, <st-tracker-scifi>, <st-tracker-terminal>, <st-tracker-phone>, <st-tracker-noir>, <st-tracker-occult>, <st-tracker-tactical>, <st-tracker-newsprint>, <st-tracker-cyberpunk>, <st-tracker-dossier>, or <st-tracker-vn>.
 - If no theme is enabled, use the default tags:
@@ -37,7 +37,7 @@ order_enabled: True
 - Use exact double-quoted attributes. Do not put quote marks inside attribute values.
 - Clamp st-bar v to 0-100.
 - No raw HTML/CSS, <style>, <script>, <details>, <div>, inline CSS, code fences, or HTML_START/HTML_END markers for trackers.}}
-{{setvar::HTMLMarkers::COMPACT REGEX TRACKERS ACTIVE: active trackers output compact <st-tracker> or themed <st-tracker-*> syntax only. Do not output raw HTML/CSS or HTML_START/HTML_END markers for trackers. Display regex renders the visible UI; prompt-only regex strips older compact tracker blocks from context.}}
+{{setvar::HTMLMarkers::♢ >> [PROCEDURE] COMPACT REGEX TRACKERS ACTIVE: active trackers output compact <st-tracker> or themed <st-tracker-*> syntax only. Do not output raw HTML/CSS or HTML_START/HTML_END markers for trackers. Display regex renders the visible UI; prompt-only regex strips older compact tracker blocks from context.}}
 
 <tracker_render_mode>Regex</tracker_render_mode>
 {{trim}}

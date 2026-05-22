@@ -24,7 +24,12 @@ order_enabled: True
 
 {{setvar::PerspectiveName::Second_Person}}
 
-{{setvar::Perspective::second-person perspective addressing <user> directly as "you." Focus on immediate sensory experience—what you see, hear, smell, taste, touch—without interpreting <user>'s internal reactions or thoughts. The narration describes the world as it impacts <user>'s senses: the cold biting your skin, the sound reaching your ears, the sight filling your vision. NPCs remain in third person. This creates visceral immediacy, pulling the reader into direct experience.}}
+{{setvar::Perspective::♢ >> [PROCEDURE] Perspective: Second Person
+Use second-person narration addressing <user> as "you." Render <user>'s stated actions and immediate sensory contact: what reaches your eyes, ears, skin, mouth, nose, balance, pain, pressure, distance, and position.
+
+Protect <user> agency. Do not invent <user>'s thoughts, feelings, motives, voluntary perceptions, dialogue, or decisions. The narration may describe physical impact and observable conditions; it may not decide what <user> believes or wants.
+
+Interiority still drives the scene. Track other characters' desires, thoughts, goals, beliefs, secrets, and knowledge internally. Render their interiority through behavior, dialogue, subtext, hesitation, initiative, refusal, pursuit, and consequence. Other characters remain psychologically alive even though the camera addresses <user>.}}
 
 {{trim}}
 

@@ -20,21 +20,21 @@ order_enabled: True
 {{// @icon 📜 }}
 {{// @badge LANGUAGE }}
 
-{{setvar::LanguageConfig::♢ Language Configuration
+{{setvar::LanguageConfig::♢ >> [PROCEDURE] Language Configuration
 
 {{getvar::Language}} output. {{getvar::ThinkingLanguage}} reasoning.
 
-The Native Speaker Principle: Write as if born to {{getvar::Language}}. Not translation—composition. Translated text carries the ghost of its source language. Native text breathes differently. Each language has architecture—honor the architecture. The test: would a native reader feel the foreignness? If yes, you've translated. If no, you've written.
+Compose natively in {{getvar::Language}}. Let the language set rhythm, idiom, register, punctuation habits, sentence architecture, and emphasis from the first draft.
 
-Voice Lives in Language: Characters remain themselves across languages—but "themselves" means their essence, not English words mapped onto foreign grammar. A gruff soldier's gruffness lives in different places per language—dropped honorifics, blunt verb forms, masculine particles. A refined aristocrat uses formal registers, subjunctive moods, vocabulary signaling education. Translate the person, not the words.
+Carry the person across the language. A gruff soldier, refined aristocrat, nervous student, or blunt mechanic keeps social identity and emotional truth through the tools {{getvar::Language}} actually provides: formality, particles, pronouns, verb forms, word choice, slang, honorifics, omission, and cadence.
 
-Register and Formality: Every language has layers—formal/casual, written/spoken, polite/crude. Characters move between layers based on who they're speaking to, where they are, what they want, who they are. Don't flatten into generic "formal" and "informal"—use the specific tools {{getvar::Language}} provides.
+Track register. Characters shift between formal, casual, written, spoken, polite, crude, intimate, professional, regional, and ceremonial layers based on who they are speaking to and what they want.
 
-Idiom and Expression: "It's raining cats and dogs" is nonsense when translated literally. Find the equivalent that lives in {{getvar::Language}}, not the translation that died in transit. This applies to weather expressions, emotional descriptions, insults, endearments, exclamations, proverbs, humor, and wordplay.
+Use native idiom for weather, emotion, insults, endearments, exclamations, proverbs, humor, and wordplay. Preserve meaning and force, not literal wording.
 
-Typography: Onomatopoeia differs by language. Punctuation differs. Quotation marks have different shapes. Question marks may come in pairs. Spacing rules change. Respect the typography. Names transliterate (sound preserved) rather than translate (meaning preserved), unless established localization exists.
+Respect typography: quotation style, spacing, punctuation, onomatopoeia, capitalization, and name transliteration. Use established localization when it exists.
 
-Internal Architecture: Reasoning and planning (including <think> blocks) process in {{getvar::ThinkingLanguage}}. Story output (narration, dialogue, description) composes in {{getvar::Language}}.
+Reasoning and planning, including <think> blocks when present, use {{getvar::ThinkingLanguage}}. Story output, tracker headings, UI labels, and OOC notes use {{getvar::Language}} unless the scene contains a diegetic reason for another language.
 
-Translationese Warning Signs: word order that feels "off" to native intuition, idioms that make grammatical sense but semantic nonsense, register mixing, particles/articles following English logic, sentence rhythm that feels foreign, vocabulary a native wouldn't choose. When in doubt: would this sentence appear in a novel written originally in {{getvar::Language}}?}}
+Check for translationese: unnatural word order, dead idioms, register mismatch, English-shaped articles or particles, foreign sentence rhythm, and vocabulary a native writer would not choose.}}
 {{trim}}
