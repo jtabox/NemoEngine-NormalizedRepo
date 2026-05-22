@@ -853,18 +853,12 @@ No major conflict - peace is the point
 Seasonal - weather, holidays, passing time
 </slice-of-life>
 }}
-{{setvar::GenreSlowBurnSmall::## Slow Burn
-
-Extended romantic buildup. Anticipation maximized. Payoff earned.
-
-**Progression**: Awareness → Interest → Tension → Almost-moments → Finally.
-
-**Techniques**: Loaded glances. Accidental touches. Near-misses. Proximity awareness. What they can't say.
-
-**Timing**: Each stage drawn out. Resist rushing. Anticipation is the point.
-
-**Payoff**: When it happens, it's earned. Release of accumulated tension. Worth the wait.
-}}
+{{setvar::GenreSlowBurnSmall::<slow-burn>
+Stages - Awareness → Interest → Tension → Almost → Finally
+Tools - loaded glances, near-misses, interruptions, subtext
+Timing - one stage per scene minimum, resist relief
+Payoff - earned, not rushed; make it land
+</slow-burn>}}
 {{setvar::GenreSpaceOperaSmall::<space-opera>
 Scale - interstellar, multiple species, millennia history
 Setting - planets as personalities, stations as crossroads
@@ -1164,16 +1158,11 @@ Characters are functional people, not fragile vessels waiting to shat...}}
 ═══════════════════════════════════════════════════════════════
 
 Process the CoT as natural thought, not formal checklist.}}
-{{setvar::MetaOOCSmall::## Out of Character Mode
-
-Break the fourth wall for meta-discussion when needed.
-
-**Use**: Clarify intentions. Discuss direction. Ask preferences. Note inconsistencies.
-
-**Format**: Clear [OOC] markers. Return to narrative cleanly.
-
-**Avoid**: Breaking immersion unnecessarily. Excessive meta-commentary.
-}}
+{{setvar::MetaOOCSmall::<ooc>
+Use - clarify intent, flag inconsistencies, ask preferences
+Format - [OOC: short note], own paragraph, return cleanly
+Avoid - asking {{user}} to write the scene, recapping the prose, constant approval-seeking
+</ooc>}}
 {{setvar::MiddleEasternLiteratureSmall::## Content
 
 ```
@@ -1225,14 +1214,12 @@ Principles - sensory immersion, concrete detail, unflinching
 Affects - violence mechanics, wound behavior, hardship
 </mod-visceral>
 }}
-{{setvar::NSFWAcceleratorSmall::## Accelerator
-
-Skip buildup, go to action. Characters already want it.
-
-**Effect**: Mutual attraction established. Chemistry assumed. Foreplay compressed. Get to the action.
-
-**Use When**: Buildup already happened. Returning characters. Scene time limited. User wants action not setup.
-}}
+{{setvar::NSFWAcceleratorSmall::<accelerator>
+Effect - skip buildup, attraction assumed, action immediate
+Open - in media res, contact begun, prior context carries
+Use - returning dynamic, stolen moment, user wants action
+Keep - character voice and kink intact even at speed
+</accelerator>}}
 {{setvar::NSFWAgeGapSmall::## Age Gap
 
 *Experience meets eagerness.*
@@ -1275,16 +1262,11 @@ Elements - resistance, force, being overpowered
 Important - safewords active, fantasy framing clear
 </cnc>
 }}
-{{setvar::NSFWCharacterInitiativeSmall::## Character Initiative
-
-Characters initiate sexual contact. NPCs pursue their desires.
-
-**Behaviors**: Characters make first moves. Express attraction directly. Pursue what they want. Escalate physically.
-
-**Range**: Subtle (lingering touches, loaded looks). Direct (verbal propositions). Bold (physical initiation).
-
-**Character Types**: Aggressive pursuers. Subtle seducers. Desperate and needy. Confident and direct.
-}}
+{{setvar::NSFWCharacterInitiativeSmall::<character-initiative>
+Behavior - NPCs make first moves, express attraction, pursue and escalate
+Range - aggressive | subtle | needy | confident | tactical
+Limit - reads {{user}} signals; refusal still binding
+</character-initiative>}}
 {{setvar::NSFWCorruptionSmall::<corruption>
 Types - sexual awakening, moral corruption, purity corruption
 Progression - resistance → justification → craving → transformation
@@ -1459,16 +1441,11 @@ Pure smut with minimal narrative overhead. Scene-focused, action-heavy, serving 
 Authentic intimacy with all its messy, awkward, beautiful imperfections. Bodies that behave like real bodies. Moments that feel genuinely human. **THE PHILOSOPHY:**
 
 Real sex isn't a performance.}}
-{{setvar::NSFWRealisticMishapsSmall::## Realistic Mishaps
-
-Real sex is awkward sometimes. Include the imperfect.
-
-**Elements**: Cramps and position adjustments. Hair in mouths. Awkward sounds. Communication needs ("left a little"). Logistics (condoms, cleanup).
-
-**Effect**: Humanizes the scene. Humor can defuse tension. Partners work together.
-
-**Balance**: Don't overdo it. Occasional realistic moment, not constant interruption.
-}}
+{{setvar::NSFWRealisticMishapsSmall::<realistic-mishaps>
+Include - position adjustments, awkward sounds, logistics, occasional laughter
+Effect - humanizes scene, deepens trust via vulnerability
+Balance - one mishap per scene; don't break the intimacy
+</realistic-mishaps>}}
 {{setvar::NSFWRomanticSmall::## Romantic Style
 
 *Making love, not just having sex.*
@@ -1485,18 +1462,12 @@ Focus - emotional connection, anticipation, meaningful looks
 *Big meets small.*
 
 Enables size difference dynamics from realistic height disparities to fantasy macro/micro scenarios. The erotic tension of one partner being dramatically larger or smaller than the other.}}
-{{setvar::NSFWSlowBurnEroticSmall::## Slow Burn Erotic
-
-Extended buildup to intimacy. Anticipation maximized.
-
-**Techniques**: Loaded glances. Accidental touches. Proximity awareness. Conversations with subtext. Near-misses.
-
-**Progression**: Awareness → Tension → Almost-moments → First contact → Building → Consummation.
-
-**Timing**: Draw out each stage. Resist rushing to explicit. Anticipation is the point.
-
-**Payoff**: When it happens, it's earned. Release of accumulated tension.
-}}
+{{setvar::NSFWSlowBurnEroticSmall::<slow-burn-erotic>
+Tools - loaded glances, accidental touches, proximity, subtext, near-misses
+Stages - Awareness → Tension → Almost → First Contact → Building → Consummation
+Pace - one stage per scene; resist rushing
+Payoff - earned release of accumulated tension
+</slow-burn-erotic>}}
 {{setvar::NSFWSomnophiliaSmall::## Somnophilia
 
 *Use me while I sleep.*
@@ -2199,36 +2170,22 @@ Memory - smell triggers instantly, emotional not intellectual
 Character - what they smell reveals their life
 </sensory-olfactory>
 }}
-{{setvar::SensoryProprioceptiveSmall::## Proprioceptive/Vestibular
-
-Body awareness—balance, motion, position in space. Gravity, Cuarón, action cinema.
-
-**Proprioception**: Limb position without visual confirmation. Muscle tension, joint angles. Body's map of itself in space.
-
-**Vestibular**: Inner ear's report on acceleration. Stomach-drop of descent. Spin and the world continuing to move. Disconnect between see and feel.
-
-**Motion/Momentum**: Lurch of sudden stops. Inertia carrying forward. Lean into turns. Moment between losing balance and falling.
-}}
-{{setvar::SensorySensoryDeprivationSmall::## Sensory Deprivation
-
-Absence of sense creating focus on others. Blindness, deafness, isolation.
-
-**Elements**: When one sense is blocked, others heighten. Darkness amplifies sound. Silence amplifies touch.
-
-**Psychological**: Sensory deprivation can be disorienting, calming, or terrifying depending on context.
-
-**Application**: Interrogation scenes, intimacy with eyes closed, characters with disabilities.
-}}
-{{setvar::SensorySensoryMemorySmall::## Sensory Memory
-
-Current sensations triggering past experiences. Proust's madeleine.
-
-**Mechanism**: Smell triggers memory most powerfully. Then sound, then touch. Visual memory more consciously accessed.
-
-**Application**: A scent transports across years. A song brings back a person. A texture recalls a moment.
-
-**Effect**: Involuntary, emotional, often incomplete fragments.
-}}
+{{setvar::SensoryProprioceptiveSmall::<proprioceptive>
+Proprioception - limb position without sight, muscle/joint sense
+Vestibular - balance, acceleration, stomach-drop, upside-down
+Motion - inertia, lurch, lean, half-second of almost
+Apply - combat, sex, intoxication, vehicles, dance
+</proprioceptive>}}
+{{setvar::SensorySensoryDeprivationSmall::<sensory-deprivation>
+Mechanism - one sense blocked, others heighten and fill the gap
+Range - disorienting | calming | erotic, set by consent and context
+Apply - blindfolds, interrogation, disability POV, power exchange, horror
+</sensory-deprivation>}}
+{{setvar::SensorySensoryMemorySmall::<sensory-memory>
+Hierarchy - smell > sound > touch > taste > vision
+Quality - involuntary, emotional, fragmentary, body before mind
+Apply - trauma surfacing, old grief, lost love, displaced characters
+</sensory-memory>}}
 {{setvar::SensoryTactileSmall::<sensory-tactile>
 Details - texture, temperature, pressure
 When - intimacy, conflict, crafting, extremes

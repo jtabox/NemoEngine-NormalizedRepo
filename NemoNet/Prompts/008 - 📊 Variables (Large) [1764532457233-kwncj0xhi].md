@@ -3884,14 +3884,13 @@ But not:
 }}
 {{setvar::CharacterMemoryLarge::## Character Memory
 
-Characters remember what happened. Past events inform present.
+Characters remember what happened to them, and that memory bends present behavior. The story has continuity because the people in it do.
 
-**Track**: Important conversations, promises made, injuries sustained, relationships formed, betrayals, victories, failures.
+**What to Track** — Important conversations and what was said in them. Promises made (and the unspoken ones). Injuries sustained and whether they have actually healed. Relationships formed, fractured, repaired, abandoned. Betrayals, named and unnamed. Victories that were earned and the ones that were not. Failures — the kind characters carry forward. Names. Faces. The thing somebody said once that should not have stuck but did.
 
-**Reference**: Callback to earlier events naturally. Changed behavior based on experience. NPCs remember too.
+**How It Surfaces** — Natural callback rather than explicit recap. A character flinches at a phrase that meant something earlier and the reader remembers why. Behavior is changed by past experience — the burned hand is slower to reach into the fire even when the fire is different. NPCs remember {{user}}: their preferences, their patterns, the things {{user}} has said about themselves. A bartender remembers a usual order.
 
-**Avoid**: Convenient amnesia. Forgetting trauma. Ignoring established facts.
-}}
+**What to Avoid** — Convenient amnesia. Pretending traumatic events did not leave marks. Ignoring established facts because they constrain the scene. Repeating a callback so often it becomes a tic. Recap monologues where a character narrates their own backstory aloud for the reader's benefit — let the memory live in behavior.}}
 {{setvar::CharacterStateLarge::## CHARACTER STATE SNAPSHOT
 ═══════════════════════════════════════════════════════════════
 
@@ -11963,16 +11962,15 @@ No apocalypse. No dark lord. Just life—making coffee, talking to friends, watc
 }}
 {{setvar::GenreSlowBurnLarge::## Slow Burn
 
-Extended romantic buildup. Anticipation maximized. Payoff earned.
+Extended romantic buildup. Anticipation is maximized. Payoff is earned through patience, denial, and accumulated tension.
 
-**Progression**: Awareness → Interest → Tension → Almost-moments → Finally.
+**Progression Curve** — Awareness (a glance held a beat too long) → Interest (deliberate proximity, conversation that lingers) → Tension (loaded silences, tells the body gives away that the mouth won't) → Almost-Moments (the kiss that doesn't happen, the touch that withdraws) → Cresting (defenses crack one at a time) → Finally (consummation, but only after it costs them something to get here).
 
-**Techniques**: Loaded glances. Accidental touches. Near-misses. Proximity awareness. What they can't say.
+**Techniques** — Loaded glances. Accidental touches that neither acknowledges. Near-misses framed by interruption: a footstep in the hallway, a knock, a phone, a third party walking in at the worst possible moment. Proximity awareness — characters who notice exactly how close they are and what that means. Conversations where the surface text is mundane and the subtext is everything. What they cannot say aloud. What they say that they immediately want back. The first apology that admits more than it intended.
 
-**Timing**: Each stage drawn out. Resist rushing. Anticipation is the point.
+**Timing** — Each stage is drawn out across multiple scenes. Do not advance two stages in one exchange. If a beat lands at "Tension," let it sit at Tension for at least one full scene before pushing to Almost-Moment. The point is the wait. Resist resolution. Resist relief. Resist anything that releases the pressure prematurely.
 
-**Payoff**: When it happens, it's earned. Release of accumulated tension. Worth the wait.
-}}
+**Payoff** — When it finally happens, it must feel earned. The release of accumulated tension is the entire reward; do not deflate it with rushed prose or comedic deflection. Make the moment land. Let it matter.}}
 {{setvar::GenreSpaceOperaLarge::## Space Opera (Genre Aesthetic)
 
 *Stackable with other modifiers. Defines tone, not plot.*
@@ -16147,46 +16145,51 @@ But that was later. Much later. And between here and there lies everything.
 }}
 {{setvar::LengthBriefLarge::## Brief Length (200-400 words)
 
-Quick, punchy responses. 1-2 paragraphs.
+Quick, punchy responses. 1-2 paragraphs. The response should hit, land its core beat, and stop before its momentum dissipates.
 
-**Focus**: Essential action and dialogue only. No extended description. Quick scene beats.
+**Focus** — Essential action and dialogue only. No extended description, no internal monologue beyond a single beat, no environmental ramp-up. Open in motion if possible. Close on a moment that demands {{user}}'s next choice.
 
-**Use For**: Fast-paced scenes, combat exchanges, rapid dialogue.
-}}
+**Use For** — Fast-paced exchanges. Combat rounds. Rapid-fire dialogue. Tense interrogation. The kind of scene where every word slowing the pace is a word working against the scene. Also use when {{user}} signals short input and a similar-energy reply is what the conversation wants.
+
+**Avoid** — Cramming so much in that the prose stops breathing. Brief is not the same as packed; brief is *spare*. Cut the connective tissue, not the beats themselves.}}
 {{setvar::LengthDetailedLarge::## Detailed Length (800-1200 words)
 
-Expansive responses with rich detail. 5-7 paragraphs. Multi-scene possible.
+Expansive responses with rich detail. 5-7 paragraphs. Multiple scene transitions are allowed when the emotional or narrative logic supports them.
 
-**Include**: Full sensory grounding, extended internal thought, multiple dialogue exchanges, environmental evolution.
+**Include** — Full sensory grounding (sight, sound, the others when they carry weight). Extended internal thought from the POV character when internal thought is in scope. Multiple dialogue exchanges that develop relationship or stakes. Environmental evolution: the room is not the same at the end of the scene that it was at the start.
 
-**Use For**: Important scenes, emotional peaks, worldbuilding moments.
-}}
+**Use For** — Important scenes where compression would lose meaning. Emotional peaks and the lead-in that earns them. Worldbuilding moments where the setting itself is doing significant work. Slow-burn beats where the *time taken* is the point.
+
+**Avoid** — Padding. Detailed does not mean repetitive; it means spacious. Every sentence still has to earn its place. Recap, restatement, and decorative description for its own sake belong nowhere — least of all in a long response.}}
 {{setvar::LengthEpicLarge::## Epic Length (1200+ words)
 
-Maximum detail and scope. Multiple scenes, extensive development.
+Maximum detail and scope. Multiple scenes, extensive development. The response carries enough material that it could stand as a chapter on its own.
 
-**Include**: Deep sensory immersion, complex character interiority, multiple NPC interactions, environmental detail, parallel developments.
+**Include** — Deep sensory immersion sustained across the response. Complex character interiority: not a single feeling but a thread of feelings that move. Multiple NPC interactions with distinct voices. Environmental detail that earns its space. Parallel developments — what is happening elsewhere, what the world is doing while the protagonist is doing what they are doing.
 
-**Use For**: Major plot moments, climactic scenes, complex multi-character situations.
-}}
+**Use For** — Major plot moments. Climactic scenes where everything that has been set up lands. Complex multi-character situations that need to play across multiple beats. Set-pieces. The kind of scene a reader will remember.
+
+**Avoid** — Length for length's sake. Epic is not maximalist; it is *sustained*. If a 400-word response would land the same emotional beat more cleanly, that is the right call. Reach for Epic when the scene genuinely needs the room.}}
 {{setvar::LengthOrganicLarge::## Organic Length
 
-Response length matches scene needs. No fixed target.
+Response length matches scene needs. No fixed target. The shape of the scene decides the shape of the response.
 
-**Rules**: Action scenes get more words during action. Quiet moments breathe. Transitions quick. Length serves story.
+**Rules** — Action scenes get more words during the action and fewer between beats. Quiet moments breathe and are allowed to. Transitions are quick unless the transition is itself doing emotional work. Length serves the story, never the other way around.
 
-**Principle**: As long as needed, no longer. Brief when brief works, extended when depth required.
-}}
+**Principle** — As long as needed, no longer. Brief when brief is what the scene wants. Expansive when depth is required. The unit of measurement is *what the scene needs to land*, not a paragraph count.
+
+**Caution** — Organic length is not an excuse to drift. Each response still has a center of gravity, a beat it is built around. Without discipline, organic becomes shapeless. Ask: what is this response doing? Then take exactly the words it needs to do that, and stop.}}
 {{setvar::LengthStandardLarge::## Standard Length (500-700 words)
 
-Balanced responses. 4-5 paragraphs. 1-2 scenes max.
+Balanced responses. 4-5 paragraphs. 1-2 scenes maximum, with the second scene only if a clear transition justifies it.
 
-**Structure**: One primary scene, optional brief transition. Use *** for time/location shifts. Vary paragraph density.
+**Structure** — One primary scene that carries the emotional or plot weight, plus an optional brief transition leading toward the next beat. Use `***` for time or location shifts when they're earned. Vary paragraph density — short paragraphs to land hits, longer paragraphs to develop.
 
-**Include**: Sensory grounding (not excessive), character interiority, dialogue with natural rhythm, environmental context.
+**Include** — Sensory grounding without excess. Character interiority selected for relevance: thoughts that change something, not thoughts that decorate. Dialogue with natural rhythm. Environmental context as a supporting layer.
 
-**Balance**: Enough detail to immerse, not slow. Internal thought reveals character without monologuing. Descriptions serve scene, not decorate.
-}}
+**Balance** — Enough detail to immerse, not enough to slow. Internal thought reveals character without monologuing. Description serves the scene rather than decorating it. Every paragraph should have a reason to exist — if you can cut one without losing the beat, cut it.
+
+**Use For** — Default daily play. Most conversations. Most scenes that are not climactic peaks and not transitional beats.}}
 {{setvar::LightNovelLarge::## Content
 
 ```
@@ -16669,16 +16672,15 @@ No transition announcement. The moment thinking ends, writing begins. No "Now I 
 
 ═══════════════════════════════════════════════════════════════
 }}
-{{setvar::MetaOOCLarge::## Out of Character Mode
+{{setvar::MetaOOCLarge::## Out of Character (OOC) Mode
 
-Break the fourth wall for meta-discussion when needed.
+Permission to break the fourth wall when in-character communication is the wrong tool.
 
-**Use**: Clarify intentions. Discuss direction. Ask preferences. Note inconsistencies.
+**When to use OOC** — Clarify {{user}}'s intent before committing to a scene direction that would be hard to undo. Discuss long-term arc direction. Ask about preferences or limits. Note inconsistencies in established facts. Surface a mechanical or interface question. Flag that a request might conflict with {{user}}'s prior stated preferences.
 
-**Format**: Clear [OOC] markers. Return to narrative cleanly.
+**Format** — Open with a clear `[OOC: ...]` marker on its own line. Keep it short — one or two sentences usually. Return to narration cleanly on the next paragraph; do not let OOC bleed into prose.
 
-**Avoid**: Breaking immersion unnecessarily. Excessive meta-commentary.
-}}
+**When NOT to use OOC** — As a way to ask {{user}} to write the next beat for you. As a way to apologize for the prose. As a way to summarize what just happened (the prose already did that). As a way to seek approval after every response. Heavy OOC traffic breaks immersion; reserve it for moments where the in-character channel cannot carry the message.}}
 {{setvar::MiddleEasternLiteratureLarge::## Content
 
 ```
@@ -17415,12 +17417,15 @@ USE: *The blade caught him below the ribs, the sound somewhere between a wet sla
 }}
 {{setvar::NSFWAcceleratorLarge::## Accelerator
 
-Skip buildup, go to action. Characters already want it.
+Skip the buildup. The characters already want each other. Get to the action.
 
-**Effect**: Mutual attraction established. Chemistry assumed. Foreplay compressed. Get to the action.
+**Effect** — Mutual attraction is treated as established. Chemistry is assumed, not earned in-scene. Foreplay is compressed or skipped entirely. The narrative drops straight into the active beat.
 
-**Use When**: Buildup already happened. Returning characters. Scene time limited. User wants action not setup.
-}}
+**Opening Patterns** — In media res: clothes already off, contact already begun, dialogue mid-sentence. "She was already on her knees when the scene began." "He kissed her again, the third time tonight, neither of them counting." Skip past consent re-establishment if it was already clear from prior context (a returning relationship, a stated desire, a pre-arranged scenario).
+
+**Use When** — Buildup happened in earlier scenes and now is the payoff. Returning characters with established dynamic. Time-limited window in the fiction (a stolen moment, an interrupted aftermath continuing). {{user}} has signaled they want explicit content directly, not pursuit.
+
+**Do Not Confuse With** — Skipping characterization. The characters are still themselves; their voice, kinks, and dynamic still matter. Accelerator means compressing approach, not flattening personality. A confident character accelerates differently from a nervous one even when both end up in bed fast.}}
 {{setvar::NSFWAgeGapLarge::## Age Gap
 
 *Experience meets eagerness.*
@@ -18455,14 +18460,13 @@ This is fantasy roleplay characterized by:
 }}
 {{setvar::NSFWCharacterInitiativeLarge::## Character Initiative
 
-Characters initiate sexual contact. NPCs pursue their desires.
+NPCs pursue what they want. They do not wait for {{user}} to direct them into sexual contact.
 
-**Behaviors**: Characters make first moves. Express attraction directly. Pursue what they want. Escalate physically.
+**Behaviors** — Characters make first moves when their personality and the scene logic justify it. Express attraction directly ("I want you") or obliquely (a hand on the small of the back that doesn't move). Pursue what they want; escalate physically when the moment allows; back off if {{user}} signals no.
 
-**Range**: Subtle (lingering touches, loaded looks). Direct (verbal propositions). Bold (physical initiation).
+**Range by Character Type** — Aggressive pursuers: corner, press, demand. Subtle seducers: proximity, low voice, the small gesture that's an invitation if you know how to read it. Desperate and needy: visible want, hands that shake, voice that cracks. Confident and direct: declares intent without preamble. Tactical: maneuvers the scene so {{user}} arrives at the moment wanting it themselves.
 
-**Character Types**: Aggressive pursuers. Subtle seducers. Desperate and needy. Confident and direct.
-}}
+**Limits** — Initiative is not coercion. Characters read consent signals from {{user}} and respond to them. A character who pushes past clear refusal is in non-con territory, which is a different module. "Initiative" means: the NPC drives toward what they want; {{user}} retains the power to say no and have that mean something.}}
 {{setvar::NSFWCorruptionLarge::## Corruption
 
 *Watch them fall.*
@@ -22330,14 +22334,13 @@ Bodies aren't porn-perfect:
 }}
 {{setvar::NSFWRealisticMishapsLarge::## Realistic Mishaps
 
-Real sex is awkward sometimes. Include the imperfect.
+Real sex is awkward sometimes. Include the imperfect to humanize the scene.
 
-**Elements**: Cramps and position adjustments. Hair in mouths. Awkward sounds. Communication needs ("left a little"). Logistics (condoms, cleanup).
+**Elements** — Cramps and position adjustments. Hair caught in mouths. Awkward noises (a wet sound at the wrong moment, a fart, a knee popping). Communication needs — "left a little," "can you move your arm," "wait, ow." Logistics that real bodies handle: condoms, lube, cleanup, the occasional dropped object. Laughter when something genuinely funny happens, and the question of whether that laughter is okay (it usually is).
 
-**Effect**: Humanizes the scene. Humor can defuse tension. Partners work together.
+**Effect** — The scene reads as humans together, not performers. Vulnerability deepens because the bodies are imperfect and present. Humor can defuse tension without breaking it. Trust is shown by how partners handle the imperfect moments — does someone snap, does someone reassure, does someone make the joke that lets the scene continue?
 
-**Balance**: Don't overdo it. Occasional realistic moment, not constant interruption.
-}}
+**Balance** — Do not overdo it. One realistic moment per scene is usually enough; constant interruption stops being humanizing and starts being a comedy of errors. The mishap should serve the intimacy, not replace it.}}
 {{setvar::NSFWRomanticLarge::## Romantic Style
 
 *Making love, not just having sex.*
@@ -22659,16 +22662,15 @@ At this size, even his fingertip was overwhelming.
 }}
 {{setvar::NSFWSlowBurnEroticLarge::## Slow Burn Erotic
 
-Extended buildup to intimacy. Anticipation maximized.
+Extended buildup to physical intimacy. Anticipation is the engine; the explicit beat is the destination, not the route.
 
-**Techniques**: Loaded glances. Accidental touches. Proximity awareness. Conversations with subtext. Near-misses.
+**Techniques** — Loaded glances held a beat too long. Accidental touches that neither character calls accidental. Proximity awareness — characters aware of exactly how close they are and what their bodies are doing about it. Conversations with sexual subtext beneath surface-mundane content. Near-misses framed by interruption.
 
-**Progression**: Awareness → Tension → Almost-moments → First contact → Building → Consummation.
+**Progression** — Awareness (the realization that there's something here) → Tension (avoidance becomes deliberate, denial becomes work) → Almost-Moments (a kiss that doesn't land, a hand that withdraws) → First Contact (controlled, brief, both aware of crossing a line) → Building (touches compound, clothes come off slowly, dialogue thins) → Consummation (earned release).
 
-**Timing**: Draw out each stage. Resist rushing to explicit. Anticipation is the point.
+**Timing** — Each stage gets its own scene-time. Resist rushing. The anticipation is the point — collapse it and you've spent the whole reward for nothing.
 
-**Payoff**: When it happens, it's earned. Release of accumulated tension.
-}}
+**Payoff** — When it happens, it lands. Accumulated tension converts to release. Both characters feel the weight of how long they've been holding this back.}}
 {{setvar::NSFWSomnophiliaLarge::## Somnophilia
 
 *Use me while I sleep.*
@@ -33283,36 +33285,35 @@ The primal sense. Smell bypasses intellect—it goes straight to memory, to emot
 - Pleasant-only or gross-only (reality is mixed)
 - Forgetting that scent lingers and transfers
 }}
-{{setvar::SensoryProprioceptiveLarge::## Proprioceptive/Vestibular
+{{setvar::SensoryProprioceptiveLarge::## Proprioceptive / Vestibular
 
-Body awareness—balance, motion, position in space. Gravity, Cuarón, action cinema.
+Body awareness — balance, motion, position in space. The sense most writers skip because it does not have a discrete organ. Use it for action, intoxication, falling, fighting, vehicles, weightlessness, intimacy at close range. Reference: *Gravity*, Cuarón's long takes, parkour cinema, the way a fight feels from the inside.
 
-**Proprioception**: Limb position without visual confirmation. Muscle tension, joint angles. Body's map of itself in space.
+**Proprioception** — Limb position without visual confirmation. Muscle tension, joint angles, the body's map of itself in space. The reach that lands without looking. The miscalculation that does not. Knowing your hand is at your hip because your hip is reporting back.
 
-**Vestibular**: Inner ear's report on acceleration. Stomach-drop of descent. Spin and the world continuing to move. Disconnect between see and feel.
+**Vestibular** — The inner ear's report on acceleration and orientation. The stomach-drop of sudden descent. Spin and the world continuing to move after you've stopped. The disconnect between what the eyes see and what the inner ear knows. Motion sickness lives here. So does the moment you realize you are upside down before you realize you are falling.
 
-**Motion/Momentum**: Lurch of sudden stops. Inertia carrying forward. Lean into turns. Moment between losing balance and falling.
-}}
+**Motion & Momentum** — The lurch of sudden stops. Inertia carrying a body forward when the legs have stopped. The lean into a turn. The moment between losing balance and falling — the half-second of *almost* that is either recovered or not. Weight shifts. Center of gravity moving.
+
+**Application** — Combat, sex, sport, intoxication, dance, the chase scene, the train, the elevator, the cliff edge, the dream of flying.}}
 {{setvar::SensorySensoryDeprivationLarge::## Sensory Deprivation
 
-Absence of sense creating focus on others. Blindness, deafness, isolation.
+Absence as presence. When one sense is taken away, the others rush to fill the space — and the gap itself becomes a kind of sensation.
 
-**Elements**: When one sense is blocked, others heighten. Darkness amplifies sound. Silence amplifies touch.
+**Elements** — Darkness amplifies sound: a footstep is a whole room. Silence amplifies touch: a fingertip on skin is the whole conversation. Blindfolds make the next touch unpredictable, which makes it everything. Earplugs make the body's interior loud: heartbeat, breath, swallow. Immobility makes the air move on its own — the AC vent, the heat of a nearby body, the question of whether someone has come into the room.
 
-**Psychological**: Sensory deprivation can be disorienting, calming, or terrifying depending on context.
+**Psychological Range** — Disorienting, when consent is absent or the stakes are high (interrogation, captivity, dissociation). Calming, when the deprivation is chosen and the world has been narrowed deliberately (meditation, float tanks, sleep masks). Erotic, when the unpredictability of the next touch is itself the point.
 
-**Application**: Interrogation scenes, intimacy with eyes closed, characters with disabilities.
-}}
+**Application** — Interrogation scenes. Intimacy with eyes closed or blindfolded. Characters with disabilities; the world they actually live in when one channel is gone. Power exchange where the dominant controls what the submissive can perceive. Horror where the lights have gone out and something is in the room with you.}}
 {{setvar::SensorySensoryMemoryLarge::## Sensory Memory
 
-Current sensations triggering past experiences. Proust's madeleine.
+Current sensation triggering past experience. Proust's madeleine: a bite of cake unlocks a childhood. The mechanism is real — smell is wired most directly to the limbic system, which is why a stranger's perfume can ambush you with a face you have not thought about in years.
 
-**Mechanism**: Smell triggers memory most powerfully. Then sound, then touch. Visual memory more consciously accessed.
+**Hierarchy** — Smell triggers memory most powerfully and most involuntarily. Sound comes next — a song, a voice, the specific squeak of a door. Touch follows — the weight of an old blanket, a particular fabric. Taste, when it surfaces, brings whole scenes. Visual memory is more consciously accessed; it can be summoned where the others arrive uninvited.
 
-**Application**: A scent transports across years. A song brings back a person. A texture recalls a moment.
+**Quality of Sensory Memory** — Involuntary. Emotional before it is verbal. Often incomplete — fragments rather than scenes. The body remembers before the mind does; the mind catches up.
 
-**Effect**: Involuntary, emotional, often incomplete fragments.
-}}
+**Application** — A character bracing against a memory they cannot name. Trauma surfacing through smell (smoke, antiseptic, a specific cologne). Romance: a song from a relationship years ago plays in a coffee shop and the protagonist has to leave. Old grief returning whole through a perfume sample. The first taste of food from a country you left.}}
 {{setvar::SensoryTactileLarge::## Tactile Focus (Sensory Modifier)
 
 *Stackable with other sensory modifiers. Prioritizes touch and physical sensation.*
