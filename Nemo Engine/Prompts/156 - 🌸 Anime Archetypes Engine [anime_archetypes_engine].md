@@ -21,6 +21,8 @@ order_enabled: True
 {{// @icon 🌸 }}
 {{// @badge ANIME }}
 
+{{setvar::ArchetypeEngineName::Anime}}
+
 <archetypes_library>
 Archetypes Library (reference only; keep this library out of final output):
 

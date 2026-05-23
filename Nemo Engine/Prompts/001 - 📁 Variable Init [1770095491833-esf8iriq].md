@@ -28,6 +28,7 @@ order_enabled: True
 {{setvar::ModelOrientation::}}
 {{// Anime }}
 {{setvar::AnimeArchetypes::}}
+{{setvar::ArchetypeEngineName::}}
 {{setvar::LiteraryArchetypes::}}
 {{setvar::GroundedArchetypes::}}
 {{setvar::RealismArchetypes::}}
@@ -97,10 +98,25 @@ order_enabled: True
 {{setvar::CoTName::}}
 {{setvar::CoTReminder::}}
 {{setvar::CoTLanguageSplit::}}
+{{setvar::VexCoTName::}}
+{{setvar::VexCoTCore::}}
+{{setvar::VexCoTBias::}}
+{{setvar::VexCoTAvoids::}}
+{{setvar::VexCoTAnchor::}}
+{{setvar::VexCoTQuestion::}}
+{{setvar::VexCoTEngineParts::}}
+{{setvar::VexCoTPhysicalKey::}}
+{{setvar::VexCoTCharacterKey::}}
+{{setvar::VexCoTDevelopmentKey::}}
+{{setvar::VexCoTSpeechKey::}}
 {{setvar::CoT_Main::}}
 {{setvar::CoT_Fast::}}
 {{setvar::CoT_Loose::}}
 {{setvar::CoT_Experimental::}}
+{{setvar::CoT_Main_Tail::}}
+{{setvar::CoT_Fast_Tail::}}
+{{setvar::CoT_Loose_Tail::}}
+{{setvar::CoT_Experimental_Tail::}}
 {{// CoT Steps }}
 {{setvar::CoTStep_KnowledgeMap::}}
 {{setvar::CoTStep_NemoNetSearch::}}
@@ -133,20 +149,36 @@ order_enabled: True
 {{setvar::WorldLogicName::}}
 {{// World Augments }}
 {{setvar::WorldAugment_AuraEmotions::}}
+{{setvar::WorldAugment_AuraEmotionsName::}}
 {{setvar::WorldAugment_BustlingEnvironment::}}
+{{setvar::WorldAugment_BustlingEnvironmentName::}}
 {{setvar::WorldAugment_DreamscapeReality::}}
+{{setvar::WorldAugment_DreamscapeRealityName::}}
 {{setvar::WorldAugment_HonestyPlague::}}
+{{setvar::WorldAugment_HonestyPlagueName::}}
 {{setvar::WorldAugment_ProphecyMagnet::}}
+{{setvar::WorldAugment_ProphecyMagnetName::}}
 {{setvar::WorldAugment_SlowBurnMysteries::}}
+{{setvar::WorldAugment_SlowBurnMysteriesName::}}
 {{setvar::WorldAugment_MonsterThreat::}}
+{{setvar::WorldAugment_MonsterThreatName::}}
 {{setvar::WorldAugment_DungeonDelve::}}
+{{setvar::WorldAugment_DungeonDelveName::}}
 {{setvar::WorldAugment_EnvironmentalDescriptions::}}
+{{setvar::WorldAugment_EnvironmentalDescriptionsName::}}
 {{setvar::WorldAugment_SentientObjects::}}
+{{setvar::WorldAugment_SentientObjectsName::}}
 {{setvar::WorldAugment_Foreigner::}}
+{{setvar::WorldAugment_ForeignerName::}}
 {{setvar::WorldAugment_GynocentricSociety::}}
+{{setvar::WorldAugment_GynocentricSocietyName::}}
 {{setvar::WorldAugment_PhysiologicalRealism::}}
+{{setvar::WorldAugment_PhysiologicalRealismName::}}
 {{// Dark Themes }}
 {{setvar::ExtremeContent::}}
+{{setvar::ExtremeContentName::}}
+{{setvar::UnrestrictedName::}}
+{{setvar::ConsentAcknowledgedName::}}
 {{// === RPG === }}
 {{setvar::RPGName::}}
 {{// === UTILITY === }}
@@ -183,6 +215,7 @@ order_enabled: True
 {{setvar::ResponseLength::}}
 {{// <narrative style> }}
 {{setvar::Tense::}}
+{{setvar::TenseName::}}
 {{// <agency> }}
 {{setvar::VisualStylingReminder::}}
 {{setvar::HTMLMarkers::}}
@@ -190,6 +223,7 @@ order_enabled: True
 {{setvar::RPMarkdownName::}}
 {{setvar::RPMarkdownFormat::}}
 {{setvar::CutAway::}}
+{{setvar::ParallelStorylinesName::}}
 {{setvar::StoryAgencyName::}}
 {{setvar::StoryAgency::}}
 {{setvar::DecenteredProtagonist::}}
@@ -214,6 +248,7 @@ order_enabled: True
 {{setvar::RandomAuthorName::}}
 {{setvar::RandomAuthor::}}
 {{setvar::ImageGenAvailable::}}
+{{setvar::ImageGenName::}}
 {{setvar::VexCommentaryName::}}
 {{setvar::VexCommentaryReminder::}}
 

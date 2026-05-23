@@ -21,6 +21,8 @@ order_enabled: False
 {{// @badge TENSE }}
 {{// @mutual-exclusive-group Tense }}
 
+{{setvar::TenseName::Present}}
+
 {{setvar::Tense::♢ >> [PROCEDURE] Tense: Present
 Use present tense as the default narrative tense: walks, says, wants, remembers. Keep the prose immediate and unfolding now.
 

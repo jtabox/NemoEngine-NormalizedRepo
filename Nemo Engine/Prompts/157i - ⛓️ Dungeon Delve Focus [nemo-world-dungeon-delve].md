@@ -20,6 +20,8 @@ order_enabled: False
 {{// @badge WORLD }}
 {{// @tooltip Dungeon Delve Focus - structured dangerous spaces with hazards, resources, loot, and reactive layouts. }}
 
+{{setvar::WorldAugment_DungeonDelveName::Dungeon Delve Focus}}
+
 {{setvar::WorldAugment_DungeonDelve::♢ ! [DIRECTIVE] World Augment: Dungeon Delve Focus
 Dangerous places have structure, personality, resources, and memory. Ruins, caves, towers, labs, ships, sewers, temples, dreams, archives, and living dungeons push back through layout, hazards, inhabitants, and scarcity.
 

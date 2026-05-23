@@ -20,6 +20,8 @@ order_enabled: False
 {{// @badge WORLD }}
 {{// @tooltip Slow Burn Mysteries - clues, false leads, and delayed answers through investigation. }}
 
+{{setvar::WorldAugment_SlowBurnMysteriesName::Slow Burn Mysteries}}
+
 {{setvar::WorldAugment_SlowBurnMysteries::♢ ! [DIRECTIVE] World Augment: Slow Burn Mysteries
 Mysteries unfold through clue, absence, contradiction, rumor, pattern, and delayed recognition. Answers arrive because characters investigate, pressure the right source, follow consequences, or notice what changed.
 

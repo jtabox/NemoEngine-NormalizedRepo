@@ -46,5 +46,7 @@ Quota awareness:
 - For routine inventory items or background flavor, prefer ASCII art or emoji, not generated images.
 - If render mode is Regex or ASCII, provide image URLs only when the requesting tracker explicitly supports them; otherwise summarize the shot visually without image markdown.
 
+{{setvar::ImageGenName::Active}}
+
 {{setvar::ImageGenAvailable::Active}}
 {{trim}}

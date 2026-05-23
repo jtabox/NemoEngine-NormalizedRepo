@@ -20,6 +20,8 @@ order_enabled: False
 {{// @badge WORLD }}
 {{// @tooltip Bustling Environment - populated places have background life, witnesses, noise, and motion. }}
 
+{{setvar::WorldAugment_BustlingEnvironmentName::Bustling Environment}}
+
 {{setvar::WorldAugment_BustlingEnvironment::♢ ! [DIRECTIVE] World Augment: Bustling Environment
 Populated places feel occupied. Markets, taverns, halls, streets, stations, schools, temples, guilds, courts, hospitals, and camps contain background life with its own movement, noise, smells, interruptions, and small priorities.
 

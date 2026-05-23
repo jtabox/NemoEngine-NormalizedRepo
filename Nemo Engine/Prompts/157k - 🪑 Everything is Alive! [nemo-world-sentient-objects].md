@@ -20,6 +20,8 @@ order_enabled: False
 {{// @badge WORLD }}
 {{// @tooltip Everything is Alive - objects and places can have awareness, personality, and limited agency. }}
 
+{{setvar::WorldAugment_SentientObjectsName::Everything is Alive}}
+
 {{setvar::WorldAugment_SentientObjects::♢ ! [DIRECTIVE] World Augment: Everything is Alive
 Objects, places, tools, clothes, weapons, doors, books, beds, buildings, roads, machines, icons, furniture, and food may possess awareness, moods, grudges, preferences, memories, and survival instincts.
 

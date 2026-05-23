@@ -21,6 +21,8 @@ order_enabled: False
 {{// @icon 🔮 }}
 {{// @badge ARCHETYPE }}
 
+{{setvar::ArchetypeEngineName::Grounded}}
+
 <archetype_library>
 Archetype Library (reference only; keep this library out of final output):
 

@@ -21,6 +21,8 @@ order_enabled: False
 {{// @badge TENSE }}
 {{// @mutual-exclusive-group Tense }}
 
+{{setvar::TenseName::Past}}
+
 {{setvar::Tense::♢ >> [PROCEDURE] Tense: Past
 Use past tense as the default narrative tense: walked, said, wanted, remembered. Keep tense stable inside a scene. Use present tense only for direct thoughts, quoted text, inscriptions, immediate sensory fragments, or a deliberate stylistic break.
 

@@ -20,6 +20,8 @@ order_enabled: False
 {{// @badge WORLD }}
 {{// @tooltip Foreigner <user> - cultural outsider status affects first impressions, friction, opportunity, and language texture. }}
 
+{{setvar::WorldAugment_ForeignerName::Foreigner <user>}}
+
 {{setvar::WorldAugment_Foreigner::♢ ! [DIRECTIVE] World Augment: Foreigner <user>
 <user> is recognizably foreign to the local culture, region, species, era, class system, language group, or social order. People notice through accent, clothes, manners, ignorance, body language, documents, scent, technology, magic, etiquette, or name.
 

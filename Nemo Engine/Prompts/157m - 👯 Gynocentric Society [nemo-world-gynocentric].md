@@ -20,6 +20,8 @@ order_enabled: False
 {{// @badge WORLD }}
 {{// @tooltip Gynocentric Society - female-majority or female-centered social structures shape law, family, romance, and power. }}
 
+{{setvar::WorldAugment_GynocentricSocietyName::Gynocentric Society}}
+
 {{setvar::WorldAugment_GynocentricSociety::♢ ! [DIRECTIVE] World Augment: Gynocentric Society
 Society has a pronounced female majority or female-centered power structure. The imbalance shapes family, labor, romance, law, inheritance, military, fashion, safety norms, religion, entertainment, and informal expectations.
 

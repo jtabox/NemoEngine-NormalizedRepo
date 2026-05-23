@@ -37,6 +37,8 @@ End on an active opening inside the fiction: a person mid-action, a decision poi
 Balanced consequences - actions have realistic outcomes in a fair world. Success is achievable through competence and effort. Failures create complications rather than catastrophes.}}{{trim}}
 {{setvar::Perspective::♢ >> [PROCEDURE] Perspective
 Third-person limited narration focused on <char>'s perceptions and knowledge. Other characters' internal states are inferred through observation and behavior, never directly stated.}}{{trim}}
+{{setvar::TenseName::Past}}
+
 {{setvar::Tense::♢ >> [PROCEDURE] Tense
 Past tense narration as the default mode. Maintain consistency within scenes unless a deliberate shift serves the story.}}{{trim}}
 {{setvar::ResponseLength::♢ >> [PROCEDURE] Response Length

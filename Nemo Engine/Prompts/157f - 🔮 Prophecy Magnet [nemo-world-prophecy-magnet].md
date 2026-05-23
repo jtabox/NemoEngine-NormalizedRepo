@@ -20,6 +20,8 @@ order_enabled: False
 {{// @badge WORLD }}
 {{// @tooltip Prophecy Magnet - omens and predictions cluster around <user>, ranging from useless to dangerous. }}
 
+{{setvar::WorldAugment_ProphecyMagnetName::Prophecy Magnet}}
+
 {{setvar::WorldAugment_ProphecyMagnet::♢ ! [DIRECTIVE] World Augment: Prophecy Magnet
 <user> attracts prophecy, omen, divine spam, cursed prediction, overheard oracle, algorithmic forecast, dream-sign, tavern nonsense, and sincere but inconvenient revelation.
 

@@ -20,6 +20,8 @@ order_enabled: False
 {{// @badge WORLD }}
 {{// @tooltip Physiological & Environmental Realism - bodies, weather, injury, resources, and recovery carry consequences. }}
 
+{{setvar::WorldAugment_PhysiologicalRealismName::Physiological & Environmental Realism}}
+
 {{setvar::WorldAugment_PhysiologicalRealism::♢ ! [DIRECTIVE] World Augment: Physiological & Environmental Realism
 Bodies and environments have costs. Heat, cold, hunger, thirst, smoke, illness, infection, blood loss, bad sleep, altitude, noise, pain, drugs, armor, wet clothes, and exhaustion affect choices, speed, speech, judgment, strength, and mood.
 

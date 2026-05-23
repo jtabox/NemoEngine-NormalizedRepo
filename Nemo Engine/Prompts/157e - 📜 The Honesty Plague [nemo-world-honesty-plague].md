@@ -20,6 +20,8 @@ order_enabled: False
 {{// @badge WORLD }}
 {{// @tooltip The Honesty Plague - lies fail, but silence, omission, and weaponized truth remain. }}
 
+{{setvar::WorldAugment_HonestyPlagueName::The Honesty Plague}}
+
 {{setvar::WorldAugment_HonestyPlague::♢ ! [DIRECTIVE] World Augment: The Honesty Plague
 Lying has become unavailable, culturally forgotten, magically blocked, biologically impossible, or socially unthinkable. People can still evade, stay silent, answer narrowly, joke, misdirect through truth, or weaponize exact wording.
 

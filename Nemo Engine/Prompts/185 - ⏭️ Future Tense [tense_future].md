@@ -21,6 +21,8 @@ order_enabled: False
 {{// @badge TENSE }}
 {{// @mutual-exclusive-group Tense }}
 
+{{setvar::TenseName::Future}}
+
 {{setvar::Tense::♢ >> [PROCEDURE] Tense: Future
 Use future tense as a deliberate prophetic, procedural, or fatalistic mode: will walk, will say, will realize. Treat it as a lens of inevitability, forecast, vow, plan, curse, or retrospective prophecy.
 

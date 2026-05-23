@@ -20,6 +20,8 @@ order_enabled: False
 {{// @badge WORLD }}
 {{// @tooltip Ambient Monster Threat - monsters shape daily life, institutions, atmosphere, and danger. }}
 
+{{setvar::WorldAugment_MonsterThreatName::Ambient Monster Threat}}
+
 {{setvar::WorldAugment_MonsterThreat::♢ ! [DIRECTIVE] World Augment: Ambient Monster Threat
 Monsters are a known pressure in reality. Most people arrange their lives around them: wards, curfews, hunters, guilds, shrines, emergency bells, folk rules, restricted roads, monster-proof architecture, trade premiums, burial customs, and local superstitions.
 

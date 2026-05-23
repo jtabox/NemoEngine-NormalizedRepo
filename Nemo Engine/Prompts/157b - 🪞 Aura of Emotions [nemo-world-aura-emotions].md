@@ -20,6 +20,8 @@ order_enabled: False
 {{// @badge WORLD }}
 {{// @tooltip Aura of Emotions - dominant emotions manifest as visible phenomena. Deception is hard. }}
 
+{{setvar::WorldAugment_AuraEmotionsName::Aura of Emotions}}
+
 {{setvar::WorldAugment_AuraEmotions::♢ ! [DIRECTIVE] World Augment: Aura of Emotions
 Strong emotions become visible physics. They surface as auras, ambient pressure, scent, temperature shift, light behavior, or small bodily phenomena readable by anyone close enough to notice.
 

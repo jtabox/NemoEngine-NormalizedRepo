@@ -20,6 +20,8 @@ order_enabled: False
 {{// @tooltip Parallel Storylines - The B-Plot System }}
 {{// @badge CUTAWAY }}
 
+{{setvar::ParallelStorylinesName::Active}}
+
 {{setvar::CutAway::♢ >> [PROCEDURE] Parallel Storylines
 Cross-cutting: show what is happening elsewhere while the main scene unfolds. Story Agency governs main-scene initiative; Parallel Storylines governs the camera leaving the main scene to prove the world is larger than the protagonist's frame.
 

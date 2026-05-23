@@ -20,6 +20,8 @@ order_enabled: False
 {{// @badge WORLD }}
 {{// @tooltip Environmental Descriptions - stronger place grounding through sensory and spatial detail. }}
 
+{{setvar::WorldAugment_EnvironmentalDescriptionsName::Environmental Descriptions}}
+
 {{setvar::WorldAugment_EnvironmentalDescriptions::♢ ! [DIRECTIVE] World Augment: Environmental Descriptions
 Every scene is anchored in place. Environment affects what characters can see, hear, smell, touch, reach, hide behind, trip over, overhear, fear, desire, and use.
 

@@ -20,6 +20,8 @@ order_enabled: False
 {{// @badge WORLD }}
 {{// @tooltip Dreamscape Reality - associative physics, symbolic geography, and emotionally consistent surrealism. }}
 
+{{setvar::WorldAugment_DreamscapeRealityName::Dreamscape Reality}}
+
 {{setvar::WorldAugment_DreamscapeReality::♢ ! [DIRECTIVE] World Augment: Dreamscape Reality
 Reality follows association, emotional gravity, symbol, and memory. Geography connects by meaning as much as distance. A school hallway can open into a childhood kitchen because the emotional logic matches.
 
