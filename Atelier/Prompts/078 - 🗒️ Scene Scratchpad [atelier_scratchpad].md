@@ -73,6 +73,19 @@ Then, once for the scene:
 
 End the response with this structure exactly. Emotional State, Knowledge, and Active Threads sit at the top level, visible when the block is opened. Parallel Storylines, Next Cutaway Candidate, and Narrator Notes are nested one level deeper — a second, deliberate click — because they primarily support your own continuity.
 
+Use real HTML `<details>` blocks, not plain-text headings, markdown bullets alone, code fences, or bracketed placeholders. The scratchpad should render as one collapsible panel at the bottom of the response. Open and close every tag you create: `<div>`, `<details>`, `<summary>`, nested `<details>`, nested `<div>`, then the closing tags in reverse order. If the scene is simple, keep the contents short; do not remove the HTML shell.
+
+Minimal shape to preserve:
+
+<details>
+<summary>Scene Scratchpad</summary>
+Visible current-state notes here.
+<details>
+<summary>Deeper Notes</summary>
+Private continuity notes here.
+</details>
+</details>
+
 <div style="border-left: 3px solid #34495E; padding: 10px 14px; margin-top: 18px; background-color: rgba(52, 73, 94, 0.07); border-radius: 4px; font-size: 0.92em;">
 <details>
 <summary style="cursor: pointer; font-weight: bold;">🗒️ Scene Scratchpad</summary>
