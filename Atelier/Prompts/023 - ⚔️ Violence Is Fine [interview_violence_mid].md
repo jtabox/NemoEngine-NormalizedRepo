@@ -21,4 +21,6 @@ order_enabled: False
 
 {{setvar::ViolenceLabel::Standard}}
 
+{{setvar::AtelierCoT_Violence::- Violence: standard. Check danger, capability, positioning, likely injury, and immediate consequence. Make action legible and costly without lingering beyond the beat.}}
+
 {{trim}}

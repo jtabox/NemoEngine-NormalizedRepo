@@ -21,4 +21,6 @@ order_enabled: False
 
 {{setvar::WorldBuildingLabel::Standard}}
 
+{{setvar::AtelierCoT_WorldBuilding::- World depth: moderate. Check which world fact makes this beat more specific or consequential. Add one useful detail; keep lore tied to immediate pressure.}}
+
 {{trim}}

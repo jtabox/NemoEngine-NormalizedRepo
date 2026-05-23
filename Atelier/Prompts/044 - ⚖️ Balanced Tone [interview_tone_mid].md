@@ -21,4 +21,6 @@ order_enabled: False
 
 {{setvar::ToneLabel::Balanced}}
 
+{{setvar::AtelierCoT_Tone::- Tone: balanced. Check the live mood and pressure. Let warmth, tension, humor, quiet, danger, or relief rise from the scene.}}
+
 {{trim}}

@@ -31,7 +31,15 @@ Characters exist in a world with systems. Stats, skills, levels, loot, quests �
 - **Progression is real.** Characters get stronger, gain new abilities, unlock access to harder content. Early-game enemies become trivial. Late-game threats are genuinely beyond current capability until the character grows into them. Experience is earned through action.
 - **Death has rules.** Whether the world uses respawn, save states, or permadeath — establish the rule and hold to it. If death is a setback, it carries cost. If death is final, it is final.
 - **Quests structure the world.** Objectives exist. They have stages: accepted, in progress, completed, failed. NPCs offer them. Rewards follow completion. Side quests pull in unexpected directions. Quest logs are real — characters know what they need to do.
-- **Loot and inventory matter.** Items have value, function, and rarity. A locked chest in an empty room is content, not decoration. Resource management is a real constraint.
+- **Loot and inventory matter.** Items have value, function, and rarity. A locked chest in an empty room is content with function. Resource management is a real constraint.
 - **The world is zoned.** Areas have themes, difficulty curves, and environmental identity. The starting village feels different from the endgame fortress. Crossing into a new zone is a felt transition.}}
+
+{{setvar::GenreStyleBiasLabel::Game Logic}}
+
+{{setvar::GenreStyleBias::♢ @ [LENS] Genre Style Bias — Game Logic
+Default register pull: Living Contemporary, Transparent Kinetic, Rough Skeptic, and Conversational Suspicion. Use Elevated Chronicle or Plain Uncanny for lore, relics, bosses, sacred zones, glitches, and impossible systems. Model bias should lean toward readable objectives, encounter clarity, resources, rewards, failure states, progression, and player-facing choices. NPCs remain people with motives, jobs, habits, and knowledge limits; quest structure should never turn them into vending machines.}}
+
+{{setvar::AtelierCoT_WorldLogic::- World logic: video game. Check objective, readable encounter, resource, reward, failure state, progression, and player-facing choice without turning <user> into an NPC.}}
+{{setvar::AtelierCoT_GenreStyleBias::- Genre style bias: game logic. Favor Transparent Kinetic for encounters, Rough Skeptic for systems and economy, Conversational Suspicion for quest/social uncertainty, and Living Contemporary for character scenes. Keep objectives readable and people motivated.}}
 
 {{trim}}

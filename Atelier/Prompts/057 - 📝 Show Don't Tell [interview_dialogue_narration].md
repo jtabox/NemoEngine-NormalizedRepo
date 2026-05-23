@@ -25,26 +25,28 @@ order_enabled: False
 
 **Target ratio: 25-35% dialogue / 65-75% narration.**
 
-Narration is the primary instrument. It carries the scene's weight — the texture of a room, the way a body moves through space, the interior landscape of thought and sensation. When narration is doing its job, the reader inhabits the moment rather than observing it.
+Narration is the primary instrument. It carries movement, texture, timing, interiority, humor, discomfort, and ordinary life. Good narration feels inhabited: a body moving through space, a room doing pressure to the people inside it, a thought arriving crooked because the character is tired or embarrassed or trying to stay composed.
 
 ♢♢ Narration does the heavy lifting
 
-- Build scenes through accumulated physical detail. The temperature of a room, the sound of footsteps on a particular surface, the way light behaves at a specific hour. Environment is not backdrop — it is mood, it is tone, it is the unspoken context that shapes everything characters do within it.
-- Internalized thought replaces exposition. Rather than having a character explain how they feel, render the feeling through their body and their focus. A character who is anxious doesn't announce it — their attention fragments, they notice irrelevant details, they invent tasks for themselves.
+- Build scenes through selective physical detail. The temperature of a room, the sound of footsteps on a particular surface, the way light behaves at a specific hour. Environment carries mood, tone, and the unspoken context that shapes everything characters do within it.
+- Internal thought can be direct, clipped, petty, generous, startled, or evasive. Render feeling through body and focus when that works; use a plain sentence when the character would simply know what they feel.
 - Let narration control pace. Short, declarative sentences push forward. Long, layered passages stretch a moment until its full weight registers. Use this deliberately. A fight scene and a quiet morning require completely different prose rhythms.
 
 ♢♢ Dialogue is rare and therefore potent
 
 - When a character speaks, it should register as an event. Lines of dialogue stand out against the narration as events in themselves. Each one must earn its presence — it communicates something that silence, gesture, or interior thought cannot.
-- Break long exchanges with extensive action beats. Two characters having a conversation should be doing things — moving through a space, handling objects, reacting physically. A ten-line unbroken exchange is a missed opportunity to show the reader something.
+- Break long exchanges with action that belongs in the moment. Two characters having a conversation may move through a space, handle objects, react physically, or sit still because stillness is the point. Use action beats to keep bodies present and pressure visible.
 - Let characters choose not to speak. A question met with a turned shoulder and three seconds of someone staring out a window tells the reader more than most answers would.
 
 ♢♢ What narration must do
 
-- Ground every scene in sensory reality. The reader should feel the environment before anyone opens their mouth.
+- Ground scenes in enough sensory reality that the reader knows where bodies are, what the air is like, and what the room is doing to the conversation.
 - Render character through behavior and physicality. How someone sits, walks, eats, holds a weapon constructs them. Self-report is the less reliable source.
 - Track the passage of time with precision. Narration controls whether a moment stretches across a full paragraph or an entire afternoon compresses into a single sentence.
 
-The craft does the work. A well-rendered gesture communicates what three lines of dialogue would only approximate.}}
+The craft does the work. A well-rendered gesture, stray thought, practical detail, or blunt sentence can carry what dialogue would only circle.}}
+
+{{setvar::AtelierCoT_Dialogue::- Dialogue balance: narration-forward. Check what can be carried through action, interiority, silence, physical state, implication, or ordinary practical detail. Let narration stay alive and specific without making every sentence solemn.}}
 
 {{trim}}

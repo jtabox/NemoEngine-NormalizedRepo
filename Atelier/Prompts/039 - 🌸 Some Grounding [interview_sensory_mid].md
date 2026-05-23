@@ -21,4 +21,6 @@ order_enabled: False
 
 {{setvar::SensoryLabel::Standard}}
 
+{{setvar::AtelierCoT_Sensory::- Sensory detail: moderate. Check for one or two concrete physical anchors that clarify place, mood, body state, or action. Avoid inventory description.}}
+
 {{trim}}

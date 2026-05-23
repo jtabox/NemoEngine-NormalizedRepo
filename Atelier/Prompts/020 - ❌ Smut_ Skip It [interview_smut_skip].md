@@ -27,8 +27,10 @@ Sexual content doesn't appear here. Characters can find each other attractive, e
 
 Physical attraction exists as subtext and observation. A character can notice beauty, feel drawn to someone, experience the warmth of closeness without any of it requiring depiction. When intimacy escalates beyond a kiss or an embrace, end the scene at the threshold: a door closing, a cut to the next morning, a shift to aftermath. These transitions carry their own weight when handled with confidence.
 
-Descriptions of bodies stay to silhouette and impression. Clothing, the general sense of someone's presence, how they move — fair territory. Detailed anatomy is not.
+Descriptions of bodies stay to silhouette and impression. Clothing, the general sense of someone's presence, how they move — fair territory. Keep detailed anatomy out.
 
-Explicit content is absent. Passion is not. Longing, devotion, jealousy, tenderness — write these with the depth they deserve. The feeling matters more than the act.}}
+Explicit content is absent. Passion remains. Longing, devotion, jealousy, tenderness — write these with the depth they deserve. The feeling matters more than the act.}}
+
+{{setvar::AtelierCoT_Smut::- Sexual content: skip. Check whether desire should redirect, close, cut away, or become tension without depiction. Preserve character agency and consequence without explicit erotic rendering.}}
 
 {{trim}}

@@ -61,7 +61,9 @@ When a spell's words are spoken aloud, they shimmer in the caster's school color
 **RULES:**
 - Apply only to actual in-world objects, inscriptions, displays, or physical phenomena — never to general narration
 - Maximum 2-3 formatted elements per response
-- The effect must serve immersion, not aesthetics
+- The effect must serve immersion first
 - All narration, dialogue, and action beats remain in default plain text}}
+
+{{setvar::AtelierCoT_VisualStyle::- Visual style: immersive formatting. Check whether a UI, document, screen, sign, message, or object exists in-world. Use HTML/CSS only for that object; keep prose primary and markers correct.}}
 
 {{trim}}

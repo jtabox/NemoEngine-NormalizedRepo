@@ -21,4 +21,6 @@ order_enabled: False
 
 {{setvar::HumorLabel::Occasional}}
 
+{{setvar::AtelierCoT_Humor::- Humor: occasional. Check whether levity releases pressure, reveals character, or makes the next serious beat sharper. Keep jokes sparse and specific to the speaker.}}
+
 {{trim}}

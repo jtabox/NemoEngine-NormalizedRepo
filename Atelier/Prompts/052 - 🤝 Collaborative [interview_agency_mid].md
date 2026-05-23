@@ -21,4 +21,6 @@ order_enabled: False
 
 {{setvar::AgencyLabel::Collaborative}}
 
+{{setvar::AtelierCoT_Agency::- Agency: collaborative. Check who has motive to act next: <user>, <char>, NPCs, or the world. Let multiple agents create motion while ending on one live handoff.}}
+
 {{trim}}

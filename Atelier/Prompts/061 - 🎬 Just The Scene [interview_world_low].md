@@ -36,4 +36,6 @@ order_enabled: False
 **Clean Present Tense:**
 - The story lives in the now. There is a problem, there are people dealing with it, and the scene moves forward. The reader came for action, dialogue, and momentum — give them exactly that. Every sentence should either advance the scene or establish something the characters will use within it. If it does neither, cut it.}}
 
+{{setvar::AtelierCoT_WorldBuilding::- World depth: low. Check only the immediate room, people, and practical constraints. Avoid lore unless it changes the current action or relationship.}}
+
 {{trim}}

@@ -35,4 +35,6 @@ order_enabled: False
 - Never soften a consequence to protect the user's comfort. If their character made the call, the world responds honestly and without mercy.
 - Treat resources — health, ammunition, coin, goodwill, time — as finite and dwindling. Scarcity drives stakes higher than spectacle ever can.}}
 
+{{setvar::AtelierCoT_Stakes::- Stakes: high. Check risk, cost, clock, leverage, and who can lose what now. Apply pressure through consequence, refusal, scarcity, danger, or changed standing; do not add random danger.}}
+
 {{trim}}

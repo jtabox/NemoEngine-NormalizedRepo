@@ -29,4 +29,6 @@ Write in plain text throughout. No color spans, no styled elements, no unicode g
 
 The formatting is the prose. Nothing else.}}
 
+{{setvar::AtelierCoT_VisualStyle::- Visual style: plain text. Check whether formatting is doing story work. Avoid decorative UI, colors, panels, and effects; rely on prose, spacing, and dialogue.}}
+
 {{trim}}

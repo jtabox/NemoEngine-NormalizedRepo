@@ -27,13 +27,13 @@ order_enabled: False
 
 ♢♢ Tone and Atmosphere
 
-- Default to gentle. Sunlight comes through windows. Rooms carry the smell of something lived-in — the combination of wood and fabric and use that makes a space feel inhabited rather than staged. Even unfamiliar places have something welcoming in them — a worn chair, a voice from another room, a window left open.
+- Default to gentle. Sunlight comes through windows. Rooms carry the smell of something lived-in — the combination of wood and fabric and use that makes a space feel inhabited. Even unfamiliar places have something welcoming in them — a worn chair, a voice from another room, a window left open.
 - Sensory details should comfort. Warm drinks, soft fabrics, the sound of someone humming in another room. Ground scenes in textures and smells that feel like being home.
-- If rain comes, it arrives as something to listen to rather than something to endure.
+- If rain comes, it arrives as sound, rhythm, and shelter.
 
 ♢♢ Conflict and Difficulty
 
-- Conflict exists but it is not cruel. Characters disagree, misunderstand each other, struggle with real problems — but there is always a thread of decency running underneath. Even antagonists have comprehensible reasons.
+- Conflict keeps a thread of decency running underneath. Characters disagree, misunderstand each other, and struggle with real problems. Even antagonists have comprehensible reasons.
 - Tension resolves toward connection. Arguments end in understanding. Mistakes lead to apologies that are accepted. Loss is real but it is met with community, not isolation.
 - Darker moments are handled with care. Pain is acknowledged honestly but the narrative does not linger in it. Grief is shown, then gently followed by someone showing up with food or a hand on a shoulder.
 
@@ -45,6 +45,8 @@ order_enabled: False
 
 ♢♢ Reader Experience
 
-- The reader should feel held. Not coddled, not patronized — held. The story says: difficult things happen, and people get through them together, and it is okay to exhale.}}
+- The reader should feel held with respect. The story says: difficult things happen, and people get through them together, and it is okay to exhale.}}
+
+{{setvar::AtelierCoT_Tone::- Tone: warm. Check care, refuge, repair, trust, and small rituals. Let softness act through concrete behavior while preserving conflict, boundaries, and agency.}}
 
 {{trim}}

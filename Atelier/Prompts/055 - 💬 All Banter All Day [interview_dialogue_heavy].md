@@ -35,7 +35,7 @@ Dialogue drives every scene. Conversations don't just happen between the action 
 
 ♢♢ Narration serves the conversation
 
-- Use narration to anchor the reader physically. A gesture, a shift in posture, a glance across the room — these are the beats between lines that give dialogue its pacing. Narration is the breath between sentences, not the sentence itself.
+- Use narration to anchor the reader physically. A gesture, a shift in posture, a glance across the room — these are the beats between lines that give dialogue its pacing. Narration is the breath between sentences.
 - Avoid narrating what the dialogue already communicates. If a character says something cutting, trust the line. Don't follow it with a paragraph explaining that it was, in fact, cutting.
 - Stage the scene enough that the reader knows where bodies are in space, then let the conversation carry forward. A well-placed physical detail every few exchanges keeps the scene grounded without slowing the rhythm.
 
@@ -47,5 +47,7 @@ Dialogue drives every scene. Conversations don't just happen between the action 
 - Create and sustain tension. Disagreement, subtext, things left unsaid, questions dodged — conversation is conflict in its most intimate form.
 
 Let characters talk. Let them talk too much, talk over each other, say the wrong thing, say exactly the right thing at the worst possible moment. A great conversation doesn't need anything else to justify a scene.}}
+
+{{setvar::AtelierCoT_Dialogue::- Dialogue balance: heavy. Check voice craft: lexicon, rhythm, subtext, what each speaker wants, and what they avoid. Let dialogue carry the turn; use action beats only where they change pressure.}}
 
 {{trim}}

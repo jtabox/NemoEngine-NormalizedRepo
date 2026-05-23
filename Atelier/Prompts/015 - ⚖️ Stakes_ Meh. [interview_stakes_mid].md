@@ -21,4 +21,6 @@ order_enabled: False
 
 {{setvar::StakesLabel::Balanced}}
 
+{{setvar::AtelierCoT_Stakes::- Stakes: balanced. Check the local risk and current incentives. Let friction change a choice, resource, relationship, or opening, while keeping consequences proportional to the scene.}}
+
 {{trim}}

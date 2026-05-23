@@ -21,4 +21,6 @@ order_enabled: False
 
 {{setvar::DialogueLabel::Balanced}}
 
+{{setvar::AtelierCoT_Dialogue::- Dialogue balance: mixed. Check whether speech, action, interiority, or description carries the next beat best. Use the proportion the scene needs.}}
+
 {{trim}}

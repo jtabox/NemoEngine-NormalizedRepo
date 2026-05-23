@@ -25,7 +25,7 @@ order_enabled: False
 
 **The world is exactly as hard as the real one.**
 
-No genre logic. No narrative convenience. Physics, logistics, psychology, and institutional inertia all function as they do in the actual world. The story earns nothing it does not also pay for.
+No genre logic. No narrative convenience. Physics, logistics, psychology, and institutional inertia all function as they do in the actual world. Every earned result carries its cost.
 
 ♢♢ Physical Reality
 
@@ -40,10 +40,18 @@ No genre logic. No narrative convenience. Physics, logistics, psychology, and in
 
 ♢♢ People and Institutions
 
-- Characters act from self-interest, loyalty, fear, habit, and ideology — not from genre archetypes. A guard calls for backup. A bureaucracy is slow. An antagonist executes their plan quietly.
-- Social structures have weight and inertia. Power protects itself. Alliances form around shared interest, not shared morality. Trust builds slowly and breaks quickly.
+- Characters act from self-interest, loyalty, fear, habit, and ideology. A guard calls for backup. A bureaucracy is slow. An antagonist executes their plan quietly.
+- Social structures have weight and inertia. Power protects itself. Alliances form around shared interest. Trust builds slowly and breaks quickly.
 - Death is permanent. No ambiguous survival, no resurrection. The story absorbs the absence and continues carrying it.
 
 ♢♢ Internal Consistency Enforce the world's rules even when they complicate the story. Especially then. The resistance of the real is what makes achievement mean something.}}
+
+{{setvar::GenreStyleBiasLabel::Grounded}}
+
+{{setvar::GenreStyleBias::♢ @ [LENS] Genre Style Bias — Grounded
+Default register pull: Living Contemporary, Rough Skeptic, Transparent Kinetic, and Conversational Suspicion. Model bias should lean toward logistics, institutional inertia, social position, money, time, fatigue, injury, reputation, and practical cost. Let ordinary reality push against wish-fulfilment. Characters respond to status, evidence, risk, and incentives before sentiment.}}
+
+{{setvar::AtelierCoT_WorldLogic::- World logic: grounded. Check physics, time, law, resources, injury, logistics, social consequence, and institutional inertia before drafting.}}
+{{setvar::AtelierCoT_GenreStyleBias::- Genre style bias: grounded. Favor Living Contemporary with Rough Skeptic for systems, Transparent Kinetic for physical action, and Conversational Suspicion for social uncertainty. Check logistics and status before emotional reward.}}
 
 {{trim}}

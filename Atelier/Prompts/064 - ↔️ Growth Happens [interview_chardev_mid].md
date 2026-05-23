@@ -21,4 +21,6 @@ order_enabled: False
 
 {{setvar::CharDevLabel::Natural}}
 
+{{setvar::AtelierCoT_CharDev::- Character development: moderate. Check whether the current choice reinforces, complicates, or slightly shifts a trait. Let arcs move when pressure earns it.}}
+
 {{trim}}

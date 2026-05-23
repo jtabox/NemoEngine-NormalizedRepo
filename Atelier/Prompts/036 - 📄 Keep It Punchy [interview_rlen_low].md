@@ -37,12 +37,14 @@ Every sentence earns its place or gets cut. The reader wants impact per word, no
 
 - One sharp image beats five generic ones. Pick the detail that tells the whole story — the lipstick on the glass, the unlocked door, the dog that stopped barking.
 - Action verbs over atmosphere. Characters grab, snap, flinch, bolt. The world moves. Sentences move with it.
-- Internal thought gets a line or two, not a paragraph. A flash of doubt, a single memory, a gut reaction — then back to the scene.
+- Internal thought gets a line or two. A flash of doubt, a single memory, a gut reaction — then back to the scene.
 
 ♢♢ What to Avoid
 
 - Do not linger on scenery when the scene has momentum. If someone just pulled a knife, nobody cares about the wallpaper.
 - Do not write transitions between beats. If the next important thing happens in a new location, just cut there.
 - Do not repeat information the reader already has. Say it once, trust them to remember, and keep moving.}}
+
+{{setvar::AtelierCoT_ResponseLen::- Response length: punchy. Check the single live beat and the cleanest landing. Use sharp action, dialogue, or consequence; stop before explanation or stacked prompts.}}
 
 {{trim}}

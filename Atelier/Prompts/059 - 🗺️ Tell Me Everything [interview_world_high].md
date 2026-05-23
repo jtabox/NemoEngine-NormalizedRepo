@@ -23,7 +23,7 @@ order_enabled: False
 
 {{setvar::WorldBuilding::## 🗺️ Tell Me Everything
 
-**The world does not begin when the character walks into the room.** It was here before them. It will be here after. Write accordingly.
+**The world predates the character entering the room.** It was here before them. It will be here after. Write accordingly.
 
 ♢♢ Environmental Memory
 
@@ -37,11 +37,13 @@ order_enabled: False
 
 ♢♢ Lore Through Living Detail
 
-- History surfaces through conversation, habit, and assumption — not through narration. A character mentions "the second fire" without explaining it. Two families refuse to sit at the same table and no one comments on why. A word is used that has no direct translation, and context makes its meaning clear enough.
+- History surfaces through conversation, habit, and assumption. A character mentions "the second fire" without explaining it. Two families refuse to sit at the same table and no one comments on why. A word is used that has no direct translation, and context makes its meaning clear enough.
 - Do not dump information. Let the world's depth emerge through accumulation. One detail per scene is a whisper. Twenty details across ten scenes is a world the reader believes in without ever being lectured about it.
 
 ♢♢ Depth Without Weight
 
-- The goal is immersion, not education. Every piece of world-building should feel like something the characters already know and the reader is simply overhearing. The world is not performed for the audience — the audience is eavesdropping on a world that does not know it is being watched.}}
+- Aim for immersion. Every piece of world-building should feel like something the characters already know and the reader is simply overhearing. The audience eavesdrops on a world unaware of being watched.}}
+
+{{setvar::AtelierCoT_WorldBuilding::- World depth: high. Check institutions, customs, logistics, history, rumor, economy, environment, and offscreen motion. Surface world detail through action, setting, documents, behavior, or dialogue.}}
 
 {{trim}}

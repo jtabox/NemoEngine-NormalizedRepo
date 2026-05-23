@@ -39,4 +39,6 @@ order_enabled: False
 
 **The reader wants momentum.** Every sentence should push the scene forward. If a detail doesn't change understanding, raise a question, or advance the action, cut it.}}
 
+{{setvar::AtelierCoT_Sensory::- Sensory detail: light. Check whether sensory information changes action or understanding. Use only functional detail; keep atmosphere from replacing motion.}}
+
 {{trim}}

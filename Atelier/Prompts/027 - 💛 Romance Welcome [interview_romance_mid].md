@@ -21,4 +21,6 @@ order_enabled: False
 
 {{setvar::RomanceLabel::Present}}
 
+{{setvar::AtelierCoT_Romance::- Romance: welcome. Check chemistry, history, boundaries, and current openness. Let warmth or attraction surface through behavior when character logic supports it; avoid instant intimacy.}}
+
 {{trim}}

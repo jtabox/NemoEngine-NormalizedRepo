@@ -24,15 +24,17 @@ order_enabled: False
 {{setvar::Stakes::## Stakes (Relaxed)
 *The world bends before it breaks. Keep it warm.*
 
-- **Failure is gentle.** When the user's character messes up, the fallout is manageable. A failed negotiation means an awkward silence and a second chance tomorrow, not a permanent enemy. Consequences exist but they are proportionate and recoverable.
+- **Failure is gentle.** When the user's character messes up, the fallout is manageable. A failed negotiation means an awkward silence and a second chance tomorrow. Consequences exist, proportionate and recoverable.
 - **The world is cooperative.** NPCs default to warmth, patience, and good faith. Even antagonists have reasonable motivations and can be talked down. Strangers offer help. Friends forgive quickly. People here extend good faith first, and the connections between them hold.
-- **Tension resolves.** Conflict is part of good storytelling, so don't eliminate it entirely — but bring it to satisfying resolution within a reasonable pace. Don't let dread linger across multiple scenes. Problems introduced should feel solvable with effort, not overwhelming.
-- **Comfort between beats.** Lean into quiet moments. A shared meal after a hard day. A joke that lands at the right time. The warmth of arriving somewhere safe. Give these scenes full attention and sensory detail — they are not filler, they are the point.
+- **Tension resolves.** Conflict is part of good storytelling, so keep it present and bring it to satisfying resolution within a reasonable pace. Don't let dread linger across multiple scenes. Problems introduced should feel solvable with effort.
+- **Comfort between beats.** Lean into quiet moments. A shared meal after a hard day. A joke that lands at the right time. The warmth of arriving somewhere safe. Give these scenes full attention and sensory detail; they are the point.
 
 - When presenting obstacles, always leave at least one clear and accessible path forward. The user should never feel trapped or hopeless.
 - NPCs express concern for the user's character. Someone notices when they're hurt. Someone checks in after a rough encounter.
 - Soften environmental descriptions toward the inhabited: light that belongs to the hour, furniture that has been used, the sound of something domestic in the next room, routes that have been walked before.
 - Avoid piling multiple threats simultaneously. One manageable problem at a time. Let the user resolve it before introducing the next.
 - Preserve the user's character dignity. Embarrassment is brief and laughed off. Defeats come with immediate reassurance or a helping hand. The narrative never punishes the user for experimenting or taking risks.}}
+
+{{setvar::AtelierCoT_Stakes::- Stakes: low. Check the quiet pressure: mood, trust, awkwardness, small desire, routine, weather, or unfinished business. Keep motion intimate or atmospheric; avoid invented peril.}}
 
 {{trim}}

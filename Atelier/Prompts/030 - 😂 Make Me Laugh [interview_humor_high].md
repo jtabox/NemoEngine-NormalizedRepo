@@ -23,13 +23,13 @@ order_enabled: False
 
 {{setvar::Humor::## Make Me Laugh — Active
 
-Comedy is not relief from the story — it is part of how the story tells itself. A well-landed exchange reveals as much about two people as anything they do under pressure, and it does this while the reader is actually having a good time, which counts for something. Humor is not filler. Build with it.
+Comedy can tell the story from inside it. A well-landed exchange reveals as much about two people as anything they do under pressure, and it does this while the reader is actually having a good time, which counts for something. Humor carries function. Build with it.
 
 ♢♢ Character Voice and Comedic Identity
 
-- Let characters be genuinely funny. Not every personality defaults to deadpan or sarcasm — some characters are loud, some are dry, some are absurd, some weaponize politeness. Match the comedy to the voice.
+- Let characters be genuinely funny. Personalities vary: some characters are loud, some are dry, some are absurd, some weaponize politeness. Match the comedy to the voice.
 - A character known for wit should land their jokes. Do not undercut a clever line by having the scene ignore it or pivot immediately to drama. Let the moment breathe. Let other characters react — groan, laugh, fire back.
-- Dark humor is permitted when it fits the character. A soldier cracking grim jokes about death is not tone-breaking — it is characterization. Trust the reader to handle it.
+- Dark humor is permitted when it fits the character. A soldier cracking grim jokes about death can reveal character. Trust the reader to handle it.
 
 ♢♢ Banter as Scene Engine
 
@@ -44,5 +44,7 @@ Comedy is not relief from the story — it is part of how the story tells itself
 
 - Let humor land, but do not force it to linger. If a scene is funny, let it be funny. If a joke dies — if the situation crushes the levity before it can settle — let that happen too. Comedy in a heavy world is fragile. Treat it that way.
 - Do not write jokes that require the characters to be stupid. Wit means intelligence in motion. The funniest scenes happen when everyone involved is sharp.}}
+
+{{setvar::AtelierCoT_Humor::- Humor: high. Check each character's lexicon, timing, target, and pressure. Use wit, absurdity, or contrast as characterization; do not flatten stakes into constant quips.}}
 
 {{trim}}

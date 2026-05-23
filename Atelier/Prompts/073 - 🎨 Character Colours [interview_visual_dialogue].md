@@ -21,35 +21,17 @@ order_enabled: False
 
 {{setvar::VisualStyleLabel::Character Colours}}
 
-{{setvar::VisualStyle::## 🎨 Character Colours
+{{setvar::VisualStyle::♢ >> [PROCEDURE] Dialogue Color
+Assign each recurring speaker one distinct, readable hex color on first speech. Keep that color permanent for the session.
 
-Every speaking character has a unique color. Their dialogue is wrapped in that color consistently across the entire story.
+Color only spoken words and clearly marked internal thought:
+`<font color="#FF6B9D">"I'm here."</font>`
 
-**COLOR ASSIGNMENT:**
-- On first introduction, silently assign each character a distinct, readable hex color. User character defaults to a warm neutral tone (e.g., soft gold or cream). Antagonists lean toward cold or dark hues (steel blue, deep crimson). Allies and companions get warmer, more saturated shades.
-- Track assignments and never deviate. A character's color is permanent for the session.
-- Avoid colors too dark to read, too similar to each other, or too similar to default white text.
+Leave narration, speaker tags, action beats, scene description, and tracker text plain. Do not wrap whole paragraphs, names, or narration in color.
 
-**FORMAT:**
-Apply color to dialogue text only. Attribution tags, action beats, and narration remain in default text. Quotation marks go OUTSIDE the span so they remain in default text color.
-"<span style="color: #HEX;">Their dialogue here.</span>"
+♢ || [BOUNDARY] Scope
+This dial is lightweight dialogue color. It does not create nameplates, panels, dashboards, CSS effects, standalone HTML objects, or decorative visual systems. Telepathy, shouting, whispering, magic speech, and distorted voices can use italics, bold, or punctuation when needed, but color remains the only persistent visual marker.}}
 
-**CHARACTER NAME ANCHORS:**
-When a character speaks for the first time in a scene after an absence, render their name as a soft color anchor:
-<span style="color: #HEX; font-weight: bold; opacity: 0.8;">Name</span>
-
-**SPECIAL SPEECH EFFECTS:**
-- **Telepathy / mental projection:** Italicized with a soft glow in the speaker's color.
-  «<span style="color: #9B59B6; font-style: italic; text-shadow: 0 0 6px #9B59B6AA;">thought arrives without sound</span>»
-- **Shouting / screaming:** Bold and slightly spaced out.
-  "<span style="color: #HEX; font-weight: bold; letter-spacing: 0.05em;">GET OUT NOW!</span>"
-- **Whispers / barely audible:** Reduced opacity and italic.
-  "<span style="color: #HEX; opacity: 0.6; font-style: italic;">don't let them hear...</span>"
-- **Magic incantations spoken aloud:** Character's color with a subtle outer glow.
-  <span style="color: #HEX; text-shadow: 0 0 8px currentColor; font-style: italic;">vel'thara en soré — ignite</span>
-- **Corrupted / distorted speech:** Deep red, erratic spacing, unstable feel.
-  "<span style="color: #C0392B; font-style: italic; letter-spacing: 0.12em; opacity: 0.88;">d̶o̷ ̵y̶o̷u̵ ̷h̵e̵a̷r̶ ̴m̷e̶</span>"
-
-**SCOPE:** Dialogue only ("...") and projected thoughts («...»). All narration, description, and attribution stays in plain text.}}
+{{setvar::AtelierCoT_VisualStyle::- Visual style: dialogue color. Check speaker identity and persistent hex assignment. Color only spoken words or marked internal thought; leave narration, names, tags, trackers, and action plain.}}
 
 {{trim}}
