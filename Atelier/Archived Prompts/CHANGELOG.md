@@ -4,7 +4,9 @@ Each entry shows what changed in the prompts between consecutive versions.
 Sparse storage: only changed/added prompts are stored in each version folder
 (removed prompts disappear from the current `Prompts/` snapshot but are not
 re-archived — the prior version folder already holds their last state).
-The current version's prompts are in `../Prompts/`.
+The current version's prompts are in `../Prompts/`. A loose-file snapshot of
+the current Atelier 2.0 prompt set is also preserved under `Atelier 2.0/` for
+archive browsing and direct file diffs.
 
 ## Atelier 1.2 (legacy)
 - The 1.2 release pre-dates this archive. Old versions of the 27 prompts that
@@ -13,6 +15,7 @@ The current version's prompts are in `../Prompts/`.
 
 ## Atelier 2.0 (CURRENT)
 - added: 3, changed: 27, removed: 0
+- loose-file snapshot: `Atelier 2.0/`
 - **added**:
   - `atelier_premise` — 🎭 The Premise
   - `atelier_databank` — 💾 Databank

@@ -2,6 +2,7 @@
 
 Each prompt is listed with the versions it changed in.
 Use this to trace a prompt's evolution across the archive.
+The current Atelier 2.0 loose-file snapshot is stored in `Atelier 2.0/`.
 
 | Identifier | Name | Versions changed |
 |---|---|---|
@@ -36,5 +37,6 @@ Use this to trace a prompt's evolution across the archive.
 | `interview_world_hdr` | < 🗺️ How deep into the world? > | Atelier 2.0 |
 | `interview_worldlogic_hdr` | < 🌐 What logic does the world run on? > | Atelier 2.0 |
 
-> Prompts not listed here have not changed since they were introduced
-> (Atelier 1.2 baseline lives in `../Archive/Atelier 1.2.json`).
+> Prompts not listed here have not changed since they were introduced.
+> The Atelier 1.2 baseline lives in `../Archive/Atelier 1.2.json`;
+> the current Atelier 2.0 loose-file snapshot lives in `Atelier 2.0/`.

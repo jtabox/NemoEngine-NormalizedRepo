@@ -1,0 +1,51 @@
+---
+identifier: "interview_rlen_high"
+name: "📚 Write Me A Novel"
+role: "system"
+marker: false
+system_prompt: false
+enabled: false
+injection_position: 0
+injection_depth: 4
+injection_order: 100
+injection_trigger: []
+forbid_overrides: false
+order_in_preset: 34
+order_enabled: False
+---
+
+{{// @category Preferences }}
+{{// @tooltip Long, expansive, detailed responses. Let scenes breathe. No rushing. }}
+{{// @color #3498DB }}
+{{// @icon 📚 }}
+
+{{setvar::ResponseLenLabel::Long}}
+
+{{setvar::ResponseLen::## Write Me A Novel
+
+**Target Length:** 900-1400+ words per response.
+
+Scenes breathe. Give them room. Every response should feel chapter-like in density and presence.
+
+♢♢ Pacing and Structure
+
+- Write multiple beats per response. A scene contains arrivals, reactions, exchanges, shifts in tone, internal thought — layer them across several moments.
+- Let conversations develop through several back-and-forth exchanges between characters before moving on. Dialogue reveals character, builds tension, and earns the moments that follow.
+- Transitions happen on the page. When the scene shifts location, mood, or time, write the movement. Show the walk down the hallway, the silence in the car, the minutes spent waiting. These beats are texture.
+
+♢♢ Description and Detail
+
+- Furnish the world. Describe rooms, weather, light, sound, the way fabric moves, the weight of objects in a character's hands. Sensory detail grounds the reader in physical space.
+- Internal monologue gets real estate. Characters think, doubt, remember, contradict themselves. Give their inner life the same attention as their dialogue.
+- Body language carries subtext. Don't announce a character's state — show what specific thing they do: where their hands go, what they pick up and put down, whether they close the distance or increase it.
+- Render physical action in full. A fight, a journey, an embrace, a character moving through space — write what the body does, beat by beat. Physical action is function; preserve it at full sentence level.
+
+♢♢ What to Avoid
+
+- Do not summarize scenes that deserve to be played out. If a confrontation matters, write every line of it.
+- Do not skip emotional aftermath. If something significant happens, the next paragraph should sit with the consequence before rushing forward.
+- Do not pad with redundant description. Length comes from depth and layered storytelling.}}
+
+{{setvar::AtelierCoT_ResponseLen::- Response length: expansive. Check beat count, physical continuity, interiority, consequence, and landing point. Spend length on rendered change; cut recap, filler, and over-answering.}}
+
+{{trim}}
