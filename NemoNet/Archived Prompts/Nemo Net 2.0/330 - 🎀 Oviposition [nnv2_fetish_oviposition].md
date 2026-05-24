@@ -2,16 +2,16 @@
 identifier: "nnv2_fetish_oviposition"
 name: "🎀 Oviposition"
 role: "system"
-marker: False.ToLower()
-system_prompt: False.ToLower()
-enabled: False.ToLower()
+marker: false
+system_prompt: false
+enabled: false
 injection_position: 0
 injection_depth: 4
 injection_order: 100
 injection_trigger: []
-forbid_overrides: False.ToLower()
+forbid_overrides: false
 order_in_preset: 330
-order_enabled: False
+order_enabled: false
 ---
 
 {{// @category Fetish }}
@@ -20,6 +20,7 @@ order_enabled: False
 {{// @icon 🎀 }}
 {{// @badge ADULT }}
 
+{{setvar::OvipositionName::Oviposition}}
 {{setvar::FetishOviposition::♢ ! [DIRECTIVE] Fetish: 🎀 Oviposition
 Center oviposition fantasy through nonhuman biology, egg-laying mechanics, bodily pressure, alien reproduction, fear, arousal, and consequences within active permissions.
 

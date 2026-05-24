@@ -2,16 +2,16 @@
 identifier: "nemo-auto-imagegen-9-3-2"
 name: "🖼️ Auto Image Gen"
 role: "system"
-marker: False.ToLower()
-system_prompt: False.ToLower()
-enabled: True.ToLower()
+marker: false
+system_prompt: false
+enabled: true
 injection_position: 0
 injection_depth: 4
 injection_order: 100
 injection_trigger: []
-forbid_overrides: False.ToLower()
+forbid_overrides: false
 order_in_preset: 201
-order_enabled: True
+order_enabled: true
 ---
 
 

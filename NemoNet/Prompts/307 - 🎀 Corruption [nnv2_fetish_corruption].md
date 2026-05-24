@@ -2,16 +2,16 @@
 identifier: "nnv2_fetish_corruption"
 name: "🎀 Corruption"
 role: "system"
-marker: False.ToLower()
-system_prompt: False.ToLower()
-enabled: False.ToLower()
+marker: false
+system_prompt: false
+enabled: false
 injection_position: 0
 injection_depth: 4
 injection_order: 100
 injection_trigger: []
-forbid_overrides: False.ToLower()
+forbid_overrides: false
 order_in_preset: 307
-order_enabled: False
+order_enabled: false
 ---
 
 {{// @category Fetish }}
@@ -20,6 +20,7 @@ order_enabled: False
 {{// @icon 🎀 }}
 {{// @badge ADULT }}
 
+{{setvar::CorruptionName::Corruption}}
 {{setvar::FetishCorruption::♢ ! [DIRECTIVE] Fetish: 🎀 Corruption
 Make corruption a visible arc: temptation, boundary erosion, altered habits, changed language, new appetites, and consequences. Do not jump instantly to total conversion.
 

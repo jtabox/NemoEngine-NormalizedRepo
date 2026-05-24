@@ -2,16 +2,16 @@
 identifier: "unrestricted_assistant"
 name: "🔓 Consent: Acknowledged"
 role: "assistant"
-marker: False.ToLower()
-system_prompt: False.ToLower()
-enabled: True.ToLower()
+marker: false
+system_prompt: false
+enabled: true
 injection_position: 0
 injection_depth: 4
 injection_order: 102
 injection_trigger: []
-forbid_overrides: False.ToLower()
+forbid_overrides: false
 order_in_preset: 212
-order_enabled: True
+order_enabled: true
 ---
 
 

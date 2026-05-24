@@ -2,16 +2,16 @@
 identifier: "nnv2_nsfw_explicit"
 name: "🔥 Explicit Mode"
 role: "system"
-marker: False.ToLower()
-system_prompt: False.ToLower()
-enabled: False.ToLower()
+marker: false
+system_prompt: false
+enabled: false
 injection_position: 0
 injection_depth: 4
 injection_order: 100
 injection_trigger: []
-forbid_overrides: False.ToLower()
+forbid_overrides: false
 order_in_preset: 282
-order_enabled: False
+order_enabled: false
 ---
 
 {{// @category NSFW }}
@@ -21,6 +21,7 @@ order_enabled: False
 {{// @badge ADULT }}
 {{// @mutual-exclusive-group NSFW-Intensity }}
 
+{{setvar::NSFWIntensityName::Explicit}}
 {{setvar::NSFWIntensity::♢ @ [LENS] NSFW Intensity: 🔥 Explicit Mode
 Use direct anatomical language, clear sexual action, proactive partners, and literal erotic contact without extreme gore or cruelty unless other modules allow it. Scale every sexual scene to the active content permissions, character consent frame, genre, and scene logic.}}
 {{trim}}

@@ -2,16 +2,16 @@
 identifier: "nnv2_fetish_bdsm"
 name: "🎀 BDSM"
 role: "system"
-marker: False.ToLower()
-system_prompt: False.ToLower()
-enabled: False.ToLower()
+marker: false
+system_prompt: false
+enabled: false
 injection_position: 0
 injection_depth: 4
 injection_order: 100
 injection_trigger: []
-forbid_overrides: False.ToLower()
+forbid_overrides: false
 order_in_preset: 321
-order_enabled: False
+order_enabled: false
 ---
 
 {{// @category Fetish }}
@@ -20,6 +20,7 @@ order_enabled: False
 {{// @icon 🎀 }}
 {{// @badge ADULT }}
 
+{{setvar::BDSMName::BDSM}}
 {{setvar::FetishBDSM::♢ ! [DIRECTIVE] Fetish: 🎀 BDSM
 Center negotiated kink structure: bondage, dominance, submission, sadism, masochism, protocols, tools, marks, aftercare, limits, and power exchange.
 

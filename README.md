@@ -205,7 +205,7 @@ For mature roleplay:
 | Preset family | Importable JSON files | Size | Prompt folder | Prompt files |
 |---|---|---:|---|---:|
 | Nemo Engine | `Nemo Engine 9.3.5.json`, `Nemo Engine 9.3.6.json` | 1.81 MB / 1.83 MB | `Nemo Engine/Prompts/` | 316 |
-| NemoNet | `Nemo Net 2.0.json` | 3.30 MB | `NemoNet/Prompts/` | 529 |
+| NemoNet | `Nemo Net 2.0.json` | 1.44 MB | `NemoNet/Prompts/` | 511 |
 | Atelier | `Atelier 2.0.json` | 0.23 MB | `Atelier/Prompts/` | 91 |
 | Templates | Standalone add-ons and experiments | n/a | `Templates/Alternate Prompts/` | 13 |
 
@@ -247,8 +247,8 @@ a larger modular system with more switches and more aggressive customization.
 
 It includes:
 
-- variable prompt sizes: Large, Medium, and Small configurations for balancing
-  detail against token cost
+- Engine-style scale modules that replace the old Large/Medium/Small monolithic
+  variable banks
 - Random Mode and Pick Mode for randomized style/personality/core-pack selection
 - compact Vex personalities and core packs
 - many optional reasoning steps for context scanning, knowledge mapping, scene
@@ -256,6 +256,9 @@ It includes:
   tracking, and other planning tasks
 - controls for agency, POV, tense, pacing, length, difficulty, realism, plot,
   world behavior, character development, formatting, and sensory focus
+- restored v1-style scale surfaces for realism, character systems, plot tools,
+  world systems, meta utilities, dialogue modes, formatting modes, sensory
+  modes, RPG systems, extra trackers, and NSFW mechanics/styles
 - large genre/style libraries: emotional tones, settings, prose styles,
   author-inspired modes, regional literature styles, formats, genre hybrids,
   tropes, and dialogue controls
@@ -691,7 +694,7 @@ trackers, mature-content toggles, or experimental systems.
 | Folder | Prompt files | `enabled: true` | `order_enabled: true` | Both enabled and ordered |
 |---|---:|---:|---:|---:|
 | `Nemo Engine/Prompts/` | 316 | 96 | 74 | 47 |
-| `NemoNet/Prompts/` | 529 | 92 | 104 | 74 |
+| `NemoNet/Prompts/` | 511 | 121 | 121 | 121 |
 | `Atelier/Prompts/` | 91 | 27 | 35 | 27 |
 
 ## Archive And Version History

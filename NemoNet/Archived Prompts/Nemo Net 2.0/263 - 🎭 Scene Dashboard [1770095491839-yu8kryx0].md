@@ -2,16 +2,16 @@
 identifier: "1770095491839-yu8kryx0"
 name: "🎭 Scene Dashboard"
 role: "system"
-marker: False.ToLower()
-system_prompt: False.ToLower()
-enabled: True.ToLower()
+marker: false
+system_prompt: false
+enabled: true
 injection_position: 1
 injection_depth: 2
 injection_order: 100
 injection_trigger: []
-forbid_overrides: False.ToLower()
+forbid_overrides: false
 order_in_preset: 263
-order_enabled: True
+order_enabled: true
 ---
 
 

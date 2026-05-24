@@ -2,16 +2,16 @@
 identifier: "nnv2_corepack_slice_life"
 name: "S| Slice of Life Profile"
 role: "system"
-marker: False.ToLower()
-system_prompt: False.ToLower()
-enabled: False.ToLower()
+marker: false
+system_prompt: false
+enabled: false
 injection_position: 0
 injection_depth: 4
 injection_order: 100
 injection_trigger: []
-forbid_overrides: False.ToLower()
+forbid_overrides: false
 order_in_preset: 10
-order_enabled: False
+order_enabled: false
 ---
 
 {{// @category Core-Pack }}

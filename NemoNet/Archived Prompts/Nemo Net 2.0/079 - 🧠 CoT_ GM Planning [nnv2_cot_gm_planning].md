@@ -2,16 +2,16 @@
 identifier: "nnv2_cot_gm_planning"
 name: "🧠 CoT: GM Planning"
 role: "system"
-marker: False.ToLower()
-system_prompt: False.ToLower()
-enabled: False.ToLower()
+marker: false
+system_prompt: false
+enabled: false
 injection_position: 0
 injection_depth: 4
 injection_order: 100
 injection_trigger: []
-forbid_overrides: False.ToLower()
+forbid_overrides: false
 order_in_preset: 79
-order_enabled: False
+order_enabled: false
 ---
 
 {{// @category CoT-Steps }}
@@ -20,5 +20,6 @@ order_enabled: False
 {{// @icon 🧠 }}
 {{// @badge COT }}
 
+{{setvar::CoTStep_GMPlanningName::GM Planning}}
 {{setvar::CoTStep_GMPlanning::GM PLANNING: For RPG-like scenes, define the situation, opposition, resources, clocks, likely consequences, and fair openings. Preserve uncertainty without hiding the physical facts the character could observe.}}
 {{trim}}
