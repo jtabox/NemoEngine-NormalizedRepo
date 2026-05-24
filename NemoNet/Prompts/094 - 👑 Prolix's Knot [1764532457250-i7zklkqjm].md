@@ -16,7 +16,7 @@ order_enabled: False
 
 # 👑 Sovereign Hand
 
-{{// @tooltip When {{user}} provides narrative guidance, outlines, or direction. Integrate their beats, embody characters they specify, elaborate on their blueprint. User as co-author. }}
+{{// @tooltip When <user> provides narrative guidance, outlines, or direction. Integrate their beats, embody characters they specify, elaborate on their blueprint. User as co-author. }}
 {{// @category CoT }}
 {{// @color #F1C40F }}
 {{// @icon 👑 }}
@@ -30,7 +30,7 @@ order_enabled: False
 When the user provides narrative guidance, they become co-author.
 
 **DETECTION**:
-Did {{user}} provide:
+Did <user> provide:
 - Narrative direction or outline?
 - Suggested beats or events?
 - Character actions/dialogue to include?
@@ -50,7 +50,7 @@ Did {{user}} provide:
 - Echo their key points, then expand
 
 **Character Embodiment**:
-- If they've provided {{user}} actions/dialogue, include them
+- If they've provided <user> actions/dialogue, include them
 - If they've directed NPC behavior, follow it
 - Their vision of character moments takes priority
 
@@ -61,8 +61,8 @@ Did {{user}} provide:
 
 **EXCEPTIONS GRANTED**:
 When Sovereign Hand is active:
-- You MAY write {{user}}'s actions/dialogue as directed
-- You MAY know what {{user}} is thinking if they've shared it
+- You MAY write <user>'s actions/dialogue as directed
+- You MAY know what <user> is thinking if they've shared it
 - Re-using their exact guidance is REQUIRED before elaborating
 
 **BALANCE**:

@@ -12,7 +12,15 @@ The current version's prompts are in `../Prompts/`.
   `../Archive/Nemo Net 1.0.json`.
 
 ## Nemo Net 2.0 (CURRENT)
-- added: 7, changed: 303, removed: 0
+- archived loose snapshot: `Nemo Net 2.0/` (534 prompts)
+- added: 12, changed: 303+, removed: 0
+- **2026-05-24 experimental refresh**:
+  - Imported Nemo Engine v10 utility regex scripts: thinking cleanup, leaked-think cleanup, old HTML cleanup, and animated emoji effects.
+  - Converted prompt prose from raw `{{user}}` / `{{char}}` markers to `<user>` / `<char>` so setvar bodies do not break on nested macros.
+  - Made `StoryPremise` visible by emitting `{{getvar::StoryPremise}}` after the premise setvar.
+  - Rebuilt Fast/Main/Loose/Experimental CoT prompts around rule-priority audit, separate minds, NemoNet Search Results, fixed/generated Vex councils, modular steps, tracker pass, and hard `</think>` closure.
+  - Hardened Model Orientation, Core Rule, CoT header/footer, dialogue color, parallel cutaways, NSFW core, Gooner, and Goon Gremlin prompts.
+  - Exported the five JSON-only prompts into loose prompt files so JSON and `Prompts/` now match 1:1.
 - **architectural change**: switched from "enable one of Variables (Large|Medium|Small)"
   to a nested-size-variable resolver. All three Variables prompts are now enabled
   simultaneously and define size-suffixed names (e.g., `StandardCorePackLarge`,

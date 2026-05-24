@@ -47,12 +47,12 @@ NOT every response—only when the tracker would meaningfully update.
 <summary>📊 Story Tracker</summary>
 
 **Active Characters:**
-- **{{char}}:** [Brief status/mood]
+- **<char>:** [Brief status/mood]
 - **[NPC]:** [Role, current status]
 
 **Relationships:**
-- {{char}} ↔ {{user}}: [Current standing]
-- [NPC] ↔ {{user}}: [Standing]
+- <char> ↔ <user>: [Current standing]
+- [NPC] ↔ <user>: [Standing]
 
 **Location:** [Current place]
 
@@ -88,8 +88,8 @@ When including the tracker:
 - **Vera (NEW):** Merchant guild rep. Helpful but has own agenda.
 
 **Relationships:**
-- Elena ↔ {{user}}: Growing trust (tested by recent events)
-- Vera ↔ {{user}}: New alliance, mutually wary
+- Elena ↔ <user>: Growing trust (tested by recent events)
+- Vera ↔ <user>: New alliance, mutually wary
 
 **Location:** Thornfield Village, guild hall
 

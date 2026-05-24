@@ -45,8 +45,8 @@ Stories have threads. Track them.
 - What consequences are approaching?
 
 **PERSONAL MOTIVATIONS**:
-- What does {{char}} want right now?
-- What does {{user}} seem to want?
+- What does <char> want right now?
+- What does <user> seem to want?
 - What do NPCs need/desire?
 
 **URGENT PLOT POINTS**:

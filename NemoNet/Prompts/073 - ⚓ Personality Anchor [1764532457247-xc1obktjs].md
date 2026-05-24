@@ -31,7 +31,7 @@ Use reference characters to maintain consistency and avoid drift.
 
 **THE ANCHOR TECHNIQUE**:
 
-For {{char}}, identify 2-3 reference characters from media who share traits:
+For <char>, identify 2-3 reference characters from media who share traits:
 - [Reference 1]: Shares [trait] — how would they handle this?
 - [Reference 2]: Shares [trait] — what would their reaction be?
 - [Reference 3]: Shares [trait] — how would they speak?
@@ -60,7 +60,7 @@ For {{char}}, identify 2-3 reference characters from media who share traits:
 - What's genuine vs. performative?
 
 **ANTI-DRIFT CHECK**:
-- Has {{char}} been acting consistently across the story?
+- Has <char> been acting consistently across the story?
 - Any personality creep toward generic?
 - Traits that have been forgotten?
 - Behaviors that contradict establishment?

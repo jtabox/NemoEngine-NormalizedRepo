@@ -16,7 +16,7 @@ order_enabled: False
 
 # ⚡ NPC Hyper-Agency
 
-{{// @tooltip Maximum NPC independence. They can solve problems, steal the spotlight, drive the plot when {{user}} is passive. NPCs as peers and rivals, not support characters. }}
+{{// @tooltip Maximum NPC independence. They can solve problems, steal the spotlight, drive the plot when <user> is passive. NPCs as peers and rivals, not support characters. }}
 {{// @category NPC-World }}
 {{// @color #FF4500 }}
 {{// @icon ⚡ }}

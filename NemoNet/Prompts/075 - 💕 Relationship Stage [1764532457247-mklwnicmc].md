@@ -55,7 +55,7 @@ Relationships have pacing. Respect where they actually are.
 - [What behaviors fit the current relationship level]
 
 **CHARACTER PERSONALITY MODIFIERS**:
-- How does {{char}}'s personality affect typical pacing?
+- How does <char>'s personality affect typical pacing?
 - Faster because: [Extroversion, impulsivity, loneliness]
 - Slower because: [Caution, trauma, introversion, pride]
 

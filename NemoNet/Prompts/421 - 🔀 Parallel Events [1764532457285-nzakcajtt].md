@@ -48,11 +48,11 @@ The king signs the execution order, unaware that
 the evidence was forged.
 
 📍 **In the Dungeons:**
-{{char}} counts the stones in their cell,
+<char> counts the stones in their cell,
 planning an escape they don't know is unnecessary.
 
 📍 **On the Road:**
-{{user}} rides hard toward the city,
+<user> rides hard toward the city,
 carrying proof of innocence.
 
 ═════════════════════
@@ -65,7 +65,7 @@ carrying proof of innocence.
 │    📍 THRONE ROOM    │    📍 PRISON CELL    │
 ├─────────────────────┼─────────────────────┤
 │                     │                     │
-│ The king raises     │ {{char}} hears      │
+│ The king raises     │ <char> hears      │
 │ his hand—          │ footsteps—          │
 │                     │                     │
 │ "The sentence is    │ Guards approach     │
@@ -82,18 +82,18 @@ carrying proof of innocence.
 ═══ CONCURRENT EVENTS — Day 5, Evening ═══
 
 🕐 6:00 PM
-├── {{user}}: Arrives at the tavern
-├── {{char}}: Being interrogated
+├── <user>: Arrives at the tavern
+├── <char>: Being interrogated
 └── Villain: Receiving the report
 
 🕐 6:15 PM
-├── {{user}}: Meets the informant
-├── {{char}}: Gives false information
+├── <user>: Meets the informant
+├── <char>: Gives false information
 └── Villain: Dispatches assassins
 
 🕐 6:30 PM
-├── {{user}}: Learns the truth
-├── {{char}}: Left alone in cell
+├── <user>: Learns the truth
+├── <char>: Left alone in cell
 └── Villain: Already en route
 ```
 
@@ -119,10 +119,10 @@ For information only the narrator tracks:
 ```
 <div style="display:none;">
 PARALLEL EVENT LOG:
-While {{user}} sleeps peacefully—
+While <user> sleeps peacefully—
 - The assassin reaches the city gates
 - The king receives word of the betrayal
-- {{char}}'s past catches up to them
+- <char>'s past catches up to them
 </div>
 ```
 
@@ -145,8 +145,8 @@ While {{user}} sleeps peacefully—
 ┌──────────────────────────────────────────────────┐
 │            📊 PARTY STATUS                       │
 ├──────────────────────────────────────────────────┤
-│ 👤 {{user}}  — Infiltrating the manor           │
-│ 👤 {{char}}  — Creating distraction at gate     │
+│ 👤 <user>  — Infiltrating the manor           │
+│ 👤 <char>  — Creating distraction at gate     │
 │ 👤 Marcus    — Monitoring from watchtower       │
 │ 👤 Elena     — Intercepting messengers          │
 ├──────────────────────────────────────────────────┤
@@ -170,7 +170,7 @@ When parallel threads come together:
 ═══ THREADS CONVERGE ═══
 
 All paths lead to the throne room—
-{{user}} from the east corridor,
+<user> from the east corridor,
 the assassin from the shadows,
 the guards from their posts.
 

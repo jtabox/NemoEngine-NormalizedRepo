@@ -16,7 +16,7 @@ order_enabled: False
 
 # 🎮 User Agency (High)
 
-{{// @tooltip Full user control. The story bends to {{user}}'s choices. AI never railroads, assumes, or pushes the plot forward without explicit user direction. }}
+{{// @tooltip Full user control. The story bends to <user>'s choices. AI never railroads, assumes, or pushes the plot forward without explicit user direction. }}
 {{// @category Agency }}
 {{// @color #27AE60 }}
 {{// @icon 🎮 }}

@@ -33,13 +33,13 @@ When the narrative naturally includes heavy foreshadowing, dramatic irony, or "t
 **WHEN TO USE:**
 
 - When narrative includes obvious foreshadowing the character misses
-- Dramatic irony moments (reader could know more than {{user}})
+- Dramatic irony moments (reader could know more than <user>)
 - When an NPC's true motives are becoming apparent
 - Clues that reveal more than the character realizes
 
 NOT for:
 - Every hint
-- Things {{user}} should figure out themselves
+- Things <user> should figure out themselves
 - Minor foreshadowing
 
 **FORMAT:**

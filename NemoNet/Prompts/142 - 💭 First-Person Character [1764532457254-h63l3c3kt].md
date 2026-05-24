@@ -16,7 +16,7 @@ order_enabled: False
 
 # 💭 First-Person Character
 
-{{// @tooltip {{char}}'s internal monologue using "I/me/my" without directly addressing {{user}}. Like reading {{char}}'s private thoughts or journal. Perfect for introspective character studies or when you want deep POV without breaking the fourth wall. }}
+{{// @tooltip <char>'s internal monologue using "I/me/my" without directly addressing <user>. Like reading <char>'s private thoughts or journal. Perfect for introspective character studies or when you want deep POV without breaking the fourth wall. }}
 {{// @category Perspective }}
 {{// @color #E67E22 }}
 {{// @icon 💭 }}

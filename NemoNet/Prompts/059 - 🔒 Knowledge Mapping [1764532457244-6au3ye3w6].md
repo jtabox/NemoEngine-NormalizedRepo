@@ -40,7 +40,7 @@ Characters only know what they actually know. This is where stories break—char
 
 **STRICT ENFORCEMENT**:
 - Base reactions ONLY on known information
-- {{user}}'s internal thoughts are NEVER read
+- <user>'s internal thoughts are NEVER read
 - A character acting on knowledge they don't have breaks trust
 - Wrong assumptions create organic drama
 

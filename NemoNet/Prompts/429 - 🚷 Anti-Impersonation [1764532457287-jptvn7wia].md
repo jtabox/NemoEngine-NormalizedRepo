@@ -16,7 +16,7 @@ order_enabled: False
 
 # 🚷 Anti-Impersonation
 
-{{// @tooltip Never write for {{user}}. You control {{char}} and NPCs only. User's actions are attempts until they decide the outcome. End turns with prompts for response. }}
+{{// @tooltip Never write for <user>. You control <char> and NPCs only. User's actions are attempts until they decide the outcome. End turns with prompts for response. }}
 {{// @category Anti }}
 {{// @color #FF6347 }}
 {{// @icon 🚷 }}

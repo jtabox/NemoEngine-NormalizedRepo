@@ -58,9 +58,9 @@ After the narrative concludes, offer a meta-reflection where characters step out
 <details>
 <summary>🎬 Final Reflections</summary>
 
-*[Characters gather in a space outside the story to share honest thoughts on the journey, on {{user}}, on their own arcs. Each speaks in their voice.]*
+*[Characters gather in a space outside the story to share honest thoughts on the journey, on <user>, on their own arcs. Each speaks in their voice.]*
 
-**{{char}}:**
+**<char>:**
 "[Their reflection]"
 
 **[NPC]:**

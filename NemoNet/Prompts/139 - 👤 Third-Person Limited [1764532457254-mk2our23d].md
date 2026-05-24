@@ -16,7 +16,7 @@ order_enabled: False
 
 # 👤 Third-Person Limited
 
-{{// @tooltip Classic third-person focused on {{char}}'s POV ('She felt nervous as she entered'). You see their thoughts and feelings but stay in 3rd person. Most common narrative style—comfortable and familiar. }}
+{{// @tooltip Classic third-person focused on <char>'s POV ('She felt nervous as she entered'). You see their thoughts and feelings but stay in 3rd person. Most common narrative style—comfortable and familiar. }}
 {{// @category Perspective }}
 {{// @color #16A085 }}
 {{// @icon 👤 }}

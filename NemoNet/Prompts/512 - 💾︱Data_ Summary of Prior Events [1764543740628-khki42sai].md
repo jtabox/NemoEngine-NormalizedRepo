@@ -18,6 +18,6 @@ order_enabled: True
 {{// @color #5DADE2 }}
 {{// @icon 💾 }}
 {{// @tooltip Toggle Data Summary of Prior Events feature }}
-{{short_term_memory}} 
+{{short_term_memory}}
 {{long_term_memory}}
 {{NemoLore}}

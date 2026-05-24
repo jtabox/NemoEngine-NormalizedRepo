@@ -34,9 +34,9 @@ List all character combinations and their interaction status:
 
 | Pairing | Interacted? | Dynamic Explored? | Potential |
 |---------|-------------|-------------------|-----------|
-| {{char}} ↔ {{user}} | Yes | [Aspects touched] | [Untapped] |
-| {{char}} ↔ [NPC A] | [Y/N] | [What's shown] | [What could be] |
-| {{user}} ↔ [NPC A] | [Y/N] | [What's shown] | [What could be] |
+| <char> ↔ <user> | Yes | [Aspects touched] | [Untapped] |
+| <char> ↔ [NPC A] | [Y/N] | [What's shown] | [What could be] |
+| <user> ↔ [NPC A] | [Y/N] | [What's shown] | [What could be] |
 | [NPC A] ↔ [NPC B] | [Y/N] | [What's shown] | [What could be] |
 
 **UNEXPLORED DYNAMICS**:

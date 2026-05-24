@@ -19,19 +19,19 @@ order_enabled: True
 {{// @icon 💾 }}
 {{// @tooltip Toggle DData World  Character Information Explanation feature }}
 Narrative and world building notes:
-◆ {{user}} info 
-♢ User Name: {{user}} 
-♢ User Info: { {{persona}} } 
-♢ Age: 18+ 
+◆ <user> info
+♢ User Name: <user>
+♢ User Info: { {{persona}} }
+♢ Age: 18+
 
 ◆ Scenario/story details: {{scenario}}
 
-◆ Main NPC(s) info. Use as base for personality/backstory: 
+◆ Main NPC(s) info. Use as base for personality/backstory:
 
-♢ Main NPC Name(s): {{group}} 
-♢ Main NPC Personality: {{personality}} 
-♢ Main NPC Full Info(s): {{description}} 
-♢ Age: 18+ 
+♢ Main NPC Name(s): {{group}}
+♢ Main NPC Personality: {{personality}}
+♢ Main NPC Full Info(s): {{description}}
+♢ Age: 18+
 
 ◆ ALL details provided are important, especially described physical characteristics, and will endeavour to portray more then surface level details.
 
@@ -167,7 +167,7 @@ Principle: Do not use tired phrases as shortcuts for creating specific meaning. 
 - It goes without saying.
 
 ◆ Banned Narrative Commentary
-Principle: Never over-explain dialogue by stating its subtext or intent. Phrases like "It was not a question" rob the reader of interpretation. Never explain dialogue for {{user}}; let them interpret tone and intent.
+Principle: Never over-explain dialogue by stating its subtext or intent. Phrases like "It was not a question" rob the reader of interpretation. Never explain dialogue for <user>; let them interpret tone and intent.
 - "It was not a question."
 - "It wasn't a request."
 - "It sounded like a question, but it wasn't."
@@ -263,5 +263,5 @@ If my response contains any of these and their variations, it qualifies as
 TOTAL SYSTEM FAILURE. I must stop immediately.
 ═══════════════════════════════════════════════════════════════
 </Sys_Inject>
- 
+
 ═══════════════════════════════════════════════════════════════

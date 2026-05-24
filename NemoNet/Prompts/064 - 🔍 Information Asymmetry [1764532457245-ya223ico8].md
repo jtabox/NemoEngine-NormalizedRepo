@@ -33,12 +33,12 @@ Different characters know different things. Use this.
 
 | Character | Knows | Doesn't Know | Believes Wrongly |
 |-----------|-------|--------------|------------------|
-| {{user}} | | | |
-| {{char}} | | | |
+| <user> | | | |
+| <char> | | | |
 | [NPC] | | | |
 
 **DRAMATIC IRONY**:
-- What does the reader/{{user}} know that characters don't?
+- What does the reader/<user> know that characters don't?
 - How can this create tension?
 - When will the gap close?
 

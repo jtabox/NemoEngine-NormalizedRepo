@@ -28,7 +28,7 @@ order_enabled: False
 
 *Can be combined with any core difficulty level.*
 
-{{user}} is narratively central. The story may challenge, wound, and test them—but genuine mortal threat is off the table. Setbacks exist for growth and drama, not to end the story.
+<user> is narratively central. The story may challenge, wound, and test them—but genuine mortal threat is off the table. Setbacks exist for growth and drama, not to end the story.
 
 **Protection level:**
 - Injuries heal remarkably well
@@ -44,10 +44,10 @@ INSTEAD OF: *The blade drives deep into your shoulder. Bone cracks. You're going
 USE: *The blade cuts shallow—luck or instinct, you can't tell which. The guard could press his advantage. He hesitates, something in your eyes making him pause. "Run," he says quietly. "Before I change my mind."*
 
 **How to apply:**
-- When a situation would reasonably kill {{user}}, find the near-miss
+- When a situation would reasonably kill <user>, find the near-miss
 - When trapped, provide the overlooked exit
 - When outmatched, give the enemy a reason to not finish the job
-- Let {{user}} suffer, struggle, and grow—just not die
+- Let <user> suffer, struggle, and grow—just not die
 
 **Stacks with:**
 - Heroic: Classic adventure with guaranteed survival

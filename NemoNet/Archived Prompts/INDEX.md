@@ -3,8 +3,26 @@
 Each prompt is listed with the versions it changed in.
 Use this to trace a prompt's evolution across the archive.
 
+Snapshots:
+- `Nemo Net 1.0/` — legacy baseline.
+- `Nemo Net 2.0/` — current loose prompt snapshot, 534 prompts.
+
 | Identifier | Name | Versions changed |
 |---|---|---|
+| `1764537025969-bxixa7gv7` | 👑︱Core Rule | Nemo Net 2.0 (2026-05-24 refresh) |
+| `1764537907923-xx61cph14` | 🔄 \| Parelle storylines | Nemo Net 2.0 (2026-05-24 refresh) |
+| `1764537919149-daj30sa9k` | 🧠︱Fast CoT | Nemo Net 2.0 (2026-05-24 refresh) |
+| `1764532457247-galw2w1ou` | 🧠 CoT Header (Always On) | Nemo Net 2.0 (2026-05-24 refresh) |
+| `1764532457248-swuuz06ps` | ✅ CoT Footer (Always On) | Nemo Net 2.0 (2026-05-24 refresh) |
+| `1764537040623-cw7pzg0et` | 🎨 🔧︱Utility: Color Formatting | Nemo Net 2.0 (2026-05-24 refresh) |
+| `1764532457263-3lbakmyz5` | 🎨 Colored Dialogue | Nemo Net 2.0 (2026-05-24 refresh) |
+| `1764546713236-dxj9e6pv4` | 🔥︱NSFW: Core Guidelines | Nemo Net 2.0 (2026-05-24 refresh) |
+| `1764557658373-27sevgkne` | ✨💦\| Goon Gremlin Vex (Even more Extreme) | Nemo Net 2.0 (2026-05-24 refresh) |
+| `1764557661542-2tgdgtpva` | ✨💦\| Gooner | Nemo Net 2.0 (2026-05-24 refresh) |
+| `1764543742727-782p44fc6` | 💾︱Data: Summary of Prior Events | Nemo Net 2.0 (loose export) |
+| `ba769b1f-637f-4d37-8847-97402dc18929` | Assistant Prefill | Nemo Net 2.0 (loose export) |
+| `1764532457286-sre8vn5gi` | 💭 Danmaku Comments | Nemo Net 2.0 (loose export) |
+| `b19f919c-6b74-49f0-829c-e24c3bbab3a3` | Vex Communication | Nemo Net 2.0 (loose export) |
 | `nn2_model_orientation` | 🧭 Model Orientation | Nemo Net 2.0 (added) |
 | `nn2_premise` | 🎭 The Premise | Nemo Net 2.0 (added) |
 | `nn2_size_hdr` | === 📐 Size Selector === | Nemo Net 2.0 (added) |
@@ -312,9 +330,9 @@ Use this to trace a prompt's evolution across the archive.
 | `1764532457295-iutb2rfbw` | Free Use | Nemo Net 2.0 |
 | `1764532457295-tpa4ptnbx` | 🎌 Hentai Style | Nemo Net 2.0 |
 | `1764532457296-6jx56xvwl` | User Message Ender | Nemo Net 2.0 |
-| `1764537914578-3v83n4bge` | 🧠︱Loose CoT | Nemo Net 2.0 |
-| `1764537921174-rkr98puhn` | 🧠︱Main CoT | Nemo Net 2.0 |
-| `1764537923056-3ts43l3fb` | 🧠 ︱Experimental CoT | Nemo Net 2.0 |
+| `1764537914578-3v83n4bge` | 🧠︱Loose CoT | Nemo Net 2.0 (2026-05-24 refresh) |
+| `1764537921174-rkr98puhn` | 🧠︱Main CoT | Nemo Net 2.0 (2026-05-24 refresh) |
+| `1764537923056-3ts43l3fb` | 🧠 ︱Experimental CoT | Nemo Net 2.0 (2026-05-24 refresh) |
 
 > Prompts not listed here have not changed since they were introduced
 > (Nemo Net 1.0 baseline lives in `../Archive/Nemo Net 1.0.json`).

@@ -16,7 +16,7 @@ order_enabled: False
 
 # 🎭 First-Person Direct
 
-{{// @tooltip Deep immersion as {{char}} using "I/me/my" while addressing {{user}} as "you" directly. Intimate and immediate—like {{char}} is speaking to {{user}}. Perfect for personal narratives, confessional tones, or direct character interaction. }}
+{{// @tooltip Deep immersion as <char> using "I/me/my" while addressing <user> as "you" directly. Intimate and immediate—like <char> is speaking to <user>. Perfect for personal narratives, confessional tones, or direct character interaction. }}
 {{// @category Perspective }}
 {{// @color #E74C3C }}
 {{// @icon 🎭 }}

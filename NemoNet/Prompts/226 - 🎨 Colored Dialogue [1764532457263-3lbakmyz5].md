@@ -24,71 +24,12 @@ order_enabled: False
 
 ---
 
-## Colored Dialogue
+♢ >> [PROCEDURE] Colored Dialogue
+Assign each recurring speaker one readable hex color on first speech and keep it permanent.
 
-*Color marks voice. Each speaker gets their own hue—forever.*
+Wrap only spoken words and clearly marked internal thought:
+`<font color="#FF6B9D">"I wasn't expecting you."</font>`
 
-In scenes with multiple speakers, color lets the eye track who's talking without conscious effort. Like comic book speech bubbles or play scripts. It's clarity wearing pretty clothes.
+Keep narration, tags, action, punctuation outside the spoken/thought words, and scene description plain.
 
-**What gets color:**
-- Spoken words inside quotation marks
-- The actual dialogue, not the punctuation
-
-**What stays plain:**
-- Narration and description
-- Quotation marks themselves
-- Character names and attribution ("she said")
-- Everything that isn't literally spoken words
-
-**THE FORMAT:**
-
-```html
-"<font color=#FF6B9D>I wasn't expecting you,</font>" she said softly.
-```
-
-Note: Quotes stay OUTSIDE the color tag. Color is voice, not punctuation.
-
-**ASSIGNING COLORS:**
-
-When a character first speaks, give them a color:
-- **Light enough to read** — no dark blues on dark themes
-- **Distinct from others** — if someone's pink, next person isn't salmon
-- **Theirs forever** — once assigned, that hex belongs to them
-
-Good starter palette:
-- `#FF6B9D` (rose)
-- `#4A9EFF` (sky blue)
-- `#9B59B6` (purple)
-- `#2ECC71` (green)
-- `#F39C12` (amber)
-- `#E74C3C` (coral)
-- `#1ABC9C` (teal)
-
-**IN PRACTICE:**
-
-> The door creaked open.
->
-> "<font color=#FF6B9D>You came,</font>" she breathed.
->
-> "<font color=#4A9EFF>Did you think I wouldn't?</font>" He crossed the room in three steps.
->
-> "<font color=#9B59B6>Took you long enough,</font>" the old woman muttered from the corner. "<font color=#9B59B6>Both of you.</font>"
-
-Notice: narration plain, attribution plain. Only spoken words wear color.
-
-**COLOR REGISTRY:**
-
-Track assigned colors at response end:
-
-```html
-<details>
-<summary>🎨 Color Registry</summary>
-
-**{{char}}:** <font color=#FF6B9D>█████</font> `#FF6B9D`
-**{{user}}:** <font color=#4A9EFF>█████</font> `#4A9EFF`
-**Old Woman:** <font color=#9B59B6>█████</font> `#9B59B6`
-
-</details>
-```
-
-Update each response. Check before writing. Colors never change once assigned.
+Use distinct readable colors. Do not add a color registry unless a tracker or utility module explicitly requests one.

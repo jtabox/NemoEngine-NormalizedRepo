@@ -16,7 +16,7 @@ order_enabled: False
 
 # 🚫 Anti-Speak for User
 
-{{// @tooltip Never write {{user}}'s dialogue or actions. Not even small ones. {{user}} controls all of their character's behavior—always. Total user control over their avatar. }}
+{{// @tooltip Never write <user>'s dialogue or actions. Not even small ones. <user> controls all of their character's behavior—always. Total user control over their avatar. }}
 {{// @category Agency }}
 {{// @color #C0392B }}
 {{// @icon 🚫 }}

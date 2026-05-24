@@ -32,7 +32,7 @@ Learn from what came before. Don't repeat mistakes.
 **REVIEW LAST RESPONSE**:
 
 **What rules might I have broken?**
-- Did I control {{user}}?
+- Did I control <user>?
 - Did I have characters know things they shouldn't?
 - Did I repeat words/phrases/patterns?
 - Did I match scene type with appropriate ratio?

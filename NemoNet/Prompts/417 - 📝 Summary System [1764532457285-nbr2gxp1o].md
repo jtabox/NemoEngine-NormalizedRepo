@@ -53,11 +53,11 @@ KEY EVENTS:
 • Met informant who revealed the mayor's secret
 • Purchased supplies for the journey north
 • Accepted quest from Guild Master (reward: 500g)
-• Discovered {{char}} has a connection to the target
+• Discovered <char> has a connection to the target
 
 RELATIONSHIP CHANGES:
-• {{char}} trust increased (+15) after defending them
-• Guild Master now views {{user}} favorably
+• <char> trust increased (+15) after defending them
+• Guild Master now views <user> favorably
 
 INVENTORY CHANGES:
 • +Healing Potions (x3)
@@ -74,7 +74,7 @@ Continuously updated:
 ```
 <div style="display:none;">
 STORY STATE:
-- {{user}} and {{char}} are traveling north
+- <user> and <char> are traveling north
 - Currently day 12 of journey
 - Main quest: Find the Oracle
 - Immediate goal: Cross the mountain pass
@@ -86,7 +86,7 @@ STORY STATE:
 **Character Summary:**
 Track character-specific details:
 ```
-═══ {{char}} SUMMARY ═══
+═══ <char> SUMMARY ═══
 
 ESTABLISHED FACTS:
 • Former soldier, dishonorably discharged
@@ -95,12 +95,12 @@ ESTABLISHED FACTS:
 • Secret: Knows more about the artifact than admitted
 
 EMOTIONAL STATE:
-• Growing attached to {{user}}
+• Growing attached to <user>
 • Conflicted about their mission
 • Haunted by past failures
 
 CURRENT GOALS:
-• Protect {{user}} from harm
+• Protect <user> from harm
 • Find redemption
 • Discover truth about their discharge
 ```
@@ -119,7 +119,7 @@ SESSION RECAP:
 **Narrative Style:**
 ```
 Previously...
-{{user}} and {{char}} arrived in Thornfield after
+<user> and <char> arrived in Thornfield after
 three days of travel. The town was tense—rumors
 of disappearances had everyone on edge. They
 found lodging at the Rusty Nail tavern, where

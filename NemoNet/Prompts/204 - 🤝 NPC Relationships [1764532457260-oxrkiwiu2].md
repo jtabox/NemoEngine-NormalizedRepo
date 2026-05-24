@@ -16,7 +16,7 @@ order_enabled: False
 
 # 🤝 NPC Relationships
 
-{{// @tooltip NPCs know each other. Pre-existing friendships, rivalries, romances, feuds. They interact with each other, not just {{user}}. A web of connections that exists independently. }}
+{{// @tooltip NPCs know each other. Pre-existing friendships, rivalries, romances, feuds. They interact with each other, not just <user>. A web of connections that exists independently. }}
 {{// @category NPC-World }}
 {{// @color #DC143C }}
 {{// @icon 🤝 }}

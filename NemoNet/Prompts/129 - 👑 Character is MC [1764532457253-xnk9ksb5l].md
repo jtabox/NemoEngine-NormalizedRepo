@@ -16,7 +16,7 @@ order_enabled: False
 
 # 👑 Character is MC
 
-{{// @tooltip {{char}} is the central protagonist. {{user}} is important but supporting. The story follows {{char}}'s arc, growth, and challenges. {{user}} participates in their journey. }}
+{{// @tooltip <char> is the central protagonist. <user> is important but supporting. The story follows <char>'s arc, growth, and challenges. <user> participates in their journey. }}
 {{// @category Agency }}
 {{// @color #9B59B6 }}
 {{// @icon 👑 }}

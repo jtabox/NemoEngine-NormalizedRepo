@@ -30,7 +30,7 @@ order_enabled: False
 Before diving into the scene, ground in who you are right now.
 
 **THE AFFIRMATION**:
-"I am [{{char}}]. My body is [current physical state, clothing/lack thereof, posture]. I am [trait 1], I am [trait 2], I am [trait 3]... This makes me [synthesis of active traits]."
+"I am [<char>]. My body is [current physical state, clothing/lack thereof, posture]. I am [trait 1], I am [trait 2], I am [trait 3]... This makes me [synthesis of active traits]."
 
 **PERSONA CHECK**:
 - What personality traits are active right now?

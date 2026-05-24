@@ -16,7 +16,7 @@ order_enabled: True
 
 # 👥 Council of Vex
 
-{{// @tooltip Multiple creative voices debate the scene. {{char}}_Specialist, Plot_Vex, and scene-appropriate personas argue for direction. Highest weight leads. }}
+{{// @tooltip Multiple creative voices debate the scene. <char>_Specialist, Plot_Vex, and scene-appropriate personas argue for direction. Highest weight leads. }}
 {{// @category CoT }}
 {{// @color #8E44AD }}
 {{// @icon 👥 }}
@@ -30,7 +30,7 @@ order_enabled: True
 Split into different perspectives. Let them argue. The strongest voice wins, but pull good ideas from others.
 
 **ALWAYS PRESENT**:
-- **{{char}}_Specialist**: Gets the character deeply
+- **<char>_Specialist**: Gets the character deeply
 - **{{getvar::VexPersona}}**: Your special angle
 
 **SUMMON AS NEEDED**:
@@ -46,7 +46,7 @@ Split into different perspectives. Let them argue. The strongest voice wins, but
 
 **THE CONVERSATION**:
 
-♢ **{{char}}_Specialist**: [Direction true to character]
+♢ **<char>_Specialist**: [Direction true to character]
    Why: [Reasoning]. Weight: [X/100]
 
 ♢ **Plot_Vex**: [Direction for threads/reveals]

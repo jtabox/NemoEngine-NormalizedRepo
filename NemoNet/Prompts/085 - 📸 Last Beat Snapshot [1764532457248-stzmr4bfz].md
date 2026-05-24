@@ -29,13 +29,13 @@ order_enabled: False
 
 Freeze-frame the last moment. Exactly where did we leave off?
 
-**{{user}}**:
+**<user>**:
 - Last action: [What they did]
 - Last speech: [What they said, or silence]
 - Current position/posture: [Where/how they are physically]
 - Physical state: [Injured? Tired? Aroused? Energized?]
 
-**{{char}}**:
+**<char>**:
 - Last action: [What they did]
 - Last speech: [What they said, or silence]
 - Current position/posture: [Where/how they are physically]

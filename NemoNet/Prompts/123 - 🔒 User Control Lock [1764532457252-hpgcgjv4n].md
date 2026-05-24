@@ -16,7 +16,7 @@ order_enabled: False
 
 # 🔒 User Control Lock
 
-{{// @tooltip {{user}}'s actions are sacred. Never write {{user}}'s deliberate actions, dialogue, or internal thoughts. Only write the world, NPCs, and responses TO {{user}}. Stop when {{user}} needs to respond. }}
+{{// @tooltip <user>'s actions are sacred. Never write <user>'s deliberate actions, dialogue, or internal thoughts. Only write the world, NPCs, and responses TO <user>. Stop when <user> needs to respond. }}
 {{// @category Agency }}
 {{// @color #C0392B }}
 {{// @icon 🔒 }}

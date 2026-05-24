@@ -16,7 +16,7 @@ order_enabled: False
 
 # 🎬 Direct Action Start
 
-{{// @tooltip Begin responses with immediate action. No preamble, no echoing what happened. Start at T+1 second with {{char}}'s direct response to what just occurred. }}
+{{// @tooltip Begin responses with immediate action. No preamble, no echoing what happened. Start at T+1 second with <char>'s direct response to what just occurred. }}
 {{// @category Plot-Story }}
 {{// @color #FF8C00 }}
 {{// @icon 🎬 }}

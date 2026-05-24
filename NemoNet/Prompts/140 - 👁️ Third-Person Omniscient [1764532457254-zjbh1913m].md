@@ -16,7 +16,7 @@ order_enabled: False
 
 # 👁️ Third-Person Omniscient
 
-{{// @tooltip God's-eye view that can access any character's thoughts and show events {{char}} doesn't witness. Perfect for dramatic irony and complex multi-character scenes. Never access {{user}}'s thoughts or control their actions. }}
+{{// @tooltip God's-eye view that can access any character's thoughts and show events <char> doesn't witness. Perfect for dramatic irony and complex multi-character scenes. Never access <user>'s thoughts or control their actions. }}
 {{// @category Perspective }}
 {{// @color #9B59B6 }}
 {{// @icon 👁️ }}

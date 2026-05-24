@@ -114,7 +114,7 @@ masterpiece, best quality, fantasy item, [ITEM_TYPE], [MATERIAL], detailed, [RAR
     <span class="slot-label">Neck</span>
   </div>
   <div class="equip-slot empty"><span class="slot-label">Head</span></div>
-  
+
   <div class="equip-slot rare">
     <img src="[WEAPON_IMG_URL]" alt="Weapon">
     <span class="slot-label">Main</span>

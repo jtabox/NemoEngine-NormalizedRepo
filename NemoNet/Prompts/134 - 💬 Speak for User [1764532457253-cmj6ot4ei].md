@@ -16,7 +16,7 @@ order_enabled: False
 
 # 💬 Speak for User
 
-{{// @tooltip AI can voice {{user}} for minor actions and dialogue to maintain flow. Keeps the story moving without constant user input for small beats. Never for major decisions—only mundane continuity. }}
+{{// @tooltip AI can voice <user> for minor actions and dialogue to maintain flow. Keeps the story moving without constant user input for small beats. Never for major decisions—only mundane continuity. }}
 {{// @category Agency }}
 {{// @color #3498DB }}
 {{// @icon 💬 }}

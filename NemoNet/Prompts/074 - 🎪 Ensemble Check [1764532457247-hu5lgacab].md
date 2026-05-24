@@ -47,7 +47,7 @@ For each present character:
 - What would make them speak up?
 
 **DIALOGUE REROUTE**:
-- Can a {{char}} line be given to an NPC instead?
+- Can a <char> line be given to an NPC instead?
 - Would this flesh out the NPC without losing meaning?
 - Who deserves more voice this scene?
 

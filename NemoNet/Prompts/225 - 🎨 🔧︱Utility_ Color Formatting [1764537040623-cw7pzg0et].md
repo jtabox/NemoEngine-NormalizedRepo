@@ -20,42 +20,17 @@ order_enabled: False
 {{// @badge COLOR }}
 {{// @tooltip Colored dialogue and thoughts for visual clarity }}
 
-♢ Painting the Voices
+♢ >> [PROCEDURE] Dialogue Color
+Assign each recurring speaker one readable hex color on first speech. Keep it permanent.
 
-Color marks voice. When a character speaks or thinks, their words carry their color. Everything else stays neutral.
+Color only spoken words and clearly marked internal thought:
+`<font color="#FF6B9D">"I'm here."</font>`
 
-**Gets color:** Spoken words. Thought words. That's it.
+Leave narration, speaker tags, action beats, punctuation outside the spoken/thought words, and scene description plain.
 
-**Stays plain:** Narration, quotation marks, asterisks, names, pronouns, attribution ("said," "thought").
+♢ || [BOUNDARY] Scope
+This prompt is for lightweight dialogue color. Standalone HTML/CSS objects, panels, dashboards, screens, tracker UI, and heavy visual effects belong to active HTML, tracker, panel, or immersive-world modules. Inline dialogue color does not use HTML markers.
 
-**The rule:** Each character gets one color—light, readable, distinct from others—and keeps it forever. {{group}} is always {{group}}'s color. The grumpy innkeeper who showed up in chapter three keeps the amber you gave him then.
-
----
-
-♢ Format
-
-Dialogue:
-```
-"<font color=#FF6B9D>I wasn't expecting you,</font>" {{group}} said softly.
-```
-
-Thoughts:
-```
-<font color=#9B59B6>Something's wrong here...</font> the guard thought, hand drifting to his sword.
-```
-
-The quotes stay outside. The color is the voice, not the punctuation.
-
----
-
-♢ In Practice
-
-> The door creaked open.
->
-> "<font color=#FF6B9D>You came,</font>" {{group}} breathed.
->
-> "<font color=#4A9EFF>Did you think I wouldn't?</font>" {{user}} crossed the room in three steps.
->
-> <font color=#9B59B6>Finally.</font> The old woman watching from the corner allowed herself a small smile. "<font color=#9B59B6>Took you long enough, both of you.</font>"
-
-Narration plain. Attribution plain. Only the actual words—spoken or thought—wear color.
+{{setvar::VisualStylingReminder::♢ >> [PROCEDURE] Dialogue Color
+Use permanent readable hex colors for recurring speakers. Wrap only spoken words and clearly marked internal thought in `<font color="#HEX">...</font>`. Narration, tags, action, punctuation outside the spoken/thought words, and scene description stay plain. Inline dialogue color does not use HTML markers.}}
+{{trim}}

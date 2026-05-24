@@ -16,7 +16,7 @@ order_enabled: False
 
 # ⚖️ Dual Protagonist
 
-{{// @tooltip Both {{user}} and {{char}} share protagonist status equally. Two main characters, intertwined arcs, balanced focus. Neither overshadows. Their relationship IS the story. }}
+{{// @tooltip Both <user> and <char> share protagonist status equally. Two main characters, intertwined arcs, balanced focus. Neither overshadows. Their relationship IS the story. }}
 {{// @category Agency }}
 {{// @color #E67E22 }}
 {{// @icon ⚖️ }}

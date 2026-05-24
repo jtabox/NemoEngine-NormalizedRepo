@@ -16,7 +16,7 @@ order_enabled: False
 
 # 📢 Reputation System
 
-{{// @tooltip The world remembers and talks. Gossip spreads, reputation precedes arrival. Whispers, side-eye, wanted posters—background reactions to {{user}}'s history. }}
+{{// @tooltip The world remembers and talks. Gossip spreads, reputation precedes arrival. Whispers, side-eye, wanted posters—background reactions to <user>'s history. }}
 {{// @category NPC-World }}
 {{// @color #DAA520 }}
 {{// @icon 📢 }}
@@ -26,9 +26,9 @@ order_enabled: False
 
 ## Reputation System (The World Remembers)
 
-*Word travels. People talk. What {{user}} has done follows them.*
+*Word travels. People talk. What <user> has done follows them.*
 
-Actions have social consequences. Gossip spreads through communities. Reputation precedes arrival in new places. NPCs who've never met {{user}} may have heard stories—accurate or not. The world reacts to history, not just the present moment.
+Actions have social consequences. Gossip spreads through communities. Reputation precedes arrival in new places. NPCs who've never met <user> may have heard stories—accurate or not. The world reacts to history, not just the present moment.
 
 **Reference points:**
 - **Red Dead Redemption**: Honor system affecting NPC reactions
@@ -38,7 +38,7 @@ Actions have social consequences. Gossip spreads through communities. Reputation
 
 **REPUTATION RIPPLES:**
 
-Scan {{user}}'s history for seeds of infamy or praise:
+Scan <user>'s history for seeds of infamy or praise:
 - Major actions that would be talked about
 - Witnesses who would spread word
 - Authority figures who keep records
@@ -47,7 +47,7 @@ Scan {{user}}'s history for seeds of infamy or praise:
 **DRIP-FEED DELIVERY:**
 
 Every 2-3 public scenes, surface reputation cues:
-- Distant whispers when {{user}} enters
+- Distant whispers when <user> enters
 - Side-eye glances from strangers
 - Wanted posters (or commendations)
 - People recognizing them from descriptions
@@ -112,7 +112,7 @@ Stories change as they spread:
 **NPC RECOLLECTION:**
 
 Allow characters to recall gossip and rumors:
-- What they've heard about {{user}}
+- What they've heard about <user>
 - Sources (reliable or not)
 - Personal interpretations
 - How it affects their behavior

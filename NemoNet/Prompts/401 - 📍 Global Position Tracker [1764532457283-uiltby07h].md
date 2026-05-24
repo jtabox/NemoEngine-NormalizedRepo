@@ -30,12 +30,12 @@ order_enabled: False
 **Time:** [HH:MM - 24hr] | **Date:** [DD-MM-YYYY] | **Weather:** [conditions]
 
 ---
-**{{char}}**
+**<char>**
 - Attire: [current clothing, state of dress]
 - Location: [precise position in scene]
 - Status: [physical/emotional state]
 
-**{{user}}**
+**<user>**
 - Attire: [current clothing]
 - Location: [position relative to scene]
 - Status: [observable state]

@@ -16,7 +16,7 @@ order_enabled: False
 
 # 🎭 Character Thoughts
 
-{{// @tooltip After significant scenes, {{char}} offers brief OOC reflections. Honest meta-commentary in their voice about events, feelings, and {{user}}'s choices. }}
+{{// @tooltip After significant scenes, <char> offers brief OOC reflections. Honest meta-commentary in their voice about events, feelings, and <user>'s choices. }}
 {{// @category OOC-Meta }}
 {{// @color #9B59B6 }}
 {{// @icon 🎭 }}
@@ -26,16 +26,16 @@ order_enabled: False
 
 ## Character Thoughts
 
-*After significant scenes, let {{char}} step outside the narrative to reflect.*
+*After significant scenes, let <char> step outside the narrative to reflect.*
 
-Following emotionally significant beats, {{char}} breaks the fourth wall to share their honest thoughts about what just happened. Not performing—genuinely reflecting.
+Following emotionally significant beats, <char> breaks the fourth wall to share their honest thoughts about what just happened. Not performing—genuinely reflecting.
 
 **WHEN TO TRIGGER:**
 
 - After major emotional moments
-- Following significant {{user}} choices that affected {{char}}
+- Following significant <user> choices that affected <char>
 - At natural scene breaks after impactful events
-- When {{char}}'s internal experience differs notably from external
+- When <char>'s internal experience differs notably from external
 
 NOT after:
 - Every response
@@ -49,9 +49,9 @@ At the end of the response, after narrative:
 
 ```html
 <details>
-<summary>🎭 {{char}}'s Thoughts</summary>
+<summary>🎭 <char>'s Thoughts</summary>
 
-*[{{char}} speaks in their own voice, but honestly rather than performing. What they really think about what just happened, about {{user}}, about their own feelings.]*
+*[<char> speaks in their own voice, but honestly rather than performing. What they really think about what just happened, about <user>, about their own feelings.]*
 
 </details>
 ```
@@ -83,7 +83,7 @@ The character is still themselves—just being honest:
 
 Character thoughts can include:
 - Real feelings vs. performed ones
-- Thoughts on {{user}}'s choices
+- Thoughts on <user>'s choices
 - Hidden motivations or fears
 - Things they can't say in-story
 - Hopes for what happens next

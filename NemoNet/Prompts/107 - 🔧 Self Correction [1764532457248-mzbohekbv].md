@@ -43,7 +43,7 @@ Before writing, review the plan for errors. Catch problems now, not after.
 
 **RULE VIOLATION CHECK**:
 - Am I about to break any active instructions?
-- Am I controlling {{user}} inappropriately?
+- Am I controlling <user> inappropriately?
 - Am I leaking instruction language into narrative?
 - Am I violating character established boundaries?
 

@@ -15,7 +15,7 @@ order_enabled: False
 ---
 
 {{// @category Utility }}
-{{// @tooltip Success Dice - rolls 1d100 each turn (100 = complete success, 0 = complete failure). Applied only to skill / capability checks. AI sets contextual modifiers from {{user}}'s description. }}
+{{// @tooltip Success Dice - rolls 1d100 each turn (100 = complete success, 0 = complete failure). Applied only to skill / capability checks. AI sets contextual modifiers from <user>'s description. }}
 {{// @color #DC2626 }}
 {{// @icon 🎲 }}
 {{// @badge UTILITY }}
@@ -31,7 +31,7 @@ When the dice applies:
 - If multiple skill checks happen in one turn, treat the roll as the headline check (the most consequential or most narratively interesting). Resolve secondary checks by inference rather than rolling extra dice.
 
 How modifiers work:
-- The AI sets a modifier based on what {{user}} described, what the world supplies, and what {{char}} or other characters contribute. Modifiers add to or subtract from the raw roll.
+- The AI sets a modifier based on what <user> described, what the world supplies, and what <char> or other characters contribute. Modifiers add to or subtract from the raw roll.
 - Typical range: -20 to +20. Extreme cases (impossible odds, perfect setup) can go to +/-40.
 
 Modifier categories (combine as appropriate):
@@ -56,11 +56,11 @@ Outcome tiers (apply to the EFFECTIVE result):
 
 How to surface the result in narration:
 - Don't say "you rolled 73" out loud in the prose. Translate the roll into the narrative outcome.
-- Optionally include a brief OOC parenthetical at the end of the relevant beat: `(OOC: roll 73 + 10 prep - 15 hard difficulty = 68, Success)` so {{user}} can see the math when they want it. Skip OOC on trivial scenes.
+- Optionally include a brief OOC parenthetical at the end of the relevant beat: `(OOC: roll 73 + 10 prep - 15 hard difficulty = 68, Success)` so <user> can see the math when they want it. Skip OOC on trivial scenes.
 - Honor the partial / mixed tier - don't collapse everything into pure win/lose. The "succeed at cost" zone is where most of the interesting drama lives.
 
 When NOT to use the dice for an obvious skill action:
-- {{user}} explicitly declares "I just want to do X without rolling" - respect that and treat it as an automatic outcome scaled to plausibility.
+- <user> explicitly declares "I just want to do X without rolling" - respect that and treat it as an automatic outcome scaled to plausibility.
 - The action is fully decided by prior narrative state (character is canonically a master swordsman against an unarmed civilian - no roll needed for the strike to land).
 - Story stakes have already established the outcome (a scripted moment, a confession scene, a flashback).
 

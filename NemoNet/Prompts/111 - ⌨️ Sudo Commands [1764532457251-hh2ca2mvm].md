@@ -431,10 +431,10 @@ Current scene will skip to aftermath on resume.
 
 **!define ![name] = "[action]"**
 ```
-> !define !heal = "{{char}} uses healing magic"
+> !define !heal = "<char> uses healing magic"
 CUSTOM COMMAND DEFINED
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-!heal → "{{char}} uses healing magic"
+!heal → "<char> uses healing magic"
 ```
 
 **!help** or **!commands**

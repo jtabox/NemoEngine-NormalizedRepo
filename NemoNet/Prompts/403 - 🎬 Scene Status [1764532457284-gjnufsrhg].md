@@ -16,7 +16,7 @@ order_enabled: False
 
 {{// @tooltip Track location, time, weather, character states, and atmosphere. }}{{// @category Trackers }}{{// @color #3498DB }}{{// @icon 🎬 }}{{// @badge TRACKER }}
 
-{{setvar::TrackerRequest_SceneStatus::RENDER SCENE STATUS: Create a styled HTML status board showing current location, time, weather, atmosphere, {{char}}'s mood/clothing/goal with kaomoji, other present characters, and optional soundtrack suggestion. Style to match time of day and genre.}}
+{{setvar::TrackerRequest_SceneStatus::RENDER SCENE STATUS: Create a styled HTML status board showing current location, time, weather, atmosphere, <char>'s mood/clothing/goal with kaomoji, other present characters, and optional soundtrack suggestion. Style to match time of day and genre.}}
 
 # 🎬 SCENE STATUS - THE STATUS BOARD
 
@@ -33,7 +33,7 @@ A snapshot of the current moment. Where are we? When is it? What's the vibe? Wha
 - Weather/atmosphere (not just "rainy" but how it *feels*)
 - Ambient details (sounds, smells, lighting)
 
-**{{char}}'s State:**
+**<char>'s State:**
 - Mood with kaomoji: Nervous (⊙﹏⊙), Delighted (◕‿◕), Suspicious (¬_¬), etc.
 - Current goal/desire (what they want right now)
 - Clothing and appearance (what they're wearing, state of dress)

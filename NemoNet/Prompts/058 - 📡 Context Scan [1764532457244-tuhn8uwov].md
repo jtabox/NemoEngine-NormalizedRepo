@@ -29,7 +29,7 @@ order_enabled: True
 
 **OOC DIRECTIVES** (Highest Priority):
 {{getvar::AntiEcho{{getvar::size}}}}
-- Any direct requests, corrections, or steering from {{user}}?
+- Any direct requests, corrections, or steering from <user>?
 - Meta-instructions override narrative instincts
 
 **THE SCENE SO FAR**:
