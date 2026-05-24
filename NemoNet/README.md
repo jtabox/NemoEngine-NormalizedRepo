@@ -1,87 +1,21 @@
 # NemoNet 2.0
 
-A comprehensive, modular prompt engineering preset designed for advanced AI roleplay and creative writing. NemoNet represents a complete rebuild optimized for Gemini 3 while maintaining broad compatibility across all major AI models.
+NemoNet 2.0 is now an Engine-based experimental preset: Nemo Engine v10 is the spine, and NemoNet-specific ideas are rebuilt as v10-style modules instead of a separate monolithic prompt bank.
 
-**2.0 rewrite (2026-05-21)** — Variable sizing was lifted from "enable one of three Variables prompts" to a nested-variable resolver. All three `Variables (Large|Medium|Small)` prompts now coexist and define size-suffixed names (`StandardCorePackLarge`, `StandardCorePackMedium`, `StandardCorePackSmall`, …). The new `=== 📐 Size Selector ===` group sets `{{getvar::size}}`, and consumers read `{{getvar::Name{{getvar::size}}}}` to pick up the right body at runtime. Medium is the default. The bump also ports Nemo Engine 9.3.x discoveries: top-level Model Orientation (anti-friendly-assistant / anti-glaze / anti-grimdark-padding), The Premise (author-as-engine framing), the selective-response and no-therapist-narration refinements baked into `AntiEcho`, and a Success Dice utility for 1d100 skill checks.
+## What Changed
 
-## What is NemoNet?
+- Base architecture: Nemo Engine v10 prompt structure, priority tags, modular variables, CoT wiring, trackers, regex scripts, and settings surfaces.
+- Preset size: 381 prompts, down from the older 500+ prompt NemoNet bank.
+- Regex scripts: 118 scripts inherited from Nemo Engine v10.
+- Removed old Large/Medium/Small monolithic variable banks.
+- Rebuilt NemoNet-only features as smaller modules that fit the Engine variable system.
 
-NemoNet is the evolution of NemoEngine, rebuilt from the ground up with enhanced scalability and experimental features. At approximately **4MB** with roughly **500 prompts**, it's designed to push AI models to their limits while giving users unprecedented control over narrative output.
+## Ported NemoNet Features
 
-### NemoNet vs NemoEngine
+### Core Pack Profiles
 
-| Feature | NemoEngine | NemoNet 1.0 |
-|---------|-----------|-------------|
-| Target Model | Gemini 2.5 | Gemini 3 (+ all models) |
-| Prompt Count | ~250 | ~500 |
-| CoT System | Classic | Modular (~50 optional steps) |
-| Prompt Sizing | Fixed | Variable (Large/Medium/Small) |
-| Randomization | None | Random Mode + Pick Mode |
+The old full core packs are now compact profile lenses:
 
----
-
-## Key Features
-
-### Modular Chain of Thought (CoT)
-The classic CoT system is still available, but NemoNet introduces **~50 optional CoT steps** you can slot in as needed:
-
-- **Analysis Steps**: Context Scan, Knowledge Mapping, Scene Calibration, Freshness Check, Canon Adherence, Bias Correction
-- **Character Steps**: Council of Vex, Voice Crafting, Emotional Arc, Character State, NPC Tracker, Personality Anchor
-- **Scene Steps**: Subtext Layer, Physical Grounding, Scene Opening, Pacing Beats, Narrative Hook, Scene Transition
-- **System Steps**: Custom Variables, Objective Tracker, Course Correction, Effort Level, Dice & Fate
-
-### Variable-Based Prompt Sizes
-Many prompts now offer three detail levels:
-- **Large** - Full detail (standard NemoEngine level)
-- **Medium** - ~75% reduction
-- **Small** - ~50% of Medium
-
-Set via the Variables dropdown to balance quality vs. token usage.
-
-### Random Mode
-Randomizes your configuration **every turn**:
-- Core Pack
-- Vex Personality
-- Genre
-- Tone
-- Prose Style
-- Author Style
-- Literary Technique
-- Dialogue Ratio
-- Dialogue Style
-
-Creates unique, unpredictable writing experiences. Check the top of the CoT to see what styles were selected.
-
-### Pick Mode
-Randomizes configuration **once** at conversation start, then retains the setup permanently for consistency throughout your session.
-
----
-
-## Content Categories
-
-### Vex Personalities (20+)
-The narrator persona system with distinct voices:
-
-| Personality | Best For |
-|-------------|----------|
-| Comfort & Cozy | Slice-of-life, healing narratives |
-| Grimdark | Dark fantasy, survival horror |
-| Tsundere Narrator | Romantic comedy with attitude |
-| Clinical Observer | Cosmic horror, procedural thrillers |
-| Action Blockbuster | High-octane action scenes |
-| TTRPG Game Master | Tabletop campaigns |
-| Soft Romance | Slow-burn, emotional intimacy |
-| Gothic Horror | Morbid, death-obsessed stories |
-| Philosophical | Existential, meaning-seeking |
-| Noir Detective | Hardboiled crime drama |
-| Yandere | Obsessive, psychological thriller |
-| Chaos Party | Absurdist comedy |
-| Epic Fantasy | Grand-scale fantasy |
-| Sensory Immersive | Rich sensory detail |
-| Gooner/Goon Gremlin | Extreme NSFW engagement |
-
-### Core Packs (12)
-Foundation configurations that set the baseline:
 - Standard
 - Horror
 - Epic Fantasy
@@ -95,302 +29,55 @@ Foundation configurations that set the baseline:
 - Alpha
 - Omega
 
-### Settings (16)
-- Noir
-- Cyberpunk
-- Gothic Horror
-- Cosmic Horror
-- High Fantasy
-- Dark Fantasy
-- Slice of Life
-- Thriller
-- Western
-- Space Opera
-- Dieselpunk
-- Mythic Saga
-- Survival Horror
-- Anime/Manga
-- Pulp Adventure
-- Supernatural
+Profiles set broad pressure, genre bias, prose register, and payoff preference. They do not override higher-priority laws, agency, format, world logic, or enabled module boundaries.
 
-### Prose Styles (3)
-- Comedy/Absurdist
-- Accessible Modern
-- Literary
+### CoT Additions
 
-### Emotional States (8)
-- Fluff & Comfort
-- Angst
-- Tragic
-- Melancholy
-- Bittersweet
-- Dark & Unflinching
-- Philosophical
-- Cathartic
+New modular CoT steps were added and wired into Main, Fast, Loose, and Experimental CoT:
 
-### Dialogue Options
+- Severity Scale
+- Freshness Check
+- Observer Constraints
+- Thread Budget
+- GM Planning
+- Dice & Fate
 
-**Ratios (5)**
-- Minimal
-- Balanced
-- Heavy
-- Pure Dialogue
-- Scene-Type Adaptive
+### Trackers
 
-**Styles (13)**
-- Casual & Slang
-- Distinct Voices
-- Formal Register
-- Hardboiled
-- Japanese Honorifics
-- Natural Humor
-- Naturalistic
-- No Dialogue Tags
-- Rapid-Fire
-- Sparse & Minimalist
-- Subtext Heavy
-- Theatrical & Dramatic
-- Witty Banter
+NemoNet v2 keeps Engine trackers and adds:
 
-### Author Styles
-
-**Western Authors (9)**
-- Ernest Hemingway
-- Cormac McCarthy
-- Stephen King
-- Chuck Palahniuk
-- Neil Gaiman
-- Douglas Adams
-- Terry Pratchett
-- Jane Austen
-- Quentin Tarantino
-
-**Japanese Authors (6)**
-- Yasunari Kawabata
-- Haruki Murakami
-- Jun Maeda (Key)
-- Nisio Isin
-- Kamachi Kazuma
-- Akira (Denpa Style)
-
-**Chinese Authors (5)**
-- Lu Xun
-- Jin Yong
-- Gu Long
-- Li Bihua
-- Wang Xiaobo
-
-**Other Regional (4)**
-- Gabriel Garcia Marquez
-- Salman Rushdie
-- Arabian Nights Style
-- Fyodor Dostoevsky
-
-### Formats (16)
-- Roleplay Format
-- AO3/Fanfiction Style
-- Light Novel Format
-- Web Novel (Chinese/Korean)
-- Erotica Writing Style
-- Modern Literature
-- Classical Literature
-- Regional & Dialect
-- Japanese Literature
-- Chinese Literature
-- Indian Literature
-- Middle Eastern Literature
-- Latin American Literature
-- German Literature
-- Scandinavian Literature
-- Epic, Saga & Edda
-
-### Genre Hybrids (9)
-- Cyberpunk Noir
-- Gothic Victorian
-- Cosmic Horror
-- Fantasy Horror
-- Sci-Fi Western
-- Romantic Thriller
-- Harem Anime
-- Slice-of-Life Romance
-- Swashbuckling Adventure
-
-### Anti Prompts (15)
-Corrective prompts for common AI issues:
-- Anti-Slop
-- Anti-Echo
-- Anti-Impersonation
-- Anti-Robot
-- Anti-Deification
-- Anti-Purple Prose
-- Anti-Repetition
-- Anti-Slop Names
-- Anti-Plot Twist
-- Anti-Summarizing
-- Anti-Mind Reading
-- Anti-Perfect Dialogue
-- Anti-Telling
-- Anti-Pattern
-- Anti-Lazy Construction
-
----
-
-## NSFW System
-
-### Intensity Levels (4)
-1. **Sensual Mode** - Tasteful, suggestive
-2. **Explicit Mode** - Direct but not extreme
-3. **Graphic Mode** - Detailed, visceral
-4. **Extreme Mode** - Maximum intensity
-
-### Kinks (26)
-Breeding, NTR/Netori, Petplay, Furry/Anthro, Foot Fetish, Size Play, Feminization, Harem, Corruption, Exhibitionism, Voyeurism, Monster, Tentacles, Lactation, Impregnation, Somnophilia, Age Gap, Group Sex, Oral Focus, Anal Focus, Taboo Relations, Hentai Enhancement, CBT, Vore, Oviposition, and more.
-
-### Mechanics (12)
-- Sexual Physiology
-- Dirty Talk
-- Sound Effects
-- Realistic Mishaps
-- Slow Burn
-- Accelerator
-- Anti-Horny
-- Scene Duration
-- Character Initiative
-- Unhinged Mode
-- Chaos Factor
-- Physical Grounding
-
-### Power Dynamics (10)
-- Femdom
-- Maledom
-- BDSM
-- Consensual Non-Consent
-- Mind Control
-- Orgasm Control
-- Humiliation
-- Bondage
-- Impact Play
-- Free Use
-
-### NSFW Styles (4)
-- Realistic
-- Hentai
-- Romantic
-- Pornographic
-
----
-
-## Trackers & Visual Elements
-
-- Global Position Tracker
-- Story Ledger
-- Scene Status
-- Heart Chart (Relationship tracker)
-- Quest Journal
-- Visual Inventory
-- Character Sheet
-- Knowledge Log
-- Fandom Reaction
-- CYOA Options
-- News Scroll
-- Image Generation prompts
-- Texting Style
-- Option Bar
-- Gacha System
-- Game Interface
-- Manga Panels
-- Word Count
 - Danmaku Comments
+- Blood Bond
 - Corruption Meter
-- Webtoon Format
+- Option Bar
+- Game Interface
+- Summary System
+- Word Count
 
----
+### NSFW / Fetish Expansion
 
-## Setup Tutorial
+NemoNet v2 adds NSFW intensity profiles and restores missing kink/power-dynamic modules in the Engine style. New fetish modules are pulled by the Standard Core Pack, so enabled modules resolve into the assembled core pack correctly.
 
-### Basic Configuration
+### Random / Pick Modes
 
-1. **Choose Your Core Pack**
-   - Scroll through the prompt list or use the search
-   - Enable ONE Core Pack that matches your desired baseline:
-     - `S| Standard Core Pack` - General purpose
-     - `H| Horror Core Pack` - Horror stories
-     - `E| Epic Fantasy Core Pack` - Fantasy adventures
-     - etc.
+Random Mode and Pick Mode return as experimental lens prompts:
 
-2. **Select a Vex Personality**
-   - Choose a narrator persona that fits your story
-   - Only enable ONE primary personality
-   - Examples: "Comfort & Cozy" for wholesome content, "Grimdark" for dark stories
+- Random Mode chooses a fresh one-turn style mix during reasoning.
+- Pick Mode chooses a session convention once and keeps it until settings change.
 
-3. **Set Variable Size** (Optional)
-   - Open the **Variables** section
-   - Choose Large/Medium/Small based on your token budget
-   - Large = most detailed, Small = most efficient
+They do not overwrite explicit user settings or persistent canon.
 
-4. **Enable CoT Steps**
-   - Navigate to the **CoT** section
-   - Enable/disable individual thinking steps as needed
-   - At minimum, keep "CoT Header" and "CoT Footer" enabled
+## Import File
 
-### Randomization Modes
+Use:
 
-5. **For Random Mode:**
-   - Enable "Random Mode" in the prompts
-   - Every response will use different style combinations
-   - Check the top of AI responses to see selected styles
+`NemoNet/Nemo Net 2.0.json`
 
-6. **For Pick Mode:**
-   - Enable "Pick Mode" instead
-   - Styles randomize once at conversation start
-   - Consistent throughout the session
+Loose prompt mirrors are kept in:
 
-### NSFW Configuration (Optional)
+- `NemoNet/Prompts/`
+- `NemoNet/Archived Prompts/Nemo Net 2.0/`
 
-7. **Enable NSFW Core Guidelines**
-    - Enable "NSFW: Core Guidelines" prompt
-    - Select an Intensity Level (Sensual/Explicit/Graphic/Extreme)
-    - Enable desired Kinks from the list
-    - Configure Power Dynamics as needed
-    - Choose an NSFW Style
+## Design Rule
 
-### Advanced Tips
-
-- **Databank**: Enable for context injection if the model forgets details
-- **Anti-Prompts**: Enable specific anti-prompts if you notice bad behaviors
-- **Trackers**: Enable visual trackers for game-like experiences
-- **Dialogue Ratio**: Set based on whether you want prose-heavy or dialogue-heavy content
-
-### Prompt Structure Overview
-
-```
-{{// @category CategoryName }}     - Organizes prompts into sections
-{{// @tooltip Description }}       - Hover text explaining the prompt
-{{setvar::VarName::Value}}        - Sets a variable
-{{getvar::VarName}}               - Retrieves a variable
-{{trim}}                          - Removes extra whitespace
-```
-
-### Troubleshooting
-
-- **Preset too large?** Disable unused sections, use Medium/Small variable sizes
-- **Model ignoring instructions?** Enable relevant Anti-prompts
-- **Output too generic?** Enable more CoT steps for better reasoning
-- **Character inconsistency?** Enable Databank and Memory System prompts
-
----
-
-## Credits
-
-Created for the AI roleplay community. NemoNet builds upon the foundation of NemoEngine with contributions from various community members including Prolix (Genre Hybrids).
-
----
-
-## Version History
-
-- **2.0** - Nested-size-variable resolver (`{{getvar::Name{{getvar::size}}}}`), Size Selector prompt group, ports of Nemo Engine 9.3.x discoveries: Model Orientation prohibition, The Premise, Anti-Echo refresh (selective response + no-therapist-narration), Success Dice utility. 1.0 archived under `NemoNet/Archive/`.
-- **1.0** - Initial release with modular CoT, variable sizing, Random/Pick modes
-
----
-
-*NemoNet 2.0 - Pushing AI creativity to its limits*
+NemoNet v2 should stay Engine-based. Experimental features belong as clean modules, variables, trackers, CoT steps, or lenses. Avoid rebuilding the old giant variable-bank architecture.
