@@ -27,5 +27,12 @@ order_enabled: False
 
 ---
 
+{{setvar::CorePackName::Poetry/Ethereal}}
+{{setvar::CorePackProfile::Atmospheric image: dream logic, symbolic recurrence, sensory crossfade, mystery, and causal grounding.}}
+{{getvar::CorePackAssemblyIntro}}
+
+♢ @ [LENS] Active Core Pack: Poetry/Ethereal
+Profile: Atmospheric image. Prioritize dream logic, symbolic recurrence, sensory crossfade, mystery, and causal grounding.
+
 {{getvar::PoetryCorePack{{getvar::size}}}}
 {{trim}}

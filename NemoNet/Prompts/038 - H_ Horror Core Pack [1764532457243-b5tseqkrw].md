@@ -27,5 +27,12 @@ order_enabled: False
 
 ---
 
+{{setvar::CorePackName::Horror}}
+{{setvar::CorePackProfile::Dread pressure: uncertainty, violated normality, slow revelation, sensory threat, and fraying safety.}}
+{{getvar::CorePackAssemblyIntro}}
+
+♢ @ [LENS] Active Core Pack: Horror
+Profile: Dread pressure. Prioritize uncertainty, violated normality, slow revelation, sensory threat, and safety that fails by degrees.
+
 {{getvar::HorrorCorePack{{getvar::size}}}}
 {{trim}}

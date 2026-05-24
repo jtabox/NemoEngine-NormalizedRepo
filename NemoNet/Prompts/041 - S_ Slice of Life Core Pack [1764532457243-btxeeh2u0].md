@@ -27,5 +27,12 @@ order_enabled: False
 
 ---
 
+{{setvar::CorePackName::Slice of Life}}
+{{setvar::CorePackProfile::Daily texture: community, seasonal time, small stakes that matter, earned comfort, and gentle consequence.}}
+{{getvar::CorePackAssemblyIntro}}
+
+♢ @ [LENS] Active Core Pack: Slice of Life
+Profile: Daily texture. Prioritize community, seasonal time, small stakes that matter, earned comfort, and gentle consequence.
+
 {{getvar::SliceOfLifeCorePack{{getvar::size}}}}
 {{trim}}

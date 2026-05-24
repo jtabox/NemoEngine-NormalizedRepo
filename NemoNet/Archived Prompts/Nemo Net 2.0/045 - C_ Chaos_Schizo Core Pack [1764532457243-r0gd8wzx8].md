@@ -27,5 +27,12 @@ order_enabled: False
 
 ---
 
+{{setvar::CorePackName::Chaos/Schizo}}
+{{setvar::CorePackProfile::Instability engine: absurd escalation, high-energy reversals, comic derailment, meta texture, and consequence through chaos.}}
+{{getvar::CorePackAssemblyIntro}}
+
+♢ @ [LENS] Active Core Pack: Chaos/Schizo
+Profile: Instability engine. Prioritize absurd escalation, high-energy reversals, comic derailment, meta texture, and consequence through chaos.
+
 {{getvar::SchizoCorePack{{getvar::size}}}}
 {{trim}}

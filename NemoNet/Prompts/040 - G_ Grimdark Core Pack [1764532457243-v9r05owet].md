@@ -27,4 +27,12 @@ order_enabled: False
 
 ---
 
+{{setvar::CorePackName::Grimdark}}
+{{setvar::CorePackProfile::Moral cost: scarcity, compromised choices, institutional cruelty, violence with consequence, and earned bitter humor.}}
+{{getvar::CorePackAssemblyIntro}}
+
+♢ @ [LENS] Active Core Pack: Grimdark
+Profile: Moral cost. Prioritize scarcity, compromised choices, institutional cruelty, violence with consequence, and bitter humor only when earned.
+
 {{getvar::GrimdarkCorePack{{getvar::size}}}}
+{{trim}}

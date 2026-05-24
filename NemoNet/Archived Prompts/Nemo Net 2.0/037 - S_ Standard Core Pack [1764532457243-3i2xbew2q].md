@@ -27,5 +27,12 @@ order_enabled: False
 
 ---
 
+{{setvar::CorePackName::Standard}}
+{{setvar::CorePackProfile::Modern foundation: readable prose, physical storytelling, proactive world motion, and human imperfection.}}
+{{getvar::CorePackAssemblyIntro}}
+
+♢ @ [LENS] Active Core Pack: Standard
+Profile: Modern foundation. Prioritize readable prose, physical storytelling, proactive world motion, human imperfection, and balanced consequences.
+
 {{getvar::StandardCorePack{{getvar::size}}}}
 {{trim}}

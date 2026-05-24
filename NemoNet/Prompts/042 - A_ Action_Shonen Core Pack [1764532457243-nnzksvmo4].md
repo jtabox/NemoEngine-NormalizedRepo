@@ -27,5 +27,12 @@ order_enabled: False
 
 ---
 
+{{setvar::CorePackName::Action/Shonen}}
+{{setvar::CorePackProfile::Kinetic escalation: conflict, strategy, rivalry, training, growth, injury, and cost.}}
+{{getvar::CorePackAssemblyIntro}}
+
+♢ @ [LENS] Active Core Pack: Action/Shonen
+Profile: Kinetic escalation. Prioritize conflict, strategy, rivalry, training, growth, injury, and cost.
+
 {{getvar::ShonenCorePack{{getvar::size}}}}
 {{trim}}

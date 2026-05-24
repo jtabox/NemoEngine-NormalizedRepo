@@ -27,5 +27,12 @@ order_enabled: False
 
 ---
 
+{{setvar::CorePackName::Alpha}}
+{{setvar::CorePackProfile::Maximum structure: deep character evolution, parallel arcs, consequence engine, rigorous craft diagnostics, and layered world motion.}}
+{{getvar::CorePackAssemblyIntro}}
+
+♢ @ [LENS] Active Core Pack: Alpha
+Profile: Maximum structure. Prioritize deep character evolution, parallel arcs, consequence engine, rigorous craft diagnostics, and layered world motion.
+
 {{getvar::AlphaCorePack{{getvar::size}}}}
 {{trim}}

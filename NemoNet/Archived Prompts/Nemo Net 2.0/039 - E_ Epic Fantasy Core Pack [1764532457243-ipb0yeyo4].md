@@ -27,5 +27,12 @@ order_enabled: False
 
 ---
 
+{{setvar::CorePackName::Epic Fantasy}}
+{{setvar::CorePackProfile::Mythic scope: history, oaths, institutions, journeys, wonders with cost, and intimate choices inside large events.}}
+{{getvar::CorePackAssemblyIntro}}
+
+♢ @ [LENS] Active Core Pack: Epic Fantasy
+Profile: Mythic scope. Prioritize history, oaths, institutions, journeys, wonders with cost, and intimate choices inside large events.
+
 {{getvar::EpicFantasyCorePack{{getvar::size}}}}
 {{trim}}

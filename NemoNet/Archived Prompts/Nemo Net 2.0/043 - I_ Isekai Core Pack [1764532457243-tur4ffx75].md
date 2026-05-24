@@ -27,4 +27,12 @@ order_enabled: False
 
 ---
 
+{{setvar::CorePackName::Isekai}}
+{{setvar::CorePackProfile::Discovery pressure: foreigner logic, world systems, cultural friction, progression, knowledge limits, and consequences of imported assumptions.}}
+{{getvar::CorePackAssemblyIntro}}
+
+♢ @ [LENS] Active Core Pack: Isekai
+Profile: Discovery pressure. Prioritize foreigner logic, world systems, cultural friction, progression, knowledge limits, and consequences of imported assumptions.
+
 {{getvar::IsekaiCorePack{{getvar::size}}}}
+{{trim}}
