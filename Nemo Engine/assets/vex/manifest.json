@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "assetVersion": "0.8.0",
+  "assetVersion": "0.9.0",
   "baseUrl": "https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/",
   "defaultPersona": "default",
   "defaultExpression": "neutral",
@@ -538,23 +538,44 @@
     "dark-urban-fantasy": {
       "label": "Dark Urban Fantasy Vex",
       "directory": "dark-urban-fantasy",
-      "status": "awaiting-artwork",
+      "status": "ready",
       "expressions": {
-        "neutral": null,
-        "amused": null,
+        "neutral": "dark-urban-fantasy/neutral.png",
+        "amused": "dark-urban-fantasy/amused.png",
         "happy": null,
         "excited": null,
         "playful": null,
         "smug": null,
-        "thoughtful": null,
-        "skeptical": null,
-        "surprised": null,
-        "concerned": null,
-        "sad": null,
+        "thoughtful": "dark-urban-fantasy/thoughtful.png",
+        "skeptical": "dark-urban-fantasy/skeptical.png",
+        "surprised": "dark-urban-fantasy/surprised.png",
+        "concerned": "dark-urban-fantasy/concerned.png",
+        "sad": "dark-urban-fantasy/sad.png",
         "angry": null,
         "embarrassed": null,
-        "weary": null
-      }
+        "weary": null,
+        "delighted": "dark-urban-fantasy/delighted.png",
+        "annoyed": "dark-urban-fantasy/annoyed.png"
+      },
+      "character": "Vex, an adult wolf girl",
+      "framing": "full-body",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "format": "png",
+      "transparent": true,
+      "intendedExpressions": [
+        "neutral",
+        "amused",
+        "delighted",
+        "thoughtful",
+        "skeptical",
+        "surprised",
+        "concerned",
+        "sad",
+        "annoyed"
+      ]
     },
     "epic": {
       "label": "Epic Vex",
