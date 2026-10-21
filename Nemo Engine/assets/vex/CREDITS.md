@@ -88,6 +88,14 @@
 - Publication: uploaded as part of the project owner’s requested Vex asset-set workflow. No separate third-party artwork license is asserted here.
 - Format: full-body transparent PNG, 1024 × 1536. This is Gamemaster’s own image set; scene emotion does not switch her personality or costume.
 
+## Gentle Vex
+
+- Files: `gentle/neutral.png`, `gentle/amused.png`, `gentle/delighted.png`, `gentle/thoughtful.png`, `gentle/skeptical.png`, `gentle/surprised.png`, `gentle/concerned.png`, `gentle/sad.png`, `gentle/annoyed.png`.
+- Character and creative direction: Noah / NemoVonNirgend.
+- Source: generated with ChatGPT image generation from the approved Gentle full-body base and the supplied Vex character reference. The set preserves her loosely pinned purple hair, flowing lavender dress, pale-sage shawl, ivory shoes, silver pendant, wolf ears, and fluffy tail across nine expressions.
+- Publication: uploaded as part of the project owner’s requested Vex asset-set workflow. No separate third-party artwork license is asserted here.
+- Format: full-body transparent PNG, 1024 × 1536. This is Gentle’s own image set; scene emotion does not switch her personality or costume.
+
 Other personality folders remain placeholders until their artwork is published. When adding artwork, record the files, creator/source, publication permission or license, and required attribution here. Do not assume a preset license automatically covers separately contributed images.
 
 The optional legacy Catbox URL in the manifest points to the pre-existing commentary GIF. It has not been copied into this repository or relicensed by this catalog.
