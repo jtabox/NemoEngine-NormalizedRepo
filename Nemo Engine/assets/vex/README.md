@@ -1,6 +1,6 @@
 # Vex portrait assets
 
-Shared portrait catalog for the planned Vex commentary panel and NemoPresetExt OOC conversation box. Default / Narrative, Bubbly, Brooding / Angst, Chaotic, Clinical, Cozy, Crescent, and Dark Urban Fantasy each include nine full-body wolf-girl sprites. The catalog supplies artwork and metadata; it does not yet enable the panel, change presets, or implement extension chat.
+Shared portrait catalog for the planned Vex commentary panel and NemoPresetExt OOC conversation box. Default / Narrative, Bubbly, Brooding / Angst, Chaotic, Clinical, Cozy, Crescent, Dark Urban Fantasy, and Epic each include nine full-body wolf-girl sprites. The catalog supplies artwork and metadata; it does not yet enable the panel, change presets, or implement extension chat.
 
 ## Personality and expression
 
@@ -14,6 +14,7 @@ The selected personality chooses the image set. Her reaction chooses an expressi
 - **Cozy:** uses `cozy/`, with long loose purple waves, softly drooping wolf ears, an oversized cream cable-knit sweater, a dusty-plum skirt, knitted socks, warm slippers, and a fluffy wolf tail. All nine intended expressions are available as transparent 1024 × 1536 full-body PNGs: neutral, amused, delighted, thoughtful, skeptical, surprised, concerned, sad, and annoyed. Her reactions retain a warm, patient, nurturing character.
 - **Crescent:** uses `crescent/`, with a purple asymmetric undercut, a healed notch in one wolf ear, a worn black leather jacket, charcoal shirt, dark jeans, combat boots, and a low wolf tail. All nine intended expressions are available as transparent 1024 × 1536 full-body PNGs: neutral, amused, delighted, thoughtful, skeptical, surprised, concerned, sad, and annoyed. Her reactions retain a blunt, watchful, restrained character.
 - **Dark Urban Fantasy:** uses `dark-urban-fantasy/`, with a short purple bob, charcoal coat, oxblood midi dress, black tights, knee-high boots, silver jewelry, wolf ears, and a fluffy wolf tail. All nine intended expressions are available as transparent 1024 × 1536 full-body PNGs: neutral, amused, delighted, thoughtful, skeptical, surprised, concerned, sad, and annoyed. This approved revised appearance gives her a distinct silhouette from Default / Narrative while retaining her composed, watchful noir character.
+- **Epic:** uses `epic/`, with a long purple braid, silver plate armor with antique-gold trim, an ivory tabard, a purple mantle, a sheathed sword, wolf ears, and a fluffy wolf tail. All nine intended expressions are available as transparent 1024 × 1536 full-body PNGs: neutral, amused, delighted, thoughtful, skeptical, surprised, concerned, sad, and annoyed. Her reactions retain a dignified, courageous, humane character.
 - Other current personality options each have a separate folder and manifest mapping.
 - `masters/` reserves space for resolved Master Vex identities. Do not generate every possible combination. Register a stable Master ID and its own image set when artwork is available.
 
@@ -27,7 +28,7 @@ The selected personality chooses the image set. Her reaction chooses an expressi
 4. Supply `neutral` first. Set the set's status to `partial` while adding expressions, or `ready` when its intended set is complete. Update `assetVersion` whenever artwork or mappings change.
 5. Record artist/source, usage permission, and any required attribution in `CREDITS.md`.
 
-The Default / Narrative, Bubbly, Brooding / Angst, Chaotic, Clinical, Cozy, Crescent, and Dark Urban Fantasy worksheets each use nine expressions: neutral, amused, delighted, thoughtful, skeptical, surprised, concerned, sad, and annoyed. `intendedExpressions` records the complete target set; other optional slots may remain null even when a set is ready.
+The Default / Narrative, Bubbly, Brooding / Angst, Chaotic, Clinical, Cozy, Crescent, Dark Urban Fantasy, and Epic worksheets each use nine expressions: neutral, amused, delighted, thoughtful, skeptical, surprised, concerned, sad, and annoyed. `intendedExpressions` records the complete target set; other optional slots may remain null even when a set is ready.
 
 Other common expression slots: happy, excited, playful, smug, angry, embarrassed, weary. Not every personality needs every slot. Additional expressions can be registered explicitly. The manifest includes aliases for pensive, grinning, pouting, hurt, and faint-smile; expand these into distinct portraits later if useful.
 
