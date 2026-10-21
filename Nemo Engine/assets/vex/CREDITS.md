@@ -112,6 +112,14 @@
 - Publication: uploaded as part of the project owner’s requested Vex asset-set workflow. No separate third-party artwork license is asserted here.
 - Format: full-body transparent PNG, 1024 × 1536. This is Haar’s own image set; scene emotion does not switch her personality or costume.
 
+## Lustful Vex
+
+- Files: `lustful/neutral.png`, `lustful/amused.png`, `lustful/delighted.png`, `lustful/thoughtful.png`, `lustful/skeptical.png`, `lustful/surprised.png`, `lustful/concerned.png`, `lustful/sad.png`, `lustful/annoyed.png`.
+- Character and creative direction: Noah / NemoVonNirgend.
+- Source: generated with ChatGPT image generation from the approved Lustful full-body base and the supplied Vex character reference. The set preserves her flowing purple waves, wine-red satin gown, black opera gloves, wine-red pumps, antique-gold star jewelry, wolf ears, and fluffy tail across nine expressions.
+- Publication: uploaded as part of the project owner’s requested Vex asset-set workflow. No separate third-party artwork license is asserted here.
+- Format: full-body transparent PNG, 1024 × 1536. This is Lustful’s own image set; scene emotion does not switch her personality or costume.
+
 Other personality folders remain placeholders until their artwork is published. When adding artwork, record the files, creator/source, publication permission or license, and required attribution here. Do not assume a preset license automatically covers separately contributed images.
 
 The optional legacy Catbox URL in the manifest points to the pre-existing commentary GIF. It has not been copied into this repository or relicensed by this catalog.

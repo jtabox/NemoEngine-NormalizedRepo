@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "assetVersion": "0.15.0",
+  "assetVersion": "0.16.0",
   "baseUrl": "https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/",
   "defaultPersona": "default",
   "defaultExpression": "neutral",
@@ -832,23 +832,44 @@
     "lustful": {
       "label": "Lustful Vex",
       "directory": "lustful",
-      "status": "awaiting-artwork",
+      "status": "ready",
       "expressions": {
-        "neutral": null,
-        "amused": null,
+        "neutral": "lustful/neutral.png",
+        "amused": "lustful/amused.png",
         "happy": null,
         "excited": null,
         "playful": null,
         "smug": null,
-        "thoughtful": null,
-        "skeptical": null,
-        "surprised": null,
-        "concerned": null,
-        "sad": null,
+        "thoughtful": "lustful/thoughtful.png",
+        "skeptical": "lustful/skeptical.png",
+        "surprised": "lustful/surprised.png",
+        "concerned": "lustful/concerned.png",
+        "sad": "lustful/sad.png",
         "angry": null,
         "embarrassed": null,
-        "weary": null
-      }
+        "weary": null,
+        "delighted": "lustful/delighted.png",
+        "annoyed": "lustful/annoyed.png"
+      },
+      "character": "Vex, an adult wolf girl",
+      "framing": "full-body",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "format": "png",
+      "transparent": true,
+      "intendedExpressions": [
+        "neutral",
+        "amused",
+        "delighted",
+        "thoughtful",
+        "skeptical",
+        "surprised",
+        "concerned",
+        "sad",
+        "annoyed"
+      ]
     },
     "morbid": {
       "label": "Morbid Vex",
