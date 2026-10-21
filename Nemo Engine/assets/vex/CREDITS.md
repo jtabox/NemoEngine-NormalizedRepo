@@ -48,6 +48,14 @@
 - Publication: uploaded as part of the project owner’s requested Vex asset-set workflow. No separate third-party artwork license is asserted here.
 - Format: full-body transparent PNG, 1024 × 1536. This is Cozy’s own image set; scene emotion does not switch her personality or costume.
 
+## Crescent Vex
+
+- Files: `crescent/neutral.png`, `crescent/amused.png`, `crescent/delighted.png`, `crescent/thoughtful.png`, `crescent/skeptical.png`, `crescent/surprised.png`, `crescent/concerned.png`, `crescent/sad.png`, `crescent/annoyed.png`.
+- Character and creative direction: Noah / NemoVonNirgend.
+- Source: generated with ChatGPT image generation from the approved Crescent full-body base and the supplied Vex character reference. The set preserves her purple asymmetric undercut, healed ear notch and temple mark, worn leather jacket, charcoal shirt, dark jeans, combat boots, and low wolf tail across nine restrained expressions.
+- Publication: uploaded as part of the project owner’s requested Vex asset-set workflow. No separate third-party artwork license is asserted here.
+- Format: full-body transparent PNG, 1024 × 1536. This is Crescent’s own image set; scene emotion does not switch her personality or costume.
+
 Other personality folders remain placeholders until their artwork is published. When adding artwork, record the files, creator/source, publication permission or license, and required attribution here. Do not assume a preset license automatically covers separately contributed images.
 
 The optional legacy Catbox URL in the manifest points to the pre-existing commentary GIF. It has not been copied into this repository or relicensed by this catalog.
