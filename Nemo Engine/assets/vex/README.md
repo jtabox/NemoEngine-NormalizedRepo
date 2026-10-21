@@ -1,12 +1,12 @@
 # Vex portrait assets
 
-Shared portrait catalog for the planned Vex commentary panel and NemoPresetExt OOC conversation box. This commit establishes storage and metadata only: it does not enable the panel, change presets, or implement extension chat. No portrait artwork has been uploaded yet.
+Shared portrait catalog for the planned Vex commentary panel and NemoPresetExt OOC conversation box. Default / Narrative now includes nine full-body wolf-girl sprites. The catalog supplies artwork and metadata; it does not yet enable the panel, change presets, or implement extension chat.
 
 ## Personality and expression
 
 The selected personality chooses the image set. Her reaction chooses an expression within that set. A sad scene must not switch Bubbly Vex into Brooding Vex.
 
-- **Default / Narrative:** share `default/`, the classic Vex appearance.
+- **Default / Narrative:** share `default/`, the classic purple-haired wolf-girl appearance. All nine intended expressions are available: neutral, amused, delighted, thoughtful, skeptical, surprised, concerned, sad, and annoyed. These are transparent 1024 × 1536 full-body PNG masters; waist-up crops will follow later.
 - **Bubbly:** uses `bubbly/`, with her own energetic appearance and expressions.
 - **Brooding / Angst:** uses `brooding/`, with a distinct restrained appearance.
 - Other current personality options each have a separate folder and manifest mapping.
@@ -17,12 +17,14 @@ The selected personality chooses the image set. Her reaction chooses an expressi
 ## Add an expression set
 
 1. Put transparent WebP or PNG portraits in the personality's folder, for example `bubbly/neutral.webp`, `bubbly/excited.webp`, and `bubbly/concerned.webp`.
-2. Keep the canvas, character scale, crop, and bottom-center anchor consistent across the whole set. Suggested canvas: 768 × 1024. Keep important features away from the edges. Include only the character, without a baked-in dialogue box, lettering, or background. Prefer static assets initially; movement can be provided by the renderer.
+2. Keep the canvas, character scale, crop, and bottom-center anchor consistent across the whole set. The current full-body set uses 1024 × 1536. A separate waist-up set can use 768 × 1024 when added. Keep important features away from the edges. Include only the character, without a baked-in dialogue box, lettering, or background. Prefer static assets initially; movement can be provided by the renderer.
 3. Set each corresponding `sets.<set>.expressions.<expression>` value to its relative path, e.g. `"bubbly/excited.webp"`. Paths are relative to this folder, not the repository root. Leave missing images `null`; never register nonexistent files.
 4. Supply `neutral` first. Set the set's status to `partial` while adding expressions, or `ready` when its intended set is complete. Update `assetVersion` whenever artwork or mappings change.
 5. Record artist/source, usage permission, and any required attribution in `CREDITS.md`.
 
-Common expression slots: neutral, amused, happy, excited, playful, smug, thoughtful, skeptical, surprised, concerned, sad, angry, embarrassed, weary. Not every personality needs every slot. Additional expressions can be registered explicitly. The manifest includes aliases for pensive, grinning, pouting, hurt, and faint-smile; expand these into distinct portraits later if useful.
+The initial Default / Narrative worksheet uses nine expressions: neutral, amused, delighted, thoughtful, skeptical, surprised, concerned, sad, and annoyed. `intendedExpressions` records the complete target set; other optional slots may remain null even when a set is ready.
+
+Other common expression slots: happy, excited, playful, smug, angry, embarrassed, weary. Not every personality needs every slot. Additional expressions can be registered explicitly. The manifest includes aliases for pensive, grinning, pouting, hurt, and faint-smile; expand these into distinct portraits later if useful.
 
 ## Loading and fallback contract
 
