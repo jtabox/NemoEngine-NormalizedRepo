@@ -1,13 +1,13 @@
 # Vex portrait assets
 
-Shared portrait catalog for the planned Vex commentary panel and NemoPresetExt OOC conversation box. Default / Narrative now includes nine full-body wolf-girl sprites. The catalog supplies artwork and metadata; it does not yet enable the panel, change presets, or implement extension chat.
+Shared portrait catalog for the planned Vex commentary panel and NemoPresetExt OOC conversation box. Default / Narrative and Bubbly each include nine full-body wolf-girl sprites. The catalog supplies artwork and metadata; it does not yet enable the panel, change presets, or implement extension chat.
 
 ## Personality and expression
 
 The selected personality chooses the image set. Her reaction chooses an expression within that set. A sad scene must not switch Bubbly Vex into Brooding Vex.
 
 - **Default / Narrative:** share `default/`, the classic purple-haired wolf-girl appearance. All nine intended expressions are available: neutral, amused, delighted, thoughtful, skeptical, surprised, concerned, sad, and annoyed. These are transparent 1024 × 1536 full-body PNG masters; waist-up crops will follow later.
-- **Bubbly:** uses `bubbly/`, with her own energetic appearance and expressions.
+- **Bubbly:** uses `bubbly/`, with a lavender high ponytail, pastel sweater, wolf ears, and a fluffy wolf tail. All nine intended expressions are available as transparent 1024 × 1536 full-body PNGs: neutral, amused, delighted, thoughtful, skeptical, surprised, concerned, sad, and annoyed.
 - **Brooding / Angst:** uses `brooding/`, with a distinct restrained appearance.
 - Other current personality options each have a separate folder and manifest mapping.
 - `masters/` reserves space for resolved Master Vex identities. Do not generate every possible combination. Register a stable Master ID and its own image set when artwork is available.
@@ -22,7 +22,7 @@ The selected personality chooses the image set. Her reaction chooses an expressi
 4. Supply `neutral` first. Set the set's status to `partial` while adding expressions, or `ready` when its intended set is complete. Update `assetVersion` whenever artwork or mappings change.
 5. Record artist/source, usage permission, and any required attribution in `CREDITS.md`.
 
-The initial Default / Narrative worksheet uses nine expressions: neutral, amused, delighted, thoughtful, skeptical, surprised, concerned, sad, and annoyed. `intendedExpressions` records the complete target set; other optional slots may remain null even when a set is ready.
+The Default / Narrative and Bubbly worksheets each use nine expressions: neutral, amused, delighted, thoughtful, skeptical, surprised, concerned, sad, and annoyed. `intendedExpressions` records the complete target set; other optional slots may remain null even when a set is ready.
 
 Other common expression slots: happy, excited, playful, smug, angry, embarrassed, weary. Not every personality needs every slot. Additional expressions can be registered explicitly. The manifest includes aliases for pensive, grinning, pouting, hurt, and faint-smile; expand these into distinct portraits later if useful.
 
