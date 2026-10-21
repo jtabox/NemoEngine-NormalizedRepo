@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "assetVersion": "0.4.0",
+  "assetVersion": "0.5.0",
   "baseUrl": "https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/",
   "defaultPersona": "default",
   "defaultExpression": "neutral",
@@ -370,23 +370,44 @@
     "chaotic": {
       "label": "Chaotic Vex",
       "directory": "chaotic",
-      "status": "awaiting-artwork",
+      "status": "ready",
       "expressions": {
-        "neutral": null,
-        "amused": null,
+        "neutral": "chaotic/neutral.png",
+        "amused": "chaotic/amused.png",
         "happy": null,
         "excited": null,
         "playful": null,
         "smug": null,
-        "thoughtful": null,
-        "skeptical": null,
-        "surprised": null,
-        "concerned": null,
-        "sad": null,
+        "thoughtful": "chaotic/thoughtful.png",
+        "skeptical": "chaotic/skeptical.png",
+        "surprised": "chaotic/surprised.png",
+        "concerned": "chaotic/concerned.png",
+        "sad": "chaotic/sad.png",
         "angry": null,
         "embarrassed": null,
-        "weary": null
-      }
+        "weary": null,
+        "delighted": "chaotic/delighted.png",
+        "annoyed": "chaotic/annoyed.png"
+      },
+      "character": "Vex, an adult wolf girl",
+      "framing": "full-body",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "format": "png",
+      "transparent": true,
+      "intendedExpressions": [
+        "neutral",
+        "amused",
+        "delighted",
+        "thoughtful",
+        "skeptical",
+        "surprised",
+        "concerned",
+        "sad",
+        "annoyed"
+      ]
     },
     "clinical": {
       "label": "Clinical Vex",
