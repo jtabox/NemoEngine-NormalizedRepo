@@ -1,0 +1,881 @@
+{
+  "schemaVersion": 1,
+  "assetVersion": "0.1.0",
+  "baseUrl": "https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/",
+  "defaultPersona": "default",
+  "defaultExpression": "neutral",
+  "aliases": {
+    "angst": "brooding"
+  },
+  "expressionAliases": {
+    "pensive": "thoughtful",
+    "grinning": "happy",
+    "pouting": "sad",
+    "hurt": "sad",
+    "faint-smile": "amused"
+  },
+  "fallbackOrder": [
+    "selected-set.requested-expression",
+    "selected-set.neutral",
+    "default.neutral",
+    "text-only"
+  ],
+  "personalities": {
+    "default": {
+      "label": "Default Vex",
+      "promptIds": [
+        "v11-299-default-vex",
+        "default_vex"
+      ],
+      "assetSet": "default"
+    },
+    "brooding": {
+      "label": "Brooding Vex",
+      "promptIds": [
+        "v11-301-vex-brooding-vex"
+      ],
+      "assetSet": "brooding"
+    },
+    "bubbly": {
+      "label": "Bubbly Vex",
+      "promptIds": [
+        "v11-300-vex-bubbly-vex"
+      ],
+      "assetSet": "bubbly"
+    },
+    "chaotic": {
+      "label": "Chaotic Vex",
+      "promptIds": [
+        "v11-322-vex-chaotic-vex"
+      ],
+      "assetSet": "chaotic"
+    },
+    "clinical": {
+      "label": "Clinical Vex",
+      "promptIds": [
+        "v11-319-vex-clinical-vex"
+      ],
+      "assetSet": "clinical"
+    },
+    "cozy": {
+      "label": "Cozy Vex",
+      "promptIds": [
+        "v11-317-vex-cozy-vex"
+      ],
+      "assetSet": "cozy"
+    },
+    "crescent": {
+      "label": "Crescent Vex",
+      "promptIds": [
+        "v11-323-vex-crescent-vex"
+      ],
+      "assetSet": "crescent"
+    },
+    "dark-urban-fantasy": {
+      "label": "Dark Urban Fantasy Vex",
+      "promptIds": [
+        "v11-311-vex-dark-urban-fantasy-vex"
+      ],
+      "assetSet": "dark-urban-fantasy"
+    },
+    "epic": {
+      "label": "Epic Vex",
+      "promptIds": [
+        "v11-324-vex-epic-vex"
+      ],
+      "assetSet": "epic"
+    },
+    "explosive": {
+      "label": "Explosive Vex",
+      "promptIds": [
+        "v11-315-vex-explosive-vex"
+      ],
+      "assetSet": "explosive"
+    },
+    "gamemaster": {
+      "label": "Gamemaster Vex",
+      "promptIds": [
+        "v11-313-vex-gamemaster-vex"
+      ],
+      "assetSet": "gamemaster"
+    },
+    "gentle": {
+      "label": "Gentle Vex",
+      "promptIds": [
+        "v11-325-vex-gentle-vex"
+      ],
+      "assetSet": "gentle"
+    },
+    "grimdark": {
+      "label": "Grimdark Vex",
+      "promptIds": [
+        "v11-316-vex-grimdark-vex"
+      ],
+      "assetSet": "grimdark"
+    },
+    "haar": {
+      "label": "Haar Vex",
+      "promptIds": [
+        "v11-326-vex-haar-vex"
+      ],
+      "assetSet": "haar"
+    },
+    "lustful": {
+      "label": "Lustful Vex",
+      "promptIds": [
+        "v11-327-vex-lustful-vex"
+      ],
+      "assetSet": "lustful"
+    },
+    "morbid": {
+      "label": "Morbid Vex",
+      "promptIds": [
+        "v11-314-vex-morbid-vex"
+      ],
+      "assetSet": "morbid"
+    },
+    "narrative": {
+      "label": "Narrative Vex",
+      "promptIds": [
+        "v11-305-vex-narrative-vex"
+      ],
+      "assetSet": "default"
+    },
+    "noir": {
+      "label": "Noir Vex",
+      "promptIds": [
+        "v11-312-vex-noir-vex"
+      ],
+      "assetSet": "noir"
+    },
+    "obsessive": {
+      "label": "Obsessive Vex",
+      "promptIds": [
+        "v11-303-vex-obsessive-vex"
+      ],
+      "assetSet": "obsessive"
+    },
+    "petrichor": {
+      "label": "Petrichor Vex",
+      "promptIds": [
+        "v11-302-vex-petrichor-vex"
+      ],
+      "assetSet": "petrichor"
+    },
+    "philosophical": {
+      "label": "Philosophical Vex",
+      "promptIds": [
+        "v11-321-vex-philosophical-vex"
+      ],
+      "assetSet": "philosophical"
+    },
+    "sensory": {
+      "label": "Sensory Vex",
+      "promptIds": [
+        "v11-309-vex-sensory-vex"
+      ],
+      "assetSet": "sensory"
+    },
+    "shadowy": {
+      "label": "Shadowy Vex",
+      "promptIds": [
+        "v11-310-vex-shadowy-vex"
+      ],
+      "assetSet": "shadowy"
+    },
+    "soft-romance": {
+      "label": "Soft Romance Vex",
+      "promptIds": [
+        "v11-320-vex-soft-romance-vex"
+      ],
+      "assetSet": "soft-romance"
+    },
+    "tactical": {
+      "label": "Tactical Vex",
+      "promptIds": [
+        "v11-306-vex-tactical-vex"
+      ],
+      "assetSet": "tactical"
+    },
+    "tsundere": {
+      "label": "Tsundere Vex",
+      "promptIds": [
+        "v11-318-vex-tsundere-vex"
+      ],
+      "assetSet": "tsundere"
+    },
+    "underdog": {
+      "label": "Underdog Vex",
+      "promptIds": [
+        "v11-308-vex-underdog-vex"
+      ],
+      "assetSet": "underdog"
+    },
+    "unhinged": {
+      "label": "Unhinged Vex",
+      "promptIds": [
+        "v11-328-vex-unhinged-vex"
+      ],
+      "assetSet": "unhinged"
+    },
+    "whimsical": {
+      "label": "Whimsical Vex",
+      "promptIds": [
+        "v11-307-vex-whimsical-vex"
+      ],
+      "assetSet": "whimsical"
+    },
+    "goon-gremlin": {
+      "label": "Goon Gremlin Vex",
+      "promptIds": [
+        "v11-304-vex-goon-gremlin-vex"
+      ],
+      "assetSet": "goon-gremlin"
+    },
+    "gooner": {
+      "label": "Gooner Vex",
+      "promptIds": [
+        "v11-329-vex-gooner-vex"
+      ],
+      "assetSet": "gooner"
+    }
+  },
+  "sets": {
+    "default": {
+      "label": "Classic Vex",
+      "directory": "default",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "brooding": {
+      "label": "Brooding Vex",
+      "directory": "brooding",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "bubbly": {
+      "label": "Bubbly Vex",
+      "directory": "bubbly",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "chaotic": {
+      "label": "Chaotic Vex",
+      "directory": "chaotic",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "clinical": {
+      "label": "Clinical Vex",
+      "directory": "clinical",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "cozy": {
+      "label": "Cozy Vex",
+      "directory": "cozy",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "crescent": {
+      "label": "Crescent Vex",
+      "directory": "crescent",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "dark-urban-fantasy": {
+      "label": "Dark Urban Fantasy Vex",
+      "directory": "dark-urban-fantasy",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "epic": {
+      "label": "Epic Vex",
+      "directory": "epic",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "explosive": {
+      "label": "Explosive Vex",
+      "directory": "explosive",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "gamemaster": {
+      "label": "Gamemaster Vex",
+      "directory": "gamemaster",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "gentle": {
+      "label": "Gentle Vex",
+      "directory": "gentle",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "grimdark": {
+      "label": "Grimdark Vex",
+      "directory": "grimdark",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "haar": {
+      "label": "Haar Vex",
+      "directory": "haar",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "lustful": {
+      "label": "Lustful Vex",
+      "directory": "lustful",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "morbid": {
+      "label": "Morbid Vex",
+      "directory": "morbid",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "noir": {
+      "label": "Noir Vex",
+      "directory": "noir",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "obsessive": {
+      "label": "Obsessive Vex",
+      "directory": "obsessive",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "petrichor": {
+      "label": "Petrichor Vex",
+      "directory": "petrichor",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "philosophical": {
+      "label": "Philosophical Vex",
+      "directory": "philosophical",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "sensory": {
+      "label": "Sensory Vex",
+      "directory": "sensory",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "shadowy": {
+      "label": "Shadowy Vex",
+      "directory": "shadowy",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "soft-romance": {
+      "label": "Soft Romance Vex",
+      "directory": "soft-romance",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "tactical": {
+      "label": "Tactical Vex",
+      "directory": "tactical",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "tsundere": {
+      "label": "Tsundere Vex",
+      "directory": "tsundere",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "underdog": {
+      "label": "Underdog Vex",
+      "directory": "underdog",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "unhinged": {
+      "label": "Unhinged Vex",
+      "directory": "unhinged",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "whimsical": {
+      "label": "Whimsical Vex",
+      "directory": "whimsical",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "goon-gremlin": {
+      "label": "Goon Gremlin Vex",
+      "directory": "goon-gremlin",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    },
+    "gooner": {
+      "label": "Gooner Vex",
+      "directory": "gooner",
+      "status": "awaiting-artwork",
+      "expressions": {
+        "neutral": null,
+        "amused": null,
+        "happy": null,
+        "excited": null,
+        "playful": null,
+        "smug": null,
+        "thoughtful": null,
+        "skeptical": null,
+        "surprised": null,
+        "concerned": null,
+        "sad": null,
+        "angry": null,
+        "embarrassed": null,
+        "weary": null
+      }
+    }
+  },
+  "masters": {},
+  "legacyFallback": {
+    "url": "https://files.catbox.moe/j35b2w.gif",
+    "enabledByDefault": false,
+    "description": "Existing commentary GIF; optional legacy fallback, not a personality portrait."
+  }
+}

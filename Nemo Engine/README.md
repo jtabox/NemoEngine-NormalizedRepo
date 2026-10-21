@@ -593,3 +593,7 @@ These hashes describe the prepared files used for this guide. They are not proof
 Older complete presets are retained in [Archive](./Archive/). The previous v11.5.1 README is preserved as [historical documentation](./Archive/README-v11.5.1.md); it describes an older configuration and retains its original text. [Archived Prompts](./Archived%20Prompts/) remains separate and has not been reorganized by this release cleanup.
 
 Nemo Engine is maintained by [NemoVonNirgend](https://github.com/NemoVonNirgend). Original contributor credits remain in the preset modules and historical materials.
+
+## Vex portrait assets
+
+The [Vex asset catalog](assets/vex/README.md) defines personality-specific portrait folders, expression keys, and the shared manifest for future commentary panels and NemoPresetExt OOC conversations. Artwork and runtime integration are tracked separately.
