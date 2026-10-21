@@ -160,6 +160,15 @@
 - Publication: uploaded as part of the project owner’s requested Vex asset-set workflow. No separate third-party artwork license is asserted here.
 - Format: full-body transparent PNG, 1024 × 1536. This is Philosophical’s own image set; scene emotion does not switch her personality or costume.
 
+## Sensory Vex
+
+- Files: `sensory/neutral.png`, `sensory/amused.png`, `sensory/delighted.png`, `sensory/thoughtful.png`, `sensory/skeptical.png`, `sensory/surprised.png`, `sensory/concerned.png`, `sensory/sad.png`, `sensory/annoyed.png`.
+- Character and creative direction: Noah / NemoVonNirgend.
+- Classic Sensory / Tactile Scribe persona interview: Steel-skull, as credited in the preset.
+- Source: generated with ChatGPT image generation from the approved Sensory full-body base and the supplied Vex character reference. The set preserves her purple low ponytail, copper ribbon and jewelry, teal silk blouse, copper scarf, cinnamon suede wrap skirt, brown ankle boots, wolf ears, and fluffy tail across nine expressions.
+- Publication: uploaded as part of the project owner’s requested Vex asset-set workflow. No separate third-party artwork license is asserted here.
+- Format: full-body transparent PNG, 1024 × 1536. This is Sensory’s own image set; scene emotion does not switch her personality or costume.
+
 Other personality folders remain placeholders until their artwork is published. When adding artwork, record the files, creator/source, publication permission or license, and required attribution here. Do not assume a preset license automatically covers separately contributed images.
 
 The optional legacy Catbox URL in the manifest points to the pre-existing commentary GIF. It has not been copied into this repository or relicensed by this catalog.
