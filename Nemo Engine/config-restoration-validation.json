@@ -1,0 +1,414 @@
+{
+  "baseline": "October 18 Full preset, saved profile 100001",
+  "overrides": {
+    "v11-299-default-vex": false,
+    "v11-189-genre-erotica": true,
+    "v11-139-format-light-novel": true
+  },
+  "explanation": {
+    "v11-299-default-vex": "Full used Default Vex as a fallback request alongside the selected Goon Gremlin. Lite uses exclusive personas; disable Default to preserve the selected persona.",
+    "v11-189-genre-erotica": "Maps the removed Full nc-genre-erotica selection to the existing Lite genre selector.",
+    "v11-139-format-light-novel": "Maps the removed Full nc-style-light_novel selection to the existing Lite format selector."
+  },
+  "files": {
+    "Nemo_Engine_v12.3.json": {
+      "changedSelectionsPerProfile": 37,
+      "enabledPerProfile": 194,
+      "gitBlob": "01ceac54055df067e6e56735c7fa22ca71c37f0e",
+      "changes": [
+        {
+          "profile": 100000,
+          "id": "v11-133-world-logic-anime",
+          "enabled": false
+        },
+        {
+          "profile": 100000,
+          "id": "v11-134-world-logic-hentai",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "v11-299-default-vex",
+          "enabled": false
+        },
+        {
+          "profile": 100000,
+          "id": "v11-304-vex-goon-gremlin-vex",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "vex_commentary",
+          "enabled": false
+        },
+        {
+          "profile": 100000,
+          "id": "nemo_retro_frame",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo_consequence_core",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo_consequence_return_by_death",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "v11-189-genre-erotica",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "v11-249-utility-decentered-protagonist",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "v11-250-utility-parallel-storylines",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-inline-scene-effects",
+          "enabled": false
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-phone-template",
+          "enabled": false
+        },
+        {
+          "profile": 100000,
+          "id": "v11-633-utility-anti-echo-user-agency",
+          "enabled": false
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-response-structure-compiler",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-mp-group-body",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-mp-group-appraisal",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-mp-group-affect",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-mp-group-memory",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-mp-group-choice",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-mp-group-social",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-mp-group-workspace",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-mp-group-map",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-mp-group-voice",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-mp-group-resolution",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo_pad_npcdetails",
+          "enabled": false
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-planning-anti-ramble",
+          "enabled": false
+        },
+        {
+          "profile": 100000,
+          "id": "cot_step_infoasymmetry",
+          "enabled": false
+        },
+        {
+          "profile": 100000,
+          "id": "cot_step_charstate",
+          "enabled": false
+        },
+        {
+          "profile": 100000,
+          "id": "cot_step_nsfwfocus",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "cot_step_htmlmarkers",
+          "enabled": false
+        },
+        {
+          "profile": 100000,
+          "id": "v11-182-nsfw-proactive-partners",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "v11-184-nsfw-sexual-physiology",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "v11-622-nsfw-hentai-mode",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "v11-254-consent-consent-user",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "v11-255-consent-consent-acknowledged",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "v11-248-utility-extreme-content",
+          "enabled": true
+        }
+      ]
+    },
+    "Nemo_Engine_v12.3_Message_Dock.json": {
+      "changedSelectionsPerProfile": 37,
+      "enabledPerProfile": 194,
+      "gitBlob": "fd66a0f607290a119a043434082b6b1ce9f6e5cf",
+      "changes": [
+        {
+          "profile": 100000,
+          "id": "v11-133-world-logic-anime",
+          "enabled": false
+        },
+        {
+          "profile": 100000,
+          "id": "v11-134-world-logic-hentai",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "v11-299-default-vex",
+          "enabled": false
+        },
+        {
+          "profile": 100000,
+          "id": "v11-304-vex-goon-gremlin-vex",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "vex_commentary",
+          "enabled": false
+        },
+        {
+          "profile": 100000,
+          "id": "nemo_retro_frame",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo_consequence_core",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo_consequence_return_by_death",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "v11-189-genre-erotica",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "v11-249-utility-decentered-protagonist",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "v11-250-utility-parallel-storylines",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-inline-scene-effects",
+          "enabled": false
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-phone-template",
+          "enabled": false
+        },
+        {
+          "profile": 100000,
+          "id": "v11-633-utility-anti-echo-user-agency",
+          "enabled": false
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-response-structure-compiler",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-mp-group-body",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-mp-group-appraisal",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-mp-group-affect",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-mp-group-memory",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-mp-group-choice",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-mp-group-social",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-mp-group-workspace",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-mp-group-map",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-mp-group-voice",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-mp-group-resolution",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "nemo_pad_npcdetails",
+          "enabled": false
+        },
+        {
+          "profile": 100000,
+          "id": "nemo-planning-anti-ramble",
+          "enabled": false
+        },
+        {
+          "profile": 100000,
+          "id": "cot_step_infoasymmetry",
+          "enabled": false
+        },
+        {
+          "profile": 100000,
+          "id": "cot_step_charstate",
+          "enabled": false
+        },
+        {
+          "profile": 100000,
+          "id": "cot_step_nsfwfocus",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "cot_step_htmlmarkers",
+          "enabled": false
+        },
+        {
+          "profile": 100000,
+          "id": "v11-182-nsfw-proactive-partners",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "v11-184-nsfw-sexual-physiology",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "v11-622-nsfw-hentai-mode",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "v11-254-consent-consent-user",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "v11-255-consent-consent-acknowledged",
+          "enabled": true
+        },
+        {
+          "profile": 100000,
+          "id": "v11-248-utility-extreme-content",
+          "enabled": true
+        }
+      ]
+    }
+  },
+  "checks": {
+    "onlyEnabledFlagsChanged": true,
+    "bothProfilesMatched": true,
+    "exclusiveGroupsValid": true,
+    "twoDepthZeroInjectorsPreserved": true,
+    "allRegexAndPromptTextPreserved": true
+  },
+  "macroValidation": {
+    "passed": true,
+    "cases": 14,
+    "newDiagnostics": 0,
+    "engineCommit": "06bde939fb1e9c4c8d8641d810f0a916b5bce127",
+    "limitations": "Fixture variable store and card/lore values; no live provider or full SillyTavern message transport.",
+    "randomChoice": "First alternative selected deterministically for paired comparisons."
+  }
+}
