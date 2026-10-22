@@ -107,3 +107,28 @@ The Python sample renderer translates JavaScript named captures/backreferences
 and flags only for local sample generation. The authoritative compatibility
 checks execute the actual SillyTavern regex engine, followed by its Markdown,
 sanitizer, and CSS processing. No JavaScript is injected into chat messages.
+
+
+## Optional left companion panel
+
+To put the latest Vex panel to the **left of chat**, append the contents of
+[`left-dock.css`](left-dock.css) to **User Settings → Miscellaneous → Custom CSS**.
+Keep your existing Custom CSS and the Vex regex renderer enabled. Turn
+**MovingUI off** for the automatic dock. This is a one-time global stylesheet
+addition; importing the preset alone does not install it.
+
+On desktop windows at least 1200 px wide and 720 px high with a mouse/trackpad,
+the latest loaded Vex panel appears outside the chat. The portrait, nameplate,
+dialogue and Next/Back arrows stay together. Long dialogue scrolls within its
+window. Earlier Vex panels are hidden in dock mode; small/touch layouts and
+MovingUI use the original inline presentation. A new human reply keeps the
+last panel until another Vex reply replaces it.
+
+The sheet reserves a left gutter and keeps a typical 64 px vertical toolbar
+clear. It preserves the configured chat width when space permits and caps
+very wide layouts to prevent overlap. Chat scrolling and the theme's toolbar
+remain intact. The chat's backdrop blur is disabled only during active dock
+mode so the panel can escape the chat's clipping container; other theme
+filters remain unchanged. Remove the added stylesheet to restore the theme
+layout. Validation against the official chat, mobile, waifuMode and vertical
+toolbar styles is recorded in [`left-dock-validation.json`](left-dock-validation.json).

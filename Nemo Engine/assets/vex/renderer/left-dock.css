@@ -1,0 +1,111 @@
+/* Optional global SillyTavern Custom CSS. Paste once in UI theme settings.
+   The message renderer and model-output format stay unchanged.
+   Desktop: latest Vex panel at the LEFT of chat. Small screens/MovingUI: inline.
+   This sheet reserves room only while a Vex panel is present. */
+
+@supports selector(.mes:has(form.custom-nemo-vn)) {
+    @media (min-width: 1200px) and (min-height: 720px) and (pointer: fine) {
+        body:not(.movingUI):has(#chat form.custom-nemo-vn) {
+            --nemo-vex-dock-width: 340px;
+            --nemo-vex-dock-gap: 24px;
+            --nemo-vex-dock-edge: 84px;
+            --nemo-vex-chat-right-edge: 18px;
+            --nemo-vex-chat-width: min(var(--sheldWidth, 50vw), calc(100dvw - var(--nemo-vex-dock-width) - var(--nemo-vex-dock-gap) - var(--nemo-vex-dock-edge) - var(--nemo-vex-chat-right-edge)));
+            --nemo-vex-chat-left: max(calc((100dvw - var(--nemo-vex-chat-width)) / 2), calc(var(--nemo-vex-dock-width) + var(--nemo-vex-dock-gap) + var(--nemo-vex-dock-edge)));
+        }
+
+        body:not(.movingUI):has(#chat form.custom-nemo-vn) #sheld {
+            width: var(--nemo-vex-chat-width) !important;
+            left: var(--nemo-vex-chat-left) !important;
+            right: auto !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+
+        /* A backdrop filter creates a fixed-position containing block in ST.
+           Clear only this chat filter while docking; keep chat scrolling,
+           clipping, tint, and all other theme filters unchanged. */
+        body:not(.movingUI):has(#chat form.custom-nemo-vn) #chat {
+            backdrop-filter: none !important;
+            -webkit-backdrop-filter: none !important;
+        }
+
+        /* History returns to its original inline layout on smaller screens.
+           Wide dock mode displays only the newest Vex panel. */
+        body:not(.movingUI) #chat .mes_text form.custom-nemo-vn {
+            display: none !important;
+        }
+
+        /* During ST swipe animation, .slide would also trap the fixed panel. */
+        body:not(.movingUI) #chat > .mes:has(.mes_text form.custom-nemo-vn):not(:has(~ .mes .mes_text form.custom-nemo-vn)) {
+            transform: none !important;
+            will-change: auto !important;
+            animation: none !important;
+        }
+
+        body:not(.movingUI) #chat > .mes:has(.mes_text form.custom-nemo-vn):not(:has(~ .mes .mes_text form.custom-nemo-vn)) .mes_text form.custom-nemo-vn:not(:has(~ form.custom-nemo-vn)) {
+            display: block !important;
+            position: fixed !important;
+            z-index: 120 !important;
+            left: calc(var(--nemo-vex-chat-left) - var(--nemo-vex-dock-width) - var(--nemo-vex-dock-gap)) !important;
+            top: 50dvh !important;
+            right: auto !important;
+            bottom: auto !important;
+            transform: translateY(-50%) !important;
+            width: var(--nemo-vex-dock-width) !important;
+            max-width: var(--nemo-vex-dock-width) !important;
+            height: auto !important;
+            margin: 0 !important;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        body:not(.movingUI) #chat > .mes:has(.mes_text form.custom-nemo-vn):not(:has(~ .mes .mes_text form.custom-nemo-vn)) .mes_text form.custom-nemo-vn:not(:has(~ form.custom-nemo-vn)) .custom-nemo-vn-slide {
+            padding-top: 248px !important;
+        }
+
+        body:not(.movingUI) #chat > .mes:has(.mes_text form.custom-nemo-vn):not(:has(~ .mes .mes_text form.custom-nemo-vn)) .mes_text form.custom-nemo-vn:not(:has(~ form.custom-nemo-vn)) .custom-nemo-vn-window {
+            height: clamp(230px, 32dvh, 310px) !important;
+            min-height: 230px !important;
+        }
+
+        body:not(.movingUI) #chat > .mes:has(.mes_text form.custom-nemo-vn):not(:has(~ .mes .mes_text form.custom-nemo-vn)) .mes_text form.custom-nemo-vn:not(:has(~ form.custom-nemo-vn)) .custom-nemo-vn-portrait {
+            top: -248px !important;
+            height: 480px !important;
+        }
+
+        body:not(.movingUI) #chat > .mes:has(.mes_text form.custom-nemo-vn):not(:has(~ .mes .mes_text form.custom-nemo-vn)) .mes_text form.custom-nemo-vn:not(:has(~ form.custom-nemo-vn)) .custom-nemo-vn-portrait img {
+            height: 480px !important;
+        }
+
+        body:not(.movingUI) #chat > .mes:has(.mes_text form.custom-nemo-vn):not(:has(~ .mes .mes_text form.custom-nemo-vn)) .mes_text form.custom-nemo-vn:not(:has(~ form.custom-nemo-vn)) .custom-nemo-vn-speech {
+            display: flex !important;
+            flex-direction: column;
+            flex: 1 1 auto;
+            min-height: 0 !important;
+            padding: 34px 20px 11px;
+        }
+
+        body:not(.movingUI) #chat > .mes:has(.mes_text form.custom-nemo-vn):not(:has(~ .mes .mes_text form.custom-nemo-vn)) .mes_text form.custom-nemo-vn:not(:has(~ form.custom-nemo-vn)) .custom-nemo-vn-dialogue {
+            flex: 1 1 auto;
+            min-height: 0;
+            max-height: none;
+            padding-right: 7px;
+            font-size: 15px;
+            line-height: 1.6;
+            overflow-y: auto;
+            overscroll-behavior: contain;
+            scrollbar-width: thin;
+            scrollbar-color: #9e7abd transparent;
+        }
+
+        body:not(.movingUI) #chat > .mes:has(.mes_text form.custom-nemo-vn):not(:has(~ .mes .mes_text form.custom-nemo-vn)) .mes_text form.custom-nemo-vn:not(:has(~ form.custom-nemo-vn)) .custom-nemo-vn-nav {
+            flex: 0 0 auto;
+            padding: 8px 14px 13px;
+        }
+
+        body:not(.movingUI) #chat > .mes:has(.mes_text form.custom-nemo-vn):not(:has(~ .mes .mes_text form.custom-nemo-vn)) .mes_text form.custom-nemo-vn:not(:has(~ form.custom-nemo-vn)) .custom-nemo-vn-slide:not(:has(.custom-nemo-vn-portrait img)) {
+            padding-top: 22px !important;
+        }
+    }
+}
