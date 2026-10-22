@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "assetVersion": "0.26.0",
+  "assetVersion": "0.27.0",
   "baseUrl": "https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/",
   "defaultPersona": "default",
   "defaultExpression": "neutral",
@@ -1294,107 +1294,212 @@
     "underdog": {
       "label": "Underdog Vex",
       "directory": "underdog",
-      "status": "awaiting-artwork",
+      "status": "ready",
       "expressions": {
-        "neutral": null,
-        "amused": null,
+        "neutral": "underdog/neutral.png",
+        "amused": "underdog/amused.png",
         "happy": null,
         "excited": null,
         "playful": null,
         "smug": null,
-        "thoughtful": null,
-        "skeptical": null,
-        "surprised": null,
-        "concerned": null,
-        "sad": null,
+        "thoughtful": "underdog/thoughtful.png",
+        "skeptical": "underdog/skeptical.png",
+        "surprised": "underdog/surprised.png",
+        "concerned": "underdog/concerned.png",
+        "sad": "underdog/sad.png",
         "angry": null,
         "embarrassed": null,
-        "weary": null
-      }
+        "weary": null,
+        "delighted": "underdog/delighted.png",
+        "annoyed": "underdog/annoyed.png"
+      },
+      "character": "Vex, an adult wolf woman",
+      "framing": "full-body",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "format": "png",
+      "transparent": true,
+      "intendedExpressions": [
+        "neutral",
+        "amused",
+        "delighted",
+        "thoughtful",
+        "skeptical",
+        "surprised",
+        "concerned",
+        "sad",
+        "annoyed"
+      ]
     },
     "unhinged": {
       "label": "Unhinged Vex",
       "directory": "unhinged",
-      "status": "awaiting-artwork",
+      "status": "ready",
       "expressions": {
-        "neutral": null,
-        "amused": null,
+        "neutral": "unhinged/neutral.png",
+        "amused": "unhinged/amused.png",
         "happy": null,
         "excited": null,
         "playful": null,
         "smug": null,
-        "thoughtful": null,
-        "skeptical": null,
-        "surprised": null,
-        "concerned": null,
-        "sad": null,
+        "thoughtful": "unhinged/thoughtful.png",
+        "skeptical": "unhinged/skeptical.png",
+        "surprised": "unhinged/surprised.png",
+        "concerned": "unhinged/concerned.png",
+        "sad": "unhinged/sad.png",
         "angry": null,
         "embarrassed": null,
-        "weary": null
-      }
+        "weary": null,
+        "delighted": "unhinged/delighted.png",
+        "annoyed": "unhinged/annoyed.png"
+      },
+      "character": "Vex, an adult wolf woman",
+      "framing": "full-body",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "format": "png",
+      "transparent": true,
+      "intendedExpressions": [
+        "neutral",
+        "amused",
+        "delighted",
+        "thoughtful",
+        "skeptical",
+        "surprised",
+        "concerned",
+        "sad",
+        "annoyed"
+      ]
     },
     "whimsical": {
       "label": "Whimsical Vex",
       "directory": "whimsical",
-      "status": "awaiting-artwork",
+      "status": "ready",
       "expressions": {
-        "neutral": null,
-        "amused": null,
+        "neutral": "whimsical/neutral.png",
+        "amused": "whimsical/amused.png",
         "happy": null,
         "excited": null,
         "playful": null,
         "smug": null,
-        "thoughtful": null,
-        "skeptical": null,
-        "surprised": null,
-        "concerned": null,
-        "sad": null,
+        "thoughtful": "whimsical/thoughtful.png",
+        "skeptical": "whimsical/skeptical.png",
+        "surprised": "whimsical/surprised.png",
+        "concerned": "whimsical/concerned.png",
+        "sad": "whimsical/sad.png",
         "angry": null,
         "embarrassed": null,
-        "weary": null
-      }
+        "weary": null,
+        "delighted": "whimsical/delighted.png",
+        "annoyed": "whimsical/annoyed.png"
+      },
+      "character": "Vex, an adult wolf woman",
+      "framing": "full-body",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "format": "png",
+      "transparent": true,
+      "intendedExpressions": [
+        "neutral",
+        "amused",
+        "delighted",
+        "thoughtful",
+        "skeptical",
+        "surprised",
+        "concerned",
+        "sad",
+        "annoyed"
+      ]
     },
     "goon-gremlin": {
       "label": "Goon Gremlin Vex",
       "directory": "goon-gremlin",
-      "status": "awaiting-artwork",
+      "status": "ready",
       "expressions": {
-        "neutral": null,
-        "amused": null,
+        "neutral": "goon-gremlin/neutral.png",
+        "amused": "goon-gremlin/amused.png",
         "happy": null,
         "excited": null,
         "playful": null,
         "smug": null,
-        "thoughtful": null,
-        "skeptical": null,
-        "surprised": null,
-        "concerned": null,
-        "sad": null,
+        "thoughtful": "goon-gremlin/thoughtful.png",
+        "skeptical": "goon-gremlin/skeptical.png",
+        "surprised": "goon-gremlin/surprised.png",
+        "concerned": "goon-gremlin/concerned.png",
+        "sad": "goon-gremlin/sad.png",
         "angry": null,
         "embarrassed": null,
-        "weary": null
-      }
+        "weary": null,
+        "delighted": "goon-gremlin/delighted.png",
+        "annoyed": "goon-gremlin/annoyed.png"
+      },
+      "character": "Vex, an adult wolf woman",
+      "framing": "full-body",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "format": "png",
+      "transparent": true,
+      "intendedExpressions": [
+        "neutral",
+        "amused",
+        "delighted",
+        "thoughtful",
+        "skeptical",
+        "surprised",
+        "concerned",
+        "sad",
+        "annoyed"
+      ]
     },
     "gooner": {
       "label": "Gooner Vex",
       "directory": "gooner",
-      "status": "awaiting-artwork",
+      "status": "ready",
       "expressions": {
-        "neutral": null,
-        "amused": null,
+        "neutral": "gooner/neutral.png",
+        "amused": "gooner/amused.png",
         "happy": null,
         "excited": null,
         "playful": null,
         "smug": null,
-        "thoughtful": null,
-        "skeptical": null,
-        "surprised": null,
-        "concerned": null,
-        "sad": null,
+        "thoughtful": "gooner/thoughtful.png",
+        "skeptical": "gooner/skeptical.png",
+        "surprised": "gooner/surprised.png",
+        "concerned": "gooner/concerned.png",
+        "sad": "gooner/sad.png",
         "angry": null,
         "embarrassed": null,
-        "weary": null
-      }
+        "weary": null,
+        "delighted": "gooner/delighted.png",
+        "annoyed": "gooner/annoyed.png"
+      },
+      "character": "Vex, an adult wolf woman",
+      "framing": "full-body",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "format": "png",
+      "transparent": true,
+      "intendedExpressions": [
+        "neutral",
+        "amused",
+        "delighted",
+        "thoughtful",
+        "skeptical",
+        "surprised",
+        "concerned",
+        "sad",
+        "annoyed"
+      ]
     }
   },
   "masters": {},

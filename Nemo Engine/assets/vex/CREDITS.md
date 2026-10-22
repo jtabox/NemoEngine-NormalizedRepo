@@ -203,6 +203,47 @@
 - Publication: uploaded as part of the project owner’s requested Vex asset-set workflow. No separate third-party artwork license is asserted here.
 - Format: full-body transparent PNG, 1024 × 1536. This is Tsundere’s own image set; scene emotion does not switch her personality or costume.
 
-Other personality folders remain placeholders until their artwork is published. When adding artwork, record the files, creator/source, publication permission or license, and required attribution here. Do not assume a preset license automatically covers separately contributed images.
+## Underdog Vex
+
+- Files: `underdog/neutral.png`, `underdog/amused.png`, `underdog/delighted.png`, `underdog/thoughtful.png`, `underdog/skeptical.png`, `underdog/surprised.png`, `underdog/concerned.png`, `underdog/sad.png`, `underdog/annoyed.png`.
+- Character and creative direction: Noah / NemoVonNirgend.
+- Classic Scrappy / Underdog persona interview: Steel-skull, as credited in the preset.
+- Source: generated with ChatGPT image generation using the supplied Vex identity reference, then edited from this set’s neutral base to create the remaining expressions. The set preserves a practical purple low ponytail, faded indigo denim chore jacket with tan elbow patches, burgundy henley, charcoal straight-leg jeans, fingerless gloves, and worn brown boots, wolf ears, and a fluffy tail across all nine expressions.
+- Publication: uploaded as part of the project owner’s requested Vex asset-set workflow. No separate third-party artwork license is asserted here.
+- Format: full-body transparent PNG, 1024 × 1536. This is Underdog’s own image set; scene emotion does not switch her personality or costume.
+
+## Unhinged Vex
+
+- Files: `unhinged/neutral.png`, `unhinged/amused.png`, `unhinged/delighted.png`, `unhinged/thoughtful.png`, `unhinged/skeptical.png`, `unhinged/surprised.png`, `unhinged/concerned.png`, `unhinged/sad.png`, `unhinged/annoyed.png`.
+- Character and creative direction: Noah / NemoVonNirgend.
+- Source: generated with ChatGPT image generation using the supplied Vex identity reference, then edited from this set’s neutral base to create the remaining expressions. The set preserves a shaggy purple bob, acid-lime and black biker jacket, charcoal utility jumpsuit, silver hardware, and black lace-up boots, wolf ears, and a fluffy tail across all nine expressions.
+- Publication: uploaded as part of the project owner’s requested Vex asset-set workflow. No separate third-party artwork license is asserted here.
+- Format: full-body transparent PNG, 1024 × 1536. This is Unhinged’s own image set; scene emotion does not switch her personality or costume.
+
+## Whimsical Vex
+
+- Files: `whimsical/neutral.png`, `whimsical/amused.png`, `whimsical/delighted.png`, `whimsical/thoughtful.png`, `whimsical/skeptical.png`, `whimsical/surprised.png`, `whimsical/concerned.png`, `whimsical/sad.png`, `whimsical/annoyed.png`.
+- Character and creative direction: Noah / NemoVonNirgend.
+- Source: generated with ChatGPT image generation using the supplied Vex identity reference, then edited from this set’s neutral base to create the remaining expressions. The set preserves a thick purple side braid, dusty-teal tailcoat, ivory high-neck blouse, plum waistcoat and skirt, dark tights, teal ankle boots, and a rose-gold moon pin, wolf ears, and a fluffy tail across all nine expressions.
+- Publication: uploaded as part of the project owner’s requested Vex asset-set workflow. No separate third-party artwork license is asserted here.
+- Format: full-body transparent PNG, 1024 × 1536. This is Whimsical’s own image set; scene emotion does not switch her personality or costume.
+
+## Goon Gremlin Vex
+
+- Files: `goon-gremlin/neutral.png`, `goon-gremlin/amused.png`, `goon-gremlin/delighted.png`, `goon-gremlin/thoughtful.png`, `goon-gremlin/skeptical.png`, `goon-gremlin/surprised.png`, `goon-gremlin/concerned.png`, `goon-gremlin/sad.png`, `goon-gremlin/annoyed.png`.
+- Character and creative direction: Noah / NemoVonNirgend.
+- Source: generated with ChatGPT image generation using the supplied Vex identity reference, then edited from this set’s neutral base to create the remaining expressions. The set preserves a purple half-up bun with long loose waves, oversized magenta hoodie with cyan lining, black shirt and cargo joggers, and black-and-cyan high-top shoes, wolf ears, and a fluffy tail across all nine expressions.
+- Publication: uploaded as part of the project owner’s requested Vex asset-set workflow. No separate third-party artwork license is asserted here.
+- Format: full-body transparent PNG, 1024 × 1536. This is Goon Gremlin’s own image set; scene emotion does not switch her personality or costume.
+
+## Gooner Vex
+
+- Files: `gooner/neutral.png`, `gooner/amused.png`, `gooner/delighted.png`, `gooner/thoughtful.png`, `gooner/skeptical.png`, `gooner/surprised.png`, `gooner/concerned.png`, `gooner/sad.png`, `gooner/annoyed.png`.
+- Character and creative direction: Noah / NemoVonNirgend.
+- Source: generated with ChatGPT image generation using the supplied Vex identity reference, then edited from this set’s neutral base to create the remaining expressions. The set preserves long purple waves, a deep-magenta longline blazer, opaque black high-neck blouse, black wide-leg trousers, a narrow silver belt, geometric lapel pin, and dark-plum heeled ankle boots, wolf ears, and a fluffy tail across all nine expressions.
+- Publication: uploaded as part of the project owner’s requested Vex asset-set workflow. No separate third-party artwork license is asserted here.
+- Format: full-body transparent PNG, 1024 × 1536. This is Gooner’s own image set; scene emotion does not switch her personality or costume.
+
+All current personality folders have complete nine-expression sets. Additional contributions should record their files, creator/source, publication permission or license, and required attribution here. Do not assume a preset license automatically covers separately contributed images.
 
 The optional legacy Catbox URL in the manifest points to the pre-existing commentary GIF. It has not been copied into this repository or relicensed by this catalog.
