@@ -143,7 +143,9 @@ the selected panel on the left; **Close ×** closes it. It stays open while you
 chat, and Next/Back works inside the dock. Smaller screens use the inline panel.
 
 Use this optional preset instead of the standard preset, or replace the standard
-display pack with the complete ordered 75-rule [message-dock pack](message-dock/regex-scripts.json).
+display pack with the complete ordered 76-rule [message-dock pack](message-dock/regex-scripts.json).
+Binding seeds use HTML comments so a failed binder leaves a clean inline panel;
+the optional pack also cleans up known old visible seed markers.
 Keep the standard three context-strip rules. Remove the earlier left-dock block
 from global Custom CSS before using this method. The current standard preset and
 renderer remain available.

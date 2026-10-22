@@ -10,7 +10,7 @@ If you resize the window while a desktop popup is already open, its **Close ×**
 remains available; close it to return that panel to the mobile inline layout.
 
 This is an alternative to the standard renderer, not an additional pack to run
-alongside it. Import this ordered **75-rule** pack in place of the standard
+alongside it. Import this ordered **76-rule** pack in place of the standard
 74 display rules. Keep the standard ordered three-rule `context-strip.json`
 unchanged. The supplied optional full preset already contains the right ordering.
 No global Custom CSS, extension script or change to the model's marker contract
@@ -30,12 +30,28 @@ panel takes one click; it cannot open itself automatically.
 ## Binding and fallback
 
 Four existing grouping rules each generate one 128-bit hexadecimal nonce using
-32 built-in `random` macro tokens. The immediately following binder captures the
+32 built-in `random` macro tokens inside an HTML comment. The immediately following binder captures the
 resolved nonce once and reuses that capture for the launcher target, popup ID and
 Close target. This avoids duplicate IDs across history, repeated identical panels
 and re-renders without writing a chat variable or saving UI state. The marker
-seed is internal renderer output; the model does not emit it. The other 70 rules,
-their literal guards, speaker mappings and all flags are unchanged.
+seed is internal renderer output; the model does not emit it. Both seed delimiters
+are HTML comments: if binding does not run, they disappear during HTML sanitation
+and the existing visual novel stays inline. A final display-only cleanup also
+removes the exact known old visible BEGIN/nonce and END markers before literal
+protection is restored. It leaves dialogue and forms intact, and preserves code
+examples, workbench content and other protected literal surfaces. The other 70
+rules, their literal guards, speaker mappings and all flags are unchanged.
+
+The reported screenshot shows a failed binding with an otherwise valid 32-digit
+nonce. Replaying that exact nonce against the published engine binds correctly;
+skipping the binder reproduces the visible marker. The exact cause in the local
+installation remains unconfirmed. This update provides a clean inline fallback
+for a failed binder; it cannot make a missing or disabled binder open a dock.
+
+Binding and cleanup first check for their own marker, then inspect literal
+boundaries in chunks. This preserves literal protection while avoiding the
+expensive scan reproduced in JavaScriptCore on large synthetic inputs. This
+engine test does not establish the cause of the reported screenshot.
 
 Native popover support is required for the desktop dock. If the browser does not
 support it, or a sanitizer strips the required `popover`/`popovertarget`
