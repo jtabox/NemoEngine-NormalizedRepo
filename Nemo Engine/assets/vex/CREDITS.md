@@ -244,9 +244,10 @@
 
 - Files: `gooner/neutral.png`, `gooner/amused.png`, `gooner/delighted.png`, `gooner/thoughtful.png`, `gooner/skeptical.png`, `gooner/surprised.png`, `gooner/concerned.png`, `gooner/sad.png`, `gooner/annoyed.png`.
 - Character and creative direction: Noah / NemoVonNirgend.
-- Source: generated with ChatGPT image generation using the supplied Vex identity reference, then edited from this set’s neutral base to create the remaining expressions. The set preserves long purple waves, a deep-magenta longline blazer, opaque black high-neck blouse, black wide-leg trousers, a narrow silver belt, geometric lapel pin, and dark-plum heeled ankle boots, wolf ears, and a fluffy tail across all nine expressions.
+- Approved direction: direct adult confidence, self-possessed warmth, and playful social engagement. The project owner approved the revised sample before expression generation.
+- Source: generated with ChatGPT image generation, then edited from the approved neutral to create eight matching expressions. The set preserves her long purple waves, deep-magenta satin wrap blouse and tied waist, fitted black leather trousers and belt, plum heeled ankle boots, silver jewelry, purple ears and tail, hip hand, open-palm gesture, and standing pose.
 - Publication: uploaded as part of the project owner’s requested Vex asset-set workflow. No separate third-party artwork license is asserted here.
-- Format: full-body transparent PNG, 1024 × 1536. This is Gooner’s own image set; scene emotion does not switch her personality or costume.
+- Format: full-body transparent PNG, 1024 × 1536. Scene emotion does not switch her personality, clothing, hair, or pose. Exact prompts and hashes are recorded in `generation/v0.31.0.json`.
 
 All current personality folders have complete nine-expression sets. Additional contributions should record their files, creator/source, publication permission or license, and required attribution here. Do not assume a preset license automatically covers separately contributed images.
 
