@@ -1,0 +1,330 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "feature": "Optional message-only Vex left dock",
+  "canonicalBase": {
+    "commit": "8a8c1c94d42e4520e13566d22774a2a826cdfae1",
+    "presetSha256": "2131186ff10f6eb37090b90e4bc0384de8b9dbaa3c884da36e6c9e8c36ccb2bd",
+    "unchanged": true
+  },
+  "artifacts": {
+    "Nemo Engine/Nemo_Engine_v12.3_Message_Dock.json": {
+      "sha256": "807287ba37621ba518c0535b66ab2503fa2dc677a00cc5854397002ec70c7061",
+      "gitBlob": "417fa1121c05cfda054d27b9b50d915ef8338269",
+      "size": 3468325
+    },
+    "Nemo Engine/assets/vex/renderer/message-dock/regex-scripts.json": {
+      "sha256": "1855055784ba1779269cc6c530ac69ae03e1e3bf8f5c81378bfbd7b954ead53e",
+      "gitBlob": "be1722227580823fa25d87c874974a9f8869e302",
+      "size": 151158
+    },
+    "Nemo Engine/assets/vex/renderer/message-dock/build_message_dock.py": {
+      "sha256": "0508281b3c3d4978a3161bd9aad0200a5cbf0f81bb834c75c82de0c4436eaf82",
+      "gitBlob": "e246f663b08b5e5645d6a50922831faa4a06b182",
+      "size": 4076
+    },
+    "Nemo Engine/assets/vex/renderer/message-dock/panel.css": {
+      "sha256": "8fd408548fc4bc4e1bbe59c093391130cdfc1bbc5f3b74468c2b6ba019ebb43f",
+      "gitBlob": "a9487f0c28dbc7825d4c203da63ec6b58d924b16",
+      "size": 6053
+    },
+    "Nemo Engine/assets/vex/renderer/message-dock/README.md": {
+      "sha256": "8c3a23644b5bfbd720b290e182bccca1fcdec0a6180167c8e22fa456bbade57b",
+      "gitBlob": "0cbd39c9944630ac11f1e5005e844308ff38e410",
+      "size": 3243
+    },
+    "Nemo Engine/assets/vex/renderer/README.md": {
+      "sha256": "8e8e3e2967c8a2b057a8bc9e5f79ff4b19c41afb6938e787177d454cf93272bf",
+      "gitBlob": "9b22bdc4694633dcf3b3b88052d338f6f1d11fe4",
+      "size": 8544
+    }
+  },
+  "coverage": {
+    "fullPresetRegexRules": 585,
+    "optionalDisplayRules": 75,
+    "resolvedNameExpressionPairs": 288,
+    "crossModuleFixtures": 22,
+    "browserCases": 11,
+    "legacyActualMacroTokens": 250,
+    "experimentalRegisteredHandlerTokens": 250,
+    "fullExperimentalParserTested": false,
+    "browserMacroMode": "Actual official legacy evaluateMacros; random and seedrandom unmodified",
+    "browserPipeline": "Official regex engine, macro evaluation, Markdown, DOMPurify, scoped CSS, native browser popover",
+    "standalonePreview": {
+      "javaScriptEnabled": false,
+      "externalRequests": 0,
+      "desktopOpenNextClose": true,
+      "mobileInlineNext": true,
+      "embeddedPortraitLoaded": true
+    }
+  },
+  "limitations": [
+    "The full experimental macro parser was not tested. Its actual registered random handler was tested with documented list parsing; 250 outputs were distinct and had the required 128-bit hexadecimal shape.",
+    "Legacy token review evaluates actual ST evaluateMacros with unrelated factories stubbed. Browser tests use full legacy evaluateMacros with unused instruct/variable lists empty and two existing visibility-gate environment values supplied.",
+    "Unsupported-popover browser behavior was simulated by forcing only the optional popover @supports condition false. Partial-attribute removal fallbacks were also tested.",
+    "The manual popover requires one click to open. Older popovers do not close automatically; custom layouts occupying the left-side space may overlap.",
+    "The supplied browser fixtures do not cover every installed theme, extension, or user account."
+  ],
+  "reports": {
+    "integration": {
+      "sourceReport": "integration-report.json",
+      "sha256": "03494291e466a91b5a885d93341459209663ee7b5c87fb8bb115ce9d68f9c534",
+      "results": {
+        "passed": true,
+        "sourceSha256": "2131186ff10f6eb37090b90e4bc0384de8b9dbaa3c884da36e6c9e8c36ccb2bd",
+        "presetSha256": "807287ba37621ba518c0535b66ab2503fa2dc677a00cc5854397002ec70c7061",
+        "presetRegexRules": 585,
+        "changedRegexReplacements": 4,
+        "addedDisplayOnlyBinderRules": 1,
+        "promptsAndOtherSettingsUnchanged": true,
+        "literalGuardsAndContextRulesUnchanged": true,
+        "assetMappingsUnchanged": true,
+        "path": "/workspace/scratch/7095aacbc09d/vex-message-dock-output/Nemo_Engine_v12.3_Message_Dock.json"
+      }
+    },
+    "fullPreset": {
+      "sourceReport": "full-preset-results.json",
+      "sha256": "d1cac3d97358bde176dfb46d1281f4639775a3b3a4bd3c4aa71370d2ed3c9ee4",
+      "results": {
+        "passed": true,
+        "engine": "Official SillyTavern regex engine and official getRandomReplaceMacro with seedrandom",
+        "rules": 585,
+        "resolvedNameExpressionPairs": 288,
+        "crossModuleFixtures": 22,
+        "unwrappedDisplayByteIdenticalToCanonical": true,
+        "allPromptsAndSettingsPreserved": true,
+        "rawHistoryUnchanged": true,
+        "recentContextPreserved": true,
+        "olderContextRemoved": true,
+        "repeatedGroupsAndRerendersUnique": true,
+        "internalWrapperExamplesPreserved": true
+      }
+    },
+    "macro": {
+      "sourceReport": "review/macro-review-results.json",
+      "sha256": "abb197c1cd3efa037bd25538cef9f83a08dd060ccc7a68c4ad82e27ef4088ef8",
+      "results": {
+        "legacy": {
+          "generated": 250,
+          "distinct": 250,
+          "correct128bitHexShape": true
+        },
+        "experimentalHandler": {
+          "generated": 250,
+          "distinct": 250,
+          "correct128bitHexShape": true
+        },
+        "experimentalDefinition": {
+          "list": true,
+          "description": "Picks a random item from a list. Will be re-rolled every time macros are resolved."
+        },
+        "limitation": "Legacy evaluator executes actual ST evaluateMacros with unrelated factories stubbed; experimental fixture executes actual registered random handler with documented list parsing, not the full experimental parser."
+      }
+    },
+    "browser": {
+      "sourceReport": "popover/candidate-browser-results.json",
+      "sha256": "040f4d148cef23b02ce5cd08aeb502d6781eb726541c587a5568cdffbf05c3ad",
+      "results": {
+        "passed": true,
+        "preset": {
+          "path": "/workspace/scratch/7095aacbc09d/vex-message-dock-output/Nemo_Engine_v12.3_Message_Dock.json",
+          "sha256": "807287ba37621ba518c0535b66ab2503fa2dc677a00cc5854397002ec70c7061",
+          "ruleCount": 585
+        },
+        "macroEngine": {
+          "enginePath": "/workspace/scratch/7095aacbc09d/vn-prompt-work/st-regex-engine.js",
+          "engineSHA256": "ffa62c2d165dff82398b4c7d97a0e5c2083b5696522cff7244370bea93a283fb",
+          "macrosPath": "/workspace/scratch/7095aacbc09d/vex-message-dock-work/popover/st-macros.js",
+          "macrosSHA256": "1926c394e22a35827f594a4c4bfb044ed4c80dcc911680875991a880f8e53f11",
+          "description": "Actual official ST regex engine and full legacy evaluateMacros. Unused instruct/variable macro lists are empty; two pre-existing visibility gate variables are supplied as environment values. Random function and seedrandom3.0.5 execute unmodified; no identity stub for replacement random macros."
+        },
+        "tests": [
+          {
+            "name": "desktop-top-layer-existing-long-dialogue",
+            "passed": true,
+            "bindings": [
+              {
+                "id": "nemo-vex-panel-331bf02b0d29ad73f9fe6dcb7a3b2c34",
+                "target": "nemo-vex-panel-331bf02b0d29ad73f9fe6dcb7a3b2c34",
+                "closeTarget": "nemo-vex-panel-331bf02b0d29ad73f9fe6dcb7a3b2c34",
+                "popover": "manual"
+              }
+            ],
+            "geometry": {
+              "left": 84,
+              "right": 376,
+              "top": 368,
+              "bottom": 966,
+              "width": 292,
+              "chatLeft": 400,
+              "viewportWidth": 1600,
+              "viewportHeight": 1000,
+              "navVisible": true,
+              "noXOverflow": true,
+              "hit": true
+            },
+            "navigation": "1\u21922\u21923\u21922",
+            "chatInteractionWhileOpen": true,
+            "close": true
+          },
+          {
+            "name": "desktop-open-resize-and-short-page",
+            "passed": true,
+            "resized": {
+              "open": true,
+              "closeVisible": true,
+              "left": 12,
+              "right": 363,
+              "top": 12,
+              "bottom": 688,
+              "viewportWidth": 375,
+              "viewportHeight": 700,
+              "closeReturnsInline": true,
+              "navigationPassed": true
+            },
+            "shortGeometry": {
+              "imageBottom": 936,
+              "windowBottom": 966,
+              "imageTop": 506,
+              "windowTop": 726,
+              "viewportHeight": 1000,
+              "lowerSpriteCovered": true
+            }
+          },
+          {
+            "name": "history-identical-replies-and-rerender",
+            "passed": true,
+            "historyBindings": [
+              {
+                "id": "nemo-vex-panel-cb679848fa73159a44713b56584c45b9",
+                "target": "nemo-vex-panel-cb679848fa73159a44713b56584c45b9",
+                "closeTarget": "nemo-vex-panel-cb679848fa73159a44713b56584c45b9",
+                "popover": "manual"
+              },
+              {
+                "id": "nemo-vex-panel-917aa93659ad50fe04831c15d5163419",
+                "target": "nemo-vex-panel-917aa93659ad50fe04831c15d5163419",
+                "closeTarget": "nemo-vex-panel-917aa93659ad50fe04831c15d5163419",
+                "popover": "manual"
+              }
+            ],
+            "rerenderBindings": [
+              {
+                "id": "nemo-vex-panel-bd5052578c882710b1f8b73c4dc1a5a0",
+                "target": "nemo-vex-panel-bd5052578c882710b1f8b73c4dc1a5a0",
+                "closeTarget": "nemo-vex-panel-bd5052578c882710b1f8b73c4dc1a5a0",
+                "popover": "manual"
+              },
+              {
+                "id": "nemo-vex-panel-917aa93659ad50fe04831c15d5163419",
+                "target": "nemo-vex-panel-917aa93659ad50fe04831c15d5163419",
+                "closeTarget": "nemo-vex-panel-917aa93659ad50fe04831c15d5163419",
+                "popover": "manual"
+              }
+            ],
+            "manualModeAllowsMultipleOpen": true,
+            "independentNavigation": true
+          },
+          {
+            "name": "two-groups-in-one-response",
+            "passed": true,
+            "bindings": [
+              {
+                "id": "nemo-vex-panel-b5b941d94abca692cfaa3cd977886b8d",
+                "target": "nemo-vex-panel-b5b941d94abca692cfaa3cd977886b8d",
+                "closeTarget": "nemo-vex-panel-b5b941d94abca692cfaa3cd977886b8d",
+                "popover": "manual"
+              },
+              {
+                "id": "nemo-vex-panel-612a47a661ba466d220aa57910719e1d",
+                "target": "nemo-vex-panel-612a47a661ba466d220aa57910719e1d",
+                "closeTarget": "nemo-vex-panel-612a47a661ba466d220aa57910719e1d",
+                "popover": "manual"
+              }
+            ]
+          },
+          {
+            "name": "mobile375-inline-no-activation",
+            "passed": true,
+            "navigation": true,
+            "noHorizontalOverflow": true
+          },
+          {
+            "name": "unsupported-popover-supports-branch-inline-fallback",
+            "passed": true,
+            "navigation": true,
+            "simulation": "Only optional popover @supports condition forced false; normal sanitizer/HTML/CSS and existing :has navigation remain intact."
+          },
+          {
+            "name": "partial-attribute-fallback-launcher-target",
+            "passed": true
+          },
+          {
+            "name": "partial-attribute-fallback-popover-attribute",
+            "passed": true
+          },
+          {
+            "name": "partial-attribute-fallback-close-target",
+            "passed": true
+          },
+          {
+            "name": "partial-attribute-fallback-popup-id",
+            "passed": true
+          },
+          {
+            "name": "raw-history-protected-context-and-no-metadata-mutation",
+            "passed": true
+          }
+        ],
+        "resizeProbe": {
+          "open": true,
+          "closeVisible": true,
+          "left": 12,
+          "right": 363,
+          "top": 12,
+          "bottom": 688,
+          "viewportWidth": 375,
+          "viewportHeight": 700,
+          "closeReturnsInline": true,
+          "navigationPassed": true
+        },
+        "shortPageProbe": {
+          "imageBottom": 936,
+          "windowBottom": 966,
+          "imageTop": 506,
+          "windowTop": 726,
+          "viewportHeight": 1000,
+          "lowerSpriteCovered": true
+        },
+        "preview": {
+          "path": "/workspace/scratch/7095aacbc09d/vex-message-dock-work/popover/Vex_Message_Dock_Preview.html",
+          "selfContained": true,
+          "javaScript": false,
+          "actualSanitizedOutput": true,
+          "portraitAssetsEmbedded": true
+        },
+        "environment": {
+          "browser": "153.0.8010.0",
+          "dompurify": "3.4.2",
+          "showdown": "2.1.0",
+          "cssTools": "4.4.4",
+          "nativeTopLayerWithoutGlobalDockCSS": true
+        }
+      }
+    },
+    "standalonePreview": {
+      "sourceReport": "popover/preview-standalone-results.json",
+      "sha256": "6050de61307978d9363c385dab2853561cafc8a27caf0eaa798ca8df4a77068a",
+      "results": {
+        "passed": true,
+        "previewPath": "/workspace/scratch/7095aacbc09d/vex-message-dock-work/popover/Vex_Message_Dock_Preview.html",
+        "previewSHA256": "1d005072b84a9c5aa3d1f01dccbe7d0a1f43fdb2c9f6888e6ea515becb9b03fc",
+        "javaScriptEnabled": false,
+        "externalRequests": 0,
+        "desktopNativeOpenNextClose": true,
+        "mobileInlineNext": true,
+        "embeddedPortraitLoaded": true
+      }
+    }
+  }
+}

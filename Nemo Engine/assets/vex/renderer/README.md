@@ -132,3 +132,25 @@ mode so the panel can escape the chat's clipping container; other theme
 filters remain unchanged. Remove the added stylesheet to restore the theme
 layout. Validation against the official chat, mobile, waifuMode and vertical
 toolbar styles is recorded in [`left-dock-validation.json`](left-dock-validation.json).
+
+
+## Optional message-only left dock
+
+The [Nemo Engine v12.3 Message Dock preset](../../../Nemo_Engine_v12.3_Message_Dock.json)
+provides a separate message-only alternative that needs no global Custom CSS or
+extension script. On screens at least 1440 × 700, click **Open Vex** once to open
+the selected panel on the left; **Close ×** closes it. It stays open while you
+chat, and Next/Back works inside the dock. Smaller screens use the inline panel.
+
+Use this optional preset instead of the standard preset, or replace the standard
+display pack with the complete ordered 75-rule [message-dock pack](message-dock/regex-scripts.json).
+Keep the standard three context-strip rules. Remove the earlier left-dock block
+from global Custom CSS before using this method. The current standard preset and
+renderer remain available.
+
+The popup uses the browser's native manual popover support. It does not open
+automatically or close a panel from another message: close an older popup before
+opening a newer one. It uses the existing left-side space and can overlap a custom
+layout that occupies that space. Browsers without the required support retain the
+readable inline panel. See the [message dock instructions](message-dock/README.md)
+for installation, fallback behavior, and validation.
