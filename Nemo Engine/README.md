@@ -2,7 +2,9 @@
   <img src="assets/nemo-engine-one-year-anniversary.webp" alt="Nemo Engine anniversary artwork" width="100%">
 </p>
 
-> **v12.2 Lite working update:** [Download the updated preset](./Nemo_Engine_v12.2_Lite.json) with visual novel Vex commentary and the complete portrait catalog. The model emits compact named dialogue; bundled display-only regex adds portraits, expressions, and Next/Back arrows. [Renderer setup and sample](./assets/vex/renderer/README.md). The v12.1 guide below remains available for its documented editions.
+> **Nemo Engine v12.3:** [Download the updated preset](./Nemo_Engine_v12.3.json) with visual novel Vex commentary and the complete portrait catalog. The model emits compact named dialogue; bundled display-only regex adds portraits, expressions, and Next/Back arrows. [Renderer setup and sample](./assets/vex/renderer/README.md). The v12.1 guide below remains available for its documented editions.
+
+> The v12.2 filenames are retained as legacy download aliases; Nemo Engine v12.3 is the current preset.
 
 # Nemo Engine v12.1
 

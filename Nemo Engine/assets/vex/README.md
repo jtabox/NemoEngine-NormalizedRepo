@@ -1,6 +1,6 @@
 # Vex portrait assets
 
-Shared portrait catalog for the Vex commentary panel and planned NemoPresetExt OOC conversation box. All 30 image sets are complete, covering 31 personalities because Default and Narrative share one set. Each set includes nine full-body sprites, for 270 portraits total. The catalog supplies artwork and metadata. The v12.2 Lite working preset now includes the visual novel commentary renderer described below; extension OOC chat remains planned.
+Shared portrait catalog for the Vex commentary panel and planned NemoPresetExt OOC conversation box. All 30 image sets are complete, covering 31 personalities because Default and Narrative share one set. Each set includes nine full-body sprites, for 270 portraits total. The catalog supplies artwork and metadata. The Nemo Engine v12.3 preset now includes the visual novel commentary renderer described below; extension OOC chat remains planned.
 
 ## Personality and expression
 
@@ -74,7 +74,7 @@ Append a registered relative path to this URL. For reproducible releases, load t
 
 ## Visual novel commentary renderer
 
-The [v12.2 Lite working preset](../../Nemo_Engine_v12.2_Lite.json) now bundles a display-only regex renderer and enables Vex Commentary. The model outputs one `<vexchat>` group with two to four named dialogue entries; regex supplies the portrait, expression, dialogue card, counter, and Next/Back arrows. Clicking an arrow reveals another already-generated message without making an API request.
+The [Nemo Engine v12.3 preset](../../Nemo_Engine_v12.3.json) now bundles a display-only regex renderer and enables Vex Commentary. The model outputs one `<vexchat>` group with two to four named dialogue entries; regex supplies the portrait, expression, dialogue card, counter, and Next/Back arrows. Clicking an arrow reveals another already-generated message without making an API request.
 
 ```text
 <vexchat>

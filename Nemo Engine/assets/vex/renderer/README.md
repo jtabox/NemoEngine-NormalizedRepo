@@ -4,10 +4,9 @@ Vex stands above a separate foreground dialogue window that overlaps her
 lower body. Her name, dialogue, counter, and page controls sit together in
 that window.
 
-The working exports now retain the original NPC scratchpad chat's compact
-colour/effect update and General RP / Anime configuration alongside this Vex
-panel. The [General RP / Anime export](../../../Nemo_Engine_v12.2_Lite_General_RP_Anime.json)
-and the Lite working export contain the same reconciled build.
+The current [Nemo Engine v12.3 preset](../../../Nemo_Engine_v12.3.json)
+retains the original NPC scratchpad chat's compact colour/effect update and
+General RP / Anime configuration alongside this Vex panel.
 
 Compact `c0`–`c16` markers identify the speaker's colour. In RP Markdown,
 single backticks identify unspoken internal monologue; quotation marks
@@ -25,7 +24,7 @@ supported. Code examples and protected state/workbench hosts retain their
 literal content. The formatter does not disclose hidden thoughts or change
 the selected interiority contract.
 
-The updated [v12.2 Lite preset](../../../Nemo_Engine_v12.2_Lite.json)
+The updated [Nemo Engine v12.3 preset](../../../Nemo_Engine_v12.3.json)
 already contains these rules and enables **Vex Commentary**. Import the whole
 JSON as a Chat Completion preset and allow its bundled preset regex scripts.
 In SillyTavern's user settings, keep **Show &lt;tags&gt; in responses** off.
