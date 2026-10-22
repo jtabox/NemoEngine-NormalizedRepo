@@ -1,0 +1,151 @@
+{
+  "passed": true,
+  "engineCommit": "06bde939fb1e9c4c8d8641d810f0a916b5bce127",
+  "engine": "SillyTavern experimental macro engine with official core/variable handlers",
+  "limitations": "Fixture variable store and card/lore values; no live provider or full SillyTavern message transport.",
+  "cases": [
+    {
+      "profile": 100000,
+      "mode": "default",
+      "assistantUnchanged": true,
+      "modulePayloadsUnchanged": true,
+      "stateUnchanged": true,
+      "noStaleCollectors": true,
+      "diagnostics": 0
+    },
+    {
+      "profile": 100000,
+      "mode": "off",
+      "assistantUnchanged": true,
+      "modulePayloadsUnchanged": true,
+      "stateUnchanged": true,
+      "noStaleCollectors": true,
+      "diagnostics": 0
+    },
+    {
+      "profile": 100000,
+      "mode": "legacy",
+      "assistantUnchanged": true,
+      "modulePayloadsUnchanged": true,
+      "stateUnchanged": true,
+      "noStaleCollectors": true,
+      "diagnostics": 0
+    },
+    {
+      "profile": 100000,
+      "mode": "all-tabs",
+      "assistantUnchanged": true,
+      "modulePayloadsUnchanged": true,
+      "stateUnchanged": true,
+      "noStaleCollectors": true,
+      "diagnostics": 0
+    },
+    {
+      "profile": 100000,
+      "mode": "collectors-disabled",
+      "assistantUnchanged": true,
+      "modulePayloadsUnchanged": true,
+      "stateUnchanged": true,
+      "noStaleCollectors": true,
+      "diagnostics": 0
+    },
+    {
+      "profile": 100000,
+      "mode": "mp-scratchpad",
+      "assistantUnchanged": true,
+      "modulePayloadsUnchanged": true,
+      "stateUnchanged": true,
+      "noStaleCollectors": true,
+      "diagnostics": 0
+    },
+    {
+      "profile": 100000,
+      "mode": "mp-standalone",
+      "assistantUnchanged": true,
+      "modulePayloadsUnchanged": true,
+      "stateUnchanged": true,
+      "noStaleCollectors": true,
+      "diagnostics": 0
+    },
+    {
+      "profile": 100001,
+      "mode": "default",
+      "assistantUnchanged": true,
+      "modulePayloadsUnchanged": true,
+      "stateUnchanged": true,
+      "noStaleCollectors": true,
+      "diagnostics": 0
+    },
+    {
+      "profile": 100001,
+      "mode": "off",
+      "assistantUnchanged": true,
+      "modulePayloadsUnchanged": true,
+      "stateUnchanged": true,
+      "noStaleCollectors": true,
+      "diagnostics": 0
+    },
+    {
+      "profile": 100001,
+      "mode": "legacy",
+      "assistantUnchanged": true,
+      "modulePayloadsUnchanged": true,
+      "stateUnchanged": true,
+      "noStaleCollectors": true,
+      "diagnostics": 0
+    },
+    {
+      "profile": 100001,
+      "mode": "all-tabs",
+      "assistantUnchanged": true,
+      "modulePayloadsUnchanged": true,
+      "stateUnchanged": true,
+      "noStaleCollectors": true,
+      "diagnostics": 0
+    },
+    {
+      "profile": 100001,
+      "mode": "collectors-disabled",
+      "assistantUnchanged": true,
+      "modulePayloadsUnchanged": true,
+      "stateUnchanged": true,
+      "noStaleCollectors": true,
+      "diagnostics": 0
+    },
+    {
+      "profile": 100001,
+      "mode": "mp-scratchpad",
+      "assistantUnchanged": true,
+      "modulePayloadsUnchanged": true,
+      "stateUnchanged": true,
+      "noStaleCollectors": true,
+      "diagnostics": 0
+    },
+    {
+      "profile": 100001,
+      "mode": "mp-standalone",
+      "assistantUnchanged": true,
+      "modulePayloadsUnchanged": true,
+      "stateUnchanged": true,
+      "noStaleCollectors": true,
+      "diagnostics": 0
+    }
+  ],
+  "staticChecks": {
+    "depth0Injectors": 2,
+    "allFeatureSelectionsPreserved": true,
+    "databankImmediatelyBeforeHistoryBothProfiles": true,
+    "regexAndOtherSettingsUnchanged": true,
+    "depth1Depth2Depth4Unchanged": true
+  },
+  "files": {
+    "Nemo_Engine_v12.3_Message_Dock.json": {
+      "sha256": "d51cf79e53c824e64e909f5c335dae1bb8799c481ae48b0e9f15f0c0ac5d13e4",
+      "gitBlob": "f898789bff1deb90a90a330ff3d60d96cab099ba"
+    },
+    "Nemo_Engine_v12.3.json": {
+      "sha256": "082f896bea7a94d8810fa7cf0dcd00bfe7f4e080712e689b09ef48d0900e263d",
+      "gitBlob": "82f356a697204feae50e9d0d7864665d0391e7f1"
+    }
+  }
+}
