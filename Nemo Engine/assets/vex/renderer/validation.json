@@ -1,0 +1,79 @@
+{
+  "browser": {
+    "passed": true,
+    "environment": {
+      "browser": "153.0.8010.0",
+      "dompurify": "3.4.2",
+      "showdown": "2.1.0",
+      "cssTools": "4.4.4",
+      "pipeline": "Generated display regex \u2192 Showdown \u2192 exact SillyTavern encodeStyleTags \u2192 DOMPurify + exact SillyTavern hooks \u2192 exact SillyTavern decodeStyleTags"
+    },
+    "tests": [
+      {
+        "name": "1 page: complete next/back navigation",
+        "passed": true
+      },
+      {
+        "name": "2 page: complete next/back navigation",
+        "passed": true
+      },
+      {
+        "name": "3 page: complete next/back navigation",
+        "passed": true
+      },
+      {
+        "name": "4 page: complete next/back navigation",
+        "passed": true
+      },
+      {
+        "name": "Independent state across repeated panels",
+        "passed": true
+      },
+      {
+        "name": "Keyboard Tab/Space, focus outline and subsequent navigation",
+        "passed": true,
+        "afterSecondSpace": [
+          1
+        ]
+      },
+      {
+        "name": "Five-message overflow retains all dialogue as readable stack",
+        "passed": true
+      },
+      {
+        "name": "Unregistered/master speaker retains actual label with no invented portrait",
+        "passed": true
+      },
+      {
+        "name": "Known speaker with unknown expression uses that speaker neutral",
+        "passed": true
+      },
+      {
+        "name": "External images blocked: text and navigation remain readable",
+        "passed": true
+      },
+      {
+        "name": "375px mobile: long text wraps, no horizontal overflow, arrows work",
+        "passed": true
+      },
+      {
+        "name": "Desktop sample screenshot captured after actual renderer roundtrip",
+        "passed": true
+      }
+    ]
+  },
+  "fullPresetPipeline": {
+    "passed": true,
+    "engine": "current official SillyTavern runRegexScript/getRegexedString",
+    "macroSubstitution": "identity stub; samples contain no executable macros",
+    "rules": 570,
+    "resolvedNameExpressionPairs": 288,
+    "storyPreserved": true,
+    "rawHistoryUnchanged": true,
+    "recentContextPreserved": true,
+    "olderContextRemoved": true,
+    "repeatedGroups": 2,
+    "editRerender": true
+  },
+  "scope": "Headless Chromium against official current rendering libraries and SillyTavern sanitizer/style functions; full preset regex engine checked separately. Not an end-to-end session in the user installation."
+}

@@ -1,6 +1,6 @@
 # Vex portrait assets
 
-Shared portrait catalog for the planned Vex commentary panel and NemoPresetExt OOC conversation box. All 30 image sets are complete, covering 31 personalities because Default and Narrative share one set. Each set includes nine full-body sprites, for 270 portraits total. The catalog supplies artwork and metadata; it does not yet enable the panel, change presets, or implement extension chat.
+Shared portrait catalog for the Vex commentary panel and planned NemoPresetExt OOC conversation box. All 30 image sets are complete, covering 31 personalities because Default and Narrative share one set. Each set includes nine full-body sprites, for 270 portraits total. The catalog supplies artwork and metadata. The v12.2 Lite working preset now includes the visual novel commentary renderer described below; extension OOC chat remains planned.
 
 ## Personality and expression
 
@@ -72,16 +72,21 @@ https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/a
 
 Append a registered relative path to this URL. For reproducible releases, load the manifest from a commit-pinned URL and override `main` in the asset base URL with the same commit SHA. GitHub's web interface `blob` URLs are not direct image URLs.
 
-## Planned renderer integration
+## Visual novel commentary renderer
 
-A future marker can select personality and expression, for example:
+The [v12.2 Lite working preset](../../Nemo_Engine_v12.2_Lite.json) now bundles a display-only regex renderer and enables Vex Commentary. The model outputs one `<vexchat>` group with two to four named dialogue entries; regex supplies the portrait, expression, dialogue card, counter, and Next/Back arrows. Clicking an arrow reveals another already-generated message without making an API request.
 
 ```text
-[[vex persona="bubbly" emote="excited"]]
-Oh, now this is getting interesting.
-[[/vex]]
+<vexchat>
+<vexnote name="Whimsical Vex" expression="thoughtful">A brief first message.</vexnote>
+<vexnote name="Whimsical Vex" expression="amused">A second, different observation.</vexnote>
+</vexchat>
 ```
 
-This is a proposed consumer contract, not a currently installed regex. A regex renderer cannot fetch or interpret this JSON itself: generate its static mappings from the manifest. NemoPresetExt can consume the manifest directly and manage the latest-message portrait, mobile placement, and OOC chat. Presentation fallback must not alter story state or the active personality.
+Use the exact active Vex name and one of the nine registered expressions. Default Vex also accepts the name `Vex`; Narrative uses the same artwork while keeping her own label. Dialogue is plain text with HTML entities for literal angle brackets or ampersands. The model does not emit image URLs, HTML/CSS, controls, or page numbers.
+
+See [renderer setup, source, and sample](renderer/README.md). The regex pack is generated from this manifest. Every panel has its own navigation state. Modern browsers show one page at a time; browsers without CSS `:has()` support and groups exceeding four messages show a readable stack. Page selection resets when a message is rerendered. Keep SillyTavern's **Show &lt;tags&gt; in responses** off and allow external media for portraits.
+
+Known names with an unregistered expression use their own neutral portrait. An unmapped name keeps its actual speaker label and dialogue as text. Image-loading or external-media blocking leaves the text and controls usable. The extension consumer contract above remains the guide for richer runtime fallback and OOC chat; those capabilities are separate from this preset renderer.
 
 Multiple independent Vex speakers use their own sets; do not invent a blended appearance. Master mappings are explicit. Example future entry: `"masters": {"stable-master-id": {"label": "Master name", "assetSet": "master-set-key"}}`, with a matching entry in `sets` whose directory is `masters/stable-master-id`.

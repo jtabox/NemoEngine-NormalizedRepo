@@ -1,0 +1,17 @@
+{
+  "id": "93d335ed-6ab6-5a80-87d9-7b09ad868611",
+  "scriptName": "Nemo · Vex VN · strip older commentary from context",
+  "findRegex": "/<vexchat>[\\s\\S]*?<\\/vexchat>|<vexnote(?:\\s+[^>]*)?>[\\s\\S]*?<\\/vexnote>/g",
+  "replaceString": "",
+  "trimStrings": [],
+  "placement": [
+    2
+  ],
+  "disabled": false,
+  "markdownOnly": false,
+  "promptOnly": true,
+  "runOnEdit": true,
+  "substituteRegex": 0,
+  "minDepth": 5,
+  "maxDepth": null
+}

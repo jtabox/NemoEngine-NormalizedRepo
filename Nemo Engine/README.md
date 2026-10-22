@@ -2,6 +2,8 @@
   <img src="assets/nemo-engine-one-year-anniversary.webp" alt="Nemo Engine anniversary artwork" width="100%">
 </p>
 
+> **v12.2 Lite working update:** [Download the updated preset](./Nemo_Engine_v12.2_Lite.json) with visual novel Vex commentary and the complete portrait catalog. The model emits compact named dialogue; bundled display-only regex adds portraits, expressions, and Next/Back arrows. [Renderer setup and sample](./assets/vex/renderer/README.md). The v12.1 guide below remains available for its documented editions.
+
 # Nemo Engine v12.1
 
 **A modular Chat Completion preset for character roleplay, collaborative fiction, living worlds, and RPG-style scenes.**
@@ -597,3 +599,4 @@ Nemo Engine is maintained by [NemoVonNirgend](https://github.com/NemoVonNirgend)
 ## Vex portrait assets
 
 The [Vex asset catalog](assets/vex/README.md) defines personality-specific portrait folders, expression keys, and the shared manifest for future commentary panels and NemoPresetExt OOC conversations. Artwork and runtime integration are tracked separately.
+

@@ -1,0 +1,514 @@
+[
+  {
+    "name": "Default Vex",
+    "persona": "default",
+    "assetSet": "default",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Vex",
+    "persona": "default",
+    "assetSet": "default",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Brooding Vex",
+    "persona": "brooding",
+    "assetSet": "brooding",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Bubbly Vex",
+    "persona": "bubbly",
+    "assetSet": "bubbly",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Chaotic Vex",
+    "persona": "chaotic",
+    "assetSet": "chaotic",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Clinical Vex",
+    "persona": "clinical",
+    "assetSet": "clinical",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Cozy Vex",
+    "persona": "cozy",
+    "assetSet": "cozy",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Crescent Vex",
+    "persona": "crescent",
+    "assetSet": "crescent",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Dark Urban Fantasy Vex",
+    "persona": "dark-urban-fantasy",
+    "assetSet": "dark-urban-fantasy",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Epic Vex",
+    "persona": "epic",
+    "assetSet": "epic",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Explosive Vex",
+    "persona": "explosive",
+    "assetSet": "explosive",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Gamemaster Vex",
+    "persona": "gamemaster",
+    "assetSet": "gamemaster",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Gentle Vex",
+    "persona": "gentle",
+    "assetSet": "gentle",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Grimdark Vex",
+    "persona": "grimdark",
+    "assetSet": "grimdark",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Haar Vex",
+    "persona": "haar",
+    "assetSet": "haar",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Lustful Vex",
+    "persona": "lustful",
+    "assetSet": "lustful",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Morbid Vex",
+    "persona": "morbid",
+    "assetSet": "morbid",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Narrative Vex",
+    "persona": "narrative",
+    "assetSet": "default",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Noir Vex",
+    "persona": "noir",
+    "assetSet": "noir",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Obsessive Vex",
+    "persona": "obsessive",
+    "assetSet": "obsessive",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Petrichor Vex",
+    "persona": "petrichor",
+    "assetSet": "petrichor",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Philosophical Vex",
+    "persona": "philosophical",
+    "assetSet": "philosophical",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Sensory Vex",
+    "persona": "sensory",
+    "assetSet": "sensory",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Shadowy Vex",
+    "persona": "shadowy",
+    "assetSet": "shadowy",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Soft Romance Vex",
+    "persona": "soft-romance",
+    "assetSet": "soft-romance",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Tactical Vex",
+    "persona": "tactical",
+    "assetSet": "tactical",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Tsundere Vex",
+    "persona": "tsundere",
+    "assetSet": "tsundere",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Underdog Vex",
+    "persona": "underdog",
+    "assetSet": "underdog",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Unhinged Vex",
+    "persona": "unhinged",
+    "assetSet": "unhinged",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Whimsical Vex",
+    "persona": "whimsical",
+    "assetSet": "whimsical",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Goon Gremlin Vex",
+    "persona": "goon-gremlin",
+    "assetSet": "goon-gremlin",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  },
+  {
+    "name": "Gooner Vex",
+    "persona": "gooner",
+    "assetSet": "gooner",
+    "expressions": [
+      "neutral",
+      "amused",
+      "delighted",
+      "thoughtful",
+      "skeptical",
+      "surprised",
+      "concerned",
+      "sad",
+      "annoyed"
+    ]
+  }
+]

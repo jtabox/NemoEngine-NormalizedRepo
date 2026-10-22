@@ -1,0 +1,5 @@
+<vexchat>
+<vexnote name="Whimsical Vex" expression="thoughtful">A paper butterfly on the windowsill. Such a small thing to leave behind.</vexnote>
+<vexnote name="Whimsical Vex" expression="amused">And yet everyone in this room has carefully avoided looking at it.</vexnote>
+<vexnote name="Whimsical Vex" expression="delighted">I think we should let that silence do a little more work.</vexnote>
+</vexchat>
