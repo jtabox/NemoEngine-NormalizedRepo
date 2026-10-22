@@ -225,9 +225,11 @@
 
 - Files: `whimsical/neutral.png`, `whimsical/amused.png`, `whimsical/delighted.png`, `whimsical/thoughtful.png`, `whimsical/skeptical.png`, `whimsical/surprised.png`, `whimsical/concerned.png`, `whimsical/sad.png`, `whimsical/annoyed.png`.
 - Character and creative direction: Noah / NemoVonNirgend.
-- Source: generated with ChatGPT image generation using the supplied Vex identity reference, then edited from this set’s neutral base to create the remaining expressions. The set preserves a thick purple side braid, dusty-teal tailcoat, ivory high-neck blouse, plum waistcoat and skirt, dark tights, teal ankle boots, and a rose-gold moon pin, wolf ears, and a fluffy tail across all nine expressions.
+- Classic Fantasia / Whimsical persona interview: Steel-skull, as credited in the preset.
+- Approved direction: adult wonder, dream logic, warm playful discovery, and a specific little impossibility. The project owner approved the revised neutral sample before expression generation.
+- Source: generated with ChatGPT image generation, then edited from the approved neutral to create eight matching expressions. The set preserves the purple side braid, teal tailcoat, plum waistcoat and skirt, ivory ruffled blouse, tights and teal boots, crescent pin, purple ears and tail, open palm with one hovering ivory origami butterfly, and the other hand at her coat.
 - Publication: uploaded as part of the project owner’s requested Vex asset-set workflow. No separate third-party artwork license is asserted here.
-- Format: full-body transparent PNG, 1024 × 1536. This is Whimsical’s own image set; scene emotion does not switch her personality or costume.
+- Format: full-body transparent PNG, 1024 × 1536. Scene emotion does not switch her personality, costume, pose, or butterfly. Exact prompts and hashes are recorded in `generation/v0.29.0.json`.
 
 ## Goon Gremlin Vex
 
