@@ -1,8 +1,25 @@
 [
   {
+    "id": "62e20a29-798b-5653-814d-230310b161f2",
+    "scriptName": "Nemo · Vex VN · protect literal surfaces (display; keep paired)",
+    "findRegex": "/(?:^[ \\t]{0,3}(?:>[ \\t]?)*(?<nvlFenceTick>`{3,})[^\\r\\n]*(?:\\r?\\n[\\s\\S]*?^[ \\t]{0,3}(?:>[ \\t]?)*\\k<nvlFenceTick>`*[ \\t]*(?=\\r?$)|[\\s\\S]*))|(?:^[ \\t]{0,3}(?:>[ \\t]?)*(?<nvlFenceTilde>~{3,})[^\\r\\n]*(?:\\r?\\n[\\s\\S]*?^[ \\t]{0,3}(?:>[ \\t]?)*\\k<nvlFenceTilde>~*[ \\t]*(?=\\r?$)|[\\s\\S]*))|(?:^(?:(?: {4}|\\t)[^\\r\\n]*(?:\\r?\\n|(?![\\s\\S])))+)|(?:^[ \\t]*===[ \\t]*NEMO_(?<nvlWorkbenchKind>WORKBENCH|EXACT_REVIEW)_BEGIN[ \\t]*===[^\\r\\n]*(?:\\r?\\n[\\s\\S]*?^[ \\t]*===[ \\t]*NEMO_\\k<nvlWorkbenchKind>_END[ \\t]*===[^\\r\\n]*|[\\s\\S]*))|(?:(?<!`)(?<nvlInlineTicks>`+)(?!`)(?:[\\s\\S]*?(?<!`)\\k<nvlInlineTicks>(?!`)|[^\\r\\n]*$))|(?:<!--(?:[\\s\\S]*?-->|[\\s\\S]*))|(?:<!\\[CDATA\\[(?:[\\s\\S]*?\\]\\]>|[\\s\\S]*))|(?:<\\?(?:[\\s\\S]*?\\?>|[\\s\\S]*))|(?:<!(?:[^<>\"\\x27]|\"[^\"]*\"|\\x27[^\\x27]*\\x27)*(?:>|[\\s\\S]*))|(?:<(?<nvlRawTag>style|script|pre|code|textarea|title|xmp|template|plaintext|iframe|noembed|noframes|think|thinking|plan|planning|nemo-interiority|nemo-pad|nemo-offscreen|mental_state|nemo-mp-state|nemo-mp-retain|st-tracker(?:-[\\w-]+)?)\\b(?:[^<>\"\\x27]|\"[^\"]*\"|\\x27[^\\x27]*\\x27)*>(?:[\\s\\S]*?<\\/\\k<nvlRawTag>\\s*>|[\\s\\S]*))|(?:&lt;\\s*(?<nvlEscapedTag>mental_state|nemo-interiority|nemo-offscreen|nemo-pad|nemo-mp-state|nemo-mp-retain)\\s*&gt;[\\s\\S]*?(?:&lt;\\s*\\/\\s*\\k<nvlEscapedTag>\\s*&gt;|(?![\\s\\S])))|(?:<(?!\\/?(?:vexchat|vexnote)(?=[\\s/>]))(?:\\/?[A-Za-z][A-Za-z0-9:._-]*)(?=[\\s/>])(?:[^<>\"\\x27]|\"[^\"]*\"|\\x27[^\\x27]*\\x27)*(?:>|[\\s\\S]*))/gim",
+    "replaceString": "NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839{{match}}NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839",
+    "trimStrings": [],
+    "placement": [
+      2
+    ],
+    "disabled": false,
+    "markdownOnly": true,
+    "promptOnly": false,
+    "runOnEdit": true,
+    "substituteRegex": 0,
+    "minDepth": null,
+    "maxDepth": null
+  },
+  {
     "id": "734f9a3f-e27d-50d3-90f5-4ddec56e5e5b",
     "scriptName": "Nemo · Vex VN · 4 message panel",
-    "findRegex": "/<vexchat>[\\t \\r\\n]*(<vexnote[\\t ]+name=\"[^\"<>\\x00-\\x1f]{1,80}\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>[^<>]*<\\/vexnote>)[\\t \\r\\n]*(<vexnote[\\t ]+name=\"[^\"<>\\x00-\\x1f]{1,80}\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>[^<>]*<\\/vexnote>)[\\t \\r\\n]*(<vexnote[\\t ]+name=\"[^\"<>\\x00-\\x1f]{1,80}\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>[^<>]*<\\/vexnote>)[\\t \\r\\n]*(<vexnote[\\t ]+name=\"[^\"<>\\x00-\\x1f]{1,80}\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>[^<>]*<\\/vexnote>)[\\t \\r\\n]*<\\/vexchat>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexchat>[\\t \\r\\n]*(<vexnote[\\t ]+name=\"[^\"<>\\x00-\\x1f]{1,80}\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>[^<>]*<\\/vexnote>)[\\t \\r\\n]*(<vexnote[\\t ]+name=\"[^\"<>\\x00-\\x1f]{1,80}\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>[^<>]*<\\/vexnote>)[\\t \\r\\n]*(<vexnote[\\t ]+name=\"[^\"<>\\x00-\\x1f]{1,80}\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>[^<>]*<\\/vexnote>)[\\t \\r\\n]*(<vexnote[\\t ]+name=\"[^\"<>\\x00-\\x1f]{1,80}\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>[^<>]*<\\/vexnote>)[\\t \\r\\n]*<\\/vexchat>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<form class=\"nemo-vn\" autocomplete=\"off\" aria-label=\"Vex commentary\"><style>.nemo-vn{display:block;box-sizing:border-box;max-width:100%;margin:1.4rem 0;padding:0;overflow:visible;border:0;border-radius:0;background:transparent;color:#f4edf9;box-shadow:none;font-family:inherit;text-align:left;color-scheme:dark;isolation:isolate;} .nemo-vn *{box-sizing:border-box;} .nemo-vn-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px;color:#c8b1e6;font:600 .68rem/1.4 system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;} .nemo-vn-heading span:last-child{font-weight:400;letter-spacing:.04em;text-transform:none;color:#b3a5c5;} .nemo-vn-slide{display:block;position:relative;min-width:0;padding-top:260px;} .nemo-vn-window{display:flex;position:relative;z-index:0;isolation:isolate;flex-direction:column;min-width:0;min-height:240px;overflow:visible;border:0;border-radius:16px;background:transparent;color:#f4edf9;} .nemo-vn-window::before{content:\"\";display:block;position:absolute;z-index:0;inset:0;border:1px solid #ad8bd2;border-radius:16px;background:linear-gradient(145deg,rgba(35,25,49,.98),rgba(20,17,29,.98));box-shadow:0 10px 30px #0005,inset 0 1px 0 #e7d0ff18;pointer-events:none;} .nemo-vn-card{display:block;position:relative;min-width:0;max-width:100%;margin:18px 0;padding:0;border:0;background:transparent;color:#f4edf9;overflow-wrap:anywhere;text-align:left;} .nemo-vn .nemo-vn-card{display:contents;} .nemo-vn-portrait{display:flex;position:relative;z-index:0;align-items:flex-end;justify-content:center;width:100%;min-width:0;margin:0 auto -220px;padding:0;border:0;background:transparent;pointer-events:none;} .nemo-vn-portrait img{display:block;width:auto;max-width:100%;height:auto;max-height:510px;object-fit:contain;object-position:center bottom;margin:0;filter:drop-shadow(0 8px 15px #0004);} .nemo-vn .nemo-vn-portrait{position:absolute;z-index:-1;top:-260px;left:0;width:100%;height:500px;margin:0;padding:0;} .nemo-vn .nemo-vn-portrait img{width:auto!important;max-width:100%!important;height:500px!important;max-height:none;} .nemo-vn-speech{display:block;position:relative;z-index:1;min-width:0;margin:0;padding:22px 24px;border:1px solid #ad8bd2;border-radius:15px;background:rgba(28,21,39,.98);} .nemo-vn .nemo-vn-speech{flex:1 1 auto;padding:34px 26px 13px;border:0;border-radius:0;background:transparent;} .nemo-vn-name{display:block;width:fit-content;max-width:calc(100% - 36px);margin:0 0 13px;font-family:inherit;font-weight:700;font-size:1rem;line-height:1.35;color:#e5ccff;letter-spacing:.01em;overflow-wrap:anywhere;} .nemo-vn .nemo-vn-name{position:absolute;z-index:2;top:-20px;left:20px;margin:0;padding:8px 18px;border:1px solid #bb96df;border-radius:9px;background:linear-gradient(135deg,#493259,#2a2038);box-shadow:0 4px 12px #0004;font-size:.94rem;} .nemo-vn-dialogue{display:block;margin:0;white-space:pre-wrap;font-family:inherit;font-size:1rem;line-height:1.65;color:#f4edf9;overflow-wrap:anywhere;} .nemo-vn-nav{display:none;position:relative;z-index:1;align-items:center;justify-content:space-between;flex:0 0 auto;gap:10px;min-height:66px;margin:0;padding:9px 20px 14px;} .nemo-vn-control{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:90px;min-height:42px;margin:0;padding:9px 13px;border:1px solid #b394d077;border-radius:9px;background:#352543;color:#f7f1ff;font:600 .8rem/1.25 system-ui,sans-serif;cursor:pointer;user-select:none;} .nemo-vn-control:hover{background:#493259;border-color:#d4b4f3;} .nemo-vn-control:focus-within{outline:2px solid #dfc6ff;outline-offset:3px;} .nemo-vn-control input{position:absolute;inset:0;display:block;opacity:0;width:100%;height:100%;margin:0;cursor:pointer;} .nemo-vn-counter{color:#b5a4c6;font:500 .73rem/1.4 system-ui,sans-serif;letter-spacing:.12em;white-space:nowrap;} .nemo-vn-edge{display:inline-flex;align-items:center;justify-content:center;min-width:90px;min-height:42px;color:#90829f;font:500 .75rem/1.3 system-ui,sans-serif;} .nemo-vn-text-only .nemo-vn-speech{padding:22px 24px;} .nemo-vn-legacy{display:block;margin:12px 0;padding:12px 16px;border-left:3px solid #ac83d7;border-radius:8px;background:#241b2d;color:#e8dcef;font:inherit;line-height:1.55;overflow-wrap:anywhere;} @supports selector(:has(input:checked)){ .nemo-vn .nemo-vn-slide{display:none;} .nemo-vn:not(:has(input:checked)) .nemo-vn-slide-1,.nemo-vn:has(.nemo-vn-to-1:checked) .nemo-vn-slide-1,.nemo-vn:has(.nemo-vn-to-2:checked) .nemo-vn-slide-2,.nemo-vn:has(.nemo-vn-to-3:checked) .nemo-vn-slide-3,.nemo-vn:has(.nemo-vn-to-4:checked) .nemo-vn-slide-4{display:block;} .nemo-vn .nemo-vn-nav{display:flex;} .nemo-vn-portrait:not(:has(img)){display:none;} .nemo-vn-slide:not(:has(.nemo-vn-portrait img)){padding-top:22px;} .nemo-vn-slide:not(:has(.nemo-vn-portrait img)) .nemo-vn-window{min-height:0;} .nemo-vn-card:not(:has(.nemo-vn-portrait img)) .nemo-vn-speech{min-height:0;} } @media(max-width:520px){ .nemo-vn{margin:1rem 0;} .nemo-vn-slide{padding-top:220px;} .nemo-vn-window{min-height:210px;border-radius:13px;} .nemo-vn-window::before{border-radius:13px;} .nemo-vn .nemo-vn-portrait{top:-220px;height:430px;} .nemo-vn .nemo-vn-portrait img{height:430px!important;} .nemo-vn .nemo-vn-speech{padding:32px 17px 9px;} .nemo-vn .nemo-vn-name{top:-19px;left:13px;padding:8px 13px;max-width:calc(100% - 26px);font-size:.84rem;} .nemo-vn-dialogue{font-size:.92rem;line-height:1.58;} .nemo-vn-nav{padding:8px 12px 12px;gap:7px;min-height:62px;} .nemo-vn-control,.nemo-vn-edge{min-width:78px;min-height:42px;font-size:.72rem;padding:9px 10px;} .nemo-vn-heading{padding:11px 13px;font-size:.62rem;gap:8px;} .nemo-vn-heading span:last-child{font-size:.62rem;} } @media(prefers-reduced-motion:no-preference){.nemo-vn-control{transition:background .15s ease,border-color .15s ease;}}</style><div class=\"nemo-vn-slide nemo-vn-slide-1\"><div class=\"nemo-vn-window\">$1<div class=\"nemo-vn-nav\"><span class=\"nemo-vn-edge\" aria-hidden=\"true\">Beginning</span><span class=\"nemo-vn-counter\">01 / 04</span><label class=\"nemo-vn-control\"><input type=\"radio\" name=\"nemo-vn-page\" class=\"nemo-vn-to-2\" aria-label=\"Next message, 2 of 4\"><span aria-hidden=\"true\">Next ▶</span></label></div></div></div><div class=\"nemo-vn-slide nemo-vn-slide-2\"><div class=\"nemo-vn-window\">$2<div class=\"nemo-vn-nav\"><label class=\"nemo-vn-control\"><input type=\"radio\" name=\"nemo-vn-page\" class=\"nemo-vn-to-1\" aria-label=\"Back message, 1 of 4\"><span aria-hidden=\"true\">◀ Back</span></label><span class=\"nemo-vn-counter\">02 / 04</span><label class=\"nemo-vn-control\"><input type=\"radio\" name=\"nemo-vn-page\" class=\"nemo-vn-to-3\" aria-label=\"Next message, 3 of 4\"><span aria-hidden=\"true\">Next ▶</span></label></div></div></div><div class=\"nemo-vn-slide nemo-vn-slide-3\"><div class=\"nemo-vn-window\">$3<div class=\"nemo-vn-nav\"><label class=\"nemo-vn-control\"><input type=\"radio\" name=\"nemo-vn-page\" class=\"nemo-vn-to-2\" aria-label=\"Back message, 2 of 4\"><span aria-hidden=\"true\">◀ Back</span></label><span class=\"nemo-vn-counter\">03 / 04</span><label class=\"nemo-vn-control\"><input type=\"radio\" name=\"nemo-vn-page\" class=\"nemo-vn-to-4\" aria-label=\"Next message, 4 of 4\"><span aria-hidden=\"true\">Next ▶</span></label></div></div></div><div class=\"nemo-vn-slide nemo-vn-slide-4\"><div class=\"nemo-vn-window\">$4<div class=\"nemo-vn-nav\"><label class=\"nemo-vn-control\"><input type=\"radio\" name=\"nemo-vn-page\" class=\"nemo-vn-to-3\" aria-label=\"Back message, 3 of 4\"><span aria-hidden=\"true\">◀ Back</span></label><span class=\"nemo-vn-counter\">04 / 04</span><span class=\"nemo-vn-edge\">End</span></div></div></div></form>",
     "trimStrings": [],
     "placement": [
@@ -19,7 +36,7 @@
   {
     "id": "e4cbd965-20ad-5911-97b4-6fe4af587250",
     "scriptName": "Nemo · Vex VN · 3 message panel",
-    "findRegex": "/<vexchat>[\\t \\r\\n]*(<vexnote[\\t ]+name=\"[^\"<>\\x00-\\x1f]{1,80}\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>[^<>]*<\\/vexnote>)[\\t \\r\\n]*(<vexnote[\\t ]+name=\"[^\"<>\\x00-\\x1f]{1,80}\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>[^<>]*<\\/vexnote>)[\\t \\r\\n]*(<vexnote[\\t ]+name=\"[^\"<>\\x00-\\x1f]{1,80}\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>[^<>]*<\\/vexnote>)[\\t \\r\\n]*<\\/vexchat>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexchat>[\\t \\r\\n]*(<vexnote[\\t ]+name=\"[^\"<>\\x00-\\x1f]{1,80}\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>[^<>]*<\\/vexnote>)[\\t \\r\\n]*(<vexnote[\\t ]+name=\"[^\"<>\\x00-\\x1f]{1,80}\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>[^<>]*<\\/vexnote>)[\\t \\r\\n]*(<vexnote[\\t ]+name=\"[^\"<>\\x00-\\x1f]{1,80}\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>[^<>]*<\\/vexnote>)[\\t \\r\\n]*<\\/vexchat>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<form class=\"nemo-vn\" autocomplete=\"off\" aria-label=\"Vex commentary\"><style>.nemo-vn{display:block;box-sizing:border-box;max-width:100%;margin:1.4rem 0;padding:0;overflow:visible;border:0;border-radius:0;background:transparent;color:#f4edf9;box-shadow:none;font-family:inherit;text-align:left;color-scheme:dark;isolation:isolate;} .nemo-vn *{box-sizing:border-box;} .nemo-vn-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px;color:#c8b1e6;font:600 .68rem/1.4 system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;} .nemo-vn-heading span:last-child{font-weight:400;letter-spacing:.04em;text-transform:none;color:#b3a5c5;} .nemo-vn-slide{display:block;position:relative;min-width:0;padding-top:260px;} .nemo-vn-window{display:flex;position:relative;z-index:0;isolation:isolate;flex-direction:column;min-width:0;min-height:240px;overflow:visible;border:0;border-radius:16px;background:transparent;color:#f4edf9;} .nemo-vn-window::before{content:\"\";display:block;position:absolute;z-index:0;inset:0;border:1px solid #ad8bd2;border-radius:16px;background:linear-gradient(145deg,rgba(35,25,49,.98),rgba(20,17,29,.98));box-shadow:0 10px 30px #0005,inset 0 1px 0 #e7d0ff18;pointer-events:none;} .nemo-vn-card{display:block;position:relative;min-width:0;max-width:100%;margin:18px 0;padding:0;border:0;background:transparent;color:#f4edf9;overflow-wrap:anywhere;text-align:left;} .nemo-vn .nemo-vn-card{display:contents;} .nemo-vn-portrait{display:flex;position:relative;z-index:0;align-items:flex-end;justify-content:center;width:100%;min-width:0;margin:0 auto -220px;padding:0;border:0;background:transparent;pointer-events:none;} .nemo-vn-portrait img{display:block;width:auto;max-width:100%;height:auto;max-height:510px;object-fit:contain;object-position:center bottom;margin:0;filter:drop-shadow(0 8px 15px #0004);} .nemo-vn .nemo-vn-portrait{position:absolute;z-index:-1;top:-260px;left:0;width:100%;height:500px;margin:0;padding:0;} .nemo-vn .nemo-vn-portrait img{width:auto!important;max-width:100%!important;height:500px!important;max-height:none;} .nemo-vn-speech{display:block;position:relative;z-index:1;min-width:0;margin:0;padding:22px 24px;border:1px solid #ad8bd2;border-radius:15px;background:rgba(28,21,39,.98);} .nemo-vn .nemo-vn-speech{flex:1 1 auto;padding:34px 26px 13px;border:0;border-radius:0;background:transparent;} .nemo-vn-name{display:block;width:fit-content;max-width:calc(100% - 36px);margin:0 0 13px;font-family:inherit;font-weight:700;font-size:1rem;line-height:1.35;color:#e5ccff;letter-spacing:.01em;overflow-wrap:anywhere;} .nemo-vn .nemo-vn-name{position:absolute;z-index:2;top:-20px;left:20px;margin:0;padding:8px 18px;border:1px solid #bb96df;border-radius:9px;background:linear-gradient(135deg,#493259,#2a2038);box-shadow:0 4px 12px #0004;font-size:.94rem;} .nemo-vn-dialogue{display:block;margin:0;white-space:pre-wrap;font-family:inherit;font-size:1rem;line-height:1.65;color:#f4edf9;overflow-wrap:anywhere;} .nemo-vn-nav{display:none;position:relative;z-index:1;align-items:center;justify-content:space-between;flex:0 0 auto;gap:10px;min-height:66px;margin:0;padding:9px 20px 14px;} .nemo-vn-control{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:90px;min-height:42px;margin:0;padding:9px 13px;border:1px solid #b394d077;border-radius:9px;background:#352543;color:#f7f1ff;font:600 .8rem/1.25 system-ui,sans-serif;cursor:pointer;user-select:none;} .nemo-vn-control:hover{background:#493259;border-color:#d4b4f3;} .nemo-vn-control:focus-within{outline:2px solid #dfc6ff;outline-offset:3px;} .nemo-vn-control input{position:absolute;inset:0;display:block;opacity:0;width:100%;height:100%;margin:0;cursor:pointer;} .nemo-vn-counter{color:#b5a4c6;font:500 .73rem/1.4 system-ui,sans-serif;letter-spacing:.12em;white-space:nowrap;} .nemo-vn-edge{display:inline-flex;align-items:center;justify-content:center;min-width:90px;min-height:42px;color:#90829f;font:500 .75rem/1.3 system-ui,sans-serif;} .nemo-vn-text-only .nemo-vn-speech{padding:22px 24px;} .nemo-vn-legacy{display:block;margin:12px 0;padding:12px 16px;border-left:3px solid #ac83d7;border-radius:8px;background:#241b2d;color:#e8dcef;font:inherit;line-height:1.55;overflow-wrap:anywhere;} @supports selector(:has(input:checked)){ .nemo-vn .nemo-vn-slide{display:none;} .nemo-vn:not(:has(input:checked)) .nemo-vn-slide-1,.nemo-vn:has(.nemo-vn-to-1:checked) .nemo-vn-slide-1,.nemo-vn:has(.nemo-vn-to-2:checked) .nemo-vn-slide-2,.nemo-vn:has(.nemo-vn-to-3:checked) .nemo-vn-slide-3,.nemo-vn:has(.nemo-vn-to-4:checked) .nemo-vn-slide-4{display:block;} .nemo-vn .nemo-vn-nav{display:flex;} .nemo-vn-portrait:not(:has(img)){display:none;} .nemo-vn-slide:not(:has(.nemo-vn-portrait img)){padding-top:22px;} .nemo-vn-slide:not(:has(.nemo-vn-portrait img)) .nemo-vn-window{min-height:0;} .nemo-vn-card:not(:has(.nemo-vn-portrait img)) .nemo-vn-speech{min-height:0;} } @media(max-width:520px){ .nemo-vn{margin:1rem 0;} .nemo-vn-slide{padding-top:220px;} .nemo-vn-window{min-height:210px;border-radius:13px;} .nemo-vn-window::before{border-radius:13px;} .nemo-vn .nemo-vn-portrait{top:-220px;height:430px;} .nemo-vn .nemo-vn-portrait img{height:430px!important;} .nemo-vn .nemo-vn-speech{padding:32px 17px 9px;} .nemo-vn .nemo-vn-name{top:-19px;left:13px;padding:8px 13px;max-width:calc(100% - 26px);font-size:.84rem;} .nemo-vn-dialogue{font-size:.92rem;line-height:1.58;} .nemo-vn-nav{padding:8px 12px 12px;gap:7px;min-height:62px;} .nemo-vn-control,.nemo-vn-edge{min-width:78px;min-height:42px;font-size:.72rem;padding:9px 10px;} .nemo-vn-heading{padding:11px 13px;font-size:.62rem;gap:8px;} .nemo-vn-heading span:last-child{font-size:.62rem;} } @media(prefers-reduced-motion:no-preference){.nemo-vn-control{transition:background .15s ease,border-color .15s ease;}}</style><div class=\"nemo-vn-slide nemo-vn-slide-1\"><div class=\"nemo-vn-window\">$1<div class=\"nemo-vn-nav\"><span class=\"nemo-vn-edge\" aria-hidden=\"true\">Beginning</span><span class=\"nemo-vn-counter\">01 / 03</span><label class=\"nemo-vn-control\"><input type=\"radio\" name=\"nemo-vn-page\" class=\"nemo-vn-to-2\" aria-label=\"Next message, 2 of 3\"><span aria-hidden=\"true\">Next ▶</span></label></div></div></div><div class=\"nemo-vn-slide nemo-vn-slide-2\"><div class=\"nemo-vn-window\">$2<div class=\"nemo-vn-nav\"><label class=\"nemo-vn-control\"><input type=\"radio\" name=\"nemo-vn-page\" class=\"nemo-vn-to-1\" aria-label=\"Back message, 1 of 3\"><span aria-hidden=\"true\">◀ Back</span></label><span class=\"nemo-vn-counter\">02 / 03</span><label class=\"nemo-vn-control\"><input type=\"radio\" name=\"nemo-vn-page\" class=\"nemo-vn-to-3\" aria-label=\"Next message, 3 of 3\"><span aria-hidden=\"true\">Next ▶</span></label></div></div></div><div class=\"nemo-vn-slide nemo-vn-slide-3\"><div class=\"nemo-vn-window\">$3<div class=\"nemo-vn-nav\"><label class=\"nemo-vn-control\"><input type=\"radio\" name=\"nemo-vn-page\" class=\"nemo-vn-to-2\" aria-label=\"Back message, 2 of 3\"><span aria-hidden=\"true\">◀ Back</span></label><span class=\"nemo-vn-counter\">03 / 03</span><span class=\"nemo-vn-edge\">End</span></div></div></div></form>",
     "trimStrings": [],
     "placement": [
@@ -36,7 +53,7 @@
   {
     "id": "808e6d1a-8f65-5f9b-8471-9cf3c4ff74a5",
     "scriptName": "Nemo · Vex VN · 2 message panel",
-    "findRegex": "/<vexchat>[\\t \\r\\n]*(<vexnote[\\t ]+name=\"[^\"<>\\x00-\\x1f]{1,80}\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>[^<>]*<\\/vexnote>)[\\t \\r\\n]*(<vexnote[\\t ]+name=\"[^\"<>\\x00-\\x1f]{1,80}\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>[^<>]*<\\/vexnote>)[\\t \\r\\n]*<\\/vexchat>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexchat>[\\t \\r\\n]*(<vexnote[\\t ]+name=\"[^\"<>\\x00-\\x1f]{1,80}\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>[^<>]*<\\/vexnote>)[\\t \\r\\n]*(<vexnote[\\t ]+name=\"[^\"<>\\x00-\\x1f]{1,80}\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>[^<>]*<\\/vexnote>)[\\t \\r\\n]*<\\/vexchat>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<form class=\"nemo-vn\" autocomplete=\"off\" aria-label=\"Vex commentary\"><style>.nemo-vn{display:block;box-sizing:border-box;max-width:100%;margin:1.4rem 0;padding:0;overflow:visible;border:0;border-radius:0;background:transparent;color:#f4edf9;box-shadow:none;font-family:inherit;text-align:left;color-scheme:dark;isolation:isolate;} .nemo-vn *{box-sizing:border-box;} .nemo-vn-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px;color:#c8b1e6;font:600 .68rem/1.4 system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;} .nemo-vn-heading span:last-child{font-weight:400;letter-spacing:.04em;text-transform:none;color:#b3a5c5;} .nemo-vn-slide{display:block;position:relative;min-width:0;padding-top:260px;} .nemo-vn-window{display:flex;position:relative;z-index:0;isolation:isolate;flex-direction:column;min-width:0;min-height:240px;overflow:visible;border:0;border-radius:16px;background:transparent;color:#f4edf9;} .nemo-vn-window::before{content:\"\";display:block;position:absolute;z-index:0;inset:0;border:1px solid #ad8bd2;border-radius:16px;background:linear-gradient(145deg,rgba(35,25,49,.98),rgba(20,17,29,.98));box-shadow:0 10px 30px #0005,inset 0 1px 0 #e7d0ff18;pointer-events:none;} .nemo-vn-card{display:block;position:relative;min-width:0;max-width:100%;margin:18px 0;padding:0;border:0;background:transparent;color:#f4edf9;overflow-wrap:anywhere;text-align:left;} .nemo-vn .nemo-vn-card{display:contents;} .nemo-vn-portrait{display:flex;position:relative;z-index:0;align-items:flex-end;justify-content:center;width:100%;min-width:0;margin:0 auto -220px;padding:0;border:0;background:transparent;pointer-events:none;} .nemo-vn-portrait img{display:block;width:auto;max-width:100%;height:auto;max-height:510px;object-fit:contain;object-position:center bottom;margin:0;filter:drop-shadow(0 8px 15px #0004);} .nemo-vn .nemo-vn-portrait{position:absolute;z-index:-1;top:-260px;left:0;width:100%;height:500px;margin:0;padding:0;} .nemo-vn .nemo-vn-portrait img{width:auto!important;max-width:100%!important;height:500px!important;max-height:none;} .nemo-vn-speech{display:block;position:relative;z-index:1;min-width:0;margin:0;padding:22px 24px;border:1px solid #ad8bd2;border-radius:15px;background:rgba(28,21,39,.98);} .nemo-vn .nemo-vn-speech{flex:1 1 auto;padding:34px 26px 13px;border:0;border-radius:0;background:transparent;} .nemo-vn-name{display:block;width:fit-content;max-width:calc(100% - 36px);margin:0 0 13px;font-family:inherit;font-weight:700;font-size:1rem;line-height:1.35;color:#e5ccff;letter-spacing:.01em;overflow-wrap:anywhere;} .nemo-vn .nemo-vn-name{position:absolute;z-index:2;top:-20px;left:20px;margin:0;padding:8px 18px;border:1px solid #bb96df;border-radius:9px;background:linear-gradient(135deg,#493259,#2a2038);box-shadow:0 4px 12px #0004;font-size:.94rem;} .nemo-vn-dialogue{display:block;margin:0;white-space:pre-wrap;font-family:inherit;font-size:1rem;line-height:1.65;color:#f4edf9;overflow-wrap:anywhere;} .nemo-vn-nav{display:none;position:relative;z-index:1;align-items:center;justify-content:space-between;flex:0 0 auto;gap:10px;min-height:66px;margin:0;padding:9px 20px 14px;} .nemo-vn-control{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:90px;min-height:42px;margin:0;padding:9px 13px;border:1px solid #b394d077;border-radius:9px;background:#352543;color:#f7f1ff;font:600 .8rem/1.25 system-ui,sans-serif;cursor:pointer;user-select:none;} .nemo-vn-control:hover{background:#493259;border-color:#d4b4f3;} .nemo-vn-control:focus-within{outline:2px solid #dfc6ff;outline-offset:3px;} .nemo-vn-control input{position:absolute;inset:0;display:block;opacity:0;width:100%;height:100%;margin:0;cursor:pointer;} .nemo-vn-counter{color:#b5a4c6;font:500 .73rem/1.4 system-ui,sans-serif;letter-spacing:.12em;white-space:nowrap;} .nemo-vn-edge{display:inline-flex;align-items:center;justify-content:center;min-width:90px;min-height:42px;color:#90829f;font:500 .75rem/1.3 system-ui,sans-serif;} .nemo-vn-text-only .nemo-vn-speech{padding:22px 24px;} .nemo-vn-legacy{display:block;margin:12px 0;padding:12px 16px;border-left:3px solid #ac83d7;border-radius:8px;background:#241b2d;color:#e8dcef;font:inherit;line-height:1.55;overflow-wrap:anywhere;} @supports selector(:has(input:checked)){ .nemo-vn .nemo-vn-slide{display:none;} .nemo-vn:not(:has(input:checked)) .nemo-vn-slide-1,.nemo-vn:has(.nemo-vn-to-1:checked) .nemo-vn-slide-1,.nemo-vn:has(.nemo-vn-to-2:checked) .nemo-vn-slide-2,.nemo-vn:has(.nemo-vn-to-3:checked) .nemo-vn-slide-3,.nemo-vn:has(.nemo-vn-to-4:checked) .nemo-vn-slide-4{display:block;} .nemo-vn .nemo-vn-nav{display:flex;} .nemo-vn-portrait:not(:has(img)){display:none;} .nemo-vn-slide:not(:has(.nemo-vn-portrait img)){padding-top:22px;} .nemo-vn-slide:not(:has(.nemo-vn-portrait img)) .nemo-vn-window{min-height:0;} .nemo-vn-card:not(:has(.nemo-vn-portrait img)) .nemo-vn-speech{min-height:0;} } @media(max-width:520px){ .nemo-vn{margin:1rem 0;} .nemo-vn-slide{padding-top:220px;} .nemo-vn-window{min-height:210px;border-radius:13px;} .nemo-vn-window::before{border-radius:13px;} .nemo-vn .nemo-vn-portrait{top:-220px;height:430px;} .nemo-vn .nemo-vn-portrait img{height:430px!important;} .nemo-vn .nemo-vn-speech{padding:32px 17px 9px;} .nemo-vn .nemo-vn-name{top:-19px;left:13px;padding:8px 13px;max-width:calc(100% - 26px);font-size:.84rem;} .nemo-vn-dialogue{font-size:.92rem;line-height:1.58;} .nemo-vn-nav{padding:8px 12px 12px;gap:7px;min-height:62px;} .nemo-vn-control,.nemo-vn-edge{min-width:78px;min-height:42px;font-size:.72rem;padding:9px 10px;} .nemo-vn-heading{padding:11px 13px;font-size:.62rem;gap:8px;} .nemo-vn-heading span:last-child{font-size:.62rem;} } @media(prefers-reduced-motion:no-preference){.nemo-vn-control{transition:background .15s ease,border-color .15s ease;}}</style><div class=\"nemo-vn-slide nemo-vn-slide-1\"><div class=\"nemo-vn-window\">$1<div class=\"nemo-vn-nav\"><span class=\"nemo-vn-edge\" aria-hidden=\"true\">Beginning</span><span class=\"nemo-vn-counter\">01 / 02</span><label class=\"nemo-vn-control\"><input type=\"radio\" name=\"nemo-vn-page\" class=\"nemo-vn-to-2\" aria-label=\"Next message, 2 of 2\"><span aria-hidden=\"true\">Next ▶</span></label></div></div></div><div class=\"nemo-vn-slide nemo-vn-slide-2\"><div class=\"nemo-vn-window\">$2<div class=\"nemo-vn-nav\"><label class=\"nemo-vn-control\"><input type=\"radio\" name=\"nemo-vn-page\" class=\"nemo-vn-to-1\" aria-label=\"Back message, 1 of 2\"><span aria-hidden=\"true\">◀ Back</span></label><span class=\"nemo-vn-counter\">02 / 02</span><span class=\"nemo-vn-edge\">End</span></div></div></div></form>",
     "trimStrings": [],
     "placement": [
@@ -53,7 +70,7 @@
   {
     "id": "4219a75c-ee91-552f-a946-7831883c6f28",
     "scriptName": "Nemo · Vex VN · 1 message panel",
-    "findRegex": "/<vexchat>[\\t \\r\\n]*(<vexnote[\\t ]+name=\"[^\"<>\\x00-\\x1f]{1,80}\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>[^<>]*<\\/vexnote>)[\\t \\r\\n]*<\\/vexchat>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexchat>[\\t \\r\\n]*(<vexnote[\\t ]+name=\"[^\"<>\\x00-\\x1f]{1,80}\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>[^<>]*<\\/vexnote>)[\\t \\r\\n]*<\\/vexchat>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<form class=\"nemo-vn\" autocomplete=\"off\" aria-label=\"Vex commentary\"><style>.nemo-vn{display:block;box-sizing:border-box;max-width:100%;margin:1.4rem 0;padding:0;overflow:visible;border:0;border-radius:0;background:transparent;color:#f4edf9;box-shadow:none;font-family:inherit;text-align:left;color-scheme:dark;isolation:isolate;} .nemo-vn *{box-sizing:border-box;} .nemo-vn-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px;color:#c8b1e6;font:600 .68rem/1.4 system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;} .nemo-vn-heading span:last-child{font-weight:400;letter-spacing:.04em;text-transform:none;color:#b3a5c5;} .nemo-vn-slide{display:block;position:relative;min-width:0;padding-top:260px;} .nemo-vn-window{display:flex;position:relative;z-index:0;isolation:isolate;flex-direction:column;min-width:0;min-height:240px;overflow:visible;border:0;border-radius:16px;background:transparent;color:#f4edf9;} .nemo-vn-window::before{content:\"\";display:block;position:absolute;z-index:0;inset:0;border:1px solid #ad8bd2;border-radius:16px;background:linear-gradient(145deg,rgba(35,25,49,.98),rgba(20,17,29,.98));box-shadow:0 10px 30px #0005,inset 0 1px 0 #e7d0ff18;pointer-events:none;} .nemo-vn-card{display:block;position:relative;min-width:0;max-width:100%;margin:18px 0;padding:0;border:0;background:transparent;color:#f4edf9;overflow-wrap:anywhere;text-align:left;} .nemo-vn .nemo-vn-card{display:contents;} .nemo-vn-portrait{display:flex;position:relative;z-index:0;align-items:flex-end;justify-content:center;width:100%;min-width:0;margin:0 auto -220px;padding:0;border:0;background:transparent;pointer-events:none;} .nemo-vn-portrait img{display:block;width:auto;max-width:100%;height:auto;max-height:510px;object-fit:contain;object-position:center bottom;margin:0;filter:drop-shadow(0 8px 15px #0004);} .nemo-vn .nemo-vn-portrait{position:absolute;z-index:-1;top:-260px;left:0;width:100%;height:500px;margin:0;padding:0;} .nemo-vn .nemo-vn-portrait img{width:auto!important;max-width:100%!important;height:500px!important;max-height:none;} .nemo-vn-speech{display:block;position:relative;z-index:1;min-width:0;margin:0;padding:22px 24px;border:1px solid #ad8bd2;border-radius:15px;background:rgba(28,21,39,.98);} .nemo-vn .nemo-vn-speech{flex:1 1 auto;padding:34px 26px 13px;border:0;border-radius:0;background:transparent;} .nemo-vn-name{display:block;width:fit-content;max-width:calc(100% - 36px);margin:0 0 13px;font-family:inherit;font-weight:700;font-size:1rem;line-height:1.35;color:#e5ccff;letter-spacing:.01em;overflow-wrap:anywhere;} .nemo-vn .nemo-vn-name{position:absolute;z-index:2;top:-20px;left:20px;margin:0;padding:8px 18px;border:1px solid #bb96df;border-radius:9px;background:linear-gradient(135deg,#493259,#2a2038);box-shadow:0 4px 12px #0004;font-size:.94rem;} .nemo-vn-dialogue{display:block;margin:0;white-space:pre-wrap;font-family:inherit;font-size:1rem;line-height:1.65;color:#f4edf9;overflow-wrap:anywhere;} .nemo-vn-nav{display:none;position:relative;z-index:1;align-items:center;justify-content:space-between;flex:0 0 auto;gap:10px;min-height:66px;margin:0;padding:9px 20px 14px;} .nemo-vn-control{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:90px;min-height:42px;margin:0;padding:9px 13px;border:1px solid #b394d077;border-radius:9px;background:#352543;color:#f7f1ff;font:600 .8rem/1.25 system-ui,sans-serif;cursor:pointer;user-select:none;} .nemo-vn-control:hover{background:#493259;border-color:#d4b4f3;} .nemo-vn-control:focus-within{outline:2px solid #dfc6ff;outline-offset:3px;} .nemo-vn-control input{position:absolute;inset:0;display:block;opacity:0;width:100%;height:100%;margin:0;cursor:pointer;} .nemo-vn-counter{color:#b5a4c6;font:500 .73rem/1.4 system-ui,sans-serif;letter-spacing:.12em;white-space:nowrap;} .nemo-vn-edge{display:inline-flex;align-items:center;justify-content:center;min-width:90px;min-height:42px;color:#90829f;font:500 .75rem/1.3 system-ui,sans-serif;} .nemo-vn-text-only .nemo-vn-speech{padding:22px 24px;} .nemo-vn-legacy{display:block;margin:12px 0;padding:12px 16px;border-left:3px solid #ac83d7;border-radius:8px;background:#241b2d;color:#e8dcef;font:inherit;line-height:1.55;overflow-wrap:anywhere;} @supports selector(:has(input:checked)){ .nemo-vn .nemo-vn-slide{display:none;} .nemo-vn:not(:has(input:checked)) .nemo-vn-slide-1,.nemo-vn:has(.nemo-vn-to-1:checked) .nemo-vn-slide-1,.nemo-vn:has(.nemo-vn-to-2:checked) .nemo-vn-slide-2,.nemo-vn:has(.nemo-vn-to-3:checked) .nemo-vn-slide-3,.nemo-vn:has(.nemo-vn-to-4:checked) .nemo-vn-slide-4{display:block;} .nemo-vn .nemo-vn-nav{display:flex;} .nemo-vn-portrait:not(:has(img)){display:none;} .nemo-vn-slide:not(:has(.nemo-vn-portrait img)){padding-top:22px;} .nemo-vn-slide:not(:has(.nemo-vn-portrait img)) .nemo-vn-window{min-height:0;} .nemo-vn-card:not(:has(.nemo-vn-portrait img)) .nemo-vn-speech{min-height:0;} } @media(max-width:520px){ .nemo-vn{margin:1rem 0;} .nemo-vn-slide{padding-top:220px;} .nemo-vn-window{min-height:210px;border-radius:13px;} .nemo-vn-window::before{border-radius:13px;} .nemo-vn .nemo-vn-portrait{top:-220px;height:430px;} .nemo-vn .nemo-vn-portrait img{height:430px!important;} .nemo-vn .nemo-vn-speech{padding:32px 17px 9px;} .nemo-vn .nemo-vn-name{top:-19px;left:13px;padding:8px 13px;max-width:calc(100% - 26px);font-size:.84rem;} .nemo-vn-dialogue{font-size:.92rem;line-height:1.58;} .nemo-vn-nav{padding:8px 12px 12px;gap:7px;min-height:62px;} .nemo-vn-control,.nemo-vn-edge{min-width:78px;min-height:42px;font-size:.72rem;padding:9px 10px;} .nemo-vn-heading{padding:11px 13px;font-size:.62rem;gap:8px;} .nemo-vn-heading span:last-child{font-size:.62rem;} } @media(prefers-reduced-motion:no-preference){.nemo-vn-control{transition:background .15s ease,border-color .15s ease;}}</style><div class=\"nemo-vn-slide nemo-vn-slide-1\"><div class=\"nemo-vn-window\">$1<div class=\"nemo-vn-nav\"><span class=\"nemo-vn-edge\" aria-hidden=\"true\">Beginning</span><span class=\"nemo-vn-counter\">01 / 01</span><span class=\"nemo-vn-edge\">End</span></div></div></div></form>",
     "trimStrings": [],
     "placement": [
@@ -70,7 +87,7 @@
   {
     "id": "572d8e59-e082-5486-ad3e-ba8cce86ed04",
     "scriptName": "Nemo · Vex VN · readable overflow wrapper",
-    "findRegex": "/<vexchat>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexchat>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<style>.nemo-vn{display:block;box-sizing:border-box;max-width:100%;margin:1.4rem 0;padding:0;overflow:visible;border:0;border-radius:0;background:transparent;color:#f4edf9;box-shadow:none;font-family:inherit;text-align:left;color-scheme:dark;isolation:isolate;} .nemo-vn *{box-sizing:border-box;} .nemo-vn-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px;color:#c8b1e6;font:600 .68rem/1.4 system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;} .nemo-vn-heading span:last-child{font-weight:400;letter-spacing:.04em;text-transform:none;color:#b3a5c5;} .nemo-vn-slide{display:block;position:relative;min-width:0;padding-top:260px;} .nemo-vn-window{display:flex;position:relative;z-index:0;isolation:isolate;flex-direction:column;min-width:0;min-height:240px;overflow:visible;border:0;border-radius:16px;background:transparent;color:#f4edf9;} .nemo-vn-window::before{content:\"\";display:block;position:absolute;z-index:0;inset:0;border:1px solid #ad8bd2;border-radius:16px;background:linear-gradient(145deg,rgba(35,25,49,.98),rgba(20,17,29,.98));box-shadow:0 10px 30px #0005,inset 0 1px 0 #e7d0ff18;pointer-events:none;} .nemo-vn-card{display:block;position:relative;min-width:0;max-width:100%;margin:18px 0;padding:0;border:0;background:transparent;color:#f4edf9;overflow-wrap:anywhere;text-align:left;} .nemo-vn .nemo-vn-card{display:contents;} .nemo-vn-portrait{display:flex;position:relative;z-index:0;align-items:flex-end;justify-content:center;width:100%;min-width:0;margin:0 auto -220px;padding:0;border:0;background:transparent;pointer-events:none;} .nemo-vn-portrait img{display:block;width:auto;max-width:100%;height:auto;max-height:510px;object-fit:contain;object-position:center bottom;margin:0;filter:drop-shadow(0 8px 15px #0004);} .nemo-vn .nemo-vn-portrait{position:absolute;z-index:-1;top:-260px;left:0;width:100%;height:500px;margin:0;padding:0;} .nemo-vn .nemo-vn-portrait img{width:auto!important;max-width:100%!important;height:500px!important;max-height:none;} .nemo-vn-speech{display:block;position:relative;z-index:1;min-width:0;margin:0;padding:22px 24px;border:1px solid #ad8bd2;border-radius:15px;background:rgba(28,21,39,.98);} .nemo-vn .nemo-vn-speech{flex:1 1 auto;padding:34px 26px 13px;border:0;border-radius:0;background:transparent;} .nemo-vn-name{display:block;width:fit-content;max-width:calc(100% - 36px);margin:0 0 13px;font-family:inherit;font-weight:700;font-size:1rem;line-height:1.35;color:#e5ccff;letter-spacing:.01em;overflow-wrap:anywhere;} .nemo-vn .nemo-vn-name{position:absolute;z-index:2;top:-20px;left:20px;margin:0;padding:8px 18px;border:1px solid #bb96df;border-radius:9px;background:linear-gradient(135deg,#493259,#2a2038);box-shadow:0 4px 12px #0004;font-size:.94rem;} .nemo-vn-dialogue{display:block;margin:0;white-space:pre-wrap;font-family:inherit;font-size:1rem;line-height:1.65;color:#f4edf9;overflow-wrap:anywhere;} .nemo-vn-nav{display:none;position:relative;z-index:1;align-items:center;justify-content:space-between;flex:0 0 auto;gap:10px;min-height:66px;margin:0;padding:9px 20px 14px;} .nemo-vn-control{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:90px;min-height:42px;margin:0;padding:9px 13px;border:1px solid #b394d077;border-radius:9px;background:#352543;color:#f7f1ff;font:600 .8rem/1.25 system-ui,sans-serif;cursor:pointer;user-select:none;} .nemo-vn-control:hover{background:#493259;border-color:#d4b4f3;} .nemo-vn-control:focus-within{outline:2px solid #dfc6ff;outline-offset:3px;} .nemo-vn-control input{position:absolute;inset:0;display:block;opacity:0;width:100%;height:100%;margin:0;cursor:pointer;} .nemo-vn-counter{color:#b5a4c6;font:500 .73rem/1.4 system-ui,sans-serif;letter-spacing:.12em;white-space:nowrap;} .nemo-vn-edge{display:inline-flex;align-items:center;justify-content:center;min-width:90px;min-height:42px;color:#90829f;font:500 .75rem/1.3 system-ui,sans-serif;} .nemo-vn-text-only .nemo-vn-speech{padding:22px 24px;} .nemo-vn-legacy{display:block;margin:12px 0;padding:12px 16px;border-left:3px solid #ac83d7;border-radius:8px;background:#241b2d;color:#e8dcef;font:inherit;line-height:1.55;overflow-wrap:anywhere;} @supports selector(:has(input:checked)){ .nemo-vn .nemo-vn-slide{display:none;} .nemo-vn:not(:has(input:checked)) .nemo-vn-slide-1,.nemo-vn:has(.nemo-vn-to-1:checked) .nemo-vn-slide-1,.nemo-vn:has(.nemo-vn-to-2:checked) .nemo-vn-slide-2,.nemo-vn:has(.nemo-vn-to-3:checked) .nemo-vn-slide-3,.nemo-vn:has(.nemo-vn-to-4:checked) .nemo-vn-slide-4{display:block;} .nemo-vn .nemo-vn-nav{display:flex;} .nemo-vn-portrait:not(:has(img)){display:none;} .nemo-vn-slide:not(:has(.nemo-vn-portrait img)){padding-top:22px;} .nemo-vn-slide:not(:has(.nemo-vn-portrait img)) .nemo-vn-window{min-height:0;} .nemo-vn-card:not(:has(.nemo-vn-portrait img)) .nemo-vn-speech{min-height:0;} } @media(max-width:520px){ .nemo-vn{margin:1rem 0;} .nemo-vn-slide{padding-top:220px;} .nemo-vn-window{min-height:210px;border-radius:13px;} .nemo-vn-window::before{border-radius:13px;} .nemo-vn .nemo-vn-portrait{top:-220px;height:430px;} .nemo-vn .nemo-vn-portrait img{height:430px!important;} .nemo-vn .nemo-vn-speech{padding:32px 17px 9px;} .nemo-vn .nemo-vn-name{top:-19px;left:13px;padding:8px 13px;max-width:calc(100% - 26px);font-size:.84rem;} .nemo-vn-dialogue{font-size:.92rem;line-height:1.58;} .nemo-vn-nav{padding:8px 12px 12px;gap:7px;min-height:62px;} .nemo-vn-control,.nemo-vn-edge{min-width:78px;min-height:42px;font-size:.72rem;padding:9px 10px;} .nemo-vn-heading{padding:11px 13px;font-size:.62rem;gap:8px;} .nemo-vn-heading span:last-child{font-size:.62rem;} } @media(prefers-reduced-motion:no-preference){.nemo-vn-control{transition:background .15s ease,border-color .15s ease;}}</style><div class=\"nemo-vn-heading\"><span>Vex commentary</span><span>All messages</span></div>",
     "trimStrings": [],
     "placement": [
@@ -87,7 +104,7 @@
   {
     "id": "7a561430-adeb-5a34-ac36-851a4daeefb8",
     "scriptName": "Nemo · Vex VN · remove overflow closing marker",
-    "findRegex": "/<\\/vexchat>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<\\/vexchat>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "",
     "trimStrings": [],
     "placement": [
@@ -104,7 +121,7 @@
   {
     "id": "3d2002cf-cd64-5041-b9b8-e86098d317cf",
     "scriptName": "Nemo · Vex VN · Default Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Default\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Default\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/default/$1.png\" alt=\"Default Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Default Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -121,7 +138,7 @@
   {
     "id": "ecb5ba00-ab55-53b4-a313-297c86914431",
     "scriptName": "Nemo · Vex VN · Default Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Default\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Default\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/default/neutral.png\" alt=\"Default Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Default Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -138,7 +155,7 @@
   {
     "id": "ee1e30b9-7705-5b7a-bbbb-d37fba3575e8",
     "scriptName": "Nemo · Vex VN · Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/default/$1.png\" alt=\"Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -155,7 +172,7 @@
   {
     "id": "4ab2c7b3-d2c1-53e1-8659-24c0a1b56569",
     "scriptName": "Nemo · Vex VN · Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/default/neutral.png\" alt=\"Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -172,7 +189,7 @@
   {
     "id": "45c498c3-5fc9-5912-98a7-17f8629fa88b",
     "scriptName": "Nemo · Vex VN · Brooding Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Brooding\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Brooding\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/brooding/$1.png\" alt=\"Brooding Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Brooding Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -189,7 +206,7 @@
   {
     "id": "793e534a-65ae-5fb8-b0ce-df56bb6cbaf3",
     "scriptName": "Nemo · Vex VN · Brooding Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Brooding\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Brooding\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/brooding/neutral.png\" alt=\"Brooding Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Brooding Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -206,7 +223,7 @@
   {
     "id": "c2823ef5-e362-53dd-902a-80e870bc12ee",
     "scriptName": "Nemo · Vex VN · Bubbly Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Bubbly\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Bubbly\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/bubbly/$1.png\" alt=\"Bubbly Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Bubbly Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -223,7 +240,7 @@
   {
     "id": "fa97418c-d830-512c-af51-1242d903d9f8",
     "scriptName": "Nemo · Vex VN · Bubbly Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Bubbly\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Bubbly\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/bubbly/neutral.png\" alt=\"Bubbly Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Bubbly Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -240,7 +257,7 @@
   {
     "id": "6e4ef629-35cd-5301-ace3-136f2bbce697",
     "scriptName": "Nemo · Vex VN · Chaotic Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Chaotic\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Chaotic\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/chaotic/$1.png\" alt=\"Chaotic Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Chaotic Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -257,7 +274,7 @@
   {
     "id": "d11f0f42-bc87-5d48-bc1b-e56fce7ce6bb",
     "scriptName": "Nemo · Vex VN · Chaotic Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Chaotic\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Chaotic\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/chaotic/neutral.png\" alt=\"Chaotic Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Chaotic Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -274,7 +291,7 @@
   {
     "id": "91b47659-08fa-5911-8559-0e2aab615ccf",
     "scriptName": "Nemo · Vex VN · Clinical Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Clinical\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Clinical\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/clinical/$1.png\" alt=\"Clinical Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Clinical Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -291,7 +308,7 @@
   {
     "id": "0c2d3146-e5c2-5ac2-858e-a3bc8a304fd3",
     "scriptName": "Nemo · Vex VN · Clinical Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Clinical\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Clinical\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/clinical/neutral.png\" alt=\"Clinical Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Clinical Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -308,7 +325,7 @@
   {
     "id": "ecc7ba4a-4f83-5a91-b6f9-e1ab990657aa",
     "scriptName": "Nemo · Vex VN · Cozy Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Cozy\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Cozy\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/cozy/$1.png\" alt=\"Cozy Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Cozy Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -325,7 +342,7 @@
   {
     "id": "62c5000d-a234-5d2a-a256-72f39a0b7af9",
     "scriptName": "Nemo · Vex VN · Cozy Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Cozy\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Cozy\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/cozy/neutral.png\" alt=\"Cozy Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Cozy Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -342,7 +359,7 @@
   {
     "id": "fd6c6ef0-42ac-5672-8c71-6510f239a4a8",
     "scriptName": "Nemo · Vex VN · Crescent Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Crescent\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Crescent\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/crescent/$1.png\" alt=\"Crescent Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Crescent Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -359,7 +376,7 @@
   {
     "id": "4d88593a-b4ae-56e0-a446-b55331779ce1",
     "scriptName": "Nemo · Vex VN · Crescent Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Crescent\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Crescent\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/crescent/neutral.png\" alt=\"Crescent Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Crescent Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -376,7 +393,7 @@
   {
     "id": "b4e8f2cc-7908-56ed-a887-ef4c32125a27",
     "scriptName": "Nemo · Vex VN · Dark Urban Fantasy Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Dark\\ Urban\\ Fantasy\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Dark\\ Urban\\ Fantasy\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/dark-urban-fantasy/$1.png\" alt=\"Dark Urban Fantasy Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Dark Urban Fantasy Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -393,7 +410,7 @@
   {
     "id": "408e77d5-6b46-5d5d-9264-37f6218661c5",
     "scriptName": "Nemo · Vex VN · Dark Urban Fantasy Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Dark\\ Urban\\ Fantasy\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Dark\\ Urban\\ Fantasy\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/dark-urban-fantasy/neutral.png\" alt=\"Dark Urban Fantasy Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Dark Urban Fantasy Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -410,7 +427,7 @@
   {
     "id": "7d18bb0e-5432-58eb-8dff-41187680e257",
     "scriptName": "Nemo · Vex VN · Epic Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Epic\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Epic\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/epic/$1.png\" alt=\"Epic Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Epic Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -427,7 +444,7 @@
   {
     "id": "f799f6bc-695d-5cbc-9ef4-b0864b10d875",
     "scriptName": "Nemo · Vex VN · Epic Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Epic\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Epic\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/epic/neutral.png\" alt=\"Epic Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Epic Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -444,7 +461,7 @@
   {
     "id": "ee5202e2-39d4-5f3a-a1d3-183ad0d28995",
     "scriptName": "Nemo · Vex VN · Explosive Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Explosive\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Explosive\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/explosive/$1.png\" alt=\"Explosive Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Explosive Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -461,7 +478,7 @@
   {
     "id": "68605173-feae-5920-ba68-73bf0dfb9b24",
     "scriptName": "Nemo · Vex VN · Explosive Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Explosive\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Explosive\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/explosive/neutral.png\" alt=\"Explosive Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Explosive Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -478,7 +495,7 @@
   {
     "id": "edf1e814-9b5a-542b-b049-185277a8bff2",
     "scriptName": "Nemo · Vex VN · Gamemaster Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Gamemaster\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Gamemaster\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/gamemaster/$1.png\" alt=\"Gamemaster Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Gamemaster Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -495,7 +512,7 @@
   {
     "id": "074592d6-e006-5cde-ac5c-6cefa69d1f23",
     "scriptName": "Nemo · Vex VN · Gamemaster Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Gamemaster\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Gamemaster\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/gamemaster/neutral.png\" alt=\"Gamemaster Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Gamemaster Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -512,7 +529,7 @@
   {
     "id": "f8426118-1484-53cd-9821-e7dae32e5100",
     "scriptName": "Nemo · Vex VN · Gentle Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Gentle\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Gentle\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/gentle/$1.png\" alt=\"Gentle Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Gentle Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -529,7 +546,7 @@
   {
     "id": "671033f1-fa9e-5cb1-a325-967f1fd7e1d1",
     "scriptName": "Nemo · Vex VN · Gentle Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Gentle\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Gentle\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/gentle/neutral.png\" alt=\"Gentle Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Gentle Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -546,7 +563,7 @@
   {
     "id": "2dfef74f-2fbc-57a9-b0fe-bd4457bb5eee",
     "scriptName": "Nemo · Vex VN · Grimdark Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Grimdark\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Grimdark\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/grimdark/$1.png\" alt=\"Grimdark Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Grimdark Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -563,7 +580,7 @@
   {
     "id": "e9552a4b-55b9-5e57-b405-3bc7439e0c79",
     "scriptName": "Nemo · Vex VN · Grimdark Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Grimdark\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Grimdark\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/grimdark/neutral.png\" alt=\"Grimdark Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Grimdark Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -580,7 +597,7 @@
   {
     "id": "f9df18f7-b160-56e2-8d33-f5ee7ce73329",
     "scriptName": "Nemo · Vex VN · Haar Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Haar\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Haar\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/haar/$1.png\" alt=\"Haar Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Haar Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -597,7 +614,7 @@
   {
     "id": "43a90caf-2dea-500b-9bc7-656c37f0227c",
     "scriptName": "Nemo · Vex VN · Haar Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Haar\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Haar\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/haar/neutral.png\" alt=\"Haar Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Haar Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -614,7 +631,7 @@
   {
     "id": "8d017ab2-1ad8-5a93-9c16-e2cb11435da7",
     "scriptName": "Nemo · Vex VN · Lustful Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Lustful\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Lustful\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/lustful/$1.png\" alt=\"Lustful Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Lustful Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -631,7 +648,7 @@
   {
     "id": "3c74c90e-eb7d-588e-b497-2d44666224d3",
     "scriptName": "Nemo · Vex VN · Lustful Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Lustful\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Lustful\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/lustful/neutral.png\" alt=\"Lustful Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Lustful Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -648,7 +665,7 @@
   {
     "id": "17bd83ab-42c7-545a-a21c-9852fb8fcead",
     "scriptName": "Nemo · Vex VN · Morbid Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Morbid\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Morbid\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/morbid/$1.png\" alt=\"Morbid Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Morbid Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -665,7 +682,7 @@
   {
     "id": "b00d1e63-2fda-549b-a136-26c248c9b1f7",
     "scriptName": "Nemo · Vex VN · Morbid Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Morbid\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Morbid\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/morbid/neutral.png\" alt=\"Morbid Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Morbid Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -682,7 +699,7 @@
   {
     "id": "1095f294-e55d-5110-a3bf-2c59bfe3e4af",
     "scriptName": "Nemo · Vex VN · Narrative Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Narrative\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Narrative\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/default/$1.png\" alt=\"Narrative Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Narrative Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -699,7 +716,7 @@
   {
     "id": "8bd844b1-543d-58d0-bd95-95d10e58404e",
     "scriptName": "Nemo · Vex VN · Narrative Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Narrative\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Narrative\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/default/neutral.png\" alt=\"Narrative Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Narrative Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -716,7 +733,7 @@
   {
     "id": "92a4cc55-daf3-500f-b792-a62c904eead0",
     "scriptName": "Nemo · Vex VN · Noir Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Noir\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Noir\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/noir/$1.png\" alt=\"Noir Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Noir Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -733,7 +750,7 @@
   {
     "id": "ee7c8829-7117-5d8f-a506-5f0f371c14e0",
     "scriptName": "Nemo · Vex VN · Noir Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Noir\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Noir\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/noir/neutral.png\" alt=\"Noir Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Noir Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -750,7 +767,7 @@
   {
     "id": "d2fc72bb-1676-5951-addc-086c9aa6d81f",
     "scriptName": "Nemo · Vex VN · Obsessive Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Obsessive\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Obsessive\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/obsessive/$1.png\" alt=\"Obsessive Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Obsessive Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -767,7 +784,7 @@
   {
     "id": "f357fa39-d32c-5c0a-a978-d362fab1a393",
     "scriptName": "Nemo · Vex VN · Obsessive Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Obsessive\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Obsessive\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/obsessive/neutral.png\" alt=\"Obsessive Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Obsessive Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -784,7 +801,7 @@
   {
     "id": "2e1fef61-aac1-5a42-829c-ae06815e6078",
     "scriptName": "Nemo · Vex VN · Petrichor Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Petrichor\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Petrichor\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/petrichor/$1.png\" alt=\"Petrichor Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Petrichor Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -801,7 +818,7 @@
   {
     "id": "dc32a34d-eff7-5cf7-adb4-bc887e96bb12",
     "scriptName": "Nemo · Vex VN · Petrichor Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Petrichor\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Petrichor\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/petrichor/neutral.png\" alt=\"Petrichor Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Petrichor Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -818,7 +835,7 @@
   {
     "id": "e94eae8a-535f-59fd-9b25-f4cd7bec4e2d",
     "scriptName": "Nemo · Vex VN · Philosophical Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Philosophical\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Philosophical\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/philosophical/$1.png\" alt=\"Philosophical Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Philosophical Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -835,7 +852,7 @@
   {
     "id": "fa0a4bb5-fd40-557c-8bd2-d76e7d6b085e",
     "scriptName": "Nemo · Vex VN · Philosophical Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Philosophical\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Philosophical\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/philosophical/neutral.png\" alt=\"Philosophical Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Philosophical Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -852,7 +869,7 @@
   {
     "id": "fcc03ecc-ddca-561f-9662-6c3f4d256a05",
     "scriptName": "Nemo · Vex VN · Sensory Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Sensory\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Sensory\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/sensory/$1.png\" alt=\"Sensory Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Sensory Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -869,7 +886,7 @@
   {
     "id": "f66180c1-fe3a-5652-8b4b-fdb0aad4dad8",
     "scriptName": "Nemo · Vex VN · Sensory Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Sensory\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Sensory\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/sensory/neutral.png\" alt=\"Sensory Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Sensory Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -886,7 +903,7 @@
   {
     "id": "250621c9-f650-5ded-bc36-d4ab1e964ff5",
     "scriptName": "Nemo · Vex VN · Shadowy Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Shadowy\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Shadowy\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/shadowy/$1.png\" alt=\"Shadowy Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Shadowy Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -903,7 +920,7 @@
   {
     "id": "2706873a-4c76-567d-ad12-6202428d45e3",
     "scriptName": "Nemo · Vex VN · Shadowy Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Shadowy\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Shadowy\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/shadowy/neutral.png\" alt=\"Shadowy Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Shadowy Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -920,7 +937,7 @@
   {
     "id": "54613b96-b6ca-553f-8734-a12cd9703c43",
     "scriptName": "Nemo · Vex VN · Soft Romance Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Soft\\ Romance\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Soft\\ Romance\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/soft-romance/$1.png\" alt=\"Soft Romance Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Soft Romance Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -937,7 +954,7 @@
   {
     "id": "baf6e1ad-3f4f-5541-9722-b4181e557c64",
     "scriptName": "Nemo · Vex VN · Soft Romance Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Soft\\ Romance\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Soft\\ Romance\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/soft-romance/neutral.png\" alt=\"Soft Romance Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Soft Romance Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -954,7 +971,7 @@
   {
     "id": "1d9826d2-3f76-5580-ac19-79a751d66147",
     "scriptName": "Nemo · Vex VN · Tactical Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Tactical\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Tactical\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/tactical/$1.png\" alt=\"Tactical Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Tactical Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -971,7 +988,7 @@
   {
     "id": "00a40f8e-e882-5cad-84be-e74229c0e208",
     "scriptName": "Nemo · Vex VN · Tactical Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Tactical\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Tactical\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/tactical/neutral.png\" alt=\"Tactical Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Tactical Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -988,7 +1005,7 @@
   {
     "id": "dbf0eaa8-16f0-519a-990f-f2890ebefc17",
     "scriptName": "Nemo · Vex VN · Tsundere Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Tsundere\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Tsundere\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/tsundere/$1.png\" alt=\"Tsundere Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Tsundere Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -1005,7 +1022,7 @@
   {
     "id": "43ef6940-ffff-59d8-aa69-a569d9a18457",
     "scriptName": "Nemo · Vex VN · Tsundere Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Tsundere\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Tsundere\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/tsundere/neutral.png\" alt=\"Tsundere Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Tsundere Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -1022,7 +1039,7 @@
   {
     "id": "cae1f6c4-067b-5bdb-9c70-6b2a2b768f47",
     "scriptName": "Nemo · Vex VN · Underdog Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Underdog\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Underdog\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/underdog/$1.png\" alt=\"Underdog Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Underdog Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -1039,7 +1056,7 @@
   {
     "id": "4f749f3a-be60-5744-9e01-f2729d6bbc37",
     "scriptName": "Nemo · Vex VN · Underdog Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Underdog\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Underdog\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/underdog/neutral.png\" alt=\"Underdog Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Underdog Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -1056,7 +1073,7 @@
   {
     "id": "a4aaa2f8-3853-5273-8996-be7ffcd2e584",
     "scriptName": "Nemo · Vex VN · Unhinged Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Unhinged\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Unhinged\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/unhinged/$1.png\" alt=\"Unhinged Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Unhinged Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -1073,7 +1090,7 @@
   {
     "id": "fa501922-7ea6-5fe8-98d8-e349674eb865",
     "scriptName": "Nemo · Vex VN · Unhinged Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Unhinged\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Unhinged\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/unhinged/neutral.png\" alt=\"Unhinged Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Unhinged Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -1090,7 +1107,7 @@
   {
     "id": "25fc50f1-392d-5ee4-9f7a-4bb33a00a21c",
     "scriptName": "Nemo · Vex VN · Whimsical Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Whimsical\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Whimsical\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/whimsical/$1.png\" alt=\"Whimsical Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Whimsical Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -1107,7 +1124,7 @@
   {
     "id": "17dec82a-fdb0-510f-adec-cbc34779c6aa",
     "scriptName": "Nemo · Vex VN · Whimsical Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Whimsical\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Whimsical\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/whimsical/neutral.png\" alt=\"Whimsical Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Whimsical Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -1124,7 +1141,7 @@
   {
     "id": "32b2f380-4fa7-56c5-9235-4f49b40fa068",
     "scriptName": "Nemo · Vex VN · Goon Gremlin Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Goon\\ Gremlin\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Goon\\ Gremlin\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/goon-gremlin/$1.png\" alt=\"Goon Gremlin Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Goon Gremlin Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -1141,7 +1158,7 @@
   {
     "id": "c26a2856-9c01-584d-8853-0dd3bbb942e6",
     "scriptName": "Nemo · Vex VN · Goon Gremlin Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Goon\\ Gremlin\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Goon\\ Gremlin\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/goon-gremlin/neutral.png\" alt=\"Goon Gremlin Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Goon Gremlin Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -1158,7 +1175,7 @@
   {
     "id": "3fbbed11-d132-58a4-9344-52cb3199c007",
     "scriptName": "Nemo · Vex VN · Gooner Vex registered expression",
-    "findRegex": "/<vexnote[\\t ]+name=\"Gooner\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Gooner\\ Vex\"[\\t ]+expression=\"(neutral|amused|delighted|thoughtful|skeptical|surprised|concerned|sad|annoyed)\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/gooner/$1.png\" alt=\"Gooner Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Gooner Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -1175,7 +1192,7 @@
   {
     "id": "4e53819f-1dca-5223-a38f-b25b488c339d",
     "scriptName": "Nemo · Vex VN · Gooner Vex neutral expression fallback",
-    "findRegex": "/<vexnote[\\t ]+name=\"Gooner\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"Gooner\\ Vex\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/gooner/neutral.png\" alt=\"Gooner Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Gooner Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$1</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -1192,7 +1209,7 @@
   {
     "id": "f345ffe9-80cd-5c22-baa9-d7cf6e8cb5dc",
     "scriptName": "Nemo · Vex VN · unknown or master speaker as text",
-    "findRegex": "/<vexnote[\\t ]+name=\"([^\"<>\\x00-\\x1f]{1,80})\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote[\\t ]+name=\"([^\"<>\\x00-\\x1f]{1,80})\"[\\t ]+expression=\"[^\"<>\\x00-\\x1f]{0,80}\"[\\t ]*>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<div class=\"nemo-vn-card nemo-vn-text-only\"><div class=\"nemo-vn-speech\"><strong class=\"nemo-vn-name\">$1</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">$2</div></div></div>",
     "trimStrings": [],
     "placement": [
@@ -1209,8 +1226,25 @@
   {
     "id": "b1197a4e-93e9-542a-bb3b-a44bea5ee679",
     "scriptName": "Nemo · Vex VN · legacy note as text",
-    "findRegex": "/<vexnote>([^<>]*)<\\/vexnote>/g",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexnote>([^<>]*)<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
     "replaceString": "<aside class=\"nemo-vn-legacy\" style=\"margin:12px 0;padding:12px 16px;border-left:3px solid #ac83d7;border-radius:8px;background:#241b2d;color:#e8dcef;line-height:1.55;\">$1</aside>",
+    "trimStrings": [],
+    "placement": [
+      2
+    ],
+    "disabled": false,
+    "markdownOnly": true,
+    "promptOnly": false,
+    "runOnEdit": true,
+    "substituteRegex": 0,
+    "minDepth": null,
+    "maxDepth": null
+  },
+  {
+    "id": "8cffdc7f-3c30-5058-a204-0e46d9ffb504",
+    "scriptName": "Nemo · Vex VN · restore literal surfaces (display; keep paired)",
+    "findRegex": "/(?:NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839|NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/gim",
+    "replaceString": "",
     "trimStrings": [],
     "placement": [
       2

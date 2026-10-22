@@ -1,0 +1,3388 @@
+{
+  "passed": true,
+  "sourcePresetSha256": "027132e00c4e315eaeb3e94a06f40a246aabc492413a417b30d91545549ab7e6",
+  "outputPresetSha256": "394e0b928159429878d25461688b3ce01c61332e9161502da9f7311c48db9ddb",
+  "rendererPackSha256": "1902892dd155add97d89beb468dfa7a56b802c7c906a1ba847dbf6279c8bb19b",
+  "contextPackSha256": "73c7f438b9eb611b13c19480ea5296292cdf2755d6eb250cd6e88e244e5d1dc6",
+  "findings": [
+    {
+      "origin": "introduced by Vex VN update",
+      "problem": "Vex display rules transformed literal examples inside code, attributes and workbench content; older-context cleanup also deleted protected examples.",
+      "fix": "Paired literal-surface guards around display and context processing, with both match boundaries checked."
+    },
+    {
+      "origin": "inherited emoji behavior interacting with the new structured scene renderer",
+      "problem": "Emoji FX inserted HTML into calendar/location/weather fields before structured scene matching, causing fallback to the generic layout.",
+      "fix": "Keep complete scene snapshots plain through Emoji FX."
+    },
+    {
+      "origin": "inherited from the original General RP / Anime preset",
+      "problem": "Emoji FX inserted HTML into valid plain-text phone messages and names, preventing phone parsing.",
+      "fix": "Keep complete phone snapshots plain through Emoji FX."
+    },
+    {
+      "origin": "inherited phone Unicode handling",
+      "problem": "Contact avatars split non-BMP initial characters and name/date length bounds counted UTF-16 units.",
+      "fix": "Unicode mode for phone container, message and date matchers; avatars use a complete code point and field bounds consistently count 80 code points."
+    }
+  ],
+  "cellphone": {
+    "included": true,
+    "promptId": "nemo-phone-template",
+    "promptEnabledInBothOrders": true,
+    "displayRulesEnabled": true,
+    "legacyTrackerPhoneRendererIncluded": true,
+    "legacyCellPhoneThemeSelected": false
+  },
+  "build": {
+    "passed": true,
+    "sourceSha256": "027132e00c4e315eaeb3e94a06f40a246aabc492413a417b30d91545549ab7e6",
+    "outputSha256": "394e0b928159429878d25461688b3ce01c61332e9161502da9f7311c48db9ddb",
+    "rules": 584,
+    "addedRules": [
+      {
+        "id": "62e20a29-798b-5653-814d-230310b161f2",
+        "name": "Nemo \u00b7 Vex VN \u00b7 protect literal surfaces (display; keep paired)"
+      },
+      {
+        "id": "8cffdc7f-3c30-5058-a204-0e46d9ffb504",
+        "name": "Nemo \u00b7 Vex VN \u00b7 restore literal surfaces (display; keep paired)"
+      },
+      {
+        "id": "7841de97-1d72-560b-8111-461afcefc2b2",
+        "name": "Nemo \u00b7 Vex VN \u00b7 protect literal surfaces (older context; keep paired)"
+      },
+      {
+        "id": "b8060d35-04cb-5483-a072-2ff68a61a297",
+        "name": "Nemo \u00b7 Vex VN \u00b7 restore literal surfaces (older context; keep paired)"
+      }
+    ],
+    "modifiedRules": [
+      {
+        "id": "734f9a3f-e27d-50d3-90f5-4ddec56e5e5b",
+        "name": "Nemo \u00b7 Vex VN \u00b7 4 message panel",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "e4cbd965-20ad-5911-97b4-6fe4af587250",
+        "name": "Nemo \u00b7 Vex VN \u00b7 3 message panel",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "808e6d1a-8f65-5f9b-8471-9cf3c4ff74a5",
+        "name": "Nemo \u00b7 Vex VN \u00b7 2 message panel",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "4219a75c-ee91-552f-a946-7831883c6f28",
+        "name": "Nemo \u00b7 Vex VN \u00b7 1 message panel",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "572d8e59-e082-5486-ad3e-ba8cce86ed04",
+        "name": "Nemo \u00b7 Vex VN \u00b7 readable overflow wrapper",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "7a561430-adeb-5a34-ac36-851a4daeefb8",
+        "name": "Nemo \u00b7 Vex VN \u00b7 remove overflow closing marker",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "3d2002cf-cd64-5041-b9b8-e86098d317cf",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Default Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "ecb5ba00-ab55-53b4-a313-297c86914431",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Default Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "ee1e30b9-7705-5b7a-bbbb-d37fba3575e8",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "4ab2c7b3-d2c1-53e1-8659-24c0a1b56569",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "45c498c3-5fc9-5912-98a7-17f8629fa88b",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Brooding Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "793e534a-65ae-5fb8-b0ce-df56bb6cbaf3",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Brooding Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "c2823ef5-e362-53dd-902a-80e870bc12ee",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Bubbly Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "fa97418c-d830-512c-af51-1242d903d9f8",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Bubbly Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "6e4ef629-35cd-5301-ace3-136f2bbce697",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Chaotic Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "d11f0f42-bc87-5d48-bc1b-e56fce7ce6bb",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Chaotic Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "91b47659-08fa-5911-8559-0e2aab615ccf",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Clinical Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "0c2d3146-e5c2-5ac2-858e-a3bc8a304fd3",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Clinical Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "ecc7ba4a-4f83-5a91-b6f9-e1ab990657aa",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Cozy Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "62c5000d-a234-5d2a-a256-72f39a0b7af9",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Cozy Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "fd6c6ef0-42ac-5672-8c71-6510f239a4a8",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Crescent Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "4d88593a-b4ae-56e0-a446-b55331779ce1",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Crescent Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "b4e8f2cc-7908-56ed-a887-ef4c32125a27",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Dark Urban Fantasy Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "408e77d5-6b46-5d5d-9264-37f6218661c5",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Dark Urban Fantasy Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "7d18bb0e-5432-58eb-8dff-41187680e257",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Epic Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "f799f6bc-695d-5cbc-9ef4-b0864b10d875",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Epic Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "ee5202e2-39d4-5f3a-a1d3-183ad0d28995",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Explosive Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "68605173-feae-5920-ba68-73bf0dfb9b24",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Explosive Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "edf1e814-9b5a-542b-b049-185277a8bff2",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Gamemaster Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "074592d6-e006-5cde-ac5c-6cefa69d1f23",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Gamemaster Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "f8426118-1484-53cd-9821-e7dae32e5100",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Gentle Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "671033f1-fa9e-5cb1-a325-967f1fd7e1d1",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Gentle Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "2dfef74f-2fbc-57a9-b0fe-bd4457bb5eee",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Grimdark Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "e9552a4b-55b9-5e57-b405-3bc7439e0c79",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Grimdark Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "f9df18f7-b160-56e2-8d33-f5ee7ce73329",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Haar Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "43a90caf-2dea-500b-9bc7-656c37f0227c",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Haar Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "8d017ab2-1ad8-5a93-9c16-e2cb11435da7",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Lustful Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "3c74c90e-eb7d-588e-b497-2d44666224d3",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Lustful Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "17bd83ab-42c7-545a-a21c-9852fb8fcead",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Morbid Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "b00d1e63-2fda-549b-a136-26c248c9b1f7",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Morbid Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "1095f294-e55d-5110-a3bf-2c59bfe3e4af",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Narrative Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "8bd844b1-543d-58d0-bd95-95d10e58404e",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Narrative Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "92a4cc55-daf3-500f-b792-a62c904eead0",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Noir Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "ee7c8829-7117-5d8f-a506-5f0f371c14e0",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Noir Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "d2fc72bb-1676-5951-addc-086c9aa6d81f",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Obsessive Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "f357fa39-d32c-5c0a-a978-d362fab1a393",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Obsessive Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "2e1fef61-aac1-5a42-829c-ae06815e6078",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Petrichor Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "dc32a34d-eff7-5cf7-adb4-bc887e96bb12",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Petrichor Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "e94eae8a-535f-59fd-9b25-f4cd7bec4e2d",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Philosophical Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "fa0a4bb5-fd40-557c-8bd2-d76e7d6b085e",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Philosophical Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "fcc03ecc-ddca-561f-9662-6c3f4d256a05",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Sensory Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "f66180c1-fe3a-5652-8b4b-fdb0aad4dad8",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Sensory Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "250621c9-f650-5ded-bc36-d4ab1e964ff5",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Shadowy Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "2706873a-4c76-567d-ad12-6202428d45e3",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Shadowy Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "54613b96-b6ca-553f-8734-a12cd9703c43",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Soft Romance Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "baf6e1ad-3f4f-5541-9722-b4181e557c64",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Soft Romance Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "1d9826d2-3f76-5580-ac19-79a751d66147",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Tactical Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "00a40f8e-e882-5cad-84be-e74229c0e208",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Tactical Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "dbf0eaa8-16f0-519a-990f-f2890ebefc17",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Tsundere Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "43ef6940-ffff-59d8-aa69-a569d9a18457",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Tsundere Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "cae1f6c4-067b-5bdb-9c70-6b2a2b768f47",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Underdog Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "4f749f3a-be60-5744-9e01-f2729d6bbc37",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Underdog Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "a4aaa2f8-3853-5273-8996-be7ffcd2e584",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Unhinged Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "fa501922-7ea6-5fe8-98d8-e349674eb865",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Unhinged Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "25fc50f1-392d-5ee4-9f7a-4bb33a00a21c",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Whimsical Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "17dec82a-fdb0-510f-adec-cbc34779c6aa",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Whimsical Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "32b2f380-4fa7-56c5-9235-4f49b40fa068",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Goon Gremlin Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "c26a2856-9c01-584d-8853-0dd3bbb942e6",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Goon Gremlin Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "3fbbed11-d132-58a4-9344-52cb3199c007",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Gooner Vex registered expression",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "4e53819f-1dca-5223-a38f-b25b488c339d",
+        "name": "Nemo \u00b7 Vex VN \u00b7 Gooner Vex neutral expression fallback",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "f345ffe9-80cd-5c22-baa9-d7cf6e8cb5dc",
+        "name": "Nemo \u00b7 Vex VN \u00b7 unknown or master speaker as text",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "b1197a4e-93e9-542a-bb3b-a44bea5ee679",
+        "name": "Nemo \u00b7 Vex VN \u00b7 legacy note as text",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "93d335ed-6ab6-5a80-87d9-7b09ad868611",
+        "name": "Nemo \u00b7 Vex VN \u00b7 strip older commentary from context",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "7800ab9f-dafc-535a-a162-5fb3e82e4702",
+        "name": "Nemo \u00b7 Emoji FX protect code and markup (keep paired)",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "e9f1190d-8a93-5e0c-9100-a8ac82791f5c",
+        "name": "Nemo \u00b7 Phone complete container",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "c0387a36-753d-5299-9e34-06a5072d764e",
+        "name": "Nemo \u00b7 Phone message bubbles",
+        "fields": [
+          "findRegex"
+        ]
+      },
+      {
+        "id": "da733536-b6f6-5853-8463-cdf7b11cd574",
+        "name": "Nemo \u00b7 Phone date separators",
+        "fields": [
+          "findRegex"
+        ]
+      }
+    ],
+    "preserved": [
+      "all prompt content",
+      "all prompt selections",
+      "all settings",
+      "existing regex relative order",
+      "all existing replacements, flags except three Unicode phone flags, modes and depths",
+      "Vex panel CSS and character mappings",
+      "scene header layout"
+    ],
+    "changes": [
+      "Protect literal Vex examples from display rendering and older-context removal",
+      "Keep phone/scene snapshot emoji plain before their structural renderers",
+      "Capture a complete Unicode code point for phone avatars and use consistent 80-code-point name/date limits"
+    ]
+  },
+  "structural": {
+    "count": 584,
+    "enabled": 573,
+    "duplicateIds": [],
+    "compileAndSchemaFailures": [],
+    "unboundCaptureReferences": [],
+    "macroPatterns": [
+      {
+        "index": 14,
+        "name": "Nemo \u00b7 hidden machinery \u00b7 scene/reset headers",
+        "substituteRegex": 1
+      },
+      {
+        "index": 15,
+        "name": "Nemo \u00b7 hidden machinery \u00b7 modular pad",
+        "substituteRegex": 1
+      },
+      {
+        "index": 16,
+        "name": "Nemo \u00b7 hidden machinery \u00b7 Magpie ledger",
+        "substituteRegex": 1
+      },
+      {
+        "index": 163,
+        "name": "Nemo MP \u00b7 Hide private dashboard display; keep raw state",
+        "substituteRegex": 1
+      }
+    ]
+  },
+  "fullPresetPipeline": {
+    "passed": true,
+    "engine": "current official SillyTavern runRegexScript/getRegexedString",
+    "macroSubstitution": "identity stub; samples contain no executable macros",
+    "rules": 584,
+    "resolvedNameExpressionPairs": 288,
+    "storyPreserved": true,
+    "rawHistoryUnchanged": true,
+    "recentContextPreserved": true,
+    "olderContextRemoved": true,
+    "repeatedGroups": 2,
+    "editRerender": true
+  },
+  "vexProtection": {
+    "passed": true,
+    "engine": "Actual official SillyTavern runRegexScript/getRegexedString; identity macro stubs",
+    "tests": [
+      {
+        "name": "backtick-fence",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "byteExact": true
+      },
+      {
+        "name": "four-backtick-fence",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "byteExact": true
+      },
+      {
+        "name": "tilde-fence",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "byteExact": true
+      },
+      {
+        "name": "blockquote-fence",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "byteExact": true
+      },
+      {
+        "name": "indented-code",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "byteExact": true
+      },
+      {
+        "name": "tab-indented-code",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "byteExact": true
+      },
+      {
+        "name": "inline-code",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "byteExact": true
+      },
+      {
+        "name": "double-inline-code",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "byteExact": true
+      },
+      {
+        "name": "code-element",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "byteExact": true
+      },
+      {
+        "name": "pre-element",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "byteExact": true
+      },
+      {
+        "name": "textarea-element",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "byteExact": true
+      },
+      {
+        "name": "title-element",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "byteExact": true
+      },
+      {
+        "name": "html-comment",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "byteExact": true
+      },
+      {
+        "name": "unclosed-html-comment",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "byteExact": true
+      },
+      {
+        "name": "html-single-quoted-attribute",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "byteExact": true
+      },
+      {
+        "name": "cdata",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "byteExact": true
+      },
+      {
+        "name": "workbench",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "noActivePanel": true
+      },
+      {
+        "name": "unclosed-workbench",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "noActivePanel": true
+      },
+      {
+        "name": "exact-review",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "noActivePanel": true
+      },
+      {
+        "name": "unclosed-exact-review",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "noActivePanel": true
+      },
+      {
+        "name": "think",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "noActivePanel": true
+      },
+      {
+        "name": "thinking",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "noActivePanel": true
+      },
+      {
+        "name": "plan",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "noActivePanel": true
+      },
+      {
+        "name": "planning",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "noActivePanel": true
+      },
+      {
+        "name": "nemo-interiority",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "noActivePanel": true
+      },
+      {
+        "name": "nemo-pad",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "noActivePanel": true
+      },
+      {
+        "name": "nemo-offscreen",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "noActivePanel": true
+      },
+      {
+        "name": "mental_state",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "noActivePanel": true
+      },
+      {
+        "name": "nemo-mp-state",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "noActivePanel": true
+      },
+      {
+        "name": "nemo-mp-retain",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "noActivePanel": true
+      },
+      {
+        "name": "st-tracker",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "noActivePanel": true
+      },
+      {
+        "name": "escaped-mental-state",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "noActivePanel": true
+      },
+      {
+        "name": "plain",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "sameAsCurrent": true
+      },
+      {
+        "name": "paragraph-before-and-after",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "sameAsCurrent": true
+      },
+      {
+        "name": "ordinary-html-wrapper",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "sameAsCurrent": true
+      },
+      {
+        "name": "details-wrapper",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "sameAsCurrent": true
+      },
+      {
+        "name": "thought-in-vex",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "sameAsCurrent": true
+      },
+      {
+        "name": "double-backticks-in-vex",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "sameAsCurrent": true
+      },
+      {
+        "name": "entity-escaped-tag",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "sameAsCurrent": true
+      },
+      {
+        "name": "repeated",
+        "passed": true,
+        "modes": [
+          "display",
+          "edited",
+          "raw",
+          "promptRecent",
+          "promptOld"
+        ],
+        "sameAsCurrent": true
+      },
+      {
+        "name": "literal-and-active-panel-in-one-message",
+        "passed": true
+      },
+      {
+        "name": "opening-in-fence-closing-outside",
+        "passed": true
+      },
+      {
+        "name": "opening-in-attribute-closing-outside",
+        "passed": true
+      },
+      {
+        "name": "opening-outside-closing-in-fence",
+        "passed": true
+      }
+    ],
+    "performance": {
+      "characters": 54099,
+      "runs": 3,
+      "totalMs": 128,
+      "meanMs": 43
+    },
+    "rules": 584,
+    "testsCount": 44,
+    "modeChecks": 200
+  },
+  "phoneAndScene": {
+    "passed": true,
+    "emojiVariants": 73,
+    "phoneCases": 365,
+    "baselineFailures": 365,
+    "latestFailures": 365,
+    "fixedFailures": 0,
+    "metadataCases": 192,
+    "failures": [],
+    "protectedCases": [
+      "fence",
+      "tilde",
+      "inline",
+      "attribute",
+      "escaped"
+    ],
+    "invalidCases": [
+      "unclosed",
+      "badBattery",
+      "wrongOrder",
+      "mismatched",
+      "uppercase"
+    ],
+    "outsideEmojiFXUnchanged": true,
+    "multiplePhones": {
+      "phones": 2,
+      "bubbles": 2,
+      "dates": 1,
+      "thoughts": 0,
+      "colors": 0,
+      "effects": 0
+    },
+    "sceneResults": [
+      {
+        "name": "sunny",
+        "latestStructured": false,
+        "fixedStructured": true
+      },
+      {
+        "name": "fog",
+        "latestStructured": false,
+        "fixedStructured": true
+      },
+      {
+        "name": "context",
+        "latestStructured": true,
+        "fixedStructured": true
+      }
+    ],
+    "mixed": {
+      "phones": 1,
+      "bubbles": 1,
+      "dates": 0,
+      "thoughts": 1,
+      "colors": 2,
+      "effects": 1
+    },
+    "remainingInheritedEdge": {
+      "name": "nonBMP contact avatar is first UTF16 code unit",
+      "initial": "\ud83c",
+      "codeUnits": [
+        "d83c"
+      ],
+      "phoneContainerFixed": true
+    }
+  },
+  "phoneUnicode": {
+    "passed": true,
+    "compileCount": 580,
+    "metadataCases": 192,
+    "emojiCases": 365,
+    "avatarCases": 75,
+    "boundaryCases": [
+      {
+        "kind": "ascii80",
+        "place": "contact",
+        "codePoints": 80,
+        "codeUnits": 80,
+        "valid": true
+      },
+      {
+        "kind": "ascii80",
+        "place": "author",
+        "codePoints": 80,
+        "codeUnits": 80,
+        "valid": true
+      },
+      {
+        "kind": "ascii80",
+        "place": "date",
+        "codePoints": 80,
+        "codeUnits": 80,
+        "valid": true
+      },
+      {
+        "kind": "ascii81",
+        "place": "contact",
+        "codePoints": 81,
+        "codeUnits": 81,
+        "valid": false
+      },
+      {
+        "kind": "ascii81",
+        "place": "author",
+        "codePoints": 81,
+        "codeUnits": 81,
+        "valid": false
+      },
+      {
+        "kind": "ascii81",
+        "place": "date",
+        "codePoints": 81,
+        "codeUnits": 81,
+        "valid": false
+      },
+      {
+        "kind": "mixed80",
+        "place": "contact",
+        "codePoints": 80,
+        "codeUnits": 81,
+        "valid": true
+      },
+      {
+        "kind": "mixed80",
+        "place": "author",
+        "codePoints": 80,
+        "codeUnits": 81,
+        "valid": true
+      },
+      {
+        "kind": "mixed80",
+        "place": "date",
+        "codePoints": 80,
+        "codeUnits": 81,
+        "valid": true
+      },
+      {
+        "kind": "mixed81",
+        "place": "contact",
+        "codePoints": 81,
+        "codeUnits": 82,
+        "valid": false
+      },
+      {
+        "kind": "mixed81",
+        "place": "author",
+        "codePoints": 81,
+        "codeUnits": 82,
+        "valid": false
+      },
+      {
+        "kind": "mixed81",
+        "place": "date",
+        "codePoints": 81,
+        "codeUnits": 82,
+        "valid": false
+      },
+      {
+        "kind": "nonBMP80",
+        "place": "contact",
+        "codePoints": 80,
+        "codeUnits": 160,
+        "valid": true
+      },
+      {
+        "kind": "nonBMP80",
+        "place": "author",
+        "codePoints": 80,
+        "codeUnits": 160,
+        "valid": true
+      },
+      {
+        "kind": "nonBMP80",
+        "place": "date",
+        "codePoints": 80,
+        "codeUnits": 160,
+        "valid": true
+      },
+      {
+        "kind": "nonBMP81",
+        "place": "contact",
+        "codePoints": 81,
+        "codeUnits": 162,
+        "valid": false
+      },
+      {
+        "kind": "nonBMP81",
+        "place": "author",
+        "codePoints": 81,
+        "codeUnits": 162,
+        "valid": false
+      },
+      {
+        "kind": "nonBMP81",
+        "place": "date",
+        "codePoints": 81,
+        "codeUnits": 162,
+        "valid": false
+      }
+    ],
+    "protectedCases": [
+      "fence",
+      "tilde",
+      "inline",
+      "attribute",
+      "escaped"
+    ],
+    "multiplePhones": {
+      "phones": 2,
+      "bubbles": 2,
+      "dates": 1,
+      "thoughts": 0,
+      "colors": 0,
+      "effects": 0
+    },
+    "outsideEmojiFXUnchanged": true,
+    "changedRules": [
+      {
+        "id": "e9f1190d-8a93-5e0c-9100-a8ac82791f5c",
+        "name": "Nemo \u00b7 Phone complete container",
+        "flags": "gmu"
+      },
+      {
+        "id": "c0387a36-753d-5299-9e34-06a5072d764e",
+        "name": "Nemo \u00b7 Phone message bubbles",
+        "flags": "gu"
+      },
+      {
+        "id": "da733536-b6f6-5853-8463-cdf7b11cd574",
+        "name": "Nemo \u00b7 Phone date separators",
+        "flags": "gu"
+      }
+    ],
+    "semantics": "contact avatar is one Unicode code point; name/date limits consistently80 code points; no grapheme-cluster parsing"
+  },
+  "browser": {
+    "passed": true,
+    "sources": [
+      {
+        "name": "baseline-508",
+        "path": "/workspace/scratch/7095aacbc09d/colour-thought-source/Nemo_Engine_v12.2_Lite_General_RP_Anime.json",
+        "sha256": "13560d3bbc23c58c1cfb61fe27995f62ea7424635df1524dee054cd5fb77e8a3",
+        "regexCount": 508,
+        "tests": [
+          {
+            "name": "valid-phone-beside-formatted-narrative",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 1,
+            "bubbleCount": 3,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 1,
+            "fxCount": 1,
+            "colourCount": 3,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "title": "Internal thought (not spoken aloud)",
+            "avatarText": "M",
+            "avatarCodePoints": [
+              77
+            ],
+            "messages": [
+              "Are you outside yet?",
+              "Almost. Which entrance?",
+              "Side door. Knock quietly."
+            ],
+            "sentBubbleColour": "rgb(24, 133, 236)",
+            "noPageOverflow": true,
+            "validIntegrationPassed": true
+          },
+          {
+            "name": "valid-scene-phone-narrative-vex",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 1,
+            "bubbleCount": 3,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 1,
+            "fxCount": 1,
+            "colourCount": 3,
+            "sceneCount": 1,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "title": "Internal thought (not spoken aloud)",
+            "avatarText": "M",
+            "avatarCodePoints": [
+              77
+            ],
+            "messages": [
+              "Are you outside yet?",
+              "Almost. Which entrance?",
+              "Side door. Knock quietly."
+            ],
+            "sentBubbleColour": "rgb(24, 133, 236)",
+            "noPageOverflow": true,
+            "validIntegrationPassed": true
+          },
+          {
+            "name": "repeated-phones-and-vex-panels",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 2,
+            "bubbleCount": 6,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarText": "M",
+            "avatarCodePoints": [
+              77
+            ],
+            "messages": [
+              "Are you outside yet?",
+              "Almost. Which entrance?",
+              "Side door. Knock quietly.",
+              "Where should we meet?",
+              "Almost. Which entrance?",
+              "Side door. Knock quietly."
+            ],
+            "sentBubbleColour": "rgb(24, 133, 236)",
+            "noPageOverflow": true,
+            "validIntegrationPassed": true
+          },
+          {
+            "name": "legacy-tracker-and-immersive-phone",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": false,
+            "cssError": false,
+            "phoneCount": 1,
+            "bubbleCount": 3,
+            "trackerPhoneCount": 1,
+            "thoughtCount": 1,
+            "fxCount": 1,
+            "colourCount": 3,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "title": "Internal thought (not spoken aloud)",
+            "avatarText": "M",
+            "avatarCodePoints": [
+              77
+            ],
+            "messages": [
+              "Are you outside yet?",
+              "Almost. Which entrance?",
+              "Side door. Knock quietly."
+            ],
+            "sentBubbleColour": "rgb(24, 133, 236)",
+            "noPageOverflow": true,
+            "validIntegrationPassed": true
+          },
+          {
+            "name": "phone-paragraphs-and-escaped-angles",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 1,
+            "bubbleCount": 3,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 1,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarText": "M",
+            "avatarCodePoints": [
+              77
+            ],
+            "messages": [
+              "First line.\n\nSecond paragraph: use <gate> as the meeting point.",
+              "Almost. Which entrance?",
+              "Side door. Knock quietly."
+            ],
+            "sentBubbleColour": "rgb(24, 133, 236)",
+            "noPageOverflow": true,
+            "validIntegrationPassed": true
+          },
+          {
+            "name": "format-markers-in-attribute",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "title": "<code>[[c1]][[fx whisper]]Attribute text.[[/fx]][[/c1]]</code>",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "attributePreserved": false
+          },
+          {
+            "name": "fenced-phone-and-format-examples",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 1,
+            "codeText": "[[c1]]\"Call me when you arrive.\"[[/c1]]\n\n[[c2]]\"I will.\"[[/c2]]\n\n`[[c1]]I hope the road is still open.[[/c1]]`\n\n[[fx whisper]]The hallway falls quiet.[[/fx]]\n\n[[phone model=\"iphone\" service=\"imessage\" time=\"23:48\" battery=\"72\"]]\n[[chat name=\"Mika\"]]\n[[msg received time=\"23:47\"]]Are you outside yet?[[/msg]]\n[[msg sent time=\"23:48\"]]Almost. Which entrance?[[/msg]]\n[[msg received]]Side door. Knock quietly.[[/msg]]\n[[/chat]]\n[[/phone]]\n",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "literalPreserved": true
+          },
+          {
+            "name": "escaped-html-pre-code-examples",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 1,
+            "codeText": "<vexchat>\n<vexnote name=\"Whimsical Vex\" expression=\"thoughtful\">A: The little details are beginning to add up.</vexnote>\n<vexnote name=\"Whimsical Vex\" expression=\"amused\">A: Someone has been very careful with this room.</vexnote>\n</vexchat>\n\n[[phone model=\"iphone\" service=\"imessage\" time=\"23:48\" battery=\"72\"]]\n[[chat name=\"Mika\"]]\n[[msg received time=\"23:47\"]]Are you outside yet?[[/msg]]\n[[msg sent time=\"23:48\"]]Almost. Which entrance?[[/msg]]\n[[msg received]]Side door. Knock quietly.[[/msg]]\n[[/chat]]\n[[/phone]]\n\n<scene>\n\ud83d\udcc5 Monday \u00b7 Day12 \u00b708:10 /Early morning\n\ud83d\udccd The Dusty Quill \u2192 Upstairs guest room\n\ud83c\udf24 Current: Overcast, 12\u00b0C, light easterly wind\n\ud83c\udf26 Forecast: Rain likely this afternoon; clearing tonight\n</scene>",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "literalPreserved": true
+          },
+          {
+            "name": "fenced-vex-example",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 1,
+            "codeText": "<vexchat>\n<vexnote name=\"Whimsical Vex\" expression=\"thoughtful\">A: The little details are beginning to add up.</vexnote>\n<vexnote name=\"Whimsical Vex\" expression=\"amused\">A: Someone has been very careful with this room.</vexnote>\n</vexchat>\n",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "literalPreserved": true
+          },
+          {
+            "name": "inline-vex-example",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 1,
+            "codeText": "<vexchat><vexnote name=\"Whimsical Vex\" expression=\"thoughtful\">A: The little details are beginning to add up.</vexnote><vexnote name=\"Whimsical Vex\" expression=\"amused\">A: Someone has been very careful with this room.</vexnote></vexchat>",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "literalPreserved": true
+          },
+          {
+            "name": "raw-html-pre-code-vex-example",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 1,
+            "codeText": "A: The little details are beginning to add up.\nA: Someone has been very careful with this room.",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "literalPreserved": false
+          },
+          {
+            "name": "vex-example-in-attribute",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "title": "<vexchat><vexnote name=\"Whimsical Vex\" expression=\"thoughtful\">A: The little details are beginning to add up.</vexnote><vexnote name=\"Whimsical Vex\" expression=\"amused\">A: Someone has been very careful with this room.</vexnote></vexchat>",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "attributePreserved": true
+          },
+          {
+            "name": "vex-example-in-visible-workbench",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": false,
+            "promptDepth6Unchanged": false,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 1,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true
+          },
+          {
+            "name": "phone-message-with-fx-emoji",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "expectedPhoneRendered": false
+          },
+          {
+            "name": "phone-message-with-fire-emoji",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "expectedPhoneRendered": false
+          },
+          {
+            "name": "phone-contact-with-fx-emoji",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "expectedPhoneRendered": false,
+            "avatarCodePointValid": false
+          },
+          {
+            "name": "phone-contact-with-nonfx-emoji-avatar",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 1,
+            "bubbleCount": 3,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarText": "\ud83c",
+            "avatarCodePoints": [
+              55356
+            ],
+            "messages": [
+              "Hello.",
+              "Almost. Which entrance?",
+              "Side door. Knock quietly."
+            ],
+            "sentBubbleColour": "rgb(24, 133, 236)",
+            "noPageOverflow": true,
+            "expectedPhoneRendered": true,
+            "avatarCodePointValid": false
+          },
+          {
+            "name": "scene-current-sun-icon",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 1,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "expectedStructuredRendered": false
+          },
+          {
+            "name": "scene-current-value-sun-emoji",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 1,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "expectedStructuredRendered": false
+          },
+          {
+            "name": "scene-forecast-moon-icon",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 1,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "expectedStructuredRendered": false
+          },
+          {
+            "name": "scene-code-existing-behavior",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 1,
+            "codeText": "<style>.pk-h{display:block;margin:1.15em 0 .45em;padding-bottom:.28em;font-size:.7em;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pk-accent,#8a8a96);border-bottom:1px solid rgba(140,140,155,.18)}.pk-h:first-child{margin-top:0}.pk-r{display:grid;grid-template-columns:minmax(5.5em,auto) 1fr;gap:.1em .9em;margin:.28em 0;line-height:1.55;align-items:baseline}.pk-r>i{font-style:normal;font-size:.82em;font-weight:600;letter-spacing:.03em;text-transform:uppercase;opacity:.45;text-align:right;white-space:nowrap}.pk-r>.pk-rv{display:block;grid-column:2;min-width:0;max-width:100%;overflow-wrap:anywhere;word-break:normal}.pk-v0,.pk-v0 q{color:#9E9E9E}.pk-v1,.pk-v1 q{color:#56B4E9}.pk-v2,.pk-v2 q{color:#E69F00}.pk-v3,.pk-v3 q{color:#009E73}.pk-v4,.pk-v4 q{color:#CC79A7}.pk-v5,.pk-v5 q{color:#D55E00}.pk-v6,.pk-v6 q{color:#F0E442}.pk-v7,.pk-v7 q{color:#B39DDB}.pk-v8,.pk-v8 q{color:#80CBC4}.pk-v9,.pk-v9 q{color:#FF8A80}.pk-v10,.pk-v10 q{color:#A5D6A7}.pk-v11,.pk-v11 q{color:#FFD180}.pk-v12,.pk-v12 q{color:#9FA8DA}.pk-v13,.pk-v13 q{color:#F48FB1}.pk-v14,.pk-v14 q{color:#BCAAA4}.pk-v15,.pk-v15 q{color:#4DD0E1}.pk-v16,.pk-v16 q{color:#DCE775}.pk-o{display:inline-block;margin-right:.45em;font-size:.72em;line-height:1;vertical-align:.14em;text-shadow:0 0 6px currentColor}@media(max-width:640px){.pk-r{grid-template-columns:1fr;gap:0}.pk-r>i{text-align:left;opacity:.4;margin-top:.35em}.pk-r>.pk-rv{grid-column:1}}.pk-scene{display:block;margin:1.9em 0 1.3em;padding:.5rem 0;text-align:center;font-size:.72em;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#6e6e80;border-top:1px solid rgba(140,140,160,.16);border-bottom:1px solid rgba(140,140,160,.16);position:relative}.pk-scene::before{content:'';position:absolute;left:50%;top:-3px;width:5px;height:5px;margin-left:-2.5px;transform:rotate(45deg);background:#6e6e80;opacity:.5} .pk-scene{white-space:pre-line;text-align:left;font-size:.88em;line-height:1.7;letter-spacing:.02em;text-transform:none;color:inherit;opacity:.92;padding:.8rem 1rem;overflow-wrap:anywhere}.pk-scene::before{left:1rem;margin-left:0}@media(max-width:640px){.pk-scene{font-size:.86em;padding:.65rem .7rem;line-height:1.65}}</style><span class=\"pk-scene\">\n\ud83d\udcc5 Monday \u00b7 Day12 \u00b708:10 /Early morning\n\ud83d\udccd The Dusty Quill \u2192 Upstairs guest room\n\ud83c\udf24 Current: Overcast, 12\u00b0C, light easterly wind\n\ud83c\udf26 Forecast: Rain likely this afternoon; clearing tonight\n</span>\n",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "literalPreserved": false
+          },
+          {
+            "name": "scene-attribute-existing-behavior",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 1,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "title": "<custom-style>.pk-h%7Bdisplay%3Ablock%3Bmargin%3A1.15em%200%20.45em%3Bpadding-bottom%3A.28em%3Bfont-size%3A.7em%3Bfont-weight%3A700%3Bletter-spacing%3A.16em%3Btext-transform%3Auppercase%3Bcolor%3Avar(--pk-accent%2C%238a8a96)%3Bborder-bottom%3A1px%20solid%20rgba(140%2C140%2C155%2C.18)%7D.pk-h%3Afirst-child%7Bmargin-top%3A0%7D.pk-r%7Bdisplay%3Agrid%3Bgrid-template-columns%3Aminmax(5.5em%2Cauto)%201fr%3Bgap%3A.1em%20.9em%3Bmargin%3A.28em%200%3Bline-height%3A1.55%3Balign-items%3Abaseline%7D.pk-r%3Ei%7Bfont-style%3Anormal%3Bfont-size%3A.82em%3Bfont-weight%3A600%3Bletter-spacing%3A.03em%3Btext-transform%3Auppercase%3Bopacity%3A.45%3Btext-align%3Aright%3Bwhite-space%3Anowrap%7D.pk-r%3E.pk-rv%7Bdisplay%3Ablock%3Bgrid-column%3A2%3Bmin-width%3A0%3Bmax-width%3A100%25%3Boverflow-wrap%3Aanywhere%3Bword-break%3Anormal%7D.pk-v0%2C.pk-v0%20q%7Bcolor%3A%239E9E9E%7D.pk-v1%2C.pk-v1%20q%7Bcolor%3A%2356B4E9%7D.pk-v2%2C.pk-v2%20q%7Bcolor%3A%23E69F00%7D.pk-v3%2C.pk-v3%20q%7Bcolor%3A%23009E73%7D.pk-v4%2C.pk-v4%20q%7Bcolor%3A%23CC79A7%7D.pk-v5%2C.pk-v5%20q%7Bcolor%3A%23D55E00%7D.pk-v6%2C.pk-v6%20q%7Bcolor%3A%23F0E442%7D.pk-v7%2C.pk-v7%20q%7Bcolor%3A%23B39DDB%7D.pk-v8%2C.pk-v8%20q%7Bcolor%3A%2380CBC4%7D.pk-v9%2C.pk-v9%20q%7Bcolor%3A%23FF8A80%7D.pk-v10%2C.pk-v10%20q%7Bcolor%3A%23A5D6A7%7D.pk-v11%2C.pk-v11%20q%7Bcolor%3A%23FFD180%7D.pk-v12%2C.pk-v12%20q%7Bcolor%3A%239FA8DA%7D.pk-v13%2C.pk-v13%20q%7Bcolor%3A%23F48FB1%7D.pk-v14%2C.pk-v14%20q%7Bcolor%3A%23BCAAA4%7D.pk-v15%2C.pk-v15%20q%7Bcolor%3A%234DD0E1%7D.pk-v16%2C.pk-v16%20q%7Bcolor%3A%23DCE775%7D.pk-o%7Bdisplay%3Ainline-block%3Bmargin-right%3A.45em%3Bfont-size%3A.72em%3Bline-height%3A1%3Bvertical-align%3A.14em%3Btext-shadow%3A0%200%206px%20currentColor%7D%40media(max-width%3A640px)%7B.pk-r%7Bgrid-template-columns%3A1fr%3Bgap%3A0%7D.pk-r%3Ei%7Btext-align%3Aleft%3Bopacity%3A.4%3Bmargin-top%3A.35em%7D.pk-r%3E.pk-rv%7Bgrid-column%3A1%7D%7D.pk-scene%7Bdisplay%3Ablock%3Bmargin%3A1.9em%200%201.3em%3Bpadding%3A.5rem%200%3Btext-align%3Acenter%3Bfont-size%3A.72em%3Bfont-weight%3A600%3Bletter-spacing%3A.28em%3Btext-transform%3Auppercase%3Bcolor%3A%236e6e80%3Bborder-top%3A1px%20solid%20rgba(140%2C140%2C160%2C.16)%3Bborder-bottom%3A1px%20solid%20rgba(140%2C140%2C160%2C.16)%3Bposition%3Arelative%7D.pk-scene%3A%3Abefore%7Bcontent%3A",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "attributePreserved": false
+          }
+        ]
+      },
+      {
+        "name": "published-580",
+        "path": "/workspace/scratch/7095aacbc09d/scene-header-output/Nemo_Engine_v12.2_Lite_General_RP_Anime.json",
+        "sha256": "027132e00c4e315eaeb3e94a06f40a246aabc492413a417b30d91545549ab7e6",
+        "regexCount": 580,
+        "tests": [
+          {
+            "name": "valid-phone-beside-formatted-narrative",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 1,
+            "bubbleCount": 3,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 1,
+            "fxCount": 1,
+            "colourCount": 3,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "title": "Internal thought (not spoken aloud)",
+            "avatarText": "M",
+            "avatarCodePoints": [
+              77
+            ],
+            "messages": [
+              "Are you outside yet?",
+              "Almost. Which entrance?",
+              "Side door. Knock quietly."
+            ],
+            "sentBubbleColour": "rgb(24, 133, 236)",
+            "noPageOverflow": true,
+            "validIntegrationPassed": true
+          },
+          {
+            "name": "valid-scene-phone-narrative-vex",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": false,
+            "cssError": false,
+            "phoneCount": 1,
+            "bubbleCount": 3,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 1,
+            "fxCount": 1,
+            "colourCount": 3,
+            "sceneCount": 1,
+            "structuredCount": 1,
+            "legacySceneCount": 0,
+            "vexCount": 1,
+            "visibleVexSlides": 1,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "title": "Internal thought (not spoken aloud)",
+            "avatarText": "M",
+            "avatarCodePoints": [
+              77
+            ],
+            "messages": [
+              "Are you outside yet?",
+              "Almost. Which entrance?",
+              "Side door. Knock quietly."
+            ],
+            "sentBubbleColour": "rgb(24, 133, 236)",
+            "noPageOverflow": true,
+            "validIntegrationPassed": true
+          },
+          {
+            "name": "repeated-phones-and-vex-panels",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": false,
+            "cssError": false,
+            "phoneCount": 2,
+            "bubbleCount": 6,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 2,
+            "visibleVexSlides": 2,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarText": "M",
+            "avatarCodePoints": [
+              77
+            ],
+            "messages": [
+              "Are you outside yet?",
+              "Almost. Which entrance?",
+              "Side door. Knock quietly.",
+              "Where should we meet?",
+              "Almost. Which entrance?",
+              "Side door. Knock quietly."
+            ],
+            "sentBubbleColour": "rgb(24, 133, 236)",
+            "noPageOverflow": true,
+            "validIntegrationPassed": true,
+            "independentVexNavigationPassed": true
+          },
+          {
+            "name": "legacy-tracker-and-immersive-phone",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": false,
+            "cssError": false,
+            "phoneCount": 1,
+            "bubbleCount": 3,
+            "trackerPhoneCount": 1,
+            "thoughtCount": 1,
+            "fxCount": 1,
+            "colourCount": 3,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "title": "Internal thought (not spoken aloud)",
+            "avatarText": "M",
+            "avatarCodePoints": [
+              77
+            ],
+            "messages": [
+              "Are you outside yet?",
+              "Almost. Which entrance?",
+              "Side door. Knock quietly."
+            ],
+            "sentBubbleColour": "rgb(24, 133, 236)",
+            "noPageOverflow": true,
+            "validIntegrationPassed": true
+          },
+          {
+            "name": "phone-paragraphs-and-escaped-angles",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 1,
+            "bubbleCount": 3,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 1,
+            "structuredCount": 1,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarText": "M",
+            "avatarCodePoints": [
+              77
+            ],
+            "messages": [
+              "First line.\n\nSecond paragraph: use <gate> as the meeting point.",
+              "Almost. Which entrance?",
+              "Side door. Knock quietly."
+            ],
+            "sentBubbleColour": "rgb(24, 133, 236)",
+            "noPageOverflow": true,
+            "validIntegrationPassed": true
+          },
+          {
+            "name": "format-markers-in-attribute",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "title": "<code>[[c1]][[fx whisper]]Attribute text.[[/fx]][[/c1]]</code>",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "attributePreserved": false
+          },
+          {
+            "name": "fenced-phone-and-format-examples",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 1,
+            "codeText": "[[c1]]\"Call me when you arrive.\"[[/c1]]\n\n[[c2]]\"I will.\"[[/c2]]\n\n`[[c1]]I hope the road is still open.[[/c1]]`\n\n[[fx whisper]]The hallway falls quiet.[[/fx]]\n\n[[phone model=\"iphone\" service=\"imessage\" time=\"23:48\" battery=\"72\"]]\n[[chat name=\"Mika\"]]\n[[msg received time=\"23:47\"]]Are you outside yet?[[/msg]]\n[[msg sent time=\"23:48\"]]Almost. Which entrance?[[/msg]]\n[[msg received]]Side door. Knock quietly.[[/msg]]\n[[/chat]]\n[[/phone]]\n",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "literalPreserved": true
+          },
+          {
+            "name": "escaped-html-pre-code-examples",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 1,
+            "codeText": "<vexchat>\n<vexnote name=\"Whimsical Vex\" expression=\"thoughtful\">A: The little details are beginning to add up.</vexnote>\n<vexnote name=\"Whimsical Vex\" expression=\"amused\">A: Someone has been very careful with this room.</vexnote>\n</vexchat>\n\n[[phone model=\"iphone\" service=\"imessage\" time=\"23:48\" battery=\"72\"]]\n[[chat name=\"Mika\"]]\n[[msg received time=\"23:47\"]]Are you outside yet?[[/msg]]\n[[msg sent time=\"23:48\"]]Almost. Which entrance?[[/msg]]\n[[msg received]]Side door. Knock quietly.[[/msg]]\n[[/chat]]\n[[/phone]]\n\n<scene>\n\ud83d\udcc5 Monday \u00b7 Day12 \u00b708:10 /Early morning\n\ud83d\udccd The Dusty Quill \u2192 Upstairs guest room\n\ud83c\udf24 Current: Overcast, 12\u00b0C, light easterly wind\n\ud83c\udf26 Forecast: Rain likely this afternoon; clearing tonight\n</scene>",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "literalPreserved": true
+          },
+          {
+            "name": "fenced-vex-example",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": false,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 1,
+            "codeText": "<form class=\"nemo-vn\" autocomplete=\"off\" aria-label=\"Vex commentary\"><style>.nemo-vn{display:block;box-sizing:border-box;max-width:100%;margin:1.4rem 0;padding:0;overflow:visible;border:0;border-radius:0;background:transparent;color:#f4edf9;box-shadow:none;font-family:inherit;text-align:left;color-scheme:dark;isolation:isolate;} .nemo-vn *{box-sizing:border-box;} .nemo-vn-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px;color:#c8b1e6;font:600 .68rem/1.4 system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;} .nemo-vn-heading span:last-child{font-weight:400;letter-spacing:.04em;text-transform:none;color:#b3a5c5;} .nemo-vn-slide{display:block;position:relative;min-width:0;padding-top:260px;} .nemo-vn-window{display:flex;position:relative;z-index:0;isolation:isolate;flex-direction:column;min-width:0;min-height:240px;overflow:visible;border:0;border-radius:16px;background:transparent;color:#f4edf9;} .nemo-vn-window::before{content:\"\";display:block;position:absolute;z-index:0;inset:0;border:1px solid #ad8bd2;border-radius:16px;background:linear-gradient(145deg,rgba(35,25,49,.98),rgba(20,17,29,.98));box-shadow:0 10px 30px #0005,inset 0 1px 0 #e7d0ff18;pointer-events:none;} .nemo-vn-card{display:block;position:relative;min-width:0;max-width:100%;margin:18px 0;padding:0;border:0;background:transparent;color:#f4edf9;overflow-wrap:anywhere;text-align:left;} .nemo-vn .nemo-vn-card{display:contents;} .nemo-vn-portrait{display:flex;position:relative;z-index:0;align-items:flex-end;justify-content:center;width:100%;min-width:0;margin:0 auto -220px;padding:0;border:0;background:transparent;pointer-events:none;} .nemo-vn-portrait img{display:block;width:auto;max-width:100%;height:auto;max-height:510px;object-fit:contain;object-position:center bottom;margin:0;filter:drop-shadow(0 8px 15px #0004);} .nemo-vn .nemo-vn-portrait{position:absolute;z-index:-1;top:-260px;left:0;width:100%;height:500px;margin:0;padding:0;} .nemo-vn .nemo-vn-portrait img{width:auto!important;max-width:100%!important;height:500px!important;max-height:none;} .nemo-vn-speech{display:block;position:relative;z-index:1;min-width:0;margin:0;padding:22px 24px;border:1px solid #ad8bd2;border-radius:15px;background:rgba(28,21,39,.98);} .nemo-vn .nemo-vn-speech{flex:1 1 auto;padding:34px 26px 13px;border:0;border-radius:0;background:transparent;} .nemo-vn-name{display:block;width:fit-content;max-width:calc(100% - 36px);margin:0 0 13px;font-family:inherit;font-weight:700;font-size:1rem;line-height:1.35;color:#e5ccff;letter-spacing:.01em;overflow-wrap:anywhere;} .nemo-vn .nemo-vn-name{position:absolute;z-index:2;top:-20px;left:20px;margin:0;padding:8px 18px;border:1px solid #bb96df;border-radius:9px;background:linear-gradient(135deg,#493259,#2a2038);box-shadow:0 4px 12px #0004;font-size:.94rem;} .nemo-vn-dialogue{display:block;margin:0;white-space:pre-wrap;font-family:inherit;font-size:1rem;line-height:1.65;color:#f4edf9;overflow-wrap:anywhere;} .nemo-vn-nav{display:none;position:relative;z-index:1;align-items:center;justify-content:space-between;flex:0 0 auto;gap:10px;min-height:66px;margin:0;padding:9px 20px 14px;} .nemo-vn-control{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:90px;min-height:42px;margin:0;padding:9px 13px;border:1px solid #b394d077;border-radius:9px;background:#352543;color:#f7f1ff;font:600 .8rem/1.25 system-ui,sans-serif;cursor:pointer;user-select:none;} .nemo-vn-control:hover{background:#493259;border-color:#d4b4f3;} .nemo-vn-control:focus-within{outline:2px solid #dfc6ff;outline-offset:3px;} .nemo-vn-control input{position:absolute;inset:0;display:block;opacity:0;width:100%;height:100%;margin:0;cursor:pointer;} .nemo-vn-counter{color:#b5a4c6;font:500 .73rem/1.4 system-ui,sans-serif;letter-spacing:.12em;white-space:nowrap;} .nemo-vn-edge{display:inline-flex;align-items:center;justify-content:center;min-width:90px;min-height:42px;color:#90829f;font:500 .75rem/1.3 system-ui,sans-serif;} .nemo-vn-text-only .nemo-vn-speech{padding:22px 24px;} .nemo-vn-legacy{display:block;margin:12px 0;padding:12px 16px;border-left:3px solid #ac83d7;border-radius:8px;background:#241b2d;color:#e8dcef;font:inherit;line-height:1.55;overflow-wrap:anywhere;} @supports selector(:has(input:checked)){ .nemo-vn .nemo-vn-slide{display:none;} .nemo-vn:not(:has(input:checked)) .nemo-vn-slide-1,.nemo-vn:has(.nemo-vn-to-1:checked) .nemo-vn-slide-1,.nemo-vn:has(.nemo-vn-to-2:checked) .nemo-vn-slide-2,.nemo-vn:has(.nemo-vn-to-3:checked) .nemo-vn-slide-3,.nemo-vn:has(.nemo-vn-to-4:checked) .nemo-vn-slide-4{display:block;} .nemo-vn .nemo-vn-nav{display:flex;} .nemo-vn-portrait:not(:has(img)){display:none;} .nemo-vn-slide:not(:has(.nemo-vn-portrait img)){padding-top:22px;} .nemo-vn-slide:not(:has(.nemo-vn-portrait img)) .nemo-vn-window{min-height:0;} .nemo-vn-card:not(:has(.nemo-vn-portrait img)) .nemo-vn-speech{min-height:0;} } @media(max-width:520px){ .nemo-vn{margin:1rem 0;} .nemo-vn-slide{padding-top:220px;} .nemo-vn-window{min-height:210px;border-radius:13px;} .nemo-vn-window::before{border-radius:13px;} .nemo-vn .nemo-vn-portrait{top:-220px;height:430px;} .nemo-vn .nemo-vn-portrait img{height:430px!important;} .nemo-vn .nemo-vn-speech{padding:32px 17px 9px;} .nemo-vn .nemo-vn-name{top:-19px;left:13px;padding:8px 13px;max-width:calc(100% - 26px);font-size:.84rem;} .nemo-vn-dialogue{font-size:.92rem;line-height:1.58;} .nemo-vn-nav{padding:8px 12px 12px;gap:7px;min-height:62px;} .nemo-vn-control,.nemo-vn-edge{min-width:78px;min-height:42px;font-size:.72rem;padding:9px 10px;} .nemo-vn-heading{padding:11px 13px;font-size:.62rem;gap:8px;} .nemo-vn-heading span:last-child{font-size:.62rem;} } @media(prefers-reduced-motion:no-preference){.nemo-vn-control{transition:background .15s ease,border-color .15s ease;}}</style><div class=\"nemo-vn-slide nemo-vn-slide-1\"><div class=\"nemo-vn-window\"><div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/whimsical/thoughtful.png\" alt=\"Whimsical Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Whimsical Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">A: The little details are beginning to add up.</div></div></div><div class=\"nemo-vn-nav\"><span class=\"nemo-vn-edge\" aria-hidden=\"true\">Beginning</span><span class=\"nemo-vn-counter\">01 / 02</span><label class=\"nemo-vn-control\"><input type=\"radio\" name=\"nemo-vn-page\" class=\"nemo-vn-to-2\" aria-label=\"Next message, 2 of 2\"><span aria-hidden=\"true\">Next \u25b6</span></label></div></div></div><div class=\"nemo-vn-slide nemo-vn-slide-2\"><div class=\"nemo-vn-window\"><div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/whimsical/amused.png\" alt=\"Whimsical Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Whimsical Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">A: Someone has been very careful with this room.</div></div></div><div class=\"nemo-vn-nav\"><label class=\"nemo-vn-control\"><input type=\"radio\" name=\"nemo-vn-page\" class=\"nemo-vn-to-1\" aria-label=\"Back message, 1 of 2\"><span aria-hidden=\"true\">\u25c0 Back</span></label><span class=\"nemo-vn-counter\">02 / 02</span><span class=\"nemo-vn-edge\">End</span></div></div></div></form>\n",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "literalPreserved": false
+          },
+          {
+            "name": "inline-vex-example",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": false,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 1,
+            "codeText": "<form class=\"nemo-vn\" autocomplete=\"off\" aria-label=\"Vex commentary\"><style>.nemo-vn{display:block;box-sizing:border-box;max-width:100%;margin:1.4rem 0;padding:0;overflow:visible;border:0;border-radius:0;background:transparent;color:#f4edf9;box-shadow:none;font-family:inherit;text-align:left;color-scheme:dark;isolation:isolate;} .nemo-vn *{box-sizing:border-box;} .nemo-vn-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px;color:#c8b1e6;font:600 .68rem/1.4 system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;} .nemo-vn-heading span:last-child{font-weight:400;letter-spacing:.04em;text-transform:none;color:#b3a5c5;} .nemo-vn-slide{display:block;position:relative;min-width:0;padding-top:260px;} .nemo-vn-window{display:flex;position:relative;z-index:0;isolation:isolate;flex-direction:column;min-width:0;min-height:240px;overflow:visible;border:0;border-radius:16px;background:transparent;color:#f4edf9;} .nemo-vn-window::before{content:\"\";display:block;position:absolute;z-index:0;inset:0;border:1px solid #ad8bd2;border-radius:16px;background:linear-gradient(145deg,rgba(35,25,49,.98),rgba(20,17,29,.98));box-shadow:0 10px 30px #0005,inset 0 1px 0 #e7d0ff18;pointer-events:none;} .nemo-vn-card{display:block;position:relative;min-width:0;max-width:100%;margin:18px 0;padding:0;border:0;background:transparent;color:#f4edf9;overflow-wrap:anywhere;text-align:left;} .nemo-vn .nemo-vn-card{display:contents;} .nemo-vn-portrait{display:flex;position:relative;z-index:0;align-items:flex-end;justify-content:center;width:100%;min-width:0;margin:0 auto -220px;padding:0;border:0;background:transparent;pointer-events:none;} .nemo-vn-portrait img{display:block;width:auto;max-width:100%;height:auto;max-height:510px;object-fit:contain;object-position:center bottom;margin:0;filter:drop-shadow(0 8px 15px #0004);} .nemo-vn .nemo-vn-portrait{position:absolute;z-index:-1;top:-260px;left:0;width:100%;height:500px;margin:0;padding:0;} .nemo-vn .nemo-vn-portrait img{width:auto!important;max-width:100%!important;height:500px!important;max-height:none;} .nemo-vn-speech{display:block;position:relative;z-index:1;min-width:0;margin:0;padding:22px 24px;border:1px solid #ad8bd2;border-radius:15px;background:rgba(28,21,39,.98);} .nemo-vn .nemo-vn-speech{flex:1 1 auto;padding:34px 26px 13px;border:0;border-radius:0;background:transparent;} .nemo-vn-name{display:block;width:fit-content;max-width:calc(100% - 36px);margin:0 0 13px;font-family:inherit;font-weight:700;font-size:1rem;line-height:1.35;color:#e5ccff;letter-spacing:.01em;overflow-wrap:anywhere;} .nemo-vn .nemo-vn-name{position:absolute;z-index:2;top:-20px;left:20px;margin:0;padding:8px 18px;border:1px solid #bb96df;border-radius:9px;background:linear-gradient(135deg,#493259,#2a2038);box-shadow:0 4px 12px #0004;font-size:.94rem;} .nemo-vn-dialogue{display:block;margin:0;white-space:pre-wrap;font-family:inherit;font-size:1rem;line-height:1.65;color:#f4edf9;overflow-wrap:anywhere;} .nemo-vn-nav{display:none;position:relative;z-index:1;align-items:center;justify-content:space-between;flex:0 0 auto;gap:10px;min-height:66px;margin:0;padding:9px 20px 14px;} .nemo-vn-control{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:90px;min-height:42px;margin:0;padding:9px 13px;border:1px solid #b394d077;border-radius:9px;background:#352543;color:#f7f1ff;font:600 .8rem/1.25 system-ui,sans-serif;cursor:pointer;user-select:none;} .nemo-vn-control:hover{background:#493259;border-color:#d4b4f3;} .nemo-vn-control:focus-within{outline:2px solid #dfc6ff;outline-offset:3px;} .nemo-vn-control input{position:absolute;inset:0;display:block;opacity:0;width:100%;height:100%;margin:0;cursor:pointer;} .nemo-vn-counter{color:#b5a4c6;font:500 .73rem/1.4 system-ui,sans-serif;letter-spacing:.12em;white-space:nowrap;} .nemo-vn-edge{display:inline-flex;align-items:center;justify-content:center;min-width:90px;min-height:42px;color:#90829f;font:500 .75rem/1.3 system-ui,sans-serif;} .nemo-vn-text-only .nemo-vn-speech{padding:22px 24px;} .nemo-vn-legacy{display:block;margin:12px 0;padding:12px 16px;border-left:3px solid #ac83d7;border-radius:8px;background:#241b2d;color:#e8dcef;font:inherit;line-height:1.55;overflow-wrap:anywhere;} @supports selector(:has(input:checked)){ .nemo-vn .nemo-vn-slide{display:none;} .nemo-vn:not(:has(input:checked)) .nemo-vn-slide-1,.nemo-vn:has(.nemo-vn-to-1:checked) .nemo-vn-slide-1,.nemo-vn:has(.nemo-vn-to-2:checked) .nemo-vn-slide-2,.nemo-vn:has(.nemo-vn-to-3:checked) .nemo-vn-slide-3,.nemo-vn:has(.nemo-vn-to-4:checked) .nemo-vn-slide-4{display:block;} .nemo-vn .nemo-vn-nav{display:flex;} .nemo-vn-portrait:not(:has(img)){display:none;} .nemo-vn-slide:not(:has(.nemo-vn-portrait img)){padding-top:22px;} .nemo-vn-slide:not(:has(.nemo-vn-portrait img)) .nemo-vn-window{min-height:0;} .nemo-vn-card:not(:has(.nemo-vn-portrait img)) .nemo-vn-speech{min-height:0;} } @media(max-width:520px){ .nemo-vn{margin:1rem 0;} .nemo-vn-slide{padding-top:220px;} .nemo-vn-window{min-height:210px;border-radius:13px;} .nemo-vn-window::before{border-radius:13px;} .nemo-vn .nemo-vn-portrait{top:-220px;height:430px;} .nemo-vn .nemo-vn-portrait img{height:430px!important;} .nemo-vn .nemo-vn-speech{padding:32px 17px 9px;} .nemo-vn .nemo-vn-name{top:-19px;left:13px;padding:8px 13px;max-width:calc(100% - 26px);font-size:.84rem;} .nemo-vn-dialogue{font-size:.92rem;line-height:1.58;} .nemo-vn-nav{padding:8px 12px 12px;gap:7px;min-height:62px;} .nemo-vn-control,.nemo-vn-edge{min-width:78px;min-height:42px;font-size:.72rem;padding:9px 10px;} .nemo-vn-heading{padding:11px 13px;font-size:.62rem;gap:8px;} .nemo-vn-heading span:last-child{font-size:.62rem;} } @media(prefers-reduced-motion:no-preference){.nemo-vn-control{transition:background .15s ease,border-color .15s ease;}}</style><div class=\"nemo-vn-slide nemo-vn-slide-1\"><div class=\"nemo-vn-window\"><div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/whimsical/thoughtful.png\" alt=\"Whimsical Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Whimsical Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">A: The little details are beginning to add up.</div></div></div><div class=\"nemo-vn-nav\"><span class=\"nemo-vn-edge\" aria-hidden=\"true\">Beginning</span><span class=\"nemo-vn-counter\">01 / 02</span><label class=\"nemo-vn-control\"><input type=\"radio\" name=\"nemo-vn-page\" class=\"nemo-vn-to-2\" aria-label=\"Next message, 2 of 2\"><span aria-hidden=\"true\">Next \u25b6</span></label></div></div></div><div class=\"nemo-vn-slide nemo-vn-slide-2\"><div class=\"nemo-vn-window\"><div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/whimsical/amused.png\" alt=\"Whimsical Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Whimsical Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">A: Someone has been very careful with this room.</div></div></div><div class=\"nemo-vn-nav\"><label class=\"nemo-vn-control\"><input type=\"radio\" name=\"nemo-vn-page\" class=\"nemo-vn-to-1\" aria-label=\"Back message, 1 of 2\"><span aria-hidden=\"true\">\u25c0 Back</span></label><span class=\"nemo-vn-counter\">02 / 02</span><span class=\"nemo-vn-edge\">End</span></div></div></div></form>",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": false,
+            "literalPreserved": false
+          },
+          {
+            "name": "raw-html-pre-code-vex-example",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": false,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 1,
+            "visibleVexSlides": 1,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 1,
+            "codeText": ".mes_text .custom-nemo-vn {\n  display: block;\n  box-sizing: border-box;\n  max-width: 100%;\n  margin: 1.4rem 0;\n  padding: 0;\n  overflow: visible;\n  border: 0;\n  border-radius: 0;\n  background: transparent;\n  color: #f4edf9;\n  box-shadow: none;\n  font-family: inherit;\n  text-align: left;\n  color-scheme: dark;\n  isolation: isolate;\n}\n\n.mes_text .custom-nemo-vn * {\n  box-sizing: border-box;\n}\n\n.mes_text .custom-nemo-vn-heading {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 12px;\n  padding: 12px 18px;\n  color: #c8b1e6;\n  font: 600 .68rem/1.4 system-ui,sans-serif;\n  letter-spacing: .16em;\n  text-transform: uppercase;\n}\n\n.mes_text .custom-nemo-vn-heading span:last-child {\n  font-weight: 400;\n  letter-spacing: .04em;\n  text-transform: none;\n  color: #b3a5c5;\n}\n\n.mes_text .custom-nemo-vn-slide {\n  display: block;\n  position: relative;\n  min-width: 0;\n  padding-top: 260px;\n}\n\n.mes_text .custom-nemo-vn-window {\n  display: flex;\n  position: relative;\n  z-index: 0;\n  isolation: isolate;\n  flex-direction: column;\n  min-width: 0;\n  min-height: 240px;\n  overflow: visible;\n  border: 0;\n  border-radius: 16px;\n  background: transparent;\n  color: #f4edf9;\n}\n\n.mes_text .custom-nemo-vn-window::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  z-index: 0;\n  inset: 0;\n  border: 1px solid #ad8bd2;\n  border-radius: 16px;\n  background: linear-gradient(145deg,rgba(35,25,49,.98),rgba(20,17,29,.98));\n  box-shadow: 0 10px 30px #0005,inset 0 1px 0 #e7d0ff18;\n  pointer-events: none;\n}\n\n.mes_text .custom-nemo-vn-card {\n  display: block;\n  position: relative;\n  min-width: 0;\n  max-width: 100%;\n  margin: 18px 0;\n  padding: 0;\n  border: 0;\n  background: transparent;\n  color: #f4edf9;\n  overflow-wrap: anywhere;\n  text-align: left;\n}\n\n.mes_text .custom-nemo-vn .custom-nemo-vn-card {\n  display: contents;\n}\n\n.mes_text .custom-nemo-vn-portrait {\n  display: flex;\n  position: relative;\n  z-index: 0;\n  align-items: flex-end;\n  justify-content: center;\n  width: 100%;\n  min-width: 0;\n  margin: 0 auto -220px;\n  padding: 0;\n  border: 0;\n  background: transparent;\n  pointer-events: none;\n}\n\n.mes_text .custom-nemo-vn-portrait img {\n  display: block;\n  width: auto;\n  max-width: 100%;\n  height: auto;\n  max-height: 510px;\n  object-fit: contain;\n  object-position: center bottom;\n  margin: 0;\n  filter: drop-shadow(0 8px 15px #0004);\n}\n\n.mes_text .custom-nemo-vn .custom-nemo-vn-portrait {\n  position: absolute;\n  z-index: -1;\n  top: -260px;\n  left: 0;\n  width: 100%;\n  height: 500px;\n  margin: 0;\n  padding: 0;\n}\n\n.mes_text .custom-nemo-vn .custom-nemo-vn-portrait img {\n  width: auto!important;\n  max-width: 100%!important;\n  height: 500px!important;\n  max-height: none;\n}\n\n.mes_text .custom-nemo-vn-speech {\n  display: block;\n  position: relative;\n  z-index: 1;\n  min-width: 0;\n  margin: 0;\n  padding: 22px 24px;\n  border: 1px solid #ad8bd2;\n  border-radius: 15px;\n  background: rgba(28,21,39,.98);\n}\n\n.mes_text .custom-nemo-vn .custom-nemo-vn-speech {\n  flex: 1 1 auto;\n  padding: 34px 26px 13px;\n  border: 0;\n  border-radius: 0;\n  background: transparent;\n}\n\n.mes_text .custom-nemo-vn-name {\n  display: block;\n  width: fit-content;\n  max-width: calc(100% - 36px);\n  margin: 0 0 13px;\n  font-family: inherit;\n  font-weight: 700;\n  font-size: 1rem;\n  line-height: 1.35;\n  color: #e5ccff;\n  letter-spacing: .01em;\n  overflow-wrap: anywhere;\n}\n\n.mes_text .custom-nemo-vn .custom-nemo-vn-name {\n  position: absolute;\n  z-index: 2;\n  top: -20px;\n  left: 20px;\n  margin: 0;\n  padding: 8px 18px;\n  border: 1px solid #bb96df;\n  border-radius: 9px;\n  background: linear-gradient(135deg,#493259,#2a2038);\n  box-shadow: 0 4px 12px #0004;\n  font-size: .94rem;\n}\n\n.mes_text .custom-nemo-vn-dialogue {\n  display: block;\n  margin: 0;\n  white-space: pre-wrap;\n  font-family: inherit;\n  font-size: 1rem;\n  line-height: 1.65;\n  color: #f4edf9;\n  overflow-wrap: anywhere;\n}\n\n.mes_text .custom-nemo-vn-nav {\n  display: none;\n  position: relative;\n  z-index: 1;\n  align-items: center;\n  justify-content: space-between;\n  flex: 0 0 auto;\n  gap: 10px;\n  min-height: 66px;\n  margin: 0;\n  padding: 9px 20px 14px;\n}\n\n.mes_text .custom-nemo-vn-control {\n  position: relative;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  gap: 8px;\n  min-width: 90px;\n  min-height: 42px;\n  margin: 0;\n  padding: 9px 13px;\n  border: 1px solid #b394d077;\n  border-radius: 9px;\n  background: #352543;\n  color: #f7f1ff;\n  font: 600 .8rem/1.25 system-ui,sans-serif;\n  cursor: pointer;\n  user-select: none;\n}\n\n.mes_text .custom-nemo-vn-control:hover {\n  background: #493259;\n  border-color: #d4b4f3;\n}\n\n.mes_text .custom-nemo-vn-control:focus-within {\n  outline: 2px solid #dfc6ff;\n  outline-offset: 3px;\n}\n\n.mes_text .custom-nemo-vn-control input {\n  position: absolute;\n  inset: 0;\n  display: block;\n  opacity: 0;\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  cursor: pointer;\n}\n\n.mes_text .custom-nemo-vn-counter {\n  color: #b5a4c6;\n  font: 500 .73rem/1.4 system-ui,sans-serif;\n  letter-spacing: .12em;\n  white-space: nowrap;\n}\n\n.mes_text .custom-nemo-vn-edge {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  min-width: 90px;\n  min-height: 42px;\n  color: #90829f;\n  font: 500 .75rem/1.3 system-ui,sans-serif;\n}\n\n.mes_text .custom-nemo-vn-text-only .custom-nemo-vn-speech {\n  padding: 22px 24px;\n}\n\n.mes_text .custom-nemo-vn-legacy {\n  display: block;\n  margin: 12px 0;\n  padding: 12px 16px;\n  border-left: 3px solid #ac83d7;\n  border-radius: 8px;\n  background: #241b2d;\n  color: #e8dcef;\n  font: inherit;\n  line-height: 1.55;\n  overflow-wrap: anywhere;\n}\n\n@supports selector(:has(input:checked)) {\n  .mes_text .custom-nemo-vn .custom-nemo-vn-slide {\n    display: none;\n  }\n\n  .mes_text .custom-nemo-vn:not(:has(input:checked)) .custom-nemo-vn-slide-1,\n  .mes_text .custom-nemo-vn:has(.custom-nemo-vn-to-1:checked) .custom-nemo-vn-slide-1,\n  .mes_text .custom-nemo-vn:has(.custom-nemo-vn-to-2:checked) .custom-nemo-vn-slide-2,\n  .mes_text .custom-nemo-vn:has(.custom-nemo-vn-to-3:checked) .custom-nemo-vn-slide-3,\n  .mes_text .custom-nemo-vn:has(.custom-nemo-vn-to-4:checked) .custom-nemo-vn-slide-4 {\n    display: block;\n  }\n\n  .mes_text .custom-nemo-vn .custom-nemo-vn-nav {\n    display: flex;\n  }\n\n  .mes_text .custom-nemo-vn-portrait:not(:has(img)) {\n    display: none;\n  }\n\n  .mes_text .custom-nemo-vn-slide:not(:has(.custom-nemo-vn-portrait img)) {\n    padding-top: 22px;\n  }\n\n  .mes_text .custom-nemo-vn-slide:not(:has(.custom-nemo-vn-portrait img)) .custom-nemo-vn-window {\n    min-height: 0;\n  }\n\n  .mes_text .custom-nemo-vn-card:not(:has(.custom-nemo-vn-portrait img)) .custom-nemo-vn-speech {\n    min-height: 0;\n  }\n}\n\n@media (max-width:520px) {\n  .mes_text .custom-nemo-vn {\n    margin: 1rem 0;\n  }\n\n  .mes_text .custom-nemo-vn-slide {\n    padding-top: 220px;\n  }\n\n  .mes_text .custom-nemo-vn-window {\n    min-height: 210px;\n    border-radius: 13px;\n  }\n\n  .mes_text .custom-nemo-vn-window::before {\n    border-radius: 13px;\n  }\n\n  .mes_text .custom-nemo-vn .custom-nemo-vn-portrait {\n    top: -220px;\n    height: 430px;\n  }\n\n  .mes_text .custom-nemo-vn .custom-nemo-vn-portrait img {\n    height: 430px!important;\n  }\n\n  .mes_text .custom-nemo-vn .custom-nemo-vn-speech {\n    padding: 32px 17px 9px;\n  }\n\n  .mes_text .custom-nemo-vn .custom-nemo-vn-name {\n    top: -19px;\n    left: 13px;\n    padding: 8px 13px;\n    max-width: calc(100% - 26px);\n    font-size: .84rem;\n  }\n\n  .mes_text .custom-nemo-vn-dialogue {\n    font-size: .92rem;\n    line-height: 1.58;\n  }\n\n  .mes_text .custom-nemo-vn-nav {\n    padding: 8px 12px 12px;\n    gap: 7px;\n    min-height: 62px;\n  }\n\n  .mes_text .custom-nemo-vn-control,\n  .mes_text .custom-nemo-vn-edge {\n    min-width: 78px;\n    min-height: 42px;\n    font-size: .72rem;\n    padding: 9px 10px;\n  }\n\n  .mes_text .custom-nemo-vn-heading {\n    padding: 11px 13px;\n    font-size: .62rem;\n    gap: 8px;\n  }\n\n  .mes_text .custom-nemo-vn-heading span:last-child {\n    font-size: .62rem;\n  }\n}\n\n@media (prefers-reduced-motion:no-preference) {\n  .mes_text .custom-nemo-vn-control {\n    transition: background .15s ease,border-color .15s ease;\n  }\n}Whimsical VexA: The little details are beginning to add up.Beginning01 / 02Next \u25b6Whimsical VexA: Someone has been very careful with this room.\u25c0 Back02 / 02End",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "literalPreserved": false
+          },
+          {
+            "name": "vex-example-in-attribute",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": false,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "title": "<form class=\"nemo-vn\" autocomplete=\"off\" aria-label=\"Vex commentary\"><custom-style>.nemo-vn%7Bdisplay%3Ablock%3Bbox-sizing%3Aborder-box%3Bmax-width%3A100%25%3Bmargin%3A1.4rem%200%3Bpadding%3A0%3Boverflow%3Avisible%3Bborder%3A0%3Bborder-radius%3A0%3Bbackground%3Atransparent%3Bcolor%3A%23f4edf9%3Bbox-shadow%3Anone%3Bfont-family%3Ainherit%3Btext-align%3Aleft%3Bcolor-scheme%3Adark%3Bisolation%3Aisolate%3B%7D%20.nemo-vn%20*%7Bbox-sizing%3Aborder-box%3B%7D%20.nemo-vn-heading%7Bdisplay%3Aflex%3Balign-items%3Acenter%3Bjustify-content%3Aspace-between%3Bgap%3A12px%3Bpadding%3A12px%2018px%3Bcolor%3A%23c8b1e6%3Bfont%3A600%20.68rem%2F1.4%20system-ui%2Csans-serif%3Bletter-spacing%3A.16em%3Btext-transform%3Auppercase%3B%7D%20.nemo-vn-heading%20span%3Alast-child%7Bfont-weight%3A400%3Bletter-spacing%3A.04em%3Btext-transform%3Anone%3Bcolor%3A%23b3a5c5%3B%7D%20.nemo-vn-slide%7Bdisplay%3Ablock%3Bposition%3Arelative%3Bmin-width%3A0%3Bpadding-top%3A260px%3B%7D%20.nemo-vn-window%7Bdisplay%3Aflex%3Bposition%3Arelative%3Bz-index%3A0%3Bisolation%3Aisolate%3Bflex-direction%3Acolumn%3Bmin-width%3A0%3Bmin-height%3A240px%3Boverflow%3Avisible%3Bborder%3A0%3Bborder-radius%3A16px%3Bbackground%3Atransparent%3Bcolor%3A%23f4edf9%3B%7D%20.nemo-vn-window%3A%3Abefore%7Bcontent%3A%22%22%3Bdisplay%3Ablock%3Bposition%3Aabsolute%3Bz-index%3A0%3Binset%3A0%3Bborder%3A1px%20solid%20%23ad8bd2%3Bborder-radius%3A16px%3Bbackground%3Alinear-gradient(145deg%2Crgba(35%2C25%2C49%2C.98)%2Crgba(20%2C17%2C29%2C.98))%3Bbox-shadow%3A0%2010px%2030px%20%230005%2Cinset%200%201px%200%20%23e7d0ff18%3Bpointer-events%3Anone%3B%7D%20.nemo-vn-card%7Bdisplay%3Ablock%3Bposition%3Arelative%3Bmin-width%3A0%3Bmax-width%3A100%25%3Bmargin%3A18px%200%3Bpadding%3A0%3Bborder%3A0%3Bbackground%3Atransparent%3Bcolor%3A%23f4edf9%3Boverflow-wrap%3Aanywhere%3Btext-align%3Aleft%3B%7D%20.nemo-vn%20.nemo-vn-card%7Bdisplay%3Acontents%3B%7D%20.nemo-vn-portrait%7Bdisplay%3Aflex%3Bposition%3Arelative%3Bz-index%3A0%3Balign-items%3Aflex-end%3Bjustify-content%3Acenter%3Bwidth%3A100%25%3Bmin-width%3A0%3Bmargin%3A0%20auto%20-220px%3Bpadding%3A0%3Bborder%3A0%3Bbackground%3Atransparent%3Bpointer-events%3Anone%3B%7D%20.nemo-vn-portrait%20img%7Bdisplay%3Ablock%3Bwidth%3Aauto%3Bmax-width%3A100%25%3Bheight%3Aauto%3Bmax-height%3A510px%3Bobject-fit%3Acontain%3Bobject-position%3Acenter%20bottom%3Bmargin%3A0%3Bfilter%3Adrop-shadow(0%208px%2015px%20%230004)%3B%7D%20.nemo-vn%20.nemo-vn-portrait%7Bposition%3Aabsolute%3Bz-index%3A-1%3Btop%3A-260px%3Bleft%3A0%3Bwidth%3A100%25%3Bheight%3A500px%3Bmargin%3A0%3Bpadding%3A0%3B%7D%20.nemo-vn%20.nemo-vn-portrait%20img%7Bwidth%3Aauto!important%3Bmax-width%3A100%25!important%3Bheight%3A500px!important%3Bmax-height%3Anone%3B%7D%20.nemo-vn-speech%7Bdisplay%3Ablock%3Bposition%3Arelative%3Bz-index%3A1%3Bmin-width%3A0%3Bmargin%3A0%3Bpadding%3A22px%2024px%3Bborder%3A1px%20solid%20%23ad8bd2%3Bborder-radius%3A15px%3Bbackground%3Argba(28%2C21%2C39%2C.98)%3B%7D%20.nemo-vn%20.nemo-vn-speech%7Bflex%3A1%201%20auto%3Bpadding%3A34px%2026px%2013px%3Bborder%3A0%3Bborder-radius%3A0%3Bbackground%3Atransparent%3B%7D%20.nemo-vn-name%7Bdisplay%3Ablock%3Bwidth%3Afit-content%3Bmax-width%3Acalc(100%25%20-%2036px)%3Bmargin%3A0%200%2013px%3Bfont-family%3Ainherit%3Bfont-weight%3A700%3Bfont-size%3A1rem%3Bline-height%3A1.35%3Bcolor%3A%23e5ccff%3Bletter-spacing%3A.01em%3Boverflow-wrap%3Aanywhere%3B%7D%20.nemo-vn%20.nemo-vn-name%7Bposition%3Aabsolute%3Bz-index%3A2%3Btop%3A-20px%3Bleft%3A20px%3Bmargin%3A0%3Bpadding%3A8px%2018px%3Bborder%3A1px%20solid%20%23bb96df%3Bborder-radius%3A9px%3Bbackground%3Alinear-gradient(135deg%2C%23493259%2C%232a2038)%3Bbox-shadow%3A0%204px%2012px%20%230004%3Bfont-size%3A.94rem%3B%7D%20.nemo-vn-dialogue%7Bdisplay%3Ablock%3Bmargin%3A0%3Bwhite-space%3Apre-wrap%3Bfont-family%3Ainherit%3Bfont-size%3A1rem%3Bline-height%3A1.65%3Bcolor%3A%23f4edf9%3Boverflow-wrap%3Aanywhere%3B%7D%20.nemo-vn-nav%7Bdisplay%3Anone%3Bposition%3Arelative%3Bz-index%3A1%3Balign-items%3Acenter%3Bjustify-content%3Aspace-between%3Bflex%3A0%200%20auto%3Bgap%3A10px%3Bmin-height%3A66px%3Bmargin%3A0%3Bpadding%3A9px%2020px%2014px%3B%7D%20.nemo-vn-control%7Bposition%3Arelative%3Bdisplay%3Ainline-flex%3Balign-items%3Acenter%3Bjustify-content%3Acenter%3Bgap%3A8px%3Bmin-width%3A90px%3Bmin-height%3A42px%3Bmargin%3A0%3Bpadding%3A9px%2013px%3Bborder%3A1px%20solid%20%23b394d077%3Bborder-radius%3A9px%3Bbackground%3A%23352543%3Bcolor%3A%23f7f1ff%3Bfont%3A600%20.8rem%2F1.25%20system-ui%2Csans-serif%3Bcursor%3Apointer%3Buser-select%3Anone%3B%7D%20.nemo-vn-control%3Ahover%7Bbackground%3A%23493259%3Bborder-color%3A%23d4b4f3%3B%7D%20.nemo-vn-control%3Afocus-within%7Boutline%3A2px%20solid%20%23dfc6ff%3Boutline-offset%3A3px%3B%7D%20.nemo-vn-control%20input%7Bposition%3Aabsolute%3Binset%3A0%3Bdisplay%3Ablock%3Bopacity%3A0%3Bwidth%3A100%25%3Bheight%3A100%25%3Bmargin%3A0%3Bcursor%3Apointer%3B%7D%20.nemo-vn-counter%7Bcolor%3A%23b5a4c6%3Bfont%3A500%20.73rem%2F1.4%20system-ui%2Csans-serif%3Bletter-spacing%3A.12em%3Bwhite-space%3Anowrap%3B%7D%20.nemo-vn-edge%7Bdisplay%3Ainline-flex%3Balign-items%3Acenter%3Bjustify-content%3Acenter%3Bmin-width%3A90px%3Bmin-height%3A42px%3Bcolor%3A%2390829f%3Bfont%3A500%20.75rem%2F1.3%20system-ui%2Csans-serif%3B%7D%20.nemo-vn-text-only%20.nemo-vn-speech%7Bpadding%3A22px%2024px%3B%7D%20.nemo-vn-legacy%7Bdisplay%3Ablock%3Bmargin%3A12px%200%3Bpadding%3A12px%2016px%3Bborder-left%3A3px%20solid%20%23ac83d7%3Bborder-radius%3A8px%3Bbackground%3A%23241b2d%3Bcolor%3A%23e8dcef%3Bfont%3Ainherit%3Bline-height%3A1.55%3Boverflow-wrap%3Aanywhere%3B%7D%20%40supports%20selector(%3Ahas(input%3Achecked))%7B%20.nemo-vn%20.nemo-vn-slide%7Bdisplay%3Anone%3B%7D%20.nemo-vn%3Anot(%3Ahas(input%3Achecked))%20.nemo-vn-slide-1%2C.nemo-vn%3Ahas(.nemo-vn-to-1%3Achecked)%20.nemo-vn-slide-1%2C.nemo-vn%3Ahas(.nemo-vn-to-2%3Achecked)%20.nemo-vn-slide-2%2C.nemo-vn%3Ahas(.nemo-vn-to-3%3Achecked)%20.nemo-vn-slide-3%2C.nemo-vn%3Ahas(.nemo-vn-to-4%3Achecked)%20.nemo-vn-slide-4%7Bdisplay%3Ablock%3B%7D%20.nemo-vn%20.nemo-vn-nav%7Bdisplay%3Aflex%3B%7D%20.nemo-vn-portrait%3Anot(%3Ahas(img))%7Bdisplay%3Anone%3B%7D%20.nemo-vn-slide%3Anot(%3Ahas(.nemo-vn-portrait%20img))%7Bpadding-top%3A22px%3B%7D%20.nemo-vn-slide%3Anot(%3Ahas(.nemo-vn-portrait%20img))%20.nemo-vn-window%7Bmin-height%3A0%3B%7D%20.nemo-vn-card%3Anot(%3Ahas(.nemo-vn-portrait%20img))%20.nemo-vn-speech%7Bmin-height%3A0%3B%7D%20%7D%20%40media(max-width%3A520px)%7B%20.nemo-vn%7Bmargin%3A1rem%200%3B%7D%20.nemo-vn-slide%7Bpadding-top%3A220px%3B%7D%20.nemo-vn-window%7Bmin-height%3A210px%3Bborder-radius%3A13px%3B%7D%20.nemo-vn-window%3A%3Abefore%7Bborder-radius%3A13px%3B%7D%20.nemo-vn%20.nemo-vn-portrait%7Btop%3A-220px%3Bheight%3A430px%3B%7D%20.nemo-vn%20.nemo-vn-portrait%20img%7Bheight%3A430px!important%3B%7D%20.nemo-vn%20.nemo-vn-speech%7Bpadding%3A32px%2017px%209px%3B%7D%20.nemo-vn%20.nemo-vn-name%7Btop%3A-19px%3Bleft%3A13px%3Bpadding%3A8px%2013px%3Bmax-width%3Acalc(100%25%20-%2026px)%3Bfont-size%3A.84rem%3B%7D%20.nemo-vn-dialogue%7Bfont-size%3A.92rem%3Bline-height%3A1.58%3B%7D%20.nemo-vn-nav%7Bpadding%3A8px%2012px%2012px%3Bgap%3A7px%3Bmin-height%3A62px%3B%7D%20.nemo-vn-control%2C.nemo-vn-edge%7Bmin-width%3A78px%3Bmin-height%3A42px%3Bfont-size%3A.72rem%3Bpadding%3A9px%2010px%3B%7D%20.nemo-vn-heading%7Bpadding%3A11px%2013px%3Bfont-size%3A.62rem%3Bgap%3A8px%3B%7D%20.nemo-vn-heading%20span%3Alast-child%7Bfont-size%3A.62rem%3B%7D%20%7D%20%40media(prefers-reduced-motion%3Ano-preference)%7B.nemo-vn-control%7Btransition%3Abackground%20.15s%20ease%2Cborder-color%20.15s%20ease%3B%7D%7D</custom-style><div class=\"nemo-vn-slide nemo-vn-slide-1\"><div class=\"nemo-vn-window\"><div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/whimsical/thoughtful.png\" alt=\"Whimsical Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Whimsical Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">A: The little details are beginning to add up.</div></div></div><div class=\"nemo-vn-nav\"><span class=\"nemo-vn-edge\" aria-hidden=\"true\">Beginning</span><span class=\"nemo-vn-counter\">01 / 02</span><label class=\"nemo-vn-control\"><input type=\"radio\" name=\"nemo-vn-page\" class=\"nemo-vn-to-2\" aria-label=\"Next message, 2 of 2\"><span aria-hidden=\"true\">Next \u25b6</span></label></div></div></div><div class=\"nemo-vn-slide nemo-vn-slide-2\"><div class=\"nemo-vn-window\"><div class=\"nemo-vn-card\" style=\"max-width:100%;\"><figure class=\"nemo-vn-portrait\"><img src=\"https://raw.githubusercontent.com/NemoVonNirgend/NemoEngine/main/Nemo%20Engine/assets/vex/whimsical/amused.png\" alt=\"Whimsical Vex\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:340px;height:auto;object-fit:contain;\"></figure><div class=\"nemo-vn-speech\" style=\"min-width:0;\"><strong class=\"nemo-vn-name\">Whimsical Vex</strong><div class=\"nemo-vn-dialogue\" style=\"white-space:pre-wrap;overflow-wrap:anywhere;\">A: Someone has been very careful with this room.</div></div></div><div class=\"nemo-vn-nav\"><label class=\"nemo-vn-control\"><input type=\"radio\" name=\"nemo-vn-page\" class=\"nemo-vn-to-1\" aria-label=\"Back message, 1 of 2\"><span aria-hidden=\"true\">\u25c0 Back</span></label><span class=\"nemo-vn-counter\">02 / 02</span><span class=\"nemo-vn-edge\">End</span></div></div></div></form>",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "attributePreserved": false
+          },
+          {
+            "name": "vex-example-in-visible-workbench",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": false,
+            "promptDepth6Unchanged": false,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 1,
+            "visibleVexSlides": 1,
+            "workbenchCount": 1,
+            "vexInWorkbench": 1,
+            "codeCount": 0,
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true
+          },
+          {
+            "name": "phone-message-with-fx-emoji",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "expectedPhoneRendered": false
+          },
+          {
+            "name": "phone-message-with-fire-emoji",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "expectedPhoneRendered": false
+          },
+          {
+            "name": "phone-contact-with-fx-emoji",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "expectedPhoneRendered": false,
+            "avatarCodePointValid": false
+          },
+          {
+            "name": "phone-contact-with-nonfx-emoji-avatar",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 1,
+            "bubbleCount": 3,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarText": "\ud83c",
+            "avatarCodePoints": [
+              55356
+            ],
+            "messages": [
+              "Hello.",
+              "Almost. Which entrance?",
+              "Side door. Knock quietly."
+            ],
+            "sentBubbleColour": "rgb(24, 133, 236)",
+            "noPageOverflow": true,
+            "expectedPhoneRendered": true,
+            "avatarCodePointValid": false
+          },
+          {
+            "name": "scene-current-sun-icon",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 1,
+            "structuredCount": 0,
+            "legacySceneCount": 1,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "expectedStructuredRendered": false
+          },
+          {
+            "name": "scene-current-value-sun-emoji",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 1,
+            "structuredCount": 0,
+            "legacySceneCount": 1,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "expectedStructuredRendered": false
+          },
+          {
+            "name": "scene-forecast-moon-icon",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 1,
+            "structuredCount": 0,
+            "legacySceneCount": 1,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "expectedStructuredRendered": false
+          },
+          {
+            "name": "scene-code-existing-behavior",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 1,
+            "codeText": "<style>.pk-h{display:block;margin:1.15em 0 .45em;padding-bottom:.28em;font-size:.7em;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pk-accent,#8a8a96);border-bottom:1px solid rgba(140,140,155,.18)}.pk-h:first-child{margin-top:0}.pk-r{display:grid;grid-template-columns:minmax(5.5em,auto) 1fr;gap:.1em .9em;margin:.28em 0;line-height:1.55;align-items:baseline}.pk-r>i{font-style:normal;font-size:.82em;font-weight:600;letter-spacing:.03em;text-transform:uppercase;opacity:.45;text-align:right;white-space:nowrap}.pk-r>.pk-rv{display:block;grid-column:2;min-width:0;max-width:100%;overflow-wrap:anywhere;word-break:normal}.pk-v0,.pk-v0 q{color:#9E9E9E}.pk-v1,.pk-v1 q{color:#56B4E9}.pk-v2,.pk-v2 q{color:#E69F00}.pk-v3,.pk-v3 q{color:#009E73}.pk-v4,.pk-v4 q{color:#CC79A7}.pk-v5,.pk-v5 q{color:#D55E00}.pk-v6,.pk-v6 q{color:#F0E442}.pk-v7,.pk-v7 q{color:#B39DDB}.pk-v8,.pk-v8 q{color:#80CBC4}.pk-v9,.pk-v9 q{color:#FF8A80}.pk-v10,.pk-v10 q{color:#A5D6A7}.pk-v11,.pk-v11 q{color:#FFD180}.pk-v12,.pk-v12 q{color:#9FA8DA}.pk-v13,.pk-v13 q{color:#F48FB1}.pk-v14,.pk-v14 q{color:#BCAAA4}.pk-v15,.pk-v15 q{color:#4DD0E1}.pk-v16,.pk-v16 q{color:#DCE775}.pk-o{display:inline-block;margin-right:.45em;font-size:.72em;line-height:1;vertical-align:.14em;text-shadow:0 0 6px currentColor}@media(max-width:640px){.pk-r{grid-template-columns:1fr;gap:0}.pk-r>i{text-align:left;opacity:.4;margin-top:.35em}.pk-r>.pk-rv{grid-column:1}}.nemo-scene-card{box-sizing:border-box;display:block;position:relative;margin:1.65em 0 1.3em;padding:1.2em 1.35em 1.1em;border:1px solid rgba(173,159,206,.22);border-radius:14px;background:linear-gradient(135deg,rgba(147,115,195,.10),rgba(100,118,162,.035) 70%);color:inherit;line-height:1.55;letter-spacing:normal;text-transform:none;overflow-wrap:anywhere;word-break:normal;min-width:0;max-width:100%;isolation:isolate}.nemo-scene-card::before{content:\"\";position:absolute;top:1.3em;bottom:1.3em;left:0;width:3px;border-radius:0 3px 3px 0;background:var(--pk-accent,#b49bd9);opacity:.7}.nemo-scene-card .nemo-scene-date{display:block;font-size:.74em;font-weight:600;letter-spacing:.065em;color:inherit;opacity:.67;line-height:1.6;margin:0 0 .4em;white-space:normal}.nemo-scene-card .nemo-scene-place{display:block;margin:0;font-size:1.15em;font-weight:700;line-height:1.4;color:inherit;letter-spacing:.005em;white-space:normal;text-wrap:pretty}.nemo-scene-card .nemo-scene-conditions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:.65em 1.5em;margin:1em 0 0;padding-top:.85em;border-top:1px solid rgba(173,159,206,.17);min-width:0}.nemo-scene-card .nemo-scene-condition{display:block;min-width:0}.nemo-scene-card .nemo-scene-label{display:block;font-size:.64em;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.55;line-height:1.6;margin-bottom:.2em}.nemo-scene-card .nemo-scene-value{display:block;font-size:.86em;line-height:1.6;white-space:normal}.nemo-scene-card .nemo-scene-context{display:block;white-space:pre-line;margin-top:.9em;padding-top:.75em;border-top:1px solid rgba(173,159,206,.17);font-size:.8em;line-height:1.75;opacity:.78}.nemo-scene-card .nemo-scene-context:empty{display:none}.nemo-scene-card .nemo-scene-legacy-text{white-space:pre-line;font-size:.88em;line-height:1.75}.nemo-scene-card p{margin:0}.nemo-scene-card p+p{margin-top:.35em}@media(max-width:640px){.nemo-scene-card{margin:1.3em 0 1.1em;padding:1em 1.05em .95em;border-radius:11px}.nemo-scene-card::before{top:1.1em;bottom:1.1em}.nemo-scene-card .nemo-scene-place{font-size:1.08em}.nemo-scene-card .nemo-scene-conditions{grid-template-columns:minmax(0,1fr);gap:.75em}.nemo-scene-card .nemo-scene-date{font-size:.72em;letter-spacing:.035em}.nemo-scene-card .nemo-scene-context{font-size:.8em}}</style><section class=\"nemo-scene-card\"><div class=\"nemo-scene-date\">Monday \u00b7 Day12 \u00b708:10 /Early morning</div><div class=\"nemo-scene-place\">The Dusty Quill \u2192 Upstairs guest room</div><div class=\"nemo-scene-conditions\"><div class=\"nemo-scene-condition\"><span class=\"nemo-scene-label\">Current</span><span class=\"nemo-scene-value\">Overcast, 12\u00b0C, light easterly wind</span></div><div class=\"nemo-scene-condition\"><span class=\"nemo-scene-label\">Forecast</span><span class=\"nemo-scene-value\">Rain likely this afternoon; clearing tonight</span></div></div><div class=\"nemo-scene-context\"></div></section>\n",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "literalPreserved": false
+          },
+          {
+            "name": "scene-attribute-existing-behavior",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "title": "<custom-style>.pk-h%7Bdisplay%3Ablock%3Bmargin%3A1.15em%200%20.45em%3Bpadding-bottom%3A.28em%3Bfont-size%3A.7em%3Bfont-weight%3A700%3Bletter-spacing%3A.16em%3Btext-transform%3Auppercase%3Bcolor%3Avar(--pk-accent%2C%238a8a96)%3Bborder-bottom%3A1px%20solid%20rgba(140%2C140%2C155%2C.18)%7D.pk-h%3Afirst-child%7Bmargin-top%3A0%7D.pk-r%7Bdisplay%3Agrid%3Bgrid-template-columns%3Aminmax(5.5em%2Cauto)%201fr%3Bgap%3A.1em%20.9em%3Bmargin%3A.28em%200%3Bline-height%3A1.55%3Balign-items%3Abaseline%7D.pk-r%3Ei%7Bfont-style%3Anormal%3Bfont-size%3A.82em%3Bfont-weight%3A600%3Bletter-spacing%3A.03em%3Btext-transform%3Auppercase%3Bopacity%3A.45%3Btext-align%3Aright%3Bwhite-space%3Anowrap%7D.pk-r%3E.pk-rv%7Bdisplay%3Ablock%3Bgrid-column%3A2%3Bmin-width%3A0%3Bmax-width%3A100%25%3Boverflow-wrap%3Aanywhere%3Bword-break%3Anormal%7D.pk-v0%2C.pk-v0%20q%7Bcolor%3A%239E9E9E%7D.pk-v1%2C.pk-v1%20q%7Bcolor%3A%2356B4E9%7D.pk-v2%2C.pk-v2%20q%7Bcolor%3A%23E69F00%7D.pk-v3%2C.pk-v3%20q%7Bcolor%3A%23009E73%7D.pk-v4%2C.pk-v4%20q%7Bcolor%3A%23CC79A7%7D.pk-v5%2C.pk-v5%20q%7Bcolor%3A%23D55E00%7D.pk-v6%2C.pk-v6%20q%7Bcolor%3A%23F0E442%7D.pk-v7%2C.pk-v7%20q%7Bcolor%3A%23B39DDB%7D.pk-v8%2C.pk-v8%20q%7Bcolor%3A%2380CBC4%7D.pk-v9%2C.pk-v9%20q%7Bcolor%3A%23FF8A80%7D.pk-v10%2C.pk-v10%20q%7Bcolor%3A%23A5D6A7%7D.pk-v11%2C.pk-v11%20q%7Bcolor%3A%23FFD180%7D.pk-v12%2C.pk-v12%20q%7Bcolor%3A%239FA8DA%7D.pk-v13%2C.pk-v13%20q%7Bcolor%3A%23F48FB1%7D.pk-v14%2C.pk-v14%20q%7Bcolor%3A%23BCAAA4%7D.pk-v15%2C.pk-v15%20q%7Bcolor%3A%234DD0E1%7D.pk-v16%2C.pk-v16%20q%7Bcolor%3A%23DCE775%7D.pk-o%7Bdisplay%3Ainline-block%3Bmargin-right%3A.45em%3Bfont-size%3A.72em%3Bline-height%3A1%3Bvertical-align%3A.14em%3Btext-shadow%3A0%200%206px%20currentColor%7D%40media(max-width%3A640px)%7B.pk-r%7Bgrid-template-columns%3A1fr%3Bgap%3A0%7D.pk-r%3Ei%7Btext-align%3Aleft%3Bopacity%3A.4%3Bmargin-top%3A.35em%7D.pk-r%3E.pk-rv%7Bgrid-column%3A1%7D%7D.nemo-scene-card%7Bbox-sizing%3Aborder-box%3Bdisplay%3Ablock%3Bposition%3Arelative%3Bmargin%3A1.65em%200%201.3em%3Bpadding%3A1.2em%201.35em%201.1em%3Bborder%3A1px%20solid%20rgba(173%2C159%2C206%2C.22)%3Bborder-radius%3A14px%3Bbackground%3Alinear-gradient(135deg%2Crgba(147%2C115%2C195%2C.10)%2Crgba(100%2C118%2C162%2C.035)%2070%25)%3Bcolor%3Ainherit%3Bline-height%3A1.55%3Bletter-spacing%3Anormal%3Btext-transform%3Anone%3Boverflow-wrap%3Aanywhere%3Bword-break%3Anormal%3Bmin-width%3A0%3Bmax-width%3A100%25%3Bisolation%3Aisolate%7D.nemo-scene-card%3A%3Abefore%7Bcontent%3A%22%22%3Bposition%3Aabsolute%3Btop%3A1.3em%3Bbottom%3A1.3em%3Bleft%3A0%3Bwidth%3A3px%3Bborder-radius%3A0%203px%203px%200%3Bbackground%3Avar(--pk-accent%2C%23b49bd9)%3Bopacity%3A.7%7D.nemo-scene-card%20.nemo-scene-date%7Bdisplay%3Ablock%3Bfont-size%3A.74em%3Bfont-weight%3A600%3Bletter-spacing%3A.065em%3Bcolor%3Ainherit%3Bopacity%3A.67%3Bline-height%3A1.6%3Bmargin%3A0%200%20.4em%3Bwhite-space%3Anormal%7D.nemo-scene-card%20.nemo-scene-place%7Bdisplay%3Ablock%3Bmargin%3A0%3Bfont-size%3A1.15em%3Bfont-weight%3A700%3Bline-height%3A1.4%3Bcolor%3Ainherit%3Bletter-spacing%3A.005em%3Bwhite-space%3Anormal%3Btext-wrap%3Apretty%7D.nemo-scene-card%20.nemo-scene-conditions%7Bdisplay%3Agrid%3Bgrid-template-columns%3Aminmax(0%2C1fr)%20minmax(0%2C1fr)%3Bgap%3A.65em%201.5em%3Bmargin%3A1em%200%200%3Bpadding-top%3A.85em%3Bborder-top%3A1px%20solid%20rgba(173%2C159%2C206%2C.17)%3Bmin-width%3A0%7D.nemo-scene-card%20.nemo-scene-condition%7Bdisplay%3Ablock%3Bmin-width%3A0%7D.nemo-scene-card%20.nemo-scene-label%7Bdisplay%3Ablock%3Bfont-size%3A.64em%3Bfont-weight%3A700%3Bletter-spacing%3A.12em%3Btext-transform%3Auppercase%3Bopacity%3A.55%3Bline-height%3A1.6%3Bmargin-bottom%3A.2em%7D.nemo-scene-card%20.nemo-scene-value%7Bdisplay%3Ablock%3Bfont-size%3A.86em%3Bline-height%3A1.6%3Bwhite-space%3Anormal%7D.nemo-scene-card%20.nemo-scene-context%7Bdisplay%3Ablock%3Bwhite-space%3Apre-line%3Bmargin-top%3A.9em%3Bpadding-top%3A.75em%3Bborder-top%3A1px%20solid%20rgba(173%2C159%2C206%2C.17)%3Bfont-size%3A.8em%3Bline-height%3A1.75%3Bopacity%3A.78%7D.nemo-scene-card%20.nemo-scene-context%3Aempty%7Bdisplay%3Anone%7D.nemo-scene-card%20.nemo-scene-legacy-text%7Bwhite-space%3Apre-line%3Bfont-size%3A.88em%3Bline-height%3A1.75%7D.nemo-scene-card%20p%7Bmargin%3A0%7D.nemo-scene-card%20p%2Bp%7Bmargin-top%3A.35em%7D%40media(max-width%3A640px)%7B.nemo-scene-card%7Bmargin%3A1.3em%200%201.1em%3Bpadding%3A1em%201.05em%20.95em%3Bborder-radius%3A11px%7D.nemo-scene-card%3A%3Abefore%7Btop%3A1.1em%3Bbottom%3A1.1em%7D.nemo-scene-card%20.nemo-scene-place%7Bfont-size%3A1.08em%7D.nemo-scene-card%20.nemo-scene-conditions%7Bgrid-template-columns%3Aminmax(0%2C1fr)%3Bgap%3A.75em%7D.nemo-scene-card%20.nemo-scene-date%7Bfont-size%3A.72em%3Bletter-spacing%3A.035em%7D.nemo-scene-card%20.nemo-scene-context%7Bfont-size%3A.8em%7D%7D</custom-style><section class=\"nemo-scene-card nemo-scene-legacy\"><div class=\"nemo-scene-legacy-text\">Day4 \u2014 Ruined bell tower</div></section>",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "attributePreserved": false
+          }
+        ]
+      },
+      {
+        "name": "candidate",
+        "path": "/workspace/scratch/7095aacbc09d/regex-audit-output/Nemo_Engine_v12.2_Lite_General_RP_Anime.json",
+        "sha256": "394e0b928159429878d25461688b3ce01c61332e9161502da9f7311c48db9ddb",
+        "regexCount": 584,
+        "tests": [
+          {
+            "name": "valid-phone-beside-formatted-narrative",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 1,
+            "bubbleCount": 3,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 1,
+            "fxCount": 1,
+            "colourCount": 3,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "title": "Internal thought (not spoken aloud)",
+            "avatarText": "M",
+            "avatarCodePoints": [
+              77
+            ],
+            "messages": [
+              "Are you outside yet?",
+              "Almost. Which entrance?",
+              "Side door. Knock quietly."
+            ],
+            "sentBubbleColour": "rgb(24, 133, 236)",
+            "noPageOverflow": true,
+            "validIntegrationPassed": true,
+            "noGuardMarkersLeak": true
+          },
+          {
+            "name": "valid-scene-phone-narrative-vex",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": false,
+            "cssError": false,
+            "phoneCount": 1,
+            "bubbleCount": 3,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 1,
+            "fxCount": 1,
+            "colourCount": 3,
+            "sceneCount": 1,
+            "structuredCount": 1,
+            "legacySceneCount": 0,
+            "vexCount": 1,
+            "visibleVexSlides": 1,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "title": "Internal thought (not spoken aloud)",
+            "avatarText": "M",
+            "avatarCodePoints": [
+              77
+            ],
+            "messages": [
+              "Are you outside yet?",
+              "Almost. Which entrance?",
+              "Side door. Knock quietly."
+            ],
+            "sentBubbleColour": "rgb(24, 133, 236)",
+            "noPageOverflow": true,
+            "validIntegrationPassed": true,
+            "noGuardMarkersLeak": true
+          },
+          {
+            "name": "repeated-phones-and-vex-panels",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": false,
+            "cssError": false,
+            "phoneCount": 2,
+            "bubbleCount": 6,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 2,
+            "visibleVexSlides": 2,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarText": "M",
+            "avatarCodePoints": [
+              77
+            ],
+            "messages": [
+              "Are you outside yet?",
+              "Almost. Which entrance?",
+              "Side door. Knock quietly.",
+              "Where should we meet?",
+              "Almost. Which entrance?",
+              "Side door. Knock quietly."
+            ],
+            "sentBubbleColour": "rgb(24, 133, 236)",
+            "noPageOverflow": true,
+            "validIntegrationPassed": true,
+            "independentVexNavigationPassed": true,
+            "noGuardMarkersLeak": true
+          },
+          {
+            "name": "legacy-tracker-and-immersive-phone",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": false,
+            "cssError": false,
+            "phoneCount": 1,
+            "bubbleCount": 3,
+            "trackerPhoneCount": 1,
+            "thoughtCount": 1,
+            "fxCount": 1,
+            "colourCount": 3,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "title": "Internal thought (not spoken aloud)",
+            "avatarText": "M",
+            "avatarCodePoints": [
+              77
+            ],
+            "messages": [
+              "Are you outside yet?",
+              "Almost. Which entrance?",
+              "Side door. Knock quietly."
+            ],
+            "sentBubbleColour": "rgb(24, 133, 236)",
+            "noPageOverflow": true,
+            "validIntegrationPassed": true,
+            "noGuardMarkersLeak": true
+          },
+          {
+            "name": "phone-paragraphs-and-escaped-angles",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 1,
+            "bubbleCount": 3,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 1,
+            "structuredCount": 1,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarText": "M",
+            "avatarCodePoints": [
+              77
+            ],
+            "messages": [
+              "First line.\n\nSecond paragraph: use <gate> as the meeting point.",
+              "Almost. Which entrance?",
+              "Side door. Knock quietly."
+            ],
+            "sentBubbleColour": "rgb(24, 133, 236)",
+            "noPageOverflow": true,
+            "validIntegrationPassed": true,
+            "noGuardMarkersLeak": true
+          },
+          {
+            "name": "format-markers-in-attribute",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "title": "<code>[[c1]][[fx whisper]]Attribute text.[[/fx]][[/c1]]</code>",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "attributePreserved": false,
+            "noGuardMarkersLeak": true
+          },
+          {
+            "name": "fenced-phone-and-format-examples",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 1,
+            "codeText": "[[c1]]\"Call me when you arrive.\"[[/c1]]\n\n[[c2]]\"I will.\"[[/c2]]\n\n`[[c1]]I hope the road is still open.[[/c1]]`\n\n[[fx whisper]]The hallway falls quiet.[[/fx]]\n\n[[phone model=\"iphone\" service=\"imessage\" time=\"23:48\" battery=\"72\"]]\n[[chat name=\"Mika\"]]\n[[msg received time=\"23:47\"]]Are you outside yet?[[/msg]]\n[[msg sent time=\"23:48\"]]Almost. Which entrance?[[/msg]]\n[[msg received]]Side door. Knock quietly.[[/msg]]\n[[/chat]]\n[[/phone]]\n",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "literalPreserved": true,
+            "noGuardMarkersLeak": true
+          },
+          {
+            "name": "escaped-html-pre-code-examples",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 1,
+            "codeText": "<vexchat>\n<vexnote name=\"Whimsical Vex\" expression=\"thoughtful\">A: The little details are beginning to add up.</vexnote>\n<vexnote name=\"Whimsical Vex\" expression=\"amused\">A: Someone has been very careful with this room.</vexnote>\n</vexchat>\n\n[[phone model=\"iphone\" service=\"imessage\" time=\"23:48\" battery=\"72\"]]\n[[chat name=\"Mika\"]]\n[[msg received time=\"23:47\"]]Are you outside yet?[[/msg]]\n[[msg sent time=\"23:48\"]]Almost. Which entrance?[[/msg]]\n[[msg received]]Side door. Knock quietly.[[/msg]]\n[[/chat]]\n[[/phone]]\n\n<scene>\n\ud83d\udcc5 Monday \u00b7 Day12 \u00b708:10 /Early morning\n\ud83d\udccd The Dusty Quill \u2192 Upstairs guest room\n\ud83c\udf24 Current: Overcast, 12\u00b0C, light easterly wind\n\ud83c\udf26 Forecast: Rain likely this afternoon; clearing tonight\n</scene>",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "literalPreserved": true,
+            "noGuardMarkersLeak": true
+          },
+          {
+            "name": "fenced-vex-example",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 1,
+            "codeText": "<vexchat>\n<vexnote name=\"Whimsical Vex\" expression=\"thoughtful\">A: The little details are beginning to add up.</vexnote>\n<vexnote name=\"Whimsical Vex\" expression=\"amused\">A: Someone has been very careful with this room.</vexnote>\n</vexchat>\n",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "literalPreserved": true,
+            "introducedRegressionFixed": true,
+            "noGuardMarkersLeak": true
+          },
+          {
+            "name": "inline-vex-example",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 1,
+            "codeText": "<vexchat><vexnote name=\"Whimsical Vex\" expression=\"thoughtful\">A: The little details are beginning to add up.</vexnote><vexnote name=\"Whimsical Vex\" expression=\"amused\">A: Someone has been very careful with this room.</vexnote></vexchat>",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "literalPreserved": true,
+            "introducedRegressionFixed": true,
+            "noGuardMarkersLeak": true
+          },
+          {
+            "name": "raw-html-pre-code-vex-example",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 1,
+            "codeText": "A: The little details are beginning to add up.\nA: Someone has been very careful with this room.",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "literalPreserved": false,
+            "introducedRegressionFixed": true,
+            "noGuardMarkersLeak": true
+          },
+          {
+            "name": "vex-example-in-attribute",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "title": "<vexchat><vexnote name=\"Whimsical Vex\" expression=\"thoughtful\">A: The little details are beginning to add up.</vexnote><vexnote name=\"Whimsical Vex\" expression=\"amused\">A: Someone has been very careful with this room.</vexnote></vexchat>",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "attributePreserved": true,
+            "introducedRegressionFixed": true,
+            "noGuardMarkersLeak": true
+          },
+          {
+            "name": "vex-example-in-visible-workbench",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": false,
+            "promptDepth6Unchanged": false,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 1,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "contextBehaviorMatchesBaseline": true,
+            "introducedRegressionFixed": true,
+            "noGuardMarkersLeak": true
+          },
+          {
+            "name": "phone-message-with-fx-emoji",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 1,
+            "bubbleCount": 3,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarText": "M",
+            "avatarCodePoints": [
+              77
+            ],
+            "messages": [
+              "Hello \ud83c\udf1f.",
+              "Almost. Which entrance?",
+              "Side door. Knock quietly."
+            ],
+            "sentBubbleColour": "rgb(24, 133, 236)",
+            "noPageOverflow": true,
+            "expectedPhoneRendered": true,
+            "noGuardMarkersLeak": true
+          },
+          {
+            "name": "phone-message-with-fire-emoji",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 1,
+            "bubbleCount": 3,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarText": "M",
+            "avatarCodePoints": [
+              77
+            ],
+            "messages": [
+              "Hello \ud83d\udd25.",
+              "Almost. Which entrance?",
+              "Side door. Knock quietly."
+            ],
+            "sentBubbleColour": "rgb(24, 133, 236)",
+            "noPageOverflow": true,
+            "expectedPhoneRendered": true,
+            "noGuardMarkersLeak": true
+          },
+          {
+            "name": "phone-contact-with-fx-emoji",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 1,
+            "bubbleCount": 3,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarText": "\ud83c\udf1f",
+            "avatarCodePoints": [
+              127775
+            ],
+            "messages": [
+              "Hello.",
+              "Almost. Which entrance?",
+              "Side door. Knock quietly."
+            ],
+            "sentBubbleColour": "rgb(24, 133, 236)",
+            "noPageOverflow": true,
+            "expectedPhoneRendered": true,
+            "avatarCodePointValid": true,
+            "noGuardMarkersLeak": true
+          },
+          {
+            "name": "phone-contact-with-nonfx-emoji-avatar",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 1,
+            "bubbleCount": 3,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarText": "\ud83c\udf27",
+            "avatarCodePoints": [
+              127783
+            ],
+            "messages": [
+              "Hello.",
+              "Almost. Which entrance?",
+              "Side door. Knock quietly."
+            ],
+            "sentBubbleColour": "rgb(24, 133, 236)",
+            "noPageOverflow": true,
+            "expectedPhoneRendered": true,
+            "avatarCodePointValid": true,
+            "noGuardMarkersLeak": true
+          },
+          {
+            "name": "scene-current-sun-icon",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 1,
+            "structuredCount": 1,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "expectedStructuredRendered": true,
+            "noGuardMarkersLeak": true
+          },
+          {
+            "name": "scene-current-value-sun-emoji",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 1,
+            "structuredCount": 1,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "expectedStructuredRendered": true,
+            "noGuardMarkersLeak": true
+          },
+          {
+            "name": "scene-forecast-moon-icon",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 1,
+            "structuredCount": 1,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "expectedStructuredRendered": true,
+            "noGuardMarkersLeak": true
+          },
+          {
+            "name": "scene-code-existing-behavior",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 1,
+            "codeText": "<style>.pk-h{display:block;margin:1.15em 0 .45em;padding-bottom:.28em;font-size:.7em;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pk-accent,#8a8a96);border-bottom:1px solid rgba(140,140,155,.18)}.pk-h:first-child{margin-top:0}.pk-r{display:grid;grid-template-columns:minmax(5.5em,auto) 1fr;gap:.1em .9em;margin:.28em 0;line-height:1.55;align-items:baseline}.pk-r>i{font-style:normal;font-size:.82em;font-weight:600;letter-spacing:.03em;text-transform:uppercase;opacity:.45;text-align:right;white-space:nowrap}.pk-r>.pk-rv{display:block;grid-column:2;min-width:0;max-width:100%;overflow-wrap:anywhere;word-break:normal}.pk-v0,.pk-v0 q{color:#9E9E9E}.pk-v1,.pk-v1 q{color:#56B4E9}.pk-v2,.pk-v2 q{color:#E69F00}.pk-v3,.pk-v3 q{color:#009E73}.pk-v4,.pk-v4 q{color:#CC79A7}.pk-v5,.pk-v5 q{color:#D55E00}.pk-v6,.pk-v6 q{color:#F0E442}.pk-v7,.pk-v7 q{color:#B39DDB}.pk-v8,.pk-v8 q{color:#80CBC4}.pk-v9,.pk-v9 q{color:#FF8A80}.pk-v10,.pk-v10 q{color:#A5D6A7}.pk-v11,.pk-v11 q{color:#FFD180}.pk-v12,.pk-v12 q{color:#9FA8DA}.pk-v13,.pk-v13 q{color:#F48FB1}.pk-v14,.pk-v14 q{color:#BCAAA4}.pk-v15,.pk-v15 q{color:#4DD0E1}.pk-v16,.pk-v16 q{color:#DCE775}.pk-o{display:inline-block;margin-right:.45em;font-size:.72em;line-height:1;vertical-align:.14em;text-shadow:0 0 6px currentColor}@media(max-width:640px){.pk-r{grid-template-columns:1fr;gap:0}.pk-r>i{text-align:left;opacity:.4;margin-top:.35em}.pk-r>.pk-rv{grid-column:1}}.nemo-scene-card{box-sizing:border-box;display:block;position:relative;margin:1.65em 0 1.3em;padding:1.2em 1.35em 1.1em;border:1px solid rgba(173,159,206,.22);border-radius:14px;background:linear-gradient(135deg,rgba(147,115,195,.10),rgba(100,118,162,.035) 70%);color:inherit;line-height:1.55;letter-spacing:normal;text-transform:none;overflow-wrap:anywhere;word-break:normal;min-width:0;max-width:100%;isolation:isolate}.nemo-scene-card::before{content:\"\";position:absolute;top:1.3em;bottom:1.3em;left:0;width:3px;border-radius:0 3px 3px 0;background:var(--pk-accent,#b49bd9);opacity:.7}.nemo-scene-card .nemo-scene-date{display:block;font-size:.74em;font-weight:600;letter-spacing:.065em;color:inherit;opacity:.67;line-height:1.6;margin:0 0 .4em;white-space:normal}.nemo-scene-card .nemo-scene-place{display:block;margin:0;font-size:1.15em;font-weight:700;line-height:1.4;color:inherit;letter-spacing:.005em;white-space:normal;text-wrap:pretty}.nemo-scene-card .nemo-scene-conditions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:.65em 1.5em;margin:1em 0 0;padding-top:.85em;border-top:1px solid rgba(173,159,206,.17);min-width:0}.nemo-scene-card .nemo-scene-condition{display:block;min-width:0}.nemo-scene-card .nemo-scene-label{display:block;font-size:.64em;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.55;line-height:1.6;margin-bottom:.2em}.nemo-scene-card .nemo-scene-value{display:block;font-size:.86em;line-height:1.6;white-space:normal}.nemo-scene-card .nemo-scene-context{display:block;white-space:pre-line;margin-top:.9em;padding-top:.75em;border-top:1px solid rgba(173,159,206,.17);font-size:.8em;line-height:1.75;opacity:.78}.nemo-scene-card .nemo-scene-context:empty{display:none}.nemo-scene-card .nemo-scene-legacy-text{white-space:pre-line;font-size:.88em;line-height:1.75}.nemo-scene-card p{margin:0}.nemo-scene-card p+p{margin-top:.35em}@media(max-width:640px){.nemo-scene-card{margin:1.3em 0 1.1em;padding:1em 1.05em .95em;border-radius:11px}.nemo-scene-card::before{top:1.1em;bottom:1.1em}.nemo-scene-card .nemo-scene-place{font-size:1.08em}.nemo-scene-card .nemo-scene-conditions{grid-template-columns:minmax(0,1fr);gap:.75em}.nemo-scene-card .nemo-scene-date{font-size:.72em;letter-spacing:.035em}.nemo-scene-card .nemo-scene-context{font-size:.8em}}</style><section class=\"nemo-scene-card\"><div class=\"nemo-scene-date\">Monday \u00b7 Day12 \u00b708:10 /Early morning</div><div class=\"nemo-scene-place\">The Dusty Quill \u2192 Upstairs guest room</div><div class=\"nemo-scene-conditions\"><div class=\"nemo-scene-condition\"><span class=\"nemo-scene-label\">Current</span><span class=\"nemo-scene-value\">Overcast, 12\u00b0C, light easterly wind</span></div><div class=\"nemo-scene-condition\"><span class=\"nemo-scene-label\">Forecast</span><span class=\"nemo-scene-value\">Rain likely this afternoon; clearing tonight</span></div></div><div class=\"nemo-scene-context\"></div></section>\n",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "literalPreserved": false,
+            "noGuardMarkersLeak": true
+          },
+          {
+            "name": "scene-attribute-existing-behavior",
+            "rawUnchanged": true,
+            "promptDepth0Unchanged": true,
+            "promptDepth6Unchanged": true,
+            "cssError": false,
+            "phoneCount": 0,
+            "bubbleCount": 0,
+            "trackerPhoneCount": 0,
+            "thoughtCount": 0,
+            "fxCount": 0,
+            "colourCount": 0,
+            "sceneCount": 0,
+            "structuredCount": 0,
+            "legacySceneCount": 0,
+            "vexCount": 0,
+            "visibleVexSlides": 0,
+            "workbenchCount": 0,
+            "vexInWorkbench": 0,
+            "codeCount": 0,
+            "title": "<custom-style>.pk-h%7Bdisplay%3Ablock%3Bmargin%3A1.15em%200%20.45em%3Bpadding-bottom%3A.28em%3Bfont-size%3A.7em%3Bfont-weight%3A700%3Bletter-spacing%3A.16em%3Btext-transform%3Auppercase%3Bcolor%3Avar(--pk-accent%2C%238a8a96)%3Bborder-bottom%3A1px%20solid%20rgba(140%2C140%2C155%2C.18)%7D.pk-h%3Afirst-child%7Bmargin-top%3A0%7D.pk-r%7Bdisplay%3Agrid%3Bgrid-template-columns%3Aminmax(5.5em%2Cauto)%201fr%3Bgap%3A.1em%20.9em%3Bmargin%3A.28em%200%3Bline-height%3A1.55%3Balign-items%3Abaseline%7D.pk-r%3Ei%7Bfont-style%3Anormal%3Bfont-size%3A.82em%3Bfont-weight%3A600%3Bletter-spacing%3A.03em%3Btext-transform%3Auppercase%3Bopacity%3A.45%3Btext-align%3Aright%3Bwhite-space%3Anowrap%7D.pk-r%3E.pk-rv%7Bdisplay%3Ablock%3Bgrid-column%3A2%3Bmin-width%3A0%3Bmax-width%3A100%25%3Boverflow-wrap%3Aanywhere%3Bword-break%3Anormal%7D.pk-v0%2C.pk-v0%20q%7Bcolor%3A%239E9E9E%7D.pk-v1%2C.pk-v1%20q%7Bcolor%3A%2356B4E9%7D.pk-v2%2C.pk-v2%20q%7Bcolor%3A%23E69F00%7D.pk-v3%2C.pk-v3%20q%7Bcolor%3A%23009E73%7D.pk-v4%2C.pk-v4%20q%7Bcolor%3A%23CC79A7%7D.pk-v5%2C.pk-v5%20q%7Bcolor%3A%23D55E00%7D.pk-v6%2C.pk-v6%20q%7Bcolor%3A%23F0E442%7D.pk-v7%2C.pk-v7%20q%7Bcolor%3A%23B39DDB%7D.pk-v8%2C.pk-v8%20q%7Bcolor%3A%2380CBC4%7D.pk-v9%2C.pk-v9%20q%7Bcolor%3A%23FF8A80%7D.pk-v10%2C.pk-v10%20q%7Bcolor%3A%23A5D6A7%7D.pk-v11%2C.pk-v11%20q%7Bcolor%3A%23FFD180%7D.pk-v12%2C.pk-v12%20q%7Bcolor%3A%239FA8DA%7D.pk-v13%2C.pk-v13%20q%7Bcolor%3A%23F48FB1%7D.pk-v14%2C.pk-v14%20q%7Bcolor%3A%23BCAAA4%7D.pk-v15%2C.pk-v15%20q%7Bcolor%3A%234DD0E1%7D.pk-v16%2C.pk-v16%20q%7Bcolor%3A%23DCE775%7D.pk-o%7Bdisplay%3Ainline-block%3Bmargin-right%3A.45em%3Bfont-size%3A.72em%3Bline-height%3A1%3Bvertical-align%3A.14em%3Btext-shadow%3A0%200%206px%20currentColor%7D%40media(max-width%3A640px)%7B.pk-r%7Bgrid-template-columns%3A1fr%3Bgap%3A0%7D.pk-r%3Ei%7Btext-align%3Aleft%3Bopacity%3A.4%3Bmargin-top%3A.35em%7D.pk-r%3E.pk-rv%7Bgrid-column%3A1%7D%7D.nemo-scene-card%7Bbox-sizing%3Aborder-box%3Bdisplay%3Ablock%3Bposition%3Arelative%3Bmargin%3A1.65em%200%201.3em%3Bpadding%3A1.2em%201.35em%201.1em%3Bborder%3A1px%20solid%20rgba(173%2C159%2C206%2C.22)%3Bborder-radius%3A14px%3Bbackground%3Alinear-gradient(135deg%2Crgba(147%2C115%2C195%2C.10)%2Crgba(100%2C118%2C162%2C.035)%2070%25)%3Bcolor%3Ainherit%3Bline-height%3A1.55%3Bletter-spacing%3Anormal%3Btext-transform%3Anone%3Boverflow-wrap%3Aanywhere%3Bword-break%3Anormal%3Bmin-width%3A0%3Bmax-width%3A100%25%3Bisolation%3Aisolate%7D.nemo-scene-card%3A%3Abefore%7Bcontent%3A%22%22%3Bposition%3Aabsolute%3Btop%3A1.3em%3Bbottom%3A1.3em%3Bleft%3A0%3Bwidth%3A3px%3Bborder-radius%3A0%203px%203px%200%3Bbackground%3Avar(--pk-accent%2C%23b49bd9)%3Bopacity%3A.7%7D.nemo-scene-card%20.nemo-scene-date%7Bdisplay%3Ablock%3Bfont-size%3A.74em%3Bfont-weight%3A600%3Bletter-spacing%3A.065em%3Bcolor%3Ainherit%3Bopacity%3A.67%3Bline-height%3A1.6%3Bmargin%3A0%200%20.4em%3Bwhite-space%3Anormal%7D.nemo-scene-card%20.nemo-scene-place%7Bdisplay%3Ablock%3Bmargin%3A0%3Bfont-size%3A1.15em%3Bfont-weight%3A700%3Bline-height%3A1.4%3Bcolor%3Ainherit%3Bletter-spacing%3A.005em%3Bwhite-space%3Anormal%3Btext-wrap%3Apretty%7D.nemo-scene-card%20.nemo-scene-conditions%7Bdisplay%3Agrid%3Bgrid-template-columns%3Aminmax(0%2C1fr)%20minmax(0%2C1fr)%3Bgap%3A.65em%201.5em%3Bmargin%3A1em%200%200%3Bpadding-top%3A.85em%3Bborder-top%3A1px%20solid%20rgba(173%2C159%2C206%2C.17)%3Bmin-width%3A0%7D.nemo-scene-card%20.nemo-scene-condition%7Bdisplay%3Ablock%3Bmin-width%3A0%7D.nemo-scene-card%20.nemo-scene-label%7Bdisplay%3Ablock%3Bfont-size%3A.64em%3Bfont-weight%3A700%3Bletter-spacing%3A.12em%3Btext-transform%3Auppercase%3Bopacity%3A.55%3Bline-height%3A1.6%3Bmargin-bottom%3A.2em%7D.nemo-scene-card%20.nemo-scene-value%7Bdisplay%3Ablock%3Bfont-size%3A.86em%3Bline-height%3A1.6%3Bwhite-space%3Anormal%7D.nemo-scene-card%20.nemo-scene-context%7Bdisplay%3Ablock%3Bwhite-space%3Apre-line%3Bmargin-top%3A.9em%3Bpadding-top%3A.75em%3Bborder-top%3A1px%20solid%20rgba(173%2C159%2C206%2C.17)%3Bfont-size%3A.8em%3Bline-height%3A1.75%3Bopacity%3A.78%7D.nemo-scene-card%20.nemo-scene-context%3Aempty%7Bdisplay%3Anone%7D.nemo-scene-card%20.nemo-scene-legacy-text%7Bwhite-space%3Apre-line%3Bfont-size%3A.88em%3Bline-height%3A1.75%7D.nemo-scene-card%20p%7Bmargin%3A0%7D.nemo-scene-card%20p%2Bp%7Bmargin-top%3A.35em%7D%40media(max-width%3A640px)%7B.nemo-scene-card%7Bmargin%3A1.3em%200%201.1em%3Bpadding%3A1em%201.05em%20.95em%3Bborder-radius%3A11px%7D.nemo-scene-card%3A%3Abefore%7Btop%3A1.1em%3Bbottom%3A1.1em%7D.nemo-scene-card%20.nemo-scene-place%7Bfont-size%3A1.08em%7D.nemo-scene-card%20.nemo-scene-conditions%7Bgrid-template-columns%3Aminmax(0%2C1fr)%3Bgap%3A.75em%7D.nemo-scene-card%20.nemo-scene-date%7Bfont-size%3A.72em%3Bletter-spacing%3A.035em%7D.nemo-scene-card%20.nemo-scene-context%7Bfont-size%3A.8em%7D%7D</custom-style><section class=\"nemo-scene-card nemo-scene-legacy\"><div class=\"nemo-scene-legacy-text\">Day4 \u2014 Ruined bell tower</div></section>",
+            "avatarCodePoints": [],
+            "messages": [],
+            "sentBubbleColour": null,
+            "noPageOverflow": true,
+            "attributePreserved": false,
+            "noGuardMarkersLeak": true
+          }
+        ],
+        "mobileRepeatedNavigationPassed": true
+      }
+    ],
+    "scope": "Targeted cross-module browser audit through configured regex order, Showdown, DOMPurify, and current SillyTavern CSS/hooks",
+    "environment": {
+      "browser": "153.0.8010.0",
+      "dompurify": "3.4.2",
+      "showdown": "2.1.0",
+      "cssTools": "4.4.4"
+    }
+  },
+  "historicalValidation": "assets/vex/renderer/validation.json retains its original results and hashes and is explicitly historical; this report validates the current pack.",
+  "scope": "Targeted compatibility audit through the official SillyTavern regex engine plus current Showdown/DOMPurify/CSS hooks in headless Chromium. The installed user instance, external global/character regex packs and third-party extensions are not covered.",
+  "remainingInheritedBehavior": [
+    "Legacy scene marker handling inside literal code is unchanged from the original source.",
+    "Showdown rewriting backticks inside HTML title attributes is inherited Markdown behavior, not a new regex regression."
+  ]
+}

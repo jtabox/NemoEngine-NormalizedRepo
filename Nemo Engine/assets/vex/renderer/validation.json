@@ -7,7 +7,7 @@
       "dompurify": "3.4.2",
       "showdown": "2.1.0",
       "cssTools": "4.4.4",
-      "pipeline": "Generated display regex \u2192 Showdown \u2192 exact SillyTavern encodeStyleTags \u2192 DOMPurify + exact SillyTavern hooks \u2192 exact SillyTavern decodeStyleTags"
+      "pipeline": "Generated display regex → Showdown → exact SillyTavern encodeStyleTags → DOMPurify + exact SillyTavern hooks → exact SillyTavern decodeStyleTags"
     },
     "tests": [
       {
@@ -461,7 +461,7 @@
       "dompurify": "3.4.2",
       "showdown": "2.1.0",
       "cssTools": "4.4.4",
-      "pipeline": "Generated regex \u2192 Showdown \u2192 exact SillyTavern sanitizer and style roundtrip"
+      "pipeline": "Generated regex → Showdown → exact SillyTavern sanitizer and style roundtrip"
     }
   },
   "fullPresetPipeline": {
@@ -503,5 +503,9 @@
       4
     ]
   },
-  "scope": "Headless Chromium against official rendering libraries and SillyTavern sanitizer/style functions; full preset regex engine checked separately. Not an end-to-end session in the user installation."
+  "scope": "Headless Chromium against official rendering libraries and SillyTavern sanitizer/style functions; full preset regex engine checked separately. Not an end-to-end session in the user installation.",
+  "status": "historical",
+  "supersededBy": "../../../regex-compatibility-validation.json",
+  "historicalRendererSha256": "1fe235d58b02adb91b87def03430b86857ba55ec8137f471642507f4866ae424",
+  "note": "The original results and input hashes below describe the previously published 72-rule renderer. They are retained unchanged as historical evidence. Current literal-protection and integration checks for the 74-rule renderer are in the superseding compatibility report."
 }

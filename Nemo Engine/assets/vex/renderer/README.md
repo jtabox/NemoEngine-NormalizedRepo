@@ -70,11 +70,28 @@ master names keep their displayed name and dialogue as text, without assigning
 a different Vex's image. Browser image-loading errors or SillyTavern's external
 image blocking do not hide the dialogue.
 
-`regex-scripts.json` is the display-only pack. Replace the existing Vex bubble
-renderer with these ordered scripts; do not leave both renderers enabled.
-`context-strip.json` replaces the older context-strip rule and retains its
-depth-five boundary. It removes raw commentary markers from older model
-context. The display rules never inject their HTML into model context.
+`regex-scripts.json` is the ordered, display-only pack of 74 rules: a literal
+protection rule, the 72 Vex rendering rules, then the matching restore rule.
+Replace the existing Vex bubble renderer with the complete pack; do not leave
+both renderers enabled or import only its middle rendering rules. Keep the
+first and last protection rules around the rendering rules in the supplied
+order.
+
+`context-strip.json` is now an **ordered array of three rules**, not one rule:
+protect literal surfaces, strip older commentary, then restore literal
+surfaces. Replace the older context-strip rule with all three adjacent rules
+in that order. All three retain the original depth-five boundary and run only
+for outgoing context. They remove genuine old commentary while preserving
+literal examples. The display pack never injects its HTML into model context.
+
+The paired guards preserve marker-looking examples in fenced or indented
+code, inline code, code/pre elements, comments, HTML attributes, the workbench,
+and raw planning or hidden-state hosts. Actual `vexchat`/`vexnote` marker tags
+are excluded from generic HTML-tag protection so real panels still render.
+Each renderer checks both match boundaries, preventing a marker that starts
+inside code from consuming a closing marker outside it. Backticks within a
+legitimate Vex message remain in that panel; protection is restored before
+the later colour/effect/thought pipeline runs.
 
 Regenerate after a catalog change:
 
@@ -83,6 +100,11 @@ python build_renderer.py --manifest ../manifest.json
 ```
 
 The generator validates the catalog's registered expression paths, then writes
-the regex pack, speaker map, and sample files. Keep the source CSS with the
+the display pack, ordered three-rule context pack, speaker map, and sample files. Keep the source CSS with the
 generator. The pack uses ordinary string replacements supported by
 SillyTavern; it does not need replacement functions or an extension.
+
+The Python sample renderer translates JavaScript named captures/backreferences
+and flags only for local sample generation. The authoritative compatibility
+checks execute the actual SillyTavern regex engine, followed by its Markdown,
+sanitizer, and CSS processing. No JavaScript is injected into chat messages.

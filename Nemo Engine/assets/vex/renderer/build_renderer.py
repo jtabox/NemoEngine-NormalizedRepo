@@ -62,6 +62,28 @@ def portrait_card(name, url, text_capture):
             f'<div class="nemo-vn-dialogue" style="white-space:pre-wrap;overflow-wrap:anywhere;">{text_capture}</div></div></div>')
 
 
+# Literal-surface guards are paired separately for display and older context.
+VEX_LITERAL_BEGIN = '\ue106NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839\ue107'
+VEX_LITERAL_END = '\ue106NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839\ue107'
+VEX_LITERAL_NAMESPACE = uuid.UUID('234c49f3-e977-488c-a099-7382906d6275')
+VEX_LITERAL_PROTECTED = '(?:^[ \\t]{0,3}(?:>[ \\t]?)*(?<nvlFenceTick>`{3,})[^\\r\\n]*(?:\\r?\\n[\\s\\S]*?^[ \\t]{0,3}(?:>[ \\t]?)*\\k<nvlFenceTick>`*[ \\t]*(?=\\r?$)|[\\s\\S]*))|(?:^[ \\t]{0,3}(?:>[ \\t]?)*(?<nvlFenceTilde>~{3,})[^\\r\\n]*(?:\\r?\\n[\\s\\S]*?^[ \\t]{0,3}(?:>[ \\t]?)*\\k<nvlFenceTilde>~*[ \\t]*(?=\\r?$)|[\\s\\S]*))|(?:^(?:(?: {4}|\\t)[^\\r\\n]*(?:\\r?\\n|(?![\\s\\S])))+)|(?:^[ \\t]*===[ \\t]*NEMO_(?<nvlWorkbenchKind>WORKBENCH|EXACT_REVIEW)_BEGIN[ \\t]*===[^\\r\\n]*(?:\\r?\\n[\\s\\S]*?^[ \\t]*===[ \\t]*NEMO_\\k<nvlWorkbenchKind>_END[ \\t]*===[^\\r\\n]*|[\\s\\S]*))|(?:(?<!`)(?<nvlInlineTicks>`+)(?!`)(?:[\\s\\S]*?(?<!`)\\k<nvlInlineTicks>(?!`)|[^\\r\\n]*$))|(?:<!--(?:[\\s\\S]*?-->|[\\s\\S]*))|(?:<!\\[CDATA\\[(?:[\\s\\S]*?\\]\\]>|[\\s\\S]*))|(?:<\\?(?:[\\s\\S]*?\\?>|[\\s\\S]*))|(?:<!(?:[^<>"\\x27]|"[^"]*"|\\x27[^\\x27]*\\x27)*(?:>|[\\s\\S]*))|(?:<(?<nvlRawTag>style|script|pre|code|textarea|title|xmp|template|plaintext|iframe|noembed|noframes|think|thinking|plan|planning|nemo-interiority|nemo-pad|nemo-offscreen|mental_state|nemo-mp-state|nemo-mp-retain|st-tracker(?:-[\\w-]+)?)\\b(?:[^<>"\\x27]|"[^"]*"|\\x27[^\\x27]*\\x27)*>(?:[\\s\\S]*?<\\/\\k<nvlRawTag>\\s*>|[\\s\\S]*))|(?:&lt;\\s*(?<nvlEscapedTag>mental_state|nemo-interiority|nemo-offscreen|nemo-pad|nemo-mp-state|nemo-mp-retain)\\s*&gt;[\\s\\S]*?(?:&lt;\\s*\\/\\s*\\k<nvlEscapedTag>\\s*&gt;|(?![\\s\\S])))|(?:<(?!\\/?(?:vexchat|vexnote)(?=[\\s/>]))(?:\\/?[A-Za-z][A-Za-z0-9:._-]*)(?=[\\s/>])(?:[^<>"\\x27]|"[^"]*"|\\x27[^\\x27]*\\x27)*(?:>|[\\s\\S]*))'
+VEX_LITERAL_OUTSIDE = '(?!(?:(?!\ue106NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839\ue107)[\\s\\S])*\ue106NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839\ue107)'
+VEX_MARKER_START = '(?=<\\/?vex(?:chat|note)(?=[\\s>]))'
+
+def literal_script(key, title, pattern, replacement, context=False):
+    result = script(key, title, pattern, replacement, context=context)
+    result['id'] = str(uuid.uuid5(VEX_LITERAL_NAMESPACE, key))
+    result['findRegex'] = '/' + pattern + '/gim'
+    return result
+
+def guard_literal_matches(original):
+    result = dict(original)
+    delimiter = result['findRegex'].rindex('/')
+    body, flags = result['findRegex'][1:delimiter], result['findRegex'][delimiter + 1:]
+    result['findRegex'] = '/' + VEX_MARKER_START + VEX_LITERAL_OUTSIDE + '(?:' + body + ')' + VEX_LITERAL_OUTSIDE + '/' + flags
+    return result
+
+
 def build(manifest):
     css = re.sub(r'\s+', ' ', (HERE / 'panel.css').read_text()).strip()
     rules = []
@@ -105,19 +127,40 @@ def build(manifest):
                         '<div class="nemo-vn-card nemo-vn-text-only"><div class="nemo-vn-speech"><strong class="nemo-vn-name">$1</strong><div class="nemo-vn-dialogue" style="white-space:pre-wrap;overflow-wrap:anywhere;">$2</div></div></div>'))
     rules.append(script('legacy-note', 'legacy note as text', r'<vexnote>([^<>]*)<\/vexnote>',
                         '<aside class="nemo-vn-legacy" style="margin:12px 0;padding:12px 16px;border-left:3px solid #ac83d7;border-radius:8px;background:#241b2d;color:#e8dcef;line-height:1.55;">$1</aside>'))
+    # Check both match boundaries. The marker-start lookahead keeps the
+    # protection predicate from scanning ahead at every ordinary prose byte.
+    display_before = literal_script('display-guard', 'protect literal surfaces (display; keep paired)', VEX_LITERAL_PROTECTED, VEX_LITERAL_BEGIN + '{{match}}' + VEX_LITERAL_END)
+    display_after = literal_script('display-restore', 'restore literal surfaces (display; keep paired)', '(?:' + re.escape(VEX_LITERAL_BEGIN) + '|' + re.escape(VEX_LITERAL_END) + ')', '')
+    prompt_before = literal_script('prompt-guard', 'protect literal surfaces (older context; keep paired)', VEX_LITERAL_PROTECTED, VEX_LITERAL_BEGIN + '{{match}}' + VEX_LITERAL_END, True)
+    prompt_after = literal_script('prompt-restore', 'restore literal surfaces (older context; keep paired)', '(?:' + re.escape(VEX_LITERAL_BEGIN) + '|' + re.escape(VEX_LITERAL_END) + ')', '', True)
+    rules = [display_before] + [guard_literal_matches(r) for r in rules] + [display_after]
+    context = [prompt_before, guard_literal_matches(context), prompt_after]
     return rules, context, mappings
 
 
 def apply_rules(text, rules):
-    """Python sample renderer; JS tests must verify real replacement semantics."""
-    for s in rules:
-        pattern = s['findRegex'][1:-2].replace(r'\/', '/')
-        repl = s['replaceString']
+    """Sample-only JS regex translation; official ST engine tests are authoritative."""
+    for item in rules:
+        delimiter = item['findRegex'].rindex('/')
+        pattern, js_flags = item['findRegex'][1:delimiter], item['findRegex'][delimiter + 1:]
+        pattern = pattern.replace(r'\/', '/')
+        pattern = re.sub(r'\(\?<([A-Za-z][A-Za-z0-9_]*)>', r'(?P<\1>', pattern)
+        pattern = re.sub(r'\\k<([A-Za-z][A-Za-z0-9_]*)>', r'(?P=\1)', pattern)
+        flags = (re.IGNORECASE if 'i' in js_flags else 0) | (re.MULTILINE if 'm' in js_flags else 0) | (re.DOTALL if 's' in js_flags else 0)
+        replacement = re.sub(r'\{\{match\}\}', '$0', item['replaceString'], flags=re.IGNORECASE)
         def sub(match):
-            return re.sub(r'\$(\d+)', lambda n: match.group(int(n[1])) or '', repl)
-        text = re.sub(pattern, sub, text)
+            def capture(token):
+                group = int(token[1]) if token[1] is not None else token[2]
+                try:
+                    value = match.group(group) or ''
+                except (IndexError, KeyError):
+                    return ''
+                for trim in item.get('trimStrings', []):
+                    value = value.replace(trim, '')
+                return value
+            return re.sub(r'\$(\d+)|\$<([^>]+)>', capture, replacement)
+        text = re.sub(pattern, sub, text, count=0 if 'g' in js_flags else 1, flags=flags)
     return text
-
 
 def main():
     parser = argparse.ArgumentParser()

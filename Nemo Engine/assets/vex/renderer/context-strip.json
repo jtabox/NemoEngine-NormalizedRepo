@@ -1,17 +1,53 @@
-{
-  "id": "93d335ed-6ab6-5a80-87d9-7b09ad868611",
-  "scriptName": "Nemo · Vex VN · strip older commentary from context",
-  "findRegex": "/<vexchat>[\\s\\S]*?<\\/vexchat>|<vexnote(?:\\s+[^>]*)?>[\\s\\S]*?<\\/vexnote>/g",
-  "replaceString": "",
-  "trimStrings": [],
-  "placement": [
-    2
-  ],
-  "disabled": false,
-  "markdownOnly": false,
-  "promptOnly": true,
-  "runOnEdit": true,
-  "substituteRegex": 0,
-  "minDepth": 5,
-  "maxDepth": null
-}
+[
+  {
+    "id": "7841de97-1d72-560b-8111-461afcefc2b2",
+    "scriptName": "Nemo · Vex VN · protect literal surfaces (older context; keep paired)",
+    "findRegex": "/(?:^[ \\t]{0,3}(?:>[ \\t]?)*(?<nvlFenceTick>`{3,})[^\\r\\n]*(?:\\r?\\n[\\s\\S]*?^[ \\t]{0,3}(?:>[ \\t]?)*\\k<nvlFenceTick>`*[ \\t]*(?=\\r?$)|[\\s\\S]*))|(?:^[ \\t]{0,3}(?:>[ \\t]?)*(?<nvlFenceTilde>~{3,})[^\\r\\n]*(?:\\r?\\n[\\s\\S]*?^[ \\t]{0,3}(?:>[ \\t]?)*\\k<nvlFenceTilde>~*[ \\t]*(?=\\r?$)|[\\s\\S]*))|(?:^(?:(?: {4}|\\t)[^\\r\\n]*(?:\\r?\\n|(?![\\s\\S])))+)|(?:^[ \\t]*===[ \\t]*NEMO_(?<nvlWorkbenchKind>WORKBENCH|EXACT_REVIEW)_BEGIN[ \\t]*===[^\\r\\n]*(?:\\r?\\n[\\s\\S]*?^[ \\t]*===[ \\t]*NEMO_\\k<nvlWorkbenchKind>_END[ \\t]*===[^\\r\\n]*|[\\s\\S]*))|(?:(?<!`)(?<nvlInlineTicks>`+)(?!`)(?:[\\s\\S]*?(?<!`)\\k<nvlInlineTicks>(?!`)|[^\\r\\n]*$))|(?:<!--(?:[\\s\\S]*?-->|[\\s\\S]*))|(?:<!\\[CDATA\\[(?:[\\s\\S]*?\\]\\]>|[\\s\\S]*))|(?:<\\?(?:[\\s\\S]*?\\?>|[\\s\\S]*))|(?:<!(?:[^<>\"\\x27]|\"[^\"]*\"|\\x27[^\\x27]*\\x27)*(?:>|[\\s\\S]*))|(?:<(?<nvlRawTag>style|script|pre|code|textarea|title|xmp|template|plaintext|iframe|noembed|noframes|think|thinking|plan|planning|nemo-interiority|nemo-pad|nemo-offscreen|mental_state|nemo-mp-state|nemo-mp-retain|st-tracker(?:-[\\w-]+)?)\\b(?:[^<>\"\\x27]|\"[^\"]*\"|\\x27[^\\x27]*\\x27)*>(?:[\\s\\S]*?<\\/\\k<nvlRawTag>\\s*>|[\\s\\S]*))|(?:&lt;\\s*(?<nvlEscapedTag>mental_state|nemo-interiority|nemo-offscreen|nemo-pad|nemo-mp-state|nemo-mp-retain)\\s*&gt;[\\s\\S]*?(?:&lt;\\s*\\/\\s*\\k<nvlEscapedTag>\\s*&gt;|(?![\\s\\S])))|(?:<(?!\\/?(?:vexchat|vexnote)(?=[\\s/>]))(?:\\/?[A-Za-z][A-Za-z0-9:._-]*)(?=[\\s/>])(?:[^<>\"\\x27]|\"[^\"]*\"|\\x27[^\\x27]*\\x27)*(?:>|[\\s\\S]*))/gim",
+    "replaceString": "NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839{{match}}NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839",
+    "trimStrings": [],
+    "placement": [
+      2
+    ],
+    "disabled": false,
+    "markdownOnly": false,
+    "promptOnly": true,
+    "runOnEdit": true,
+    "substituteRegex": 0,
+    "minDepth": 5,
+    "maxDepth": null
+  },
+  {
+    "id": "93d335ed-6ab6-5a80-87d9-7b09ad868611",
+    "scriptName": "Nemo · Vex VN · strip older commentary from context",
+    "findRegex": "/(?=<\\/?vex(?:chat|note)(?=[\\s>]))(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)(?:<vexchat>[\\s\\S]*?<\\/vexchat>|<vexnote(?:\\s+[^>]*)?>[\\s\\S]*?<\\/vexnote>)(?!(?:(?!NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839)[\\s\\S])*NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/g",
+    "replaceString": "",
+    "trimStrings": [],
+    "placement": [
+      2
+    ],
+    "disabled": false,
+    "markdownOnly": false,
+    "promptOnly": true,
+    "runOnEdit": true,
+    "substituteRegex": 0,
+    "minDepth": 5,
+    "maxDepth": null
+  },
+  {
+    "id": "b8060d35-04cb-5483-a072-2ff68a61a297",
+    "scriptName": "Nemo · Vex VN · restore literal surfaces (older context; keep paired)",
+    "findRegex": "/(?:NEMO_VEX_LITERAL_BEGIN_0ad9f3a7fba14b8ba77f18d021e7f839|NEMO_VEX_LITERAL_END_0ad9f3a7fba14b8ba77f18d021e7f839)/gim",
+    "replaceString": "",
+    "trimStrings": [],
+    "placement": [
+      2
+    ],
+    "disabled": false,
+    "markdownOnly": false,
+    "promptOnly": true,
+    "runOnEdit": true,
+    "substituteRegex": 0,
+    "minDepth": 5,
+    "maxDepth": null
+  }
+]
