@@ -40,25 +40,24 @@ def control(target, total, back=False):
 
 
 def frame(count, css):
-    header = '<div class="nemo-vn-heading"><span>Vex commentary</span><span>Behind the words</span></div>'
     pages = []
     for i in range(1, count + 1):
         back = control(i - 1, count, True) if i > 1 else '<span class="nemo-vn-edge" aria-hidden="true">Beginning</span>'
         next_ = control(i + 1, count) if i < count else '<span class="nemo-vn-edge">End</span>'
-        pages.append(f'<div class="nemo-vn-slide nemo-vn-slide-{i}">${i}<div class="nemo-vn-nav">'
-                     f'{back}<span class="nemo-vn-counter">{i:02d} / {count:02d}</span>{next_}</div></div>')
-    return '<form class="nemo-vn" autocomplete="off" aria-label="Vex commentary"><style>' + css + '</style>' + header + ''.join(pages) + '</form>'
+        pages.append(f'<div class="nemo-vn-slide nemo-vn-slide-{i}"><div class="nemo-vn-window">${i}<div class="nemo-vn-nav">'
+                     f'{back}<span class="nemo-vn-counter">{i:02d} / {count:02d}</span>{next_}</div></div></div>')
+    return '<form class="nemo-vn" autocomplete="off" aria-label="Vex commentary"><style>' + css + '</style>' + ''.join(pages) + '</form>'
 
 
 def portrait_card(name, url, text_capture):
     label = html.escape(name)
     # Inline dimensions keep a standalone, malformed or overfull group readable
     # even when the panel grouping rule was not used.
-    return (f'<div class="nemo-vn-card" style="display:flex;align-items:center;gap:18px;max-width:100%;">'
-            f'<figure class="nemo-vn-portrait" style="margin:0;flex:0 0 34%;max-width:240px;">'
+    return (f'<div class="nemo-vn-card" style="max-width:100%;">'
+            f'<figure class="nemo-vn-portrait">'
             f'<img src="{url}" alt="{label}" loading="lazy" decoding="async" '
-            f'style="display:block;width:100%;max-width:230px;max-height:350px;object-fit:contain;"></figure>'
-            f'<div class="nemo-vn-speech" style="min-width:0;flex:1;">'
+            f'style="display:block;width:100%;max-width:340px;height:auto;object-fit:contain;"></figure>'
+            f'<div class="nemo-vn-speech" style="min-width:0;">'
             f'<strong class="nemo-vn-name">{label}</strong>'
             f'<div class="nemo-vn-dialogue" style="white-space:pre-wrap;overflow-wrap:anywhere;">{text_capture}</div></div></div>')
 

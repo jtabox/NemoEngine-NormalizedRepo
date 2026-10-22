@@ -1,5 +1,9 @@
 # Vex visual novel regex renderer
 
+Vex stands above a separate foreground dialogue window that overlaps her
+lower body. Her name, dialogue, counter, and page controls sit together in
+that window.
+
 The updated [v12.2 Lite preset](../../../Nemo_Engine_v12.2_Lite.json)
 already contains these rules and enables **Vex Commentary**. Import the whole
 JSON as a Chat Completion preset and allow its bundled preset regex scripts.
