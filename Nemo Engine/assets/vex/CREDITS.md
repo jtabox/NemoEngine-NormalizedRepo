@@ -235,9 +235,10 @@
 
 - Files: `goon-gremlin/neutral.png`, `goon-gremlin/amused.png`, `goon-gremlin/delighted.png`, `goon-gremlin/thoughtful.png`, `goon-gremlin/skeptical.png`, `goon-gremlin/surprised.png`, `goon-gremlin/concerned.png`, `goon-gremlin/sad.png`, `goon-gremlin/annoyed.png`.
 - Character and creative direction: Noah / NemoVonNirgend.
-- Source: generated with ChatGPT image generation using the supplied Vex identity reference, then edited from this set’s neutral base to create the remaining expressions. The set preserves a purple half-up bun with long loose waves, oversized magenta hoodie with cyan lining, black shirt and cargo joggers, and black-and-cyan high-top shoes, wolf ears, and a fluffy tail across all nine expressions.
+- Approved direction: energetic adult mischief, bold teasing charm, and direct engagement with the viewer. The project owner approved the revised sample before expression generation.
+- Source: generated with ChatGPT image generation, then edited from the approved neutral to create eight matching expressions. The set preserves her purple half-up bun and long waves, magenta/cyan hoodie, black shirt and cargo joggers, black/cyan high-tops, purple ears and tail, hoodie-edge hand, open-palm gesture, and lively standing pose.
 - Publication: uploaded as part of the project owner’s requested Vex asset-set workflow. No separate third-party artwork license is asserted here.
-- Format: full-body transparent PNG, 1024 × 1536. This is Goon Gremlin’s own image set; scene emotion does not switch her personality or costume.
+- Format: full-body transparent PNG, 1024 × 1536. Scene emotion does not switch her personality, costume, hair, or pose. Exact prompts and hashes are recorded in `generation/v0.30.0.json`.
 
 ## Gooner Vex
 
