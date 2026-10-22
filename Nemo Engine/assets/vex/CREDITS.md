@@ -216,9 +216,10 @@
 
 - Files: `unhinged/neutral.png`, `unhinged/amused.png`, `unhinged/delighted.png`, `unhinged/thoughtful.png`, `unhinged/skeptical.png`, `unhinged/surprised.png`, `unhinged/concerned.png`, `unhinged/sad.png`, `unhinged/annoyed.png`.
 - Character and creative direction: Noah / NemoVonNirgend.
-- Source: generated with ChatGPT image generation using the supplied Vex identity reference, then edited from this set’s neutral base to create the remaining expressions. The set preserves a shaggy purple bob, acid-lime and black biker jacket, charcoal utility jumpsuit, silver hardware, and black lace-up boots, wolf ears, and a fluffy tail across all nine expressions.
+- Approved direction: unconstrained creativity, experimental artistry, and spontaneous imagination. The project owner approved the artist sample and its teal/coral hair dye before expression generation.
+- Source: generated with ChatGPT image generation, then edited from the approved neutral to create eight matching expressions. The set preserves teal dyed hair with a broad coral section and visible violet roots, a messy half-up knot and pencil, an ivory paint-marked artist smock, plum top, charcoal work trousers, worn brown lace-up boots, a plum sketchbook, purple wolf ears, and a full purple wolf tail across all nine expressions.
 - Publication: uploaded as part of the project owner’s requested Vex asset-set workflow. No separate third-party artwork license is asserted here.
-- Format: full-body transparent PNG, 1024 × 1536. This is Unhinged’s own image set; scene emotion does not switch her personality or costume.
+- Format: full-body transparent PNG, 1024 × 1536. Scene emotion does not switch her personality, costume, hair dye, or props. Exact prompts and hashes are recorded in `generation/v0.28.0.json`.
 
 ## Whimsical Vex
 
