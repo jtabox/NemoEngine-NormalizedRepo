@@ -13,7 +13,7 @@ If you resize the window while a desktop popup is already open, its **Close ×**
 remains available; close it to return that panel to the mobile inline layout.
 
 This is an alternative to the standard renderer, not an additional pack to run
-alongside it. Import this ordered **76-rule** pack in place of the standard
+alongside it. Import this ordered **80-rule** pack in place of the standard
 74 display rules. Keep the standard ordered three-rule `context-strip.json`
 unchanged. The supplied optional full preset already contains the right ordering.
 No global Custom CSS, extension script or change to the model's marker contract
@@ -21,6 +21,20 @@ is needed.
 
 If you installed the earlier `Nemo_Vex_Left_Dock.css` in Custom CSS, remove that
 block before using this variant; the two docking methods should not run together.
+
+When the same message has exactly one complete regular or modular Scratchpad and
+one genuine rendered Vex footer, the footer can join the pad's outer container.
+The complete pad must end the message, or be followed only by that Vex footer;
+trailing prose leaves the footer standalone. Both footer-before-pad and
+pad-before-footer ordering are supported.
+It remains available while the Scratchpad is collapsed. The state pad itself,
+its tabs, and its nested details stay unchanged. With no visible complete pad,
+multiple hosts/footers, or an ambiguous example, the existing standalone footer
+remains. A copied full renderer footer in a code example also triggers this
+conservative standalone fallback. Visible Workbench is an editorial artifact and is never an attachment
+host. Raw model output still emits Vex commentary outside the Scratchpad;
+display-only routing performs the attachment before literal protection is
+restored. All commentary pages and context cleanup retain their contracts.
 
 The dock uses existing left-side space and does not move the chat window. Its
 left edge is 84 px; its width grows from 252 px at 1440 px to a maximum of 340 px.
@@ -42,8 +56,11 @@ are HTML comments: if binding does not run, they disappear during HTML sanitatio
 and the existing visual novel stays inline. A final display-only cleanup also
 removes the exact known old visible BEGIN/nonce and END markers before literal
 protection is restored. It leaves dialogue and forms intact, and preserves code
-examples, workbench content and other protected literal surfaces. The other 70
-rules, their literal guards, speaker mappings and all flags are unchanged.
+examples, workbench content and other protected literal surfaces. The original
+70 remaining rules, their literal guards, speaker mappings and all flags are
+unchanged. Four additional display-only routing rules run immediately before
+the existing display literal restore. They do not replace or modify the existing
+Scratchpad renderers.
 
 The reported screenshot shows a failed binding with an otherwise valid 32-digit
 nonce. Replaying that exact nonce against the published engine binds correctly;

@@ -8,6 +8,7 @@ import argparse
 import copy
 import json
 import re
+import uuid
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -18,6 +19,63 @@ END = '<!--NEMO_VEX_DOCK_END_51eb3f2d16fe4ec58f9d7016cb33ad5a-->'
 HEX_RANDOM = '{{random::0::1::2::3::4::5::6::7::8::9::a::b::c::d::e::f}}'
 BINDER_ID = '83e2de95-985a-56d2-b5c3-e507c5ba38d9'
 LEGACY_CLEANUP_ID = '15cb9cb7-b70e-5192-9086-dc9840cfd19a'
+ROUTE_NAMESPACE = uuid.UUID('e21f1387-b55e-4d32-8b9f-f3488cd6f3a6')
+
+
+def exactly_one(starts):
+    """Anchored chunk scan: one structural prefix, never a per-byte guard."""
+    if not starts or len({x[0] for x in starts}) != 1:
+        raise ValueError('Expected structural prefixes sharing one boundary')
+    boundary = re.escape(starts[0][0])
+    tails = '(?:' + '|'.join(re.escape(x[1:]) for x in starts) + ')'
+    skip = '(?:[^' + boundary + ']*' + boundary + '(?!' + tails + '))*[^' + boundary + ']*'
+    any_start = '(?:' + '|'.join(re.escape(x) for x in starts) + ')'
+    return '(?=' + skip + any_start + skip + '$)'
+
+
+def scratchpad_routes(template, literal_begin, literal_end, outside):
+    """Attach an unambiguous generated footer to a complete terminal pad.
+
+    Raw pad bytes stay guarded until the ordinary literal restore; downstream
+    modular boundary-repair, tab and pad renderers remain unchanged.
+    """
+    b, e = re.escape(literal_begin), re.escape(literal_end)
+    ws = r'[\t \r\n]*'
+    footer_start = '<div class="nemo-vn-dock-shell"><style>'
+    footer = (re.escape(footer_start) + r'[^<]*<\/style><button class="nemo-vn-dock-launch"'
+              + r'(?:(?!<div class="nemo-vn-dock-shell">)[\s\S])*?<\/form><\/div><\/div>')
+    modular_start = literal_begin + '<nemo-pad>'
+    legacy_start = literal_begin + '<div class="nemo-legacy-pad"'
+    only_one = exactly_one([footer_start]) + exactly_one([modular_start, legacy_start])
+    modular = (b + r'<nemo-pad>(?:(?!<\/?nemo-pad\b)[\s\S])*<\/nemo-pad>' + e)
+    attrs = r'(?:[^<>"\x27]|"[^"]*"|\x27[^\x27]*\x27)*'
+    # Require the canonical primary details and Deeper Notes details, followed
+    # by their two terminal closes and the existing outer div close.
+    legacy = (b + r'<div class="nemo-legacy-pad"' + attrs + '>' + e + ws
+              + b + '<details' + attrs + '>' + e + ws
+              + b + r'<summary>' + e + r'Scene[\t ]+Scratchpad' + b + r'<\/summary>' + e
+              + r'[\s\S]*?' + b + '<details' + attrs + '>' + e + ws
+              + b + r'<summary>' + e + r'Deeper[\t ]+Notes' + b + r'<\/summary>' + e
+              + r'[\s\S]*?' + b + r'<\/details>' + e + ws
+              + b + r'<\/details>' + e + ws + b + r'<\/div>' + e)
+    routes = []
+    for kind, host in [('modular', modular), ('legacy', legacy)]:
+        for order in ['before', 'after']:
+            item = copy.deepcopy(template)
+            item['id'] = str(uuid.uuid5(ROUTE_NAMESPACE, kind + '-' + order))
+            item['scriptName'] = 'Nemo · Vex VN · attach footer to ' + kind + ' Scratchpad (' + order + ')'
+            if order == 'before':
+                core = (r'([\s\S]*?)(?=' + re.escape(footer_start) + ')' + outside
+                        + '(' + footer + ')' + outside + r'([\s\S]*?)(' + host + ')' + ws + '$')
+                replacement = '$1$3<div class="nemo-pad-with-vex">$4$2</div>'
+            else:
+                core = (r'([\s\S]*?)(' + host + ')(' + ws + ')(?=' + re.escape(footer_start) + ')'
+                        + outside + '(' + footer + ')' + outside + ws + '$')
+                replacement = '$1<div class="nemo-pad-with-vex">$2$3$4</div>'
+            item['findRegex'] = '/^' + only_one + core + '/gi'
+            item['replaceString'] = replacement
+            routes.append(item)
+    return routes
 
 
 def build(source, css):
@@ -76,6 +134,8 @@ def build(source, css):
     # Retain literal guards until this cleanup finishes, so code/examples stay
     # byte-for-byte literal. Only known old markers disappear, never the form.
     rules.insert(len(rules) - 1, cleanup)
+    routes = scratchpad_routes(binder, literal_begin_raw, literal_end_raw, outside)
+    rules[-1:-1] = routes
     return rules
 
 
@@ -94,7 +154,14 @@ def main():
     assert len(changed) == 4
     assert all({key for key in rule if rule[key] != original_by_id[rule['id']][key]} == {'replaceString'}
                for rule in rules if rule['id'] in changed)
-    assert len(rules) == 76
+    assert len(rules) == 80
+    routes = [r for r in rules if r['scriptName'].startswith('Nemo · Vex VN · attach footer to ')]
+    (HERE / 'scratchpad-integration-rules.json').write_text(json.dumps(routes, ensure_ascii=False, indent=2) + '\n')
+    (HERE / 'integration-patch.json').write_text(json.dumps({
+        'insertBeforeId': rules[-1]['id'], 'newRuleIds': [r['id'] for r in routes],
+        'updatedReplacementIds': [BINDER_ID], 'existingHostRenderersChanged': False,
+        'rawPromptContractsChanged': False,
+    }, ensure_ascii=False, indent=2) + '\n')
     print(json.dumps({'rules': len(rules), 'changedExistingReplacements': len(changed),
                       'newBinderId': BINDER_ID, 'legacyCleanupId': LEGACY_CLEANUP_ID,
                       'output': str(args.output)}))

@@ -3,6 +3,12 @@
 .nemo-vn-dock-launch,.nemo-vn-dock-close{display:none;}
 /* Inline is the default, including browsers/sanitizers without popover support. */
 .nemo-vn-popover{display:block!important;position:static;inset:auto;width:auto;height:auto;max-width:none;max-height:none;margin:0;padding:0;border:0;background:transparent;color:inherit;overflow:visible;}
+/* Optional shared Scratchpad container; no-pad messages keep the same footer. */
+.nemo-pad-with-vex{display:block;box-sizing:border-box;min-width:0;max-width:100%;margin:1.1rem 0;border:1px solid #a682c14d;border-radius:12px;background:#9064b307;overflow:visible;}
+.nemo-pad-with-vex>.pk-pad{margin:0;border:0;border-radius:11px 11px 0 0;background:transparent;box-shadow:none;}
+.nemo-pad-with-vex>.nemo-legacy-pad{margin-top:0!important;border-left:0!important;border-radius:0!important;}
+.nemo-pad-with-vex>.nemo-vn-dock-shell{box-sizing:border-box;min-width:0;border-top:1px solid #a682c13d;}
+@media(max-width:1439px),(max-height:699px){.nemo-pad-with-vex>.nemo-vn-dock-shell{padding:0 14px 14px;}}
 @supports selector(:popover-open){
  /* CSS cannot close a native popup after a viewport resize. Keep that already
     open popup scrollable with an accessible Close; closing returns it inline. */
@@ -12,6 +18,7 @@
  }
  @media(min-width:1440px) and (min-height:700px){
   .nemo-vn-dock-shell:has(>.nemo-vn-dock-launch[popovertarget]):has(>.nemo-vn-popover[popover][id]>.nemo-vn-dock-close[popovertarget])>.nemo-vn-dock-launch[popovertarget]{display:grid;grid-template-columns:38px minmax(0,1fr) auto;align-items:center;gap:13px;box-sizing:border-box;width:100%;min-height:78px;margin:20px 0 4px;padding:14px 17px;border:1px solid #a682c13d;border-left:2px solid #a682c17a;border-radius:11px;background:linear-gradient(110deg,#9064b319,#9064b307);box-shadow:none;color:var(--SmartThemeBodyColor,#f4edf9);font:inherit;text-align:left;cursor:pointer;}
+  .nemo-pad-with-vex>.nemo-vn-dock-shell:has(>.nemo-vn-dock-launch[popovertarget]):has(>.nemo-vn-popover[popover][id]>.nemo-vn-dock-close[popovertarget])>.nemo-vn-dock-launch[popovertarget]{margin:0;border:0;border-radius:0 0 11px 11px;}
   .nemo-vn-dock-launch:hover{border-color:#ac88ca80;background:linear-gradient(110deg,#9064b329,#9064b312);}
   .nemo-vn-dock-close:hover{background:#513964;}
   .nemo-vn-launch-badge{display:grid;place-items:center;box-sizing:border-box;width:38px;height:38px;border:1px solid #a682c14d;border-radius:10px;background:#9064b315;color:#ba96d5;font:400 1.35rem/1 system-ui,sans-serif;}
