@@ -129,9 +129,15 @@ def main():
     (HERE / 'context-strip.json').write_text(json.dumps(context, ensure_ascii=False, indent=2) + '\n')
     (HERE / 'speaker-mappings.json').write_text(json.dumps(mappings, ensure_ascii=False, indent=2) + '\n')
     sample = '''<vexchat>
-<vexnote name="Whimsical Vex" expression="thoughtful">A paper butterfly on the windowsill. Such a small thing to leave behind.</vexnote>
-<vexnote name="Whimsical Vex" expression="amused">And yet everyone in this room has carefully avoided looking at it.</vexnote>
-<vexnote name="Whimsical Vex" expression="delighted">I think we should let that silence do a little more work.</vexnote>
+<vexnote name="Whimsical Vex" expression="thoughtful">A paper butterfly on the windowsill, darling, and everyone is making such a magnificent effort not to look at it. I could put a crown on the table and get less ceremony. Look at those very sensible hands, arranging very sensible cups, while one folded scrap of paper quietly becomes the least ordinary thing in the room.
+
+That is the sort of detail I fall in love with. It has almost no weight, and yet there is the whole room leaning away from it. I do not need to decide that it is enchanted. Their attention has already done quite enough.</vexnote>
+<vexnote name="Whimsical Vex" expression="amused">And now I want to know who folds paper like that. Was it done carefully, with the patience of someone wrapping a gift, or in a distracted little hurry while a conversation went wrong? Those are questions, of course. I am allowed to be curious without pinning an answer to the poor thing and calling the matter settled.
+
+You see my difficulty. Give me one small, peculiar object and I immediately want to turn it over in the light. Fortunately for everyone at this table, I can also enjoy watching them pretend the windowsill has ceased to exist. Such disciplined, coordinated disinterest. Almost an art.</vexnote>
+<vexnote name="Whimsical Vex" expression="delighted">Oh, I am fond of this. There is room here for wonder to arrive very quietly, wearing something as cheap and familiar as a sheet of paper. Perhaps the butterfly will remain perfectly still. Perhaps its importance lies entirely in the people trying so hard to ignore it. I find both possibilities rather delicious.
+
+For now, I am on the side of that tiny, inconvenient pair of wings. No speeches, no grand entrance, and still it has made everyone reconsider where to put their eyes. That is a respectable amount of trouble for something you could carry home in your coat pocket.</vexnote>
 </vexchat>'''
     (HERE / 'sample-output.txt').write_text(sample + '\n')
     rendered = apply_rules(sample, rules)

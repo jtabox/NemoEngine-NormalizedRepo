@@ -10,14 +10,23 @@ JSON as a Chat Completion preset and allow its bundled preset regex scripts.
 In SillyTavern's user settings, keep **Show &lt;tags&gt; in responses** off.
 Allow external images if you want the portraits to appear.
 
-The model emits one compact commentary group. The regex pack supplies all
-portraits, layout, controls, and styling:
+The model emits one commentary group with two to four developed dialogue
+pages, normally three. Roughly 60–120 words per page is a soft guide, with
+natural variation and an occasional short retort. Each Vex speaks through her
+own vocabulary, rhythm, humor, temperament, tastes, and opinions, drawing on
+her selected profile and distinctive interview replies. Reactions, teasing,
+disagreement, curiosity, and conversation can all develop across pages.
+
+The regex pack supplies all portraits, layout, controls, and styling. The
+following abbreviates the dialogue to show the marker syntax; the full
+[sample output](sample-output.txt) and [clickable sample](sample-rendered.html)
+demonstrate the intended length and character voice:
 
 ```text
 <vexchat>
-<vexnote name="Whimsical Vex" expression="thoughtful">A brief first message.</vexnote>
-<vexnote name="Whimsical Vex" expression="amused">A second, different observation.</vexnote>
-<vexnote name="Whimsical Vex" expression="delighted">A final short thought.</vexnote>
+<vexnote name="Whimsical Vex" expression="thoughtful">First developed remark...</vexnote>
+<vexnote name="Whimsical Vex" expression="amused">A characterful response that develops it...</vexnote>
+<vexnote name="Whimsical Vex" expression="delighted">Another substantial, connected remark...</vexnote>
 </vexchat>
 ```
 

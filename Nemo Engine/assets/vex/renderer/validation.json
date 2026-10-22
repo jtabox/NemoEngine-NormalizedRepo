@@ -295,6 +295,175 @@
       }
     ]
   },
+  "expansiveDialogue": {
+    "passed": true,
+    "regexPackSha256": "1fe235d58b02adb91b87def03430b86857ba55ec8137f471642507f4866ae424",
+    "cases": [
+      {
+        "name": "neutral",
+        "pageWordCounts": [
+          100,
+          120,
+          140
+        ],
+        "viewports": [
+          {
+            "width": 1040,
+            "passed": true,
+            "pages": [
+              {
+                "page": 1,
+                "wordCount": 100,
+                "paragraphs": 2,
+                "windowHeight": 350.515625,
+                "dialogueHeight": 237.515625,
+                "overlapFraction": 0.52,
+                "passed": true
+              },
+              {
+                "page": 2,
+                "wordCount": 120,
+                "paragraphs": 2,
+                "windowHeight": 403.296875,
+                "dialogueHeight": 290.296875,
+                "overlapFraction": 0.52,
+                "passed": true
+              },
+              {
+                "page": 3,
+                "wordCount": 140,
+                "paragraphs": 2,
+                "windowHeight": 429.6875,
+                "dialogueHeight": 316.6875,
+                "overlapFraction": 0.52,
+                "passed": true
+              }
+            ],
+            "nextAndBackPassed": true
+          },
+          {
+            "width": 375,
+            "passed": true,
+            "pages": [
+              {
+                "page": 1,
+                "wordCount": 100,
+                "paragraphs": 2,
+                "windowHeight": 544.75,
+                "dialogueHeight": 441.75,
+                "overlapFraction": 0.5116279069767442,
+                "passed": true
+              },
+              {
+                "page": 2,
+                "wordCount": 120,
+                "paragraphs": 2,
+                "windowHeight": 614.5,
+                "dialogueHeight": 511.5,
+                "overlapFraction": 0.5116279069767442,
+                "passed": true
+              },
+              {
+                "page": 3,
+                "wordCount": 140,
+                "paragraphs": 2,
+                "windowHeight": 707.5,
+                "dialogueHeight": 604.5,
+                "overlapFraction": 0.5116279069767442,
+                "passed": true
+              }
+            ],
+            "nextAndBackPassed": true
+          }
+        ]
+      },
+      {
+        "name": "sample",
+        "pageWordCounts": [
+          101,
+          105,
+          102
+        ],
+        "viewports": [
+          {
+            "width": 1040,
+            "passed": true,
+            "pages": [
+              {
+                "page": 1,
+                "wordCount": 101,
+                "paragraphs": 2,
+                "windowHeight": 324.125,
+                "dialogueHeight": 211.125,
+                "overlapFraction": 0.52,
+                "passed": true
+              },
+              {
+                "page": 2,
+                "wordCount": 105,
+                "paragraphs": 2,
+                "windowHeight": 350.515625,
+                "dialogueHeight": 237.515625,
+                "overlapFraction": 0.52,
+                "passed": true
+              },
+              {
+                "page": 3,
+                "wordCount": 102,
+                "paragraphs": 2,
+                "windowHeight": 350.515625,
+                "dialogueHeight": 237.515625,
+                "overlapFraction": 0.52,
+                "passed": true
+              }
+            ],
+            "nextAndBackPassed": true
+          },
+          {
+            "width": 375,
+            "passed": true,
+            "pages": [
+              {
+                "page": 1,
+                "wordCount": 101,
+                "paragraphs": 2,
+                "windowHeight": 475,
+                "dialogueHeight": 372,
+                "overlapFraction": 0.5116279069767442,
+                "passed": true
+              },
+              {
+                "page": 2,
+                "wordCount": 105,
+                "paragraphs": 2,
+                "windowHeight": 568,
+                "dialogueHeight": 465,
+                "overlapFraction": 0.5116279069767442,
+                "passed": true
+              },
+              {
+                "page": 3,
+                "wordCount": 102,
+                "paragraphs": 2,
+                "windowHeight": 521.5,
+                "dialogueHeight": 418.5,
+                "overlapFraction": 0.5116279069767442,
+                "passed": true
+              }
+            ],
+            "nextAndBackPassed": true
+          }
+        ]
+      }
+    ],
+    "environment": {
+      "browser": "153.0.8010.0",
+      "dompurify": "3.4.2",
+      "showdown": "2.1.0",
+      "cssTools": "4.4.4",
+      "pipeline": "Generated regex \u2192 Showdown \u2192 exact SillyTavern sanitizer and style roundtrip"
+    }
+  },
   "fullPresetPipeline": {
     "passed": true,
     "engine": "current official SillyTavern runRegexScript/getRegexedString",
@@ -315,6 +484,24 @@
     "nextAndBack": true,
     "portraitChanges": true
   },
-  "layout": "Sprite outside the dialogue box; a separate foreground window overlaps her lower body.",
+  "promptChangeScope": {
+    "sourceVersion": 6,
+    "changedPrompts": [
+      "vex_commentary"
+    ],
+    "onlyPromptContentChanged": true,
+    "all570RegexRulesUnchanged": true,
+    "allOtherSettingsAndSelectionsUnchanged": true,
+    "outputSha256": "20087aaf0a0b464edc5f044cd9dd42ba4ad1279de2f4f081218e0b2efc329bde",
+    "rendererSha256": "1fe235d58b02adb91b87def03430b86857ba55ec8137f471642507f4866ae424",
+    "softWordsPerPage": [
+      60,
+      120
+    ],
+    "pages": [
+      2,
+      4
+    ]
+  },
   "scope": "Headless Chromium against official rendering libraries and SillyTavern sanitizer/style functions; full preset regex engine checked separately. Not an end-to-end session in the user installation."
 }
