@@ -1,0 +1,2734 @@
+{
+  "change": "Scene transition display hierarchy for the existing calendar, location, weather, outlook and optional contextual cue fields.",
+  "build": {
+    "passed": true,
+    "sourceSha256": "6ff37568002af009c35cbb6f74d42cf19a8ad57823763a746a828ccf36f8cf31",
+    "outputSha256": "027132e00c4e315eaeb3e94a06f40a246aabc492413a417b30d91545549ab7e6",
+    "rules": 580,
+    "updatedRuleId": "8d70d4b2-611a-5d53-9fae-be45dd3c7e1c",
+    "addedRuleId": "8b891168-a347-5053-9bfc-7244b1e90000",
+    "preserved": [
+      "all prompt content",
+      "all prompt selections",
+      "all other regex records",
+      "all sampler/settings",
+      "colour/effect/thought pipeline",
+      "Vex visual novel rules and layout",
+      "raw scene grammar and tracked fields"
+    ],
+    "presentation": [
+      "date/time strip",
+      "location headline",
+      "current/forecast conditions grid",
+      "visible optional context/cues",
+      "verbatim legacy fallback",
+      "single-column mobile layout",
+      "scene rendering on edits"
+    ]
+  },
+  "pipeline": {
+    "passed": true,
+    "engine": "current official SillyTavern runRegexScript/getRegexedString",
+    "macroSubstitution": "identity stub; samples contain no executable macros",
+    "rules": 580,
+    "resolvedNameExpressionPairs": 288,
+    "storyPreserved": true,
+    "rawHistoryUnchanged": true,
+    "recentContextPreserved": true,
+    "olderContextRemoved": true,
+    "repeatedGroups": 2,
+    "editRerender": true
+  },
+  "browser": {
+    "passed": true,
+    "sources": [
+      {
+        "name": "before",
+        "path": "/workspace/scratch/7095aacbc09d/scene-header-source/Nemo_Engine_v12.2_Lite_General_RP_Anime.json",
+        "sha256": "6ff37568002af009c35cbb6f74d42cf19a8ad57823763a746a828ccf36f8cf31",
+        "regexCount": 579,
+        "tests": [
+          {
+            "name": "canonical-four-lines",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n",
+            "semanticText": "\n\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "rich-six-lines",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n⏳ Elapsed: 8 hours · Relevant: Market day; north gate closes at sunset\n🔮 Ward: unstable · Teleportation: blocked\n\n",
+            "semanticText": "\n\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n⏳ Elapsed: 8 hours · Relevant: Market day; north gate closes at sunset\n🔮 Ward: unstable · Teleportation: blocked\n",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "long-location-and-forecast",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Old Observatory above the Northern Harbour → Eastern gallery overlooking the abandoned dry dock and the river mouth\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely throughout the afternoon, with stronger coastal gusts after sunset; visibility may improve briefly before the next front reaches the harbour\n⏳ Elapsed: 3 hours · Relevant: Last ferry leaves after the evening bell\n⚠ Smoke thickening · Visibility: two metres; loose slate underfoot\n",
+            "semanticText": "\n\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Old Observatory above the Northern Harbour → Eastern gallery overlooking the abandoned dry dock and the river mouth\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely throughout the afternoon, with stronger coastal gusts after sunset; visibility may improve briefly before the next front reaches the harbour\n⏳ Elapsed: 3 hours · Relevant: Last ferry leaves after the evening bell\n⚠ Smoke thickening · Visibility: two metres; loose slate underfoot\n",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "outlook-label",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Outlook: A cold, dry evening; frost possible after midnight\n",
+            "semanticText": "\n\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Outlook: A cold, dry evening; frost possible after midnight\n",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "no-weather-icons",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\nConditions: Enclosed environment, stable pressure\nOutlook: N/A — enclosed environment\n",
+            "semanticText": "\n\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\nConditions: Enclosed environment, stable pressure\nOutlook: N/A — enclosed environment\n",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "calendar-icon-variant",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "\n🗓️ Third Bell · Day 41 · 22:15 / Late evening\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n",
+            "semanticText": "\n\n🗓️ Third Bell · Day 41 · 22:15 / Late evening\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "empty-optional-lines",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "\n\n📅 Monday · Day 12 · 08:10 / Early morning\n\n📍 The Dusty Quill → Upstairs guest room\n\n🌤 Current: Overcast, 12°C, light easterly wind\n\n🌦 Forecast: Rain likely this afternoon; clearing tonight",
+            "semanticText": "\n\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "elapsed-only",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n⏳ Elapsed: 45 minutes\n",
+            "semanticText": "\n\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n⏳ Elapsed: 45 minutes\n",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "hazard-only",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n⚠ Smoke thickening · Visibility: two metres\n",
+            "semanticText": "\n\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n⚠ Smoke thickening · Visibility: two metres\n",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "magic-only",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n🔮 Ward: unstable · Teleportation: blocked\n\n",
+            "semanticText": "\n\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n🔮 Ward: unstable · Teleportation: blocked\n",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "clock-only",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n⏱ Gate seals in 02:15 · Paused\n",
+            "semanticText": "\n\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n⏱ Gate seals in 02:15 · Paused\n",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "hazard-and-clock",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n⚠ Floodwater rising · Lower stair submerged\n⏱ Ferry departs in about ten minutes\n",
+            "semanticText": "\n\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n⚠ Floodwater rising · Lower stair submerged\n⏱ Ferry departs in about ten minutes\n",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "legacy-one-line",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Day 4 — Ruined bell tower · Storm breaking",
+            "semanticText": "\nDay 4 — Ruined bell tower · Storm breaking",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "noncanonical-three-lines",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Evening, ninth day\nOld mill beside the eastern bridge\nDry inside; the river is rising outside",
+            "semanticText": "\nEvening, ninth day\nOld mill beside the eastern bridge\nDry inside; the river is rising outside",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "multiple-headers-one-reply",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Opening narration.\n\n\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n\n\nFirst scene continues here.\n\n\n📅 Monday · Day 12 · 14:10 / Afternoon\n📍 Harbour market → Ferry landing\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n⏳ Elapsed: 6 hours\n\n\nSecond scene continues here.",
+            "semanticText": "Opening narration.\n\n\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n\nFirst scene continues here.\n\n\n📅 Monday · Day 12 · 14:10 / Afternoon\n📍 Harbour market → Ferry landing\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n⏳ Elapsed: 6 hours\n\nSecond scene continues here.",
+            "cardCount": 2,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "protected-code-fence",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "<style>.pk-h{display:block;margin:1.15em 0 .45em;padding-bottom:.28em;font-size:.7em;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pk-accent,#8a8a96);border-bottom:1px solid rgba(140,140,155,.18)}.pk-h:first-child{margin-top:0}.pk-r{display:grid;grid-template-columns:minmax(5.5em,auto) 1fr;gap:.1em .9em;margin:.28em 0;line-height:1.55;align-items:baseline}.pk-r>i{font-style:normal;font-size:.82em;font-weight:600;letter-spacing:.03em;text-transform:uppercase;opacity:.45;text-align:right;white-space:nowrap}.pk-r>.pk-rv{display:block;grid-column:2;min-width:0;max-width:100%;overflow-wrap:anywhere;word-break:normal}.pk-v0,.pk-v0 q{color:#9E9E9E}.pk-v1,.pk-v1 q{color:#56B4E9}.pk-v2,.pk-v2 q{color:#E69F00}.pk-v3,.pk-v3 q{color:#009E73}.pk-v4,.pk-v4 q{color:#CC79A7}.pk-v5,.pk-v5 q{color:#D55E00}.pk-v6,.pk-v6 q{color:#F0E442}.pk-v7,.pk-v7 q{color:#B39DDB}.pk-v8,.pk-v8 q{color:#80CBC4}.pk-v9,.pk-v9 q{color:#FF8A80}.pk-v10,.pk-v10 q{color:#A5D6A7}.pk-v11,.pk-v11 q{color:#FFD180}.pk-v12,.pk-v12 q{color:#9FA8DA}.pk-v13,.pk-v13 q{color:#F48FB1}.pk-v14,.pk-v14 q{color:#BCAAA4}.pk-v15,.pk-v15 q{color:#4DD0E1}.pk-v16,.pk-v16 q{color:#DCE775}.pk-o{display:inline-block;margin-right:.45em;font-size:.72em;line-height:1;vertical-align:.14em;text-shadow:0 0 6px currentColor}@media(max-width:640px){.pk-r{grid-template-columns:1fr;gap:0}.pk-r>i{text-align:left;opacity:.4;margin-top:.35em}.pk-r>.pk-rv{grid-column:1}}.pk-scene{display:block;margin:1.9em 0 1.3em;padding:.5rem 0;text-align:center;font-size:.72em;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#6e6e80;border-top:1px solid rgba(140,140,160,.16);border-bottom:1px solid rgba(140,140,160,.16);position:relative}.pk-scene::before{content:'';position:absolute;left:50%;top:-3px;width:5px;height:5px;margin-left:-2.5px;transform:rotate(45deg);background:#6e6e80;opacity:.5} .pk-scene{white-space:pre-line;text-align:left;font-size:.88em;line-height:1.7;letter-spacing:.02em;text-transform:none;color:inherit;opacity:.92;padding:.8rem 1rem;overflow-wrap:anywhere}.pk-scene::before{left:1rem;margin-left:0}@media(max-width:640px){.pk-scene{font-size:.86em;padding:.65rem .7rem;line-height:1.65}}</style><span class=\"pk-scene\">\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n</span>\n",
+            "semanticText": "<style>.pk-h{display:block;margin:1.15em 0 .45em;padding-bottom:.28em;font-size:.7em;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pk-accent,#8a8a96);border-bottom:1px solid rgba(140,140,155,.18)}.pk-h:first-child{margin-top:0}.pk-r{display:grid;grid-template-columns:minmax(5.5em,auto) 1fr;gap:.1em .9em;margin:.28em 0;line-height:1.55;align-items:baseline}.pk-r>i{font-style:normal;font-size:.82em;font-weight:600;letter-spacing:.03em;text-transform:uppercase;opacity:.45;text-align:right;white-space:nowrap}.pk-r>.pk-rv{display:block;grid-column:2;min-width:0;max-width:100%;overflow-wrap:anywhere;word-break:normal}.pk-v0,.pk-v0 q{color:#9E9E9E}.pk-v1,.pk-v1 q{color:#56B4E9}.pk-v2,.pk-v2 q{color:#E69F00}.pk-v3,.pk-v3 q{color:#009E73}.pk-v4,.pk-v4 q{color:#CC79A7}.pk-v5,.pk-v5 q{color:#D55E00}.pk-v6,.pk-v6 q{color:#F0E442}.pk-v7,.pk-v7 q{color:#B39DDB}.pk-v8,.pk-v8 q{color:#80CBC4}.pk-v9,.pk-v9 q{color:#FF8A80}.pk-v10,.pk-v10 q{color:#A5D6A7}.pk-v11,.pk-v11 q{color:#FFD180}.pk-v12,.pk-v12 q{color:#9FA8DA}.pk-v13,.pk-v13 q{color:#F48FB1}.pk-v14,.pk-v14 q{color:#BCAAA4}.pk-v15,.pk-v15 q{color:#4DD0E1}.pk-v16,.pk-v16 q{color:#DCE775}.pk-o{display:inline-block;margin-right:.45em;font-size:.72em;line-height:1;vertical-align:.14em;text-shadow:0 0 6px currentColor}@media(max-width:640px){.pk-r{grid-template-columns:1fr;gap:0}.pk-r>i{text-align:left;opacity:.4;margin-top:.35em}.pk-r>.pk-rv{grid-column:1}}.pk-scene{display:block;margin:1.9em 0 1.3em;padding:.5rem 0;text-align:center;font-size:.72em;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#6e6e80;border-top:1px solid rgba(140,140,160,.16);border-bottom:1px solid rgba(140,140,160,.16);position:relative}.pk-scene::before{content:'';position:absolute;left:50%;top:-3px;width:5px;height:5px;margin-left:-2.5px;transform:rotate(45deg);background:#6e6e80;opacity:.5} .pk-scene{white-space:pre-line;text-align:left;font-size:.88em;line-height:1.7;letter-spacing:.02em;text-transform:none;color:inherit;opacity:.92;padding:.8rem 1rem;overflow-wrap:anywhere}.pk-scene::before{left:1rem;margin-left:0}@media(max-width:640px){.pk-scene{font-size:.86em;padding:.65rem .7rem;line-height:1.65}}</style><span class=\"pk-scene\">\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n</span>\n",
+            "cardCount": 0,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 1,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "protected-double-ticks",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "<style>.pk-h{display:block;margin:1.15em 0 .45em;padding-bottom:.28em;font-size:.7em;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pk-accent,#8a8a96);border-bottom:1px solid rgba(140,140,155,.18)}.pk-h:first-child{margin-top:0}.pk-r{display:grid;grid-template-columns:minmax(5.5em,auto) 1fr;gap:.1em .9em;margin:.28em 0;line-height:1.55;align-items:baseline}.pk-r>i{font-style:normal;font-size:.82em;font-weight:600;letter-spacing:.03em;text-transform:uppercase;opacity:.45;text-align:right;white-space:nowrap}.pk-r>.pk-rv{display:block;grid-column:2;min-width:0;max-width:100%;overflow-wrap:anywhere;word-break:normal}.pk-v0,.pk-v0 q{color:#9E9E9E}.pk-v1,.pk-v1 q{color:#56B4E9}.pk-v2,.pk-v2 q{color:#E69F00}.pk-v3,.pk-v3 q{color:#009E73}.pk-v4,.pk-v4 q{color:#CC79A7}.pk-v5,.pk-v5 q{color:#D55E00}.pk-v6,.pk-v6 q{color:#F0E442}.pk-v7,.pk-v7 q{color:#B39DDB}.pk-v8,.pk-v8 q{color:#80CBC4}.pk-v9,.pk-v9 q{color:#FF8A80}.pk-v10,.pk-v10 q{color:#A5D6A7}.pk-v11,.pk-v11 q{color:#FFD180}.pk-v12,.pk-v12 q{color:#9FA8DA}.pk-v13,.pk-v13 q{color:#F48FB1}.pk-v14,.pk-v14 q{color:#BCAAA4}.pk-v15,.pk-v15 q{color:#4DD0E1}.pk-v16,.pk-v16 q{color:#DCE775}.pk-o{display:inline-block;margin-right:.45em;font-size:.72em;line-height:1;vertical-align:.14em;text-shadow:0 0 6px currentColor}@media(max-width:640px){.pk-r{grid-template-columns:1fr;gap:0}.pk-r>i{text-align:left;opacity:.4;margin-top:.35em}.pk-r>.pk-rv{grid-column:1}}.pk-scene{display:block;margin:1.9em 0 1.3em;padding:.5rem 0;text-align:center;font-size:.72em;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#6e6e80;border-top:1px solid rgba(140,140,160,.16);border-bottom:1px solid rgba(140,140,160,.16);position:relative}.pk-scene::before{content:'';position:absolute;left:50%;top:-3px;width:5px;height:5px;margin-left:-2.5px;transform:rotate(45deg);background:#6e6e80;opacity:.5} .pk-scene{white-space:pre-line;text-align:left;font-size:.88em;line-height:1.7;letter-spacing:.02em;text-transform:none;color:inherit;opacity:.92;padding:.8rem 1rem;overflow-wrap:anywhere}.pk-scene::before{left:1rem;margin-left:0}@media(max-width:640px){.pk-scene{font-size:.86em;padding:.65rem .7rem;line-height:1.65}}</style><span class=\"pk-scene\"> 📅 Monday · Day 12 · 08:10 / Early morning 📍 The Dusty Quill → Upstairs guest room 🌤 Current: Overcast, 12°C, light easterly wind 🌦 Forecast: Rain likely this afternoon; clearing tonight </span>",
+            "semanticText": "<style>.pk-h{display:block;margin:1.15em 0 .45em;padding-bottom:.28em;font-size:.7em;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pk-accent,#8a8a96);border-bottom:1px solid rgba(140,140,155,.18)}.pk-h:first-child{margin-top:0}.pk-r{display:grid;grid-template-columns:minmax(5.5em,auto) 1fr;gap:.1em .9em;margin:.28em 0;line-height:1.55;align-items:baseline}.pk-r>i{font-style:normal;font-size:.82em;font-weight:600;letter-spacing:.03em;text-transform:uppercase;opacity:.45;text-align:right;white-space:nowrap}.pk-r>.pk-rv{display:block;grid-column:2;min-width:0;max-width:100%;overflow-wrap:anywhere;word-break:normal}.pk-v0,.pk-v0 q{color:#9E9E9E}.pk-v1,.pk-v1 q{color:#56B4E9}.pk-v2,.pk-v2 q{color:#E69F00}.pk-v3,.pk-v3 q{color:#009E73}.pk-v4,.pk-v4 q{color:#CC79A7}.pk-v5,.pk-v5 q{color:#D55E00}.pk-v6,.pk-v6 q{color:#F0E442}.pk-v7,.pk-v7 q{color:#B39DDB}.pk-v8,.pk-v8 q{color:#80CBC4}.pk-v9,.pk-v9 q{color:#FF8A80}.pk-v10,.pk-v10 q{color:#A5D6A7}.pk-v11,.pk-v11 q{color:#FFD180}.pk-v12,.pk-v12 q{color:#9FA8DA}.pk-v13,.pk-v13 q{color:#F48FB1}.pk-v14,.pk-v14 q{color:#BCAAA4}.pk-v15,.pk-v15 q{color:#4DD0E1}.pk-v16,.pk-v16 q{color:#DCE775}.pk-o{display:inline-block;margin-right:.45em;font-size:.72em;line-height:1;vertical-align:.14em;text-shadow:0 0 6px currentColor}@media(max-width:640px){.pk-r{grid-template-columns:1fr;gap:0}.pk-r>i{text-align:left;opacity:.4;margin-top:.35em}.pk-r>.pk-rv{grid-column:1}}.pk-scene{display:block;margin:1.9em 0 1.3em;padding:.5rem 0;text-align:center;font-size:.72em;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#6e6e80;border-top:1px solid rgba(140,140,160,.16);border-bottom:1px solid rgba(140,140,160,.16);position:relative}.pk-scene::before{content:'';position:absolute;left:50%;top:-3px;width:5px;height:5px;margin-left:-2.5px;transform:rotate(45deg);background:#6e6e80;opacity:.5} .pk-scene{white-space:pre-line;text-align:left;font-size:.88em;line-height:1.7;letter-spacing:.02em;text-transform:none;color:inherit;opacity:.92;padding:.8rem 1rem;overflow-wrap:anywhere}.pk-scene::before{left:1rem;margin-left:0}@media(max-width:640px){.pk-scene{font-size:.86em;padding:.65rem .7rem;line-height:1.65}}</style><span class=\"pk-scene\"> 📅 Monday · Day 12 · 08:10 / Early morning 📍 The Dusty Quill → Upstairs guest room 🌤 Current: Overcast, 12°C, light easterly wind 🌦 Forecast: Rain likely this afternoon; clearing tonight </span>",
+            "cardCount": 0,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 1,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": false,
+            "fieldBounds": []
+          },
+          {
+            "name": "canonical-four-lines",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n",
+            "semanticText": "\n\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "rich-six-lines",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n⏳ Elapsed: 8 hours · Relevant: Market day; north gate closes at sunset\n🔮 Ward: unstable · Teleportation: blocked\n\n",
+            "semanticText": "\n\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n⏳ Elapsed: 8 hours · Relevant: Market day; north gate closes at sunset\n🔮 Ward: unstable · Teleportation: blocked\n",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "long-location-and-forecast",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Old Observatory above the Northern Harbour → Eastern gallery overlooking the abandoned dry dock and the river mouth\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely throughout the afternoon, with stronger coastal gusts after sunset; visibility may improve briefly before the next front reaches the harbour\n⏳ Elapsed: 3 hours · Relevant: Last ferry leaves after the evening bell\n⚠ Smoke thickening · Visibility: two metres; loose slate underfoot\n",
+            "semanticText": "\n\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Old Observatory above the Northern Harbour → Eastern gallery overlooking the abandoned dry dock and the river mouth\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely throughout the afternoon, with stronger coastal gusts after sunset; visibility may improve briefly before the next front reaches the harbour\n⏳ Elapsed: 3 hours · Relevant: Last ferry leaves after the evening bell\n⚠ Smoke thickening · Visibility: two metres; loose slate underfoot\n",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "outlook-label",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Outlook: A cold, dry evening; frost possible after midnight\n",
+            "semanticText": "\n\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Outlook: A cold, dry evening; frost possible after midnight\n",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "no-weather-icons",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\nConditions: Enclosed environment, stable pressure\nOutlook: N/A — enclosed environment\n",
+            "semanticText": "\n\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\nConditions: Enclosed environment, stable pressure\nOutlook: N/A — enclosed environment\n",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "calendar-icon-variant",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "\n🗓️ Third Bell · Day 41 · 22:15 / Late evening\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n",
+            "semanticText": "\n\n🗓️ Third Bell · Day 41 · 22:15 / Late evening\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "empty-optional-lines",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "\n\n📅 Monday · Day 12 · 08:10 / Early morning\n\n📍 The Dusty Quill → Upstairs guest room\n\n🌤 Current: Overcast, 12°C, light easterly wind\n\n🌦 Forecast: Rain likely this afternoon; clearing tonight",
+            "semanticText": "\n\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "elapsed-only",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n⏳ Elapsed: 45 minutes\n",
+            "semanticText": "\n\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n⏳ Elapsed: 45 minutes\n",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "hazard-only",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n⚠ Smoke thickening · Visibility: two metres\n",
+            "semanticText": "\n\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n⚠ Smoke thickening · Visibility: two metres\n",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "magic-only",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n🔮 Ward: unstable · Teleportation: blocked\n\n",
+            "semanticText": "\n\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n🔮 Ward: unstable · Teleportation: blocked\n",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "clock-only",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n⏱ Gate seals in 02:15 · Paused\n",
+            "semanticText": "\n\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n⏱ Gate seals in 02:15 · Paused\n",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "hazard-and-clock",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n⚠ Floodwater rising · Lower stair submerged\n⏱ Ferry departs in about ten minutes\n",
+            "semanticText": "\n\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n⚠ Floodwater rising · Lower stair submerged\n⏱ Ferry departs in about ten minutes\n",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "legacy-one-line",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Day 4 — Ruined bell tower · Storm breaking",
+            "semanticText": "\nDay 4 — Ruined bell tower · Storm breaking",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "noncanonical-three-lines",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Evening, ninth day\nOld mill beside the eastern bridge\nDry inside; the river is rising outside",
+            "semanticText": "\nEvening, ninth day\nOld mill beside the eastern bridge\nDry inside; the river is rising outside",
+            "cardCount": 1,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "multiple-headers-one-reply",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Opening narration.\n\n\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n\n\nFirst scene continues here.\n\n\n📅 Monday · Day 12 · 14:10 / Afternoon\n📍 Harbour market → Ferry landing\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n⏳ Elapsed: 6 hours\n\n\nSecond scene continues here.",
+            "semanticText": "Opening narration.\n\n\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n\nFirst scene continues here.\n\n\n📅 Monday · Day 12 · 14:10 / Afternoon\n📍 Harbour market → Ferry landing\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n⏳ Elapsed: 6 hours\n\nSecond scene continues here.",
+            "cardCount": 2,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "protected-code-fence",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "<style>.pk-h{display:block;margin:1.15em 0 .45em;padding-bottom:.28em;font-size:.7em;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pk-accent,#8a8a96);border-bottom:1px solid rgba(140,140,155,.18)}.pk-h:first-child{margin-top:0}.pk-r{display:grid;grid-template-columns:minmax(5.5em,auto) 1fr;gap:.1em .9em;margin:.28em 0;line-height:1.55;align-items:baseline}.pk-r>i{font-style:normal;font-size:.82em;font-weight:600;letter-spacing:.03em;text-transform:uppercase;opacity:.45;text-align:right;white-space:nowrap}.pk-r>.pk-rv{display:block;grid-column:2;min-width:0;max-width:100%;overflow-wrap:anywhere;word-break:normal}.pk-v0,.pk-v0 q{color:#9E9E9E}.pk-v1,.pk-v1 q{color:#56B4E9}.pk-v2,.pk-v2 q{color:#E69F00}.pk-v3,.pk-v3 q{color:#009E73}.pk-v4,.pk-v4 q{color:#CC79A7}.pk-v5,.pk-v5 q{color:#D55E00}.pk-v6,.pk-v6 q{color:#F0E442}.pk-v7,.pk-v7 q{color:#B39DDB}.pk-v8,.pk-v8 q{color:#80CBC4}.pk-v9,.pk-v9 q{color:#FF8A80}.pk-v10,.pk-v10 q{color:#A5D6A7}.pk-v11,.pk-v11 q{color:#FFD180}.pk-v12,.pk-v12 q{color:#9FA8DA}.pk-v13,.pk-v13 q{color:#F48FB1}.pk-v14,.pk-v14 q{color:#BCAAA4}.pk-v15,.pk-v15 q{color:#4DD0E1}.pk-v16,.pk-v16 q{color:#DCE775}.pk-o{display:inline-block;margin-right:.45em;font-size:.72em;line-height:1;vertical-align:.14em;text-shadow:0 0 6px currentColor}@media(max-width:640px){.pk-r{grid-template-columns:1fr;gap:0}.pk-r>i{text-align:left;opacity:.4;margin-top:.35em}.pk-r>.pk-rv{grid-column:1}}.pk-scene{display:block;margin:1.9em 0 1.3em;padding:.5rem 0;text-align:center;font-size:.72em;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#6e6e80;border-top:1px solid rgba(140,140,160,.16);border-bottom:1px solid rgba(140,140,160,.16);position:relative}.pk-scene::before{content:'';position:absolute;left:50%;top:-3px;width:5px;height:5px;margin-left:-2.5px;transform:rotate(45deg);background:#6e6e80;opacity:.5} .pk-scene{white-space:pre-line;text-align:left;font-size:.88em;line-height:1.7;letter-spacing:.02em;text-transform:none;color:inherit;opacity:.92;padding:.8rem 1rem;overflow-wrap:anywhere}.pk-scene::before{left:1rem;margin-left:0}@media(max-width:640px){.pk-scene{font-size:.86em;padding:.65rem .7rem;line-height:1.65}}</style><span class=\"pk-scene\">\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n</span>\n",
+            "semanticText": "<style>.pk-h{display:block;margin:1.15em 0 .45em;padding-bottom:.28em;font-size:.7em;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pk-accent,#8a8a96);border-bottom:1px solid rgba(140,140,155,.18)}.pk-h:first-child{margin-top:0}.pk-r{display:grid;grid-template-columns:minmax(5.5em,auto) 1fr;gap:.1em .9em;margin:.28em 0;line-height:1.55;align-items:baseline}.pk-r>i{font-style:normal;font-size:.82em;font-weight:600;letter-spacing:.03em;text-transform:uppercase;opacity:.45;text-align:right;white-space:nowrap}.pk-r>.pk-rv{display:block;grid-column:2;min-width:0;max-width:100%;overflow-wrap:anywhere;word-break:normal}.pk-v0,.pk-v0 q{color:#9E9E9E}.pk-v1,.pk-v1 q{color:#56B4E9}.pk-v2,.pk-v2 q{color:#E69F00}.pk-v3,.pk-v3 q{color:#009E73}.pk-v4,.pk-v4 q{color:#CC79A7}.pk-v5,.pk-v5 q{color:#D55E00}.pk-v6,.pk-v6 q{color:#F0E442}.pk-v7,.pk-v7 q{color:#B39DDB}.pk-v8,.pk-v8 q{color:#80CBC4}.pk-v9,.pk-v9 q{color:#FF8A80}.pk-v10,.pk-v10 q{color:#A5D6A7}.pk-v11,.pk-v11 q{color:#FFD180}.pk-v12,.pk-v12 q{color:#9FA8DA}.pk-v13,.pk-v13 q{color:#F48FB1}.pk-v14,.pk-v14 q{color:#BCAAA4}.pk-v15,.pk-v15 q{color:#4DD0E1}.pk-v16,.pk-v16 q{color:#DCE775}.pk-o{display:inline-block;margin-right:.45em;font-size:.72em;line-height:1;vertical-align:.14em;text-shadow:0 0 6px currentColor}@media(max-width:640px){.pk-r{grid-template-columns:1fr;gap:0}.pk-r>i{text-align:left;opacity:.4;margin-top:.35em}.pk-r>.pk-rv{grid-column:1}}.pk-scene{display:block;margin:1.9em 0 1.3em;padding:.5rem 0;text-align:center;font-size:.72em;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#6e6e80;border-top:1px solid rgba(140,140,160,.16);border-bottom:1px solid rgba(140,140,160,.16);position:relative}.pk-scene::before{content:'';position:absolute;left:50%;top:-3px;width:5px;height:5px;margin-left:-2.5px;transform:rotate(45deg);background:#6e6e80;opacity:.5} .pk-scene{white-space:pre-line;text-align:left;font-size:.88em;line-height:1.7;letter-spacing:.02em;text-transform:none;color:inherit;opacity:.92;padding:.8rem 1rem;overflow-wrap:anywhere}.pk-scene::before{left:1rem;margin-left:0}@media(max-width:640px){.pk-scene{font-size:.86em;padding:.65rem .7rem;line-height:1.65}}</style><span class=\"pk-scene\">\n📅 Monday · Day 12 · 08:10 / Early morning\n📍 The Dusty Quill → Upstairs guest room\n🌤 Current: Overcast, 12°C, light easterly wind\n🌦 Forecast: Rain likely this afternoon; clearing tonight\n</span>\n",
+            "cardCount": 0,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 1,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "protected-double-ticks",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "<style>.pk-h{display:block;margin:1.15em 0 .45em;padding-bottom:.28em;font-size:.7em;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pk-accent,#8a8a96);border-bottom:1px solid rgba(140,140,155,.18)}.pk-h:first-child{margin-top:0}.pk-r{display:grid;grid-template-columns:minmax(5.5em,auto) 1fr;gap:.1em .9em;margin:.28em 0;line-height:1.55;align-items:baseline}.pk-r>i{font-style:normal;font-size:.82em;font-weight:600;letter-spacing:.03em;text-transform:uppercase;opacity:.45;text-align:right;white-space:nowrap}.pk-r>.pk-rv{display:block;grid-column:2;min-width:0;max-width:100%;overflow-wrap:anywhere;word-break:normal}.pk-v0,.pk-v0 q{color:#9E9E9E}.pk-v1,.pk-v1 q{color:#56B4E9}.pk-v2,.pk-v2 q{color:#E69F00}.pk-v3,.pk-v3 q{color:#009E73}.pk-v4,.pk-v4 q{color:#CC79A7}.pk-v5,.pk-v5 q{color:#D55E00}.pk-v6,.pk-v6 q{color:#F0E442}.pk-v7,.pk-v7 q{color:#B39DDB}.pk-v8,.pk-v8 q{color:#80CBC4}.pk-v9,.pk-v9 q{color:#FF8A80}.pk-v10,.pk-v10 q{color:#A5D6A7}.pk-v11,.pk-v11 q{color:#FFD180}.pk-v12,.pk-v12 q{color:#9FA8DA}.pk-v13,.pk-v13 q{color:#F48FB1}.pk-v14,.pk-v14 q{color:#BCAAA4}.pk-v15,.pk-v15 q{color:#4DD0E1}.pk-v16,.pk-v16 q{color:#DCE775}.pk-o{display:inline-block;margin-right:.45em;font-size:.72em;line-height:1;vertical-align:.14em;text-shadow:0 0 6px currentColor}@media(max-width:640px){.pk-r{grid-template-columns:1fr;gap:0}.pk-r>i{text-align:left;opacity:.4;margin-top:.35em}.pk-r>.pk-rv{grid-column:1}}.pk-scene{display:block;margin:1.9em 0 1.3em;padding:.5rem 0;text-align:center;font-size:.72em;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#6e6e80;border-top:1px solid rgba(140,140,160,.16);border-bottom:1px solid rgba(140,140,160,.16);position:relative}.pk-scene::before{content:'';position:absolute;left:50%;top:-3px;width:5px;height:5px;margin-left:-2.5px;transform:rotate(45deg);background:#6e6e80;opacity:.5} .pk-scene{white-space:pre-line;text-align:left;font-size:.88em;line-height:1.7;letter-spacing:.02em;text-transform:none;color:inherit;opacity:.92;padding:.8rem 1rem;overflow-wrap:anywhere}.pk-scene::before{left:1rem;margin-left:0}@media(max-width:640px){.pk-scene{font-size:.86em;padding:.65rem .7rem;line-height:1.65}}</style><span class=\"pk-scene\"> 📅 Monday · Day 12 · 08:10 / Early morning 📍 The Dusty Quill → Upstairs guest room 🌤 Current: Overcast, 12°C, light easterly wind 🌦 Forecast: Rain likely this afternoon; clearing tonight </span>",
+            "semanticText": "<style>.pk-h{display:block;margin:1.15em 0 .45em;padding-bottom:.28em;font-size:.7em;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pk-accent,#8a8a96);border-bottom:1px solid rgba(140,140,155,.18)}.pk-h:first-child{margin-top:0}.pk-r{display:grid;grid-template-columns:minmax(5.5em,auto) 1fr;gap:.1em .9em;margin:.28em 0;line-height:1.55;align-items:baseline}.pk-r>i{font-style:normal;font-size:.82em;font-weight:600;letter-spacing:.03em;text-transform:uppercase;opacity:.45;text-align:right;white-space:nowrap}.pk-r>.pk-rv{display:block;grid-column:2;min-width:0;max-width:100%;overflow-wrap:anywhere;word-break:normal}.pk-v0,.pk-v0 q{color:#9E9E9E}.pk-v1,.pk-v1 q{color:#56B4E9}.pk-v2,.pk-v2 q{color:#E69F00}.pk-v3,.pk-v3 q{color:#009E73}.pk-v4,.pk-v4 q{color:#CC79A7}.pk-v5,.pk-v5 q{color:#D55E00}.pk-v6,.pk-v6 q{color:#F0E442}.pk-v7,.pk-v7 q{color:#B39DDB}.pk-v8,.pk-v8 q{color:#80CBC4}.pk-v9,.pk-v9 q{color:#FF8A80}.pk-v10,.pk-v10 q{color:#A5D6A7}.pk-v11,.pk-v11 q{color:#FFD180}.pk-v12,.pk-v12 q{color:#9FA8DA}.pk-v13,.pk-v13 q{color:#F48FB1}.pk-v14,.pk-v14 q{color:#BCAAA4}.pk-v15,.pk-v15 q{color:#4DD0E1}.pk-v16,.pk-v16 q{color:#DCE775}.pk-o{display:inline-block;margin-right:.45em;font-size:.72em;line-height:1;vertical-align:.14em;text-shadow:0 0 6px currentColor}@media(max-width:640px){.pk-r{grid-template-columns:1fr;gap:0}.pk-r>i{text-align:left;opacity:.4;margin-top:.35em}.pk-r>.pk-rv{grid-column:1}}.pk-scene{display:block;margin:1.9em 0 1.3em;padding:.5rem 0;text-align:center;font-size:.72em;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#6e6e80;border-top:1px solid rgba(140,140,160,.16);border-bottom:1px solid rgba(140,140,160,.16);position:relative}.pk-scene::before{content:'';position:absolute;left:50%;top:-3px;width:5px;height:5px;margin-left:-2.5px;transform:rotate(45deg);background:#6e6e80;opacity:.5} .pk-scene{white-space:pre-line;text-align:left;font-size:.88em;line-height:1.7;letter-spacing:.02em;text-transform:none;color:inherit;opacity:.92;padding:.8rem 1rem;overflow-wrap:anywhere}.pk-scene::before{left:1rem;margin-left:0}@media(max-width:640px){.pk-scene{font-size:.86em;padding:.65rem .7rem;line-height:1.65}}</style><span class=\"pk-scene\"> 📅 Monday · Day 12 · 08:10 / Early morning 📍 The Dusty Quill → Upstairs guest room 🌤 Current: Overcast, 12°C, light easterly wind 🌦 Forecast: Rain likely this afternoon; clearing tonight </span>",
+            "cardCount": 0,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 1,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": false,
+            "fieldBounds": []
+          }
+        ],
+        "hiddenMachineryPassed": true
+      },
+      {
+        "name": "after",
+        "path": "/workspace/scratch/7095aacbc09d/scene-header-output/Nemo_Engine_v12.2_Lite_General_RP_Anime.json",
+        "sha256": "027132e00c4e315eaeb3e94a06f40a246aabc492413a417b30d91545549ab7e6",
+        "regexCount": 580,
+        "tests": [
+          {
+            "name": "canonical-four-lines",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Monday · Day 12 · 08:10 / Early morning\nThe Dusty Quill → Upstairs guest room\nCURRENT\nOvercast, 12°C, light easterly wind\nFORECAST\nRain likely this afternoon; clearing tonight",
+            "semanticText": "\nMonday · Day 12 · 08:10 / Early morningThe Dusty Quill → Upstairs guest roomCurrentOvercast, 12°C, light easterly windForecastRain likely this afternoon; clearing tonight",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": true,
+            "labels": [
+              "Current",
+              "Forecast"
+            ],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Monday · Day 12 · 08:10 / Early morning",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 21,
+                "clientHeight": 21
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "The Dusty Quill → Upstairs guest room",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 29,
+                "clientHeight": 29
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Overcast, 12°C, light easterly wind",
+                "left": 135.296875,
+                "right": 506.5,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Rain likely this afternoon; clearing tonight",
+                "left": 533.5,
+                "right": 904.703125,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "",
+                "left": 0,
+                "right": 0,
+                "scrollWidth": 0,
+                "clientWidth": 0,
+                "scrollHeight": 0,
+                "clientHeight": 0
+              }
+            ]
+          },
+          {
+            "name": "rich-six-lines",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Monday · Day 12 · 08:10 / Early morning\nThe Dusty Quill → Upstairs guest room\nCURRENT\nOvercast, 12°C, light easterly wind\nFORECAST\nRain likely this afternoon; clearing tonight\n⏳ Elapsed: 8 hours · Relevant: Market day; north gate closes at sunset\n🔮 Ward: unstable · Teleportation: blocked",
+            "semanticText": "\nMonday · Day 12 · 08:10 / Early morningThe Dusty Quill → Upstairs guest roomCurrentOvercast, 12°C, light easterly windForecastRain likely this afternoon; clearing tonight⏳ Elapsed: 8 hours · Relevant: Market day; north gate closes at sunset\n🔮 Ward: unstable · Teleportation: blocked",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": false,
+            "labels": [
+              "Current",
+              "Forecast"
+            ],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Monday · Day 12 · 08:10 / Early morning",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 21,
+                "clientHeight": 21
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "The Dusty Quill → Upstairs guest room",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 29,
+                "clientHeight": 29
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Overcast, 12°C, light easterly wind",
+                "left": 135.296875,
+                "right": 506.5,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Rain likely this afternoon; clearing tonight",
+                "left": 533.5,
+                "right": 904.703125,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "⏳ Elapsed: 8 hours · Relevant: Market day; north gate closes at sunset\n🔮 Ward: unstable · Teleportation: blocked",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 61,
+                "clientHeight": 61
+              }
+            ]
+          },
+          {
+            "name": "long-location-and-forecast",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Monday · Day 12 · 08:10 / Early morning\nThe Old Observatory above the Northern Harbour → Eastern gallery overlooking the abandoned dry dock and the river mouth\nCURRENT\nOvercast, 12°C, light easterly wind\nFORECAST\nRain likely throughout the afternoon, with stronger coastal gusts after sunset; visibility may improve briefly before the next front reaches the harbour\n⏳ Elapsed: 3 hours · Relevant: Last ferry leaves after the evening bell\n⚠ Smoke thickening · Visibility: two metres; loose slate underfoot",
+            "semanticText": "\nMonday · Day 12 · 08:10 / Early morningThe Old Observatory above the Northern Harbour → Eastern gallery overlooking the abandoned dry dock and the river mouthCurrentOvercast, 12°C, light easterly windForecastRain likely throughout the afternoon, with stronger coastal gusts after sunset; visibility may improve briefly before the next front reaches the harbour⏳ Elapsed: 3 hours · Relevant: Last ferry leaves after the evening bell\n⚠ Smoke thickening · Visibility: two metres; loose slate underfoot",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": false,
+            "labels": [
+              "Current",
+              "Forecast"
+            ],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Monday · Day 12 · 08:10 / Early morning",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 21,
+                "clientHeight": 21
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "The Old Observatory above the Northern Harbour → Eastern gallery overlooking the abandoned dry dock and the river mouth",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 58,
+                "clientHeight": 58
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Overcast, 12°C, light easterly wind",
+                "left": 135.296875,
+                "right": 506.5,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Rain likely throughout the afternoon, with stronger coastal gusts after sunset; visibility may improve briefly before the next front reaches the harbour",
+                "left": 533.5,
+                "right": 904.703125,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 99,
+                "clientHeight": 99
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "⏳ Elapsed: 3 hours · Relevant: Last ferry leaves after the evening bell\n⚠ Smoke thickening · Visibility: two metres; loose slate underfoot",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 61,
+                "clientHeight": 61
+              }
+            ]
+          },
+          {
+            "name": "outlook-label",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Monday · Day 12 · 08:10 / Early morning\nThe Dusty Quill → Upstairs guest room\nCURRENT\nOvercast, 12°C, light easterly wind\nOUTLOOK\nA cold, dry evening; frost possible after midnight",
+            "semanticText": "\nMonday · Day 12 · 08:10 / Early morningThe Dusty Quill → Upstairs guest roomCurrentOvercast, 12°C, light easterly windOutlookA cold, dry evening; frost possible after midnight",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": true,
+            "labels": [
+              "Current",
+              "Outlook"
+            ],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Monday · Day 12 · 08:10 / Early morning",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 21,
+                "clientHeight": 21
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "The Dusty Quill → Upstairs guest room",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 29,
+                "clientHeight": 29
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Overcast, 12°C, light easterly wind",
+                "left": 135.296875,
+                "right": 506.5,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "A cold, dry evening; frost possible after midnight",
+                "left": 533.5,
+                "right": 904.703125,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 50,
+                "clientHeight": 50
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "",
+                "left": 0,
+                "right": 0,
+                "scrollWidth": 0,
+                "clientWidth": 0,
+                "scrollHeight": 0,
+                "clientHeight": 0
+              }
+            ]
+          },
+          {
+            "name": "no-weather-icons",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Monday · Day 12 · 08:10 / Early morning\nThe Dusty Quill → Upstairs guest room\nCURRENT\nEnclosed environment, stable pressure\nOUTLOOK\nN/A — enclosed environment",
+            "semanticText": "\nMonday · Day 12 · 08:10 / Early morningThe Dusty Quill → Upstairs guest roomCurrentEnclosed environment, stable pressureOutlookN/A — enclosed environment",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": true,
+            "labels": [
+              "Current",
+              "Outlook"
+            ],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Monday · Day 12 · 08:10 / Early morning",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 21,
+                "clientHeight": 21
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "The Dusty Quill → Upstairs guest room",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 29,
+                "clientHeight": 29
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Enclosed environment, stable pressure",
+                "left": 135.296875,
+                "right": 506.5,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "N/A — enclosed environment",
+                "left": 533.5,
+                "right": 904.703125,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "",
+                "left": 0,
+                "right": 0,
+                "scrollWidth": 0,
+                "clientWidth": 0,
+                "scrollHeight": 0,
+                "clientHeight": 0
+              }
+            ]
+          },
+          {
+            "name": "calendar-icon-variant",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Third Bell · Day 41 · 22:15 / Late evening\nThe Dusty Quill → Upstairs guest room\nCURRENT\nOvercast, 12°C, light easterly wind\nFORECAST\nRain likely this afternoon; clearing tonight",
+            "semanticText": "\nThird Bell · Day 41 · 22:15 / Late eveningThe Dusty Quill → Upstairs guest roomCurrentOvercast, 12°C, light easterly windForecastRain likely this afternoon; clearing tonight",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": true,
+            "labels": [
+              "Current",
+              "Forecast"
+            ],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Third Bell · Day 41 · 22:15 / Late evening",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 21,
+                "clientHeight": 21
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "The Dusty Quill → Upstairs guest room",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 29,
+                "clientHeight": 29
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Overcast, 12°C, light easterly wind",
+                "left": 135.296875,
+                "right": 506.5,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Rain likely this afternoon; clearing tonight",
+                "left": 533.5,
+                "right": 904.703125,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "",
+                "left": 0,
+                "right": 0,
+                "scrollWidth": 0,
+                "clientWidth": 0,
+                "scrollHeight": 0,
+                "clientHeight": 0
+              }
+            ]
+          },
+          {
+            "name": "empty-optional-lines",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Monday · Day 12 · 08:10 / Early morning\nThe Dusty Quill → Upstairs guest room\nCURRENT\nOvercast, 12°C, light easterly wind\nFORECAST\nRain likely this afternoon; clearing tonight",
+            "semanticText": "\nMonday · Day 12 · 08:10 / Early morningThe Dusty Quill → Upstairs guest roomCurrentOvercast, 12°C, light easterly windForecastRain likely this afternoon; clearing tonight",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": true,
+            "labels": [
+              "Current",
+              "Forecast"
+            ],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Monday · Day 12 · 08:10 / Early morning",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 21,
+                "clientHeight": 21
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "The Dusty Quill → Upstairs guest room",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 29,
+                "clientHeight": 29
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Overcast, 12°C, light easterly wind",
+                "left": 135.296875,
+                "right": 506.5,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Rain likely this afternoon; clearing tonight",
+                "left": 533.5,
+                "right": 904.703125,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "",
+                "left": 0,
+                "right": 0,
+                "scrollWidth": 0,
+                "clientWidth": 0,
+                "scrollHeight": 0,
+                "clientHeight": 0
+              }
+            ]
+          },
+          {
+            "name": "elapsed-only",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Monday · Day 12 · 08:10 / Early morning\nThe Dusty Quill → Upstairs guest room\nCURRENT\nOvercast, 12°C, light easterly wind\nFORECAST\nRain likely this afternoon; clearing tonight\n⏳ Elapsed: 45 minutes",
+            "semanticText": "\nMonday · Day 12 · 08:10 / Early morningThe Dusty Quill → Upstairs guest roomCurrentOvercast, 12°C, light easterly windForecastRain likely this afternoon; clearing tonight⏳ Elapsed: 45 minutes",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": false,
+            "labels": [
+              "Current",
+              "Forecast"
+            ],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Monday · Day 12 · 08:10 / Early morning",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 21,
+                "clientHeight": 21
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "The Dusty Quill → Upstairs guest room",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 29,
+                "clientHeight": 29
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Overcast, 12°C, light easterly wind",
+                "left": 135.296875,
+                "right": 506.5,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Rain likely this afternoon; clearing tonight",
+                "left": 533.5,
+                "right": 904.703125,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "⏳ Elapsed: 45 minutes",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 36,
+                "clientHeight": 36
+              }
+            ]
+          },
+          {
+            "name": "hazard-only",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Monday · Day 12 · 08:10 / Early morning\nThe Dusty Quill → Upstairs guest room\nCURRENT\nOvercast, 12°C, light easterly wind\nFORECAST\nRain likely this afternoon; clearing tonight\n⚠ Smoke thickening · Visibility: two metres",
+            "semanticText": "\nMonday · Day 12 · 08:10 / Early morningThe Dusty Quill → Upstairs guest roomCurrentOvercast, 12°C, light easterly windForecastRain likely this afternoon; clearing tonight⚠ Smoke thickening · Visibility: two metres",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": false,
+            "labels": [
+              "Current",
+              "Forecast"
+            ],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Monday · Day 12 · 08:10 / Early morning",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 21,
+                "clientHeight": 21
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "The Dusty Quill → Upstairs guest room",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 29,
+                "clientHeight": 29
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Overcast, 12°C, light easterly wind",
+                "left": 135.296875,
+                "right": 506.5,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Rain likely this afternoon; clearing tonight",
+                "left": 533.5,
+                "right": 904.703125,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "⚠ Smoke thickening · Visibility: two metres",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 36,
+                "clientHeight": 36
+              }
+            ]
+          },
+          {
+            "name": "magic-only",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Monday · Day 12 · 08:10 / Early morning\nThe Dusty Quill → Upstairs guest room\nCURRENT\nOvercast, 12°C, light easterly wind\nFORECAST\nRain likely this afternoon; clearing tonight\n🔮 Ward: unstable · Teleportation: blocked",
+            "semanticText": "\nMonday · Day 12 · 08:10 / Early morningThe Dusty Quill → Upstairs guest roomCurrentOvercast, 12°C, light easterly windForecastRain likely this afternoon; clearing tonight🔮 Ward: unstable · Teleportation: blocked",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": false,
+            "labels": [
+              "Current",
+              "Forecast"
+            ],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Monday · Day 12 · 08:10 / Early morning",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 21,
+                "clientHeight": 21
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "The Dusty Quill → Upstairs guest room",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 29,
+                "clientHeight": 29
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Overcast, 12°C, light easterly wind",
+                "left": 135.296875,
+                "right": 506.5,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Rain likely this afternoon; clearing tonight",
+                "left": 533.5,
+                "right": 904.703125,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "🔮 Ward: unstable · Teleportation: blocked",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 36,
+                "clientHeight": 36
+              }
+            ]
+          },
+          {
+            "name": "clock-only",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Monday · Day 12 · 08:10 / Early morning\nThe Dusty Quill → Upstairs guest room\nCURRENT\nOvercast, 12°C, light easterly wind\nFORECAST\nRain likely this afternoon; clearing tonight\n⏱ Gate seals in 02:15 · Paused",
+            "semanticText": "\nMonday · Day 12 · 08:10 / Early morningThe Dusty Quill → Upstairs guest roomCurrentOvercast, 12°C, light easterly windForecastRain likely this afternoon; clearing tonight⏱ Gate seals in 02:15 · Paused",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": false,
+            "labels": [
+              "Current",
+              "Forecast"
+            ],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Monday · Day 12 · 08:10 / Early morning",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 21,
+                "clientHeight": 21
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "The Dusty Quill → Upstairs guest room",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 29,
+                "clientHeight": 29
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Overcast, 12°C, light easterly wind",
+                "left": 135.296875,
+                "right": 506.5,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Rain likely this afternoon; clearing tonight",
+                "left": 533.5,
+                "right": 904.703125,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "⏱ Gate seals in 02:15 · Paused",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 36,
+                "clientHeight": 36
+              }
+            ]
+          },
+          {
+            "name": "hazard-and-clock",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Monday · Day 12 · 08:10 / Early morning\nThe Dusty Quill → Upstairs guest room\nCURRENT\nOvercast, 12°C, light easterly wind\nFORECAST\nRain likely this afternoon; clearing tonight\n⚠ Floodwater rising · Lower stair submerged\n⏱ Ferry departs in about ten minutes",
+            "semanticText": "\nMonday · Day 12 · 08:10 / Early morningThe Dusty Quill → Upstairs guest roomCurrentOvercast, 12°C, light easterly windForecastRain likely this afternoon; clearing tonight⚠ Floodwater rising · Lower stair submerged\n⏱ Ferry departs in about ten minutes",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": false,
+            "labels": [
+              "Current",
+              "Forecast"
+            ],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Monday · Day 12 · 08:10 / Early morning",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 21,
+                "clientHeight": 21
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "The Dusty Quill → Upstairs guest room",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 29,
+                "clientHeight": 29
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Overcast, 12°C, light easterly wind",
+                "left": 135.296875,
+                "right": 506.5,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Rain likely this afternoon; clearing tonight",
+                "left": 533.5,
+                "right": 904.703125,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "⚠ Floodwater rising · Lower stair submerged\n⏱ Ferry departs in about ten minutes",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 61,
+                "clientHeight": 61
+              }
+            ]
+          },
+          {
+            "name": "legacy-one-line",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Day 4 — Ruined bell tower · Storm breaking",
+            "semanticText": "\nDay 4 — Ruined bell tower · Storm breaking",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 1,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-legacy-text",
+                "text": "Day 4 — Ruined bell tower · Storm breaking",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 28,
+                "clientHeight": 28
+              }
+            ]
+          },
+          {
+            "name": "noncanonical-three-lines",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Evening, ninth day\nOld mill beside the eastern bridge\nDry inside; the river is rising outside",
+            "semanticText": "\nEvening, ninth day\nOld mill beside the eastern bridge\nDry inside; the river is rising outside",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 1,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-legacy-text",
+                "text": "Evening, ninth day\nOld mill beside the eastern bridge\nDry inside; the river is rising outside",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 83,
+                "clientHeight": 83
+              }
+            ]
+          },
+          {
+            "name": "multiple-headers-one-reply",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Opening narration.\n\nMonday · Day 12 · 08:10 / Early morning\nThe Dusty Quill → Upstairs guest room\nCURRENT\nOvercast, 12°C, light easterly wind\nFORECAST\nRain likely this afternoon; clearing tonight\n\nFirst scene continues here.\n\nMonday · Day 12 · 14:10 / Afternoon\nHarbour market → Ferry landing\nCURRENT\nOvercast, 12°C, light easterly wind\nFORECAST\nRain likely this afternoon; clearing tonight\n⏳ Elapsed: 6 hours\n\nSecond scene continues here.",
+            "semanticText": "Opening narration.\n\nMonday · Day 12 · 08:10 / Early morningThe Dusty Quill → Upstairs guest roomCurrentOvercast, 12°C, light easterly windForecastRain likely this afternoon; clearing tonight\nFirst scene continues here.\n\nMonday · Day 12 · 14:10 / AfternoonHarbour market → Ferry landingCurrentOvercast, 12°C, light easterly windForecastRain likely this afternoon; clearing tonight⏳ Elapsed: 6 hours\nSecond scene continues here.",
+            "cardCount": 2,
+            "newCardCount": 2,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": true,
+            "labels": [
+              "Current",
+              "Forecast",
+              "Current",
+              "Forecast"
+            ],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Monday · Day 12 · 08:10 / Early morning",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 21,
+                "clientHeight": 21
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "The Dusty Quill → Upstairs guest room",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 29,
+                "clientHeight": 29
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Overcast, 12°C, light easterly wind",
+                "left": 135.296875,
+                "right": 506.5,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Rain likely this afternoon; clearing tonight",
+                "left": 533.5,
+                "right": 904.703125,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "",
+                "left": 0,
+                "right": 0,
+                "scrollWidth": 0,
+                "clientWidth": 0,
+                "scrollHeight": 0,
+                "clientHeight": 0
+              },
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Monday · Day 12 · 14:10 / Afternoon",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 21,
+                "clientHeight": 21
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "Harbour market → Ferry landing",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 29,
+                "clientHeight": 29
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Overcast, 12°C, light easterly wind",
+                "left": 135.296875,
+                "right": 506.5,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Rain likely this afternoon; clearing tonight",
+                "left": 533.5,
+                "right": 904.703125,
+                "scrollWidth": 371,
+                "clientWidth": 371,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "⏳ Elapsed: 6 hours",
+                "left": 135.296875,
+                "right": 904.703125,
+                "scrollWidth": 769,
+                "clientWidth": 769,
+                "scrollHeight": 36,
+                "clientHeight": 36
+              }
+            ]
+          },
+          {
+            "name": "protected-code-fence",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "<style>.pk-h{display:block;margin:1.15em 0 .45em;padding-bottom:.28em;font-size:.7em;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pk-accent,#8a8a96);border-bottom:1px solid rgba(140,140,155,.18)}.pk-h:first-child{margin-top:0}.pk-r{display:grid;grid-template-columns:minmax(5.5em,auto) 1fr;gap:.1em .9em;margin:.28em 0;line-height:1.55;align-items:baseline}.pk-r>i{font-style:normal;font-size:.82em;font-weight:600;letter-spacing:.03em;text-transform:uppercase;opacity:.45;text-align:right;white-space:nowrap}.pk-r>.pk-rv{display:block;grid-column:2;min-width:0;max-width:100%;overflow-wrap:anywhere;word-break:normal}.pk-v0,.pk-v0 q{color:#9E9E9E}.pk-v1,.pk-v1 q{color:#56B4E9}.pk-v2,.pk-v2 q{color:#E69F00}.pk-v3,.pk-v3 q{color:#009E73}.pk-v4,.pk-v4 q{color:#CC79A7}.pk-v5,.pk-v5 q{color:#D55E00}.pk-v6,.pk-v6 q{color:#F0E442}.pk-v7,.pk-v7 q{color:#B39DDB}.pk-v8,.pk-v8 q{color:#80CBC4}.pk-v9,.pk-v9 q{color:#FF8A80}.pk-v10,.pk-v10 q{color:#A5D6A7}.pk-v11,.pk-v11 q{color:#FFD180}.pk-v12,.pk-v12 q{color:#9FA8DA}.pk-v13,.pk-v13 q{color:#F48FB1}.pk-v14,.pk-v14 q{color:#BCAAA4}.pk-v15,.pk-v15 q{color:#4DD0E1}.pk-v16,.pk-v16 q{color:#DCE775}.pk-o{display:inline-block;margin-right:.45em;font-size:.72em;line-height:1;vertical-align:.14em;text-shadow:0 0 6px currentColor}@media(max-width:640px){.pk-r{grid-template-columns:1fr;gap:0}.pk-r>i{text-align:left;opacity:.4;margin-top:.35em}.pk-r>.pk-rv{grid-column:1}}.nemo-scene-card{box-sizing:border-box;display:block;position:relative;margin:1.65em 0 1.3em;padding:1.2em 1.35em 1.1em;border:1px solid rgba(173,159,206,.22);border-radius:14px;background:linear-gradient(135deg,rgba(147,115,195,.10),rgba(100,118,162,.035) 70%);color:inherit;line-height:1.55;letter-spacing:normal;text-transform:none;overflow-wrap:anywhere;word-break:normal;min-width:0;max-width:100%;isolation:isolate}.nemo-scene-card::before{content:\"\";position:absolute;top:1.3em;bottom:1.3em;left:0;width:3px;border-radius:0 3px 3px 0;background:var(--pk-accent,#b49bd9);opacity:.7}.nemo-scene-card .nemo-scene-date{display:block;font-size:.74em;font-weight:600;letter-spacing:.065em;color:inherit;opacity:.67;line-height:1.6;margin:0 0 .4em;white-space:normal}.nemo-scene-card .nemo-scene-place{display:block;margin:0;font-size:1.15em;font-weight:700;line-height:1.4;color:inherit;letter-spacing:.005em;white-space:normal;text-wrap:pretty}.nemo-scene-card .nemo-scene-conditions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:.65em 1.5em;margin:1em 0 0;padding-top:.85em;border-top:1px solid rgba(173,159,206,.17);min-width:0}.nemo-scene-card .nemo-scene-condition{display:block;min-width:0}.nemo-scene-card .nemo-scene-label{display:block;font-size:.64em;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.55;line-height:1.6;margin-bottom:.2em}.nemo-scene-card .nemo-scene-value{display:block;font-size:.86em;line-height:1.6;white-space:normal}.nemo-scene-card .nemo-scene-context{display:block;white-space:pre-line;margin-top:.9em;padding-top:.75em;border-top:1px solid rgba(173,159,206,.17);font-size:.8em;line-height:1.75;opacity:.78}.nemo-scene-card .nemo-scene-context:empty{display:none}.nemo-scene-card .nemo-scene-legacy-text{white-space:pre-line;font-size:.88em;line-height:1.75}.nemo-scene-card p{margin:0}.nemo-scene-card p+p{margin-top:.35em}@media(max-width:640px){.nemo-scene-card{margin:1.3em 0 1.1em;padding:1em 1.05em .95em;border-radius:11px}.nemo-scene-card::before{top:1.1em;bottom:1.1em}.nemo-scene-card .nemo-scene-place{font-size:1.08em}.nemo-scene-card .nemo-scene-conditions{grid-template-columns:minmax(0,1fr);gap:.75em}.nemo-scene-card .nemo-scene-date{font-size:.72em;letter-spacing:.035em}.nemo-scene-card .nemo-scene-context{font-size:.8em}}</style><section class=\"nemo-scene-card\"><div class=\"nemo-scene-date\">Monday · Day 12 · 08:10 / Early morning</div><div class=\"nemo-scene-place\">The Dusty Quill → Upstairs guest room</div><div class=\"nemo-scene-conditions\"><div class=\"nemo-scene-condition\"><span class=\"nemo-scene-label\">Current</span><span class=\"nemo-scene-value\">Overcast, 12°C, light easterly wind</span></div><div class=\"nemo-scene-condition\"><span class=\"nemo-scene-label\">Forecast</span><span class=\"nemo-scene-value\">Rain likely this afternoon; clearing tonight</span></div></div><div class=\"nemo-scene-context\"></div></section>\n",
+            "semanticText": "<style>.pk-h{display:block;margin:1.15em 0 .45em;padding-bottom:.28em;font-size:.7em;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pk-accent,#8a8a96);border-bottom:1px solid rgba(140,140,155,.18)}.pk-h:first-child{margin-top:0}.pk-r{display:grid;grid-template-columns:minmax(5.5em,auto) 1fr;gap:.1em .9em;margin:.28em 0;line-height:1.55;align-items:baseline}.pk-r>i{font-style:normal;font-size:.82em;font-weight:600;letter-spacing:.03em;text-transform:uppercase;opacity:.45;text-align:right;white-space:nowrap}.pk-r>.pk-rv{display:block;grid-column:2;min-width:0;max-width:100%;overflow-wrap:anywhere;word-break:normal}.pk-v0,.pk-v0 q{color:#9E9E9E}.pk-v1,.pk-v1 q{color:#56B4E9}.pk-v2,.pk-v2 q{color:#E69F00}.pk-v3,.pk-v3 q{color:#009E73}.pk-v4,.pk-v4 q{color:#CC79A7}.pk-v5,.pk-v5 q{color:#D55E00}.pk-v6,.pk-v6 q{color:#F0E442}.pk-v7,.pk-v7 q{color:#B39DDB}.pk-v8,.pk-v8 q{color:#80CBC4}.pk-v9,.pk-v9 q{color:#FF8A80}.pk-v10,.pk-v10 q{color:#A5D6A7}.pk-v11,.pk-v11 q{color:#FFD180}.pk-v12,.pk-v12 q{color:#9FA8DA}.pk-v13,.pk-v13 q{color:#F48FB1}.pk-v14,.pk-v14 q{color:#BCAAA4}.pk-v15,.pk-v15 q{color:#4DD0E1}.pk-v16,.pk-v16 q{color:#DCE775}.pk-o{display:inline-block;margin-right:.45em;font-size:.72em;line-height:1;vertical-align:.14em;text-shadow:0 0 6px currentColor}@media(max-width:640px){.pk-r{grid-template-columns:1fr;gap:0}.pk-r>i{text-align:left;opacity:.4;margin-top:.35em}.pk-r>.pk-rv{grid-column:1}}.nemo-scene-card{box-sizing:border-box;display:block;position:relative;margin:1.65em 0 1.3em;padding:1.2em 1.35em 1.1em;border:1px solid rgba(173,159,206,.22);border-radius:14px;background:linear-gradient(135deg,rgba(147,115,195,.10),rgba(100,118,162,.035) 70%);color:inherit;line-height:1.55;letter-spacing:normal;text-transform:none;overflow-wrap:anywhere;word-break:normal;min-width:0;max-width:100%;isolation:isolate}.nemo-scene-card::before{content:\"\";position:absolute;top:1.3em;bottom:1.3em;left:0;width:3px;border-radius:0 3px 3px 0;background:var(--pk-accent,#b49bd9);opacity:.7}.nemo-scene-card .nemo-scene-date{display:block;font-size:.74em;font-weight:600;letter-spacing:.065em;color:inherit;opacity:.67;line-height:1.6;margin:0 0 .4em;white-space:normal}.nemo-scene-card .nemo-scene-place{display:block;margin:0;font-size:1.15em;font-weight:700;line-height:1.4;color:inherit;letter-spacing:.005em;white-space:normal;text-wrap:pretty}.nemo-scene-card .nemo-scene-conditions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:.65em 1.5em;margin:1em 0 0;padding-top:.85em;border-top:1px solid rgba(173,159,206,.17);min-width:0}.nemo-scene-card .nemo-scene-condition{display:block;min-width:0}.nemo-scene-card .nemo-scene-label{display:block;font-size:.64em;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.55;line-height:1.6;margin-bottom:.2em}.nemo-scene-card .nemo-scene-value{display:block;font-size:.86em;line-height:1.6;white-space:normal}.nemo-scene-card .nemo-scene-context{display:block;white-space:pre-line;margin-top:.9em;padding-top:.75em;border-top:1px solid rgba(173,159,206,.17);font-size:.8em;line-height:1.75;opacity:.78}.nemo-scene-card .nemo-scene-context:empty{display:none}.nemo-scene-card .nemo-scene-legacy-text{white-space:pre-line;font-size:.88em;line-height:1.75}.nemo-scene-card p{margin:0}.nemo-scene-card p+p{margin-top:.35em}@media(max-width:640px){.nemo-scene-card{margin:1.3em 0 1.1em;padding:1em 1.05em .95em;border-radius:11px}.nemo-scene-card::before{top:1.1em;bottom:1.1em}.nemo-scene-card .nemo-scene-place{font-size:1.08em}.nemo-scene-card .nemo-scene-conditions{grid-template-columns:minmax(0,1fr);gap:.75em}.nemo-scene-card .nemo-scene-date{font-size:.72em;letter-spacing:.035em}.nemo-scene-card .nemo-scene-context{font-size:.8em}}</style><section class=\"nemo-scene-card\"><div class=\"nemo-scene-date\">Monday · Day 12 · 08:10 / Early morning</div><div class=\"nemo-scene-place\">The Dusty Quill → Upstairs guest room</div><div class=\"nemo-scene-conditions\"><div class=\"nemo-scene-condition\"><span class=\"nemo-scene-label\">Current</span><span class=\"nemo-scene-value\">Overcast, 12°C, light easterly wind</span></div><div class=\"nemo-scene-condition\"><span class=\"nemo-scene-label\">Forecast</span><span class=\"nemo-scene-value\">Rain likely this afternoon; clearing tonight</span></div></div><div class=\"nemo-scene-context\"></div></section>\n",
+            "cardCount": 0,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 1,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "protected-double-ticks",
+            "width": 1040,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "<style>.pk-h{display:block;margin:1.15em 0 .45em;padding-bottom:.28em;font-size:.7em;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pk-accent,#8a8a96);border-bottom:1px solid rgba(140,140,155,.18)}.pk-h:first-child{margin-top:0}.pk-r{display:grid;grid-template-columns:minmax(5.5em,auto) 1fr;gap:.1em .9em;margin:.28em 0;line-height:1.55;align-items:baseline}.pk-r>i{font-style:normal;font-size:.82em;font-weight:600;letter-spacing:.03em;text-transform:uppercase;opacity:.45;text-align:right;white-space:nowrap}.pk-r>.pk-rv{display:block;grid-column:2;min-width:0;max-width:100%;overflow-wrap:anywhere;word-break:normal}.pk-v0,.pk-v0 q{color:#9E9E9E}.pk-v1,.pk-v1 q{color:#56B4E9}.pk-v2,.pk-v2 q{color:#E69F00}.pk-v3,.pk-v3 q{color:#009E73}.pk-v4,.pk-v4 q{color:#CC79A7}.pk-v5,.pk-v5 q{color:#D55E00}.pk-v6,.pk-v6 q{color:#F0E442}.pk-v7,.pk-v7 q{color:#B39DDB}.pk-v8,.pk-v8 q{color:#80CBC4}.pk-v9,.pk-v9 q{color:#FF8A80}.pk-v10,.pk-v10 q{color:#A5D6A7}.pk-v11,.pk-v11 q{color:#FFD180}.pk-v12,.pk-v12 q{color:#9FA8DA}.pk-v13,.pk-v13 q{color:#F48FB1}.pk-v14,.pk-v14 q{color:#BCAAA4}.pk-v15,.pk-v15 q{color:#4DD0E1}.pk-v16,.pk-v16 q{color:#DCE775}.pk-o{display:inline-block;margin-right:.45em;font-size:.72em;line-height:1;vertical-align:.14em;text-shadow:0 0 6px currentColor}@media(max-width:640px){.pk-r{grid-template-columns:1fr;gap:0}.pk-r>i{text-align:left;opacity:.4;margin-top:.35em}.pk-r>.pk-rv{grid-column:1}}.nemo-scene-card{box-sizing:border-box;display:block;position:relative;margin:1.65em 0 1.3em;padding:1.2em 1.35em 1.1em;border:1px solid rgba(173,159,206,.22);border-radius:14px;background:linear-gradient(135deg,rgba(147,115,195,.10),rgba(100,118,162,.035) 70%);color:inherit;line-height:1.55;letter-spacing:normal;text-transform:none;overflow-wrap:anywhere;word-break:normal;min-width:0;max-width:100%;isolation:isolate}.nemo-scene-card::before{content:\"\";position:absolute;top:1.3em;bottom:1.3em;left:0;width:3px;border-radius:0 3px 3px 0;background:var(--pk-accent,#b49bd9);opacity:.7}.nemo-scene-card .nemo-scene-date{display:block;font-size:.74em;font-weight:600;letter-spacing:.065em;color:inherit;opacity:.67;line-height:1.6;margin:0 0 .4em;white-space:normal}.nemo-scene-card .nemo-scene-place{display:block;margin:0;font-size:1.15em;font-weight:700;line-height:1.4;color:inherit;letter-spacing:.005em;white-space:normal;text-wrap:pretty}.nemo-scene-card .nemo-scene-conditions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:.65em 1.5em;margin:1em 0 0;padding-top:.85em;border-top:1px solid rgba(173,159,206,.17);min-width:0}.nemo-scene-card .nemo-scene-condition{display:block;min-width:0}.nemo-scene-card .nemo-scene-label{display:block;font-size:.64em;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.55;line-height:1.6;margin-bottom:.2em}.nemo-scene-card .nemo-scene-value{display:block;font-size:.86em;line-height:1.6;white-space:normal}.nemo-scene-card .nemo-scene-context{display:block;white-space:pre-line;margin-top:.9em;padding-top:.75em;border-top:1px solid rgba(173,159,206,.17);font-size:.8em;line-height:1.75;opacity:.78}.nemo-scene-card .nemo-scene-context:empty{display:none}.nemo-scene-card .nemo-scene-legacy-text{white-space:pre-line;font-size:.88em;line-height:1.75}.nemo-scene-card p{margin:0}.nemo-scene-card p+p{margin-top:.35em}@media(max-width:640px){.nemo-scene-card{margin:1.3em 0 1.1em;padding:1em 1.05em .95em;border-radius:11px}.nemo-scene-card::before{top:1.1em;bottom:1.1em}.nemo-scene-card .nemo-scene-place{font-size:1.08em}.nemo-scene-card .nemo-scene-conditions{grid-template-columns:minmax(0,1fr);gap:.75em}.nemo-scene-card .nemo-scene-date{font-size:.72em;letter-spacing:.035em}.nemo-scene-card .nemo-scene-context{font-size:.8em}}</style><section class=\"nemo-scene-card nemo-scene-legacy\"><div class=\"nemo-scene-legacy-text\"> 📅 Monday · Day 12 · 08:10 / Early morning 📍 The Dusty Quill → Upstairs guest room 🌤 Current: Overcast, 12°C, light easterly wind 🌦 Forecast: Rain likely this afternoon; clearing tonight </div></section>",
+            "semanticText": "<style>.pk-h{display:block;margin:1.15em 0 .45em;padding-bottom:.28em;font-size:.7em;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pk-accent,#8a8a96);border-bottom:1px solid rgba(140,140,155,.18)}.pk-h:first-child{margin-top:0}.pk-r{display:grid;grid-template-columns:minmax(5.5em,auto) 1fr;gap:.1em .9em;margin:.28em 0;line-height:1.55;align-items:baseline}.pk-r>i{font-style:normal;font-size:.82em;font-weight:600;letter-spacing:.03em;text-transform:uppercase;opacity:.45;text-align:right;white-space:nowrap}.pk-r>.pk-rv{display:block;grid-column:2;min-width:0;max-width:100%;overflow-wrap:anywhere;word-break:normal}.pk-v0,.pk-v0 q{color:#9E9E9E}.pk-v1,.pk-v1 q{color:#56B4E9}.pk-v2,.pk-v2 q{color:#E69F00}.pk-v3,.pk-v3 q{color:#009E73}.pk-v4,.pk-v4 q{color:#CC79A7}.pk-v5,.pk-v5 q{color:#D55E00}.pk-v6,.pk-v6 q{color:#F0E442}.pk-v7,.pk-v7 q{color:#B39DDB}.pk-v8,.pk-v8 q{color:#80CBC4}.pk-v9,.pk-v9 q{color:#FF8A80}.pk-v10,.pk-v10 q{color:#A5D6A7}.pk-v11,.pk-v11 q{color:#FFD180}.pk-v12,.pk-v12 q{color:#9FA8DA}.pk-v13,.pk-v13 q{color:#F48FB1}.pk-v14,.pk-v14 q{color:#BCAAA4}.pk-v15,.pk-v15 q{color:#4DD0E1}.pk-v16,.pk-v16 q{color:#DCE775}.pk-o{display:inline-block;margin-right:.45em;font-size:.72em;line-height:1;vertical-align:.14em;text-shadow:0 0 6px currentColor}@media(max-width:640px){.pk-r{grid-template-columns:1fr;gap:0}.pk-r>i{text-align:left;opacity:.4;margin-top:.35em}.pk-r>.pk-rv{grid-column:1}}.nemo-scene-card{box-sizing:border-box;display:block;position:relative;margin:1.65em 0 1.3em;padding:1.2em 1.35em 1.1em;border:1px solid rgba(173,159,206,.22);border-radius:14px;background:linear-gradient(135deg,rgba(147,115,195,.10),rgba(100,118,162,.035) 70%);color:inherit;line-height:1.55;letter-spacing:normal;text-transform:none;overflow-wrap:anywhere;word-break:normal;min-width:0;max-width:100%;isolation:isolate}.nemo-scene-card::before{content:\"\";position:absolute;top:1.3em;bottom:1.3em;left:0;width:3px;border-radius:0 3px 3px 0;background:var(--pk-accent,#b49bd9);opacity:.7}.nemo-scene-card .nemo-scene-date{display:block;font-size:.74em;font-weight:600;letter-spacing:.065em;color:inherit;opacity:.67;line-height:1.6;margin:0 0 .4em;white-space:normal}.nemo-scene-card .nemo-scene-place{display:block;margin:0;font-size:1.15em;font-weight:700;line-height:1.4;color:inherit;letter-spacing:.005em;white-space:normal;text-wrap:pretty}.nemo-scene-card .nemo-scene-conditions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:.65em 1.5em;margin:1em 0 0;padding-top:.85em;border-top:1px solid rgba(173,159,206,.17);min-width:0}.nemo-scene-card .nemo-scene-condition{display:block;min-width:0}.nemo-scene-card .nemo-scene-label{display:block;font-size:.64em;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.55;line-height:1.6;margin-bottom:.2em}.nemo-scene-card .nemo-scene-value{display:block;font-size:.86em;line-height:1.6;white-space:normal}.nemo-scene-card .nemo-scene-context{display:block;white-space:pre-line;margin-top:.9em;padding-top:.75em;border-top:1px solid rgba(173,159,206,.17);font-size:.8em;line-height:1.75;opacity:.78}.nemo-scene-card .nemo-scene-context:empty{display:none}.nemo-scene-card .nemo-scene-legacy-text{white-space:pre-line;font-size:.88em;line-height:1.75}.nemo-scene-card p{margin:0}.nemo-scene-card p+p{margin-top:.35em}@media(max-width:640px){.nemo-scene-card{margin:1.3em 0 1.1em;padding:1em 1.05em .95em;border-radius:11px}.nemo-scene-card::before{top:1.1em;bottom:1.1em}.nemo-scene-card .nemo-scene-place{font-size:1.08em}.nemo-scene-card .nemo-scene-conditions{grid-template-columns:minmax(0,1fr);gap:.75em}.nemo-scene-card .nemo-scene-date{font-size:.72em;letter-spacing:.035em}.nemo-scene-card .nemo-scene-context{font-size:.8em}}</style><section class=\"nemo-scene-card nemo-scene-legacy\"><div class=\"nemo-scene-legacy-text\"> 📅 Monday · Day 12 · 08:10 / Early morning 📍 The Dusty Quill → Upstairs guest room 🌤 Current: Overcast, 12°C, light easterly wind 🌦 Forecast: Rain likely this afternoon; clearing tonight </div></section>",
+            "cardCount": 0,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 1,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": false,
+            "fieldBounds": []
+          },
+          {
+            "name": "canonical-four-lines",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Monday · Day 12 · 08:10 / Early morning\nThe Dusty Quill → Upstairs guest room\nCURRENT\nOvercast, 12°C, light easterly wind\nFORECAST\nRain likely this afternoon; clearing tonight",
+            "semanticText": "\nMonday · Day 12 · 08:10 / Early morningThe Dusty Quill → Upstairs guest roomCurrentOvercast, 12°C, light easterly windForecastRain likely this afternoon; clearing tonight",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": true,
+            "labels": [
+              "Current",
+              "Forecast"
+            ],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Monday · Day 12 · 08:10 / Early morning",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 41,
+                "clientHeight": 41
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "The Dusty Quill → Upstairs guest room",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 54,
+                "clientHeight": 54
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Overcast, 12°C, light easterly wind",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Rain likely this afternoon; clearing tonight",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 50,
+                "clientHeight": 50
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "",
+                "left": 0,
+                "right": 0,
+                "scrollWidth": 0,
+                "clientWidth": 0,
+                "scrollHeight": 0,
+                "clientHeight": 0
+              }
+            ]
+          },
+          {
+            "name": "rich-six-lines",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Monday · Day 12 · 08:10 / Early morning\nThe Dusty Quill → Upstairs guest room\nCURRENT\nOvercast, 12°C, light easterly wind\nFORECAST\nRain likely this afternoon; clearing tonight\n⏳ Elapsed: 8 hours · Relevant: Market day; north gate closes at sunset\n🔮 Ward: unstable · Teleportation: blocked",
+            "semanticText": "\nMonday · Day 12 · 08:10 / Early morningThe Dusty Quill → Upstairs guest roomCurrentOvercast, 12°C, light easterly windForecastRain likely this afternoon; clearing tonight⏳ Elapsed: 8 hours · Relevant: Market day; north gate closes at sunset\n🔮 Ward: unstable · Teleportation: blocked",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": false,
+            "labels": [
+              "Current",
+              "Forecast"
+            ],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Monday · Day 12 · 08:10 / Early morning",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 41,
+                "clientHeight": 41
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "The Dusty Quill → Upstairs guest room",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 54,
+                "clientHeight": 54
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Overcast, 12°C, light easterly wind",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Rain likely this afternoon; clearing tonight",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 50,
+                "clientHeight": 50
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "⏳ Elapsed: 8 hours · Relevant: Market day; north gate closes at sunset\n🔮 Ward: unstable · Teleportation: blocked",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 86,
+                "clientHeight": 86
+              }
+            ]
+          },
+          {
+            "name": "long-location-and-forecast",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Monday · Day 12 · 08:10 / Early morning\nThe Old Observatory above the Northern Harbour → Eastern gallery overlooking the abandoned dry dock and the river mouth\nCURRENT\nOvercast, 12°C, light easterly wind\nFORECAST\nRain likely throughout the afternoon, with stronger coastal gusts after sunset; visibility may improve briefly before the next front reaches the harbour\n⏳ Elapsed: 3 hours · Relevant: Last ferry leaves after the evening bell\n⚠ Smoke thickening · Visibility: two metres; loose slate underfoot",
+            "semanticText": "\nMonday · Day 12 · 08:10 / Early morningThe Old Observatory above the Northern Harbour → Eastern gallery overlooking the abandoned dry dock and the river mouthCurrentOvercast, 12°C, light easterly windForecastRain likely throughout the afternoon, with stronger coastal gusts after sunset; visibility may improve briefly before the next front reaches the harbour⏳ Elapsed: 3 hours · Relevant: Last ferry leaves after the evening bell\n⚠ Smoke thickening · Visibility: two metres; loose slate underfoot",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": false,
+            "labels": [
+              "Current",
+              "Forecast"
+            ],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Monday · Day 12 · 08:10 / Early morning",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 41,
+                "clientHeight": 41
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "The Old Observatory above the Northern Harbour → Eastern gallery overlooking the abandoned dry dock and the river mouth",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 163,
+                "clientHeight": 163
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Overcast, 12°C, light easterly wind",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Rain likely throughout the afternoon, with stronger coastal gusts after sunset; visibility may improve briefly before the next front reaches the harbour",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 124,
+                "clientHeight": 124
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "⏳ Elapsed: 3 hours · Relevant: Last ferry leaves after the evening bell\n⚠ Smoke thickening · Visibility: two metres; loose slate underfoot",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 112,
+                "clientHeight": 112
+              }
+            ]
+          },
+          {
+            "name": "outlook-label",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Monday · Day 12 · 08:10 / Early morning\nThe Dusty Quill → Upstairs guest room\nCURRENT\nOvercast, 12°C, light easterly wind\nOUTLOOK\nA cold, dry evening; frost possible after midnight",
+            "semanticText": "\nMonday · Day 12 · 08:10 / Early morningThe Dusty Quill → Upstairs guest roomCurrentOvercast, 12°C, light easterly windOutlookA cold, dry evening; frost possible after midnight",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": true,
+            "labels": [
+              "Current",
+              "Outlook"
+            ],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Monday · Day 12 · 08:10 / Early morning",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 41,
+                "clientHeight": 41
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "The Dusty Quill → Upstairs guest room",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 54,
+                "clientHeight": 54
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Overcast, 12°C, light easterly wind",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "A cold, dry evening; frost possible after midnight",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 50,
+                "clientHeight": 50
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "",
+                "left": 0,
+                "right": 0,
+                "scrollWidth": 0,
+                "clientWidth": 0,
+                "scrollHeight": 0,
+                "clientHeight": 0
+              }
+            ]
+          },
+          {
+            "name": "no-weather-icons",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Monday · Day 12 · 08:10 / Early morning\nThe Dusty Quill → Upstairs guest room\nCURRENT\nEnclosed environment, stable pressure\nOUTLOOK\nN/A — enclosed environment",
+            "semanticText": "\nMonday · Day 12 · 08:10 / Early morningThe Dusty Quill → Upstairs guest roomCurrentEnclosed environment, stable pressureOutlookN/A — enclosed environment",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": true,
+            "labels": [
+              "Current",
+              "Outlook"
+            ],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Monday · Day 12 · 08:10 / Early morning",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 41,
+                "clientHeight": 41
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "The Dusty Quill → Upstairs guest room",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 54,
+                "clientHeight": 54
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Enclosed environment, stable pressure",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 50,
+                "clientHeight": 50
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "N/A — enclosed environment",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "",
+                "left": 0,
+                "right": 0,
+                "scrollWidth": 0,
+                "clientWidth": 0,
+                "scrollHeight": 0,
+                "clientHeight": 0
+              }
+            ]
+          },
+          {
+            "name": "calendar-icon-variant",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Third Bell · Day 41 · 22:15 / Late evening\nThe Dusty Quill → Upstairs guest room\nCURRENT\nOvercast, 12°C, light easterly wind\nFORECAST\nRain likely this afternoon; clearing tonight",
+            "semanticText": "\nThird Bell · Day 41 · 22:15 / Late eveningThe Dusty Quill → Upstairs guest roomCurrentOvercast, 12°C, light easterly windForecastRain likely this afternoon; clearing tonight",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": true,
+            "labels": [
+              "Current",
+              "Forecast"
+            ],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Third Bell · Day 41 · 22:15 / Late evening",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 41,
+                "clientHeight": 41
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "The Dusty Quill → Upstairs guest room",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 54,
+                "clientHeight": 54
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Overcast, 12°C, light easterly wind",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Rain likely this afternoon; clearing tonight",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 50,
+                "clientHeight": 50
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "",
+                "left": 0,
+                "right": 0,
+                "scrollWidth": 0,
+                "clientWidth": 0,
+                "scrollHeight": 0,
+                "clientHeight": 0
+              }
+            ]
+          },
+          {
+            "name": "empty-optional-lines",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Monday · Day 12 · 08:10 / Early morning\nThe Dusty Quill → Upstairs guest room\nCURRENT\nOvercast, 12°C, light easterly wind\nFORECAST\nRain likely this afternoon; clearing tonight",
+            "semanticText": "\nMonday · Day 12 · 08:10 / Early morningThe Dusty Quill → Upstairs guest roomCurrentOvercast, 12°C, light easterly windForecastRain likely this afternoon; clearing tonight",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": true,
+            "labels": [
+              "Current",
+              "Forecast"
+            ],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Monday · Day 12 · 08:10 / Early morning",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 41,
+                "clientHeight": 41
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "The Dusty Quill → Upstairs guest room",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 54,
+                "clientHeight": 54
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Overcast, 12°C, light easterly wind",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Rain likely this afternoon; clearing tonight",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 50,
+                "clientHeight": 50
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "",
+                "left": 0,
+                "right": 0,
+                "scrollWidth": 0,
+                "clientWidth": 0,
+                "scrollHeight": 0,
+                "clientHeight": 0
+              }
+            ]
+          },
+          {
+            "name": "elapsed-only",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Monday · Day 12 · 08:10 / Early morning\nThe Dusty Quill → Upstairs guest room\nCURRENT\nOvercast, 12°C, light easterly wind\nFORECAST\nRain likely this afternoon; clearing tonight\n⏳ Elapsed: 45 minutes",
+            "semanticText": "\nMonday · Day 12 · 08:10 / Early morningThe Dusty Quill → Upstairs guest roomCurrentOvercast, 12°C, light easterly windForecastRain likely this afternoon; clearing tonight⏳ Elapsed: 45 minutes",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": false,
+            "labels": [
+              "Current",
+              "Forecast"
+            ],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Monday · Day 12 · 08:10 / Early morning",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 41,
+                "clientHeight": 41
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "The Dusty Quill → Upstairs guest room",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 54,
+                "clientHeight": 54
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Overcast, 12°C, light easterly wind",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Rain likely this afternoon; clearing tonight",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 50,
+                "clientHeight": 50
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "⏳ Elapsed: 45 minutes",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 36,
+                "clientHeight": 36
+              }
+            ]
+          },
+          {
+            "name": "hazard-only",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Monday · Day 12 · 08:10 / Early morning\nThe Dusty Quill → Upstairs guest room\nCURRENT\nOvercast, 12°C, light easterly wind\nFORECAST\nRain likely this afternoon; clearing tonight\n⚠ Smoke thickening · Visibility: two metres",
+            "semanticText": "\nMonday · Day 12 · 08:10 / Early morningThe Dusty Quill → Upstairs guest roomCurrentOvercast, 12°C, light easterly windForecastRain likely this afternoon; clearing tonight⚠ Smoke thickening · Visibility: two metres",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": false,
+            "labels": [
+              "Current",
+              "Forecast"
+            ],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Monday · Day 12 · 08:10 / Early morning",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 41,
+                "clientHeight": 41
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "The Dusty Quill → Upstairs guest room",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 54,
+                "clientHeight": 54
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Overcast, 12°C, light easterly wind",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Rain likely this afternoon; clearing tonight",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 50,
+                "clientHeight": 50
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "⚠ Smoke thickening · Visibility: two metres",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 61,
+                "clientHeight": 61
+              }
+            ]
+          },
+          {
+            "name": "magic-only",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Monday · Day 12 · 08:10 / Early morning\nThe Dusty Quill → Upstairs guest room\nCURRENT\nOvercast, 12°C, light easterly wind\nFORECAST\nRain likely this afternoon; clearing tonight\n🔮 Ward: unstable · Teleportation: blocked",
+            "semanticText": "\nMonday · Day 12 · 08:10 / Early morningThe Dusty Quill → Upstairs guest roomCurrentOvercast, 12°C, light easterly windForecastRain likely this afternoon; clearing tonight🔮 Ward: unstable · Teleportation: blocked",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": false,
+            "labels": [
+              "Current",
+              "Forecast"
+            ],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Monday · Day 12 · 08:10 / Early morning",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 41,
+                "clientHeight": 41
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "The Dusty Quill → Upstairs guest room",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 54,
+                "clientHeight": 54
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Overcast, 12°C, light easterly wind",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Rain likely this afternoon; clearing tonight",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 50,
+                "clientHeight": 50
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "🔮 Ward: unstable · Teleportation: blocked",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 36,
+                "clientHeight": 36
+              }
+            ]
+          },
+          {
+            "name": "clock-only",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Monday · Day 12 · 08:10 / Early morning\nThe Dusty Quill → Upstairs guest room\nCURRENT\nOvercast, 12°C, light easterly wind\nFORECAST\nRain likely this afternoon; clearing tonight\n⏱ Gate seals in 02:15 · Paused",
+            "semanticText": "\nMonday · Day 12 · 08:10 / Early morningThe Dusty Quill → Upstairs guest roomCurrentOvercast, 12°C, light easterly windForecastRain likely this afternoon; clearing tonight⏱ Gate seals in 02:15 · Paused",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": false,
+            "labels": [
+              "Current",
+              "Forecast"
+            ],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Monday · Day 12 · 08:10 / Early morning",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 41,
+                "clientHeight": 41
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "The Dusty Quill → Upstairs guest room",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 54,
+                "clientHeight": 54
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Overcast, 12°C, light easterly wind",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Rain likely this afternoon; clearing tonight",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 50,
+                "clientHeight": 50
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "⏱ Gate seals in 02:15 · Paused",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 36,
+                "clientHeight": 36
+              }
+            ]
+          },
+          {
+            "name": "hazard-and-clock",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Monday · Day 12 · 08:10 / Early morning\nThe Dusty Quill → Upstairs guest room\nCURRENT\nOvercast, 12°C, light easterly wind\nFORECAST\nRain likely this afternoon; clearing tonight\n⚠ Floodwater rising · Lower stair submerged\n⏱ Ferry departs in about ten minutes",
+            "semanticText": "\nMonday · Day 12 · 08:10 / Early morningThe Dusty Quill → Upstairs guest roomCurrentOvercast, 12°C, light easterly windForecastRain likely this afternoon; clearing tonight⚠ Floodwater rising · Lower stair submerged\n⏱ Ferry departs in about ten minutes",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": false,
+            "labels": [
+              "Current",
+              "Forecast"
+            ],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Monday · Day 12 · 08:10 / Early morning",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 41,
+                "clientHeight": 41
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "The Dusty Quill → Upstairs guest room",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 54,
+                "clientHeight": 54
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Overcast, 12°C, light easterly wind",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Rain likely this afternoon; clearing tonight",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 50,
+                "clientHeight": 50
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "⚠ Floodwater rising · Lower stair submerged\n⏱ Ferry departs in about ten minutes",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 86,
+                "clientHeight": 86
+              }
+            ]
+          },
+          {
+            "name": "legacy-one-line",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Day 4 — Ruined bell tower · Storm breaking",
+            "semanticText": "\nDay 4 — Ruined bell tower · Storm breaking",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 1,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-legacy-text",
+                "text": "Day 4 — Ruined bell tower · Storm breaking",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 55,
+                "clientHeight": 55
+              }
+            ]
+          },
+          {
+            "name": "noncanonical-three-lines",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Evening, ninth day\nOld mill beside the eastern bridge\nDry inside; the river is rising outside",
+            "semanticText": "\nEvening, ninth day\nOld mill beside the eastern bridge\nDry inside; the river is rising outside",
+            "cardCount": 1,
+            "newCardCount": 1,
+            "legacyCount": 1,
+            "codeCount": 0,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-legacy-text",
+                "text": "Evening, ninth day\nOld mill beside the eastern bridge\nDry inside; the river is rising outside",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 111,
+                "clientHeight": 111
+              }
+            ]
+          },
+          {
+            "name": "multiple-headers-one-reply",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "Opening narration.\n\nMonday · Day 12 · 08:10 / Early morning\nThe Dusty Quill → Upstairs guest room\nCURRENT\nOvercast, 12°C, light easterly wind\nFORECAST\nRain likely this afternoon; clearing tonight\n\nFirst scene continues here.\n\nMonday · Day 12 · 14:10 / Afternoon\nHarbour market → Ferry landing\nCURRENT\nOvercast, 12°C, light easterly wind\nFORECAST\nRain likely this afternoon; clearing tonight\n⏳ Elapsed: 6 hours\n\nSecond scene continues here.",
+            "semanticText": "Opening narration.\n\nMonday · Day 12 · 08:10 / Early morningThe Dusty Quill → Upstairs guest roomCurrentOvercast, 12°C, light easterly windForecastRain likely this afternoon; clearing tonight\nFirst scene continues here.\n\nMonday · Day 12 · 14:10 / AfternoonHarbour market → Ferry landingCurrentOvercast, 12°C, light easterly windForecastRain likely this afternoon; clearing tonight⏳ Elapsed: 6 hours\nSecond scene continues here.",
+            "cardCount": 2,
+            "newCardCount": 2,
+            "legacyCount": 0,
+            "codeCount": 0,
+            "contextHidden": true,
+            "labels": [
+              "Current",
+              "Forecast",
+              "Current",
+              "Forecast"
+            ],
+            "noPageOverflow": true,
+            "fieldBounds": [
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Monday · Day 12 · 08:10 / Early morning",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 41,
+                "clientHeight": 41
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "The Dusty Quill → Upstairs guest room",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 54,
+                "clientHeight": 54
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Overcast, 12°C, light easterly wind",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Rain likely this afternoon; clearing tonight",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 50,
+                "clientHeight": 50
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "",
+                "left": 0,
+                "right": 0,
+                "scrollWidth": 0,
+                "clientWidth": 0,
+                "scrollHeight": 0,
+                "clientHeight": 0
+              },
+              {
+                "cls": "custom-nemo-scene-date",
+                "text": "Monday · Day 12 · 14:10 / Afternoon",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 21,
+                "clientHeight": 21
+              },
+              {
+                "cls": "custom-nemo-scene-place",
+                "text": "Harbour market → Ferry landing",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 54,
+                "clientHeight": 54
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Overcast, 12°C, light easterly wind",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 25,
+                "clientHeight": 25
+              },
+              {
+                "cls": "custom-nemo-scene-value",
+                "text": "Rain likely this afternoon; clearing tonight",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 50,
+                "clientHeight": 50
+              },
+              {
+                "cls": "custom-nemo-scene-context",
+                "text": "⏳ Elapsed: 6 hours",
+                "left": 43.890625,
+                "right": 331.109375,
+                "scrollWidth": 287,
+                "clientWidth": 287,
+                "scrollHeight": 36,
+                "clientHeight": 36
+              }
+            ]
+          },
+          {
+            "name": "protected-code-fence",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "<style>.pk-h{display:block;margin:1.15em 0 .45em;padding-bottom:.28em;font-size:.7em;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pk-accent,#8a8a96);border-bottom:1px solid rgba(140,140,155,.18)}.pk-h:first-child{margin-top:0}.pk-r{display:grid;grid-template-columns:minmax(5.5em,auto) 1fr;gap:.1em .9em;margin:.28em 0;line-height:1.55;align-items:baseline}.pk-r>i{font-style:normal;font-size:.82em;font-weight:600;letter-spacing:.03em;text-transform:uppercase;opacity:.45;text-align:right;white-space:nowrap}.pk-r>.pk-rv{display:block;grid-column:2;min-width:0;max-width:100%;overflow-wrap:anywhere;word-break:normal}.pk-v0,.pk-v0 q{color:#9E9E9E}.pk-v1,.pk-v1 q{color:#56B4E9}.pk-v2,.pk-v2 q{color:#E69F00}.pk-v3,.pk-v3 q{color:#009E73}.pk-v4,.pk-v4 q{color:#CC79A7}.pk-v5,.pk-v5 q{color:#D55E00}.pk-v6,.pk-v6 q{color:#F0E442}.pk-v7,.pk-v7 q{color:#B39DDB}.pk-v8,.pk-v8 q{color:#80CBC4}.pk-v9,.pk-v9 q{color:#FF8A80}.pk-v10,.pk-v10 q{color:#A5D6A7}.pk-v11,.pk-v11 q{color:#FFD180}.pk-v12,.pk-v12 q{color:#9FA8DA}.pk-v13,.pk-v13 q{color:#F48FB1}.pk-v14,.pk-v14 q{color:#BCAAA4}.pk-v15,.pk-v15 q{color:#4DD0E1}.pk-v16,.pk-v16 q{color:#DCE775}.pk-o{display:inline-block;margin-right:.45em;font-size:.72em;line-height:1;vertical-align:.14em;text-shadow:0 0 6px currentColor}@media(max-width:640px){.pk-r{grid-template-columns:1fr;gap:0}.pk-r>i{text-align:left;opacity:.4;margin-top:.35em}.pk-r>.pk-rv{grid-column:1}}.nemo-scene-card{box-sizing:border-box;display:block;position:relative;margin:1.65em 0 1.3em;padding:1.2em 1.35em 1.1em;border:1px solid rgba(173,159,206,.22);border-radius:14px;background:linear-gradient(135deg,rgba(147,115,195,.10),rgba(100,118,162,.035) 70%);color:inherit;line-height:1.55;letter-spacing:normal;text-transform:none;overflow-wrap:anywhere;word-break:normal;min-width:0;max-width:100%;isolation:isolate}.nemo-scene-card::before{content:\"\";position:absolute;top:1.3em;bottom:1.3em;left:0;width:3px;border-radius:0 3px 3px 0;background:var(--pk-accent,#b49bd9);opacity:.7}.nemo-scene-card .nemo-scene-date{display:block;font-size:.74em;font-weight:600;letter-spacing:.065em;color:inherit;opacity:.67;line-height:1.6;margin:0 0 .4em;white-space:normal}.nemo-scene-card .nemo-scene-place{display:block;margin:0;font-size:1.15em;font-weight:700;line-height:1.4;color:inherit;letter-spacing:.005em;white-space:normal;text-wrap:pretty}.nemo-scene-card .nemo-scene-conditions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:.65em 1.5em;margin:1em 0 0;padding-top:.85em;border-top:1px solid rgba(173,159,206,.17);min-width:0}.nemo-scene-card .nemo-scene-condition{display:block;min-width:0}.nemo-scene-card .nemo-scene-label{display:block;font-size:.64em;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.55;line-height:1.6;margin-bottom:.2em}.nemo-scene-card .nemo-scene-value{display:block;font-size:.86em;line-height:1.6;white-space:normal}.nemo-scene-card .nemo-scene-context{display:block;white-space:pre-line;margin-top:.9em;padding-top:.75em;border-top:1px solid rgba(173,159,206,.17);font-size:.8em;line-height:1.75;opacity:.78}.nemo-scene-card .nemo-scene-context:empty{display:none}.nemo-scene-card .nemo-scene-legacy-text{white-space:pre-line;font-size:.88em;line-height:1.75}.nemo-scene-card p{margin:0}.nemo-scene-card p+p{margin-top:.35em}@media(max-width:640px){.nemo-scene-card{margin:1.3em 0 1.1em;padding:1em 1.05em .95em;border-radius:11px}.nemo-scene-card::before{top:1.1em;bottom:1.1em}.nemo-scene-card .nemo-scene-place{font-size:1.08em}.nemo-scene-card .nemo-scene-conditions{grid-template-columns:minmax(0,1fr);gap:.75em}.nemo-scene-card .nemo-scene-date{font-size:.72em;letter-spacing:.035em}.nemo-scene-card .nemo-scene-context{font-size:.8em}}</style><section class=\"nemo-scene-card\"><div class=\"nemo-scene-date\">Monday · Day 12 · 08:10 / Early morning</div><div class=\"nemo-scene-place\">The Dusty Quill → Upstairs guest room</div><div class=\"nemo-scene-conditions\"><div class=\"nemo-scene-condition\"><span class=\"nemo-scene-label\">Current</span><span class=\"nemo-scene-value\">Overcast, 12°C, light easterly wind</span></div><div class=\"nemo-scene-condition\"><span class=\"nemo-scene-label\">Forecast</span><span class=\"nemo-scene-value\">Rain likely this afternoon; clearing tonight</span></div></div><div class=\"nemo-scene-context\"></div></section>\n",
+            "semanticText": "<style>.pk-h{display:block;margin:1.15em 0 .45em;padding-bottom:.28em;font-size:.7em;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pk-accent,#8a8a96);border-bottom:1px solid rgba(140,140,155,.18)}.pk-h:first-child{margin-top:0}.pk-r{display:grid;grid-template-columns:minmax(5.5em,auto) 1fr;gap:.1em .9em;margin:.28em 0;line-height:1.55;align-items:baseline}.pk-r>i{font-style:normal;font-size:.82em;font-weight:600;letter-spacing:.03em;text-transform:uppercase;opacity:.45;text-align:right;white-space:nowrap}.pk-r>.pk-rv{display:block;grid-column:2;min-width:0;max-width:100%;overflow-wrap:anywhere;word-break:normal}.pk-v0,.pk-v0 q{color:#9E9E9E}.pk-v1,.pk-v1 q{color:#56B4E9}.pk-v2,.pk-v2 q{color:#E69F00}.pk-v3,.pk-v3 q{color:#009E73}.pk-v4,.pk-v4 q{color:#CC79A7}.pk-v5,.pk-v5 q{color:#D55E00}.pk-v6,.pk-v6 q{color:#F0E442}.pk-v7,.pk-v7 q{color:#B39DDB}.pk-v8,.pk-v8 q{color:#80CBC4}.pk-v9,.pk-v9 q{color:#FF8A80}.pk-v10,.pk-v10 q{color:#A5D6A7}.pk-v11,.pk-v11 q{color:#FFD180}.pk-v12,.pk-v12 q{color:#9FA8DA}.pk-v13,.pk-v13 q{color:#F48FB1}.pk-v14,.pk-v14 q{color:#BCAAA4}.pk-v15,.pk-v15 q{color:#4DD0E1}.pk-v16,.pk-v16 q{color:#DCE775}.pk-o{display:inline-block;margin-right:.45em;font-size:.72em;line-height:1;vertical-align:.14em;text-shadow:0 0 6px currentColor}@media(max-width:640px){.pk-r{grid-template-columns:1fr;gap:0}.pk-r>i{text-align:left;opacity:.4;margin-top:.35em}.pk-r>.pk-rv{grid-column:1}}.nemo-scene-card{box-sizing:border-box;display:block;position:relative;margin:1.65em 0 1.3em;padding:1.2em 1.35em 1.1em;border:1px solid rgba(173,159,206,.22);border-radius:14px;background:linear-gradient(135deg,rgba(147,115,195,.10),rgba(100,118,162,.035) 70%);color:inherit;line-height:1.55;letter-spacing:normal;text-transform:none;overflow-wrap:anywhere;word-break:normal;min-width:0;max-width:100%;isolation:isolate}.nemo-scene-card::before{content:\"\";position:absolute;top:1.3em;bottom:1.3em;left:0;width:3px;border-radius:0 3px 3px 0;background:var(--pk-accent,#b49bd9);opacity:.7}.nemo-scene-card .nemo-scene-date{display:block;font-size:.74em;font-weight:600;letter-spacing:.065em;color:inherit;opacity:.67;line-height:1.6;margin:0 0 .4em;white-space:normal}.nemo-scene-card .nemo-scene-place{display:block;margin:0;font-size:1.15em;font-weight:700;line-height:1.4;color:inherit;letter-spacing:.005em;white-space:normal;text-wrap:pretty}.nemo-scene-card .nemo-scene-conditions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:.65em 1.5em;margin:1em 0 0;padding-top:.85em;border-top:1px solid rgba(173,159,206,.17);min-width:0}.nemo-scene-card .nemo-scene-condition{display:block;min-width:0}.nemo-scene-card .nemo-scene-label{display:block;font-size:.64em;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.55;line-height:1.6;margin-bottom:.2em}.nemo-scene-card .nemo-scene-value{display:block;font-size:.86em;line-height:1.6;white-space:normal}.nemo-scene-card .nemo-scene-context{display:block;white-space:pre-line;margin-top:.9em;padding-top:.75em;border-top:1px solid rgba(173,159,206,.17);font-size:.8em;line-height:1.75;opacity:.78}.nemo-scene-card .nemo-scene-context:empty{display:none}.nemo-scene-card .nemo-scene-legacy-text{white-space:pre-line;font-size:.88em;line-height:1.75}.nemo-scene-card p{margin:0}.nemo-scene-card p+p{margin-top:.35em}@media(max-width:640px){.nemo-scene-card{margin:1.3em 0 1.1em;padding:1em 1.05em .95em;border-radius:11px}.nemo-scene-card::before{top:1.1em;bottom:1.1em}.nemo-scene-card .nemo-scene-place{font-size:1.08em}.nemo-scene-card .nemo-scene-conditions{grid-template-columns:minmax(0,1fr);gap:.75em}.nemo-scene-card .nemo-scene-date{font-size:.72em;letter-spacing:.035em}.nemo-scene-card .nemo-scene-context{font-size:.8em}}</style><section class=\"nemo-scene-card\"><div class=\"nemo-scene-date\">Monday · Day 12 · 08:10 / Early morning</div><div class=\"nemo-scene-place\">The Dusty Quill → Upstairs guest room</div><div class=\"nemo-scene-conditions\"><div class=\"nemo-scene-condition\"><span class=\"nemo-scene-label\">Current</span><span class=\"nemo-scene-value\">Overcast, 12°C, light easterly wind</span></div><div class=\"nemo-scene-condition\"><span class=\"nemo-scene-label\">Forecast</span><span class=\"nemo-scene-value\">Rain likely this afternoon; clearing tonight</span></div></div><div class=\"nemo-scene-context\"></div></section>\n",
+            "cardCount": 0,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 1,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": true,
+            "fieldBounds": []
+          },
+          {
+            "name": "protected-double-ticks",
+            "width": 375,
+            "passed": true,
+            "rawAndHistoryUnchanged": true,
+            "text": "<style>.pk-h{display:block;margin:1.15em 0 .45em;padding-bottom:.28em;font-size:.7em;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pk-accent,#8a8a96);border-bottom:1px solid rgba(140,140,155,.18)}.pk-h:first-child{margin-top:0}.pk-r{display:grid;grid-template-columns:minmax(5.5em,auto) 1fr;gap:.1em .9em;margin:.28em 0;line-height:1.55;align-items:baseline}.pk-r>i{font-style:normal;font-size:.82em;font-weight:600;letter-spacing:.03em;text-transform:uppercase;opacity:.45;text-align:right;white-space:nowrap}.pk-r>.pk-rv{display:block;grid-column:2;min-width:0;max-width:100%;overflow-wrap:anywhere;word-break:normal}.pk-v0,.pk-v0 q{color:#9E9E9E}.pk-v1,.pk-v1 q{color:#56B4E9}.pk-v2,.pk-v2 q{color:#E69F00}.pk-v3,.pk-v3 q{color:#009E73}.pk-v4,.pk-v4 q{color:#CC79A7}.pk-v5,.pk-v5 q{color:#D55E00}.pk-v6,.pk-v6 q{color:#F0E442}.pk-v7,.pk-v7 q{color:#B39DDB}.pk-v8,.pk-v8 q{color:#80CBC4}.pk-v9,.pk-v9 q{color:#FF8A80}.pk-v10,.pk-v10 q{color:#A5D6A7}.pk-v11,.pk-v11 q{color:#FFD180}.pk-v12,.pk-v12 q{color:#9FA8DA}.pk-v13,.pk-v13 q{color:#F48FB1}.pk-v14,.pk-v14 q{color:#BCAAA4}.pk-v15,.pk-v15 q{color:#4DD0E1}.pk-v16,.pk-v16 q{color:#DCE775}.pk-o{display:inline-block;margin-right:.45em;font-size:.72em;line-height:1;vertical-align:.14em;text-shadow:0 0 6px currentColor}@media(max-width:640px){.pk-r{grid-template-columns:1fr;gap:0}.pk-r>i{text-align:left;opacity:.4;margin-top:.35em}.pk-r>.pk-rv{grid-column:1}}.nemo-scene-card{box-sizing:border-box;display:block;position:relative;margin:1.65em 0 1.3em;padding:1.2em 1.35em 1.1em;border:1px solid rgba(173,159,206,.22);border-radius:14px;background:linear-gradient(135deg,rgba(147,115,195,.10),rgba(100,118,162,.035) 70%);color:inherit;line-height:1.55;letter-spacing:normal;text-transform:none;overflow-wrap:anywhere;word-break:normal;min-width:0;max-width:100%;isolation:isolate}.nemo-scene-card::before{content:\"\";position:absolute;top:1.3em;bottom:1.3em;left:0;width:3px;border-radius:0 3px 3px 0;background:var(--pk-accent,#b49bd9);opacity:.7}.nemo-scene-card .nemo-scene-date{display:block;font-size:.74em;font-weight:600;letter-spacing:.065em;color:inherit;opacity:.67;line-height:1.6;margin:0 0 .4em;white-space:normal}.nemo-scene-card .nemo-scene-place{display:block;margin:0;font-size:1.15em;font-weight:700;line-height:1.4;color:inherit;letter-spacing:.005em;white-space:normal;text-wrap:pretty}.nemo-scene-card .nemo-scene-conditions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:.65em 1.5em;margin:1em 0 0;padding-top:.85em;border-top:1px solid rgba(173,159,206,.17);min-width:0}.nemo-scene-card .nemo-scene-condition{display:block;min-width:0}.nemo-scene-card .nemo-scene-label{display:block;font-size:.64em;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.55;line-height:1.6;margin-bottom:.2em}.nemo-scene-card .nemo-scene-value{display:block;font-size:.86em;line-height:1.6;white-space:normal}.nemo-scene-card .nemo-scene-context{display:block;white-space:pre-line;margin-top:.9em;padding-top:.75em;border-top:1px solid rgba(173,159,206,.17);font-size:.8em;line-height:1.75;opacity:.78}.nemo-scene-card .nemo-scene-context:empty{display:none}.nemo-scene-card .nemo-scene-legacy-text{white-space:pre-line;font-size:.88em;line-height:1.75}.nemo-scene-card p{margin:0}.nemo-scene-card p+p{margin-top:.35em}@media(max-width:640px){.nemo-scene-card{margin:1.3em 0 1.1em;padding:1em 1.05em .95em;border-radius:11px}.nemo-scene-card::before{top:1.1em;bottom:1.1em}.nemo-scene-card .nemo-scene-place{font-size:1.08em}.nemo-scene-card .nemo-scene-conditions{grid-template-columns:minmax(0,1fr);gap:.75em}.nemo-scene-card .nemo-scene-date{font-size:.72em;letter-spacing:.035em}.nemo-scene-card .nemo-scene-context{font-size:.8em}}</style><section class=\"nemo-scene-card nemo-scene-legacy\"><div class=\"nemo-scene-legacy-text\"> 📅 Monday · Day 12 · 08:10 / Early morning 📍 The Dusty Quill → Upstairs guest room 🌤 Current: Overcast, 12°C, light easterly wind 🌦 Forecast: Rain likely this afternoon; clearing tonight </div></section>",
+            "semanticText": "<style>.pk-h{display:block;margin:1.15em 0 .45em;padding-bottom:.28em;font-size:.7em;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pk-accent,#8a8a96);border-bottom:1px solid rgba(140,140,155,.18)}.pk-h:first-child{margin-top:0}.pk-r{display:grid;grid-template-columns:minmax(5.5em,auto) 1fr;gap:.1em .9em;margin:.28em 0;line-height:1.55;align-items:baseline}.pk-r>i{font-style:normal;font-size:.82em;font-weight:600;letter-spacing:.03em;text-transform:uppercase;opacity:.45;text-align:right;white-space:nowrap}.pk-r>.pk-rv{display:block;grid-column:2;min-width:0;max-width:100%;overflow-wrap:anywhere;word-break:normal}.pk-v0,.pk-v0 q{color:#9E9E9E}.pk-v1,.pk-v1 q{color:#56B4E9}.pk-v2,.pk-v2 q{color:#E69F00}.pk-v3,.pk-v3 q{color:#009E73}.pk-v4,.pk-v4 q{color:#CC79A7}.pk-v5,.pk-v5 q{color:#D55E00}.pk-v6,.pk-v6 q{color:#F0E442}.pk-v7,.pk-v7 q{color:#B39DDB}.pk-v8,.pk-v8 q{color:#80CBC4}.pk-v9,.pk-v9 q{color:#FF8A80}.pk-v10,.pk-v10 q{color:#A5D6A7}.pk-v11,.pk-v11 q{color:#FFD180}.pk-v12,.pk-v12 q{color:#9FA8DA}.pk-v13,.pk-v13 q{color:#F48FB1}.pk-v14,.pk-v14 q{color:#BCAAA4}.pk-v15,.pk-v15 q{color:#4DD0E1}.pk-v16,.pk-v16 q{color:#DCE775}.pk-o{display:inline-block;margin-right:.45em;font-size:.72em;line-height:1;vertical-align:.14em;text-shadow:0 0 6px currentColor}@media(max-width:640px){.pk-r{grid-template-columns:1fr;gap:0}.pk-r>i{text-align:left;opacity:.4;margin-top:.35em}.pk-r>.pk-rv{grid-column:1}}.nemo-scene-card{box-sizing:border-box;display:block;position:relative;margin:1.65em 0 1.3em;padding:1.2em 1.35em 1.1em;border:1px solid rgba(173,159,206,.22);border-radius:14px;background:linear-gradient(135deg,rgba(147,115,195,.10),rgba(100,118,162,.035) 70%);color:inherit;line-height:1.55;letter-spacing:normal;text-transform:none;overflow-wrap:anywhere;word-break:normal;min-width:0;max-width:100%;isolation:isolate}.nemo-scene-card::before{content:\"\";position:absolute;top:1.3em;bottom:1.3em;left:0;width:3px;border-radius:0 3px 3px 0;background:var(--pk-accent,#b49bd9);opacity:.7}.nemo-scene-card .nemo-scene-date{display:block;font-size:.74em;font-weight:600;letter-spacing:.065em;color:inherit;opacity:.67;line-height:1.6;margin:0 0 .4em;white-space:normal}.nemo-scene-card .nemo-scene-place{display:block;margin:0;font-size:1.15em;font-weight:700;line-height:1.4;color:inherit;letter-spacing:.005em;white-space:normal;text-wrap:pretty}.nemo-scene-card .nemo-scene-conditions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:.65em 1.5em;margin:1em 0 0;padding-top:.85em;border-top:1px solid rgba(173,159,206,.17);min-width:0}.nemo-scene-card .nemo-scene-condition{display:block;min-width:0}.nemo-scene-card .nemo-scene-label{display:block;font-size:.64em;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.55;line-height:1.6;margin-bottom:.2em}.nemo-scene-card .nemo-scene-value{display:block;font-size:.86em;line-height:1.6;white-space:normal}.nemo-scene-card .nemo-scene-context{display:block;white-space:pre-line;margin-top:.9em;padding-top:.75em;border-top:1px solid rgba(173,159,206,.17);font-size:.8em;line-height:1.75;opacity:.78}.nemo-scene-card .nemo-scene-context:empty{display:none}.nemo-scene-card .nemo-scene-legacy-text{white-space:pre-line;font-size:.88em;line-height:1.75}.nemo-scene-card p{margin:0}.nemo-scene-card p+p{margin-top:.35em}@media(max-width:640px){.nemo-scene-card{margin:1.3em 0 1.1em;padding:1em 1.05em .95em;border-radius:11px}.nemo-scene-card::before{top:1.1em;bottom:1.1em}.nemo-scene-card .nemo-scene-place{font-size:1.08em}.nemo-scene-card .nemo-scene-conditions{grid-template-columns:minmax(0,1fr);gap:.75em}.nemo-scene-card .nemo-scene-date{font-size:.72em;letter-spacing:.035em}.nemo-scene-card .nemo-scene-context{font-size:.8em}}</style><section class=\"nemo-scene-card nemo-scene-legacy\"><div class=\"nemo-scene-legacy-text\"> 📅 Monday · Day 12 · 08:10 / Early morning 📍 The Dusty Quill → Upstairs guest room 🌤 Current: Overcast, 12°C, light easterly wind 🌦 Forecast: Rain likely this afternoon; clearing tonight </div></section>",
+            "cardCount": 0,
+            "newCardCount": 0,
+            "legacyCount": 0,
+            "codeCount": 1,
+            "contextHidden": null,
+            "labels": [],
+            "noPageOverflow": false,
+            "fieldBounds": []
+          }
+        ],
+        "hiddenMachineryPassed": true
+      }
+    ],
+    "scope": "Actual configured regex order → Showdown2.1.0 → exact ST sanitizer/style functions; visible/hidden MachineryHideGate substitutions from preset settings",
+    "caseCountPerSource": 34,
+    "standalonePreviewPassed": true,
+    "previewPath": "/workspace/scratch/7095aacbc09d/scene-header-work/Scene_Header_Preview.html",
+    "environment": {
+      "browser": "153.0.8010.0",
+      "dompurify": "3.4.2",
+      "showdown": "2.1.0",
+      "cssTools": "4.4.4"
+    }
+  },
+  "independentReview": {
+    "passed": true,
+    "engine": "current official SillyTavern regex engine",
+    "cases": [
+      "canonical four foundation lines",
+      "same-line opening tag",
+      "CRLF",
+      "Outlook label",
+      "weather emoji variation",
+      "zero to three footer lines",
+      "legacy single line",
+      "partial headers",
+      "reordered fields",
+      "localized labels",
+      "multiple mid-reply headers"
+    ]
+  },
+  "validationScope": "Headless Chromium through official SillyTavern regex functions, Showdown and current sanitizer/CSS hooks. This does not claim a test of the user installed SillyTavern instance.",
+  "scope": "One structured display-only regex before the retained generic fallback; both render on message edits. Prompt content, grammar, transition timing, state tracking, selections and all other regex records are unchanged."
+}
