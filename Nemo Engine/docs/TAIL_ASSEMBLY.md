@@ -33,6 +33,6 @@ In both saved profiles, the Databank header, World Info Before, Unified Card Con
 
 The paired pre/post checks use SillyTavern's experimental macro parser/engine and official core/variable handlers pinned to `06bde939fb1e9c4c8d8641d810f0a916b5bce127`, with fixture variable storage and card/lore values. Both profiles cover default, Scratchpad off, Legacy, all Pad Tabs, collectors disabled, Mental Projection with Scratchpad, and standalone Mental Projection.
 
-Checks compare captured module output, rendered assistant prefill, and existing variable state; reject duplicate module emission and stale collectors; and compare macro diagnostics. Static checks verify only two depth-0 injectors, unchanged toggle states, Databank adjacency, and unchanged regex/settings. See `tail-consolidation-validation.json` for results.
+Checks compare captured module output, rendered assistant prefill, and existing variable state; reject duplicate module emission and stale collectors; and compare macro diagnostics. Static checks verify only two depth-0 injectors, unchanged toggle states, Databank adjacency, and unchanged regex/settings. See [tail-consolidation-validation.json](./validation/tail-consolidation-validation.json) for results.
 
 This is an assembly refactor, not a verified fix for provider refusals or streaming cutoffs. A live SillyTavern/provider request was not available for end-to-end testing.
