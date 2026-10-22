@@ -53,7 +53,12 @@ def build(source, css):
         'findRegex': '/(?=' + re.escape(BEGIN) + ')' + outside + re.escape(BEGIN) + r'([0-9a-f]{32})-->(<form class="nemo-vn"[\s\S]*?<\/form>)' + re.escape(END) + outside + '/g',
         'replaceString': ('<div class="nemo-vn-dock-shell"><style>' + css + '</style>'
                           '<button class="nemo-vn-dock-launch" type="button" '
-                          'popovertarget="nemo-vex-panel-$1" popovertargetaction="show">Open Vex <span aria-hidden="true">↗</span></button>'
+                          'popovertarget="nemo-vex-panel-$1" popovertargetaction="toggle">'
+                          '<span class="nemo-vn-launch-badge" aria-hidden="true">✦</span>'
+                          '<span class="nemo-vn-launch-copy"><span class="nemo-vn-launch-title">Vex commentary</span>'
+                          '<span class="nemo-vn-launch-subtitle">A few thoughts from the sidelines.</span></span>'
+                          '<span class="nemo-vn-launch-action"><span class="nemo-vn-launch-open">Open <span aria-hidden="true">↗</span></span>'
+                          '<span class="nemo-vn-launch-shut">Close <span aria-hidden="true">×</span></span></span></button>'
                           '<div class="nemo-vn-popover" id="nemo-vex-panel-$1" popover="manual" aria-label="Vex companion">'
                           '<button class="nemo-vn-dock-close" type="button" '
                           'popovertarget="nemo-vex-panel-$1" popovertargetaction="hide" aria-label="Close Vex companion">Close ×</button>'

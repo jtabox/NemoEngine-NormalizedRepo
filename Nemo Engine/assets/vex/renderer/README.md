@@ -138,9 +138,11 @@ toolbar styles is recorded in [`left-dock-validation.json`](left-dock-validation
 
 The [Nemo Engine v12.3 Message Dock preset](../../../Nemo_Engine_v12.3_Message_Dock.json)
 provides a separate message-only alternative that needs no global Custom CSS or
-extension script. On screens at least 1440 × 700, click **Open Vex** once to open
-the selected panel on the left; **Close ×** closes it. It stays open while you
-chat, and Next/Back works inside the dock. Smaller screens use the inline panel.
+extension script. On screens at least 1440 × 700, a themed **Vex commentary**
+footer blends into the message with a purple badge, subtitle and **Open ↗** action.
+Click it to open the left panel; the same footer then shows **Close ×** and closes
+it when clicked again. The popup stays open while you chat, and Next/Back works
+inside the dock. Smaller screens use the inline panel.
 
 Use this optional preset instead of the standard preset, or replace the standard
 display pack with the complete ordered 76-rule [message-dock pack](message-dock/regex-scripts.json).

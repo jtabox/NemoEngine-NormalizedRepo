@@ -1,8 +1,11 @@
 # Optional Vex message dock
 
 This alternative renderer keeps the Vex visual novel inside the message's own
-HTML/CSS. On screens at least 1440 × 700, **Open Vex** opens a native persistent
-popover on the left. **Close ×** closes it. Clicking in the chat leaves it open;
+HTML/CSS. On screens at least 1440 × 700, a compact **Vex commentary** footer
+blends into the message with a muted purple badge, subtitle and **Open ↗** action.
+Clicking it opens a native persistent popover on the left. The same footer then
+shows **Close ×** and closes the panel when clicked again; the popup's own
+**Close ×** also remains available. Clicking in the chat leaves it open;
 Next/Back and the existing portraits, nameplate and dialogue remain intact.
 Long dialogue scrolls inside the dialogue window while its controls stay visible.
 Smaller screens use the usual inline visual novel automatically.

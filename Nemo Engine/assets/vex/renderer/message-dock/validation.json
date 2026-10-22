@@ -1,665 +1,878 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "status": "passed",
-  "feature": "Optional message-only Vex dock defensive binding repair",
+  "feature": "Themed Vex commentary footer and native Open/Close toggle",
   "source": {
-    "commit": "dd2f805a1bf3f251457fb6de4d6dc97164637f78",
-    "priorOptionalPresetSha256": "807287ba37621ba518c0535b66ab2503fa2dc677a00cc5854397002ec70c7061",
-    "canonicalPresetSha256": "2131186ff10f6eb37090b90e4bc0384de8b9dbaa3c884da36e6c9e8c36ccb2bd",
-    "previousValidationSha256": "6750e4b6c00fc7bb624ff3f00a032ef4c85048be6e5d51169d1bfbd69c7c141d"
+    "commit": "5ad9ba9d55215624c907c3c91c4a2bbb08efe59f",
+    "priorOptionalPresetSha256": "baac2986c839194a733d4d24ecec3b1b246a951ce119f28a258db4792b88ea02"
   },
   "artifacts": {
     "Nemo Engine/Nemo_Engine_v12.3_Message_Dock.json": {
-      "sha256": "baac2986c839194a733d4d24ecec3b1b246a951ce119f28a258db4792b88ea02",
-      "gitBlob": "c40bc4c9d983de17d57f4e8d9a9353d9004fb860",
-      "size": 3469699
+      "sha256": "0695bcd52c228f9b2600d2abb836bfe861205a669e9965733b57a820cc1d1b16",
+      "gitBlob": "1f942ea4279b835fd87e963266e6098043f6b53a",
+      "size": 3471606
     },
     "Nemo Engine/assets/vex/renderer/message-dock/regex-scripts.json": {
-      "sha256": "4373577cd75946fbf365dbd6d244c92e412baea2ec1c6cdcc7e8cc6aaf6408e7",
-      "gitBlob": "7db8fbbd259c6913fbf28d5fb11a46379d9e1cfc",
-      "size": 152464
+      "sha256": "de6834ec5c2084e5e4af9427a58ad49b7ec3d35b2823fac00d03f898a60391e7",
+      "gitBlob": "390a6f0c2c1c6c94bcc09afadb0168c05db8cac3",
+      "size": 154371
     },
     "Nemo Engine/assets/vex/renderer/message-dock/build_message_dock.py": {
-      "sha256": "debcf8e72cf200432606d8e7e52aa74e13f2c9817fbd7b49eb3a23cc0b581dcd",
-      "gitBlob": "adfc94cbafe1fac041e5de88fd13382f548a8fa3",
-      "size": 5581
+      "sha256": "c3d21b45e69f5978f2566f088a56e4822dc04644dad13d02519f08d5d32fcff3",
+      "gitBlob": "f677d23fa3ed2d6d0e98a6e36cc870d815bbe512",
+      "size": 6129
+    },
+    "Nemo Engine/assets/vex/renderer/message-dock/panel.css": {
+      "sha256": "1e1b081fe416e16c06906f2885dab722bc92b90d3b87945cdce87b7eb1d4d6e7",
+      "gitBlob": "a82d6652a513c6ceefafe5d54f4a49d192caaf51",
+      "size": 7563
     },
     "Nemo Engine/assets/vex/renderer/message-dock/README.md": {
-      "sha256": "e459c363fa8a1254aded66e0a13234492d81a5b2db857c2d9080122ea6bc266c",
-      "gitBlob": "89716298e711b3cfc55dbb6978fa93791fc50355",
-      "size": 4366
+      "sha256": "85b3778bfb93bf543af06ec34f87ba7f6816fb712e0d0c901deee785bdebdb34",
+      "gitBlob": "0bb4663e8da7f712bd262e4f59d9df416663fa85",
+      "size": 4596
     },
     "Nemo Engine/assets/vex/renderer/README.md": {
-      "sha256": "1f50304be7f6c2f1f5c58d578fc0564ef1c082896793a7ff77bd3a65fc89e08d",
-      "gitBlob": "1369be6f846e05c074e89cb13d34228473a93610",
-      "size": 8689
+      "sha256": "f7eed4f5814d0cf0627e3a08ce6288ede458f1a044b0f49ef2cb510e423fb44d",
+      "gitBlob": "562824205a231db72e0d229ce417113538f474ac",
+      "size": 8829
     }
   },
   "scope": {
-    "canonicalAndLegacyAliasesUnchanged": true,
-    "allPromptContentSettingsAndSelectionsUnchanged": true,
-    "optionalAndStandardCssUnchanged": true,
-    "assetsAndManifestUnchanged": true,
-    "oldOptionalPresetRules": 585,
-    "newOptionalPresetRules": 586,
+    "changedPresetRecords": 1,
+    "changedField": "binder replaceString only",
+    "presetRules": 586,
     "optionalDisplayRules": 76,
-    "changedExistingRecords": 5,
-    "addedDisplayCleanupRules": 1
+    "allFindRegexFlagsIdsAndRuleOrderUnchanged": true,
+    "allPromptsSettingsAndSelectionsUnchanged": true,
+    "canonicalAndLegacyAliasesUnchanged": true,
+    "standardRendererContextAssetsManifestUnchanged": true
   },
-  "diagnosis": {
-    "userEnvironmentCause": "Unconfirmed. The provided valid 32-hex nonce binds in replay. Missing/disabled/reordered binder cases are test injections, not established user causes.",
-    "reproducedEngineIssue": "A paired literal-boundary scan failed on large synthetic input under Bun JavaScriptCore. Marker gates and equivalent chunked scans repair this bounded reproduction. This does not prove the cause in the user environment or in Safari."
+  "currentCoverage": {
+    "targetedBrowserCases": 5,
+    "darkAndLightThemeToggle": true,
+    "keyboardFocusSpaceOpenEnterClose": true,
+    "mobile375InlineNavigation": true,
+    "disabledBinderInlineFallback": true,
+    "standalonePreviewJavaScriptEnabled": false,
+    "standalonePreviewExternalRequests": 0,
+    "fullParserAndJscStressRerun": false
   },
-  "coverage": {
-    "fullPresetRegexRules": 586,
-    "resolvedNameExpressionPairs": 288,
-    "crossModuleFixtures": 22,
-    "browserFaultCases": 13,
-    "macroModes": [
-      "legacy",
-      "fullExperimentalParser"
-    ],
-    "macroVersionBindings": 14,
-    "versions": [
-      "1.12.0",
-      "1.12.6",
-      "1.12.12",
-      "1.12.14",
-      "1.13.5",
-      "release",
-      "staging"
-    ],
-    "randomSamplesPerMacroMode": 100,
-    "fullExperimentalParserTested": true,
-    "experimentalDiagnosticsOnlyStubbed": true,
-    "chunkedGuardEquivalenceChecksPerRuntime": 68191,
-    "largeInputCases": "1 MiB prefix, suffix, and both; actual final binding and legacy cleanup in Node/V8 and Bun/JavaScriptCore"
-  },
-  "limitations": [
-    "The exact installed-user failure remains unconfirmed; neither a screenshot nor private chat dialogue is included.",
-    "JavaScriptCore performance proof uses Bun 1.4.3 on synthetic fixtures, not the user Safari installation.",
-    "The old legacy-marker cleanup fixture is asserted readable; its navigation flag is false and no navigation success is claimed for that simplified fixture.",
-    "Full experimental lexer/parser/walker/registry/engine is exercised with diagnostics-only stubbing; arbitrary installed extensions and themes are not covered.",
-    "Native manual popovers still require a click and do not close other messages automatically."
-  ],
   "reports": {
     "integration": {
       "sourceReport": "integration-report.json",
-      "sha256": "d0dfa058a869d82cfc73b0d85d933f321948e4b75dd00b626bdc9059f057e796",
+      "sha256": "8a30d9a5ca448db01c8ca4f060d2d4bef627b71ac935e1de7338026a3b948e2e",
       "results": {
         "passed": true,
-        "sourceSha256": "2131186ff10f6eb37090b90e4bc0384de8b9dbaa3c884da36e6c9e8c36ccb2bd",
-        "presetSha256": "baac2986c839194a733d4d24ecec3b1b246a951ce119f28a258db4792b88ea02",
-        "presetRegexRules": 586,
-        "changedRegexReplacements": 4,
-        "addedDisplayOnlyRules": 2,
-        "promptsAndOtherSettingsUnchanged": true,
-        "literalGuardsAndContextRulesUnchanged": true,
-        "assetMappingsUnchanged": true,
-        "path": "/workspace/scratch/7095aacbc09d/vex-message-dock-fix-output/Nemo_Engine_v12.3_Message_Dock.json"
-      }
-    },
-    "fullPreset": {
-      "sourceReport": "full-preset-results.json",
-      "sha256": "afa143753f1e82700948c1349657523d2b1d13e99e7c0825ba1f51f0caee123b",
-      "results": {
-        "passed": true,
-        "engine": "Official SillyTavern regex engine and official getRandomReplaceMacro with seedrandom",
-        "rules": 586,
-        "resolvedNameExpressionPairs": 288,
-        "crossModuleFixtures": 22,
-        "unwrappedDisplayByteIdenticalToCanonical": true,
-        "allPromptsAndSettingsPreserved": true,
-        "rawHistoryUnchanged": true,
-        "recentContextPreserved": true,
-        "olderContextRemoved": true,
-        "repeatedGroupsAndRerendersUnique": true,
-        "internalWrapperExamplesPreserved": true
-      }
-    },
-    "repairDiff": {
-      "sourceReport": "repair-diff-report.json",
-      "sha256": "9d435dd2bb7589a97e60298eba66ce1b800f69d37c80df66880db8baf8643f2c",
-      "results": {
-        "passed": true,
-        "changedExistingRecords": [
-          {
-            "id": "734f9a3f-e27d-50d3-90f5-4ddec56e5e5b",
-            "name": "Nemo \u00b7 Vex VN \u00b7 4 message panel",
-            "fields": [
+        "sourceSha256": "baac2986c839194a733d4d24ecec3b1b246a951ce119f28a258db4792b88ea02",
+        "presetSha256": "0695bcd52c228f9b2600d2abb836bfe861205a669e9965733b57a820cc1d1b16",
+        "packSha256": "de6834ec5c2084e5e4af9427a58ad49b7ec3d35b2823fac00d03f898a60391e7",
+        "regexRules": 586,
+        "changedRecords": [
+          [
+            "83e2de95-985a-56d2-b5c3-e507c5ba38d9",
+            [
               "replaceString"
             ]
-          },
-          {
-            "id": "e4cbd965-20ad-5911-97b4-6fe4af587250",
-            "name": "Nemo \u00b7 Vex VN \u00b7 3 message panel",
-            "fields": [
-              "replaceString"
-            ]
-          },
-          {
-            "id": "808e6d1a-8f65-5f9b-8471-9cf3c4ff74a5",
-            "name": "Nemo \u00b7 Vex VN \u00b7 2 message panel",
-            "fields": [
-              "replaceString"
-            ]
-          },
-          {
-            "id": "4219a75c-ee91-552f-a946-7831883c6f28",
-            "name": "Nemo \u00b7 Vex VN \u00b7 1 message panel",
-            "fields": [
-              "replaceString"
-            ]
-          },
-          {
-            "id": "83e2de95-985a-56d2-b5c3-e507c5ba38d9",
-            "name": "Nemo \u00b7 Vex VN \u00b7 optional native left dock binding",
-            "fields": [
-              "findRegex"
-            ]
-          }
+          ]
         ],
-        "addedDisplayCleanupRecords": [
-          "15cb9cb7-b70e-5192-9086-dc9840cfd19a"
-        ],
+        "allRegexMatchersFlagsAndOrderIdentical": true,
         "allOtherPresetContentIdentical": true,
-        "originalRuleOrderPreserved": true,
-        "oldRuleCount": 585,
-        "newRuleCount": 586
+        "output": "/workspace/scratch/7095aacbc09d/vex-launcher-style-output/Nemo_Engine_v12.3_Message_Dock.json"
       }
     },
-    "commentBridge": {
-      "sourceReport": "diagnosis/comment-bridge-results.json",
-      "sha256": "b6921e5a50974bebf3eb52c84d738b5e16309bce8ad02a32448e752378b28e4b",
-      "results": {
-        "passed": true,
-        "rules": 76,
-        "normalBinding": true,
-        "failedBindingCommentOnlyBridge": true,
-        "failedBindingRetainsInlineForm": true,
-        "legacyOnlyMarkersRemoved": true,
-        "protectedLiteralCases": 7,
-        "exactlyFourBaseReplacementsChanged": true,
-        "allOtherBaseFieldsPreserved": true,
-        "notes": "HTML comment removal is asserted syntactically here; actual DOMPurify/browser fallback is verified by the separate integration harness."
-      }
-    },
-    "macroAndVersionMatrix": {
-      "sourceReport": "research/full-experimental-fixed-results.json",
-      "sha256": "8771b33b74a5ba02e3ac7ac5deb0151b1ae17e18b9aeb4eaeb3722c48ab7c2c6",
-      "results": {
-        "passed": true,
-        "officialCommit": "06bde939fb1e9c4c8d8641d810f0a916b5bce127",
-        "fullExperimentalComponents": [
-          "MacroLexer",
-          "MacroParser",
-          "MacroCstWalker",
-          "MacroRegistry",
-          "MacroEngine",
-          "MacroFlags"
-        ],
-        "diagnosticsOnlyStubbed": true,
-        "nonceReplay": {
-          "nonce": "302595d35d2806a2b816efcb279617fa",
-          "length": 32
-        },
-        "macroTests": [
-          {
-            "name": "legacy",
-            "samples": 100,
-            "all32Hex": true,
-            "unique": 100,
-            "zerosPreserved": true
-          },
-          {
-            "name": "fullExperimental",
-            "samples": 100,
-            "all32Hex": true,
-            "unique": 100,
-            "zerosPreserved": true
-          }
-        ],
-        "engineTests": [
-          {
-            "macro": "legacy",
-            "version": "1.12.0",
-            "seedLength32": true,
-            "bound": true,
-            "screenshotNonceBound": true
-          },
-          {
-            "macro": "legacy",
-            "version": "1.12.6",
-            "seedLength32": true,
-            "bound": true,
-            "screenshotNonceBound": true
-          },
-          {
-            "macro": "legacy",
-            "version": "1.12.12",
-            "seedLength32": true,
-            "bound": true,
-            "screenshotNonceBound": true
-          },
-          {
-            "macro": "legacy",
-            "version": "1.12.14",
-            "seedLength32": true,
-            "bound": true,
-            "screenshotNonceBound": true
-          },
-          {
-            "macro": "legacy",
-            "version": "1.13.5",
-            "seedLength32": true,
-            "bound": true,
-            "screenshotNonceBound": true
-          },
-          {
-            "macro": "legacy",
-            "version": "release",
-            "seedLength32": true,
-            "bound": true,
-            "screenshotNonceBound": true
-          },
-          {
-            "macro": "legacy",
-            "version": "staging",
-            "seedLength32": true,
-            "bound": true,
-            "screenshotNonceBound": true
-          },
-          {
-            "macro": "fullExperimental",
-            "version": "1.12.0",
-            "seedLength32": true,
-            "bound": true,
-            "screenshotNonceBound": true
-          },
-          {
-            "macro": "fullExperimental",
-            "version": "1.12.6",
-            "seedLength32": true,
-            "bound": true,
-            "screenshotNonceBound": true
-          },
-          {
-            "macro": "fullExperimental",
-            "version": "1.12.12",
-            "seedLength32": true,
-            "bound": true,
-            "screenshotNonceBound": true
-          },
-          {
-            "macro": "fullExperimental",
-            "version": "1.12.14",
-            "seedLength32": true,
-            "bound": true,
-            "screenshotNonceBound": true
-          },
-          {
-            "macro": "fullExperimental",
-            "version": "1.13.5",
-            "seedLength32": true,
-            "bound": true,
-            "screenshotNonceBound": true
-          },
-          {
-            "macro": "fullExperimental",
-            "version": "release",
-            "seedLength32": true,
-            "bound": true,
-            "screenshotNonceBound": true
-          },
-          {
-            "macro": "fullExperimental",
-            "version": "staging",
-            "seedLength32": true,
-            "bound": true,
-            "screenshotNonceBound": true
-          }
-        ],
-        "experimentalDiagnostics": 0
-      }
-    },
-    "browserFaultMatrix": {
-      "sourceReport": "research/browser-fault-results.json",
-      "sha256": "fa36ecec42fa8d5947141bb02226d3739e87c64b4c3e9839acf4cdcfe3106cdd",
+    "targetedBrowser": {
+      "sourceReport": "browser/launcher-browser-results.json",
+      "sha256": "8e742dd59538a22a9ebb957d41c235b3d4448c265445859939bd50e5a957535f",
       "results": {
         "passed": true,
         "preset": {
-          "path": "/workspace/scratch/7095aacbc09d/vex-message-dock-fix-output/Nemo_Engine_v12.3_Message_Dock.json",
-          "sha256": "baac2986c839194a733d4d24ecec3b1b246a951ce119f28a258db4792b88ea02",
+          "path": "/workspace/scratch/7095aacbc09d/vex-launcher-style-output/Nemo_Engine_v12.3_Message_Dock.json",
+          "sha256": "0695bcd52c228f9b2600d2abb836bfe861205a669e9965733b57a820cc1d1b16",
           "rules": 586
         },
-        "rootCause": "Unconfirmed in the user environment. Exact provided32hex nonce and current official legacy/full experimental parsers bind correctly; faults below are explicit test injections.",
+        "strictFindRegexFlagsOrderUnchanged": true,
         "tests": [
           {
-            "name": "normal-native-open-next-close",
+            "name": "dark-theme-native-same-footer-toggle",
+            "passed": true,
+            "closed": {
+              "text": "\u2726\nVex commentary\nA few thoughts from the sidelines.\nOpen \u2197",
+              "action": "toggle",
+              "openLabel": "inline",
+              "closeLabel": "none",
+              "color": "rgb(236, 230, 242)",
+              "titleColor": "rgb(236, 230, 242)",
+              "grid": "grid",
+              "width": 704,
+              "parentWidth": 734
+            },
+            "opened": {
+              "text": "\u2726\nVex commentary\nA few thoughts from the sidelines.\nClose \u00d7",
+              "action": "toggle",
+              "openLabel": "none",
+              "closeLabel": "inline",
+              "color": "rgb(236, 230, 242)",
+              "titleColor": "rgb(236, 230, 242)",
+              "grid": "grid",
+              "width": 704,
+              "parentWidth": 734
+            },
+            "next": true,
+            "chatRemainsUsable": true
+          },
+          {
+            "name": "light-theme-native-same-footer-toggle",
+            "passed": true,
+            "closed": {
+              "text": "\u2726\nVex commentary\nA few thoughts from the sidelines.\nOpen \u2197",
+              "action": "toggle",
+              "openLabel": "inline",
+              "closeLabel": "none",
+              "color": "rgb(48, 38, 56)",
+              "titleColor": "rgb(48, 38, 56)",
+              "grid": "grid",
+              "width": 704,
+              "parentWidth": 734
+            },
+            "opened": {
+              "text": "\u2726\nVex commentary\nA few thoughts from the sidelines.\nClose \u00d7",
+              "action": "toggle",
+              "openLabel": "none",
+              "closeLabel": "inline",
+              "color": "rgb(48, 38, 56)",
+              "titleColor": "rgb(48, 38, 56)",
+              "grid": "grid",
+              "width": 704,
+              "parentWidth": 734
+            },
+            "next": true,
+            "chatRemainsUsable": true
+          },
+          {
+            "name": "keyboard-focus-space-open-enter-toggle-close",
+            "passed": true,
+            "focus": {
+              "focused": true,
+              "focusVisible": true,
+              "outline": "solid",
+              "outlineWidth": "2px"
+            }
+          },
+          {
+            "name": "mobile375-inline-no-launcher-next",
             "passed": true
           },
           {
-            "name": "exact-provided-screenshot-nonce-native-binding",
-            "passed": true
-          },
-          {
-            "name": "disabled-binder",
-            "passed": true,
-            "cleanReadableInline": true,
-            "navigation": true,
-            "sanitizedCommentsRemoved": true
-          },
-          {
-            "name": "missing-binder",
-            "passed": true,
-            "cleanReadableInline": true,
-            "navigation": true,
-            "sanitizedCommentsRemoved": true
-          },
-          {
-            "name": "binder-moved-before-seed",
-            "passed": true,
-            "cleanReadableInline": true,
-            "navigation": true,
-            "sanitizedCommentsRemoved": true
-          },
-          {
-            "name": "macro-unresolved",
-            "passed": true,
-            "cleanReadableInline": true,
-            "navigation": true,
-            "sanitizedCommentsRemoved": true
-          },
-          {
-            "name": "macro-empty",
-            "passed": true,
-            "cleanReadableInline": true,
-            "navigation": true,
-            "sanitizedCommentsRemoved": true
-          },
-          {
-            "name": "macro31hex",
-            "passed": true,
-            "cleanReadableInline": true,
-            "navigation": true,
-            "sanitizedCommentsRemoved": true
-          },
-          {
-            "name": "macro-uppercase",
-            "passed": true,
-            "cleanReadableInline": true,
-            "navigation": true,
-            "sanitizedCommentsRemoved": true
-          },
-          {
-            "name": "macro-nonhex",
-            "passed": true,
-            "cleanReadableInline": true,
-            "navigation": true,
-            "sanitizedCommentsRemoved": true
-          },
-          {
-            "name": "legacy-pua-marker-cleanup",
-            "passed": true,
-            "cleanReadableInline": true,
-            "navigation": false,
-            "sanitizedCommentsRemoved": true
-          },
-          {
-            "name": "fenced-legacy-literal-and-context-preserved",
-            "passed": true
-          },
-          {
-            "name": "mobile375-inline-next-no-markers",
+            "name": "disabled-binder-clean-inline-still-works",
             "passed": true
           }
         ],
+        "preview": {
+          "path": "/workspace/scratch/7095aacbc09d/vex-launcher-style-work/browser/Vex_Message_Dock_Preview.html",
+          "bytes": 7601506,
+          "sha256": "4c9136397b18ccea9f23a44f4fb15fa9fa23794e93ec38c4074298209dd8fb96",
+          "actualSanitizedScopedOutput": true,
+          "embeddedPortraits": true,
+          "noJavaScript": true
+        },
         "environment": {
           "browser": "153.0.8010.0",
           "dompurify": "3.4.2",
-          "officialMobileCssLoaded": true
+          "officialMobileCSS": true
         }
       }
     },
-    "chunkedEquivalenceNode": {
-      "sourceReport": "jsc/chunked-node-results.jsonl",
-      "sha256": "04417d0922af9f3b9e83bad33b72dfb5de4d6389c47fdbf4ec7422647617276b",
-      "results": [
-        {
-          "runtime": "node-v8-v24.19.0",
-          "stage": "equivalence",
-          "checks": 68191,
-          "failures": 0
-        },
-        {
-          "runtime": "node-v8-v24.19.0",
-          "stage": "chunked-binder",
-          "suffixSize": 0,
-          "characters": 6345,
-          "matches": 1,
-          "matchOK": true,
-          "elapsedMs": 0.22793300000000727
-        },
-        {
-          "runtime": "node-v8-v24.19.0",
-          "stage": "chunked-binder",
-          "suffixSize": 65536,
-          "characters": 71881,
-          "matches": 1,
-          "matchOK": true,
-          "elapsedMs": 0.9121010000000069
-        },
-        {
-          "runtime": "node-v8-v24.19.0",
-          "stage": "chunked-binder",
-          "suffixSize": 262144,
-          "characters": 268489,
-          "matches": 1,
-          "matchOK": true,
-          "elapsedMs": 3.376968000000005
-        },
-        {
-          "runtime": "node-v8-v24.19.0",
-          "stage": "chunked-binder",
-          "suffixSize": 1048576,
-          "characters": 1054921,
-          "matches": 1,
-          "matchOK": true,
-          "elapsedMs": 14.188355999999999
-        },
-        {
-          "runtime": "node-v8-v24.19.0",
-          "stage": "gated-chunked-binder",
-          "mode": "prefix",
-          "paddingSize": 1048576,
-          "characters": 1054921,
-          "matches": 1,
-          "matchOK": true,
-          "elapsedMs": 1.2752979999999923
-        },
-        {
-          "runtime": "node-v8-v24.19.0",
-          "stage": "gated-chunked-binder",
-          "mode": "suffix",
-          "paddingSize": 1048576,
-          "characters": 1054921,
-          "matches": 1,
-          "matchOK": true,
-          "elapsedMs": 13.860242999999997
-        },
-        {
-          "runtime": "node-v8-v24.19.0",
-          "stage": "gated-chunked-binder",
-          "mode": "both",
-          "paddingSize": 1048576,
-          "characters": 2103497,
-          "matches": 1,
-          "matchOK": true,
-          "elapsedMs": 13.872251000000006
-        }
-      ]
-    },
-    "chunkedEquivalenceJsc": {
-      "sourceReport": "jsc/chunked-jsc-results.jsonl",
-      "sha256": "0e70d7e410cacbed27c72ff76c6791c6d7d7c07c7c1bbac17a01c050c7b0774a",
-      "results": [
-        {
-          "runtime": "bun-jsc-1.4.3",
-          "stage": "equivalence",
-          "checks": 68191,
-          "failures": 0
-        },
-        {
-          "runtime": "bun-jsc-1.4.3",
-          "stage": "chunked-binder",
-          "suffixSize": 0,
-          "characters": 6345,
-          "matches": 1,
-          "matchOK": true,
-          "elapsedMs": 0.4892859999999999
-        },
-        {
-          "runtime": "bun-jsc-1.4.3",
-          "stage": "chunked-binder",
-          "suffixSize": 65536,
-          "characters": 71881,
-          "matches": 1,
-          "matchOK": true,
-          "elapsedMs": 21.394684000000005
-        },
-        {
-          "runtime": "bun-jsc-1.4.3",
-          "stage": "chunked-binder",
-          "suffixSize": 262144,
-          "characters": 268489,
-          "matches": 1,
-          "matchOK": true,
-          "elapsedMs": 256.361848
-        },
-        {
-          "runtime": "bun-jsc-1.4.3",
-          "stage": "chunked-binder",
-          "suffixSize": 1048576,
-          "characters": 1054921,
-          "matches": 1,
-          "matchOK": true,
-          "elapsedMs": 3141.5523989999997
-        },
-        {
-          "runtime": "bun-jsc-1.4.3",
-          "stage": "gated-chunked-binder",
-          "mode": "prefix",
-          "paddingSize": 1048576,
-          "characters": 1054921,
-          "matches": 1,
-          "matchOK": true,
-          "elapsedMs": 0.7700679999998101
-        },
-        {
-          "runtime": "bun-jsc-1.4.3",
-          "stage": "gated-chunked-binder",
-          "mode": "suffix",
-          "paddingSize": 1048576,
-          "characters": 1054921,
-          "matches": 1,
-          "matchOK": true,
-          "elapsedMs": 2.658828000000085
-        },
-        {
-          "runtime": "bun-jsc-1.4.3",
-          "stage": "gated-chunked-binder",
-          "mode": "both",
-          "paddingSize": 1048576,
-          "characters": 2103497,
-          "matches": 1,
-          "matchOK": true,
-          "elapsedMs": 3.1712290000000394
-        }
-      ]
-    },
-    "finalPackNode": {
-      "sourceReport": "jsc/final-pack-node-results.jsonl",
-      "sha256": "020154b15c696126d2224068366b24dbb09168f961c43673cb3785be86412eb3",
-      "results": [
-        {
-          "runtime": "node-v8-v24.19.0",
-          "packSHA256": "4373577cd75946fbf365dbd6d244c92e412baea2ec1c6cdcc7e8cc6aaf6408e7",
-          "guardMatchesHelper": true,
-          "rules": 76
-        },
-        {
-          "runtime": "node-v8-v24.19.0",
-          "mode": "prefix",
-          "characters": 1054931,
-          "binderMs": 1.326788999999998,
-          "cleanupMs": 1.4442760000000021,
-          "bindOK": true,
-          "cleanupOK": true,
-          "protectedOK": true
-        },
-        {
-          "runtime": "node-v8-v24.19.0",
-          "mode": "suffix",
-          "characters": 1054931,
-          "binderMs": 0.4173490000000015,
-          "cleanupMs": 13.780467000000002,
-          "bindOK": true,
-          "cleanupOK": true,
-          "protectedOK": true
-        },
-        {
-          "runtime": "node-v8-v24.19.0",
-          "mode": "both",
-          "characters": 2103507,
-          "binderMs": 0.6997640000000018,
-          "cleanupMs": 16.542806,
-          "bindOK": true,
-          "cleanupOK": true,
-          "protectedOK": true
-        }
-      ]
-    },
-    "finalPackJsc": {
-      "sourceReport": "jsc/final-pack-jsc-results.jsonl",
-      "sha256": "fa33d29abb7fc54abf2c3172812afc33d0bdb8d35150ad43d543994c61dc3425",
-      "results": [
-        {
-          "runtime": "bun-jsc-1.4.3",
-          "packSHA256": "4373577cd75946fbf365dbd6d244c92e412baea2ec1c6cdcc7e8cc6aaf6408e7",
-          "guardMatchesHelper": true,
-          "rules": 76
-        },
-        {
-          "runtime": "bun-jsc-1.4.3",
-          "mode": "prefix",
-          "characters": 1054931,
-          "binderMs": 0.888618000000001,
-          "cleanupMs": 2.763142,
-          "bindOK": true,
-          "cleanupOK": true,
-          "protectedOK": true
-        },
-        {
-          "runtime": "bun-jsc-1.4.3",
-          "mode": "suffix",
-          "characters": 1054931,
-          "binderMs": 2.8300630000000027,
-          "cleanupMs": 6.340340000000001,
-          "bindOK": true,
-          "cleanupOK": true,
-          "protectedOK": true
-        },
-        {
-          "runtime": "bun-jsc-1.4.3",
-          "mode": "both",
-          "characters": 2103507,
-          "binderMs": 3.324377000000002,
-          "cleanupMs": 7.2111909999999995,
-          "bindOK": true,
-          "cleanupOK": true,
-          "protectedOK": true
-        }
-      ]
+    "standalonePreview": {
+      "sourceReport": "browser/preview-standalone-results.json",
+      "sha256": "1b054e9c6aba23a31a63c464f242877ced03295c58de8ac621984ecdb64a5aac",
+      "results": {
+        "passed": true,
+        "previewPath": "/workspace/scratch/7095aacbc09d/vex-launcher-style-work/browser/Vex_Message_Dock_Preview.html",
+        "previewSHA256": "4c9136397b18ccea9f23a44f4fb15fa9fa23794e93ec38c4074298209dd8fb96",
+        "javaScriptEnabled": false,
+        "externalRequests": 0,
+        "desktopNativeSameFooterOpenNextToggleClose": true,
+        "mobileInlineNext": true,
+        "embeddedPortraitLoaded": true
+      }
     }
-  }
+  },
+  "historicalRepairValidation": {
+    "status": "historical",
+    "rerunForThisStyleUpdate": false,
+    "sourceCommit": "5ad9ba9d55215624c907c3c91c4a2bbb08efe59f",
+    "sha256": "c54328561821b892cdfadc6f5279534e59f49c3066d3a2a325408005140a4604",
+    "note": "The following record preserves its original input hashes and results. Parser, version-matrix and JavaScriptCore stress tests were not rerun for this markup/CSS-only change because all regex matchers and flags are identical.",
+    "record": {
+      "schemaVersion": 2,
+      "status": "passed",
+      "feature": "Optional message-only Vex dock defensive binding repair",
+      "source": {
+        "commit": "dd2f805a1bf3f251457fb6de4d6dc97164637f78",
+        "priorOptionalPresetSha256": "807287ba37621ba518c0535b66ab2503fa2dc677a00cc5854397002ec70c7061",
+        "canonicalPresetSha256": "2131186ff10f6eb37090b90e4bc0384de8b9dbaa3c884da36e6c9e8c36ccb2bd",
+        "previousValidationSha256": "6750e4b6c00fc7bb624ff3f00a032ef4c85048be6e5d51169d1bfbd69c7c141d"
+      },
+      "artifacts": {
+        "Nemo Engine/Nemo_Engine_v12.3_Message_Dock.json": {
+          "sha256": "baac2986c839194a733d4d24ecec3b1b246a951ce119f28a258db4792b88ea02",
+          "gitBlob": "c40bc4c9d983de17d57f4e8d9a9353d9004fb860",
+          "size": 3469699
+        },
+        "Nemo Engine/assets/vex/renderer/message-dock/regex-scripts.json": {
+          "sha256": "4373577cd75946fbf365dbd6d244c92e412baea2ec1c6cdcc7e8cc6aaf6408e7",
+          "gitBlob": "7db8fbbd259c6913fbf28d5fb11a46379d9e1cfc",
+          "size": 152464
+        },
+        "Nemo Engine/assets/vex/renderer/message-dock/build_message_dock.py": {
+          "sha256": "debcf8e72cf200432606d8e7e52aa74e13f2c9817fbd7b49eb3a23cc0b581dcd",
+          "gitBlob": "adfc94cbafe1fac041e5de88fd13382f548a8fa3",
+          "size": 5581
+        },
+        "Nemo Engine/assets/vex/renderer/message-dock/README.md": {
+          "sha256": "e459c363fa8a1254aded66e0a13234492d81a5b2db857c2d9080122ea6bc266c",
+          "gitBlob": "89716298e711b3cfc55dbb6978fa93791fc50355",
+          "size": 4366
+        },
+        "Nemo Engine/assets/vex/renderer/README.md": {
+          "sha256": "1f50304be7f6c2f1f5c58d578fc0564ef1c082896793a7ff77bd3a65fc89e08d",
+          "gitBlob": "1369be6f846e05c074e89cb13d34228473a93610",
+          "size": 8689
+        }
+      },
+      "scope": {
+        "canonicalAndLegacyAliasesUnchanged": true,
+        "allPromptContentSettingsAndSelectionsUnchanged": true,
+        "optionalAndStandardCssUnchanged": true,
+        "assetsAndManifestUnchanged": true,
+        "oldOptionalPresetRules": 585,
+        "newOptionalPresetRules": 586,
+        "optionalDisplayRules": 76,
+        "changedExistingRecords": 5,
+        "addedDisplayCleanupRules": 1
+      },
+      "diagnosis": {
+        "userEnvironmentCause": "Unconfirmed. The provided valid 32-hex nonce binds in replay. Missing/disabled/reordered binder cases are test injections, not established user causes.",
+        "reproducedEngineIssue": "A paired literal-boundary scan failed on large synthetic input under Bun JavaScriptCore. Marker gates and equivalent chunked scans repair this bounded reproduction. This does not prove the cause in the user environment or in Safari."
+      },
+      "coverage": {
+        "fullPresetRegexRules": 586,
+        "resolvedNameExpressionPairs": 288,
+        "crossModuleFixtures": 22,
+        "browserFaultCases": 13,
+        "macroModes": [
+          "legacy",
+          "fullExperimentalParser"
+        ],
+        "macroVersionBindings": 14,
+        "versions": [
+          "1.12.0",
+          "1.12.6",
+          "1.12.12",
+          "1.12.14",
+          "1.13.5",
+          "release",
+          "staging"
+        ],
+        "randomSamplesPerMacroMode": 100,
+        "fullExperimentalParserTested": true,
+        "experimentalDiagnosticsOnlyStubbed": true,
+        "chunkedGuardEquivalenceChecksPerRuntime": 68191,
+        "largeInputCases": "1 MiB prefix, suffix, and both; actual final binding and legacy cleanup in Node/V8 and Bun/JavaScriptCore"
+      },
+      "limitations": [
+        "The exact installed-user failure remains unconfirmed; neither a screenshot nor private chat dialogue is included.",
+        "JavaScriptCore performance proof uses Bun 1.4.3 on synthetic fixtures, not the user Safari installation.",
+        "The old legacy-marker cleanup fixture is asserted readable; its navigation flag is false and no navigation success is claimed for that simplified fixture.",
+        "Full experimental lexer/parser/walker/registry/engine is exercised with diagnostics-only stubbing; arbitrary installed extensions and themes are not covered.",
+        "Native manual popovers still require a click and do not close other messages automatically."
+      ],
+      "reports": {
+        "integration": {
+          "sourceReport": "integration-report.json",
+          "sha256": "d0dfa058a869d82cfc73b0d85d933f321948e4b75dd00b626bdc9059f057e796",
+          "results": {
+            "passed": true,
+            "sourceSha256": "2131186ff10f6eb37090b90e4bc0384de8b9dbaa3c884da36e6c9e8c36ccb2bd",
+            "presetSha256": "baac2986c839194a733d4d24ecec3b1b246a951ce119f28a258db4792b88ea02",
+            "presetRegexRules": 586,
+            "changedRegexReplacements": 4,
+            "addedDisplayOnlyRules": 2,
+            "promptsAndOtherSettingsUnchanged": true,
+            "literalGuardsAndContextRulesUnchanged": true,
+            "assetMappingsUnchanged": true,
+            "path": "/workspace/scratch/7095aacbc09d/vex-message-dock-fix-output/Nemo_Engine_v12.3_Message_Dock.json"
+          }
+        },
+        "fullPreset": {
+          "sourceReport": "full-preset-results.json",
+          "sha256": "afa143753f1e82700948c1349657523d2b1d13e99e7c0825ba1f51f0caee123b",
+          "results": {
+            "passed": true,
+            "engine": "Official SillyTavern regex engine and official getRandomReplaceMacro with seedrandom",
+            "rules": 586,
+            "resolvedNameExpressionPairs": 288,
+            "crossModuleFixtures": 22,
+            "unwrappedDisplayByteIdenticalToCanonical": true,
+            "allPromptsAndSettingsPreserved": true,
+            "rawHistoryUnchanged": true,
+            "recentContextPreserved": true,
+            "olderContextRemoved": true,
+            "repeatedGroupsAndRerendersUnique": true,
+            "internalWrapperExamplesPreserved": true
+          }
+        },
+        "repairDiff": {
+          "sourceReport": "repair-diff-report.json",
+          "sha256": "9d435dd2bb7589a97e60298eba66ce1b800f69d37c80df66880db8baf8643f2c",
+          "results": {
+            "passed": true,
+            "changedExistingRecords": [
+              {
+                "id": "734f9a3f-e27d-50d3-90f5-4ddec56e5e5b",
+                "name": "Nemo \u00b7 Vex VN \u00b7 4 message panel",
+                "fields": [
+                  "replaceString"
+                ]
+              },
+              {
+                "id": "e4cbd965-20ad-5911-97b4-6fe4af587250",
+                "name": "Nemo \u00b7 Vex VN \u00b7 3 message panel",
+                "fields": [
+                  "replaceString"
+                ]
+              },
+              {
+                "id": "808e6d1a-8f65-5f9b-8471-9cf3c4ff74a5",
+                "name": "Nemo \u00b7 Vex VN \u00b7 2 message panel",
+                "fields": [
+                  "replaceString"
+                ]
+              },
+              {
+                "id": "4219a75c-ee91-552f-a946-7831883c6f28",
+                "name": "Nemo \u00b7 Vex VN \u00b7 1 message panel",
+                "fields": [
+                  "replaceString"
+                ]
+              },
+              {
+                "id": "83e2de95-985a-56d2-b5c3-e507c5ba38d9",
+                "name": "Nemo \u00b7 Vex VN \u00b7 optional native left dock binding",
+                "fields": [
+                  "findRegex"
+                ]
+              }
+            ],
+            "addedDisplayCleanupRecords": [
+              "15cb9cb7-b70e-5192-9086-dc9840cfd19a"
+            ],
+            "allOtherPresetContentIdentical": true,
+            "originalRuleOrderPreserved": true,
+            "oldRuleCount": 585,
+            "newRuleCount": 586
+          }
+        },
+        "commentBridge": {
+          "sourceReport": "diagnosis/comment-bridge-results.json",
+          "sha256": "b6921e5a50974bebf3eb52c84d738b5e16309bce8ad02a32448e752378b28e4b",
+          "results": {
+            "passed": true,
+            "rules": 76,
+            "normalBinding": true,
+            "failedBindingCommentOnlyBridge": true,
+            "failedBindingRetainsInlineForm": true,
+            "legacyOnlyMarkersRemoved": true,
+            "protectedLiteralCases": 7,
+            "exactlyFourBaseReplacementsChanged": true,
+            "allOtherBaseFieldsPreserved": true,
+            "notes": "HTML comment removal is asserted syntactically here; actual DOMPurify/browser fallback is verified by the separate integration harness."
+          }
+        },
+        "macroAndVersionMatrix": {
+          "sourceReport": "research/full-experimental-fixed-results.json",
+          "sha256": "8771b33b74a5ba02e3ac7ac5deb0151b1ae17e18b9aeb4eaeb3722c48ab7c2c6",
+          "results": {
+            "passed": true,
+            "officialCommit": "06bde939fb1e9c4c8d8641d810f0a916b5bce127",
+            "fullExperimentalComponents": [
+              "MacroLexer",
+              "MacroParser",
+              "MacroCstWalker",
+              "MacroRegistry",
+              "MacroEngine",
+              "MacroFlags"
+            ],
+            "diagnosticsOnlyStubbed": true,
+            "nonceReplay": {
+              "nonce": "302595d35d2806a2b816efcb279617fa",
+              "length": 32
+            },
+            "macroTests": [
+              {
+                "name": "legacy",
+                "samples": 100,
+                "all32Hex": true,
+                "unique": 100,
+                "zerosPreserved": true
+              },
+              {
+                "name": "fullExperimental",
+                "samples": 100,
+                "all32Hex": true,
+                "unique": 100,
+                "zerosPreserved": true
+              }
+            ],
+            "engineTests": [
+              {
+                "macro": "legacy",
+                "version": "1.12.0",
+                "seedLength32": true,
+                "bound": true,
+                "screenshotNonceBound": true
+              },
+              {
+                "macro": "legacy",
+                "version": "1.12.6",
+                "seedLength32": true,
+                "bound": true,
+                "screenshotNonceBound": true
+              },
+              {
+                "macro": "legacy",
+                "version": "1.12.12",
+                "seedLength32": true,
+                "bound": true,
+                "screenshotNonceBound": true
+              },
+              {
+                "macro": "legacy",
+                "version": "1.12.14",
+                "seedLength32": true,
+                "bound": true,
+                "screenshotNonceBound": true
+              },
+              {
+                "macro": "legacy",
+                "version": "1.13.5",
+                "seedLength32": true,
+                "bound": true,
+                "screenshotNonceBound": true
+              },
+              {
+                "macro": "legacy",
+                "version": "release",
+                "seedLength32": true,
+                "bound": true,
+                "screenshotNonceBound": true
+              },
+              {
+                "macro": "legacy",
+                "version": "staging",
+                "seedLength32": true,
+                "bound": true,
+                "screenshotNonceBound": true
+              },
+              {
+                "macro": "fullExperimental",
+                "version": "1.12.0",
+                "seedLength32": true,
+                "bound": true,
+                "screenshotNonceBound": true
+              },
+              {
+                "macro": "fullExperimental",
+                "version": "1.12.6",
+                "seedLength32": true,
+                "bound": true,
+                "screenshotNonceBound": true
+              },
+              {
+                "macro": "fullExperimental",
+                "version": "1.12.12",
+                "seedLength32": true,
+                "bound": true,
+                "screenshotNonceBound": true
+              },
+              {
+                "macro": "fullExperimental",
+                "version": "1.12.14",
+                "seedLength32": true,
+                "bound": true,
+                "screenshotNonceBound": true
+              },
+              {
+                "macro": "fullExperimental",
+                "version": "1.13.5",
+                "seedLength32": true,
+                "bound": true,
+                "screenshotNonceBound": true
+              },
+              {
+                "macro": "fullExperimental",
+                "version": "release",
+                "seedLength32": true,
+                "bound": true,
+                "screenshotNonceBound": true
+              },
+              {
+                "macro": "fullExperimental",
+                "version": "staging",
+                "seedLength32": true,
+                "bound": true,
+                "screenshotNonceBound": true
+              }
+            ],
+            "experimentalDiagnostics": 0
+          }
+        },
+        "browserFaultMatrix": {
+          "sourceReport": "research/browser-fault-results.json",
+          "sha256": "fa36ecec42fa8d5947141bb02226d3739e87c64b4c3e9839acf4cdcfe3106cdd",
+          "results": {
+            "passed": true,
+            "preset": {
+              "path": "/workspace/scratch/7095aacbc09d/vex-message-dock-fix-output/Nemo_Engine_v12.3_Message_Dock.json",
+              "sha256": "baac2986c839194a733d4d24ecec3b1b246a951ce119f28a258db4792b88ea02",
+              "rules": 586
+            },
+            "rootCause": "Unconfirmed in the user environment. Exact provided32hex nonce and current official legacy/full experimental parsers bind correctly; faults below are explicit test injections.",
+            "tests": [
+              {
+                "name": "normal-native-open-next-close",
+                "passed": true
+              },
+              {
+                "name": "exact-provided-screenshot-nonce-native-binding",
+                "passed": true
+              },
+              {
+                "name": "disabled-binder",
+                "passed": true,
+                "cleanReadableInline": true,
+                "navigation": true,
+                "sanitizedCommentsRemoved": true
+              },
+              {
+                "name": "missing-binder",
+                "passed": true,
+                "cleanReadableInline": true,
+                "navigation": true,
+                "sanitizedCommentsRemoved": true
+              },
+              {
+                "name": "binder-moved-before-seed",
+                "passed": true,
+                "cleanReadableInline": true,
+                "navigation": true,
+                "sanitizedCommentsRemoved": true
+              },
+              {
+                "name": "macro-unresolved",
+                "passed": true,
+                "cleanReadableInline": true,
+                "navigation": true,
+                "sanitizedCommentsRemoved": true
+              },
+              {
+                "name": "macro-empty",
+                "passed": true,
+                "cleanReadableInline": true,
+                "navigation": true,
+                "sanitizedCommentsRemoved": true
+              },
+              {
+                "name": "macro31hex",
+                "passed": true,
+                "cleanReadableInline": true,
+                "navigation": true,
+                "sanitizedCommentsRemoved": true
+              },
+              {
+                "name": "macro-uppercase",
+                "passed": true,
+                "cleanReadableInline": true,
+                "navigation": true,
+                "sanitizedCommentsRemoved": true
+              },
+              {
+                "name": "macro-nonhex",
+                "passed": true,
+                "cleanReadableInline": true,
+                "navigation": true,
+                "sanitizedCommentsRemoved": true
+              },
+              {
+                "name": "legacy-pua-marker-cleanup",
+                "passed": true,
+                "cleanReadableInline": true,
+                "navigation": false,
+                "sanitizedCommentsRemoved": true
+              },
+              {
+                "name": "fenced-legacy-literal-and-context-preserved",
+                "passed": true
+              },
+              {
+                "name": "mobile375-inline-next-no-markers",
+                "passed": true
+              }
+            ],
+            "environment": {
+              "browser": "153.0.8010.0",
+              "dompurify": "3.4.2",
+              "officialMobileCssLoaded": true
+            }
+          }
+        },
+        "chunkedEquivalenceNode": {
+          "sourceReport": "jsc/chunked-node-results.jsonl",
+          "sha256": "04417d0922af9f3b9e83bad33b72dfb5de4d6389c47fdbf4ec7422647617276b",
+          "results": [
+            {
+              "runtime": "node-v8-v24.19.0",
+              "stage": "equivalence",
+              "checks": 68191,
+              "failures": 0
+            },
+            {
+              "runtime": "node-v8-v24.19.0",
+              "stage": "chunked-binder",
+              "suffixSize": 0,
+              "characters": 6345,
+              "matches": 1,
+              "matchOK": true,
+              "elapsedMs": 0.22793300000000727
+            },
+            {
+              "runtime": "node-v8-v24.19.0",
+              "stage": "chunked-binder",
+              "suffixSize": 65536,
+              "characters": 71881,
+              "matches": 1,
+              "matchOK": true,
+              "elapsedMs": 0.9121010000000069
+            },
+            {
+              "runtime": "node-v8-v24.19.0",
+              "stage": "chunked-binder",
+              "suffixSize": 262144,
+              "characters": 268489,
+              "matches": 1,
+              "matchOK": true,
+              "elapsedMs": 3.376968000000005
+            },
+            {
+              "runtime": "node-v8-v24.19.0",
+              "stage": "chunked-binder",
+              "suffixSize": 1048576,
+              "characters": 1054921,
+              "matches": 1,
+              "matchOK": true,
+              "elapsedMs": 14.188355999999999
+            },
+            {
+              "runtime": "node-v8-v24.19.0",
+              "stage": "gated-chunked-binder",
+              "mode": "prefix",
+              "paddingSize": 1048576,
+              "characters": 1054921,
+              "matches": 1,
+              "matchOK": true,
+              "elapsedMs": 1.2752979999999923
+            },
+            {
+              "runtime": "node-v8-v24.19.0",
+              "stage": "gated-chunked-binder",
+              "mode": "suffix",
+              "paddingSize": 1048576,
+              "characters": 1054921,
+              "matches": 1,
+              "matchOK": true,
+              "elapsedMs": 13.860242999999997
+            },
+            {
+              "runtime": "node-v8-v24.19.0",
+              "stage": "gated-chunked-binder",
+              "mode": "both",
+              "paddingSize": 1048576,
+              "characters": 2103497,
+              "matches": 1,
+              "matchOK": true,
+              "elapsedMs": 13.872251000000006
+            }
+          ]
+        },
+        "chunkedEquivalenceJsc": {
+          "sourceReport": "jsc/chunked-jsc-results.jsonl",
+          "sha256": "0e70d7e410cacbed27c72ff76c6791c6d7d7c07c7c1bbac17a01c050c7b0774a",
+          "results": [
+            {
+              "runtime": "bun-jsc-1.4.3",
+              "stage": "equivalence",
+              "checks": 68191,
+              "failures": 0
+            },
+            {
+              "runtime": "bun-jsc-1.4.3",
+              "stage": "chunked-binder",
+              "suffixSize": 0,
+              "characters": 6345,
+              "matches": 1,
+              "matchOK": true,
+              "elapsedMs": 0.4892859999999999
+            },
+            {
+              "runtime": "bun-jsc-1.4.3",
+              "stage": "chunked-binder",
+              "suffixSize": 65536,
+              "characters": 71881,
+              "matches": 1,
+              "matchOK": true,
+              "elapsedMs": 21.394684000000005
+            },
+            {
+              "runtime": "bun-jsc-1.4.3",
+              "stage": "chunked-binder",
+              "suffixSize": 262144,
+              "characters": 268489,
+              "matches": 1,
+              "matchOK": true,
+              "elapsedMs": 256.361848
+            },
+            {
+              "runtime": "bun-jsc-1.4.3",
+              "stage": "chunked-binder",
+              "suffixSize": 1048576,
+              "characters": 1054921,
+              "matches": 1,
+              "matchOK": true,
+              "elapsedMs": 3141.5523989999997
+            },
+            {
+              "runtime": "bun-jsc-1.4.3",
+              "stage": "gated-chunked-binder",
+              "mode": "prefix",
+              "paddingSize": 1048576,
+              "characters": 1054921,
+              "matches": 1,
+              "matchOK": true,
+              "elapsedMs": 0.7700679999998101
+            },
+            {
+              "runtime": "bun-jsc-1.4.3",
+              "stage": "gated-chunked-binder",
+              "mode": "suffix",
+              "paddingSize": 1048576,
+              "characters": 1054921,
+              "matches": 1,
+              "matchOK": true,
+              "elapsedMs": 2.658828000000085
+            },
+            {
+              "runtime": "bun-jsc-1.4.3",
+              "stage": "gated-chunked-binder",
+              "mode": "both",
+              "paddingSize": 1048576,
+              "characters": 2103497,
+              "matches": 1,
+              "matchOK": true,
+              "elapsedMs": 3.1712290000000394
+            }
+          ]
+        },
+        "finalPackNode": {
+          "sourceReport": "jsc/final-pack-node-results.jsonl",
+          "sha256": "020154b15c696126d2224068366b24dbb09168f961c43673cb3785be86412eb3",
+          "results": [
+            {
+              "runtime": "node-v8-v24.19.0",
+              "packSHA256": "4373577cd75946fbf365dbd6d244c92e412baea2ec1c6cdcc7e8cc6aaf6408e7",
+              "guardMatchesHelper": true,
+              "rules": 76
+            },
+            {
+              "runtime": "node-v8-v24.19.0",
+              "mode": "prefix",
+              "characters": 1054931,
+              "binderMs": 1.326788999999998,
+              "cleanupMs": 1.4442760000000021,
+              "bindOK": true,
+              "cleanupOK": true,
+              "protectedOK": true
+            },
+            {
+              "runtime": "node-v8-v24.19.0",
+              "mode": "suffix",
+              "characters": 1054931,
+              "binderMs": 0.4173490000000015,
+              "cleanupMs": 13.780467000000002,
+              "bindOK": true,
+              "cleanupOK": true,
+              "protectedOK": true
+            },
+            {
+              "runtime": "node-v8-v24.19.0",
+              "mode": "both",
+              "characters": 2103507,
+              "binderMs": 0.6997640000000018,
+              "cleanupMs": 16.542806,
+              "bindOK": true,
+              "cleanupOK": true,
+              "protectedOK": true
+            }
+          ]
+        },
+        "finalPackJsc": {
+          "sourceReport": "jsc/final-pack-jsc-results.jsonl",
+          "sha256": "fa33d29abb7fc54abf2c3172812afc33d0bdb8d35150ad43d543994c61dc3425",
+          "results": [
+            {
+              "runtime": "bun-jsc-1.4.3",
+              "packSHA256": "4373577cd75946fbf365dbd6d244c92e412baea2ec1c6cdcc7e8cc6aaf6408e7",
+              "guardMatchesHelper": true,
+              "rules": 76
+            },
+            {
+              "runtime": "bun-jsc-1.4.3",
+              "mode": "prefix",
+              "characters": 1054931,
+              "binderMs": 0.888618000000001,
+              "cleanupMs": 2.763142,
+              "bindOK": true,
+              "cleanupOK": true,
+              "protectedOK": true
+            },
+            {
+              "runtime": "bun-jsc-1.4.3",
+              "mode": "suffix",
+              "characters": 1054931,
+              "binderMs": 2.8300630000000027,
+              "cleanupMs": 6.340340000000001,
+              "bindOK": true,
+              "cleanupOK": true,
+              "protectedOK": true
+            },
+            {
+              "runtime": "bun-jsc-1.4.3",
+              "mode": "both",
+              "characters": 2103507,
+              "binderMs": 3.324377000000002,
+              "cleanupMs": 7.2111909999999995,
+              "bindOK": true,
+              "cleanupOK": true,
+              "protectedOK": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "limitations": [
+    "The new browser checks are targeted to the footer styling and toggle. Historical parser and engine results are not claimed as new runs.",
+    "Earlier user-environment binding failure remains unconfirmed; synthetic Bun JavaScriptCore evidence does not identify the user Safari cause.",
+    "Native manual popovers require a click and do not close other messages automatically; arbitrary custom themes and extensions are not covered."
+  ]
 }
